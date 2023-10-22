@@ -16373,19 +16373,19 @@ local function C_1e9()
 end;
 task.spawn(C_1e9);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.aa.Fond.TextLabel.LocalScript
-local function C_1eb()
+function C_1eb()
 	local script = G2L["1eb"];
 	script.Parent.Text = "Creator ID:"..tonumber(game.CreatorId) or "NULL"
 end;
 task.spawn(C_1eb);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.aa.Fond.TextLabel.LocalScript
-local function C_1ed()
+ function C_1ed()
 	local script = G2L["1ed"];
 	script.Parent.Text = "Creator Name:"..tostring(game.Players:GetNameFromUserIdAsync(game.CreatorId):lower()) or "Cant Find."
 end;
 task.spawn(C_1ed);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.aa.Fond.TextLabel.LocalScript
-local function C_1ef()
+ function C_1ef()
 	local script = G2L["1ef"];
 	local function getServerType()
 		if game.PrivateServerId ~= "" then
@@ -16402,7 +16402,7 @@ local function C_1ef()
 end;
 task.spawn(C_1ef);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.LocalScript
-local function C_1f1()
+ function C_1f1()
 	local script = G2L["1f1"];
 	visible = false
 	script.Parent.MouseButton1Click:Connect(function()
@@ -16418,7 +16418,7 @@ local function C_1f1()
 end;
 task.spawn(C_1f1);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.aa.Fond.TextButton.LocalScript
-local function C_1f6()
+ function C_1f6()
 	local script = G2L["1f6"];
 	ac = false
 	script.Parent.MouseButton1Click:Connect(function()
@@ -16438,7 +16438,7 @@ local function C_1f6()
 end;
 task.spawn(C_1f6);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.LocalScript
-local function C_1f8()
+ function C_1f8()
 	local script = G2L["1f8"];
 	visible = false
 	script.Parent.MouseButton1Click:Connect(function()
@@ -16454,7 +16454,7 @@ local function C_1f8()
 end;
 task.spawn(C_1f8);
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Functions-page6.OCS.aa.Fond.TextButton.LocalScript
-local function C_1ff()
+ function C_1ff()
 	local script = G2L["1ff"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local num = script.Parent.Parent.TextBox.Text
@@ -16464,7 +16464,7 @@ local function C_1ff()
 end;
 task.spawn(C_1ff);
 -- StarterGui.G0bbyD0llan_HubV1.TextButton.LocalScript
-local function C_201()
+ function C_201()
 	local script = G2L["201"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Fond_frame.Visible = not script.Parent.Parent.Fond_frame.Visible
