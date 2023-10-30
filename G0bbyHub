@@ -101,7 +101,7 @@ G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["Size"] = UDim2.new(0, 75, 0, 30);
 G2L["a"]["Name"] = [[ScrS_page2]];
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Text"] = [[[SEARCH SCRIPTS]];
+G2L["a"]["Text"] = [[[SEARCH SCRIPTS]]
 G2L["a"]["Position"] = UDim2.new(0.2503293752670288, 0, 0.302325576543808, 0);
 
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.Pages.ScrS_page2.LocalScript
@@ -2624,7 +2624,7 @@ G2L["111"]["TextSize"] = 14;
 G2L["111"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["111"]["Size"] = UDim2.new(0, 759, 0, 20);
 G2L["111"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["111"]["Text"] = [[[ [ [ Information In Exploit  ] ] ]];
+G2L["111"]["Text"] = [[[ [ [ Information In Exploit  ] ] ]]
 G2L["111"]["Name"] = [[IIE]];
 
 -- StarterGui.G0bbyD0llan_HubV1.Fond_frame.INF-page4.IIE.Frame
@@ -3194,7 +3194,7 @@ G2L["14a"]["TextSize"] = 14;
 G2L["14a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["14a"]["Size"] = UDim2.new(0, 759, 0, 20);
 G2L["14a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14a"]["Text"] = [[[ [ [ Information in Camera/Mouse/CoreGui ] ] ]];
+G2L["14a"]["Text"] = [[[ [ [ Information in Camera/Mouse/CoreGui ] ] ]]
 G2L["14a"]["Name"] = [[IICm]];
 G2L["14a"]["Position"] = UDim2.new(0, 0, 0.5352112650871277, 0);
 
@@ -16977,9 +16977,9 @@ local function C_165()
 		local Target =  FindPlayer(Searcher.Text)	
 		loop_flinnng = not loop_flinnng
 		if loop_flinnng then
-			loop_kill.Text = "Stop loop"
+			loop_fling.Text = "Stop loop"
 		elseif not loop_flinnng  then
-			loop_kill.Text = "Loop fling"
+			loop_fling.Text = "Loop fling"
 
 		end
 		while loop_flinnng == true do
@@ -18438,23 +18438,23 @@ task.spawn(C_26d);
 	local function chat(str)
 		game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str ,"All")
 	end
-	function getTorso(x)
+	local function getTorso(x)
 		x = x or game.Players.LocalPlayer.Character
 		return x:FindFirstChild("Torso") or x:FindFirstChild("UpperTorso") or x:FindFirstChild("LowerTorso") or x:FindFirstChild("HumanoidRootPart")
 	end
-	function getRoot(char)
+	local function getRoot(char)
 		local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
 		return rootPart
 	end
-	function r15(plr)
+	local function r15(plr)
 		if plr.Character:FindFirstChildOfClass('Humanoid').RigType == Enum.HumanoidRigType.R15 then
 			return true
 		end
 	end
-	function tpGB(v)
+	local function tpGB(v)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.Position=v.Character.HumanoidRootPart.Position
 	end
-	function FindPlayer(name)
+	local function FindPlayer(name)
 		name = name:lower()
 
 		local players = game:GetService("Players"):GetPlayers()
@@ -18466,7 +18466,6 @@ task.spawn(C_26d);
 
 			-- Verifica si el nombre coincide con Name, DisplayName o UserID
 			if playerName == name or playerDisplayName == name or userIdString == name then
-				script.Parent.Searcher.Text = player.Name
 				return player
 			end
 		end
