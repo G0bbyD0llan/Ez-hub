@@ -7,13 +7,11 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 256 | Scripts: 111 | Modules: 0
+-- Instances: 259 | Scripts: 112 | Modules: 0
 local G2L = {};
 
 -- StarterGui.PrisonD0llan
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["IgnoreGuiInset"] = true;
-G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[PrisonD0llan]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -125,7 +123,7 @@ G2L["e"]["TextSize"] = 14;
 G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["Size"] = UDim2.new(0, 97, 0, 16);
-G2L["e"]["Name"] = [[tar[3]]
+G2L["e"]["Name"] = [[tar[3]];
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 255, 39);
 G2L["e"]["Text"] = [[Target]];
 G2L["e"]["Position"] = UDim2.new(0.4082396924495697, 0, 0, 0);
@@ -1095,7 +1093,7 @@ G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7b"]["Size"] = UDim2.new(0, 534, 0, 24);
 G2L["7b"]["Name"] = [[Arrestall]];
 G2L["7b"]["BorderColor3"] = Color3.fromRGB(113, 112, 112);
-G2L["7b"]["Text"] = [[Btools [Only visible in client, no ServerSide]]
+G2L["7b"]["Text"] = [[Btools [Only visible in client, no ServerSide]];
 G2L["7b"]["Position"] = UDim2.new(0.0012071523815393448, 0, 0.8002941012382507, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Exploits[2]_page[2].Arrestall.LocalScript
@@ -1287,7 +1285,7 @@ G2L["91"]["TextColor3"] = Color3.fromRGB(255, 6, 10);
 G2L["91"]["Size"] = UDim2.new(0, 534, 0, 46);
 G2L["91"]["Name"] = [[Kill]];
 G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 255, 43);
-G2L["91"]["Text"] = [[Spam taser [BETA TESTING]];
+G2L["91"]["Text"] = [[Spam taser [BETA TESTING]]
 G2L["91"]["Position"] = UDim2.new(0.0037313431967049837, 0, 0.317618191242218, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Target_page[3].Kill.LocalScript
@@ -1828,7 +1826,7 @@ G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["d3"]["Size"] = UDim2.new(0, 108, 0, 24);
 G2L["d3"]["BorderColor3"] = Color3.fromRGB(99, 255, 0);
-G2L["d3"]["Text"] = [[Lag gun [Needs gun equipped]]
+G2L["d3"]["Text"] = [[Lag gun [Needs gun equipped]];
 G2L["d3"]["Position"] = UDim2.new(0.41044771671295166, 0, 0.43518519401550293, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
@@ -2011,135 +2009,135 @@ G2L["e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e9"]["Size"] = UDim2.new(0, 169, 0, 24);
 G2L["e9"]["BorderColor3"] = Color3.fromRGB(99, 255, 0);
-G2L["e9"]["Text"] = [[Auto nuke me [Currently working]]
+G2L["e9"]["Text"] = [[Nuke me]];
 G2L["e9"]["Position"] = UDim2.new(0.6567160487174988, 0, 0.6782407164573669, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
 G2L["ea"] = Instance.new("LocalScript", G2L["e9"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel
-G2L["eb"] = Instance.new("TextLabel", G2L["8"]);
-G2L["eb"]["BorderSizePixel"] = 0;
-G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["eb"]["TextTransparency"] = 1;
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton
+G2L["eb"] = Instance.new("TextButton", G2L["a5"]);
+G2L["eb"]["TextWrapped"] = true;
+G2L["eb"]["TextScaled"] = true;
+G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["eb"]["TextSize"] = 14;
+G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["eb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["Size"] = UDim2.new(0, 534, 0, 21);
-G2L["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["eb"]["Text"] = [[Welcome To PrisonD0llan]];
-G2L["eb"]["Name"] = [[IntroLabel]];
-G2L["eb"]["BackgroundTransparency"] = 1;
-G2L["eb"]["Position"] = UDim2.new(-0.00187265919521451, 0, 0.0357142873108387, 0);
+G2L["eb"]["Size"] = UDim2.new(0, 122, 0, 24);
+G2L["eb"]["BorderColor3"] = Color3.fromRGB(99, 255, 0);
+G2L["eb"]["Text"] = [[Auto Nuke me]];
+G2L["eb"]["Position"] = UDim2.new(0.026119060814380646, 0, 0.7523148059844971, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
 G2L["ec"] = Instance.new("LocalScript", G2L["eb"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits
-G2L["ed"] = Instance.new("TextLabel", G2L["eb"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel
+G2L["ed"] = Instance.new("TextLabel", G2L["8"]);
 G2L["ed"]["BorderSizePixel"] = 0;
 G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ed"]["TextTransparency"] = 1;
 G2L["ed"]["TextSize"] = 14;
 G2L["ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ed"]["Size"] = UDim2.new(0, 21, 0, 21);
+G2L["ed"]["Size"] = UDim2.new(0, 534, 0, 21);
 G2L["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ed"]["Text"] = [[By]];
-G2L["ed"]["Name"] = [[Credits]];
-G2L["ed"]["Visible"] = false;
+G2L["ed"]["Text"] = [[Welcome To PrisonD0llan]];
+G2L["ed"]["Name"] = [[IntroLabel]];
 G2L["ed"]["BackgroundTransparency"] = 1;
-G2L["ed"]["Position"] = UDim2.new(0.4101123511791229, 0, 1, 0);
+G2L["ed"]["Position"] = UDim2.new(-0.00187265919521451, 0, 0.0357142873108387, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.Name
-G2L["ee"] = Instance.new("TextLabel", G2L["ed"]);
-G2L["ee"]["BorderSizePixel"] = 0;
-G2L["ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ee"]["TextSize"] = 14;
-G2L["ee"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["ee"]["Size"] = UDim2.new(0, 84, 0, 21);
-G2L["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ee"]["Text"] = [[G0bbyD0llan]];
-G2L["ee"]["Name"] = [[Name]];
-G2L["ee"]["BackgroundTransparency"] = 1;
-G2L["ee"]["Position"] = UDim2.new(0.761904776096344, 0, 0, 0);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+G2L["ee"] = Instance.new("LocalScript", G2L["ed"]);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits
 G2L["ef"] = Instance.new("TextLabel", G2L["ed"]);
-G2L["ef"]["TextWrapped"] = true;
 G2L["ef"]["BorderSizePixel"] = 0;
-G2L["ef"]["TextScaled"] = true;
 G2L["ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["ef"]["TextSize"] = 14;
-G2L["ef"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["ef"]["Size"] = UDim2.new(0, 171, 0, 47);
+G2L["ef"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ef"]["Size"] = UDim2.new(0, 21, 0, 21);
 G2L["ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ef"]["Text"] = [[G0bbyD0llan57]];
-G2L["ef"]["Name"] = [[yt]];
+G2L["ef"]["Text"] = [[By]];
+G2L["ef"]["Name"] = [[Credits]];
+G2L["ef"]["Visible"] = false;
 G2L["ef"]["BackgroundTransparency"] = 1;
-G2L["ef"]["Position"] = UDim2.new(-2.4285714626312256, 0, 0.3333333432674408, 0);
+G2L["ef"]["Position"] = UDim2.new(0.4101123511791229, 0, 1, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt.ImageLabel
-G2L["f0"] = Instance.new("ImageLabel", G2L["ef"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.Name
+G2L["f0"] = Instance.new("TextLabel", G2L["ef"]);
 G2L["f0"]["BorderSizePixel"] = 0;
 G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f0"]["Image"] = [[http://www.roblox.com/asset/?id=645664327]];
-G2L["f0"]["Size"] = UDim2.new(0, 41, 0, 42);
+G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f0"]["TextSize"] = 14;
+G2L["f0"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["f0"]["Size"] = UDim2.new(0, 84, 0, 21);
 G2L["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f0"]["Text"] = [[G0bbyD0llan]];
+G2L["f0"]["Name"] = [[Name]];
 G2L["f0"]["BackgroundTransparency"] = 1;
-G2L["f0"]["Position"] = UDim2.new(0.9977192282676697, 0, 0.1025533452630043, 0);
+G2L["f0"]["Position"] = UDim2.new(0.761904776096344, 0, 0, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt
+G2L["f1"] = Instance.new("TextLabel", G2L["ef"]);
+G2L["f1"]["TextWrapped"] = true;
+G2L["f1"]["BorderSizePixel"] = 0;
+G2L["f1"]["TextScaled"] = true;
+G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f1"]["TextSize"] = 14;
+G2L["f1"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["f1"]["Size"] = UDim2.new(0, 171, 0, 47);
+G2L["f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f1"]["Text"] = [[G0bbyD0llan57]];
+G2L["f1"]["Name"] = [[yt]];
+G2L["f1"]["BackgroundTransparency"] = 1;
+G2L["f1"]["Position"] = UDim2.new(-2.4285714626312256, 0, 0.3333333432674408, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt.ImageLabel
+G2L["f2"] = Instance.new("ImageLabel", G2L["f1"]);
+G2L["f2"]["BorderSizePixel"] = 0;
+G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f2"]["Image"] = [[http://www.roblox.com/asset/?id=645664327]];
+G2L["f2"]["Size"] = UDim2.new(0, 41, 0, 42);
+G2L["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["BackgroundTransparency"] = 1;
+G2L["f2"]["Position"] = UDim2.new(0.9977192282676697, 0, 0.1025533452630043, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Test
-G2L["f1"] = Instance.new("TextLabel", G2L["8"]);
-G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f1"]["TextTransparency"] = 0.5;
-G2L["f1"]["TextSize"] = 14;
-G2L["f1"]["TextColor3"] = Color3.fromRGB(255, 235, 0);
-G2L["f1"]["Size"] = UDim2.new(0, 534, 0, 21);
-G2L["f1"]["BorderColor3"] = Color3.fromRGB(0, 255, 31);
-G2L["f1"]["Text"] = [[Welcome To PrisonD0llan]];
-G2L["f1"]["Name"] = [[Test]];
-G2L["f1"]["Visible"] = false;
-G2L["f1"]["Position"] = UDim2.new(-0.0020000000949949026, 0, 0.4440000057220459, 0);
+G2L["f3"] = Instance.new("TextLabel", G2L["8"]);
+G2L["f3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f3"]["TextTransparency"] = 0.5;
+G2L["f3"]["TextSize"] = 14;
+G2L["f3"]["TextColor3"] = Color3.fromRGB(255, 235, 0);
+G2L["f3"]["Size"] = UDim2.new(0, 534, 0, 21);
+G2L["f3"]["BorderColor3"] = Color3.fromRGB(0, 255, 31);
+G2L["f3"]["Text"] = [[Welcome To PrisonD0llan]];
+G2L["f3"]["Name"] = [[Test]];
+G2L["f3"]["Visible"] = false;
+G2L["f3"]["Position"] = UDim2.new(-0.0020000000949949026, 0, 0.4440000057220459, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Test.LocalScript
-G2L["f2"] = Instance.new("LocalScript", G2L["f1"]);
+G2L["f4"] = Instance.new("LocalScript", G2L["f3"]);
 
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5]
-G2L["f3"] = Instance.new("Frame", G2L["8"]);
-G2L["f3"]["BorderSizePixel"] = 0;
-G2L["f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f3"]["BackgroundTransparency"] = 1;
-G2L["f3"]["Size"] = UDim2.new(0, 534, 0, 432);
-G2L["f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f3"]["Position"] = UDim2.new(0, 0, 0.035714320838451385, 0);
-G2L["f3"]["Visible"] = false;
-G2L["f3"]["Name"] = [[Config_page[5]]
+G2L["f5"] = Instance.new("Frame", G2L["8"]);
+G2L["f5"]["BorderSizePixel"] = 0;
+G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["BackgroundTransparency"] = 1;
+G2L["f5"]["Size"] = UDim2.new(0, 534, 0, 432);
+G2L["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f5"]["Position"] = UDim2.new(0, 0, 0.035714320838451385, 0);
+G2L["f5"]["Visible"] = false;
+G2L["f5"]["Name"] = [[Config_page[5]]
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["f4"] = Instance.new("TextButton", G2L["f3"]);
-G2L["f4"]["TextWrapped"] = true;
-G2L["f4"]["TextScaled"] = true;
-G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f4"]["TextSize"] = 14;
-G2L["f4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f4"]["Size"] = UDim2.new(0, 132, 0, 25);
-G2L["f4"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["f4"]["Text"] = [[Change Text title color]];
-G2L["f4"]["Position"] = UDim2.new(0, 0, 0.02777777798473835, 0);
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-G2L["f5"] = Instance.new("LocalScript", G2L["f4"]);
-
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["f6"] = Instance.new("TextButton", G2L["f3"]);
+G2L["f6"] = Instance.new("TextButton", G2L["f5"]);
 G2L["f6"]["TextWrapped"] = true;
 G2L["f6"]["TextScaled"] = true;
 G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -2148,82 +2146,113 @@ G2L["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f6"]["Size"] = UDim2.new(0, 132, 0, 25);
 G2L["f6"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["f6"]["Text"] = [[Change Border frame color]];
-G2L["f6"]["Position"] = UDim2.new(0.24719101190567017, 0, 0.02777777798473835, 0);
+G2L["f6"]["Text"] = [[Change Text title color]];
+G2L["f6"]["Position"] = UDim2.new(0, 0, 0.02777777798473835, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
 G2L["f7"] = Instance.new("LocalScript", G2L["f6"]);
 
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["f8"] = Instance.new("TextButton", G2L["f3"]);
+G2L["f8"] = Instance.new("TextButton", G2L["f5"]);
 G2L["f8"]["TextWrapped"] = true;
 G2L["f8"]["TextScaled"] = true;
 G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f8"]["TextSize"] = 14;
 G2L["f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["f8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f8"]["Size"] = UDim2.new(0, 119, 0, 25);
+G2L["f8"]["Size"] = UDim2.new(0, 132, 0, 25);
 G2L["f8"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["f8"]["Text"] = [[Change Title border color]];
-G2L["f8"]["Position"] = UDim2.new(0.49438202381134033, 0, 0.02777777798473835, 0);
+G2L["f8"]["Text"] = [[Change Border frame color]];
+G2L["f8"]["Position"] = UDim2.new(0.24719101190567017, 0, 0.02777777798473835, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
 G2L["f9"] = Instance.new("LocalScript", G2L["f8"]);
 
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["fa"] = Instance.new("TextButton", G2L["f3"]);
+G2L["fa"] = Instance.new("TextButton", G2L["f5"]);
 G2L["fa"]["TextWrapped"] = true;
 G2L["fa"]["TextScaled"] = true;
 G2L["fa"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["fa"]["TextSize"] = 14;
 G2L["fa"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["fa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fa"]["Size"] = UDim2.new(0, 151, 0, 25);
+G2L["fa"]["Size"] = UDim2.new(0, 119, 0, 25);
 G2L["fa"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["fa"]["Text"] = [[Change All Pages color]];
-G2L["fa"]["Position"] = UDim2.new(0.7172284722328186, 0, 0.02777777798473835, 0);
+G2L["fa"]["Text"] = [[Change Title border color]];
+G2L["fa"]["Position"] = UDim2.new(0.49438202381134033, 0, 0.02777777798473835, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
 G2L["fb"] = Instance.new("LocalScript", G2L["fa"]);
 
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["fc"] = Instance.new("TextButton", G2L["f3"]);
+G2L["fc"] = Instance.new("TextButton", G2L["f5"]);
 G2L["fc"]["TextWrapped"] = true;
 G2L["fc"]["TextScaled"] = true;
 G2L["fc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["fc"]["TextSize"] = 14;
 G2L["fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["fc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fc"]["Size"] = UDim2.new(0, 512, 0, 25);
+G2L["fc"]["Size"] = UDim2.new(0, 151, 0, 25);
 G2L["fc"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["fc"]["Text"] = [[promote your social network in this Script]];
-G2L["fc"]["Position"] = UDim2.new(0.02247191034257412, 0, 0.1041666641831398, 0);
+G2L["fc"]["Text"] = [[Change All Pages color]];
+G2L["fc"]["Position"] = UDim2.new(0.7172284722328186, 0, 0.02777777798473835, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
 G2L["fd"] = Instance.new("LocalScript", G2L["fc"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextLabel
-G2L["fe"] = Instance.new("TextLabel", G2L["f3"]);
-G2L["fe"]["BorderSizePixel"] = 0;
-G2L["fe"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["fe"] = Instance.new("TextButton", G2L["f5"]);
+G2L["fe"]["TextWrapped"] = true;
+G2L["fe"]["TextScaled"] = true;
+G2L["fe"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["fe"]["TextSize"] = 14;
-G2L["fe"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fe"]["Size"] = UDim2.new(0, 532, 0, 13);
-G2L["fe"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fe"]["Text"] = [[¡Script by G0bbyD0llan57, Follow him on YT!]];
-G2L["fe"]["Position"] = UDim2.new(-0.00025545613607391715, 0, 0.9693641662597656, 0);
+G2L["fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fe"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fe"]["Size"] = UDim2.new(0, 512, 0, 25);
+G2L["fe"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["fe"]["Text"] = [[promote your social network in this Script]];
+G2L["fe"]["Position"] = UDim2.new(0.02247191034257412, 0, 0.1041666641831398, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+G2L["ff"] = Instance.new("LocalScript", G2L["fe"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextLabel
+G2L["100"] = Instance.new("TextLabel", G2L["f5"]);
+G2L["100"]["BorderSizePixel"] = 0;
+G2L["100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["100"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["100"]["TextSize"] = 14;
+G2L["100"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["100"]["Size"] = UDim2.new(0, 532, 0, 13);
+G2L["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["100"]["Text"] = [[¡Script by G0bbyD0llan57, Follow him on YT!]];
+G2L["100"]["Position"] = UDim2.new(-0.00025545613607391715, 0, 0.9693641662597656, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["101"] = Instance.new("TextButton", G2L["f5"]);
+G2L["101"]["TextWrapped"] = true;
+G2L["101"]["AutoButtonColor"] = false;
+G2L["101"]["TextScaled"] = true;
+G2L["101"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["101"]["TextSize"] = 14;
+G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["101"]["Size"] = UDim2.new(0, 512, 0, 25);
+G2L["101"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["101"]["Text"] = [[Current Version = 1.45]];
+G2L["101"]["Position"] = UDim2.new(0.016853932291269302, 0, 0.8842592835426331, 0);
 
 -- StarterGui.PrisonD0llan.Title.LocalScript
-G2L["ff"] = Instance.new("LocalScript", G2L["2"]);
+G2L["102"] = Instance.new("LocalScript", G2L["2"]);
 
 
 -- StarterGui.PrisonD0llan.LocalScript
-G2L["100"] = Instance.new("LocalScript", G2L["1"]);
+G2L["103"] = Instance.new("LocalScript", G2L["1"]);
 
 
 -- StarterGui.PrisonD0llan.Title.close.LocalScript
@@ -5659,8 +5688,9 @@ local function C_a0()
 			elseif message:lower():sub(1, 6) == "!taze " then
 				local PlrToTaze = message:sub(7)
 				if GetPlayer(PlrToTaze) then
-					tase(PlrToTaze)
 					Ch("Tazing "..message:sub(7)"...")
+					tase(PlrToTaze)
+
 				elseif PlrToTaze:lower() == "all" or PlrToTaze:lower() == "everyone" then
 					tase_all()
 				end
@@ -5670,6 +5700,8 @@ local function C_a0()
 					if not game.Players.LocalPlayer.TeamColor.Name == "Bright blue" then
 						Ch("For this work, use !GuardsTeam")
 						wait(0.1)
+						Ch("Please, be quiet, a player will give u the gun")
+						wait(2)
 					elseif game.Players.LocalPlayer.TeamColor.Name == "Bright blue" then
 						wait(1)
 						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = PlayerToVG.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
@@ -5745,8 +5777,9 @@ local function C_a0()
 					SkidFling(plrToFling)
 				end
 			elseif message:lower() == "!arrestcriminals" then
-				arrestcriminals()
 				Ch("Arresting criminals")
+				arrestcriminals()
+				Ch("Arrested All criminals")
 			elseif message:lower():sub(1, 8) == "!arrest " then
 				local plrToArrest = GetPlayer(message:sub(9))
 				if plrToArrest then
@@ -5784,31 +5817,7 @@ local function C_a0()
 					Kill_All()
 				elseif plrToGiveHenNukeFRthisScriptItsSoLOOOOOOOOONGERbruh:lower() == "all" or plrToGiveHenNukeFRthisScriptItsSoLOOOOOOOOONGERbruh:lower() == "everyone" then
 					--IDK HOW I MADE THIS PART PLEASE HELP :(
-					chat("Everyone GOT A Nuke")
-					wait(1)
-					chat("If some of you die, ALL of you DIE.")
-					wait(0.5)
-					chat("good luck xD")
-
-					for _, plrToGiveNukeEVERYONE in pairs(game.Players:GetPlayers()) do
-						wait(0.1)
-						repeat task.wait()
-							if plrToGiveNukeEVERYONE.Character and plrToGiveNukeEVERYONE.Character:FindFirstChildOfClass("Humanoid") and plrToGiveNukeEVERYONE.Character:FindFirstChildOfClass("Humanoid").Health <1 then
-								break
-							end
-						until not game
-						game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrToGiveNukeEVERYONE.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
-						wait(1.5)
-						--//This is what I call perfect work 
-						game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
-						wait(1.5)
-						game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
-						wait(1.5)
-						game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
-						wait(2)
-						Kill_All()
-					end
-
+					Ch("This not working. sorry")
 
 				end
 
@@ -11418,7 +11427,7 @@ local function C_e0()
 		return
 	end
 	function sadasddasldlas()
-		if not GetTeam() == "Bright red" or GetTeam() == "Bright orange" or GetTeam() == "Bright blue" then
+		if GetTeam() == "Bright orange" or GetTeam() == "Bright blue" then
 			local lastPos = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").position
 			LCS = game.Workspace["Criminals Spawn"].SpawnLocation
 			LCS.CanCollide = false
@@ -11441,10 +11450,10 @@ local function C_e0()
 			script.Parent.Text = "unloop Criminal team"
 		elseif not FF then
 			script.Parent.Text = "loop Criminal team"
-			while FF do
-				wait(1)
-				sadasddasldlas()
-			end
+		end
+		while FF do
+			wait(1)
+			sadasddasldlas()
 		end
 	end)
 end;
@@ -11701,10 +11710,10 @@ local function C_e2()
 			script.Parent.Text = "unloop kill all"
 		elseif not FF then
 			script.Parent.Text = "loop kill all"
-			while FF do
-				wait(10)
-				Kill_All()
-			end
+		end
+		while FF do
+			wait(6)
+			Kill_All()
 		end
 	end)
 end;
@@ -11926,13 +11935,13 @@ local function C_e4()
 	script.Parent.MouseButton1Click:Connect(function()
 		FF = not FF
 		if FF then
-			script.Parent.Text = "unloop kill all"
+			script.Parent.Text = "unloop Taze all"
 		elseif not FF then
-			script.Parent.Text = "loop kill all"
-			while FF do
-				wait(6)
-				tase_all()
-			end
+			script.Parent.Text = "loop Taze all"
+		end
+		while FF do
+			wait(5)
+			tase_all()
 		end
 	end)
 end;
@@ -11943,6 +11952,7 @@ local function C_e6()
 	local Players = game:GetService("Players")
 	local Player = Players["LocalPlayer"]
 	local AllBool = true
+
 	local SkidFling = function(TargetPlayer)
 		local Character = Player.Character
 		local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
@@ -12367,27 +12377,27 @@ local function C_e8()
 			script.Parent.Text = "unloop Open doors"
 		elseif not FF then
 			script.Parent.Text = "loop open doors"
-			while FF do
-				wait(5)
-				local LastTeam =plr.TeamColor.Name
-				ChangeTeam(game.Teams.Guards)
-				wait(.7)
-				task.spawn(function()
-					local Arg_1 = game:GetService("Workspace")["Prison_ITEMS"].buttons["Prison Gate"]["Prison Gate"]
-					local Event = game:GetService("Workspace").Remote.ItemHandler
-					Event:InvokeServer(Arg_1)
-				end)
-				for i,v in pairs(game:GetService("Workspace").Doors:GetChildren()) do
-					if v then
-						if v:FindFirstChild("block") and v:FindFirstChild("block"):FindFirstChild("hitbox") then
-							firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,v.block.hitbox,0)
-							firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,v.block.hitbox,1)
-						end
+		end
+		while FF do
+			wait(5)
+			local LastTeam =plr.TeamColor.Name
+			ChangeTeam(game.Teams.Guards)
+			wait(.7)
+			task.spawn(function()
+				local Arg_1 = game:GetService("Workspace")["Prison_ITEMS"].buttons["Prison Gate"]["Prison Gate"]
+				local Event = game:GetService("Workspace").Remote.ItemHandler
+				Event:InvokeServer(Arg_1)
+			end)
+			for i,v in pairs(game:GetService("Workspace").Doors:GetChildren()) do
+				if v then
+					if v:FindFirstChild("block") and v:FindFirstChild("block"):FindFirstChild("hitbox") then
+						firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,v.block.hitbox,0)
+						firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart,v.block.hitbox,1)
 					end
 				end
-				wait(1)
-				Last_Team(LastTeam)
 			end
+			wait(1)
+			Last_Team(LastTeam)
 		end
 	end)
 end;
@@ -12638,12 +12648,309 @@ local function C_ea()
 		wait(.4)
 		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
 	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
 
+	end)
 end;
 task.spawn(C_ea);
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
 local function C_ec()
 	local script = G2L["ec"];
+	firetouchinterest=firetouchinterest
+
+	local plr =  game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
+	function GetGun(Item,Ignore)
+		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		if workspace.Prison_ITEMS.giver:FindFirstChild(Item) and workspace.Prison_ITEMS.giver:FindFirstChild(Item):FindFirstChild("ITEMPICKUP") then
+			Item =workspace.Prison_ITEMS.giver:FindFirstChild(Item)
+			local ohInstance1 = Item:FindFirstChildOfClass("Part")
+			MoveTo(CFrame.new(ohInstance1.Position))
+			repeat wait()
+				local ohInstance1 = Item:FindFirstChildOfClass("Part")
+				MoveTo(CFrame.new(ohInstance1.Position))
+				task.spawn(function()
+					workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+				end)
+				wait()
+			until plr.Backpack:FindFirstChild(Item.Name) or plr.Character:FindFirstChild(Item.Name)
+		end
+		if Ignore ~= true then
+			plr.Character:SetPrimaryPartCFrame(Ignore or saved)
+		end
+	end
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	local function GetPlayer(String)
+		if not String then return end
+		local Yes = {}
+		for _, Player in ipairs(game.Players:GetPlayers()) do
+			if string.lower(Player.Name):match(string.lower(String)) or string.lower(Player.DisplayName):match(string.lower(String)) then
+				table.insert(Yes, Player)
+			end
+		end
+		if #Yes > 0 then
+			return Yes[1]
+		elseif #Yes < 1 then
+			return nil
+		end
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	function Valid_Team(Team)
+		if Team and typeof(Team):lower()=="string" then
+			local Valid = {
+				"Bright orange",
+				"Bright blue",
+			}
+			if table.find(Valid,Team) then
+				return true
+			elseif Team == "Really red" then
+				return 1
+			end
+			return nil
+		end
+	end
+	function Last_Team(Lastteam)
+		task.spawn(function()
+			local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+			a =plr.CharacterAdded:Connect(function(Char)
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = c
+					end
+				end)
+				Char:WaitForChild("HumanoidRootPart")
+				MoveTo(b)
+				a:Disconnect()
+			end)
+			local Team = Valid_Team(Lastteam)
+			if Team and Team~=1 then
+				local pos = getpos()
+				workspace.Remote.TeamEvent:FireServer(Lastteam)
+			elseif Team and Team == 1 then
+				workspace.Remote.TeamEvent:FireServer("Bright orange")
+				local crimpad = workspace["Criminals Spawn"].SpawnLocation
+				crimpad.CanCollide = false
+				crimpad.Transparency = 1
+				repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+				MoveToJunk(crimpad)
+			end
+		end)
+	end
+	loadchar = function()
+		if plr.Team == game.Teams.Inmates then
+			local ohString1 = "Bright orange"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Guards then
+
+			local ohString1 = "Bright blue"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Criminals then
+			workspace.Remote.TeamEvent:FireServer("Bright orange")
+			wait(.3)
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			MoveToJunk(crimpad)
+		end
+	end
+	local Resfreshing = false
+	function refresh(Pos)
+		if not Pos then
+			Pos = getpos()
+		end
+		Resfreshing = true
+		local Goto = Pos or getpos()
+		local Connections = {}
+		local Cam = workspace.CurrentCamera.CFrame
+		Connections[1] = plr.CharacterAdded:Connect(function(charnew)
+			pcall(function()
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = Cam
+					end
+				end)
+				repeat task.wait() until charnew and charnew:FindFirstChild("HumanoidRootPart")
+				MoveTo(Goto)
+				task.spawn(function()
+					wait(.05)
+					MoveTo(Goto)
+					Resfreshing = false
+				end)
+				Connections[1]:Disconnect()
+			end)
+		end)
+		loadchar()
+		print("Refreshed")
+		return
+	end
+
+	function Kill_All(TeamS)
+		local a = GetTeam()
+		local saved = getpos()
+		local Team = GetTeam()
+		if not TeamS then
+			ChangeTeam(game.Teams.Inmates)
+		end
+		GetGun("M9")
+		repeat task.wait() until plr.Backpack:FindFirstChild("M9")
+		local Gun = plr.Backpack:FindFirstChild("M9")
+		local Gen = {}
+		if TeamS then
+			if TeamS == game.Teams.Guards then
+				ChangeTeam(game.Teams.Inmates)
+			elseif TeamS == game.Teams.Inmates then
+				ChangeTeam(game.Teams.Criminals)
+			end
+		end
+		if not TeamS then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if  v ~= plr then
+					if v.Team == game.Teams.Criminals then
+						for i =1,10 do
+							Gen[#Gen+1]={
+								["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+								["Distance"] = .1,
+								["Cframe"] = CFrame.new(),
+								["Hit"] = v.Character:WaitForChild("Head")
+							}
+						end
+					end
+				end
+			end
+			game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		end
+		--
+		if not TeamS then
+			ChangeTeam(game.Teams.Criminals)
+		end
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if  v ~= plr then
+				if (TeamS and v.Team == TeamS) or not TeamS then
+					for i =1,10 do
+						Gen[#Gen+1]={
+							["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+							["Distance"] = .1,
+							["Cframe"] = CFrame.new(),
+							["Hit"] = v.Character:WaitForChild("Head")
+						}
+					end
+				end
+			end
+		end
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		wait(.1)
+		Last_Team(a)
+		wait(.4)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		plr.CharacterAdded:Connect(function()
+			if script.Parent.Parent.Parent.Parent.Parent then
+				givenukeTo(plr)
+			end
+		end)
+	end)
+end;
+task.spawn(C_ec);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+local function C_ee()
+	local script = G2L["ee"];
 	wait(0.6)
 	local TweenService, Tweens, Tween, Tw, TS = game:GetService("TweenService"),game:GetService("TweenService"),game:GetService("TweenService"),game:GetService("TweenService"),game:GetService("TweenService")
 	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
@@ -12705,344 +13012,13 @@ local function C_ec()
 		end
 	)
 end;
-task.spawn(C_ec);
+task.spawn(C_ee);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Test.LocalScript
-local function C_f2()
-	local script = G2L["f2"];
+local function C_f4()
+	local script = G2L["f4"];
 	script.Parent:Remove()
 end;
-task.spawn(C_f2);
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_f5()
-	local script = G2L["f5"];
-	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName)
-		-- Gui to Lua
-		-- Version: 3.2
-
-		-- Instances:
-
-		local ColorPickGui = Instance.new("ScreenGui")
-		local Titile = Instance.new("Frame")
-		local asd = Instance.new("Frame")
-		local R = Instance.new("TextBox")
-		local G = Instance.new("TextBox")
-		local B = Instance.new("TextBox")
-		local ColorDisplay = Instance.new("Frame")
-		local TextLabel = Instance.new("TextLabel")
-		local TextButton = Instance.new("TextButton")
-		local TextLabel_2 = Instance.new("TextLabel")
-		local x = Instance.new("TextButton")
-		local TextButton_2 = Instance.new("TextButton")
-
-		--Properties:
-
-		ColorPickGui.Name = "ColorPickGui"
-		ColorPickGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-		Titile.Name = "Titile"
-		Titile.Parent = ColorPickGui
-		Titile.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		Titile.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		Titile.Position = UDim2.new(0.346303493, 0, 0.35778442, 0)
-		Titile.Size = UDim2.new(0, 275, 0, 15)
-
-		asd.Name = "asd"
-		asd.Parent = Titile
-		asd.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		asd.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		asd.Position = UDim2.new(0, 0, 1, 0)
-		asd.Size = UDim2.new(0, 275, 0, 210)
-
-		R.Name = "R"
-		R.Parent = asd
-		R.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		R.BorderColor3 = Color3.fromRGB(255, 0, 4)
-		R.Position = UDim2.new(0, 0, 0.0571428575, 0)
-		R.Size = UDim2.new(0, 76, 0, 20)
-		R.Font = Enum.Font.Arial
-		R.PlaceholderColor3 = Color3.fromRGB(178, 0, 3)
-		R.PlaceholderText = "R"
-		R.Text = ""
-		R.TextColor3 = Color3.fromRGB(255, 0, 4)
-		R.TextSize = 14.000
-		R.TextWrapped = true
-
-		G.Name = "G"
-		G.Parent = asd
-		G.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		G.BorderColor3 = Color3.fromRGB(26, 255, 0)
-		G.Position = UDim2.new(0.378181815, 0, 0.0571428575, 0)
-		G.Size = UDim2.new(0, 76, 0, 20)
-		G.Font = Enum.Font.Arial
-		G.PlaceholderColor3 = Color3.fromRGB(3, 178, 0)
-		G.PlaceholderText = "G"
-		G.Text = ""
-		G.TextColor3 = Color3.fromRGB(4, 255, 0)
-		G.TextSize = 14.000
-		G.TextWrapped = true
-
-		B.Name = "B"
-		B.Parent = asd
-		B.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		B.BorderColor3 = Color3.fromRGB(0, 13, 255)
-		B.Position = UDim2.new(0.723636389, 0, 0.0571428575, 0)
-		B.Size = UDim2.new(0, 76, 0, 20)
-		B.Font = Enum.Font.Arial
-		B.PlaceholderColor3 = Color3.fromRGB(0, 9, 178)
-		B.PlaceholderText = "B"
-		B.Text = ""
-		B.TextColor3 = Color3.fromRGB(30, 0, 255)
-		B.TextSize = 14.000
-		B.TextWrapped = true
-
-		ColorDisplay.Name = "ColorDisplay"
-		ColorDisplay.Parent = asd
-		ColorDisplay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		ColorDisplay.BorderColor3 = Color3.fromRGB(0, 0, 0)
-		ColorDisplay.BorderSizePixel = 0
-		ColorDisplay.Position = UDim2.new(0, 0, 0.433333337, 0)
-		ColorDisplay.Size = UDim2.new(0, 275, 0, 28)
-
-		TextLabel.Parent = ColorDisplay
-		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel.BackgroundTransparency = 1.000
-		TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-		TextLabel.BorderSizePixel = 0
-		TextLabel.Position = UDim2.new(0.13454546, 0, -0.392857134, 0)
-		TextLabel.Size = UDim2.new(0, 200, 0, 50)
-		TextLabel.Font = Enum.Font.SourceSans
-		TextLabel.Text = "Color displayer"
-		TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-		TextLabel.TextSize = 14.000
-
-		TextButton.Parent = asd
-		TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		TextButton.BorderSizePixel = 2
-		TextButton.Position = UDim2.new(0.0799999982, 0, 0.619047642, 0)
-		TextButton.Size = UDim2.new(0, 229, 0, 66)
-		TextButton.Font = Enum.Font.Arial
-		TextButton.Text = "Done"
-		TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextButton.TextScaled = true
-		TextButton.TextSize = 14.000
-		TextButton.TextWrapped = true
-
-		TextLabel_2.Parent = Titile
-		TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_2.Size = UDim2.new(0, 241, 0, 14)
-		TextLabel_2.Font = Enum.Font.SourceSans
-		TextLabel_2.Text = "Color selector For "..ObjectName
-		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_2.TextSize = 14.000
-		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-
-		x.Name = "x"
-		x.Parent = TextLabel_2
-		x.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-		x.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		x.Position = UDim2.new(1.06639004, 0, 0, 0)
-		x.Size = UDim2.new(0, 18, 0, 14)
-		x.Font = Enum.Font.SourceSans
-		x.Text = "x"
-		x.TextColor3 = Color3.fromRGB(0, 0, 0)
-		x.TextSize = 14.000
-
-		TextButton_2.Name = "-"
-		TextButton_2.Parent = TextLabel_2
-		TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 4, 255)
-		TextButton_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-		TextButton_2.Position = UDim2.new(1, 0, 0, 0)
-		TextButton_2.Size = UDim2.new(0, 18, 0, 14)
-		TextButton_2.Font = Enum.Font.SourceSans
-		TextButton_2.Text = "-"
-		TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-		TextButton_2.TextSize = 14.000
-
-		-- Scripts:
-
-		local function EOIN_fake_script() -- R.LocalScript 
-			local script = Instance.new('LocalScript', R)
-
-			local rTextBox = script.Parent.Parent.R
-			local gTextBox = script.Parent.Parent.G
-			local bTextBox = script.Parent.Parent.B
-			local colorDisplay = script.Parent.Parent.ColorDisplay
-			-- Function to update color display
-			local function updateColorDisplay()
-				local r = tonumber(rTextBox.Text) or 0
-				local g = tonumber(gTextBox.Text) or 0
-				local b = tonumber(bTextBox.Text) or 0
-
-				colorDisplay.BackgroundColor3 = Color3.new(r / 255, g / 255, b / 255)
-			end
-			script.Parent.FocusLost:Connect(updateColorDisplay)
-
-		end
-		coroutine.wrap(EOIN_fake_script)()
-		local function GKERK_fake_script() -- G.LocalScript 
-			local script = Instance.new('LocalScript', G)
-
-			local rTextBox = script.Parent.Parent.R
-			local gTextBox = script.Parent.Parent.G
-			local bTextBox = script.Parent.Parent.B
-			local colorDisplay = script.Parent.Parent.ColorDisplay
-			-- Function to update color display
-			local function updateColorDisplay()
-				local r = tonumber(rTextBox.Text) or 0
-				local g = tonumber(gTextBox.Text) or 0
-				local b = tonumber(bTextBox.Text) or 0
-
-				colorDisplay.BackgroundColor3 = Color3.new(r / 255, g / 255, b / 255)
-			end
-			script.Parent.FocusLost:Connect(updateColorDisplay)
-
-		end
-		coroutine.wrap(GKERK_fake_script)()
-		local function NGAE_fake_script() -- B.LocalScript 
-			local script = Instance.new('LocalScript', B)
-
-			local rTextBox = script.Parent.Parent.R
-			local gTextBox = script.Parent.Parent.G
-			local bTextBox = script.Parent.Parent.B
-			local colorDisplay = script.Parent.Parent.ColorDisplay
-			-- Function to update color display
-			local function updateColorDisplay()
-				local r = tonumber(rTextBox.Text) or 0
-				local g = tonumber(gTextBox.Text) or 0
-				local b = tonumber(bTextBox.Text) or 0
-
-				colorDisplay.BackgroundColor3 = Color3.new(r / 255, g / 255, b / 255)
-			end
-			script.Parent.FocusLost:Connect(updateColorDisplay)
-
-		end
-		coroutine.wrap(NGAE_fake_script)()
-		local function SDLBK_fake_script() -- TextButton.LocalScript 
-			local script = Instance.new('LocalScript', TextButton)
-
-
-			local frame = script.Parent -- Change "ScreenGui" and "Frame" accordingly
-
-			-- Function to generate rainbow color
-			local function generateRainbowColor(time)
-				local frequency = 0.5
-				local red = math.sin(frequency * time + 0) * 127 + 128
-				local green = math.sin(frequency * time + 2) * 127 + 128
-				local blue = math.sin(frequency * time + 4) * 127 + 128
-
-				return Color3.fromRGB(red, green, blue)
-			end
-
-			-- Function to update frame border color
-			local function updateBorderColor()
-				local time = 0
-				while wait(0.1) do
-					time = time + 0.1
-					local rainbowColor = generateRainbowColor(time)
-
-					-- Assuming the frame has a BorderSizePixel property
-					frame.BorderColor3 = rainbowColor
-				end
-			end
-
-			updateBorderColor()
-		end
-		coroutine.wrap(SDLBK_fake_script)()
-		local function NQZNI_fake_script() -- TextButton.LocalScript 
-			local script = Instance.new('LocalScript', TextButton)
-
-			local rTextBox = script.Parent.Parent.R
-			local gTextBox = script.Parent.Parent.G
-			local bTextBox = script.Parent.Parent.B
-			local colorDisplay = script.Parent.Parent.ColorDisplay
-			-- Function to update color display
-			local function NewColor3()
-				local r = tonumber(rTextBox.Text) or 0
-				local g = tonumber(gTextBox.Text) or 0
-				local b = tonumber(bTextBox.Text) or 0
-
-				return Color3.new(r / 255, g / 255, b / 255)
-			end
-			script.Parent.MouseButton1Click:Connect(function()
-				if ObjectToChangeColor3:IsA("TextLabel") and vauleToChange == "TextColor3" then
-					ObjectToChangeColor3["TextColor3"] = NewColor3()
-				else
-					ObjectToChangeColor3[vauleToChange] = NewColor3()
-				end
-			end)
-		end
-		coroutine.wrap(NQZNI_fake_script)()
-		local function RFLGZLL_fake_script() -- x.LocalScript 
-			local script = Instance.new('LocalScript', x)
-
-			script.Parent.MouseButton1Click:Connect(function()
-				script.Parent.Parent.Parent.Parent:Destroy()
-			end)
-		end
-		coroutine.wrap(RFLGZLL_fake_script)()
-		local function JVWXOXK_fake_script() -- TextButton_2.LocalScript 
-			local script = Instance.new('LocalScript', TextButton_2)
-
-			script.Parent.MouseButton1Click:Connect(function()
-				script.Parent.Parent.Parent.asd.Visible = not script.Parent.Parent.Parent.asd.Visible
-				script.Parent.Text = script.Parent.Parent.Parent.asd.Visible and "-" or "+"
-			end)
-		end
-		coroutine.wrap(JVWXOXK_fake_script)()
-		local function YDIXB_fake_script() -- Titile.LocalScript 
-			local script = Instance.new('LocalScript', Titile)
-
-			local UserInputService = game:GetService("UserInputService")
-
-			local gui = script.Parent
-
-			local dragging
-			local dragInput
-			local dragStart
-			local startPos
-
-			local function update(input)
-				local delta = input.Position - dragStart
-				gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			end
-
-			gui.InputBegan:Connect(function(input)
-				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-					dragging = true
-					dragStart = input.Position
-					startPos = gui.Position
-
-					input.Changed:Connect(function()
-						if input.UserInputState == Enum.UserInputState.End then
-							dragging = false
-						end
-					end)
-				end
-			end)
-
-			gui.InputChanged:Connect(function(input)
-				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-					dragInput = input
-				end
-			end)
-
-			UserInputService.InputChanged:Connect(function(input)
-				if input == dragInput and dragging then
-					update(input)
-				end
-			end)
-		end
-		coroutine.wrap(YDIXB_fake_script)()
-
-	end
-	local Button = script.Parent
-	Button.MouseButton1Click:Connect(function()
-		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.TitleText, "TextColor3", "Title Text")
-	end)
-end;
-task.spawn(C_f5);
+task.spawn(C_f4);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
 local function C_f7()
 	local script = G2L["f7"];
@@ -13370,7 +13346,7 @@ local function C_f7()
 	end
 	local Button = script.Parent
 	Button.MouseButton1Click:Connect(function()
-		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.mainFrame, "BorderColor3", "Border Frame")
+		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.TitleText, "TextColor3", "Title Text")
 	end)
 end;
 task.spawn(C_f7);
@@ -13701,13 +13677,344 @@ local function C_f9()
 	end
 	local Button = script.Parent
 	Button.MouseButton1Click:Connect(function()
-		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.TitleText, "BorderColor3", "Border Frame")
+		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.mainFrame, "BorderColor3", "Border Frame")
 	end)
 end;
 task.spawn(C_f9);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
 local function C_fb()
 	local script = G2L["fb"];
+	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName)
+		-- Gui to Lua
+		-- Version: 3.2
+
+		-- Instances:
+
+		local ColorPickGui = Instance.new("ScreenGui")
+		local Titile = Instance.new("Frame")
+		local asd = Instance.new("Frame")
+		local R = Instance.new("TextBox")
+		local G = Instance.new("TextBox")
+		local B = Instance.new("TextBox")
+		local ColorDisplay = Instance.new("Frame")
+		local TextLabel = Instance.new("TextLabel")
+		local TextButton = Instance.new("TextButton")
+		local TextLabel_2 = Instance.new("TextLabel")
+		local x = Instance.new("TextButton")
+		local TextButton_2 = Instance.new("TextButton")
+
+		--Properties:
+
+		ColorPickGui.Name = "ColorPickGui"
+		ColorPickGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+		Titile.Name = "Titile"
+		Titile.Parent = ColorPickGui
+		Titile.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		Titile.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		Titile.Position = UDim2.new(0.346303493, 0, 0.35778442, 0)
+		Titile.Size = UDim2.new(0, 275, 0, 15)
+
+		asd.Name = "asd"
+		asd.Parent = Titile
+		asd.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		asd.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		asd.Position = UDim2.new(0, 0, 1, 0)
+		asd.Size = UDim2.new(0, 275, 0, 210)
+
+		R.Name = "R"
+		R.Parent = asd
+		R.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		R.BorderColor3 = Color3.fromRGB(255, 0, 4)
+		R.Position = UDim2.new(0, 0, 0.0571428575, 0)
+		R.Size = UDim2.new(0, 76, 0, 20)
+		R.Font = Enum.Font.Arial
+		R.PlaceholderColor3 = Color3.fromRGB(178, 0, 3)
+		R.PlaceholderText = "R"
+		R.Text = ""
+		R.TextColor3 = Color3.fromRGB(255, 0, 4)
+		R.TextSize = 14.000
+		R.TextWrapped = true
+
+		G.Name = "G"
+		G.Parent = asd
+		G.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		G.BorderColor3 = Color3.fromRGB(26, 255, 0)
+		G.Position = UDim2.new(0.378181815, 0, 0.0571428575, 0)
+		G.Size = UDim2.new(0, 76, 0, 20)
+		G.Font = Enum.Font.Arial
+		G.PlaceholderColor3 = Color3.fromRGB(3, 178, 0)
+		G.PlaceholderText = "G"
+		G.Text = ""
+		G.TextColor3 = Color3.fromRGB(4, 255, 0)
+		G.TextSize = 14.000
+		G.TextWrapped = true
+
+		B.Name = "B"
+		B.Parent = asd
+		B.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		B.BorderColor3 = Color3.fromRGB(0, 13, 255)
+		B.Position = UDim2.new(0.723636389, 0, 0.0571428575, 0)
+		B.Size = UDim2.new(0, 76, 0, 20)
+		B.Font = Enum.Font.Arial
+		B.PlaceholderColor3 = Color3.fromRGB(0, 9, 178)
+		B.PlaceholderText = "B"
+		B.Text = ""
+		B.TextColor3 = Color3.fromRGB(30, 0, 255)
+		B.TextSize = 14.000
+		B.TextWrapped = true
+
+		ColorDisplay.Name = "ColorDisplay"
+		ColorDisplay.Parent = asd
+		ColorDisplay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ColorDisplay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		ColorDisplay.BorderSizePixel = 0
+		ColorDisplay.Position = UDim2.new(0, 0, 0.433333337, 0)
+		ColorDisplay.Size = UDim2.new(0, 275, 0, 28)
+
+		TextLabel.Parent = ColorDisplay
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.BorderSizePixel = 0
+		TextLabel.Position = UDim2.new(0.13454546, 0, -0.392857134, 0)
+		TextLabel.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel.Font = Enum.Font.SourceSans
+		TextLabel.Text = "Color displayer"
+		TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel.TextSize = 14.000
+
+		TextButton.Parent = asd
+		TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.BorderSizePixel = 2
+		TextButton.Position = UDim2.new(0.0799999982, 0, 0.619047642, 0)
+		TextButton.Size = UDim2.new(0, 229, 0, 66)
+		TextButton.Font = Enum.Font.Arial
+		TextButton.Text = "Done"
+		TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 14.000
+		TextButton.TextWrapped = true
+
+		TextLabel_2.Parent = Titile
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.Size = UDim2.new(0, 241, 0, 14)
+		TextLabel_2.Font = Enum.Font.SourceSans
+		TextLabel_2.Text = "Color selector For "..ObjectName
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextSize = 14.000
+		TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		x.Name = "x"
+		x.Parent = TextLabel_2
+		x.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+		x.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		x.Position = UDim2.new(1.06639004, 0, 0, 0)
+		x.Size = UDim2.new(0, 18, 0, 14)
+		x.Font = Enum.Font.SourceSans
+		x.Text = "x"
+		x.TextColor3 = Color3.fromRGB(0, 0, 0)
+		x.TextSize = 14.000
+
+		TextButton_2.Name = "-"
+		TextButton_2.Parent = TextLabel_2
+		TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 4, 255)
+		TextButton_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_2.Position = UDim2.new(1, 0, 0, 0)
+		TextButton_2.Size = UDim2.new(0, 18, 0, 14)
+		TextButton_2.Font = Enum.Font.SourceSans
+		TextButton_2.Text = "-"
+		TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton_2.TextSize = 14.000
+
+		-- Scripts:
+
+		local function EOIN_fake_script() -- R.LocalScript 
+			local script = Instance.new('LocalScript', R)
+
+			local rTextBox = script.Parent.Parent.R
+			local gTextBox = script.Parent.Parent.G
+			local bTextBox = script.Parent.Parent.B
+			local colorDisplay = script.Parent.Parent.ColorDisplay
+			-- Function to update color display
+			local function updateColorDisplay()
+				local r = tonumber(rTextBox.Text) or 0
+				local g = tonumber(gTextBox.Text) or 0
+				local b = tonumber(bTextBox.Text) or 0
+
+				colorDisplay.BackgroundColor3 = Color3.new(r / 255, g / 255, b / 255)
+			end
+			script.Parent.FocusLost:Connect(updateColorDisplay)
+
+		end
+		coroutine.wrap(EOIN_fake_script)()
+		local function GKERK_fake_script() -- G.LocalScript 
+			local script = Instance.new('LocalScript', G)
+
+			local rTextBox = script.Parent.Parent.R
+			local gTextBox = script.Parent.Parent.G
+			local bTextBox = script.Parent.Parent.B
+			local colorDisplay = script.Parent.Parent.ColorDisplay
+			-- Function to update color display
+			local function updateColorDisplay()
+				local r = tonumber(rTextBox.Text) or 0
+				local g = tonumber(gTextBox.Text) or 0
+				local b = tonumber(bTextBox.Text) or 0
+
+				colorDisplay.BackgroundColor3 = Color3.new(r / 255, g / 255, b / 255)
+			end
+			script.Parent.FocusLost:Connect(updateColorDisplay)
+
+		end
+		coroutine.wrap(GKERK_fake_script)()
+		local function NGAE_fake_script() -- B.LocalScript 
+			local script = Instance.new('LocalScript', B)
+
+			local rTextBox = script.Parent.Parent.R
+			local gTextBox = script.Parent.Parent.G
+			local bTextBox = script.Parent.Parent.B
+			local colorDisplay = script.Parent.Parent.ColorDisplay
+			-- Function to update color display
+			local function updateColorDisplay()
+				local r = tonumber(rTextBox.Text) or 0
+				local g = tonumber(gTextBox.Text) or 0
+				local b = tonumber(bTextBox.Text) or 0
+
+				colorDisplay.BackgroundColor3 = Color3.new(r / 255, g / 255, b / 255)
+			end
+			script.Parent.FocusLost:Connect(updateColorDisplay)
+
+		end
+		coroutine.wrap(NGAE_fake_script)()
+		local function SDLBK_fake_script() -- TextButton.LocalScript 
+			local script = Instance.new('LocalScript', TextButton)
+
+
+			local frame = script.Parent -- Change "ScreenGui" and "Frame" accordingly
+
+			-- Function to generate rainbow color
+			local function generateRainbowColor(time)
+				local frequency = 0.5
+				local red = math.sin(frequency * time + 0) * 127 + 128
+				local green = math.sin(frequency * time + 2) * 127 + 128
+				local blue = math.sin(frequency * time + 4) * 127 + 128
+
+				return Color3.fromRGB(red, green, blue)
+			end
+
+			-- Function to update frame border color
+			local function updateBorderColor()
+				local time = 0
+				while wait(0.1) do
+					time = time + 0.1
+					local rainbowColor = generateRainbowColor(time)
+
+					-- Assuming the frame has a BorderSizePixel property
+					frame.BorderColor3 = rainbowColor
+				end
+			end
+
+			updateBorderColor()
+		end
+		coroutine.wrap(SDLBK_fake_script)()
+		local function NQZNI_fake_script() -- TextButton.LocalScript 
+			local script = Instance.new('LocalScript', TextButton)
+
+			local rTextBox = script.Parent.Parent.R
+			local gTextBox = script.Parent.Parent.G
+			local bTextBox = script.Parent.Parent.B
+			local colorDisplay = script.Parent.Parent.ColorDisplay
+			-- Function to update color display
+			local function NewColor3()
+				local r = tonumber(rTextBox.Text) or 0
+				local g = tonumber(gTextBox.Text) or 0
+				local b = tonumber(bTextBox.Text) or 0
+
+				return Color3.new(r / 255, g / 255, b / 255)
+			end
+			script.Parent.MouseButton1Click:Connect(function()
+				if ObjectToChangeColor3:IsA("TextLabel") and vauleToChange == "TextColor3" then
+					ObjectToChangeColor3["TextColor3"] = NewColor3()
+				else
+					ObjectToChangeColor3[vauleToChange] = NewColor3()
+				end
+			end)
+		end
+		coroutine.wrap(NQZNI_fake_script)()
+		local function RFLGZLL_fake_script() -- x.LocalScript 
+			local script = Instance.new('LocalScript', x)
+
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Parent.Parent:Destroy()
+			end)
+		end
+		coroutine.wrap(RFLGZLL_fake_script)()
+		local function JVWXOXK_fake_script() -- TextButton_2.LocalScript 
+			local script = Instance.new('LocalScript', TextButton_2)
+
+			script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.Parent.Parent.asd.Visible = not script.Parent.Parent.Parent.asd.Visible
+				script.Parent.Text = script.Parent.Parent.Parent.asd.Visible and "-" or "+"
+			end)
+		end
+		coroutine.wrap(JVWXOXK_fake_script)()
+		local function YDIXB_fake_script() -- Titile.LocalScript 
+			local script = Instance.new('LocalScript', Titile)
+
+			local UserInputService = game:GetService("UserInputService")
+
+			local gui = script.Parent
+
+			local dragging
+			local dragInput
+			local dragStart
+			local startPos
+
+			local function update(input)
+				local delta = input.Position - dragStart
+				gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			end
+
+			gui.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					dragging = true
+					dragStart = input.Position
+					startPos = gui.Position
+
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragging = false
+						end
+					end)
+				end
+			end)
+
+			gui.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+
+			UserInputService.InputChanged:Connect(function(input)
+				if input == dragInput and dragging then
+					update(input)
+				end
+			end)
+		end
+		coroutine.wrap(YDIXB_fake_script)()
+
+	end
+	local Button = script.Parent
+	Button.MouseButton1Click:Connect(function()
+		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.TitleText, "BorderColor3", "Border Frame")
+	end)
+end;
+task.spawn(C_fb);
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+local function C_fd()
+	local script = G2L["fd"];
 	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName, GetChildren)
 		-- Gui to Lua
 		-- Version: 3.2
@@ -14041,10 +14348,10 @@ local function C_fb()
 		AddColorPickerForObject(script.Parent.Parent.Parent.Pages, "BorderColor3", "All pages buttons", true)
 	end)
 end;
-task.spawn(C_fb);
+task.spawn(C_fd);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_fd()
-	local script = G2L["fd"];
+local function C_ff()
+	local script = G2L["ff"];
 	script.Parent.MouseButton1Click:Connect(function()
 	--[=[
 	 d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
@@ -14326,10 +14633,10 @@ local function C_fd()
 		return G2L["1"], require;
 	end)
 end;
-task.spawn(C_fd);
+task.spawn(C_ff);
 -- StarterGui.PrisonD0llan.Title.LocalScript
-local function C_ff()
-	local script = G2L["ff"];
+local function C_102()
+	local script = G2L["102"];
 	local UserInputService = game:GetService("UserInputService")
 
 	local gui = script.Parent
@@ -14370,10 +14677,10 @@ local function C_ff()
 		end
 	end)
 end;
-task.spawn(C_ff);
+task.spawn(C_102);
 -- StarterGui.PrisonD0llan.LocalScript
-local function C_100()
-	local script = G2L["100"];
+local function C_103()
+	local script = G2L["103"];
 	local request = http_request or request or HttpPost or syn.request or fluxus.request or http.request
 	local executor  = identifyexecutor() or "no les dire cual uso xD"
 	local whilelisted = "G0bbyAlt3"
@@ -14650,6 +14957,6 @@ local function C_100()
 		end
 	end
 end;
-task.spawn(C_100);
+task.spawn(C_103);
 
 return G2L["1"], require;
