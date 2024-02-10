@@ -2675,7 +2675,7 @@ local function C_2c()
 		return
 	end
 	script.Parent.MouseButton1Click:Connect(function()
-		ChangeTeam("Guards")
+		ChangeTeam(game.Teams.Guards)
 	end)
 end;
 task.spawn(C_2c);
@@ -2741,7 +2741,7 @@ local function C_2e()
 		return
 	end
 	script.Parent.MouseButton1Click:Connect(function()
-		ChangeTeam("Inmates")
+		ChangeTeam(game.Teams.Inmates)
 	end)
 end;
 task.spawn(C_2e);
@@ -2762,6 +2762,8 @@ local function C_30()
 		wait()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lastPos)
 		script.Parent.Text = "Changed!"
+		wait(2)
+		script.Parent.Text = "Criminal"
 	end)
 end;
 task.spawn(C_30);
