@@ -31,6 +31,7 @@ local yes = Instance.new("TextButton")
 
 WindowGui.Name = "WindowGui"
 WindowGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WindowGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 WindowGui.ResetOnSpawn = false
 
 WindowFrame.Name = "WindowFrame"
@@ -272,7 +273,7 @@ yes.TextWrapped = true
 
 -- Scripts:
 
-local function WOIMEF_fake_script() -- MinimizeButton.LocalScript 
+local function UDUDUK_fake_script() -- MinimizeButton.LocalScript 
 	local script = Instance.new('LocalScript', MinimizeButton)
 
 	local maximizeButton = script.Parent
@@ -296,8 +297,8 @@ local function WOIMEF_fake_script() -- MinimizeButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WOIMEF_fake_script)()
-local function HBJIK_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(UDUDUK_fake_script)()
+local function SGZHJ_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local CloseButton = script.Parent --TextButton
@@ -315,8 +316,8 @@ local function HBJIK_fake_script() -- CloseButton.LocalScript
 	--	CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 	--end)
 end
-coroutine.wrap(HBJIK_fake_script)()
-local function AETEVEU_fake_script() -- BI.LocalScript 
+coroutine.wrap(SGZHJ_fake_script)()
+local function SYRHUQM_fake_script() -- BI.LocalScript 
 	local script = Instance.new('LocalScript', BI)
 
 	--Function to make visible and invisible objects
@@ -348,8 +349,8 @@ local function AETEVEU_fake_script() -- BI.LocalScript
 	visible(Parent.informationFrame)
 	end)
 end
-coroutine.wrap(AETEVEU_fake_script)()
-local function LAHXLB_fake_script() -- AI.LocalScript 
+coroutine.wrap(SYRHUQM_fake_script)()
+local function SXPEGYA_fake_script() -- AI.LocalScript 
 	local script = Instance.new('LocalScript', AI)
 
 	--Function to make visible and invisible objects
@@ -381,8 +382,8 @@ local function LAHXLB_fake_script() -- AI.LocalScript
 		invisible(Parent.informationFrame)
 	end)
 end
-coroutine.wrap(LAHXLB_fake_script)()
-local function HBOB_fake_script() -- PlayerNameTextBox.LocalScript 
+coroutine.wrap(SXPEGYA_fake_script)()
+local function NINM_fake_script() -- PlayerNameTextBox.LocalScript 
 	local script = Instance.new('LocalScript', PlayerNameTextBox)
 
 	-- Obtén el TextBox
@@ -424,8 +425,8 @@ local function HBOB_fake_script() -- PlayerNameTextBox.LocalScript
 	end)
 	
 end
-coroutine.wrap(HBOB_fake_script)()
-local function VSNEIGW_fake_script() -- ActionButtonMANAGER.LocalScript 
+coroutine.wrap(NINM_fake_script)()
+local function OFRNE_fake_script() -- ActionButtonMANAGER.LocalScript 
 	local script = Instance.new('LocalScript', ActionButtonMANAGER)
 
 	local function bring(player, position)
@@ -635,8 +636,8 @@ local function VSNEIGW_fake_script() -- ActionButtonMANAGER.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VSNEIGW_fake_script)()
-local function VCDNJXS_fake_script() -- ActionButtonBRING.LocalScript 
+coroutine.wrap(OFRNE_fake_script)()
+local function HPEORH_fake_script() -- ActionButtonBRING.LocalScript 
 	local script = Instance.new('LocalScript', ActionButtonBRING)
 
 	local function bring(player, position)
@@ -742,8 +743,8 @@ local function VCDNJXS_fake_script() -- ActionButtonBRING.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VCDNJXS_fake_script)()
-local function LKJSHVD_fake_script() -- ActionButtonTRASH.LocalScript 
+coroutine.wrap(HPEORH_fake_script)()
+local function RBMJXZ_fake_script() -- ActionButtonTRASH.LocalScript 
 	local script = Instance.new('LocalScript', ActionButtonTRASH)
 
 	local function getplayer()
@@ -839,8 +840,8 @@ local function LKJSHVD_fake_script() -- ActionButtonTRASH.LocalScript
 			end
 		end)
 end
-coroutine.wrap(LKJSHVD_fake_script)()
-local function WDMBPKJ_fake_script() -- WindowFrame.DraggableScript 
+coroutine.wrap(RBMJXZ_fake_script)()
+local function LJUI_fake_script() -- WindowFrame.DraggableScript 
 	local script = Instance.new('LocalScript', WindowFrame)
 
 	--Variables
@@ -900,8 +901,8 @@ local function WDMBPKJ_fake_script() -- WindowFrame.DraggableScript
 		end
 	end)
 end
-coroutine.wrap(WDMBPKJ_fake_script)()
-local function RJPGYIV_fake_script() -- no.LocalScript 
+coroutine.wrap(LJUI_fake_script)()
+local function TNYZNOP_fake_script() -- no.LocalScript 
 	local script = Instance.new('LocalScript', no)
 
 	local NoButton = script.Parent
@@ -911,8 +912,8 @@ local function RJPGYIV_fake_script() -- no.LocalScript
 	end
 	NoButton.MouseButton1Click:Connect(closewarning)
 end
-coroutine.wrap(RJPGYIV_fake_script)()
-local function AHIM_fake_script() -- yes.LocalScript 
+coroutine.wrap(TNYZNOP_fake_script)()
+local function SPZAVSB_fake_script() -- yes.LocalScript 
 	local script = Instance.new('LocalScript', yes)
 
 	local yesbutton = script.Parent
@@ -935,4 +936,4 @@ local function AHIM_fake_script() -- yes.LocalScript
 		ScreenGui:Destroy()
 	end)
 end
-coroutine.wrap(AHIM_fake_script)()
+coroutine.wrap(SPZAVSB_fake_script)()
