@@ -779,7 +779,7 @@ local script = G2L["18"];
 	--Variables
 	local TitleBar = script.Parent["TitleBar"]
 	local IsCursonOnTitleBar = false
-	local AllowDrag = script.Parent.Parent.options.AllowDragging
+	local AllowDrag = true
 	--MouseEnter and MouseLeave Connection
 	TitleBar.MouseEnter:Connect(function()
 		if IsCursonOnTitleBar == false then
@@ -802,7 +802,7 @@ local script = G2L["18"];
 	local startPos
 	
 	local function update(input)
-		if IsCursonOnTitleBar and AllowDrag.Text == "yes" then
+		if IsCursonOnTitleBar and AllowDrag then
 			local delta = input.Position - dragStart
 			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		end
