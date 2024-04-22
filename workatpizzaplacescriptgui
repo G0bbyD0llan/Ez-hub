@@ -1,3 +1,5 @@
+--workspace.MessageService.Dialog.Dialog:Fire("¡Welcome!","Script By G0bbyD0llan57 on YT!","Executing in 5 seconds","",true,true)
+--wait(5)
 --[=[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
 88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
@@ -7,13 +9,13 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 42 | Scripts: 14 | Modules: 0
+-- Instances: 55 | Scripts: 19 | Modules: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-print("screengui created in Coregui")
+
 -- StarterGui.ScreenGui.WindowFrame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 2;
@@ -149,6 +151,7 @@ G2L["10"]["Name"] = [[target]];
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.target.PlayerNameTextBox
 G2L["11"] = Instance.new("TextBox", G2L["10"]);
+G2L["11"]["CursorPosition"] = -1;
 G2L["11"]["BorderSizePixel"] = 2;
 G2L["11"]["TextSize"] = 20;
 G2L["11"]["TextWrapped"] = true;
@@ -230,45 +233,45 @@ G2L["18"]["Position"] = UDim2.new(-0.0014298235764726996, 0, 0.28285717964172363
 G2L["19"] = Instance.new("LocalScript", G2L["18"]);
 
 
--- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling
-G2L["1a"] = Instance.new("Frame", G2L["e"]);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.target.Frame.ActionButtonTRASH
+G2L["1a"] = Instance.new("TextButton", G2L["13"]);
+G2L["1a"]["TextWrapped"] = true;
 G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["BackgroundTransparency"] = 1;
-G2L["1a"]["Size"] = UDim2.new(0, 600, 0, 350);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Visible"] = false;
-G2L["1a"]["Name"] = [[trolling]];
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["1a"]["TextSize"] = 20;
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Size"] = UDim2.new(1.001429796218872, 0, 0.11428571492433548, 0);
+G2L["1a"]["Name"] = [[ActionButtonTRASH]];
+G2L["1a"]["Text"] = [[fill it with garbage]];
+G2L["1a"]["Position"] = UDim2.new(-0.0014298235764726996, 0, 0.43642860651016235, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.target.Frame.ActionButtonTRASH.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling
+G2L["1c"] = Instance.new("Frame", G2L["e"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 600, 0, 350);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Visible"] = false;
+G2L["1c"]["Name"] = [[trolling]];
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame
-G2L["1b"] = Instance.new("Frame", G2L["1a"]);
-G2L["1b"]["BorderSizePixel"] = 0;
-G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["BackgroundTransparency"] = 1;
-G2L["1b"]["Size"] = UDim2.new(0, 586, 0, 336);
-G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1b"]["Position"] = UDim2.new(0.008333333767950535, 0, 0.022857142612338066, 0);
+G2L["1d"] = Instance.new("Frame", G2L["1c"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 586, 0, 336);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Position"] = UDim2.new(0.008333333767950535, 0, 0.022857142612338066, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonMANAGER
-G2L["1c"] = Instance.new("TextButton", G2L["1b"]);
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextScaled"] = true;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
-G2L["1c"]["TextSize"] = 20;
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["Size"] = UDim2.new(1.001429796218872, 0, 0.08154761791229248, 0);
-G2L["1c"]["Name"] = [[ActionButtonMANAGER]];
-G2L["1c"]["Text"] = [[get manager]];
-G2L["1c"]["Position"] = UDim2.new(-0.0014298474416136742, 0, -0.0028571174480021, 0);
-
--- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonMANAGER.LocalScript
-G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
-
-
--- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP
-G2L["1e"] = Instance.new("TextButton", G2L["1b"]);
+G2L["1e"] = Instance.new("TextButton", G2L["1d"]);
 G2L["1e"]["TextWrapped"] = true;
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["TextScaled"] = true;
@@ -276,17 +279,17 @@ G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
 G2L["1e"]["TextSize"] = 20;
 G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1e"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154761791229248, 0);
-G2L["1e"]["Name"] = [[ActionButtonFSP]];
-G2L["1e"]["Text"] = [[FE Sound player]];
-G2L["1e"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.10428573936223984, 0);
+G2L["1e"]["Size"] = UDim2.new(1.001429796218872, 0, 0.08154761791229248, 0);
+G2L["1e"]["Name"] = [[ActionButtonMANAGER]];
+G2L["1e"]["Text"] = [[get manager]];
+G2L["1e"]["Position"] = UDim2.new(-0.0014298474416136742, 0, -0.0028571174480021, 0);
 
--- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP.LocalScript
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonMANAGER.LocalScript
 G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
 
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP
-G2L["20"] = Instance.new("TextButton", G2L["1b"]);
+G2L["20"] = Instance.new("TextButton", G2L["1d"]);
 G2L["20"]["TextWrapped"] = true;
 G2L["20"]["BorderSizePixel"] = 0;
 G2L["20"]["TextScaled"] = true;
@@ -296,99 +299,236 @@ G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154761791229248, 0);
 G2L["20"]["Name"] = [[ActionButtonFSP]];
-G2L["20"]["Text"] = [[loop open ovens]];
-G2L["20"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.21142859756946564, 0);
+G2L["20"]["Text"] = [[FE Sound player (You have to be close to some players or some player.)]];
+G2L["20"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.10428573936223984, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP.LocalScript
 G2L["21"] = Instance.new("LocalScript", G2L["20"]);
 
 
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP.SID
+G2L["22"] = Instance.new("TextBox", G2L["20"]);
+G2L["22"]["CursorPosition"] = -1;
+G2L["22"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BorderSizePixel"] = 2;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["PlaceholderText"] = [[Enter Sound ID HERE]];
+G2L["22"]["Size"] = UDim2.new(0, 586, 0, 18);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[]];
+G2L["22"]["Position"] = UDim2.new(0, 0, 1.2773722410202026, 0);
+G2L["22"]["Name"] = [[SID]];
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP.VOLUME
+G2L["23"] = Instance.new("TextBox", G2L["20"]);
+G2L["23"]["CursorPosition"] = -1;
+G2L["23"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["BorderSizePixel"] = 2;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(123, 123, 123);
+G2L["23"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["PlaceholderText"] = [[Enter Sound volume HERE (1 to 10)]];
+G2L["23"]["Size"] = UDim2.new(0, 586, 0, 18);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[]];
+G2L["23"]["Position"] = UDim2.new(0, 0, 2.1897809505462646, 0);
+G2L["23"]["Name"] = [[VOLUME]];
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonLOV
+G2L["24"] = Instance.new("TextButton", G2L["1d"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["24"]["TextSize"] = 20;
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154761791229248, 0);
+G2L["24"]["Name"] = [[ActionButtonLOV]];
+G2L["24"]["Text"] = [[loop open ovens]];
+G2L["24"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.35726192593574524, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonLOV.LocalScript
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonBCR
+G2L["26"] = Instance.new("TextButton", G2L["1d"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["26"]["TextSize"] = 20;
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154761791229248, 0);
+G2L["26"]["Name"] = [[ActionButtonBCR]];
+G2L["26"]["Text"] = [[Break cook room]];
+G2L["26"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.45547622442245483, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonBCR.LocalScript
+G2L["27"] = Instance.new("LocalScript", G2L["26"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonCAR
+G2L["28"] = Instance.new("TextButton", G2L["1d"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["28"]["TextSize"] = 20;
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154762536287308, 0);
+G2L["28"]["Name"] = [[ActionButtonCAR]];
+G2L["28"]["Text"] = [[get in a car]];
+G2L["28"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.5596429705619812, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonCAR.LocalScript
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonGUO
+G2L["2a"] = Instance.new("TextButton", G2L["1d"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["2a"]["TextSize"] = 20;
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154762536287308, 0);
+G2L["2a"]["Name"] = [[ActionButtonGUO]];
+G2L["2a"]["Text"] = [[0 gravity unanchored objects]];
+G2L["2a"]["Position"] = UDim2.new(-0.0014298474416136742, 0, 0.660833477973938, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonGUO.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonAVK
+G2L["2c"] = Instance.new("TextButton", G2L["1d"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["2c"]["TextSize"] = 20;
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Size"] = UDim2.new(1.004842758178711, 0, 0.08154762536287308, 0);
+G2L["2c"]["Name"] = [[ActionButtonAVK]];
+G2L["2c"]["Text"] = [[Anti vote kick (rejoin the game when they give you a vote kick)]];
+G2L["2c"]["Position"] = UDim2.new(0.00027663714718073606, 0, 0.76202392578125, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonAVK.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.creditsTWO
+G2L["2e"] = Instance.new("TextLabel", G2L["e"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["TextStrokeTransparency"] = 0;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2e"]["TextSize"] = 25;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["Size"] = UDim2.new(0, 600, 0, 350);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Script by G0bbyD0llan57 on YT. Please select any page]];
+G2L["2e"]["Name"] = [[creditsTWO]];
+G2L["2e"]["BackgroundTransparency"] = 1;
+
 -- StarterGui.ScreenGui.WindowFrame.DraggableScript
-G2L["22"] = Instance.new("LocalScript", G2L["2"]);
-G2L["22"]["Name"] = [[DraggableScript]];
+G2L["2f"] = Instance.new("LocalScript", G2L["2"]);
+G2L["2f"]["Name"] = [[DraggableScript]];
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning
-G2L["23"] = Instance.new("Frame", G2L["2"]);
-G2L["23"]["BorderSizePixel"] = 5;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(132, 132, 132);
-G2L["23"]["Size"] = UDim2.new(0, 227, 0, 145);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Position"] = UDim2.new(0.3100000023841858, 0, 0.37892860174179077, 0);
-G2L["23"]["Visible"] = false;
-G2L["23"]["Name"] = [[CloseWarning]];
+G2L["30"] = Instance.new("Frame", G2L["2"]);
+G2L["30"]["BorderSizePixel"] = 5;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(132, 132, 132);
+G2L["30"]["Size"] = UDim2.new(0, 227, 0, 145);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Position"] = UDim2.new(0.3100000023841858, 0, 0.37892860174179077, 0);
+G2L["30"]["Visible"] = false;
+G2L["30"]["Name"] = [[CloseWarning]];
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.title
-G2L["24"] = Instance.new("TextLabel", G2L["23"]);
-G2L["24"]["BorderSizePixel"] = 2;
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["24"]["TextSize"] = 14;
-G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Size"] = UDim2.new(0, 227, 0, 26);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Text"] = [[Warning]];
-G2L["24"]["Name"] = [[title]];
+G2L["31"] = Instance.new("TextLabel", G2L["30"]);
+G2L["31"]["BorderSizePixel"] = 2;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Size"] = UDim2.new(0, 227, 0, 26);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Warning]];
+G2L["31"]["Name"] = [[title]];
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.warning
-G2L["25"] = Instance.new("TextLabel", G2L["23"]);
-G2L["25"]["TextWrapped"] = true;
-G2L["25"]["BorderSizePixel"] = 3;
-G2L["25"]["TextScaled"] = true;
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["TextSize"] = 14;
-G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Size"] = UDim2.new(0, 211, 0, 53);
-G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[Are you sure you want to close this window?]];
-G2L["25"]["Name"] = [[warning]];
-G2L["25"]["Position"] = UDim2.new(0.030837005004286766, 0, 0.22068965435028076, 0);
+G2L["32"] = Instance.new("TextLabel", G2L["30"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 3;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Size"] = UDim2.new(0, 211, 0, 53);
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[Are you sure you want to close this window?]];
+G2L["32"]["Name"] = [[warning]];
+G2L["32"]["Position"] = UDim2.new(0.030837005004286766, 0, 0.22068965435028076, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame
-G2L["26"] = Instance.new("Frame", G2L["23"]);
-G2L["26"]["BorderSizePixel"] = 0;
-G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26"]["BackgroundTransparency"] = 1;
-G2L["26"]["Size"] = UDim2.new(0, 227, 0, 52);
-G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["Position"] = UDim2.new(0, 0, 0.6413792967796326, 0);
+G2L["33"] = Instance.new("Frame", G2L["30"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["BackgroundTransparency"] = 1;
+G2L["33"]["Size"] = UDim2.new(0, 227, 0, 52);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Position"] = UDim2.new(0, 0, 0.6413792967796326, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no
-G2L["27"] = Instance.new("TextButton", G2L["26"]);
-G2L["27"]["TextWrapped"] = true;
-G2L["27"]["BorderSizePixel"] = 2;
-G2L["27"]["TextScaled"] = true;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["TextSize"] = 14;
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["27"]["Size"] = UDim2.new(0, 54, 0, 50);
-G2L["27"]["Name"] = [[no]];
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[No]];
-G2L["27"]["Position"] = UDim2.new(0.030837005004286766, 0, 0.03846153989434242, 0);
+G2L["34"] = Instance.new("TextButton", G2L["33"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 2;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["34"]["Size"] = UDim2.new(0, 54, 0, 50);
+G2L["34"]["Name"] = [[no]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[No]];
+G2L["34"]["Position"] = UDim2.new(0.030837005004286766, 0, 0.03846153989434242, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no.LocalScript
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
 
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes
-G2L["29"] = Instance.new("TextButton", G2L["26"]);
-G2L["29"]["TextWrapped"] = true;
-G2L["29"]["BorderSizePixel"] = 2;
-G2L["29"]["TextScaled"] = true;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["TextSize"] = 14;
-G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29"]["TextColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["29"]["Size"] = UDim2.new(0, 54, 0, 50);
-G2L["29"]["Name"] = [[yes]];
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Text"] = [[yes]];
-G2L["29"]["Position"] = UDim2.new(0.6740087866783142, 0, 0.03846153989434242, 0);
+G2L["36"] = Instance.new("TextButton", G2L["33"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 2;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["TextColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["36"]["Size"] = UDim2.new(0, 54, 0, 50);
+G2L["36"]["Name"] = [[yes]];
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[yes]];
+G2L["36"]["Position"] = UDim2.new(0.6740087866783142, 0, 0.03846153989434242, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes.LocalScript
-G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
 
 
 -- StarterGui.ScreenGui.WindowFrame.TitleBar.MinimizeButton.LocalScript
@@ -433,6 +573,7 @@ local script = G2L["b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.ContentArea.trolling.Visible = false
 		script.Parent.Parent.Parent.ContentArea.target.Visible = true
+		script.Parent.Parent.Parent.ContentArea.creditsTWO.Visible = false
 	end)
 end;
 task.spawn(C_b);
@@ -442,6 +583,7 @@ local script = G2L["d"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.ContentArea.trolling.Visible = true
 		script.Parent.Parent.Parent.ContentArea.target.Visible = false
+		script.Parent.Parent.Parent.ContentArea.creditsTWO.Visible = false
 	end)
 end;
 task.spawn(C_d);
@@ -491,15 +633,11 @@ task.spawn(C_12);
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.target.Frame.ActionButtonMANAGER.LocalScript
 local function C_15()
 local script = G2L["15"];
-	local function bring(player, position)
+	local function bring(PlayerToBring, position)
 		local Players = game:GetService("Players")
 		local player = Players.LocalPlayer
 		local humanoid = player.Character.Humanoid
-		local man = player
-		--deletes a glitchy chair in the office (optional)
-		if workspace:FindFirstChild("ExtraChair") and workspace.ExtraChair:FindFirstChild("Seat") then
-			workspace.ExtraChair.Seat:Destroy()
-		end
+		local man = PlayerToBring
 	
 		if man then
 			--check if he's respawning or sitting
@@ -691,7 +829,7 @@ local script = G2L["15"];
 			local mteam = game:GetService("Teams").Manager
 			local man = mteam:GetPlayers()[1]
 			if typeof(man) == "Instance" and man:IsA("Player") then
-				if man.Name ~= PlayerToManager.Name then
+			if not man.Name == PlayerToManager.Name then
 			manager(PlayerToManager)
 			end
 			end
@@ -702,12 +840,12 @@ task.spawn(C_15);
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.target.Frame.ActionButtonBRING.LocalScript
 local function C_17()
 local script = G2L["17"];
-	local function bring(player, position)
+	local function bring(PlayerToBring, position)
 		local Players = game:GetService("Players")
 		local player = Players.LocalPlayer
 		local humanoid = player.Character.Humanoid
 		local oldPos = player.Character.PrimaryPart.CFrame
-		local man = player
+		local man = PlayerToBring
 		--deletes a glitchy chair in the office (optional)
 		if workspace:FindFirstChild("ExtraChair") and workspace.ExtraChair:FindFirstChild("Seat") then
 			workspace.ExtraChair.Seat:Destroy()
@@ -987,25 +1125,691 @@ local script = G2L["19"];
 	end)
 end;
 task.spawn(C_19);
--- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonMANAGER.LocalScript
-local function C_1d()
-local script = G2L["1d"];
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.target.Frame.ActionButtonTRASH.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	local function getplayer()
+		local textbox = script.Parent.Parent.Parent.PlayerNameTextBox
+		local player = game.Players:FindFirstChild(textbox.Text)
+		if player then
+			return player
+		end
+	end
+	local remote
+	do
+		local reg = (getreg or debug.getregistry)()
+		for i=1,#reg do
+			local f = reg[i]
+			if type(f)=="table" and rawget(f,"FireServer") and rawget(f,"BindEvents") then
+				remote = f
+			end
+		end
+	end
+local function moveThing(bmd, location)
+		remote:FireServer("UpdateProperty", bmd, "CFrame", location)
+		wait()
+		remote:FireServer("SquishDough", bmd)
+	end
+	local ruinherlife = false
+	local playerToF0ckIt
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/DNtN6W4D"))()
+		local PlayerToManager = getplayer()
+		if PlayerToManager then
+	playerToF0ckIt = PlayerToManager
+	ruinherlife = not ruinherlife
+	if ruinherlife then
+	script.Parent.Text ="un fill it with garbage"
+	script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+	else
+	script.Parent.Text = "fill it with garbage"
+	script.Parent.BackgroundColor3 = Color3.new(0, 0.470588, 0.843137)
+	end
+			while ruinherlife do
+				wait()
+				local posicionActual = playerToF0ckIt.Character.HumanoidRootPart.Position
+				if not posicionActual then return end
+				spawn(function()
+					for i,v in pairs(workspace.AllDough:GetChildren()) do
+						local NEWPLRPOS = CFrame.new(
+							posicionActual.X + math.random(-5, 5), -- Variación en el eje X (-10 a 10)
+							posicionActual.Y, -- Mantenemos la misma altura
+							posicionActual.Z + math.random(-5, 5) -- Variación en el eje Z (-10 a 10)
+						)
+						moveThing(v, NEWPLRPOS)
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.AllMountainDew:GetChildren()) do
+						local NEWPLRPOS = CFrame.new(
+							posicionActual.X + math.random(-5, 5), -- Variación en el eje X (-10 a 10)
+							posicionActual.Y, -- Mantenemos la misma altura
+							posicionActual.Z + math.random(-5, 5) -- Variación en el eje Z (-10 a 10)
+						)
+						moveThing(v, NEWPLRPOS)
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.BoxingRoom:GetChildren()) do
+						local NEWPLRPOS = CFrame.new(
+							posicionActual.X + math.random(-5, 5), -- Variación en el eje X (-10 a 10)
+							posicionActual.Y, -- Mantenemos la misma altura
+							posicionActual.Z + math.random(-5, 5) -- Variación en el eje Z (-10 a 10)
+						)
+						moveThing(v, NEWPLRPOS)
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.AllBox:GetChildren()) do
+						local NEWPLRPOS = CFrame.new(
+							posicionActual.X + math.random(-5, 5), -- Variación en el eje X (-10 a 10)
+							posicionActual.Y, -- Mantenemos la misma altura
+							posicionActual.Z + math.random(-5, 5) -- Variación en el eje Z (-10 a 10)
+						)
+						moveThing(v, NEWPLRPOS)
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.AllSupplyBoxes:GetChildren()) do
+						local NEWPLRPOS = CFrame.new(
+							posicionActual.X + math.random(-5, 5), -- Variación en el eje X (-10 a 10)
+							posicionActual.Y, -- Mantenemos la misma altura
+							posicionActual.Z + math.random(-5, 5) -- Variación en el eje Z (-10 a 10)
+						)
+						moveThing(v, NEWPLRPOS)
+					end
+				end)
+			end
+		end
 	end)
 end;
-task.spawn(C_1d);
--- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP.LocalScript
+task.spawn(C_1b);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonMANAGER.LocalScript
 local function C_1f()
 local script = G2L["1f"];
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/m8X6PnM7"))()
+		--by sirelKilla (v3rm)
+	
+		--vars
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local humanoid = player.Character.Humanoid
+		local character = player.Character
+		local OldPos = character.PrimaryPart.CFrame
+		local mteam = game:GetService("Teams").Manager
+		local man = mteam:GetPlayers()[1]
+		--deletes a glitchy chair in the office (optional)
+		if workspace:FindFirstChild("ExtraChair") and workspace.ExtraChair:FindFirstChild("Seat") then
+			workspace.ExtraChair.Seat:Destroy()
+		end
+	
+		if man then
+			--check if he's respawning or sitting
+			local htxt
+			if man.Character==nil or man.Character:FindFirstChild("HumanoidRootPart")==nil or man.Character:FindFirstChild("Humanoid")==nil then
+				htxt = "Failed because manager is respawning"
+			end
+			local target = man.Character.HumanoidRootPart
+			if man.Character.Humanoid.Sit then
+				htxt = "Failed because manager is sitting"
+			end
+			if htxt then
+				local h = Instance.new("Message",workspace)
+				h.Text = htxt
+				wait(3)
+				h:Destroy()
+				return
+			end
+			--get in a car
+			if not workspace.Cars:IsAncestorOf(humanoid.SeatPart) then
+				humanoid.Sit=false
+				wait(0.1)
+				for _,car in ipairs(workspace.Cars:GetChildren()) do
+					if car:FindFirstChild("Driver") and car.Driver.Occupant==nil and car:FindFirstChild("Owner") and car.Owner.Value==nil then
+						car.Driver:Sit(humanoid)
+						wait(0.3)
+						if humanoid.SeatPart then
+							break
+						end
+					end
+				end
+			end
+			local seat = humanoid.SeatPart
+			local car = seat.Parent
+			local returncf = CFrame.new(17,-3.5,21)*CFrame.Angles(0,math.pi/2,0)
+			for _,v in ipairs(car:GetChildren()) do if v.Name=="Wheel" then v.CanCollide=false end end
+			seat.CanCollide = false
+			for j=1,4 do
+				--attempt to sit manager
+				seat.Anchored=false
+				local e = 0
+				while car.HoodSeat.Occupant==nil and mteam:GetPlayers()[1] and target.Parent and e<5 do
+					local newpos = target.Position+Vector3.new(0,-3,0)+target.CFrame.lookVector*4.5+target.Velocity*Vector3.new(.5,0,.5)
+					local flatdir = (target.CFrame.lookVector*Vector3.new(1,0,1)).Unit --target's looking direction, flattened
+					if not (flatdir.x < 2) then --inf
+						flatdir = Vector3.new(1,0,0)
+					end
+					car:SetPrimaryPartCFrame(CFrame.new(newpos,newpos-flatdir))
+					seat.Velocity=Vector3.new()
+					local e2=0
+					while car.HoodSeat.Occupant==nil and mteam:GetPlayers()[1] and target.Parent and e2<0.7 do
+						e2=e2+wait()
+					end
+					e=e+e2
+				end
+				--attempt to move manager
+				car:SetPrimaryPartCFrame(returncf)
+				wait(.1)
+				car:SetPrimaryPartCFrame(returncf)
+				seat.Anchored=true
+				e = 0
+				while mteam:GetPlayers()[1] and target.Parent and e<1 do
+					e=e+wait()
+				end
+				car.HoodSeat:ClearAllChildren() --unsits anyone
+				e = 0
+				while mteam:GetPlayers()[1] and target.Parent and e<0.5 do
+					e=e+wait()
+				end
+				if mteam:GetPlayers()[1]==nil or target.Parent==nil then
+					break
+				end
+			end
+			--reset car
+			seat.Anchored=false
+			wait()
+			car:SetPrimaryPartCFrame(CFrame.new(120,10,-75))
+			wait()
+		end
+	
+		--become manager
+		humanoid.Sit = false
+		wait(0.1)
+		pcall(function() workspace.ManagerChair.Seat:Sit(humanoid) end)
+		wait(1)
+		humanoid.Sit = false
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		for i = 1, 5 do
+			player.Character.PrimaryPart.CFrame = OldPos
+			wait()
+		end
 	end)
 end;
 task.spawn(C_1f);
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonFSP.LocalScript
 local function C_21()
 local script = G2L["21"];
+function limitarNumero(numero)
+		if numero < 1 then
+			return 1
+		elseif numero > 10 then
+			return 10
+		else
+			return numero
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local audioId = tonumber(script.Parent.SID.Text)
+		local soundVolume = limitarNumero(tonumber(script.Parent.VOLUME.Text) or 10)
+		local userdata_1 = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Menu.Emotions;
+		local userdata_2 = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Menu.Emotions.ScrollingFrame.List;
+		local userdata_3 = game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Menu.Emotions.ScrollingFrame.List.Template;
+		local table_2 = {
+			["Name"] = 'Clap',
+			["GroupColor"] = 'Bright blue'
+		};
+		local table_1 = {
+			["Sleep"] = {
+				["SoundLooped"] = true,
+				["R15"] = 4308418502,
+				["FaceId"] = 66329905,
+				["Object"] = 'Sleep',
+				["Name"] = 'Sleep',
+				["R6"] = 868450390,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Volume"] = soundVolume,
+				["MovementCancel"] = true
+			},
+			["Bye"] = {
+				["Name"] = 'Bye',
+				["R6"] = 154179312,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308390587,
+				["Object"] = 'Bye'
+			},
+			["Point"] = {
+				["Name"] = 'Point',
+				["R6"] = 154188723,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308408568,
+				["Object"] = 'Point'
+			},
+			["Bathtub"] = {
+				["Name"] = 'Bathtub',
+				["R6"] = 1799552363,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["R15"] = 1794938782,
+				["Object"] = 'Bathtub'
+			},
+			["Glee"] = {
+				["Object"] = 'Glee',
+				["Name"] = 'Glee',
+				["FaceId"] = 27802003,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308399012,
+				["R6"] = 154159852
+			},
+			["Coffin"] = {
+				["Name"] = 'Coffin',
+				["MovementCancel"] = true,
+				["R15"] = 2506115448,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Object"] = 'Coffin',
+				["R6"] = 2506141081
+			},
+			["Twist"] = {
+				["Name"] = 'Twist',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308333353,
+				["Object"] = 'Twist'
+			},
+			["ToolHold"] = {
+				["Name"] = 'ToolHold',
+				["R6"] = 182393478,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308323620,
+				["Object"] = 'ToolHold'
+			},
+			["Confused"] = {
+				["Object"] = 'Confused',
+				["Name"] = 'Confused',
+				["FaceId"] = 120250454,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308393154,
+				["R6"] = 154183110
+			},
+			["DrinkSmoothie"] = {
+				["Object"] = 'DrinkSmoothie',
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Name"] = 'DrinkSmoothie',
+				["R15"] = 3339779154
+			},
+			["DrinkCoffee"] = {
+				["Object"] = 'DrinkCoffee',
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Name"] = 'DrinkCoffee',
+				["R15"] = 3339576493
+			},
+			["Shocked"] = {
+				["Object"] = 'Shocked',
+				["Name"] = 'Shocked',
+				["FaceId"] = 1601874588,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 1602091152,
+				["R6"] = 1620310558
+			},
+			["Laugh"] = {
+				["Object"] = 'Laugh',
+				["Name"] = 'Laugh',
+				["FaceId"] = 32063242,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308402710,
+				["R6"] = 154166518
+			},
+			["Idle"] = {
+				["Name"] = 'Idle',
+				["Weight"] = 0.4,
+				["R15"] = 507766388,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'Idle',
+				["R6"] = 180435571
+			},
+			["Jump"] = {
+				["Name"] = 'Jump',
+				["Weight"] = 0.7,
+				["R15"] = 507765000,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'Jump',
+				["R6"] = 125750702
+			},
+			["Sad"] = {
+				["Object"] = 'Sad',
+				["Name"] = 'Sad',
+				["FaceId"] = 76690153,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308410706,
+				["R6"] = 153230853
+			},
+			["Run"] = {
+				["Name"] = 'Run',
+				["Weight"] = 1,
+				["R15"] = 507767714,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'Run',
+				["R6"] = 180426354
+			},
+			["Swim"] = {
+				["Name"] = 'Swim',
+				["R6"] = 865902879,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["R15"] = 507784897,
+				["Object"] = 'Swim'
+			},
+			["SwimIdle"] = {
+				["Name"] = 'SwimIdle',
+				["Weight"] = 0.5,
+				["R15"] = 507785072,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'SwimIdle',
+				["R6"] = 865918502
+			},
+			["ConfusionOrb"] = {
+				["Name"] = 'ConfusionOrb',
+				["R6"] = 866550588,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 866541157,
+				["Object"] = 'ConfusionOrb'
+			},
+			["Punch"] = {
+				["Name"] = 'Punch',
+				["R6"] = 3175899997,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 3175791062,
+				["Object"] = 'Punch'
+			},
+			["Amazed"] = {
+				["Object"] = 'Amazed',
+				["Name"] = 'Amazed',
+				["FaceId"] = 45528113,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 154174346,
+				["R6"] = 154174346
+			},
+			["Walk"] = {
+				["Name"] = 'Walk',
+				["Weight"] = 0.6,
+				["R15"] = 507777826,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'Walk',
+				["R6"] = 180426354
+			},
+			["Swing"] = {
+				["Name"] = 'Swing',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308330448,
+				["Object"] = 'Swing'
+			},
+			["Shuffle"] = {
+				["Name"] = 'Shuffle',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308343244,
+				["Object"] = 'Shuffle'
+			},
+			["Whistle"] = {
+				["Object"] = 'Whistle',
+				["Name"] = 'Whistle',
+				["Weight"] = 0.4,
+				["R15"] = 4308430737,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R6"] = 180435571,
+				["FaceId"] = 22877631
+			},
+			["Cheer"] = {
+				["Object"] = 'Cheer',
+				["Name"] = 'Cheer',
+				["FaceId"] = 27802003,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 507770677,
+				["R6"] = 129423030
+			},
+			["Evil"] = {
+				["Object"] = 'Evil',
+				["Name"] = 'Evil',
+				["FaceId"] = 1604383339,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308438228,
+				["R6"] = 1620296629
+			},
+			["HipHop"] = {
+				["Name"] = 'HipHop',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308346808,
+				["Object"] = 'HipHop'
+			},
+			["Dance2"] = {
+				["Name"] = 'Dance2',
+				["MovementCancel"] = true,
+				["R15"] = 507776043,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Object"] = 'Dance2',
+				["R6"] = 182436842
+			},
+			["Dance3"] = {
+				["Name"] = 'Dance3',
+				["MovementCancel"] = true,
+				["R15"] = 507777268,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Object"] = 'Dance3',
+				["R6"] = 182436935
+			},
+			["SitSeat"] = {
+				["Name"] = 'SitSeat',
+				["Weight"] = 0.99,
+				["R15"] = 2506281703,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'SitSeat',
+				["R6"] = 178130996
+			},
+			["Think"] = {
+				["Object"] = 'Think',
+				["Name"] = 'Think',
+				["FaceId"] = 209715003,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308415882,
+				["R6"] = 154185274
+			},
+			["Wave"] = {
+				["Name"] = 'Wave',
+				["R6"] = 128777973,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 507770239,
+				["Object"] = 'Wave'
+			},
+			["Eat"] = {
+				["Object"] = 'Eat',
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Name"] = 'Eat',
+				["R15"] = 3343204532
+			},
+			["Fall"] = {
+				["Name"] = 'Fall',
+				["Weight"] = 0.7,
+				["R15"] = 507767968,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'Fall',
+				["R6"] = 180436148
+			},
+			["ThrowCoin"] = {
+				["Name"] = 'ThrowCoin',
+				["R6"] = 156055482,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 867194400,
+				["Object"] = 'ThrowCoin'
+			},
+			["Easy"] = {
+				["Name"] = 'Easy',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308337079,
+				["Object"] = 'Easy'
+			},
+			["Driving"] = {
+				["Name"] = 'Driving',
+				["Weight"] = 0.99,
+				["R15"] = 866020346,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["Object"] = 'Driving',
+				["R6"] = 178130996
+			},
+			["Sit"] = {
+				["Name"] = 'Sit',
+				["MovementCancel"] = true,
+				["R15"] = 4308421826,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Object"] = 'Sit',
+				["R6"] = 868508890
+			},
+			["SleepSeat"] = {
+				["SoundLooped"] = true,
+				["R15"] = 4308318405,
+				["FaceId"] = 66329905,
+				["Object"] = 'SleepSeat',
+				["Name"] = 'SleepSeat',
+				["R6"] = 869468579,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Volume"] = soundVolume,
+				["MovementCancel"] = true
+			},
+			["Marashin"] = {
+				["Name"] = 'Marashin',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308362239,
+				["Object"] = 'Marashin'
+			},
+			["Scared"] = {
+				["Object"] = 'Scared',
+				["Name"] = 'Scared',
+				["FaceId"] = 47206380,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308413393,
+				["R6"] = 154170755
+			},
+			["Clap"] = {
+				["Name"] = 'Clap',
+				["R6"] = 868730451,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308424082,
+				["Object"] = 'Clap'
+			},
+			["HipHop2"] = {
+				["Name"] = 'HipHop2',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308356261,
+				["Object"] = 'HipHop2'
+			},
+			["Die"] = {
+				["Object"] = 'Die',
+				["R15"] = 4308443969,
+				["Name"] = 'Die',
+				["MovementCancel"] = true,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R6"] = 1620270981,
+				["FaceId"] = 1604616024
+			},
+			["Disgust"] = {
+				["Object"] = 'Disgust',
+				["Name"] = 'Disgust',
+				["FaceId"] = 1598203828,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308435046,
+				["R6"] = 1620305485
+			},
+			["Hi"] = {
+				["Name"] = 'Hi',
+				["R6"] = 154179312,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308390587,
+				["Object"] = 'Hi'
+			},
+			["Flair"] = {
+				["Name"] = 'Flair',
+				["MovementCancel"] = true,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308358633,
+				["Object"] = 'Flair'
+			},
+			["Dance"] = {
+				["Name"] = 'Dance',
+				["MovementCancel"] = true,
+				["R15"] = 507771019,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["Object"] = 'Dance',
+				["R6"] = 182435998
+			},
+			["Climb"] = {
+				["Name"] = 'Climb',
+				["R6"] = 180436334,
+				["Priority"] = 'Enum.AnimationPriority.Core',
+				["R15"] = 507765644,
+				["Object"] = 'Climb'
+			},
+			["WashHands"] = {
+				["Name"] = 'WashHands',
+				["R6"] = 1620296629,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 1799726387,
+				["Object"] = 'WashHands'
+			},
+			["ScaredOpeingPumpkin"] = {
+				["Object"] = 'ScaredOpeingPumpkin',
+				["Name"] = 'ScaredOpeingPumpkin',
+				["FaceId"] = 47206380,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Idle',
+				["R15"] = 867226524,
+				["R6"] = 154170755
+			},
+			["Angry"] = {
+				["Object"] = 'Angry',
+				["Name"] = 'Angry',
+				["FaceId"] = 14020216,
+				["SoundId"] = audioId,
+				["Priority"] = 'Enum.AnimationPriority.Action',
+				["R15"] = 4308387518,
+				["R6"] = 154168543
+			}
+		};
+		local Target = game:GetService("Workspace").Main.LoadSoundsIntoHead;
+		for index, sound in pairs(game:service'Players'.LocalPlayer.Character.Head:GetChildren()) do
+			if sound:IsA'Sound' then
+				sound:Destroy()
+			end
+		end
+		Target:FireServer(table_1)
+		wait(.75)
+		game:GetService("Players").LocalPlayer.PlayerGui.UIEvents.ListItemPressed:Fire(userdata_1, userdata_2, userdata_3, table_2);
+	end)
+end;
+task.spawn(C_21);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonLOV.LocalScript
+local function C_25()
+local script = G2L["25"];
 	local ActiveLoop = false
 	script.Parent.MouseButton1Click:Connect(function()
 	ActiveLoop = not ActiveLoop
@@ -1024,10 +1828,167 @@ local script = G2L["21"];
 		end
 	end)
 end;
-task.spawn(C_21);
+task.spawn(C_25);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonBCR.LocalScript
+local function C_27()
+local script = G2L["27"];
+	local ActiveLoop = false
+	script.Parent.MouseButton1Click:Connect(function()
+	ActiveLoop = not ActiveLoop
+	if ActiveLoop then
+	script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+			script.Parent.Text = "end the disaster"
+	else
+			script.Parent.BackgroundColor3 = Color3.new(0, 0.470588, 0.843137)
+			script.Parent.Text = "Break cook room"
+	end 
+		local lp = game:GetService("Players").LocalPlayer
+		local remote
+		local ffc = game.FindFirstChild
+	
+		do
+			local reg = (getreg or debug.getregistry)()
+			for i=1,#reg do
+				local f = reg[i]
+				if type(f)=="table" and rawget(f,"FireServer") and rawget(f,"BindEvents") then
+					remote = f
+				end
+			end
+		end
+	
+	local	function moveThing(bmd, location)
+			remote:FireServer("UpdateProperty", bmd, "CFrame", location)
+			wait()
+			remote:FireServer("SquishDough", bmd)
+		end
+	
+		-- cook room fucker main script
+	
+		for i,v in pairs(workspace.AllSupplyBoxes:GetChildren()) do
+			v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+		wait()
+	
+	
+		spawn(function()
+			while ActiveLoop and wait() do
+				spawn(function()
+					for i,v in pairs(workspace.AllDough:GetChildren()) do
+						moveThing(v, CFrame.new(Random.new():NextNumber(22.6,51.6),Random.new():NextNumber(3.6,14.6),Random.new():NextNumber(55.5,70.5)))
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.AllMountainDew:GetChildren()) do
+						moveThing(v, CFrame.new(Random.new():NextNumber(22.6,51.6),Random.new():NextNumber(3.6,14.6),Random.new():NextNumber(55.5,70.5)))
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.BoxingRoom:GetChildren()) do
+						moveThing(v, CFrame.new(Random.new():NextNumber(22.6,51.6),Random.new():NextNumber(3.6,14.6),Random.new():NextNumber(55.5,70.5)))
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.AllBox:GetChildren()) do
+						moveThing(v, CFrame.new(Random.new():NextNumber(22.6,51.6),Random.new():NextNumber(3.6,14.6),Random.new():NextNumber(55.5,70.5)))
+					end
+				end)
+				spawn(function()
+					for i,v in pairs(workspace.AllSupplyBoxes:GetChildren()) do
+						moveThing(v, CFrame.new(Random.new():NextNumber(22.6,51.6),Random.new():NextNumber(3.6,14.6),Random.new():NextNumber(55.5,70.5)))
+					end
+				end)
+			end
+		end)
+	end)
+end;
+task.spawn(C_27);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonCAR.LocalScript
+local function C_29()
+local script = G2L["29"];
+	script.Parent.MouseButton1Click:Connect(function()
+		local LP = game:GetService("Players").LocalPlayer
+		local character = LP.Character or LP.CharacterAdded:Wait()
+		local oldPos = character.PrimaryPart.CFrame
+		wait()
+		local humanoid = character:FindFirstChildWhichIsA("Humanoid")
+		if not workspace.Cars:IsAncestorOf(humanoid.SeatPart) then
+			humanoid.Sit=false
+			wait(0.1)
+			for _,car in ipairs(workspace.Cars:GetChildren()) do
+				if car:FindFirstChild("Driver") and car.Driver.Occupant==nil and car:FindFirstChild("Owner") and car.Owner.Value==nil then
+					car.Driver:Sit(humanoid)
+					wait(0.3)
+					if humanoid.SeatPart then
+						break
+					end
+				end
+			end
+		end
+		local seat = humanoid.SeatPart
+		local car = seat.Parent
+		car:SetPrimaryPartCFrame(oldPos)
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonGUO.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	script.Parent.MouseButton1Click:Connect(function()
+		spawn(function()while true do 
+		game.Players.LocalPlayer.MaximumSimulationRadius=math.pow(math.huge,math.huge)*math.huge
+		game.Players.LocalPlayer.SimulationRadius=math.pow(math.huge,math.huge)*math.huge
+		game:GetService("RunService").Stepped:wait()end end)
+	local function L(I)
+	if I:FindFirstChild("BodyForce")then return end
+	local M = Instance.new("BodyForce")
+	M.Force=I:GetMass()*Vector3.new(0,workspace.Gravity,0)
+	M.Parent=I end
+	for j,k in ipairs(workspace:GetDescendants())do
+		if k:IsA("Part")and k.Anchored==false then
+		if not k:IsDescendantOf(game.Players.LocalPlayer.Character) then 
+			L(k)
+		end end end
+	workspace.DescendantAdded:Connect(function(I)
+		if I:IsA("Part") and I.Anchored==false then 
+			if not I:IsDescendantOf(game.Players.LocalPlayer.Character)
+			then L(I)
+			end 
+		end 
+	end)
+	end)
+end;
+task.spawn(C_2b);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonAVK.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		spawn(function()while true do 
+		game.Players.LocalPlayer.MaximumSimulationRadius=math.pow(math.huge,math.huge)*math.huge
+		game.Players.LocalPlayer.SimulationRadius=math.pow(math.huge,math.huge)*math.huge
+		game:GetService("RunService").Stepped:wait()end end)
+	local function L(I)
+	if I:FindFirstChild("BodyForce")then return end
+	local M = Instance.new("BodyForce")
+	M.Force=I:GetMass()*Vector3.new(0,workspace.Gravity,0)
+	M.Parent=I end
+	for j,k in ipairs(workspace:GetDescendants())do
+		if k:IsA("Part")and k.Anchored==false then
+		if not k:IsDescendantOf(game.Players.LocalPlayer.Character) then 
+			L(k)
+		end end end
+	workspace.DescendantAdded:Connect(function(I)
+		if I:IsA("Part") and I.Anchored==false then 
+			if not I:IsDescendantOf(game.Players.LocalPlayer.Character)
+			then L(I)
+			end 
+		end 
+	end)
+	end)
+end;
+task.spawn(C_2d);
 -- StarterGui.ScreenGui.WindowFrame.DraggableScript
-local function C_22()
-local script = G2L["22"];
+local function C_2f()
+local script = G2L["2f"];
 	--Variables
 	local TitleBar = script.Parent["TitleBar"]
 	local IsCursonOnTitleBar = false
@@ -1085,10 +2046,10 @@ local script = G2L["22"];
 		end
 	end)
 end;
-task.spawn(C_22);
+task.spawn(C_2f);
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no.LocalScript
-local function C_28()
-local script = G2L["28"];
+local function C_35()
+local script = G2L["35"];
 	local NoButton = script.Parent
 	local CloseWarning = NoButton.Parent.Parent
 	local function closewarning()
@@ -1096,10 +2057,10 @@ local script = G2L["28"];
 	end
 	NoButton.MouseButton1Click:Connect(closewarning)
 end;
-task.spawn(C_28);
+task.spawn(C_35);
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes.LocalScript
-local function C_2a()
-local script = G2L["2a"];
+local function C_37()
+local script = G2L["37"];
 	local yesbutton = script.Parent
 	local ScreenGui = script.Parent.Parent.Parent.Parent.Parent
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1120,6 +2081,6 @@ local script = G2L["2a"];
 		ScreenGui:Destroy()
 	end)
 end;
-task.spawn(C_2a);
+task.spawn(C_37);
 
 return G2L["1"], require;
