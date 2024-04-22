@@ -11,9 +11,9 @@
 local G2L = {};
 
 -- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-
+print("screengui created in Coregui")
 -- StarterGui.ScreenGui.WindowFrame
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 2;
