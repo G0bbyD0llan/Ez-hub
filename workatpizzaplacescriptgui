@@ -291,6 +291,7 @@ G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20"]["BackgroundTransparency"] = 1;
 G2L["20"]["Size"] = UDim2.new(0, 600, 0, 350);
 G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Visible"] = false;
 G2L["20"]["Name"] = [[trolling]];
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame
@@ -469,7 +470,7 @@ G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["32"]["Size"] = UDim2.new(0.4707130193710327, 0, 0.08154762536287308, 0);
 G2L["32"]["Name"] = [[ActionButtonTRUCK]];
-G2L["32"]["Text"] = [[get in a truck (NOT WORKING)]];
+G2L["32"]["Text"] = [[get in a truck]];
 G2L["32"]["Position"] = UDim2.new(0.5326998829841614, 0, 0.5596429705619812, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.trolling.Frame.ActionButtonTRUCK.LocalScript
@@ -507,7 +508,6 @@ G2L["36"]["Size"] = UDim2.new(0, 600, 0, 350);
 G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["36"]["Text"] = [[Script by G0bbyD0llan57 on YT. Please select any page]];
 G2L["36"]["Name"] = [[creditsTWO]];
-G2L["36"]["Visible"] = false;
 G2L["36"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.ScreenGui.WindowFrame.DraggableScript
@@ -768,7 +768,9 @@ local script = G2L["15"];
 				car:SetPrimaryPartCFrame(returncf)
 				seat.Anchored=true
 	wait(2)
-				car.HoodSeat:ClearAllChildren() --unsits anyone
+				repeat
+				wait()
+				until PlayerToBring.Character.Humanoid.Sit == false
 				wait(1)
 					break
 			end
@@ -913,10 +915,6 @@ local script = G2L["17"];
 		local humanoid = player.Character.Humanoid
 		local oldPos = player.Character.PrimaryPart.CFrame
 		local man = PlayerToBring
-		--deletes a glitchy chair in the office (optional)
-		if workspace:FindFirstChild("ExtraChair") and workspace.ExtraChair:FindFirstChild("Seat") then
-			workspace.ExtraChair.Seat:Destroy()
-		end
 	
 		if man then
 			--check if he's respawning or sitting
@@ -980,7 +978,9 @@ local script = G2L["17"];
 				car:SetPrimaryPartCFrame(returncf)
 				seat.Anchored=true
 	wait(0.5)
-				car.HoodSeat:ClearAllChildren() --unsits anyone
+			repeat 
+			wait()
+			until PlayerToBring.Character.Humanoid.Sit == false
 				wait(1)
 					break
 			end
@@ -989,6 +989,9 @@ local script = G2L["17"];
 			wait()
 			car:SetPrimaryPartCFrame(CFrame.new(120,10,-75))
 			wait()
+			humanoid.Sit=false
+			wait(0.1)
+			player.Character.HumanoidRootPart.CFrame = oldPos
 		end
 	
 		--become manager
@@ -1305,7 +1308,7 @@ local script = G2L["1d"];
 	if getplayer() then
 	local playerToHouse = getplayer()
 			for _, house in pairs(game:GetService("Workspace").Houses:GetChildren()) do
-			if house:FindFirstChild(getplayer().DisplayName) then
+			if house.Owner == getplayer().Name then
 					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(house:FindFirstChild(getplayer().DisplayName).Head.CFrame)
 			end
 			end
@@ -2090,12 +2093,12 @@ local script = G2L["33"];
 		local oldPos = character.PrimaryPart.CFrame
 		wait()
 		local humanoid = character:FindFirstChildWhichIsA("Humanoid")
-		if not workspace.Cars:IsAncestorOf(humanoid.SeatPart) then
+		if not workspace.Trucks:IsAncestorOf(humanoid.SeatPart) then
 			humanoid.Sit=false
 			wait(0.1)
-			for _,car in ipairs(workspace.Trucks:GetChildren()) do
-				if car:FindFirstChild("Driver") and car.Driver.Occupant==nil and car:FindFirstChild("Owner") and car.Owner.Value==nil then
-					car.Driver:Sit(humanoid)
+			for _,truck in ipairs(workspace.Trucks:GetChildren()) do
+				if truck:FindFirstChild("Driver") and truck.Driver.Occupant == nil then
+					truck.Driver:Sit(humanoid)
 					wait(0.3)
 					if humanoid.SeatPart then
 						break
@@ -2115,23 +2118,34 @@ local script = G2L["35"];
 	local player = game.Players.LocalPlayer
 	local house
 	local x = 0
-	
+	local houseSize
 	-- Encuentra la casa del jugador local
 	for _, h in pairs(game:GetService("Workspace").Houses:GetChildren()) do
 		if h:FindFirstChild(player.DisplayName) then
 			house = h
+			local houseChild = h:FindFirstChild("Large") or h:FindFirstChild("TwoStory") or h:FindFirstChild("Medium") or h:FindFirstChild("Tiny")
+			if houseChild then
+				houseSize = houseChild.Name
+			else
+			houseSize = "Tiny"
+			end
 			break
 		end
 	end
 	-- Función para cambiar el color de la casa
 	local function ChangeHouseColor(color)
-		local args = {
-			[1] = "PaintHouse",
-			[2] = house.Tiny.Wall, -- Asegúrate de que "Tiny" y "Wall" sean los nombres correctos de las partes de la casa
-			[3] = "None", -- No cambies esto si no estás seguro de qué hace
-			[4] = color -- El nuevo color en Color3
-		}
-		game:GetService("ReplicatedStorage").HouseChannel:FireServer(unpack(args))
+		for _, wall in ipairs(house[houseSize]:GetChildren()) do
+			if wall.Name:lower() == "wall" then
+				local args = {
+					[1] = "PaintHouse",
+					[2] = wall, -- Asegúrate de que "Tiny" y "Wall" sean los nombres correctos de las partes de la casa
+					[3] = "None", -- No cambies esto si no estás seguro de qué hace
+					[4] = color -- El nuevo color en Color3
+				}
+				game:GetService("ReplicatedStorage").HouseChannel:FireServer(unpack(args))
+		end
+			
+			end
 	end
 	local loopcolor = false
 	script.Parent.MouseButton1Click:Connect(function()
