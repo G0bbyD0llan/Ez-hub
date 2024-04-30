@@ -1308,7 +1308,7 @@ local script = G2L["1d"];
 	if getplayer() then
 	local playerToHouse = getplayer()
 			for _, house in pairs(game:GetService("Workspace").Houses:GetChildren()) do
-			if house.Owner == getplayer().Name then
+			if house:FindFirstChild(getplayer().DisplayName) then
 					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(house:FindFirstChild(getplayer().DisplayName).Head.CFrame)
 			end
 			end
