@@ -1,0 +1,1541 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 55 | Scripts: 9 | Modules: 0
+local G2L = {};
+
+-- StarterGui.feball
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[feball]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.feball.menu
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 2;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+G2L["2"]["Size"] = UDim2.new(0, 350, 0, 22);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.35606059432029724, 0, 0.2902299165725708, 0);
+G2L["2"]["Name"] = [[menu]];
+
+-- StarterGui.feball.menu.Title
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(0, 201, 0, 22);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[FE BALL SCRIPT │ menu]];
+G2L["3"]["Name"] = [[Title]];
+G2L["3"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.feball.menu.All
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 2;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundTransparency"] = 0.5;
+G2L["4"]["Size"] = UDim2.new(0, 350, 0, 248);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Position"] = UDim2.new(0, 0, 1.2000000476837158, 0);
+G2L["4"]["Name"] = [[All]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame2
+G2L["5"] = Instance.new("ScrollingFrame", G2L["4"]);
+G2L["5"]["Active"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["MidImage"] = [[]];
+G2L["5"]["TopImage"] = [[]];
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Size"] = UDim2.new(0, 350, 0, 248);
+G2L["5"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Visible"] = false;
+G2L["5"]["Name"] = [[ScrollingFrame2]];
+G2L["5"]["BottomImage"] = [[]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.UIListLayout
+G2L["6"] = Instance.new("UIListLayout", G2L["5"]);
+G2L["6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["6"]["Padding"] = UDim.new(0.029999999329447746, 0);
+G2L["6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.PP
+G2L["7"] = Instance.new("TextButton", G2L["5"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 2;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["7"]["LayoutOrder"] = 100;
+G2L["7"]["Name"] = [[PP]];
+G2L["7"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Text"] = [[PREVIOUS PAGE]];
+G2L["7"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["7"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.PP.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.DC
+G2L["9"] = Instance.new("TextButton", G2L["5"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 2;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["9"]["LayoutOrder"] = 3;
+G2L["9"]["Name"] = [[DC]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Text"] = [[disable controls]];
+G2L["9"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["9"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.ELB
+G2L["a"] = Instance.new("TextButton", G2L["5"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 2;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["a"]["Name"] = [[ELB]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Text"] = [[enlarge ball]];
+G2L["a"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["a"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.RB
+G2L["b"] = Instance.new("TextButton", G2L["5"]);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["BorderSizePixel"] = 2;
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["b"]["Name"] = [[RB]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Text"] = [[reduce ball]];
+G2L["b"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["b"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.TitleBO
+G2L["c"] = Instance.new("TextLabel", G2L["5"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["TextStrokeTransparency"] = 0;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["LayoutOrder"] = -5;
+G2L["c"]["Size"] = UDim2.new(0, 275, 0, 25);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[BALL OPTIONS / BALL EFECTS FOR FUN]];
+G2L["c"]["Name"] = [[TitleBO]];
+G2L["c"]["BackgroundTransparency"] = 1;
+G2L["c"]["Position"] = UDim2.new(0.2142857164144516, 0, -1.230547468367149e-07, 0);
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.ARE
+G2L["d"] = Instance.new("TextButton", G2L["5"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 2;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(9, 0, 255);
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["d"]["Name"] = [[ARE]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Text"] = [[add refleteance effect]];
+G2L["d"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["d"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.APB
+G2L["e"] = Instance.new("TextButton", G2L["5"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 2;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(9, 0, 255);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["e"]["Name"] = [[APB]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["Text"] = [[add PointLight]];
+G2L["e"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["e"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.CSP
+G2L["f"] = Instance.new("TextBox", G2L["5"]);
+G2L["f"]["PlaceholderColor3"] = Color3.fromRGB(217, 217, 217);
+G2L["f"]["BorderSizePixel"] = 2;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["LayoutOrder"] = 3;
+G2L["f"]["BackgroundTransparency"] = 0.5;
+G2L["f"]["PlaceholderText"] = [[FE BALL SCRIPT│CMD 1.0]];
+G2L["f"]["Size"] = UDim2.new(0, 323, 0, 98);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Text"] = [[]];
+G2L["f"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3196774125099182, 0);
+G2L["f"]["Name"] = [[CSP]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.AP
+G2L["10"] = Instance.new("TextButton", G2L["5"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 2;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(9, 0, 255);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["10"]["Name"] = [[AP]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Text"] = [[add particles]];
+G2L["10"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["10"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.ATB
+G2L["11"] = Instance.new("TextButton", G2L["5"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 2;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(9, 0, 255);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["11"]["Name"] = [[ATB]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["Text"] = [[add trail]];
+G2L["11"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["11"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.NP
+G2L["12"] = Instance.new("TextButton", G2L["5"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 2;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["12"]["LayoutOrder"] = 100;
+G2L["12"]["Name"] = [[NP]];
+G2L["12"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Text"] = [[NEXT PAGE]];
+G2L["12"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["12"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.NP.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+-- StarterGui.feball.menu.All.ScrollingFrame
+G2L["14"] = Instance.new("ScrollingFrame", G2L["4"]);
+G2L["14"]["Active"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["MidImage"] = [[]];
+G2L["14"]["TopImage"] = [[]];
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Size"] = UDim2.new(0, 350, 0, 248);
+G2L["14"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BottomImage"] = [[]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame.EB
+G2L["15"] = Instance.new("TextButton", G2L["14"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["BorderSizePixel"] = 2;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(0, 180, 255);
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["15"]["Name"] = [[EB]];
+G2L["15"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Text"] = [[emergency brake]];
+G2L["15"]["Position"] = UDim2.new(0.037142857909202576, 0, 0.02822580561041832, 0);
+G2L["15"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.UIListLayout
+G2L["16"] = Instance.new("UIListLayout", G2L["14"]);
+G2L["16"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["16"]["Padding"] = UDim.new(0.029999999329447746, 0);
+G2L["16"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.RS
+G2L["17"] = Instance.new("TextButton", G2L["14"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 2;
+G2L["17"]["TextScaled"] = true;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 180, 255);
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["17"]["Name"] = [[RS]];
+G2L["17"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Text"] = [[reset to block / Close script]];
+G2L["17"]["Position"] = UDim2.new(0.037142857909202576, 0, 0.02822580561041832, 0);
+G2L["17"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.ST
+G2L["18"] = Instance.new("TextButton", G2L["14"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 2;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(0, 180, 255);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["18"]["Name"] = [[ST]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Text"] = [[set transparency]];
+G2L["18"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["18"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.AS
+G2L["19"] = Instance.new("TextButton", G2L["14"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["BorderSizePixel"] = 2;
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(5, 255, 0);
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["19"]["Name"] = [[AS]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["Text"] = [[add %10+ speed]];
+G2L["19"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["19"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.DS
+G2L["1a"] = Instance.new("TextButton", G2L["14"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 2;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["1a"]["Name"] = [[DS]];
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Text"] = [[decrease %10- speed]];
+G2L["1a"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["1a"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.warning
+G2L["1b"] = Instance.new("TextLabel", G2L["14"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["TextStrokeTransparency"] = 0;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["RichText"] = true;
+G2L["1b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["Size"] = UDim2.new(0, 323, 0, 22);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[warning: Avoid setting negative speeds or excessively high speeds]];
+G2L["1b"]["Name"] = [[warning]];
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Position"] = UDim2.new(0.2142857164144516, 0, 0.7637097835540771, 0);
+
+-- StarterGui.feball.menu.All.ScrollingFrame.BCC
+G2L["1c"] = Instance.new("TextButton", G2L["14"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 2;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["1c"]["Name"] = [[BCC]];
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Text"] = [[ball color change]];
+G2L["1c"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["1c"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.ABJ
+G2L["1d"] = Instance.new("TextButton", G2L["14"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 2;
+G2L["1d"]["TextScaled"] = true;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(5, 255, 0);
+G2L["1d"]["TextSize"] = 14;
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["1d"]["Name"] = [[ABJ]];
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["Text"] = [[add %10+ ball JumpPower]];
+G2L["1d"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.04500001296401024, 0);
+G2L["1d"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.DBJ
+G2L["1e"] = Instance.new("TextButton", G2L["14"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 2;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["1e"]["Name"] = [[DBJ]];
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["Text"] = [[decrease %10- ball JumpPower]];
+G2L["1e"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.04500001296401024, 0);
+G2L["1e"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.CJP
+G2L["1f"] = Instance.new("TextLabel", G2L["14"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["TextStrokeTransparency"] = 0;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["RichText"] = true;
+G2L["1f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["Size"] = UDim2.new(0, 323, 0, 22);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[current JumpPower:]];
+G2L["1f"]["Name"] = [[CJP]];
+G2L["1f"]["BackgroundTransparency"] = 1;
+G2L["1f"]["Position"] = UDim2.new(0.2142857164144516, 0, 0.7637097835540771, 0);
+
+-- StarterGui.feball.menu.All.ScrollingFrame.DEBUGMODE
+G2L["20"] = Instance.new("TextButton", G2L["14"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 2;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["20"]["Name"] = [[DEBUGMODE]];
+G2L["20"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Text"] = [[show debug]];
+G2L["20"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.04500001296401024, 0);
+G2L["20"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.debuginfo
+G2L["21"] = Instance.new("TextLabel", G2L["14"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["TextStrokeTransparency"] = 0;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["RichText"] = true;
+G2L["21"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["Size"] = UDim2.new(0, 323, 0, 54);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[]];
+G2L["21"]["Name"] = [[debuginfo]];
+G2L["21"]["Visible"] = false;
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.672096848487854, 0);
+
+-- StarterGui.feball.menu.All.ScrollingFrame.NP
+G2L["22"] = Instance.new("TextButton", G2L["14"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 2;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["22"]["Name"] = [[NP]];
+G2L["22"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["Text"] = [[NEXT PAGE]];
+G2L["22"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.7204839587211609, 0);
+G2L["22"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame.NP.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+
+
+-- StarterGui.feball.menu.All.ScrollingFrame3
+G2L["24"] = Instance.new("ScrollingFrame", G2L["4"]);
+G2L["24"]["Active"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["MidImage"] = [[]];
+G2L["24"]["TopImage"] = [[]];
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["BackgroundTransparency"] = 1;
+G2L["24"]["Size"] = UDim2.new(0, 350, 0, 248);
+G2L["24"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Visible"] = false;
+G2L["24"]["Name"] = [[ScrollingFrame3]];
+G2L["24"]["BottomImage"] = [[]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.MCt
+G2L["25"] = Instance.new("TextLabel", G2L["24"]);
+G2L["25"]["TextWrapped"] = true;
+G2L["25"]["TextStrokeTransparency"] = 0;
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextScaled"] = true;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Size"] = UDim2.new(0, 235, 0, 27);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Mobille controls]];
+G2L["25"]["Name"] = [[MCt]];
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["Position"] = UDim2.new(0.16285714507102966, 0, 0.032258063554763794, 0);
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.MCl
+G2L["26"] = Instance.new("TextButton", G2L["24"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 2;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(2, 93, 136);
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Size"] = UDim2.new(0, 61, 0, 50);
+G2L["26"]["Name"] = [[MCl]];
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Text"] = [[⬅]];
+G2L["26"]["Position"] = UDim2.new(0.05999999865889549, 0, 0.1088709682226181, 0);
+G2L["26"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.MCr
+G2L["27"] = Instance.new("TextButton", G2L["24"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 2;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(2, 93, 136);
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Size"] = UDim2.new(0, 61, 0, 50);
+G2L["27"]["Name"] = [[MCr]];
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[⬅]];
+G2L["27"]["Rotation"] = -180;
+G2L["27"]["Position"] = UDim2.new(0.28600001335144043, 0, 0.10899999737739563, 0);
+G2L["27"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.MCu
+G2L["28"] = Instance.new("TextButton", G2L["24"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 2;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(2, 93, 136);
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Size"] = UDim2.new(0, 55, 0, 64);
+G2L["28"]["Name"] = [[MCu]];
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[⬅]];
+G2L["28"]["Rotation"] = 90;
+G2L["28"]["Position"] = UDim2.new(0.5429999828338623, 0, 0.10000000149011612, 0);
+G2L["28"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.MCd
+G2L["29"] = Instance.new("TextButton", G2L["24"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["BorderSizePixel"] = 2;
+G2L["29"]["TextScaled"] = true;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(2, 93, 136);
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Size"] = UDim2.new(0, 55, 0, 64);
+G2L["29"]["Name"] = [[MCd]];
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[⬅]];
+G2L["29"]["Rotation"] = -90;
+G2L["29"]["Position"] = UDim2.new(0.7887142300605774, 0, 0.09919357299804688, 0);
+G2L["29"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.PP
+G2L["2a"] = Instance.new("TextButton", G2L["24"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 2;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["2a"]["LayoutOrder"] = 100;
+G2L["2a"]["Name"] = [[PP]];
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Text"] = [[PREVIOUS PAGE]];
+G2L["2a"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.3054839074611664, 0);
+G2L["2a"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.PP.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.PP
+G2L["2c"] = Instance.new("TextButton", G2L["24"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 2;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["2c"]["LayoutOrder"] = 100;
+G2L["2c"]["Name"] = [[PP]];
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Text"] = [[NEXT PAGE]];
+G2L["2c"]["Position"] = UDim2.new(0.0357142873108387, 0, 0.3856476843357086, 0);
+G2L["2c"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame3.PP.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+
+
+-- StarterGui.feball.menu.All.ScrollingFrame4
+G2L["2e"] = Instance.new("ScrollingFrame", G2L["4"]);
+G2L["2e"]["Active"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["MidImage"] = [[]];
+G2L["2e"]["TopImage"] = [[]];
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundTransparency"] = 1;
+G2L["2e"]["Size"] = UDim2.new(0, 350, 0, 248);
+G2L["2e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Visible"] = false;
+G2L["2e"]["Name"] = [[ScrollingFrame4]];
+G2L["2e"]["BottomImage"] = [[]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame4.FEBALLhelp
+G2L["2f"] = Instance.new("TextLabel", G2L["2e"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["TextStrokeTransparency"] = 0;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextSize"] = 18;
+G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Size"] = UDim2.new(0, 330, 0, 151);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[This Script was made by G0bbyD0llan         For More proyects Like This:                        --You can follow me in Roblox :D                  --You can see my others scripts in My ScriptBlox Account]];
+G2L["2f"]["Name"] = [[FEBALLhelp]];
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["Position"] = UDim2.new(0.014285801909863949, 0, 0, 0);
+
+-- StarterGui.feball.menu.All.ScrollingFrame4.supportthisproyect
+G2L["30"] = Instance.new("TextButton", G2L["2e"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 2;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(0, 5, 255);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["30"]["LayoutOrder"] = 100;
+G2L["30"]["Name"] = [[supportthisproyect]];
+G2L["30"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Text"] = [[support this proyect]];
+G2L["30"]["Position"] = UDim2.new(0.03857142850756645, 0, 0.21790339052677155, 0);
+G2L["30"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame4.supportthisproyect.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+
+
+-- StarterGui.feball.menu.All.ScrollingFrame4.PP
+G2L["32"] = Instance.new("TextButton", G2L["2e"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 2;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["Size"] = UDim2.new(0, 323, 0, 23);
+G2L["32"]["LayoutOrder"] = 100;
+G2L["32"]["Name"] = [[PP]];
+G2L["32"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["Text"] = [[PREVIOUS PAGE]];
+G2L["32"]["Position"] = UDim2.new(0.03285714238882065, 0, 0.3025808036327362, 0);
+G2L["32"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.feball.menu.All.ScrollingFrame4.PP.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+-- StarterGui.feball.menu.close
+G2L["34"] = Instance.new("TextButton", G2L["2"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Size"] = UDim2.new(0, 30, 0, 22);
+G2L["34"]["Name"] = [[close]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[X]];
+G2L["34"]["Position"] = UDim2.new(0.9142856001853943, 0, 0, 0);
+
+-- StarterGui.feball.menu.hide
+G2L["35"] = Instance.new("TextButton", G2L["2"]);
+G2L["35"]["TextWrapped"] = true;
+G2L["35"]["TextScaled"] = true;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["35"]["TextSize"] = 14;
+G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Size"] = UDim2.new(0, 30, 0, 22);
+G2L["35"]["Name"] = [[hide]];
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Text"] = [[_]];
+G2L["35"]["Position"] = UDim2.new(0.8285714387893677, 0, 0, 0);
+
+-- StarterGui.feball.menu.hide.LocalScript
+G2L["36"] = Instance.new("LocalScript", G2L["35"]);
+
+
+-- StarterGui.feball.feball
+G2L["37"] = Instance.new("LocalScript", G2L["1"]);
+G2L["37"]["Name"] = [[feball]];
+
+-- StarterGui.feball.menu.All.ScrollingFrame2.PP.LocalScript
+local function C_8()
+local script = G2L["8"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = true
+		script.Parent.Parent.Parent.ScrollingFrame3.Visible = false
+	end)
+end;
+task.spawn(C_8);
+-- StarterGui.feball.menu.All.ScrollingFrame2.NP.LocalScript
+local function C_13()
+local script = G2L["13"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+	script.Parent.Parent.Parent.ScrollingFrame.Visible = false
+	script.Parent.Parent.Parent.ScrollingFrame3.Visible = true
+	end)
+end;
+task.spawn(C_13);
+-- StarterGui.feball.menu.All.ScrollingFrame.NP.LocalScript
+local function C_23()
+local script = G2L["23"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+	script.Parent.Parent.Parent.ScrollingFrame2.Visible = true
+		script.Parent.Parent.Parent.ScrollingFrame3.Visible = false
+	end)
+end;
+task.spawn(C_23);
+-- StarterGui.feball.menu.All.ScrollingFrame3.PP.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame2.Visible = true
+	end)
+end;
+task.spawn(C_2b);
+-- StarterGui.feball.menu.All.ScrollingFrame3.PP.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame2.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame4.Visible = true
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.feball.menu.All.ScrollingFrame4.supportthisproyect.LocalScript
+local function C_31()
+local script = G2L["31"];
+	
+end;
+task.spawn(C_31);
+-- StarterGui.feball.menu.All.ScrollingFrame4.PP.LocalScript
+local function C_33()
+local script = G2L["33"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.ScrollingFrame3.Visible = true
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.feball.menu.hide.LocalScript
+local function C_36()
+local script = G2L["36"];
+	script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Parent.All.Visible == true then
+	script.Parent.BackgroundColor3 = Color3.new(0, 1, 0)
+	script.Parent.Text = "+"
+	script.Parent.Parent.All.Visible = false
+	elseif script.Parent.Parent.All.Visible == false then
+	script.Parent.BackgroundColor3 = Color3.new(0, 0, 1)
+	script.Parent.Text = "-"
+	script.Parent.Parent.All.Visible = true
+	end
+	end)
+end;
+task.spawn(C_36);
+-- StarterGui.feball.feball
+local function C_37()
+local script = G2L["37"];
+	--waits for load if is in studio
+	
+	if game["Run Service"]:IsStudio() then 
+		--DISABLES GUI
+	script.Parent.Enabled = false
+	wait(2)
+		--ENABLES GUI
+		script.Parent.Enabled = true
+	end
+	
+	--DRAG SCRIPT
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent.menu
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+	-- Servicios
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local Camera = workspace.CurrentCamera
+	local Players = game:GetService("Players")
+	local buttons = script.Parent.menu.All.ScrollingFrame
+	
+	-- Constantes
+	local SPEED_MULTIPLIER = 30
+	local JUMP_POWER = 60
+	local JUMP_GAP = 0.3
+	
+	-- Inicialización del jugador y del personaje
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	-- Desactivar la colisión de todas las partes del personaje
+	for _, v in ipairs(character:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.CanCollide = false
+		end
+	end
+	
+	-- Configuración de la bola (HumanoidRootPart)
+	local ball = character.HumanoidRootPart
+	ball.Shape = Enum.PartType.Ball
+	ball.Transparency = 0.5
+	ball.Size = Vector3.new(5, 5, 5)
+	local TWEEN_DURATION = 1
+	local TweenService = game:GetService("TweenService")
+	local function tweenColor(targetColor)
+		local tweenInfo = TweenInfo.new(TWEEN_DURATION, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+		local colorTween = TweenService:Create(ball, tweenInfo, {Color = targetColor})
+		colorTween:Play()
+	end
+	local humanoid = character:WaitForChild("Humanoid")
+	local moveLeft = false
+	local moveRight = false
+	local moveUp = false
+	local moveDown = false
+	
+	-- Parámetros del Raycast
+	local params = RaycastParams.new()
+	params.FilterType = Enum.RaycastFilterType.Blacklist
+	params.FilterDescendantsInstances = {character}
+	
+	-- Función para manejar el movimiento de la bola
+	
+	local function onRenderStepped(delta)
+		ball.CanCollide = true
+		humanoid.PlatformStand = true
+	
+		-- Evitar movimientos si el jugador está escribiendo en una caja de texto
+		if UserInputService:GetFocusedTextBox() then return end
+	
+		-- Movimiento de la bola basado en la entrada del teclado
+		if UserInputService:IsKeyDown(Enum.KeyCode.W) or moveUp then
+			ball.RotVelocity -= Camera.CFrame.RightVector * delta * SPEED_MULTIPLIER
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.A) or moveLeft then
+			ball.RotVelocity -= Camera.CFrame.LookVector * delta * SPEED_MULTIPLIER
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.S) or moveDown then
+			ball.RotVelocity += Camera.CFrame.RightVector * delta * SPEED_MULTIPLIER
+		end
+		if UserInputService:IsKeyDown(Enum.KeyCode.D) or moveRight then
+			ball.RotVelocity += Camera.CFrame.LookVector * delta * SPEED_MULTIPLIER
+		end
+	end
+	-- Conexión del evento RenderStepped
+	local renderSteppedConnection = RunService.RenderStepped:Connect(onRenderStepped)
+	
+	-- Función para manejar los saltos
+	local function onJumpRequest()
+		local result = workspace:Raycast(
+			ball.Position,
+			Vector3.new(0, -((ball.Size.Y / 2) + JUMP_GAP), 0),
+			params
+		)
+	
+		if result then
+			ball.Velocity += Vector3.new(0, JUMP_POWER, 0)
+		end
+	end
+	
+	-- Conexión del evento de salto
+	xd = UserInputService.JumpRequest:Connect(onJumpRequest)
+	
+	-- Cambiar el sujeto de la cámara a la bola
+	Camera.CameraSubject = ball
+	
+	-- Creación del ScreenGui y Frame para los controles
+	
+	local function onResetButtonClick()
+	spawn(function()
+			local trail = character.PrimaryPart:FindFirstChild("Trail")
+			local ballLight = character.PrimaryPart:FindFirstChild("BALLLIGHT")
+			local particleEmitter = character.PrimaryPart:FindFirstChild("ParticleEmitter")
+			if trail then
+				trail:Remove()
+			end
+			if ballLight then
+				ballLight:Remove()
+			end
+			if particleEmitter then
+				particleEmitter:Remove()
+			end
+	end)
+		ball.Shape = Enum.PartType.Block
+		ball.Size = Vector3.new(2, 2, 1)
+		ball.Transparency = 1
+		xd:Disconnect()
+		Camera.CameraSubject = humanoid
+		renderSteppedConnection:Disconnect()
+		humanoid.PlatformStand = false
+		for _, v in ipairs(character:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.CanCollide = true
+			end
+		end
+		script.Parent:Destroy()
+	end
+	
+	local CloseScriptButtonOne = script.Parent.menu.close
+	CloseScriptButtonOne.MouseButton1Click:Connect(function()
+	onResetButtonClick()
+	end)
+	
+	-- Botones en el Frame
+	local stopButton = buttons.EB
+	local activeSB = false
+	stopButton.MouseButton1Click:Connect(function()
+		if activeSB then  return end
+		activeSB = true
+		local orgcol = ball.Color
+		wait()
+		stopButton.Text = "¡¡EMERGENCY BRAKE!!"
+		stopButton.BackgroundColor3 = Color3.new(1, 0, 0)
+		tweenColor(Color3.new(1, 0, 0))
+		task.spawn(function()
+		repeat
+				ball.RotVelocity = Vector3.new(0, 0, 0)
+				wait()
+		until activeSB == false
+		end)
+		wait(2)
+		tweenColor(orgcol)
+		wait(1)
+		stopButton.Text = "emergency brake"
+		stopButton.BackgroundColor3 = Color3.new(0, 0.701961, 1)
+		activeSB = false
+	end)
+	
+	local resetButton = buttons.RS
+	resetButton.MouseButton1Click:Connect(onResetButtonClick)
+	
+	local transparencyButton = buttons.ST
+	transparencyButton.MouseButton1Click:Connect(function()
+		if ball.Transparency == 0.5 then
+			ball.Transparency = 1
+			transparencyButton.Text = "Set Transparency"
+		else
+			ball.Transparency = 0.5
+			transparencyButton.Text = "reset Transparency"
+		end
+	end)
+	
+	local SpeedButton = buttons.AS
+	SpeedButton.MouseButton1Click:Connect(function()
+		SPEED_MULTIPLIER = SPEED_MULTIPLIER + 10  -- Incrementa la velocidad en 10
+	end)
+	local UnSpeedButton = buttons.DS
+	UnSpeedButton.MouseButton1Click:Connect(function()
+		SPEED_MULTIPLIER = SPEED_MULTIPLIER - 10  -- Incrementa la velocidad en 10
+	end)
+	
+	local CustomizableBox = buttons.Parent.ScrollingFrame2.CSP --customizable speed box
+	
+	-- Filtra letras y otros caracteres no numéricos mientras se escribe
+	local ScrollingFrame3 = script.Parent.menu.All.ScrollingFrame3
+	local left = ScrollingFrame3.MCl
+	local right = ScrollingFrame3.MCr
+	local up = ScrollingFrame3.MCu
+	local down = ScrollingFrame3.MCd
+	
+	-- Conexión de eventos a los botones para simular la presión de teclas
+	
+	-- Variables para controlar el estado del botón
+	local isLeftPressed = false
+	local isRightPressed = false
+	local isUpPressed = false
+	local isDownPressed = false
+	
+	-- Función para actualizar el estado del movimiento
+	local function updateMovementState(button, state)
+		if button == left then
+			moveLeft = state
+		elseif button == right then
+			moveRight = state
+		elseif button == up then
+			moveUp = state
+		elseif button == down then
+			moveDown = state
+		end
+	end
+	
+	-- Función para manejar eventos de botón
+	local function setupButton(button, moveStateVar)
+		button.MouseButton1Down:Connect(function()
+			moveStateVar = true
+			updateMovementState(button, true)
+		end)
+		button.MouseButton1Up:Connect(function()
+			moveStateVar = false
+			updateMovementState(button, false)
+		end)
+		button.MouseEnter:Connect(function()
+			if moveStateVar then
+				updateMovementState(button, true)
+			end
+		end)
+		button.MouseLeave:Connect(function()
+			updateMovementState(button, false)
+		end)
+	end
+	
+	-- Configuración de los botones
+	setupButton(left, isLeftPressed)
+	setupButton(right, isRightPressed)
+	setupButton(up, isUpPressed)
+	setupButton(down, isDownPressed)
+	local allowbypasses = false -- permite velocidades mayores a 1000 o inferiores a -1000
+	local showSpeedWarnings = true -- muestra advertencias de velocidad
+	local originalPlaceholder = CustomizableBox.PlaceholderText
+	
+	CustomizableBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			local cmdToPass = CustomizableBox.Text
+			CustomizableBox.Text = ""
+	
+			-- Función para mostrar avisos temporales
+			local function showTemporaryMessage(message, duration)
+				CustomizableBox.PlaceholderText = message
+				task.wait(duration)
+				CustomizableBox.PlaceholderText = originalPlaceholder
+			end
+	
+			local character = player.Character or player.CharacterAdded:Wait()
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if not humanoidRootPart then return end
+	
+			local trail = humanoidRootPart:FindFirstChild("Trail")
+			local ballLight = humanoidRootPart:FindFirstChild("BALLLIGHT")
+			local particleEmitter = humanoidRootPart:FindFirstChild("ParticleEmitter")
+	
+			-- Comando para ajustar la velocidad
+			if cmdToPass:sub(1, 6) == "speed " then
+				local speedToPass = tonumber(cmdToPass:sub(7))
+				if speedToPass then
+					if allowbypasses or (speedToPass >= -1000 and speedToPass <= 1000) then
+						SPEED_MULTIPLIER = speedToPass
+						showTemporaryMessage("Speed set to " .. speedToPass, 2)
+					else
+						showTemporaryMessage("Speed out of bounds", 2)
+					end
+				end
+	
+				-- Comando para ajustar la potencia del salto
+			elseif cmdToPass:sub(1, 10) == "jumpspeed " then
+				local jumpSpeedToPass = tonumber(cmdToPass:sub(11))
+				if jumpSpeedToPass then
+					JUMP_POWER = jumpSpeedToPass
+					showTemporaryMessage("Jump speed set to " .. jumpSpeedToPass, 2)
+				end
+	
+				-- Comando para permitir velocidades extremas
+			elseif cmdToPass == "allowbypasses" then
+				allowbypasses = not allowbypasses
+				if allowbypasses then
+					showTemporaryMessage("Bypasses allowed", 2)
+				else
+					showTemporaryMessage("Bypasses not allowed", 2)
+				end
+	
+				-- Comando para alternar las advertencias de velocidad
+			elseif cmdToPass == "togglespeedwarning" then
+				showSpeedWarnings = not showSpeedWarnings
+				if showSpeedWarnings then
+					showTemporaryMessage("Speed warnings on", 2)
+				else
+					showTemporaryMessage("Speed warnings off", 2)
+				end
+	
+				-- Comando para mostrar la lista de comandos
+			elseif cmdToPass == "help" then
+				showTemporaryMessage("Commands: speed <value>, jumpseed <value>, togglespeedwarning, allowbypasses, settraillifetime <value>, settrailwidth <value>, setlightbrightness <value>, setlightrange <value>, setparticlelifetime <value>, setparticlesize <value>", 10)
+			elseif cmdToPass:sub(1, 17) == "settraillifetime " then
+				local lifetime = tonumber(cmdToPass:sub(18))
+				if trail and lifetime then
+					trail.Lifetime = lifetime
+					showTemporaryMessage("Trail lifetime set to " .. lifetime, 2)
+				else
+					showTemporaryMessage("Invalid lifetime value or Trail not found", 2)
+				end
+	
+			elseif cmdToPass:sub(1, 14) == "settrailwidth " then
+				local width = tonumber(cmdToPass:sub(15))
+				if trail and width then
+					trail.WidthScale = NumberSequence.new(width)
+					showTemporaryMessage("Trail width set to " .. width, 2)
+				else
+					showTemporaryMessage("Invalid width value or Trail not found", 2)
+				end
+	
+				-- Comandos para PointLight
+			elseif cmdToPass:sub(1, 19) == "setlightbrightness " then
+				local brightness = tonumber(cmdToPass:sub(20))
+				if ballLight and brightness then
+					ballLight.Brightness = brightness
+					showTemporaryMessage("Light brightness set to " .. brightness, 2)
+				else
+					showTemporaryMessage("Invalid brightness value or Light not found", 2)
+				end
+	
+			elseif cmdToPass:sub(1, 14) == "setlightrange " then
+				local range = tonumber(cmdToPass:sub(15))
+				if ballLight and range then
+					ballLight.Range = range
+					showTemporaryMessage("Light range set to " .. range, 2)
+				else
+					showTemporaryMessage("Invalid range value or Light not found", 2)
+				end
+	
+				-- Comandos para ParticleEmitter
+			elseif cmdToPass:sub(1, 20) == "setparticlelifetime " then
+				local lifetime = tonumber(cmdToPass:sub(21))
+				if particleEmitter and lifetime then
+					particleEmitter.Lifetime = NumberRange.new(lifetime)
+					showTemporaryMessage("Particle lifetime set to " .. lifetime, 2)
+				else
+					showTemporaryMessage("Invalid lifetime value or ParticleEmitter not found", 2)
+				end
+	
+			elseif cmdToPass:sub(1, 16) == "setparticlesize " then
+				local size = tonumber(cmdToPass:sub(17))
+				if particleEmitter and size then
+					particleEmitter.Size = NumberSequence.new(size)
+					showTemporaryMessage("Particle size set to " .. size, 2)
+				else
+					showTemporaryMessage("Invalid size value or ParticleEmitter not found", 2)
+				end
+	
+			else
+				showTemporaryMessage("Unknown command, type 'help' for list of commands", 2)
+			end
+		end
+	end)
+	local originalballcoL = ball.Color
+	-- Lista de colores (puedes agregar más colores si lo deseas)
+	local colors = {
+		Color3.fromRGB(255, 0, 0),    -- Rojo
+		Color3.fromRGB(0, 255, 0),    -- Verde
+		Color3.fromRGB(0, 0, 255),    -- Azul
+		Color3.fromRGB(255, 255, 0),  -- Amarillo
+		Color3.fromRGB(255, 165, 0),  -- Naranja
+		Color3.fromRGB(0, 0, 0),      -- Negro
+	    originalballcoL               -- Color original	
+	}
+	
+	local currentIndex = 1  -- Índice inicial en la lista de colores
+	
+	local ChangeCButton = buttons.BCC
+	ChangeCButton.MouseButton1Click:Connect(function()
+		if ball.Transparency == 0.5 then
+			-- Cambiar el color del ball
+			tweenColor(colors[currentIndex])
+			ChangeCButton.BackgroundColor3 = colors[currentIndex]
+	
+			-- Incrementar el índice o volver al inicio si llegamos al final de la lista
+			currentIndex = currentIndex + 1
+			if currentIndex > #colors then
+				currentIndex = 1
+			end
+		end
+	end)
+	local ABJ = buttons.ABJ
+	ABJ.MouseButton1Click:Connect(function()
+	JUMP_POWER = JUMP_POWER + 10
+	end)
+	local DBJ = buttons.DBJ
+	DBJ.MouseButton1Click:Connect(function()
+		JUMP_POWER = JUMP_POWER - 10
+	end)
+	local debugbutton = buttons.DEBUGMODE
+	local activeDBM = false
+	debugbutton.MouseButton1Click:Connect(function()
+	if buttons.debuginfo.Visible == true then
+	buttons.debuginfo.Visible = false
+	debugbutton.Text = "show debug"
+	activeDBM = false
+	elseif buttons.debuginfo.Visible == false then
+	debugbutton.Text = "hide debug"
+	buttons.debuginfo.Visible = true
+	activeDBM = true
+	end
+	end)
+	local AP = buttons.Parent.ScrollingFrame2.AP -- botón para agregar y eliminar partículas
+	
+	local particles = nil
+	local particleEffectEnabled = false
+	
+	AP.MouseButton1Click:Connect(function()
+		if not particleEffectEnabled then
+			-- Crear y agregar el efecto de partículas a la bola
+			particles = Instance.new("ParticleEmitter")
+			particles.Size = NumberSequence.new(0.5)
+			particles.Acceleration = Vector3.new(0, -10, 0)
+			particles.Lifetime = NumberRange.new(1)
+			particles.Rate = 100
+			particles.RotSpeed = NumberRange.new(100)
+			particles.Speed = NumberRange.new(5)
+			particles.Parent = ball
+	
+			AP.Text = "Remove Particles"
+			particleEffectEnabled = true
+		else
+			-- Eliminar el efecto de partículas de la bola
+			if particles then
+				particles:Destroy()
+			end
+	
+			AP.Text = "Add Particles"
+			particleEffectEnabled = false
+		end
+	end)
+	task.spawn(function()
+	while wait() do
+	if particles then
+				particles.Color = ColorSequence.new(ball.Color)
+	end
+	end
+	end)
+	local AddTrailButton = buttons.Parent.ScrollingFrame2.ATB -- Botón para agregar estela
+	
+	local trail = nil
+	local trailEnabled = false
+	
+	AddTrailButton.MouseButton1Click:Connect(function()
+		if not trailEnabled then
+			-- Crear y configurar los attachments en la bola
+			local attachment0 = Instance.new("Attachment", ball)
+			attachment0.Position = Vector3.new(-0.5, 0, 0)
+			local attachment1 = Instance.new("Attachment", ball)
+			attachment1.Position = Vector3.new(0.5, 0, 0)
+	
+			-- Crear y configurar la estela
+			trail = Instance.new("Trail")
+			trail.Attachment0 = attachment0
+			trail.Attachment1 = attachment1
+			trail.Texture = "rbxassetid://14166981368" -- ID de la textura de huellas de patas
+			trail.TextureMode = Enum.TextureMode.Static
+			trail.TextureLength = 2
+			trail.Lifetime = 1
+			trail.Color = ColorSequence.new(Color3.fromRGB(0, 162, 255))
+			trail.Transparency = NumberSequence.new(0, 1)
+			trail.WidthScale = NumberSequence.new({
+				NumberSequenceKeypoint.new(0, 5),  -- Incrementa el valor aquí para aumentar el ancho inicial de la estela
+				NumberSequenceKeypoint.new(1, 5)   -- Incrementa el valor aquí para aumentar el ancho final de la estela
+			})
+			trail.Parent = ball
+	
+			AddTrailButton.Text = "Remove Trail"
+			trailEnabled = true
+		else
+			-- Eliminar la estela
+			if trail then
+				trail:Destroy()
+			end
+	
+			AddTrailButton.Text = "Add Trail"
+			trailEnabled = false
+		end
+	end)
+	task.spawn(function()
+		while wait() do
+			if trail then
+				trail.Color = ColorSequence.new(ball.Color)
+			end
+		end
+	end)
+	
+	local enlargeballsize = buttons.Parent.ScrollingFrame2.ELB
+	local reduceballsize = buttons.Parent.ScrollingFrame2.RB
+	
+	local function enlargeBallSize()
+		ball.Size = ball.Size * 1.2  -- Aumenta el tamaño de la bola en un 20%
+	end
+	
+	local function reduceBallSize()
+		ball.Size = ball.Size / 1.2  -- Reduce el tamaño de la bola en un 20%
+	end
+	
+	enlargeballsize.MouseButton1Click:Connect(enlargeBallSize)
+	reduceballsize.MouseButton1Click:Connect(reduceBallSize)
+	
+	local addRB = buttons.Parent.ScrollingFrame2.ARE
+	
+	local isReflectanceEnabled = false
+	
+	local function toggleReflectance()
+		isReflectanceEnabled = not isReflectanceEnabled
+		if isReflectanceEnabled then addRB.Text = "UnAdd refleteance effect" else addRB.Text = "Add refleteance effect" end
+		ball.Reflectance = isReflectanceEnabled and 0.55 or 0  -- 1 para habilitar reflectancia, 0 para deshabilitarla
+	end
+	
+	addRB.MouseButton1Click:Connect(toggleReflectance)
+	local APB = buttons.Parent.ScrollingFrame2.APB
+	
+	local isPointLightEnabled = false
+	local pointLight = Instance.new("PointLight")
+	pointLight.Parent = ball
+	pointLight.Color = Color3.fromRGB(255, 255, 255)
+	pointLight.Range = 15
+	pointLight.Brightness = 5
+	pointLight.Name = "BALLLIGHT"
+	pointLight.Enabled = false
+	task.spawn(function()
+	while wait(0.1) do
+	pointLight.Color = ball.Color
+	end
+	end)
+	local function togglePointLight()
+		isPointLightEnabled = not isPointLightEnabled
+		pointLight.Enabled = isPointLightEnabled
+		APB.Text = isPointLightEnabled and "Remove PointLight" or "Add PointLight"
+	end
+	
+	APB.MouseButton1Click:Connect(togglePointLight)
+	
+	local DisableControls = false
+	local DC = buttons.Parent.ScrollingFrame2.DC -- Referencia al botón "disable button"
+	
+	DC.MouseButton1Click:Connect(function()
+		DisableControls = not DisableControls  -- Alternar el estado de DisableControls
+	
+		if DisableControls then
+			-- Desactivar controles
+			renderSteppedConnection:Disconnect()  -- Desconectar la función onRenderStepped
+			xd:Disconnect()  -- Desconectar la función de salto (onJumpRequest)
+	
+			-- Restaurar configuraciones de colisión de partes del personaje
+			for _, v in ipairs(character:GetDescendants()) do
+				if v:IsA("BasePart") then
+					v.CanCollide = true
+				end
+			end
+	
+			-- Actualizar texto del botón
+			DC.Text = "Enable Controls"
+			DC.BackgroundColor3 = Color3.fromRGB(255, 0, 0)  -- Color rojo para indicar desactivado
+		else
+			-- Activar controles nuevamente
+			renderSteppedConnection = RunService.RenderStepped:Connect(onRenderStepped)  -- Volver a conectar onRenderStepped
+			xd = UserInputService.JumpRequest:Connect(onJumpRequest)  -- Volver a conectar onJumpRequest
+	
+			-- Desactivar colisión de partes del personaje
+			for _, v in ipairs(character:GetDescendants()) do
+				if v:IsA("BasePart") then
+					v.CanCollide = false
+				end
+			end
+	
+			-- Actualizar texto del botón
+			DC.Text = "Disable Controls"
+			DC.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Color verde para indicar activado
+		end
+	end)
+	
+	-----
+	local warningLabel = buttons.warning
+	-- Task para detectar velocidad alta o negativa
+	task.spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if showSpeedWarnings then
+				warningLabel.Visible=true
+				if SPEED_MULTIPLIER > 150 then
+					warningLabel.Text = "¡¡EXTREMELY SUPER-HIGH SPEED DETECTED!!, REDUCE YOUR SPEED RIGHT NOW. SPEED:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				elseif SPEED_MULTIPLIER > 100 then
+					warningLabel.Text = "¡¡DANGEROUSLY HIGH SPEED DETECTED!!, Reduce your speed immediately. speed:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+				elseif SPEED_MULTIPLIER > 70 then
+					warningLabel.Text = "¡¡HIGH SPEED DETECTED!!, speed:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(255, 69, 0)
+				elseif SPEED_MULTIPLIER < -150 then
+					warningLabel.Text = "¡¡DANGEROUSLY NEGATIVE SPEED DETECTED!!, REDUCE YOUR SPEED RIGHT NOW. SPEED:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				elseif SPEED_MULTIPLIER < -100 then
+					warningLabel.Text = "¡¡EXTREMELY NEGATIVE SPEED DETECTED!!, Adjust your settings immediately. speed:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(128, 0, 128)
+				elseif SPEED_MULTIPLIER < -70 then
+					warningLabel.Text = "¡¡VERY NEGATIVE SPEED DETECTED!!, speed:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(75, 0, 130)
+				elseif SPEED_MULTIPLIER < 0 then
+					warningLabel.Text = "¡¡NEGATIVE SPEED DETECTED!!, speed:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(0, 0, 255)
+				else
+					warningLabel.Text = "warning: Avoid setting negative speeds or excessively high speeds, speed:" .. SPEED_MULTIPLIER
+					warningLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				end
+			else
+				warningLabel.Text = ""
+				warningLabel.Visible=false
+			end
+		end)
+	end)
+	local CJP = buttons.CJP
+	task.spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if JUMP_POWER < 0 then JUMP_POWER = 0 end
+	CJP.Text = "Current JumpPower:"..JUMP_POWER
+		end)
+	end)
+	local debuginfo = buttons.debuginfo
+	task.spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			local ballPosition = string.format("%.2f, %.2f, %.2f", ball.Position.X, ball.Position.Y, ball.Position.Z)
+			local ballVelocity = string.format("%.2f, %.2f, %.2f", ball.Velocity.X, ball.Velocity.Y, ball.Velocity.Z)
+			debuginfo.Text = "Debug Information:\n"
+				.. "Speed Multiplier: " .. SPEED_MULTIPLIER .. "\n"
+				.. "Jump Power: " .. JUMP_POWER .. "\n"
+				.. "Ball Position: " .. ballPosition .. "\n"
+				.. "Ball Velocity: " .. ballVelocity
+		end)
+	end)
+	
+	
+	-- Manejar la muerte del personaje
+	humanoid.Died:Connect(function()
+	
+		local hint = Instance.new("Hint",workspace)
+		hint.Text = "FE BALL SCRIPT DISABLED DUE TO DIE /// NEED TO RE-EXECUTE"
+		game:GetService("Debris"):AddItem(hint, 3) 
+		renderSteppedConnection:Disconnect()
+		script.Parent:Destroy()
+	end)
+	
+end;
+task.spawn(C_37);
+
+return G2L["1"], require;
