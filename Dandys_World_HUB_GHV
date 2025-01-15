@@ -15599,7 +15599,7 @@ local function C_1e8()
 		"Player1",
 		4093294991, 4490385250, 4595531433, 5224618465, 5224606968, 5224589378, 5224640573,
 		5224621450, 5224642750, 5224644553, 5224583928, 5224624499, 5224633149, 5224630602,
-		5161185752, 5101456600, 7490002171, 7723710926, 7818227764, 7826014621, 7826009538,
+		5161185752, 5101456600, 7490002171, 7818227764, 7826014621, 7826009538,
 		7825994641, 7192830655, 7818583106, 7576242883, 7580640711, 7689253684, 7318385674,
 		7318402263, 7318398378, 7318395404, 7318377389, 7318373261, 7318371128, 7487072621,
 		7487071554, 7487049063, 7487025065, 7487029827, 7486980096, 7486924982, 7818498782,
@@ -15621,7 +15621,6 @@ local function C_1e8()
 			if table.find(IDsLocalizated, player.Name) or table.find(IDsLocalizated, player.UserId) then
 				if Alreadyloaded then return end
 				--si el jugador local es el id localizated, return end
-				if player.UserId == game.Players.LocalPlayer.UserId then print("...")return end
 				performAction(player)
 				Alreadyloaded = true
 			end
@@ -15633,7 +15632,6 @@ local function C_1e8()
 		-- Verificar si el jugador está en la lista al entrar
 		if table.find(IDsLocalizated, player.Name) or table.find(IDsLocalizated, player.UserId) then
 			if Alreadyloaded then return end
-			if player.UserId == game.Players.LocalPlayer.UserId then print("...")return end
 			performAction(player)
 			Alreadyloaded = true
 		end
