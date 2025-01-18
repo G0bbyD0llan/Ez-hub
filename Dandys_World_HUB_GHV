@@ -955,6 +955,7 @@ G2L["67"]["BackgroundTransparency"] = 1;
 G2L["67"]["Size"] = UDim2.new(0, 378, 0, 368);
 G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["67"]["Position"] = UDim2.new(0, 0, 0.05128201097249985, 0);
+G2L["67"]["Visible"] = false;
 G2L["67"]["Name"] = [[Main]];
 
 -- StarterGui.DebugVersion.Title.script_content.Main.Player
@@ -1949,7 +1950,7 @@ G2L["d4"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
 G2L["d4"]["Size"] = UDim2.new(0, 107, 0, 27);
 G2L["d4"]["Name"] = [[sadasd]];
 G2L["d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d4"]["Text"] = [[Remove InvisBorders / InvisWalls]];
+G2L["d4"]["Text"] = [[Remove InvisBlocks]];
 G2L["d4"]["Position"] = UDim2.new(0.018709052354097366, 0, 0.85597825050354, 0);
 
 -- StarterGui.DebugVersion.Title.script_content.MainTwo.sadasd.UIStroke
@@ -2598,7 +2599,6 @@ G2L["11f"]["BackgroundTransparency"] = 1;
 G2L["11f"]["Size"] = UDim2.new(0, 378, 0, 368);
 G2L["11f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["11f"]["Position"] = UDim2.new(0, 0, 0.05128201097249985, 0);
-G2L["11f"]["Visible"] = false;
 G2L["11f"]["Name"] = [[MainThird]];
 
 -- StarterGui.DebugVersion.Title.script_content.MainThird.Target
@@ -7027,7 +7027,7 @@ local function C_95()
 			local ActivePlayer = generator.Stats.ActivePlayer
 			local IsDone = generator.Stats.Completed
 			local BPToTP = generator.TeleportPositions.TeleportPosition
-			local ProximityPrompt = generator.Prompt.ProximityPrompt
+			local ProximityPrompt = generator.Prompt.Attachment.ProximityPrompt
 			print(BPToTP)
 			print(ProximityPrompt)
 			print(IsDone)
@@ -10474,7 +10474,7 @@ local function C_d6()
 		local function removeInvisibleParts(parent)
 			for _, v in pairs(parent:GetDescendants()) do
 				local nameLower = v.Name:lower()
-				if nameLower == "invisborder" or nameLower == "inviswall" or nameLower == "invisiblewall" or nameLower == "invisibleborder"  then
+				if nameLower == "invisborder" or nameLower == "inviswall" or nameLower == "invisiblewall" or nameLower == "invisibleborder" or nameLower == "invisblock" or nameLower == "invisibleblock"  then
 					print("Removing " .. v.Name)
 					v:Destroy()
 				end
