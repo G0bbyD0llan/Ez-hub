@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.DebugVersion
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["Name"] = [[DebugVersion]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -42,6 +42,7 @@ G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["Size"] = UDim2.new(0, 378, 0, 371);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4"]["Position"] = UDim2.new(0, 0, 0.04871794953942299, 0);
+G2L["4"]["Visible"] = false;
 G2L["4"]["Name"] = [[welcomepage]];
 
 -- StarterGui.DebugVersion.Title.script_content.welcomepage.welcome
@@ -954,7 +955,6 @@ G2L["67"]["BackgroundTransparency"] = 1;
 G2L["67"]["Size"] = UDim2.new(0, 378, 0, 368);
 G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["67"]["Position"] = UDim2.new(0, 0, 0.05128201097249985, 0);
-G2L["67"]["Visible"] = false;
 G2L["67"]["Name"] = [[Main]];
 
 -- StarterGui.DebugVersion.Title.script_content.Main.Player
@@ -2473,7 +2473,7 @@ G2L["110"]["TextColor3"] = Color3.fromRGB(14, 255, 0);
 G2L["110"]["Size"] = UDim2.new(0, 111, 0, 32);
 G2L["110"]["Name"] = [[callatt]];
 G2L["110"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["110"]["Text"] = [[Anti Name Shower]];
+G2L["110"]["Text"] = [[Anti-Name]];
 G2L["110"]["Position"] = UDim2.new(0.6693121790885925, 0, 0.7010869383811951, 0);
 
 -- StarterGui.DebugVersion.Title.script_content.MainFour.callatt.UIStroke
@@ -3300,7 +3300,7 @@ G2L["16b"]["Size"] = UDim2.new(0, 107, 0, 27);
 G2L["16b"]["Name"] = [[Aut]];
 G2L["16b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16b"]["Text"] = [[FOUR PAGE]];
-G2L["16b"]["Position"] = UDim2.new(0.6904761791229248, 0, 0.8804348111152649, 0);
+G2L["16b"]["Position"] = UDim2.new(0.6904761791229248, 0, 0.14673912525177002, 0);
 
 -- StarterGui.DebugVersion.Title.script_content.MainFive.Aut.UIStroke
 G2L["16c"] = Instance.new("UIStroke", G2L["16b"]);
@@ -3552,7 +3552,7 @@ G2L["187"]["Size"] = UDim2.new(0, 107, 0, 27);
 G2L["187"]["Name"] = [[Aut]];
 G2L["187"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["187"]["Text"] = [[next page]];
-G2L["187"]["Position"] = UDim2.new(0.6904761791229248, 0, 0.14673912525177002, 0);
+G2L["187"]["Position"] = UDim2.new(0.679894208908081, 0, 0.8804348111152649, 0);
 
 -- StarterGui.DebugVersion.Title.script_content.MainFive.Aut.UIStroke
 G2L["188"] = Instance.new("UIStroke", G2L["187"]);
@@ -6424,52 +6424,85 @@ local function C_81()
 	-- Conectar la función al evento del botón
 	button.MouseButton1Click:Connect(function()
 		sendNotificationWithSound("Getting","All Ornament", "4094488012")
-		local function pickupAllOrnaments()
-			-- Obtener el jugador y su personaje
-			local player = game.Players.LocalPlayer
-			local character = player.Character or player.CharacterAdded:Wait()
-			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-			local currentRoom = game.Workspace:FindFirstChild("CurrentRoom")
+		local	function pickupAllOrnaments()
+			local step = 0
+			local player
+			local character
+			local primaryPart
+			local initialCFrame
+			local workspaceObjects
 
-			if currentRoom then
-				-- Iterar por todos los modelos en la habitación actual
-				for _, roomItem in ipairs(currentRoom:GetChildren()) do
-					if roomItem:IsA("Model") then
-						local isFound = false
-						local itemsFolder = roomItem:FindFirstChild("Items")
+			while true do
+				if step == 3 then
+					primaryPart.CFrame = initialCFrame
+					task.wait(0.1)
+					step = 4
+				elseif step == 0 then
+					player = game.Players.LocalPlayer
+					character = player.Character or player.CharacterAdded:Wait()
+					step = 1
+				elseif step == 1 then
+					primaryPart = character:WaitForChild(
+						"HumanoidRootPart"
+					)
+					initialCFrame = primaryPart.CFrame
+					step = 2
+				elseif step == 2 then
+					workspaceObjects = game.Workspace:FindFirstChild(
+						"CurrentRoom"
+					)
+					if workspaceObjects then
+						for _, object in ipairs(workspaceObjects:GetChildren()) do
+							if object:IsA("Model") then
+								local container = object:FindFirstChild(
+									"Items"
+								)
+								if container and #container:GetChildren() > 0 then
+									for _, child in ipairs(container:GetChildren()) do
+										if child:IsA("Model")
+											and child.Name =="Ornament" then
+											local innerStep = 0
+											local targetCFrame
+											local interaction
 
-						if itemsFolder and #itemsFolder:GetChildren() > 0 then
-							-- Iterar sobre los objetos de la carpeta "Items"
-							for _, item in ipairs(itemsFolder:GetChildren()) do
-								if item:IsA("Ornament") and item.Name == "Prompt" then
-									local ornamentCFrame = item:GetModelCFrame() * CFrame.new(0, 2.2, 0)
-
-									-- Mover al jugador cerca del ornamento
-									humanoidRootPart.CFrame = ornamentCFrame
-									task.wait(0.1)
-
-									-- Verificar si el ornamento tiene un ProximityPrompt
-									local basePart = item:FindFirstChild("BasePart")
-									if basePart and basePart:IsA("ProximityPrompt") then
-										local prompt = basePart:FindFirstChildOfClass("ProximityPrompt")
-
-										if prompt then
-											-- Interactuar con el ProximityPrompt
-											sendNotificationWithSound("Trying to","pick up Ornament", "4094488012")
-											prompt:InputHoldBegin()
-											task.wait(0.5)
-											prompt:InputHoldEnd()
-											task.wait(0.1)
+											while true do
+												if innerStep == 1 then
+													interaction = child:FindFirstChild(
+														"Prompt"
+													)
+													if interaction and interaction:IsA("BasePart") then
+														local interactionAction = interaction:FindFirstChildOfClass(
+															"ProximityPrompt"
+														)
+														if interactionAction then
+															for _ = 1, 3 do
+																interactionAction:InputHoldBegin()
+																task.wait(0.05)
+																interactionAction:InputHoldEnd()
+																task.wait(0.1)
+															end
+														end
+													end
+													break
+												elseif innerStep == 0 then
+													targetCFrame = child:GetModelCFrame() * CFrame.new(0, 2.2, 0)
+													for _ = 1, 15 do
+														primaryPart.CFrame = targetCFrame
+														task.wait()
+													end
+													innerStep = 1
+												end
+											end
 										end
 									end
 								end
 							end
 						end
 					end
+					step = 3
 				end
 			end
 		end
-
 		pickupAllOrnaments()
 	end)
 
@@ -6976,6 +7009,14 @@ local function C_95()
 		end
 	end
 
+	function isConnieActive(v1684)
+		local v1685 = v1684:FindFirstChild("Stats")
+		local v1686 = v1685 and v1685:FindFirstChild("Connie")
+		if (v1686 and v1686:IsA("BoolValue") and v1686.Value) then
+			return true
+		end
+		return false
+	end
 
 	-- Función que ejecuta las acciones de teletransportación y activación
 	local function handleGenerators(Generators)
@@ -6993,7 +7034,7 @@ local function C_95()
 			print(ActivePlayer)
 			print("[checking these values]")
 			-- Verifica si no hay jugador activo y si no está completado
-			if isStringValueEmpty(ActivePlayer) and not IsDone.Value then
+			if isStringValueEmpty(ActivePlayer) and not IsDone.Value and not isConnieActive(generator) then
 				print("Teleporting!")
 				TP(BPToTP)  -- Teletransporta al jugador
 				wait(0.5)
@@ -10848,13 +10889,28 @@ task.spawn(C_ed);
 -- StarterGui.DebugVersion.Title.script_content.MainFour.callatt.LocalScript
 local function C_f4()
 	local script = G2L["f4"];
-	script.Parent.MouseButton1Click:Connect(function()
-		local args = {
-			[1] = "Dandy"
-		}
+	local button = script.Parent
+	local player = game:GetService("Players").LocalPlayer
+	local skillCheckFrame = player.PlayerGui:WaitForChild("ScreenGui"):WaitForChild("Menu"):WaitForChild("SkillCheckFrame"):WaitForChild("RequiredArea")
+	local growing = false -- Estado del toggle
 
-		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Voted"):InvokeServer(unpack(args))
+	-- Tamaño original y tamaño objetivo
+	local originalSize = skillCheckFrame.Size
+	local fullScreenSize = UDim2.new(1, 0, 1, 0) -- Tamaño completo de la pantalla
 
+	button.MouseButton1Click:Connect(function()
+		growing = not growing -- Cambiar estado del toggle
+
+		if growing then
+			-- Mientras "growing" sea verdadero, ajusta el tamaño gradualmente
+			while growing do
+				skillCheckFrame.Size = fullScreenSize
+				task.wait(0.1) -- Pequeño retraso para evitar que consuma demasiados recursos
+			end
+		else
+			-- Mientras "growing" sea falso, restaura el tamaño
+			skillCheckFrame.Size = originalSize
+		end
 	end)
 end;
 task.spawn(C_f4);
@@ -16080,232 +16136,46 @@ task.spawn(C_1dc);
 -- StarterGui.DebugVersion.Title.script_content.Mainseven.Aut.LocalScript
 local function C_1e1()
 	local script = G2L["1e1"];
-	local v1455 = false
-
-
-	-- Función para enviar mensajes de jugadores muertos
-	function deadChatGuiding(playerName, characterName)
-		local textChatService = game:GetService("TextChatService")
-		local rbxGeneral = textChatService.TextChannels:FindFirstChild("RBXGeneral")
-		if rbxGeneral then
-			rbxGeneral:SendAsync(playerName .. " (" .. characterName .. ") died... :(")
-		end
-	end
-
-	-- Función para habilitar el monitoreo de jugadores muertos
-	function enableDeadChatMonitor()
-		local inGamePlayers = workspace:FindFirstChild("InGamePlayers")
-		if not inGamePlayers then return end
-
-		if v1455 then return end
-
-		v1455 = game:GetService("RunService").RenderStepped:Connect(function()
-			local currentPlayers = {}
-			for _, player in ipairs(inGamePlayers:GetChildren()) do
-				if player:IsA("Model") then
-					local config = player:FindFirstChild("Config")
-					local characterName = (config and config:FindFirstChild("CharacterName") and config.CharacterName.Value) or "Unknown"
-					currentPlayers[player.Name] = characterName
-					if not v1456[player.Name] then
-						v1456[player.Name] = characterName
+	local function teleportToElevator()
+		local elevators = workspace:FindFirstChild("Elevators")
+		if elevators then
+			local elevatorModel = elevators:FindFirstChildWhichIsA("Model")
+			if elevatorModel then
+				local monsterBlocker = elevatorModel:FindFirstChild("MonsterBlocker")
+				if monsterBlocker and monsterBlocker:IsA("Part") then
+					local player = game.Players.LocalPlayer.Character
+					if player and player:FindFirstChild("HumanoidRootPart") then
+						-- Calcula la nueva posición y teletransporta al jugador
+						local newCFrame = monsterBlocker.CFrame * CFrame.new(-17, 16.6, -17)
+						player.HumanoidRootPart.CFrame = newCFrame
 					end
 				end
 			end
-
-			for playerName, characterName in pairs(v1456) do
-				if not currentPlayers[playerName] then
-					deadChatGuiding(playerName, characterName)
-					v1456[playerName] = nil
-				end
-			end
-		end)
-	end
-
-	-- Función para deshabilitar el monitoreo de jugadores muertos
-	function disableDeadChatMonitor()
-		if v1455 then
-			v1455:Disconnect()
-			v1455 = nil
-			v1456 = {}
 		end
 	end
 
-	--function to tween a button's BGC3 And BC3, And TC3
-	function tweenButton(button, bgc3, bc3, tc3, responseTime, OnEnd)
-		local tweenInfo = TweenInfo.new(responseTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-		local tween = game:GetService("TweenService"):Create(button, tweenInfo, {BackgroundColor3 = bgc3, TextColor3 = tc3})
-		tween:Play()
-		local tween2 = game:GetService("TweenService"):Create(button.UIStroke, tweenInfo, {Color = bc3})
-		tween2:Play()
-		tween.Completed:Connect(function()
-			if OnEnd then
-				OnEnd()
-			end
-		end)
+	local function do_function(times)
+		for i = 1, times do
+			teleportToElevator()
+			wait(0.1)
+		end
 	end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		print("setting IsMonitoringActive")
-		if  v1455 then
-			tweenButton(script.Parent, Color3.fromRGB(255, 60, 0), Color3.fromRGB(153, 0, 3), Color3.fromRGB(255, 0, 68), 0.5, disableDeadChatMonitor)
-		else
-			tweenButton(script.Parent, Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 170, 0), Color3.fromRGB(255, 255, 255), 0.5, enableDeadChatMonitor)
-		end
+		do_function(20)
 	end)
 end;
 task.spawn(C_1e1);
 -- StarterGui.DebugVersion.Title.script_content.Mainseven.Aut.LocalScript
 local function C_1e4()
 	local script = G2L["1e4"];
-	local v1455 = false
 
-
-	-- Función para enviar mensajes de jugadores muertos
-	function deadChatGuiding(playerName, characterName)
-		local textChatService = game:GetService("TextChatService")
-		local rbxGeneral = textChatService.TextChannels:FindFirstChild("RBXGeneral")
-		if rbxGeneral then
-			rbxGeneral:SendAsync(playerName .. " (" .. characterName .. ") died... :(")
-		end
-	end
-
-	-- Función para habilitar el monitoreo de jugadores muertos
-	function enableDeadChatMonitor()
-		local inGamePlayers = workspace:FindFirstChild("InGamePlayers")
-		if not inGamePlayers then return end
-
-		if v1455 then return end
-
-		v1455 = game:GetService("RunService").RenderStepped:Connect(function()
-			local currentPlayers = {}
-			for _, player in ipairs(inGamePlayers:GetChildren()) do
-				if player:IsA("Model") then
-					local config = player:FindFirstChild("Config")
-					local characterName = (config and config:FindFirstChild("CharacterName") and config.CharacterName.Value) or "Unknown"
-					currentPlayers[player.Name] = characterName
-					if not v1456[player.Name] then
-						v1456[player.Name] = characterName
-					end
-				end
-			end
-
-			for playerName, characterName in pairs(v1456) do
-				if not currentPlayers[playerName] then
-					deadChatGuiding(playerName, characterName)
-					v1456[playerName] = nil
-				end
-			end
-		end)
-	end
-
-	-- Función para deshabilitar el monitoreo de jugadores muertos
-	function disableDeadChatMonitor()
-		if v1455 then
-			v1455:Disconnect()
-			v1455 = nil
-			v1456 = {}
-		end
-	end
-
-	--function to tween a button's BGC3 And BC3, And TC3
-	function tweenButton(button, bgc3, bc3, tc3, responseTime, OnEnd)
-		local tweenInfo = TweenInfo.new(responseTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-		local tween = game:GetService("TweenService"):Create(button, tweenInfo, {BackgroundColor3 = bgc3, TextColor3 = tc3})
-		tween:Play()
-		local tween2 = game:GetService("TweenService"):Create(button.UIStroke, tweenInfo, {Color = bc3})
-		tween2:Play()
-		tween.Completed:Connect(function()
-			if OnEnd then
-				OnEnd()
-			end
-		end)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		print("setting IsMonitoringActive")
-		if  v1455 then
-			tweenButton(script.Parent, Color3.fromRGB(255, 60, 0), Color3.fromRGB(153, 0, 3), Color3.fromRGB(255, 0, 68), 0.5, disableDeadChatMonitor)
-		else
-			tweenButton(script.Parent, Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 170, 0), Color3.fromRGB(255, 255, 255), 0.5, enableDeadChatMonitor)
-		end
-	end)
 end;
 task.spawn(C_1e4);
 -- StarterGui.DebugVersion.Title.script_content.Mainseven.Aut.LocalScript
 local function C_1e7()
 	local script = G2L["1e7"];
-	local v1455 = false
 
-
-	-- Función para enviar mensajes de jugadores muertos
-	function deadChatGuiding(playerName, characterName)
-		local textChatService = game:GetService("TextChatService")
-		local rbxGeneral = textChatService.TextChannels:FindFirstChild("RBXGeneral")
-		if rbxGeneral then
-			rbxGeneral:SendAsync(playerName .. " (" .. characterName .. ") died... :(")
-		end
-	end
-
-	-- Función para habilitar el monitoreo de jugadores muertos
-	function enableDeadChatMonitor()
-		local inGamePlayers = workspace:FindFirstChild("InGamePlayers")
-		if not inGamePlayers then return end
-
-		if v1455 then return end
-
-		v1455 = game:GetService("RunService").RenderStepped:Connect(function()
-			local currentPlayers = {}
-			for _, player in ipairs(inGamePlayers:GetChildren()) do
-				if player:IsA("Model") then
-					local config = player:FindFirstChild("Config")
-					local characterName = (config and config:FindFirstChild("CharacterName") and config.CharacterName.Value) or "Unknown"
-					currentPlayers[player.Name] = characterName
-					if not v1456[player.Name] then
-						v1456[player.Name] = characterName
-					end
-				end
-			end
-
-			for playerName, characterName in pairs(v1456) do
-				if not currentPlayers[playerName] then
-					deadChatGuiding(playerName, characterName)
-					v1456[playerName] = nil
-				end
-			end
-		end)
-	end
-
-	-- Función para deshabilitar el monitoreo de jugadores muertos
-	function disableDeadChatMonitor()
-		if v1455 then
-			v1455:Disconnect()
-			v1455 = nil
-			v1456 = {}
-		end
-	end
-
-	--function to tween a button's BGC3 And BC3, And TC3
-	function tweenButton(button, bgc3, bc3, tc3, responseTime, OnEnd)
-		local tweenInfo = TweenInfo.new(responseTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-		local tween = game:GetService("TweenService"):Create(button, tweenInfo, {BackgroundColor3 = bgc3, TextColor3 = tc3})
-		tween:Play()
-		local tween2 = game:GetService("TweenService"):Create(button.UIStroke, tweenInfo, {Color = bc3})
-		tween2:Play()
-		tween.Completed:Connect(function()
-			if OnEnd then
-				OnEnd()
-			end
-		end)
-	end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		print("setting IsMonitoringActive")
-		if  v1455 then
-			tweenButton(script.Parent, Color3.fromRGB(255, 60, 0), Color3.fromRGB(153, 0, 3), Color3.fromRGB(255, 0, 68), 0.5, disableDeadChatMonitor)
-		else
-			tweenButton(script.Parent, Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 170, 0), Color3.fromRGB(255, 255, 255), 0.5, enableDeadChatMonitor)
-		end
-	end)
 end;
 task.spawn(C_1e7);
 -- StarterGui.DebugVersion.Title.draggable
@@ -16445,6 +16315,7 @@ task.spawn(C_1f0);
 -- StarterGui.DebugVersion.Title.SoundStarter
 local function C_1f1()
 	local script = G2L["1f1"];
+	if game.PlaceId == 16116270224 then return end
 	print("[script]: loading Dandys World HUB Sound...")
 	-- Function to play a sound
 	local function playSound(soundId, speed)
