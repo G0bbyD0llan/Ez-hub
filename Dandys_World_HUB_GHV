@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.DebugVersion
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["Name"] = [[DebugVersion]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -10923,17 +10923,21 @@ local function C_f4()
 
 	-- Función que alinea el marcador con el área dorada
 	local function alignMarker()
+		-- Verifica si se encontraron los elementos necesarios
+		-- Verifica si se encontró el marcador y el área dorada
+		-- Verifica si el toggle está activado
+		if not isToggled then
+			return
+		end
+
+
 		local marker = skillCheckFrame:FindFirstChild("Marker")
 		local goldArea = skillCheckFrame:FindFirstChild("GoldArea")
 
 		if marker and goldArea then
 			-- Mueve el marcador al centro del área dorada
-			marker.Position = UDim2.new(
-				0,
-				goldArea.AbsolutePosition.X + (goldArea.AbsoluteSize.X / 2),
-				0,
-				goldArea.AbsolutePosition.Y + (goldArea.AbsoluteSize.Y / 2)
-			)
+			marker.Position = goldArea.Position
+			marker.Size = goldArea.Size
 		else
 			warn("No se encontraron los elementos necesarios (Marker o GoldArea).")
 		end
