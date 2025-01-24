@@ -1,0 +1,1523 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 48 | Scripts: 14 | Modules: 0
+local G2L = {};
+
+-- StarterGui.Hub_Gui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Hub_Gui]];
+G2L["1"]["ResetOnSpawn"] = false;
+
+-- StarterGui.Hub_Gui.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Style"] = Enum.FrameStyle.DropShadow;
+G2L["2"]["Size"] = UDim2.new(0, 461, 0, 270);
+G2L["2"]["Selectable"] = true;
+G2L["2"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2"]["Position"] = UDim2.new(0.018859708681702614, 337, -0.1363455206155777, 241);
+G2L["2"]["Name"] = [[Main]];
+
+-- StarterGui.Hub_Gui.Main.Credits
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextTransparency"] = 0.800000011920929;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(1, -6, 0, 10);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["3"]["Text"] = [[Made By G0bbyD0llan (@G0bbyD0llan57 ON YOUTUBE)]];
+G2L["3"]["Name"] = [[Credits]];
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Position"] = UDim2.new(-0.1713665872812271, 0, 1.0185185670852661, -15);
+
+-- StarterGui.Hub_Gui.Main.Title
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(43, 127, 37);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["4"]["TextSize"] = 24;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(1, 4, 0, 32);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["4"]["Text"] = [[Da Strike's Hub]];
+G2L["4"]["Name"] = [[Title]];
+G2L["4"]["Position"] = UDim2.new(0, -2, 0, -2);
+
+-- StarterGui.Hub_Gui.Main.Title.styleLine
+G2L["5"] = Instance.new("Frame", G2L["4"]);
+G2L["5"]["ZIndex"] = 2;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
+G2L["5"]["BackgroundTransparency"] = 0.30000001192092896;
+G2L["5"]["Size"] = UDim2.new(1, 0, 0, 4);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["5"]["Position"] = UDim2.new(0, 0, 0, 28);
+G2L["5"]["Name"] = [[styleLine]];
+
+-- StarterGui.Hub_Gui.Main.Title.Hide
+G2L["6"] = Instance.new("TextButton", G2L["4"]);
+G2L["6"]["ZIndex"] = 2;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextTransparency"] = 0.30000001192092896;
+G2L["6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(51, 151, 255);
+G2L["6"]["TextSize"] = 24;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 30, 0, 28);
+G2L["6"]["Name"] = [[Hide]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6"]["Text"] = [[x]];
+G2L["6"]["Position"] = UDim2.new(1, -30, 0, 0);
+G2L["6"]["BackgroundTransparency"] = 0.800000011920929;
+
+-- StarterGui.Hub_Gui.Main.Title.Hide.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+-- StarterGui.Hub_Gui.Main.AA
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextTransparency"] = 0.5;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["8"]["Name"] = [[AA]];
+G2L["8"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["8"]["Text"] = [[Auto-Armor]];
+G2L["8"]["Position"] = UDim2.new(0.27849018573760986, -107, -0.4113854169845581, 145);
+G2L["8"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AA.active
+G2L["9"] = Instance.new("Frame", G2L["8"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["9"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["9"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AA.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["8"]);
+
+
+-- StarterGui.Hub_Gui.Main.AP
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextTransparency"] = 0.5;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["b"]["Name"] = [[AP]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["b"]["Text"] = [[Auto-Pizza]];
+G2L["b"]["Position"] = UDim2.new(0.27799999713897705, -107, -0.24899999797344208, 145);
+G2L["b"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AP.active
+G2L["c"] = Instance.new("Frame", G2L["b"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["c"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["c"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AP.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.Hub_Gui.Main.AR
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextTransparency"] = 0.5;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["e"]["Name"] = [[AR]];
+G2L["e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["e"]["Text"] = [[Auto-Reload]];
+G2L["e"]["Position"] = UDim2.new(0.27799999713897705, -107, -0.09399999678134918, 145);
+G2L["e"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AR.active
+G2L["f"] = Instance.new("Frame", G2L["e"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["f"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["f"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
+
+
+-- StarterGui.Hub_Gui.Main.AR
+G2L["11"] = Instance.new("TextButton", G2L["2"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextTransparency"] = 0.5;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["11"]["Name"] = [[AR]];
+G2L["11"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["11"]["Text"] = [[Auto-Stomp]];
+G2L["11"]["Position"] = UDim2.new(0.27799999713897705, -107, 0.052000001072883606, 145);
+G2L["11"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AR.active
+G2L["12"] = Instance.new("Frame", G2L["11"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["12"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["12"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["11"]);
+
+
+-- StarterGui.Hub_Gui.Main.AR
+G2L["14"] = Instance.new("TextButton", G2L["2"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextTransparency"] = 0.5;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["14"]["Name"] = [[AR]];
+G2L["14"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["14"]["Text"] = [[Aim-Viewer]];
+G2L["14"]["Position"] = UDim2.new(0.27799999713897705, -107, 0.21400000154972076, 145);
+G2L["14"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AR.active
+G2L["15"] = Instance.new("Frame", G2L["14"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["15"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["15"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+G2L["16"] = Instance.new("LocalScript", G2L["14"]);
+
+
+-- StarterGui.Hub_Gui.Main.StyleBorde
+G2L["17"] = Instance.new("TextLabel", G2L["2"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Size"] = UDim2.new(0, 4, 0, 193);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[]];
+G2L["17"]["Name"] = [[StyleBorde]];
+G2L["17"]["Position"] = UDim2.new(0.31348714232444763, 0, 0.1616058349609375, 0);
+
+-- StarterGui.Hub_Gui.Main.StyleBorde
+G2L["18"] = Instance.new("TextLabel", G2L["2"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Size"] = UDim2.new(0, 301, 0, 3);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[]];
+G2L["18"]["Name"] = [[StyleBorde]];
+G2L["18"]["Position"] = UDim2.new(0.31996044516563416, 0, 0.6552978754043579, 0);
+
+-- StarterGui.Hub_Gui.Main.Target
+G2L["19"] = Instance.new("Frame", G2L["2"]);
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["BackgroundTransparency"] = 1;
+G2L["19"]["Size"] = UDim2.new(0, 277, 0, 112);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Position"] = UDim2.new(0.3511805236339569, 0, 0.1794099062681198, 0);
+G2L["19"]["Name"] = [[Target]];
+
+-- StarterGui.Hub_Gui.Main.Target.TextBox
+G2L["1a"] = Instance.new("TextBox", G2L["19"]);
+G2L["1a"]["CursorPosition"] = -1;
+G2L["1a"]["PlaceholderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["BackgroundTransparency"] = 0.5;
+G2L["1a"]["PlaceholderText"] = [[enter Target's Name here]];
+G2L["1a"]["Size"] = UDim2.new(0, 282, 0, 24);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[]];
+
+-- StarterGui.Hub_Gui.Main.Target.TextBox.active
+G2L["1b"] = Instance.new("Frame", G2L["1a"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 235);
+G2L["1b"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1b"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.Target.V
+G2L["1c"] = Instance.new("TextButton", G2L["19"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextTransparency"] = 0.5;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["1c"]["Name"] = [[V]];
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1c"]["Text"] = [[View]];
+G2L["1c"]["Position"] = UDim2.new(0.3831833302974701, -107, -0.9738854169845581, 145);
+G2L["1c"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.Target.V.active
+G2L["1d"] = Instance.new("Frame", G2L["1c"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["1d"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1d"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.Target.V.LocalScript
+G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
+
+
+-- StarterGui.Hub_Gui.Main.Target.LF
+G2L["1f"] = Instance.new("TextButton", G2L["19"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextTransparency"] = 0.5;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["1f"]["Name"] = [[LF]];
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["1f"]["Text"] = [[Loop Fling]];
+G2L["1f"]["Position"] = UDim2.new(0.9644107818603516, -107, -0.9738854169845581, 145);
+G2L["1f"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.Target.LF.active
+G2L["20"] = Instance.new("Frame", G2L["1f"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["20"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["20"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.Target.LF.LocalScript
+G2L["21"] = Instance.new("LocalScript", G2L["1f"]);
+
+
+-- StarterGui.Hub_Gui.Main.Target.LF
+G2L["22"] = Instance.new("TextButton", G2L["19"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextTransparency"] = 0.5;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["22"]["Name"] = [[LF]];
+G2L["22"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["22"]["Text"] = [[Kill (in work)]];
+G2L["22"]["Position"] = UDim2.new(0.3831833302974701, -107, -0.6078139543533325, 145);
+G2L["22"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.Target.LF.active
+G2L["23"] = Instance.new("Frame", G2L["22"]);
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 255);
+G2L["23"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["23"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.Target.LF.LocalScript
+G2L["24"] = Instance.new("LocalScript", G2L["22"]);
+G2L["24"]["Enabled"] = false;
+G2L["24"]["Disabled"] = true;
+
+-- StarterGui.Hub_Gui.Main.Target.stomp
+G2L["25"] = Instance.new("TextButton", G2L["19"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextTransparency"] = 0.5;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["25"]["Name"] = [[stomp]];
+G2L["25"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["25"]["Text"] = [[stomp]];
+G2L["25"]["Position"] = UDim2.new(0.9644107818603516, -107, -0.6078139543533325, 145);
+G2L["25"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.Target.stomp.active
+G2L["26"] = Instance.new("Frame", G2L["25"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 255);
+G2L["26"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["26"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.Target.stomp.LocalScript
+G2L["27"] = Instance.new("LocalScript", G2L["25"]);
+
+
+-- StarterGui.Hub_Gui.Main.AS
+G2L["28"] = Instance.new("TextButton", G2L["2"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextTransparency"] = 0.5;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["28"]["Name"] = [[AS]];
+G2L["28"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["28"]["Text"] = [[Farm-stomp]];
+G2L["28"]["Position"] = UDim2.new(0.5850541591644287, -107, 0.16002966463565826, 145);
+G2L["28"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AS.active
+G2L["29"] = Instance.new("Frame", G2L["28"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["29"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["29"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AS.LocalScript
+G2L["2a"] = Instance.new("LocalScript", G2L["28"]);
+
+
+-- StarterGui.Hub_Gui.Main.AR
+G2L["2b"] = Instance.new("TextButton", G2L["2"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextTransparency"] = 0.5;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["2b"]["Name"] = [[AR]];
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2b"]["Text"] = [[mod spawns]];
+G2L["2b"]["Position"] = UDim2.new(0.9449999928474426, -107, 0.1599999964237213, 145);
+G2L["2b"]["BackgroundTransparency"] = 0.5;
+
+-- StarterGui.Hub_Gui.Main.AR.active
+G2L["2c"] = Instance.new("Frame", G2L["2b"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 255);
+G2L["2c"]["Size"] = UDim2.new(0, 5, 1, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["2c"]["Name"] = [[active]];
+
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+-- StarterGui.Hub_Gui.Main.LocalScript
+G2L["2e"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.Hub_Gui.Main.LocalScript
+G2L["2f"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.Hub_Gui.Main.StyleBorde
+G2L["30"] = Instance.new("TextLabel", G2L["2"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Size"] = UDim2.new(0, 301, 0, 3);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[]];
+G2L["30"]["Name"] = [[StyleBorde]];
+G2L["30"]["Position"] = UDim2.new(0.31967779994010925, 0, 0.870880663394928, 0);
+
+-- StarterGui.Hub_Gui.Main.Title.Hide.LocalScript
+local function C_7()
+local script = G2L["7"];
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.Hub_Gui.Main.AA.LocalScript
+local function C_a()
+local script = G2L["a"];
+	-- LocalScript inside the TextButton
+	
+	local TweenService = game:GetService("TweenService") -- Get TweenService
+	
+	-- Define the ClickDetector path
+	local clickDetector = workspace.MAP.Pads:GetChildren()[6].ClickDetector
+	
+	-- Define the button and color indicator
+	local button = script.Parent
+	local activeIndicator = script.Parent.active
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	
+	-- Colors for active and inactive states
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Variable to keep track of the loop state
+	local isLooping = false
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	-- Function to start and stop the loop
+	local function toggleClickLoop()
+		if isLooping then
+			-- Stop the loop if it's already running
+			isLooping = false
+			tweenColor(activeIndicator, inactiveColor)  -- Change to red
+		else
+			-- Start the loop if it's not running
+			isLooping = true
+			tweenColor(activeIndicator, activeColor)  -- Change to green
+	
+			-- Run the loop
+			while isLooping do
+				task.spawn(function()
+					fireclickdetector(clickDetector)
+				end)
+				task.wait(0.1) -- Add a small delay to avoid crashing the game
+			end
+		end
+	end
+	
+	-- Connect the button click to the toggle function
+	button.MouseButton1Click:Connect(toggleClickLoop)
+	
+end;
+task.spawn(C_a);
+-- StarterGui.Hub_Gui.Main.AP.LocalScript
+local function C_d()
+local script = G2L["d"];
+	-- LocalScript inside the TextButton
+	
+	local TweenService = game:GetService("TweenService") -- Get TweenService
+	
+	-- Define the ClickDetector path
+	local clickDetector = workspace.MAP.Pads:GetChildren()[9]["[Pizza]"].ClickDetector
+	
+	-- Define the button and color indicator
+	local button = script.Parent
+	local activeIndicator = script.Parent.active
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	
+	-- Colors for active and inactive states
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Variable to keep track of the loop state
+	local isLooping = false
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	-- Function to start and stop the loop
+	local function toggleClickLoop()
+		if isLooping then
+			-- Stop the loop if it's already running
+			isLooping = false
+			tweenColor(activeIndicator, inactiveColor)  -- Change to red
+		else
+			-- Start the loop if it's not running
+			isLooping = true
+			tweenColor(activeIndicator, activeColor)  -- Change to green
+	
+			-- Run the loop
+			while isLooping do
+				task.spawn(function()
+					fireclickdetector(clickDetector)
+				end)
+				task.wait(0.1) -- Add a small delay to avoid crashing the game
+			end
+		end
+	end
+	
+	-- Connect the button click to the toggle function
+	button.MouseButton1Click:Connect(toggleClickLoop)
+	
+end;
+task.spawn(C_d);
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+local function C_10()
+local script = G2L["10"];
+	-- LocalScript inside the TextButton
+	
+	local TweenService = game:GetService("TweenService") -- Get TweenService
+	local Players = game:GetService("Players") -- Get Players service
+	local LocalPlayer = Players.LocalPlayer -- Get the local player
+	
+	-- Define the button and color indicator
+	local button = script.Parent
+	local activeIndicator = script.Parent.active
+	
+	-- Reference to GUI elements for ammo
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	
+	-- Colors for active and inactive states
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Variable to keep track of the loop state
+	local isLooping = false
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	-- Function to check and reload the weapon
+	local function checkAndReload()
+		-- Check if AmmoText is 0
+		local AmmoText = LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("gui"):WaitForChild("AmmoFrame"):WaitForChild("AmmoText")
+	
+		if tonumber(AmmoText.Text) == 0 then
+			-- Get the current tool in the character
+			local character = LocalPlayer.Character
+			if character then
+				for _, tool in ipairs(character:GetChildren()) do
+					if tool:IsA("Tool") then
+						-- Check if the tool has a remote named "rl"
+						local rlRemote = tool:FindFirstChild("rl")
+						if rlRemote and rlRemote:IsA("RemoteEvent") then
+							-- Fire the remote to reload
+							rlRemote:FireServer()
+							break
+						end
+					end
+				end
+			end
+		end
+	end
+	
+	-- Function to start and stop the loop
+	local function toggleLoop()
+		if isLooping then
+			-- Stop the loop if it's already running
+			isLooping = false
+			tweenColor(activeIndicator, inactiveColor)  -- Change to red
+		else
+			-- Start the loop if it's not running
+			isLooping = true
+			tweenColor(activeIndicator, activeColor)  -- Change to green
+	
+			-- Run the loop
+			while isLooping do
+				checkAndReload() -- Call the check and reload function
+				task.wait(0.1) -- Add a small delay to avoid crashing the game
+			end
+		end
+	end
+	
+	-- Connect the button click to the toggle function
+	button.MouseButton1Click:Connect(toggleLoop)
+	
+end;
+task.spawn(C_10);
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+local function C_13()
+local script = G2L["13"];
+	-- LocalScript inside the TextButton
+	
+	local TweenService = game:GetService("TweenService") -- Get TweenService
+	
+	-- Define the button and color indicator
+	local button = script.Parent
+	local activeIndicator = script.Parent.active
+	
+	-- Reference to ReplicatedStorage and MAINEVENT
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local MainEvent = ReplicatedStorage:WaitForChild("MAINEVENT")
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	
+	-- Colors for active and inactive states
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Variable to keep track of the loop state
+	local isLooping = false
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	-- Function to perform the "STOMP" action
+	local function performStomp()
+		local args = { [1] = "STOMP" }
+		MainEvent:FireServer(unpack(args))
+	end
+	
+	-- Function to start and stop the "STOMP" loop
+	local function toggleStompLoop()
+		if isLooping then
+			-- Stop the loop if it's already running
+			isLooping = false
+			tweenColor(activeIndicator, inactiveColor)  -- Change to red
+		else
+			-- Start the loop if it's not running
+			isLooping = true
+			tweenColor(activeIndicator, activeColor)  -- Change to green
+	
+			-- Run the loop
+			while isLooping do
+	
+				performStomp() -- Call the "STOMP" function
+				task.wait(0.01) -- Add a small delay to avoid crashing the game
+			end
+		end
+	end
+	
+	-- Connect the button click to the toggle function
+	button.MouseButton1Click:Connect(toggleStompLoop)
+end;
+task.spawn(C_13);
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+local function C_16()
+local script = G2L["16"];
+	script.Parent.MouseButton1Click:Connect(function()
+	--[[
+		WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+	]]
+		local starterGui = game:GetService("StarterGui")
+	
+		-- Mostrar notificación solo una vez usando SetCore
+		local function showNotification()
+			starterGui:SetCore("SendNotification", {
+				Title = "Aim Viewer GUI Activated",
+				Text = "Go to settings to configure the Aim Viewer.",
+				Duration = 5, -- Duración de la notificación en segundos
+				Button1 = "OK"
+			})
+		end
+	
+		-- Mostrar el aimviewer repetidamente cada 3 segundos
+		local function toggleAimViewer()
+			showNotification() -- Ejecutar notificación una vez
+	
+			while true do
+				-- Definir variables dentro del bucle
+				local player = game:GetService("Players").LocalPlayer
+				local gui = player.PlayerGui.gui
+				local aimViewerFrame = gui.Settings.ScrollingFrame.aimviewer
+	
+				-- Hacer visible el aimviewer
+				aimViewerFrame.Visible = true
+	
+				-- Esperar 3 segundos antes de repetir
+				task.wait(3)
+			end
+		end
+	
+		-- Iniciar el loop de visibilidad del aim viewer
+		toggleAimViewer()
+	
+	end)
+end;
+task.spawn(C_16);
+-- StarterGui.Hub_Gui.Main.Target.V.LocalScript
+local function C_1e()
+local script = G2L["1e"];
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	local ToSearch = script.Parent.Parent.TextBox
+	
+	-- Function to find a player by UserId, username (Name), or display name (DisplayName)
+	local function findPlayer(query)
+		for _, player in ipairs(Players:GetPlayers()) do
+			if tonumber(query) and player.UserId == tonumber(query) then
+				return player
+			elseif player.Name:lower() == tostring(query):lower() then
+				return player
+			elseif player.DisplayName:lower() == tostring(query):lower() then
+				return player
+			end
+		end
+		return nil
+	end
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	local IsViewing = false
+	local ViewingPlayer = nil
+	local UpdateView = false
+	
+	-- Function to update the camera's subject
+	local function updateCamera()
+		while UpdateView do
+			if ViewingPlayer and ViewingPlayer.Character and ViewingPlayer.Character:FindFirstChild("Humanoid") then
+				game.Workspace.CurrentCamera.CameraSubject = ViewingPlayer.Character.Humanoid
+			end
+			task.wait(1)
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local ToView = findPlayer(ToSearch.Text)
+		if ToView then
+			IsViewing = not IsViewing
+			if IsViewing then
+				ViewingPlayer = ToView
+				UpdateView = true
+				tweenColor(script.Parent.active, activeColor)
+				spawn(updateCamera)
+			else
+				ViewingPlayer = nil
+				UpdateView = false
+				game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+				tweenColor(script.Parent.active, inactiveColor)
+			end
+		end
+	end)
+	
+	
+end;
+task.spawn(C_1e);
+-- StarterGui.Hub_Gui.Main.Target.LF.LocalScript
+local function C_21()
+local script = G2L["21"];
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	local ToSearch = script.Parent.Parent.TextBox
+	
+	-- Function to find a player by UserId, username (Name), or display name (DisplayName)
+	local function findPlayer(query)
+		for _, player in ipairs(Players:GetPlayers()) do
+			if tonumber(query) and player.UserId == tonumber(query) then
+				return player
+			elseif player.Name:lower() == tostring(query):lower() then
+				return player
+			elseif player.DisplayName:lower() == tostring(query):lower() then
+				return player
+			end
+		end
+		return nil
+	end
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	local AllBool = false
+	local Player = game.Players.LocalPlayer
+	
+	-- Function to perform the SkidFling action
+	local function SkidFling(TargetPlayer)
+		local Character = Player.Character
+		local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+		local RootPart = Humanoid and Humanoid.RootPart
+	
+		local TCharacter = TargetPlayer.Character
+		local THumanoid = TCharacter and TCharacter:FindFirstChildOfClass("Humanoid")
+		local TRootPart = THumanoid and THumanoid.RootPart
+		local THead = TCharacter and TCharacter:FindFirstChild("Head")
+		local Accessory = TCharacter and TCharacter:FindFirstChildOfClass("Accessory")
+		local Handle = Accessory and Accessory:FindFirstChild("Handle")
+	
+		if not Character or not Humanoid or not RootPart then
+			return print("Error: Player character or humanoid not found")
+		end
+	
+		if RootPart.Velocity.Magnitude < 50 then
+			getgenv().OldPos = RootPart.CFrame
+		end
+	
+		if THumanoid and THumanoid.Sit and not AllBool then
+			return print("Error: Targeting player is sitting")
+		end
+	
+		if THead then
+			workspace.CurrentCamera.CameraSubject = THead
+		elseif Handle then
+			workspace.CurrentCamera.CameraSubject = Handle
+		elseif THumanoid and TRootPart then
+			workspace.CurrentCamera.CameraSubject = THumanoid
+		end
+	
+		if not TCharacter:FindFirstChildWhichIsA("BasePart") then
+			return
+		end
+	
+		local function FPos(BasePart, Pos, Ang)
+			RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
+			Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
+			RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+			RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+		end
+	
+		local function SFBasePart(BasePart)
+			local TimeToWait = 2
+			local Time = tick()
+			local Angle = 0
+	
+			repeat
+				if RootPart and THumanoid then
+					if BasePart.Velocity.Magnitude < 50 then
+						Angle = Angle + 100
+	
+						FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+					else
+						FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, -THumanoid.WalkSpeed), CFrame.Angles(0, 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, -TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(0, 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(90), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(-90), 0, 0))
+						task.wait()
+	
+						FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+						task.wait()
+					end
+				else
+					break
+				end
+			until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+		end
+	
+		workspace.FallenPartsDestroyHeight = math.huge
+	
+		local BV = Instance.new("BodyVelocity")
+		BV.Name = "EpixVel"
+		BV.Parent = RootPart
+		BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
+		BV.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+	
+		Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+	
+		if TRootPart and THead then
+			if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
+				SFBasePart(THead)
+			else
+				SFBasePart(TRootPart)
+			end
+		elseif TRootPart then
+			SFBasePart(TRootPart)
+		elseif THead then
+			SFBasePart(THead)
+		elseif Handle then
+			SFBasePart(Handle)
+		else
+			return print("Error: Target is missing essential parts")
+		end
+	
+		BV:Destroy()
+		Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+		workspace.CurrentCamera.CameraSubject = Humanoid
+	
+		repeat
+			RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
+			Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
+			Humanoid:ChangeState("GettingUp")
+			for _, x in ipairs(Character:GetChildren()) do
+				if x:IsA("BasePart") then
+					x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+				end
+			end
+			task.wait()
+		until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
+		workspace.FallenPartsDestroyHeight = getgenv().FPDH
+	end
+	
+	-- Reference to the button
+	local FlingButton = script.Parent
+	
+	-- State to control the loop
+	local isLooping = false
+	
+	-- Button click connection to the SkidFling function
+	FlingButton.MouseButton1Click:Connect(function()
+		if isLooping then
+			isLooping = false -- Stop the loop
+			tweenColor(FlingButton, inactiveColor)
+		else
+			isLooping = true -- Start the loop
+			tweenColor(FlingButton, activeColor)
+	
+			while isLooping do
+				local targetPlayer = findPlayer(ToSearch.Text)
+				if targetPlayer then
+					SkidFling(targetPlayer) -- Call the SkidFling function
+				end
+				task.wait(1) -- Wait 1 second before the next iteration
+			end
+		end
+	end)
+	
+	
+end;
+task.spawn(C_21);
+-- StarterGui.Hub_Gui.Main.Target.stomp.LocalScript
+local function C_27()
+local script = G2L["27"];
+	-- LocalScript inside the TextButton
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService") -- Get TweenService
+	local function findPlayer(query)
+		for _, player in ipairs(Players:GetPlayers()) do
+			-- Comprobar si la consulta es un UserId (número)
+			if tonumber(query) and player.UserId == tonumber(query) then
+				return player
+	
+				-- Comprobar si la consulta coincide con el nombre de usuario (Name)
+			elseif player.Name:lower() == tostring(query):lower() then
+				return player
+	
+				-- Comprobar si la consulta coincide con el nombre visible (DisplayName)
+			elseif player.DisplayName:lower() == tostring(query):lower() then
+				return player
+			end
+		end
+		return nil
+	end
+	
+	-- Define the button and color indicator
+	local button = script.Parent
+	local activeIndicator = script.Parent.active
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	
+	-- Colors for active and inactive states
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local MAINEVENT = ReplicatedStorage:WaitForChild("MAINEVENT")
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	local function getLocalPlayerCharacter()
+		print("getting localplayer CH and H")
+		local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		return character, humanoid
+	end
+	
+	-- Función para "STOMP"
+	local function stomp()
+		print("stomp")
+		local args = { [1] = "STOMP" }
+		MAINEVENT:FireServer(unpack(args))
+	end
+	
+	local IgnoredDisplayNames = {
+		["331x"] = true,
+		["FireKp"] = true,
+		["DanQz"] = true
+	}
+	
+	-- Función para comprobar si se debe ignorar a un jugador
+	local function shouldIgnorePlayer(player)
+		return IgnoredDisplayNames[player.DisplayName] == true
+	end
+	
+	local function findTorsoParts(targetPlayer)
+		if typeof(targetPlayer) == "Instance" and targetPlayer:IsA("Player") then
+			if shouldIgnorePlayer(targetPlayer) then
+				print("Ignoring player with DisplayName: " .. targetPlayer.DisplayName)
+				return nil, nil
+			end
+	
+			local character = targetPlayer.Character
+			print("getting " .. targetPlayer.DisplayName .. " Torso")
+			if character and character:FindFirstChildOfClass("Humanoid") then
+				local upperTorso = character:FindFirstChild("UpperTorso")
+				local lowerTorso = character:FindFirstChild("LowerTorso")
+				return upperTorso, lowerTorso
+			end
+		end
+		return nil, nil
+	end
+	
+	
+	
+	-- Función para teletransportarse a un jugador objetivo
+	local function teleportToPlayer(targetPlayer)
+		if typeof(targetPlayer) == "Instance" and targetPlayer:IsA("Player") then
+			if shouldIgnorePlayer(targetPlayer) then
+				print("Ignoring player with DisplayName: " .. targetPlayer.DisplayName)
+				return
+			end
+	
+			print(targetPlayer.DisplayName .. " Teleporting")
+			local character = getLocalPlayerCharacter()
+			local upperTorso, lowerTorso = findTorsoParts(targetPlayer)
+	
+			if upperTorso then
+				character:SetPrimaryPartCFrame(upperTorso.CFrame)
+			elseif lowerTorso then
+				character:SetPrimaryPartCFrame(lowerTorso.CFrame)
+			else
+				print("Neither UpperTorso nor LowerTorso found.")
+			end
+		else
+			print("Target is not a valid Player.")
+		end
+	end
+	
+	
+	
+	local stompPlayer = function(playerToStomp)
+	if typeof(playerToStomp) == "Instance" and playerToStomp:IsA("Player") then
+		if playerToStomp.Character.HumanoidRootPart.Anchored == true then
+				local localPlayerCharacter, localPlayerHumanoid = getLocalPlayerCharacter()
+	
+				script.Parent.Text = "trying to stomp..."
+				localPlayerHumanoid.PlatformStand = true
+	
+				-- Teletransportarse al jugador anclado
+				teleportToPlayer(playerToStomp)
+	
+				-- Comenzar a golpear hasta que la salud del objetivo sea 0
+				repeat
+					stomp()
+					teleportToPlayer(playerToStomp)
+					task.wait(0.01)
+				until playerToStomp.Character:FindFirstChildOfClass("Humanoid").Health <= 0
+				tweenColor(activeIndicator, Color3.new(0, 0, 1))
+				script.Parent.Text = "¡Done!"
+				wait(2)
+				tweenColor(activeIndicator, Color3.new(0, 1, 1))
+				script.Parent.Text = "stomp"
+				
+		else
+				print("Player is not anchored.")
+				tweenColor(activeIndicator, Color3.new(1, 0, 0))
+				script.Parent.Text = "player is not knocked"
+				wait(2)
+				tweenColor(activeIndicator, Color3.new(0, 1, 1))
+				script.Parent.Text = "stomp"
+		end
+	end
+	end
+	button.MouseButton1Click:Connect(function()
+		local targetPlayer = findPlayer(button.Parent.TextBox.Text)
+		if targetPlayer then
+			stompPlayer(targetPlayer)
+		else
+			print("Player not found.")
+			tweenColor(activeIndicator, Color3.new(1, 0, 0))
+			script.Parent.Text = "player not found"
+			wait(2)
+			tweenColor(activeIndicator, Color3.new(0, 1, 1))
+			script.Parent.Text = "stomp"
+		end
+	end)
+	
+end;
+task.spawn(C_27);
+-- StarterGui.Hub_Gui.Main.AS.LocalScript
+local function C_2a()
+local script = G2L["2a"];
+	-- LocalScript inside the TextButton
+	
+	local TweenService = game:GetService("TweenService") -- Get TweenService
+	
+	-- Define the ClickDetector path
+	local clickDetector = workspace.MAP.Pads:GetChildren()[6].ClickDetector
+	
+	-- Define the button and color indicator
+	local button = script.Parent
+	local activeIndicator = script.Parent.active
+	
+	-- Tween settings
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out) -- 0.5 seconds for color transition
+	
+	-- Colors for active and inactive states
+	local activeColor = Color3.fromRGB(0, 255, 0)  -- Green color for active
+	local inactiveColor = Color3.fromRGB(255, 0, 0)  -- Red color for inactive
+	
+	-- Variable to keep track of the loop state
+	local isLooping = false
+	
+	-- Function to tween color change
+	local function tweenColor(target, color)
+		local goal = { BackgroundColor3 = color }
+		local tween = TweenService:Create(target, tweenInfo, goal)
+		tween:Play()
+	end
+	
+	print("starting script")
+	
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local MAINEVENT = ReplicatedStorage:WaitForChild("MAINEVENT")
+	local CheckInterval = 1 -- Intervalo para comprobar cada jugador
+	local OriginalCFrame = LocalPlayer.Character:GetPrimaryPartCFrame() -- Para almacenar la posición original de LocalPlayer
+	print("old pos: " .. tostring(OriginalCFrame))
+	
+	-- Lista de DisplayNames a ignorar
+	local IgnoredDisplayNames = {
+		["331x"] = true,
+		["FireKp"] = true,
+		["DanQz"] = true
+	}
+	
+	-- Función para comprobar si se debe ignorar a un jugador
+	local function shouldIgnorePlayer(player)
+		return IgnoredDisplayNames[player.DisplayName] == true
+	end
+	
+	-- Función para obtener el Character y el Humanoid de LocalPlayer
+	local function getLocalPlayerCharacter()
+		print("getting localplayer CH and H")
+		local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		return character, humanoid
+	end
+	
+	-- Función para "STOMP"
+	local function stomp()
+		print("stomp")
+		local args = { [1] = "STOMP" }
+		MAINEVENT:FireServer(unpack(args))
+	end
+	
+	-- Función para encontrar partes del torso del jugador objetivo
+	local function findTorsoParts(targetPlayer)
+		if typeof(targetPlayer) == "Instance" and targetPlayer:IsA("Player") then
+			if shouldIgnorePlayer(targetPlayer) then
+				print("Ignoring player with DisplayName: " .. targetPlayer.DisplayName)
+				return nil, nil
+			end
+	
+			local character = targetPlayer.Character
+			print("getting " .. targetPlayer.DisplayName .. " Torso")
+			if character and character:FindFirstChildOfClass("Humanoid") then
+				local upperTorso = character:FindFirstChild("UpperTorso")
+				local lowerTorso = character:FindFirstChild("LowerTorso")
+				return upperTorso, lowerTorso
+			end
+		end
+		return nil, nil
+	end
+	
+	-- Función para teletransportarse a un jugador objetivo
+	local function teleportToPlayer(targetPlayer)
+		if typeof(targetPlayer) == "Instance" and targetPlayer:IsA("Player") then
+			if shouldIgnorePlayer(targetPlayer) then
+				print("Ignoring player with DisplayName: " .. targetPlayer.DisplayName)
+				return
+			end
+	
+			print(targetPlayer.DisplayName .. " Teleporting")
+			local character = getLocalPlayerCharacter()
+			local upperTorso, lowerTorso = findTorsoParts(targetPlayer)
+	
+			if upperTorso then
+				character:SetPrimaryPartCFrame(upperTorso.CFrame)
+			elseif lowerTorso then
+				character:SetPrimaryPartCFrame(lowerTorso.CFrame)
+			else
+				print("Neither UpperTorso nor LowerTorso found.")
+			end
+		else
+			print("Target is not a valid Player.")
+		end
+	end
+	
+	-- Función para comprobar si algún jugador está fijado o anclado
+	local function checkPlayers()
+		print("checking players")
+		local players = Players:GetPlayers()
+		local localPlayerCharacter, localPlayerHumanoid = getLocalPlayerCharacter()
+	
+		for _, player in ipairs(players) do
+			if player ~= LocalPlayer then
+				if shouldIgnorePlayer(player) then
+					print("Skipping player with DisplayName: " .. player.DisplayName)
+					continue
+				end
+	
+				local character = player.Character
+				if character and character:FindFirstChild("HumanoidRootPart") then
+					local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+					print("checking " .. player.DisplayName .. " HumanoidRootPart")
+					if humanoidRootPart.Anchored then
+						if character:FindFirstChildOfClass("Humanoid").Health <= 0 then return end
+						print(player.DisplayName .. " Detected...")
+						-- Poner LocalPlayer en PlatformStand
+						localPlayerHumanoid.PlatformStand = true
+	
+						-- Teletransportarse al jugador anclado
+						teleportToPlayer(player)
+	
+						-- Comenzar a golpear hasta que la salud del objetivo sea 0
+						repeat
+							stomp()
+							teleportToPlayer(player)
+							task.wait(0.01)
+						until character:FindFirstChildOfClass("Humanoid").Health <= 0
+						print("¡done!")
+						-- Volver a la posición original
+						localPlayerCharacter:SetPrimaryPartCFrame(OriginalCFrame)
+						localPlayerHumanoid.PlatformStand = false
+					end
+				end
+			end
+		end
+	end
+	
+	
+	-- Botón de interfaz de usuario (ajusta esto a tu interfaz)
+	local StartButton = script.Parent -- Asegúrate de ajustar la ruta correcta al botón
+	
+	-- Conexión del botón para iniciar/detener el bucle
+	StartButton.MouseButton1Click:Connect(function()
+		if isLooping then
+			isLooping = false -- Detiene el bucle
+			tweenColor(activeIndicator, Color3.new(1, 0, 0))
+		else
+			isLooping = true -- Inicia el bucle
+			tweenColor(activeIndicator, Color3.new(0, 1, 0))
+			-- Bucle para ejecutar checkPlayers repetidamente mientras isLooping es true
+			while isLooping do
+				if getLocalPlayerCharacter().PrimaryPart.Anchored == true then 
+					print("local player is stuck ") 
+					return 
+				end
+				checkPlayers()
+				task.wait(CheckInterval)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_2a);
+-- StarterGui.Hub_Gui.Main.AR.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	script.Parent.MouseButton1Click:Connect(function()
+		-- Asegúrate de colocar este script en un LocalScript
+	
+		-- Referencias a los servicios y al jugador local
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		local respawnPosition = nil
+	
+		-- Función que se llama cuando el jugador muere
+		local function onDeath()
+			-- Guarda la posición de la muerte
+			respawnPosition = character:WaitForChild("HumanoidRootPart").Position
+			print("Death Position Saved: " .. tostring(respawnPosition))
+		end
+	
+		-- Función que se llama cuando el jugador respawnea
+		local function onCharacterAdded(newCharacter)
+			character = newCharacter
+			humanoid = character:WaitForChild("Humanoid")
+	
+			-- Conecta el evento de muerte al nuevo Humanoid
+			humanoid.Died:Connect(onDeath)
+	
+			-- Si hay una posición de respawn guardada, teletransporta al jugador a esa posición
+			if respawnPosition then
+				wait(0.5)
+				character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(respawnPosition)
+				print("Teleporting to Death Position: " .. tostring(respawnPosition))
+			end
+		end
+	
+		-- Conecta el evento de añadido del personaje para el jugador local
+		player.CharacterAdded:Connect(onCharacterAdded)
+	
+		-- Conecta el evento de muerte del personaje actual
+		if character and humanoid then
+			humanoid.Died:Connect(onDeath)
+		end
+	
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.Hub_Gui.Main.LocalScript
+local function C_2e()
+local script = G2L["2e"];
+	-- LocalScript inside the GUI object you want to center
+	
+	-- Get the GUI object (script.Parent)
+	local guiObject = script.Parent
+	
+	-- Set the Position property to center it
+	guiObject.Position = UDim2.new(0.5, -guiObject.Size.X.Offset / 2, 0.5, -guiObject.Size.Y.Offset / 2)
+	
+end;
+task.spawn(C_2e);
+-- StarterGui.Hub_Gui.Main.LocalScript
+local function C_2f()
+local script = G2L["2f"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	local title = gui:FindFirstChild("Title")
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function isCursorOverTitle(input)
+		local mousePos = input.Position
+		local titlePos = title.AbsolutePosition
+		local titleSize = title.AbsoluteSize
+	
+		return mousePos.X >= titlePos.X and mousePos.X <= titlePos.X + titleSize.X and
+			mousePos.Y >= titlePos.Y and mousePos.Y <= titlePos.Y + titleSize.Y
+	end
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and title then
+			if isCursorOverTitle(input) then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+	
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end;
+task.spawn(C_2f);
+
+return G2L["1"], require;
