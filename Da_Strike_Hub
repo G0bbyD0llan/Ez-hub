@@ -292,7 +292,7 @@ G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["1c"]["Name"] = [[LF]];
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["1c"]["Text"] = [[[SOON]];
+G2L["1c"]["Text"] = [[SOON]];
 G2L["1c"]["Position"] = UDim2.new(0.9644107818603516, -107, -0.9738854169845581, 145);
 G2L["1c"]["BackgroundTransparency"] = 0.5;
 
@@ -315,7 +315,7 @@ G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1e"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["1e"]["Name"] = [[LF]];
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["1e"]["Text"] = [[[SOON]];
+G2L["1e"]["Text"] = [[SOON]];
 G2L["1e"]["Position"] = UDim2.new(0.3831833302974701, -107, -0.6078139543533325, 145);
 G2L["1e"]["BackgroundTransparency"] = 0.5;
 
@@ -338,7 +338,7 @@ G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["20"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["20"]["Name"] = [[stomp]];
 G2L["20"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["20"]["Text"] = [[[SOON]];
+G2L["20"]["Text"] = [[SOON]];
 G2L["20"]["Position"] = UDim2.new(0.9644107818603516, -107, -0.6078139543533325, 145);
 G2L["20"]["BackgroundTransparency"] = 0.5;
 
@@ -361,7 +361,7 @@ G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["22"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["22"]["Name"] = [[V]];
 G2L["22"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["22"]["Text"] = [[[SOON]];
+G2L["22"]["Text"] = [[SOON]];
 G2L["22"]["Position"] = UDim2.new(0.3831833302974701, -107, -0.9738854169845581, 145);
 G2L["22"]["BackgroundTransparency"] = 0.5;
 
@@ -384,7 +384,7 @@ G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["24"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["24"]["Name"] = [[V]];
 G2L["24"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["24"]["Text"] = [[[SOON]];
+G2L["24"]["Text"] = [[SOON]];
 G2L["24"]["Position"] = UDim2.new(0.3831833302974701, -107, -1.3399568796157837, 145);
 G2L["24"]["BackgroundTransparency"] = 0.5;
 
@@ -407,7 +407,7 @@ G2L["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["26"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["26"]["Name"] = [[V]];
 G2L["26"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["26"]["Text"] = [[[SOON]];
+G2L["26"]["Text"] = [[SOON]];
 G2L["26"]["Position"] = UDim2.new(0.9644107818603516, -107, -1.3399568796157837, 145);
 G2L["26"]["BackgroundTransparency"] = 0.5;
 
@@ -430,7 +430,7 @@ G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["28"]["Name"] = [[AS]];
 G2L["28"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["28"]["Text"] = [[[SOON]];
+G2L["28"]["Text"] = [[SOON]];
 G2L["28"]["Position"] = UDim2.new(0.5850541591644287, -107, 0.16002966463565826, 145);
 G2L["28"]["BackgroundTransparency"] = 0.5;
 
@@ -474,7 +474,7 @@ G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2d"]["Size"] = UDim2.new(0, 100, 0, 30);
 G2L["2d"]["Name"] = [[AR]];
 G2L["2d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["2d"]["Text"] = [[[SOON]];
+G2L["2d"]["Text"] = [[SOON]];
 G2L["2d"]["Position"] = UDim2.new(0.9449999928474426, -107, 0.1599999964237213, 145);
 G2L["2d"]["BackgroundTransparency"] = 0.5;
 
@@ -984,8 +984,7 @@ local script = G2L["c"];
 	local Players = game:GetService("Players") -- Get Players service
 	local LocalPlayer = Players.LocalPlayer -- Get the local player
 	
-	-- Define the ClickDetector path
-	local clickDetector = workspace.MAP.Pads:GetChildren()[9]["[Pizza]"].ClickDetector
+	
 	
 	-- Define the button and color indicator
 	local button = script.Parent
@@ -1020,7 +1019,7 @@ local script = G2L["c"];
 	end
 	
 	-- Click event to toggle Active state
-	clickDetector.MouseClick:Connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		Active = not Active -- Toggle the active state
 	
 		if Active then
@@ -1041,8 +1040,6 @@ local script = G2L["f"];
 	local Players = game:GetService("Players") -- Get Players service
 	local LocalPlayer = Players.LocalPlayer -- Get the local player
 	
-	-- Define the ClickDetector path
-	local clickDetector = workspace.MAP.Pads:GetChildren()[9]["[Pizza]"].ClickDetector
 	
 	-- Define the button and color indicator
 	local button = script.Parent
@@ -1089,7 +1086,7 @@ local script = G2L["f"];
 	end
 	
 	-- Click event to toggle the loop
-	clickDetector.MouseClick:Connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		Active = not Active -- Toggle the active state
 	
 		if Active then
@@ -1122,8 +1119,6 @@ local script = G2L["15"];
 	local Players = game:GetService("Players") -- Get Players service
 	local LocalPlayer = Players.LocalPlayer -- Get the local player
 	
-	-- Define the ClickDetector path
-	local clickDetector = workspace.MAP.Pads:GetChildren()[9]["[Pizza]"].ClickDetector
 	
 	-- Define the button and color indicator
 	local button = script.Parent
@@ -1174,7 +1169,7 @@ local script = G2L["15"];
 	end
 	
 	-- Click event to toggle the monitoring
-	clickDetector.MouseClick:Connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
 		Active = not Active -- Toggle the active state
 	
 		if Active then
@@ -1193,39 +1188,36 @@ local function C_18()
 local script = G2L["18"];
 	script.Parent.MouseButton1Click:Connect(function()
 	task.spawn(function()
-			if not hookmetamethod then 
-				return print('Incompatible Exploit', 'Your exploit does not support this command (missing hookmetamethod)')
-			end
+			local mt = getrawmetatable(game);
+			local old = mt.__namecall
+			local readonly = setreadonly or make_writeable
 	
-			local Players = game:GetService("Players")
-			local LocalPlayer = Players.LocalPlayer
-			local oldhmmi
-			local oldhmmnc
+			local MarketplaceService = game:GetService("MarketplaceService");
 	
-			-- Intercepta el acceso a la función UserOwnsGamePassAsync
-			oldhmmi = hookmetamethod(game, "__index", function(self, method)
-				if self == game:GetService("MarketplaceService") and method:lower() == "userownsgamepassasync" then
-					return function(_, _)
-						return true -- Simula que el usuario posee el Gamepass
-					end
-				end
-				return oldhmmi(self, method)
-			end)
+			readonly(mt, false);
 	
-			-- Intercepta los métodos llamados directamente
-			oldhmmnc = hookmetamethod(game, "__namecall", function(self, ...)
-				local method = getnamecallmethod():lower()
+			mt.__namecall = function(self, ...)
 				local args = {...}
-				if self == game:GetService("MarketplaceService") and method == "userownsgamepassasync" then
-					return true -- Retorna true para cualquier Gamepass consultado
+				local method = table.remove(args)
+	
+				if (self == MarketplaceService and method:find("UserOwnsGamePassAsync")) then
+					print("Returning true...")
+					return true
 				end
-				return oldhmmnc(self, ...)
-			end)
 	
-			print('Gamepass Spoofer', 'Gamepass spoofing is now active (returns true for all gamepasses)')
+				return old(self, ...)
+			end
+			print("UserOwnsGamePassAsync Is Now Active.")
 	end)
+	wait(0.5)
+		local LocalPlayer = game:GetService("Players")["LocalPlayer"]
+		local Character =  LocalPlayer["Character"]
+		local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+		Humanoid:TakeDamage(Humanoid["MaxHealth"])
+	end) 
 	
-	end)
+	
+	
 end;
 task.spawn(C_18);
 -- StarterGui.Hub_Gui.MainTwo.LocalScript
@@ -1379,7 +1371,7 @@ local script = G2L["3c"];
 	local TweenService = game:GetService("TweenService") -- Get TweenService
 	
 	-- Define the ClickDetector path
-	local clickDetector = workspace.MAP.Pads:GetChildren()[9]["[Pizza]"].ClickDetector
+	local clickDetector = workspace.MAP.Pads["[Pizza]"]
 	
 	-- Define the button and color indicator
 	local button = script.Parent
