@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.DebugVersion
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["Name"] = [[DebugVersion]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -17005,22 +17005,16 @@ task.spawn(C_1eb);
 local function C_1f0()
 	local script = G2L["1f0"];
 	local LocalPlayer_upvr_2 = game.Players.LocalPlayer
-	local var1309_upvw = 0
 	local SOME_upvw = game.ReplicatedStorage.PlayerData:WaitForChild(tostring(LocalPlayer_upvr_2.UserId))
 	local TweenService_upvr_4 = game:GetService("TweenService")
 	local ReplicatedStorage_upvr = game:GetService("ReplicatedStorage")
 	local MarketplaceService_upvr_2 = game:GetService("MarketplaceService")
-	local tbl_104_upvr = {3552428120, 86131129, 3994352657, 134018317}
 	local UserInputService_upvr_2 = game:GetService("UserInputService")
-	local var1317_upvw = false
-	local var1318_upvw = false
 	local Character_upvr = LocalPlayer_upvr_2.Character
 	if not Character_upvr then
 		Character_upvr = LocalPlayer_upvr_2.CharacterAdded:Wait()
 	end
-	local CharacterDialogue_upvr = require(ReplicatedStorage_upvr.Modules.CharacterDialogue)
-	local DandyStore_upvr_2 = workspace:WaitForChild("DandyStore")
-	local CharacterInfo_upvr_2 = require(game:GetService("ReplicatedStorage").StoryScripts)
+	local CharacterInfo_upvr_2 = require(game:GetService("ReplicatedStorage").StoryScripts.CharacterInfo)
 	local Debris_upvr_2 = game:GetService("Debris")
 	-- Función principal para crear el diálogo
 	local function CreateDialogue(character, characterId, dialogueText, duration, easingStyle, easingDirection, yOffset)
@@ -17229,6 +17223,7 @@ task.spawn(C_1f5);
 -- StarterGui.DebugVersion.Title.script_content.Mainseven.GOD_MODE.GODMODEHandler
 local function C_1f8()
 	local script = G2L["1f8"];
+	-- Lista de SFX con IDs de sonido
 	local SFX_LIST = {
 		Windows_Longhorn_CS = "rbxassetid://4041673253",
 		Windows_Longhorn_NE = "rbxassetid://6489019039",
@@ -17240,11 +17235,14 @@ local function C_1f8()
 		Windows_Longhorn_ES = "rbxassetid://6489232962",
 		Windows_Longhorn_II = "rbxassetid://4026367629"
 	}
+
+	-- Configuración de sonido
 	local SFXConfiguration = {
 		Remove = true,
 		Volume = 1
 	}
 
+	-- Función para reproducir sonido
 	local function sound(id, AdditionalSettings)
 		local sound = Instance.new("Sound")
 		sound.SoundId = id
@@ -17253,28 +17251,62 @@ local function C_1f8()
 		sound.PlaybackSpeed = AdditionalSettings.Pitch or 1
 		sound.Looped = AdditionalSettings.Looped or false
 		sound:Play()
+
 		if AdditionalSettings.TimePosition then
 			sound.TimePosition = AdditionalSettings.TimePosition
 		end
+
 		if AdditionalSettings.Remove then
 			sound.Ended:Connect(function()
 				sound:Destroy()
 			end)
 		end
+
 		return sound
 	end
+
+	-- Función para detectar si el jugador está siendo perseguido
+	local function LPGettingChased()
+		local currentRoom = game.Workspace:FindFirstChild("CurrentRoom")
+
+		if not currentRoom then 
+			warn("CurrentRoom no encontrado en Workspace")
+			return false
+		end
+
+		for _, child in ipairs(currentRoom:GetChildren()) do
+			if child:IsA("Model") then
+				local monstersContainer = child:FindFirstChild("Monsters")
+				if monstersContainer then
+					for _, monster in ipairs(monstersContainer:GetChildren()) do
+						local chasingValue = monster:FindFirstChild("ChasingValue")
+						if chasingValue and chasingValue:IsA("ObjectValue") then
+							local player = game.Players.LocalPlayer
+							if chasingValue.Value == player or chasingValue.Value == player.DisplayName or chasingValue.Value == player.Name then
+								return true -- 🔹 Hay un monstruo persiguiéndote
+							end
+						end
+					end
+				end
+			end
+		end
+
+		return false -- 🔹 Ningún monstruo persigue al jugador
+	end
+
+	-- Manejo del botón
 	local OnClick = script.Parent.MouseButton1Click
+
+	-- Sistema de God Mode
 	local God_mode = {
 		god_mode = {
-			Value = false;  -- Valor inicial de god_mode
-			ChangedCallback = nil;  -- Almacenará la función de callback
+			Value = false,
+			ChangedCallback = nil,
 
-			-- Método para obtener el valor actual de god_mode
 			get = function(self)
 				return self.Value
-			end;
+			end,
 
-			-- Método para establecer un nuevo valor a god_mode
 			set = function(self, boolvalue)
 				if type(boolvalue) ~= "boolean" then
 					error("El valor debe ser de tipo booleano (true/false)", 2)
@@ -17284,21 +17316,18 @@ local function C_1f8()
 					self.Value = boolvalue
 					print("God mode set to:", self.Value)
 
-					-- Llamar la función de callback si existe
 					if self.ChangedCallback then
-						self.ChangedCallback(self.Value)  -- Llamar con el nuevo valor
+						self.ChangedCallback(self.Value)  
 					end
 				end
-			end;
+			end,
 
-			-- Método para registrar una función que se llamará cuando cambie el valor
 			OnChanged = function(self, callbackFunction)
 				if type(callbackFunction) ~= "function" then
 					error("OnChanged requiere una función como argumento", 2)
 				end
-
-				self.ChangedCallback = callbackFunction  -- Almacenar la función
-			end;
+				self.ChangedCallback = callbackFunction  
+			end
 		}
 	}
 
@@ -17306,23 +17335,33 @@ local function C_1f8()
 		God_mode["god_mode"]:set(not God_mode["god_mode"]:get())
 	end)
 
-	local function CHH(v2344)
-		local v2345 = game.Players.LocalPlayer
-		local v2346 = v2345.Character or v2345.CharacterAdded:Wait()
-		local v2347 = v2346:FindFirstChildOfClass("Humanoid")
-		if v2347 then
-			v2347.HipHeight = v2344
+	-- Función para cambiar la altura del jugador
+	local function CHH(height)
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid then
+			humanoid.HipHeight = height
 		end
 	end
 
+	-- Cambios cuando se activa/desactiva God Mode
 	God_mode["god_mode"]:OnChanged(function(value)
-		if value == true then
-			wait(0.2)
+		if value then
+			task.wait(0.2)
 			script.Parent.Text = "God Mode: On"	
 			sound(SFX_LIST.Windows_Longhorn_IE, SFXConfiguration)
-			CHH(5.5)
+
+			while God_mode["god_mode"]:get() do
+				if LPGettingChased() then
+					CHH(5.5) -- 🔹 Aumenta altura si está siendo perseguido
+				else
+					CHH(2) -- 🔹 Altura normal si no hay peligro
+				end
+				task.wait(0.1) -- 🔹 Evita un bucle infinito que congele el juego
+			end
 		else
-			wait(0.2)
+			task.wait(0.2)
 			script.Parent.Text = "God Mode: Off"
 			sound(SFX_LIST.Windows_Longhorn_II, SFXConfiguration)
 			CHH(2)
