@@ -17026,7 +17026,7 @@ local function C_1f0()
 			-- Función auxiliar para crear la caja de diálogo
 			local function CreateDialogueBox(characterInstance, parentPart)
 				local textBoxClone = TextBoxTemplate:Clone()  -- Clonar el cuadro de texto
-				local dialogueClone = ReplicatedStorage_upvr.Parts.Dialogue:Clone()  -- Clonar el diálogo
+				local dialogueClone = ReplicatedStorage_upvr.Parts.TextBox:Clone()  -- Clonar el diálogo
 
 				-- Ajustar la velocidad de reproducción aleatoriamente
 				dialogueClone.PlaybackSpeed = dialogueClone.PlaybackSpeed * math.random(95, 105) / 100
