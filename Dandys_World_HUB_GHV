@@ -17021,15 +17021,19 @@ local function C_1f0()
 		print("dialogue!")
 		-- Verificar si existe información para el personaje
 		if CharacterInfo_upvr_2[characterId] then
+			print("character verified!")
 			local TextBoxTemplate = ReplicatedStorage_upvr.Parts.TextBox
 
 			-- Función auxiliar para crear la caja de diálogo
 			local function CreateDialogueBox(characterInstance, parentPart)
 				local textBoxClone = TextBoxTemplate:Clone()  -- Clonar el cuadro de texto
-				local dialogueClone = ReplicatedStorage_upvr.Parts.TextBox:Clone()  -- Clonar el diálogo
+				local dialogueClone = Instance.new("Sound", workspace)
 
 				-- Ajustar la velocidad de reproducción aleatoriamente
-				dialogueClone.PlaybackSpeed = dialogueClone.PlaybackSpeed * math.random(95, 105) / 100
+				dialogueClone.SoundId = CharacterInfo_upvr_2[characterId].TalkSound
+				dialogueClone.PlaybackSpeed = CharacterInfo_upvr_2[characterId].PlaybackSpeed * math.random(95, 105) / 100
+				dialogueClone.Volume = CharacterInfo_upvr_2[characterId].Volume
+
 				dialogueClone.Parent = parentPart
 				Debris_upvr_2:AddItem(dialogueClone, 1)  -- Añadir el diálogo al sistema de residuos
 
@@ -17111,9 +17115,6 @@ local function C_1f0()
 			local easingStyle = Enum.EasingStyle.Bounce  -- Estilo de la animación para la aparición
 			local easingDirection = Enum.EasingDirection.InOut  -- Dirección de la animación
 			local yOffset = 5  -- La altura donde aparecerá el cuadro de diálogo
-
-			-- Llamar a la función CreateDialogue con el personaje y el texto
-			CreateDialogue(Character, tostring(getToon(Player).Value), TextTD, duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, yOffset)
 			print(string.format([[making dialogue with next args:
 			CHARACTER: %s,
 			CharacterTOON (From CHARACTER): %s,
@@ -17123,6 +17124,8 @@ local function C_1f0()
 			EasingDirection: InOut,
 			yOffset: %s
 			]]))
+			-- Llamar a la función CreateDialogue con el personaje y el texto
+			CreateDialogue(Character, tostring(getToon(Player).Value), TextTD, duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, yOffset)
 		end
 	end
 
@@ -17135,10 +17138,11 @@ local function C_1f0()
 			-- Dividir el texto en dos partes usando la coma y el espacio como delimitador
 			local part1 = string.sub(text, 1, commaIndex - 1)
 			local part2 = string.sub(text, commaIndex + 2)
-
+			print("correct format")
 			-- Retornar las dos partes
 			return part1, part2
 		else
+			print("incorrect format")
 			-- Si no se encuentra la coma y el espacio, marcar que el formato es incorrecto
 			return "Error: Formato incorrecto"
 		end
