@@ -17028,7 +17028,7 @@ local function C_1f0()
 			local function CreateDialogueBox(characterInstance, parentPart)
 				local textBoxClone = TextBoxTemplate:Clone()  -- Clonar el cuadro de texto
 				local dialogueClone = Instance.new("Sound", workspace)
-
+print("cloned TBC, DC")
 				-- Ajustar la velocidad de reproducción aleatoriamente
 				dialogueClone.SoundId = CharacterInfo_upvr_2[characterId].TalkSound
 				dialogueClone.PlaybackSpeed = CharacterInfo_upvr_2[characterId].PlaybackSpeed * math.random(95, 105) / 100
@@ -17036,17 +17036,17 @@ local function C_1f0()
 
 				dialogueClone.Parent = parentPart
 				Debris_upvr_2:AddItem(dialogueClone, 1)  -- Añadir el diálogo al sistema de residuos
-
+print("DialogueSound configurado")
 				-- Establecer la posición del cuadro de texto
 				textBoxClone.Parent = parentPart
-
+print("Parent Configurado")
 				-- Establecer valores predeterminados si no se proporcionan
 				easingStyle = easingStyle or Enum.EasingStyle.Quad
 				easingDirection = easingDirection or Enum.EasingDirection.Out
 
 				-- Configurar la animación de entrada
 				local tweenInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false)
-
+print("tween creado")
 				-- Configurar los detalles del cuadro de texto
 				textBoxClone.Frame.DialogueBox.Font = CharacterInfo_upvr_2[characterId].CharacterFont
 				textBoxClone.Frame.DialogueBox.Text = dialogueText
@@ -17060,7 +17060,7 @@ local function C_1f0()
 				textBoxClone.Frame.SpeechBubble.ImageLabel.ImageTransparency = 1
 				textBoxClone.Frame.DialogueBox.TextTransparency = 1
 				textBoxClone.Frame.DialogueBox.TextStrokeTransparency = 1
-
+print("TextBox Ocultado para tween")
 				-- Animar la entrada del cuadro de texto
 				TweenService_upvr_4:Create(textBoxClone.Frame.SpeechBubble, tweenInfo, { BackgroundTransparency = 0 }):Play()
 				TweenService_upvr_4:Create(textBoxClone.Frame.SpeechBubbleBG, tweenInfo, { BackgroundTransparency = 0 }):Play()
@@ -17073,7 +17073,7 @@ local function C_1f0()
 
 				-- Reproducir el sonido de diálogo
 				dialogueClone:Play()
-
+print("DIALOGO!")
 				-- Después del tiempo de duración, realizar animaciones de salida
 				task.delay(duration, function()
 					if textBoxClone and textBoxClone.Parent then
@@ -17085,7 +17085,7 @@ local function C_1f0()
 					end
 				end)
 			end
-
+print("Dialogo ocultado, eliminando...")
 			-- Obtener la parte raíz del personaje y crear el cuadro de diálogo
 			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
 			if character and humanoidRootPart then
@@ -17123,7 +17123,7 @@ local function C_1f0()
 			EasingStyle: Quad,
 			EasingDirection: InOut,
 			yOffset: %s
-			]]))
+			]], "_xd_", tostring(getToon(Player).Value), TextTD, duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, yOffset))
 			-- Llamar a la función CreateDialogue con el personaje y el texto
 			CreateDialogue(Character, tostring(getToon(Player).Value), TextTD, duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, yOffset)
 		end
