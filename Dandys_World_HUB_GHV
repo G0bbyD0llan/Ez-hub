@@ -11347,492 +11347,669 @@ task.spawn(C_fd);
 -- StarterGui.DebugVersion.Title.script_content.MainFour.callatt.LocalScript
 local function C_100()
 	local script = G2L["100"];
+	local function IsInRun()
+		return game.PlaceId == 16552821455
+	end
 	script.Parent.MouseButton1Click:Connect(function()
-		local clone_2_upvr = game.ReplicatedStorage.Admin.DevFrame:Clone()
-		clone_2_upvr.Parent = game.Players.LocalPlayer.PlayerGui.ScreenGui
-		clone_2_upvr.Visible = true
-		local Frame_4_upvr = Instance.new("Frame")
-		Frame_4_upvr.Name = "StatsFrame"
-		Frame_4_upvr.Size = UDim2.new(0, 300, 0, 400)
-		Frame_4_upvr.Position = UDim2.new(1, 20, 0, 0)
-		Frame_4_upvr.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		Frame_4_upvr.BorderSizePixel = 0
-		Frame_4_upvr.Visible = false
-		Frame_4_upvr.Parent = clone_2_upvr.Frame
-		local TextLabel = Instance.new("TextLabel")
-		TextLabel.Name = "Title"
-		TextLabel.Size = UDim2.new(1, 0, 0, 30)
-		TextLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel.TextSize = 18
-		TextLabel.Font = Enum.Font.GothamBold
-		TextLabel.Text = "Monster Stats Editor"
-		TextLabel.Parent = Frame_4_upvr
-		local ScrollingFrame_upvr_4 = Instance.new("ScrollingFrame")
-		ScrollingFrame_upvr_4.Name = "StatsContainer"
-		ScrollingFrame_upvr_4.Size = UDim2.new(1, -20, 1, -80)
-		ScrollingFrame_upvr_4.Position = UDim2.new(0, 10, 0, 35)
-		ScrollingFrame_upvr_4.BackgroundTransparency = 1
-		ScrollingFrame_upvr_4.ScrollBarThickness = 6
-		ScrollingFrame_upvr_4.Parent = Frame_4_upvr
-		local UIListLayout_6 = Instance.new("UIListLayout")
-		UIListLayout_6.Padding = UDim.new(0, 5)
-		UIListLayout_6.Parent = ScrollingFrame_upvr_4
-		local StringValue = Instance.new("StringValue")
-		StringValue.Name = "MonsterName"
-		StringValue.Parent = Frame_4_upvr
-		local TextButton_6 = Instance.new("TextButton")
-		TextButton_6.Name = "SpawnButton"
-		TextButton_6.Size = UDim2.new(1, -20, 0, 30)
-		TextButton_6.Position = UDim2.new(0, 10, 1, -35)
-		TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
-		TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextButton_6.TextSize = 14
-		TextButton_6.Font = Enum.Font.GothamBold
-		TextButton_6.Text = "Spawn With Modified Stats"
-		TextButton_6.Parent = Frame_4_upvr
-		local TextBox_5_upvr = Instance.new("TextBox")
-		TextBox_5_upvr.Name = "TypeBar"
-		TextBox_5_upvr.Size = UDim2.new(1, -20, 0, 30)
-		TextBox_5_upvr.Position = UDim2.new(0, 10, 0, 10)
-		TextBox_5_upvr.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-		TextBox_5_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextBox_5_upvr.TextSize = 14
-		TextBox_5_upvr.Font = Enum.Font.Gotham
-		TextBox_5_upvr.PlaceholderText = "Search monsters..."
-		TextBox_5_upvr.Text = ""
-		TextBox_5_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
-		local function UpdateResults() -- Line 3729
+		if IsInRun() then
+			local clone_2_upvr = game.ReplicatedStorage.Admin.DevFrame:Clone()
+			clone_2_upvr.Parent = game.Players.LocalPlayer.PlayerGui.ScreenGui
+			clone_2_upvr.Visible = true
+			local Frame_4_upvr = Instance.new("Frame")
+			Frame_4_upvr.Name = "StatsFrame"
+			Frame_4_upvr.Size = UDim2.new(0, 300, 0, 400)
+			Frame_4_upvr.Position = UDim2.new(1, 20, 0, 0)
+			Frame_4_upvr.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			Frame_4_upvr.BorderSizePixel = 0
+			Frame_4_upvr.Visible = false
+			Frame_4_upvr.Parent = clone_2_upvr.Frame
+			local TextLabel = Instance.new("TextLabel")
+			TextLabel.Name = "Title"
+			TextLabel.Size = UDim2.new(1, 0, 0, 30)
+			TextLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel.TextSize = 18
+			TextLabel.Font = Enum.Font.GothamBold
+			TextLabel.Text = "Monster Stats Editor"
+			TextLabel.Parent = Frame_4_upvr
+			local ScrollingFrame_upvr_4 = Instance.new("ScrollingFrame")
+			ScrollingFrame_upvr_4.Name = "StatsContainer"
+			ScrollingFrame_upvr_4.Size = UDim2.new(1, -20, 1, -80)
+			ScrollingFrame_upvr_4.Position = UDim2.new(0, 10, 0, 35)
+			ScrollingFrame_upvr_4.BackgroundTransparency = 1
+			ScrollingFrame_upvr_4.ScrollBarThickness = 6
+			ScrollingFrame_upvr_4.Parent = Frame_4_upvr
+			local UIListLayout_6 = Instance.new("UIListLayout")
+			UIListLayout_6.Padding = UDim.new(0, 5)
+			UIListLayout_6.Parent = ScrollingFrame_upvr_4
+			local StringValue = Instance.new("StringValue")
+			StringValue.Name = "MonsterName"
+			StringValue.Parent = Frame_4_upvr
+			local TextButton_6 = Instance.new("TextButton")
+			TextButton_6.Name = "SpawnButton"
+			TextButton_6.Size = UDim2.new(1, -20, 0, 30)
+			TextButton_6.Position = UDim2.new(0, 10, 1, -35)
+			TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
+			TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_6.TextSize = 14
+			TextButton_6.Font = Enum.Font.GothamBold
+			TextButton_6.Text = "Spawn With Modified Stats"
+			TextButton_6.Parent = Frame_4_upvr
+			local TextBox_5_upvr = Instance.new("TextBox")
+			TextBox_5_upvr.Name = "TypeBar"
+			TextBox_5_upvr.Size = UDim2.new(1, -20, 0, 30)
+			TextBox_5_upvr.Position = UDim2.new(0, 10, 0, 10)
+			TextBox_5_upvr.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+			TextBox_5_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextBox_5_upvr.TextSize = 14
+			TextBox_5_upvr.Font = Enum.Font.Gotham
+			TextBox_5_upvr.PlaceholderText = "Search monsters..."
+			TextBox_5_upvr.Text = ""
+			TextBox_5_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
+			local function UpdateResults() -- Line 3729
 			--[[ Upvalues[2]:
 				[1]: clone_2_upvr (readonly)
 				[2]: TextBox_5_upvr (readonly)
 			]]
-			for _, v_15 in ipairs(clone_2_upvr.Frame.ScrollingFrame:GetChildren()) do
-				if v_15:IsA("Frame") and v_15.Name ~= "Template" then
-					local Text_4 = TextBox_5_upvr.Text
-					if Text_4 == "" then
-						Text_4 = true
-						v_15.Visible = Text_4
-					else
-						if string.match(string.lower(v_15.Name), string.lower(TextBox_5_upvr.Text)) == nil then
-							Text_4 = false
-						else
+				for _, v_15 in ipairs(clone_2_upvr.Frame.ScrollingFrame:GetChildren()) do
+					if v_15:IsA("Frame") and v_15.Name ~= "Template" then
+						local Text_4 = TextBox_5_upvr.Text
+						if Text_4 == "" then
 							Text_4 = true
+							v_15.Visible = Text_4
+						else
+							if string.match(string.lower(v_15.Name), string.lower(TextBox_5_upvr.Text)) == nil then
+								Text_4 = false
+							else
+								Text_4 = true
+							end
+							v_15.Visible = Text_4
 						end
-						v_15.Visible = Text_4
 					end
 				end
 			end
-		end
-		TextBox_5_upvr:GetPropertyChangedSignal("Text"):Connect(UpdateResults)
-		local function createStatEditor(arg1, arg2) -- Line 3745
-			local Frame_5 = Instance.new("Frame")
-			Frame_5.Name = arg1.."Container"
-			Frame_5.Size = UDim2.new(1, 0, 0, 30)
-			Frame_5.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-			Frame_5.BorderSizePixel = 0
-			local TextLabel_8 = Instance.new("TextLabel")
-			TextLabel_8.Name = "Label"
-			TextLabel_8.Size = UDim2.new(0.5, -5, 1, 0)
-			TextLabel_8.BackgroundTransparency = 1
-			TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextLabel_8.TextSize = 14
-			TextLabel_8.Font = Enum.Font.Gotham
-			TextLabel_8.Text = arg1
-			TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
-			TextLabel_8.Parent = Frame_5
-			local TextBox_3 = Instance.new("TextBox")
-			TextBox_3.Name = "Input"
-			TextBox_3.Size = UDim2.new(0.5, -5, 1, -6)
-			TextBox_3.Position = UDim2.new(0.5, 5, 0, 3)
-			TextBox_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-			TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextBox_3.TextSize = 14
-			TextBox_3.Font = Enum.Font.Gotham
-			TextBox_3.Text = tostring(arg2)
-			TextBox_3.Parent = Frame_5
-			return Frame_5
-		end
-		local function var1444_upvr(arg1) -- Line 3778, Named "updateStatsEditor"
+			TextBox_5_upvr:GetPropertyChangedSignal("Text"):Connect(UpdateResults)
+			local function createStatEditor(arg1, arg2) -- Line 3745
+				local Frame_5 = Instance.new("Frame")
+				Frame_5.Name = arg1.."Container"
+				Frame_5.Size = UDim2.new(1, 0, 0, 30)
+				Frame_5.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+				Frame_5.BorderSizePixel = 0
+				local TextLabel_8 = Instance.new("TextLabel")
+				TextLabel_8.Name = "Label"
+				TextLabel_8.Size = UDim2.new(0.5, -5, 1, 0)
+				TextLabel_8.BackgroundTransparency = 1
+				TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel_8.TextSize = 14
+				TextLabel_8.Font = Enum.Font.Gotham
+				TextLabel_8.Text = arg1
+				TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+				TextLabel_8.Parent = Frame_5
+				local TextBox_3 = Instance.new("TextBox")
+				TextBox_3.Name = "Input"
+				TextBox_3.Size = UDim2.new(0.5, -5, 1, -6)
+				TextBox_3.Position = UDim2.new(0.5, 5, 0, 3)
+				TextBox_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+				TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextBox_3.TextSize = 14
+				TextBox_3.Font = Enum.Font.Gotham
+				TextBox_3.Text = tostring(arg2)
+				TextBox_3.Parent = Frame_5
+				return Frame_5
+			end
+			local function var1444_upvr(arg1) -- Line 3778, Named "updateStatsEditor"
 			--[[ Upvalues[4]:
 				[1]: ScrollingFrame_upvr_4 (readonly)
 				[2]: ReplicatedStorage_upvr_4 (readonly)
 				[3]: createStatEditor (readonly)
 				[4]: Frame_4_upvr (readonly)
 			]]
-			if not ScrollingFrame_upvr_4:FindFirstChild("UIListLayout") then
-				local UIListLayout_7 = Instance.new("UIListLayout")
-				UIListLayout_7.Padding = UDim.new(0, 5)
-				UIListLayout_7.Parent = ScrollingFrame_upvr_4
-			end
-			for _, v_16 in pairs(ScrollingFrame_upvr_4:GetChildren()) do
-				if v_16 ~= "UIListLayout_7" then
-					v_16:Destroy()
+				if not ScrollingFrame_upvr_4:FindFirstChild("UIListLayout") then
+					local UIListLayout_7 = Instance.new("UIListLayout")
+					UIListLayout_7.Padding = UDim.new(0, 5)
+					UIListLayout_7.Parent = ScrollingFrame_upvr_4
 				end
+				for _, v_16 in pairs(ScrollingFrame_upvr_4:GetChildren()) do
+					if v_16 ~= "UIListLayout_7" then
+						v_16:Destroy()
+					end
+				end
+				local any_2 = require(game.ReplicatedStorage.MonsterData[arg1])
+				for _, v_17 in ipairs({{"PatrolSpeed", any_2.WalkSpeed}, {"RunSpeed", any_2.RunSpeed}, {"VisionRadius", any_2.VisionRadius}, {"WaitTime", any_2.WaitTime}, {"InstantRadius", any_2.InstantRadius}, {"KillRadius", any_2.KillRadius}, {"HearingRadius", any_2.HearingRadius}, {"InterestTime", any_2.InterestTime}, {"Damage", any_2.Damage}, {"LineOfSight", any_2.LineOfSight}, {"HitCooldown", any_2.HitCooldown}}) do
+					createStatEditor(v_17[1], v_17[2]).Parent = ScrollingFrame_upvr_4
+				end
+				ScrollingFrame_upvr_4.CanvasSize = UDim2.new(0, 0, 0, 0)
+				Frame_4_upvr.Visible = true
+				Frame_4_upvr.MonsterName.Value = arg1
 			end
-			local any_2 = require(game.ReplicatedStorage.MonsterData[arg1])
-			for _, v_17 in ipairs({{"PatrolSpeed", any_2.WalkSpeed}, {"RunSpeed", any_2.RunSpeed}, {"VisionRadius", any_2.VisionRadius}, {"WaitTime", any_2.WaitTime}, {"InstantRadius", any_2.InstantRadius}, {"KillRadius", any_2.KillRadius}, {"HearingRadius", any_2.HearingRadius}, {"InterestTime", any_2.InterestTime}, {"Damage", any_2.Damage}, {"LineOfSight", any_2.LineOfSight}, {"HitCooldown", any_2.HitCooldown}}) do
-				createStatEditor(v_17[1], v_17[2]).Parent = ScrollingFrame_upvr_4
-			end
-			ScrollingFrame_upvr_4.CanvasSize = UDim2.new(0, 0, 0, 0)
-			Frame_4_upvr.Visible = true
-			Frame_4_upvr.MonsterName.Value = arg1
-		end
-		local function spawnModifiedMonster() -- Line 3822
+			local function spawnModifiedMonster() -- Line 3822
 			--[[ Upvalues[3]:
 				[1]: ScrollingFrame_upvr_4 (readonly)
 				[2]: ReplicatedStorage_upvr_4 (readonly)
 				[3]: Frame_4_upvr (readonly)
 			]]
-			for _, v_18 in ipairs(ScrollingFrame_upvr_4:GetChildren()) do
-				if v_18:IsA("Frame") then
-					local tonumber_result1_2 = tonumber(v_18.Input.Text)
-					if tonumber_result1_2 then
-						({})[v_18.Name:gsub("Container", "")] = tonumber_result1_2
+				for _, v_18 in ipairs(ScrollingFrame_upvr_4:GetChildren()) do
+					if v_18:IsA("Frame") then
+						local tonumber_result1_2 = tonumber(v_18.Input.Text)
+						if tonumber_result1_2 then
+							({})[v_18.Name:gsub("Container", "")] = tonumber_result1_2
+						end
 					end
 				end
+				-- KONSTANTERROR: Expression was reused, decompilation is incorrect
+				game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", Frame_4_upvr.MonsterName.Value, {})
 			end
-			-- KONSTANTERROR: Expression was reused, decompilation is incorrect
-			game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", Frame_4_upvr.MonsterName.Value, {})
-		end
-		TextButton_6.MouseButton1Click:Connect(spawnModifiedMonster)
-		clone_2_upvr.DevButton.Activated:Connect(function() -- Line 3841
+			TextButton_6.MouseButton1Click:Connect(spawnModifiedMonster)
+			clone_2_upvr.DevButton.Activated:Connect(function() -- Line 3841
 			--[[ Upvalues[1]:
 				[1]: clone_2_upvr (readonly)
 			]]
-			if clone_2_upvr.Frame.Visible == false then
-				clone_2_upvr.Frame.Visible = true
-				clone_2_upvr.BaseHealthFrame.Visible = true
-				clone_2_upvr.DestroyMonsterFrame.Visible = true
-				clone_2_upvr.MachineFrame.Visible = true
-				clone_2_upvr.ItemFrame.Visible = true
-				clone_2_upvr.InfiniteHealth.Visible = true
-				clone_2_upvr.BlackoutFrame.Visible = true
-			else
-				clone_2_upvr.Frame.Visible = false
-				clone_2_upvr.BaseHealthFrame.Visible = false
-				clone_2_upvr.DestroyMonsterFrame.Visible = false
-				clone_2_upvr.MachineFrame.Visible = false
-				clone_2_upvr.ItemFrame.Visible = false
-				clone_2_upvr.InfiniteHealth.Visible = false
-				clone_2_upvr.BlackoutFrame.Visible = false
+				if clone_2_upvr.Frame.Visible == false then
+					clone_2_upvr.Frame.Visible = true
+					clone_2_upvr.BaseHealthFrame.Visible = true
+					clone_2_upvr.DestroyMonsterFrame.Visible = true
+					clone_2_upvr.MachineFrame.Visible = true
+					clone_2_upvr.ItemFrame.Visible = true
+					clone_2_upvr.InfiniteHealth.Visible = true
+					clone_2_upvr.BlackoutFrame.Visible = true
+				else
+					clone_2_upvr.Frame.Visible = false
+					clone_2_upvr.BaseHealthFrame.Visible = false
+					clone_2_upvr.DestroyMonsterFrame.Visible = false
+					clone_2_upvr.MachineFrame.Visible = false
+					clone_2_upvr.ItemFrame.Visible = false
+					clone_2_upvr.InfiniteHealth.Visible = false
+					clone_2_upvr.BlackoutFrame.Visible = false
+				end
+			end)
+			if clone_2_upvr.BaseHealthFrame and clone_2_upvr.BaseHealthFrame.UseButton then
+				clone_2_upvr.BaseHealthFrame.UseButton.Activated:Connect(function() -- Line 3863
+				--[[ Upvalues[1]:
+					[1]: clone_2_upvr (readonly)
+				]]
+					game.ReplicatedStorage.Events.AdminEvent:FireServer("NextFloor", tostring(clone_2_upvr.BaseHealthFrame.Gumdrops.Text))
+				end)
 			end
-		end)
-		if clone_2_upvr.BaseHealthFrame and clone_2_upvr.BaseHealthFrame.UseButton then
-			clone_2_upvr.BaseHealthFrame.UseButton.Activated:Connect(function() -- Line 3863
+			if clone_2_upvr.InfiniteHealth and clone_2_upvr.InfiniteHealth.UseButton then
+				clone_2_upvr.InfiniteHealth.UseButton.Activated:Connect(function() -- Line 3869
 				--[[ Upvalues[1]:
 					[1]: clone_2_upvr (readonly)
 				]]
-				game.ReplicatedStorage.Events.AdminEvent:FireServer("NextFloor", tostring(clone_2_upvr.BaseHealthFrame.Gumdrops.Text))
-			end)
-		end
-		if clone_2_upvr.InfiniteHealth and clone_2_upvr.InfiniteHealth.UseButton then
-			clone_2_upvr.InfiniteHealth.UseButton.Activated:Connect(function() -- Line 3869
-				--[[ Upvalues[1]:
-					[1]: clone_2_upvr (readonly)
-				]]
-				game.ReplicatedStorage.Events.AdminEvent:FireServer("InfiniteHealth", tostring(clone_2_upvr.InfiniteHealth.Gumdrops.Text))
-			end)
-		end
-		if clone_2_upvr.DestroyMonsterFrame and clone_2_upvr.DestroyMonsterFrame.UseButton then
-			clone_2_upvr.DestroyMonsterFrame.UseButton.Activated:Connect(function() -- Line 3875
-				game.ReplicatedStorage.Events.AdminEvent:FireServer("DestroyMonsters")
-			end)
-		end
-		if clone_2_upvr.MachineFrame and clone_2_upvr.MachineFrame.UseButton then
-			clone_2_upvr.MachineFrame.UseButton.Activated:Connect(function() -- Line 3881
-				game.ReplicatedStorage.Events.AdminEvent:FireServer("AllMachines")
-			end)
-		end
-		if clone_2_upvr.BlackoutFrame and clone_2_upvr.BlackoutFrame.UseButton then
-			clone_2_upvr.BlackoutFrame.UseButton.Activated:Connect(function() -- Line 3887
-				game.ReplicatedStorage.Events.AdminEvent:FireServer("Blackout")
-			end)
-		end
-		task.spawn(function() -- Line 3893
+					game.ReplicatedStorage.Events.AdminEvent:FireServer("InfiniteHealth", tostring(clone_2_upvr.InfiniteHealth.Gumdrops.Text))
+				end)
+			end
+			if clone_2_upvr.DestroyMonsterFrame and clone_2_upvr.DestroyMonsterFrame.UseButton then
+				clone_2_upvr.DestroyMonsterFrame.UseButton.Activated:Connect(function() -- Line 3875
+					game.ReplicatedStorage.Events.AdminEvent:FireServer("DestroyMonsters")
+				end)
+			end
+			if clone_2_upvr.MachineFrame and clone_2_upvr.MachineFrame.UseButton then
+				clone_2_upvr.MachineFrame.UseButton.Activated:Connect(function() -- Line 3881
+					game.ReplicatedStorage.Events.AdminEvent:FireServer("AllMachines")
+				end)
+			end
+			if clone_2_upvr.BlackoutFrame and clone_2_upvr.BlackoutFrame.UseButton then
+				clone_2_upvr.BlackoutFrame.UseButton.Activated:Connect(function() -- Line 3887
+					game.ReplicatedStorage.Events.AdminEvent:FireServer("Blackout")
+				end)
+			end
+			task.spawn(function() -- Line 3893
 			--[[ Upvalues[4]:
 				[1]: clone_2_upvr (readonly)
 				[2]: var1444_upvr (readonly)
 				[3]: Frame_4_upvr (readonly)
 				[4]: ReplicatedStorage_upvr_4 (readonly)
 			]]
-			for _, v_19 in pairs(game.ReplicatedStorage.MonsterData:GetChildren()) do
-				if not clone_2_upvr.Frame.ScrollingFrame:FindFirstChild(v_19.Name) then
-					local clone_upvr = clone_2_upvr.Frame.ScrollingFrame.Template:Clone()
-					clone_upvr.Name = v_19.Name
-					clone_upvr.MobName.Text = v_19.Name
-					clone_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
-					clone_upvr.Visible = true
-					local TextButton_5 = Instance.new("TextButton")
-					TextButton_5.Name = "SpawnButton"
-					TextButton_5.Size = UDim2.new(0.3, -5, 1, 0)
-					TextButton_5.Position = UDim2.new(0.7, 5, 0, 0)
-					TextButton_5.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-					TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-					TextButton_5.TextSize = 12
-					TextButton_5.Font = Enum.Font.Gotham
-					TextButton_5.Text = "Spawn"
-					TextButton_5.Parent = clone_upvr
-					clone_upvr.Activated:Connect(function() -- Line 3917
+				for _, v_19 in pairs(game.ReplicatedStorage.MonsterData:GetChildren()) do
+					if not clone_2_upvr.Frame.ScrollingFrame:FindFirstChild(v_19.Name) then
+						local clone_upvr = clone_2_upvr.Frame.ScrollingFrame.Template:Clone()
+						clone_upvr.Name = v_19.Name
+						clone_upvr.MobName.Text = v_19.Name
+						clone_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
+						clone_upvr.Visible = true
+						local TextButton_5 = Instance.new("TextButton")
+						TextButton_5.Name = "SpawnButton"
+						TextButton_5.Size = UDim2.new(0.3, -5, 1, 0)
+						TextButton_5.Position = UDim2.new(0.7, 5, 0, 0)
+						TextButton_5.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+						TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+						TextButton_5.TextSize = 12
+						TextButton_5.Font = Enum.Font.Gotham
+						TextButton_5.Text = "Spawn"
+						TextButton_5.Parent = clone_upvr
+						clone_upvr.Activated:Connect(function() -- Line 3917
 						--[[ Upvalues[2]:
 							[1]: var1444_upvr (copied, readonly)
 							[2]: clone_upvr (readonly)
 						]]
-						var1444_upvr(clone_upvr.Name)
-					end)
-					TextButton_5.MouseButton1Click:Connect(function() -- Line 3922
+							var1444_upvr(clone_upvr.Name)
+						end)
+						TextButton_5.MouseButton1Click:Connect(function() -- Line 3922
 						--[[ Upvalues[3]:
 							[1]: Frame_4_upvr (copied, readonly)
 							[2]: ReplicatedStorage_upvr_4 (copied, readonly)
 							[3]: clone_upvr (readonly)
 						]]
-						local StatsContainer_3 = Frame_4_upvr:FindFirstChild("StatsContainer")
-						if StatsContainer_3 then
-							for _, v_20 in ipairs(StatsContainer_3:GetChildren()) do
-								if v_20:IsA("Frame") then
-									if v_20:FindFirstChild("Value") then
-										local tonumber_result1_3 = tonumber(v_20.Value.Text)
-										if tonumber_result1_3 then
-											({})[v_20.Name] = tonumber_result1_3
+							local StatsContainer_3 = Frame_4_upvr:FindFirstChild("StatsContainer")
+							if StatsContainer_3 then
+								for _, v_20 in ipairs(StatsContainer_3:GetChildren()) do
+									if v_20:IsA("Frame") then
+										if v_20:FindFirstChild("Value") then
+											local tonumber_result1_3 = tonumber(v_20.Value.Text)
+											if tonumber_result1_3 then
+												({})[v_20.Name] = tonumber_result1_3
+											end
 										end
 									end
 								end
 							end
-						end
-						-- KONSTANTERROR: Expression was reused, decompilation is incorrect
-						game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", clone_upvr.Name, {}, nil)
-					end)
-				end
-			end
-			task.spawn(function() -- Line 3945
-				--[[ Upvalues[1]:
-					[1]: clone_2_upvr (copied, readonly)
-				]]
-				for _, v_21 in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-					if not clone_2_upvr.ItemFrame.ScrollingFrame:FindFirstChild(v_21.Name) then
-						local clone_12_upvr = clone_2_upvr.ItemFrame.ScrollingFrame.Template:Clone()
-						clone_12_upvr.Name = v_21.Name
-						if clone_12_upvr:FindFirstChild("MobName") then
-							clone_12_upvr.MobName.Text = v_21.Name
-						end
-						clone_12_upvr.Parent = clone_2_upvr.ItemFrame.ScrollingFrame
-						clone_12_upvr.Visible = true
-						clone_12_upvr.Activated:Connect(function() -- Line 3960
-							--[[ Upvalues[1]:
-								[1]: clone_12_upvr (readonly)
-							]]
-							game.ReplicatedStorage.Events.AdminEvent:FireServer("Item", clone_12_upvr.Name, 1, 0.1)
+							-- KONSTANTERROR: Expression was reused, decompilation is incorrect
+							game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", clone_upvr.Name, {}, nil)
 						end)
 					end
 				end
+				task.spawn(function() -- Line 3945
+				--[[ Upvalues[1]:
+					[1]: clone_2_upvr (copied, readonly)
+				]]
+					for _, v_21 in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+						if not clone_2_upvr.ItemFrame.ScrollingFrame:FindFirstChild(v_21.Name) then
+							local clone_12_upvr = clone_2_upvr.ItemFrame.ScrollingFrame.Template:Clone()
+							clone_12_upvr.Name = v_21.Name
+							if clone_12_upvr:FindFirstChild("MobName") then
+								clone_12_upvr.MobName.Text = v_21.Name
+							end
+							clone_12_upvr.Parent = clone_2_upvr.ItemFrame.ScrollingFrame
+							clone_12_upvr.Visible = true
+							clone_12_upvr.Activated:Connect(function() -- Line 3960
+							--[[ Upvalues[1]:
+								[1]: clone_12_upvr (readonly)
+							]]
+								game.ReplicatedStorage.Events.AdminEvent:FireServer("Item", clone_12_upvr.Name, 1, 0.1)
+							end)
+						end
+					end
+				end)
 			end)
-		end)
-		local Frame_2_upvr = Instance.new("Frame")
-		Frame_2_upvr.Name = "StatsFrame"
-		Frame_2_upvr.Size = UDim2.new(0, 300, 0, 400)
-		Frame_2_upvr.Position = UDim2.new(1, 50, 0, 0)
-		Frame_2_upvr.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-		Frame_2_upvr.BorderSizePixel = 0
-		Frame_2_upvr.Visible = false
-		Frame_2_upvr.Parent = clone_2_upvr.Frame
-		local TextLabel_7 = Instance.new("TextLabel")
-		TextLabel_7.Name = "Title"
-		TextLabel_7.Size = UDim2.new(1, 0, 0, 30)
-		TextLabel_7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-		TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextLabel_7.TextSize = 18
-		TextLabel_7.Font = Enum.Font.GothamBold
-		TextLabel_7.Text = "Monster Stats Editor"
-		TextLabel_7.Parent = Frame_2_upvr
-		local ScrollingFrame_upvr = Instance.new("ScrollingFrame")
-		ScrollingFrame_upvr.Name = "StatsContainer"
-		ScrollingFrame_upvr.Size = UDim2.new(1, -20, 1, -80)
-		ScrollingFrame_upvr.Position = UDim2.new(0, 10, 0, 35)
-		ScrollingFrame_upvr.BackgroundTransparency = 1
-		ScrollingFrame_upvr.ScrollBarThickness = 6
-		ScrollingFrame_upvr.Parent = Frame_2_upvr
-		local UIListLayout_5 = Instance.new("UIListLayout")
-		UIListLayout_5.Padding = UDim.new(0, 5)
-		UIListLayout_5.Parent = ScrollingFrame_upvr
-		local StringValue_3 = Instance.new("StringValue")
-		StringValue_3.Name = "MonsterName"
-		StringValue_3.Parent = Frame_2_upvr
-		local TextButton_4 = Instance.new("TextButton")
-		TextButton_4.Name = "SpawnButton"
-		TextButton_4.Size = UDim2.new(1, -20, 0, 30)
-		TextButton_4.Position = UDim2.new(0, 10, 1, -35)
-		TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
-		TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextButton_4.TextSize = 14
-		TextButton_4.Font = Enum.Font.GothamBold
-		TextButton_4.Text = "Spawn With Modified Stats"
-		TextButton_4.Parent = Frame_2_upvr
-		local TextBox_4_upvr = Instance.new("TextBox")
-		TextBox_4_upvr.Name = "TypeBar"
-		TextBox_4_upvr.Size = UDim2.new(1, -20, 0, 30)
-		TextBox_4_upvr.Position = UDim2.new(0, 10, 0, 10)
-		TextBox_4_upvr.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-		TextBox_4_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
-		TextBox_4_upvr.TextSize = 14
-		TextBox_4_upvr.Font = Enum.Font.Gotham
-		TextBox_4_upvr.PlaceholderText = "Search monsters..."
-		TextBox_4_upvr.Text = ""
-		TextBox_4_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
-		TextBox_4_upvr:GetPropertyChangedSignal("Text"):Connect(function() -- Line 4036, Named "UpdateResults"
+			local Frame_2_upvr = Instance.new("Frame")
+			Frame_2_upvr.Name = "StatsFrame"
+			Frame_2_upvr.Size = UDim2.new(0, 300, 0, 400)
+			Frame_2_upvr.Position = UDim2.new(1, 50, 0, 0)
+			Frame_2_upvr.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+			Frame_2_upvr.BorderSizePixel = 0
+			Frame_2_upvr.Visible = false
+			Frame_2_upvr.Parent = clone_2_upvr.Frame
+			local TextLabel_7 = Instance.new("TextLabel")
+			TextLabel_7.Name = "Title"
+			TextLabel_7.Size = UDim2.new(1, 0, 0, 30)
+			TextLabel_7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+			TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextLabel_7.TextSize = 18
+			TextLabel_7.Font = Enum.Font.GothamBold
+			TextLabel_7.Text = "Monster Stats Editor"
+			TextLabel_7.Parent = Frame_2_upvr
+			local ScrollingFrame_upvr = Instance.new("ScrollingFrame")
+			ScrollingFrame_upvr.Name = "StatsContainer"
+			ScrollingFrame_upvr.Size = UDim2.new(1, -20, 1, -80)
+			ScrollingFrame_upvr.Position = UDim2.new(0, 10, 0, 35)
+			ScrollingFrame_upvr.BackgroundTransparency = 1
+			ScrollingFrame_upvr.ScrollBarThickness = 6
+			ScrollingFrame_upvr.Parent = Frame_2_upvr
+			local UIListLayout_5 = Instance.new("UIListLayout")
+			UIListLayout_5.Padding = UDim.new(0, 5)
+			UIListLayout_5.Parent = ScrollingFrame_upvr
+			local StringValue_3 = Instance.new("StringValue")
+			StringValue_3.Name = "MonsterName"
+			StringValue_3.Parent = Frame_2_upvr
+			local TextButton_4 = Instance.new("TextButton")
+			TextButton_4.Name = "SpawnButton"
+			TextButton_4.Size = UDim2.new(1, -20, 0, 30)
+			TextButton_4.Position = UDim2.new(0, 10, 1, -35)
+			TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
+			TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_4.TextSize = 14
+			TextButton_4.Font = Enum.Font.GothamBold
+			TextButton_4.Text = "Spawn With Modified Stats"
+			TextButton_4.Parent = Frame_2_upvr
+			local TextBox_4_upvr = Instance.new("TextBox")
+			TextBox_4_upvr.Name = "TypeBar"
+			TextBox_4_upvr.Size = UDim2.new(1, -20, 0, 30)
+			TextBox_4_upvr.Position = UDim2.new(0, 10, 0, 10)
+			TextBox_4_upvr.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+			TextBox_4_upvr.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TextBox_4_upvr.TextSize = 14
+			TextBox_4_upvr.Font = Enum.Font.Gotham
+			TextBox_4_upvr.PlaceholderText = "Search monsters..."
+			TextBox_4_upvr.Text = ""
+			TextBox_4_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
+			TextBox_4_upvr:GetPropertyChangedSignal("Text"):Connect(function() -- Line 4036, Named "UpdateResults"
 			--[[ Upvalues[2]:
 				[1]: clone_2_upvr (readonly)
 				[2]: TextBox_4_upvr (readonly)
 			]]
-			for _, v_22 in ipairs(clone_2_upvr.Frame.ScrollingFrame:GetChildren()) do
-				if v_22:IsA("Frame") and v_22.Name ~= "Template" then
-					local Text_2 = TextBox_4_upvr.Text
-					if Text_2 == "" then
-						Text_2 = true
-						v_22.Visible = Text_2
-					else
-						if string.match(string.lower(v_22.Name), string.lower(TextBox_4_upvr.Text)) == nil then
-							Text_2 = false
-						else
+				for _, v_22 in ipairs(clone_2_upvr.Frame.ScrollingFrame:GetChildren()) do
+					if v_22:IsA("Frame") and v_22.Name ~= "Template" then
+						local Text_2 = TextBox_4_upvr.Text
+						if Text_2 == "" then
 							Text_2 = true
+							v_22.Visible = Text_2
+						else
+							if string.match(string.lower(v_22.Name), string.lower(TextBox_4_upvr.Text)) == nil then
+								Text_2 = false
+							else
+								Text_2 = true
+							end
+							v_22.Visible = Text_2
 						end
-						v_22.Visible = Text_2
 					end
 				end
+			end)
+			local function createStatEditor_upvr(arg1, arg2) -- Line 4052, Named "createStatEditor"
+				local Frame = Instance.new("Frame")
+				Frame.Name = arg1.."Container"
+				Frame.Size = UDim2.new(1, 0, 0, 30)
+				Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+				Frame.BorderSizePixel = 0
+				local TextLabel_3 = Instance.new("TextLabel")
+				TextLabel_3.Name = "Label"
+				TextLabel_3.Size = UDim2.new(0.5, -5, 1, 0)
+				TextLabel_3.BackgroundTransparency = 1
+				TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextLabel_3.TextSize = 14
+				TextLabel_3.Font = Enum.Font.Gotham
+				TextLabel_3.Text = arg1
+				TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+				TextLabel_3.Parent = Frame
+				local TextBox = Instance.new("TextBox")
+				TextBox.Name = "Input"
+				TextBox.Size = UDim2.new(0.5, -5, 1, -6)
+				TextBox.Position = UDim2.new(0.5, 5, 0, 3)
+				TextBox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+				TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+				TextBox.TextSize = 14
+				TextBox.Font = Enum.Font.Gotham
+				TextBox.Text = tostring(arg2)
+				TextBox.Parent = Frame
+				return Frame
 			end
-		end)
-		local function createStatEditor_upvr(arg1, arg2) -- Line 4052, Named "createStatEditor"
-			local Frame = Instance.new("Frame")
-			Frame.Name = arg1.."Container"
-			Frame.Size = UDim2.new(1, 0, 0, 30)
-			Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-			Frame.BorderSizePixel = 0
-			local TextLabel_3 = Instance.new("TextLabel")
-			TextLabel_3.Name = "Label"
-			TextLabel_3.Size = UDim2.new(0.5, -5, 1, 0)
-			TextLabel_3.BackgroundTransparency = 1
-			TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextLabel_3.TextSize = 14
-			TextLabel_3.Font = Enum.Font.Gotham
-			TextLabel_3.Text = arg1
-			TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
-			TextLabel_3.Parent = Frame
-			local TextBox = Instance.new("TextBox")
-			TextBox.Name = "Input"
-			TextBox.Size = UDim2.new(0.5, -5, 1, -6)
-			TextBox.Position = UDim2.new(0.5, 5, 0, 3)
-			TextBox.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-			TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-			TextBox.TextSize = 14
-			TextBox.Font = Enum.Font.Gotham
-			TextBox.Text = tostring(arg2)
-			TextBox.Parent = Frame
-			return Frame
-		end
-		local function updateStatsEditor(arg1) -- Line 4085
+			local function updateStatsEditor(arg1) -- Line 4085
 			--[[ Upvalues[4]:
 				[1]: ScrollingFrame_upvr (readonly)
 				[2]: ReplicatedStorage_upvr_4 (readonly)
 				[3]: createStatEditor_upvr (readonly)
 				[4]: Frame_2_upvr (readonly)
 			]]
-			if not ScrollingFrame_upvr:FindFirstChild("UIListLayout") then
-				UIListLayout_4 = Instance.new("UIListLayout")
-				UIListLayout_4.Padding = UDim.new(0, 5)
-				UIListLayout_4.Parent = ScrollingFrame_upvr
-			end
-			for _, v_23 in pairs(ScrollingFrame_upvr:GetChildren()) do
-				if v_23 ~= UIListLayout_4 then
-					v_23:Destroy()
+				if not ScrollingFrame_upvr:FindFirstChild("UIListLayout") then
+					UIListLayout_4 = Instance.new("UIListLayout")
+					UIListLayout_4.Padding = UDim.new(0, 5)
+					UIListLayout_4.Parent = ScrollingFrame_upvr
 				end
+				for _, v_23 in pairs(ScrollingFrame_upvr:GetChildren()) do
+					if v_23 ~= UIListLayout_4 then
+						v_23:Destroy()
+					end
+				end
+				local any_3 = require(game.ReplicatedStorage.MonsterData[arg1])
+				for _, v_24 in ipairs({{"PatrolSpeed", any_3.WalkSpeed}, {"RunSpeed", any_3.RunSpeed}, {"VisionRadius", any_3.VisionRadius}, {"WaitTime", any_3.WaitTime}, {"InstantRadius", any_3.InstantRadius}, {"KillRadius", any_3.KillRadius}, {"HearingRadius", any_3.HearingRadius}, {"InterestTime", any_3.InterestTime}, {"Damage", any_3.Damage}, {"LineOfSight", any_3.LineOfSight}, {"HitCooldown", any_3.HitCooldown}}) do
+					createStatEditor_upvr(v_24[1], v_24[2]).Parent = ScrollingFrame_upvr
+				end
+				ScrollingFrame_upvr.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y)
+				Frame_2_upvr.Visible = true
+				Frame_2_upvr.MonsterName.Value = arg1
 			end
-			local any_3 = require(game.ReplicatedStorage.MonsterData[arg1])
-			for _, v_24 in ipairs({{"PatrolSpeed", any_3.WalkSpeed}, {"RunSpeed", any_3.RunSpeed}, {"VisionRadius", any_3.VisionRadius}, {"WaitTime", any_3.WaitTime}, {"InstantRadius", any_3.InstantRadius}, {"KillRadius", any_3.KillRadius}, {"HearingRadius", any_3.HearingRadius}, {"InterestTime", any_3.InterestTime}, {"Damage", any_3.Damage}, {"LineOfSight", any_3.LineOfSight}, {"HitCooldown", any_3.HitCooldown}}) do
-				createStatEditor_upvr(v_24[1], v_24[2]).Parent = ScrollingFrame_upvr
-			end
-			ScrollingFrame_upvr.CanvasSize = UDim2.new(0, 0, 0, UIListLayout_4.AbsoluteContentSize.Y)
-			Frame_2_upvr.Visible = true
-			Frame_2_upvr.MonsterName.Value = arg1
-		end
-		TextButton_4.MouseButton1Click:Connect(function() -- Line 4129, Named "spawnModifiedMonster"
+			TextButton_4.MouseButton1Click:Connect(function() -- Line 4129, Named "spawnModifiedMonster"
 			--[[ Upvalues[3]:
 				[1]: ScrollingFrame_upvr (readonly)
 				[2]: ReplicatedStorage_upvr_4 (readonly)
 				[3]: Frame_2_upvr (readonly)
 			]]
-			for _, v_25 in ipairs(ScrollingFrame_upvr:GetChildren()) do
-				if v_25:IsA("Frame") then
-					local tonumber_result1_5 = tonumber(v_25.Input.Text)
-					if tonumber_result1_5 then
-						({})[v_25.Name:gsub("Container", "")] = tonumber_result1_5
+				for _, v_25 in ipairs(ScrollingFrame_upvr:GetChildren()) do
+					if v_25:IsA("Frame") then
+						local tonumber_result1_5 = tonumber(v_25.Input.Text)
+						if tonumber_result1_5 then
+							({})[v_25.Name:gsub("Container", "")] = tonumber_result1_5
+						end
 					end
 				end
-			end
-			-- KONSTANTERROR: Expression was reused, decompilation is incorrect
-			game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", Frame_2_upvr.MonsterName.Value, {})
-		end)
-		task.spawn(function() -- Line 4148
+				-- KONSTANTERROR: Expression was reused, decompilation is incorrect
+				game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", Frame_2_upvr.MonsterName.Value, {})
+			end)
+			task.spawn(function() -- Line 4148
 			--[[ Upvalues[3]:
 				[1]: clone_2_upvr (readonly)
 				[2]: updateStatsEditor (readonly)
 				[3]: ReplicatedStorage_upvr_4 (readonly)
 			]]
-			for _, v_26 in pairs(game.ReplicatedStorage.MonsterData:GetChildren()) do
-				if not clone_2_upvr.Frame.ScrollingFrame:FindFirstChild(v_26.Name) then
-					local clone_7_upvr = clone_2_upvr.Frame.ScrollingFrame.Template:Clone()
-					clone_7_upvr.Name = v_26.Name
-					clone_7_upvr.MobName.Text = v_26.Name
-					clone_7_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
-					clone_7_upvr.Visible = true
-					local TextButton_3 = Instance.new("TextButton")
-					TextButton_3.Name = "SpawnButton"
-					TextButton_3.Size = UDim2.new(0.3, -5, 1, 0)
-					TextButton_3.Position = UDim2.new(0.7, 5, 0, 0)
-					TextButton_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-					TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-					TextButton_3.TextSize = 12
-					TextButton_3.Font = Enum.Font.Gotham
-					TextButton_3.Text = "Spawn"
-					TextButton_3.Parent = clone_7_upvr
-					clone_7_upvr.Activated:Connect(function() -- Line 4172
+				for _, v_26 in pairs(game.ReplicatedStorage.MonsterData:GetChildren()) do
+					if not clone_2_upvr.Frame.ScrollingFrame:FindFirstChild(v_26.Name) then
+						local clone_7_upvr = clone_2_upvr.Frame.ScrollingFrame.Template:Clone()
+						clone_7_upvr.Name = v_26.Name
+						clone_7_upvr.MobName.Text = v_26.Name
+						clone_7_upvr.Parent = clone_2_upvr.Frame.ScrollingFrame
+						clone_7_upvr.Visible = true
+						local TextButton_3 = Instance.new("TextButton")
+						TextButton_3.Name = "SpawnButton"
+						TextButton_3.Size = UDim2.new(0.3, -5, 1, 0)
+						TextButton_3.Position = UDim2.new(0.7, 5, 0, 0)
+						TextButton_3.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+						TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+						TextButton_3.TextSize = 12
+						TextButton_3.Font = Enum.Font.Gotham
+						TextButton_3.Text = "Spawn"
+						TextButton_3.Parent = clone_7_upvr
+						clone_7_upvr.Activated:Connect(function() -- Line 4172
 						--[[ Upvalues[2]:
 							[1]: updateStatsEditor (copied, readonly)
 							[2]: clone_7_upvr (readonly)
 						]]
-						updateStatsEditor(clone_7_upvr.Name)
-					end)
-					TextButton_3.MouseButton1Click:Connect(function() -- Line 4177
+							updateStatsEditor(clone_7_upvr.Name)
+						end)
+						TextButton_3.MouseButton1Click:Connect(function() -- Line 4177
 						--[[ Upvalues[2]:
 							[1]: ReplicatedStorage_upvr_4 (copied, readonly)
 							[2]: clone_7_upvr (readonly)
 						]]
-						game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", clone_7_upvr.Name)
-					end)
-				end
-			end
-			task.spawn(function() -- Line 4185
-				--[[ Upvalues[1]:
-					[1]: clone_2_upvr (copied, readonly)
-				]]
-				for _, v_27 in pairs(game.ReplicatedStorage.Items:GetChildren()) do
-					if not clone_2_upvr.ItemFrame.ScrollingFrame:FindFirstChild(v_27.Name) then
-						local clone_9_upvr = clone_2_upvr.ItemFrame.ScrollingFrame.Template:Clone()
-						clone_9_upvr.Name = v_27.Name
-						if clone_9_upvr:FindFirstChild("MobName") then
-							clone_9_upvr.MobName.Text = v_27.Name
-						end
-						clone_9_upvr.Parent = clone_2_upvr.ItemFrame.ScrollingFrame
-						clone_9_upvr.Visible = true
-						clone_9_upvr.Activated:Connect(function() -- Line 4200
-							--[[ Upvalues[1]:
-								[1]: clone_9_upvr (readonly)
-							]]
-							game.ReplicatedStorage.Events.AdminEvent:FireServer("Item", clone_9_upvr.Name, 1, 0.1)
+							game.ReplicatedStorage.Events.AdminEvent:FireServer("Enemy", clone_7_upvr.Name)
 						end)
 					end
 				end
+				task.spawn(function() -- Line 4185
+				--[[ Upvalues[1]:
+					[1]: clone_2_upvr (copied, readonly)
+				]]
+					for _, v_27 in pairs(game.ReplicatedStorage.Items:GetChildren()) do
+						if not clone_2_upvr.ItemFrame.ScrollingFrame:FindFirstChild(v_27.Name) then
+							local clone_9_upvr = clone_2_upvr.ItemFrame.ScrollingFrame.Template:Clone()
+							clone_9_upvr.Name = v_27.Name
+							if clone_9_upvr:FindFirstChild("MobName") then
+								clone_9_upvr.MobName.Text = v_27.Name
+							end
+							clone_9_upvr.Parent = clone_2_upvr.ItemFrame.ScrollingFrame
+							clone_9_upvr.Visible = true
+							clone_9_upvr.Activated:Connect(function() -- Line 4200
+							--[[ Upvalues[1]:
+								[1]: clone_9_upvr (readonly)
+							]]
+								game.ReplicatedStorage.Events.AdminEvent:FireServer("Item", clone_9_upvr.Name, 1, 0.1)
+							end)
+						end
+					end
+				end)
 			end)
-		end)
+		else
+			local clone_23_upvr = game.ReplicatedStorage.Admin.DevFrame:Clone()
+			clone_23_upvr.Parent = game.Players.LocalPlayer.PlayerGui
+			clone_23_upvr.DevButton.Activated:Connect(function() -- Line 2327
+			--[[ Upvalues[1]:
+				[1]: clone_23_upvr (readonly)
+			]]
+				if clone_23_upvr.Frame.Visible == true then
+					clone_23_upvr.Frame.Visible = false
+				else
+					clone_23_upvr.Frame.Visible = true
+				end
+			end)
+			spawn(function()
+				-- Line 2334
+			--[[ Upvalues[1]:
+				[1]: clone_23_upvr (readonly)
+			]]
+				local var1430_upvw = false
+				clone_23_upvr.Frame.UseCommand.Activated:Connect(function() -- Line 2336
+				--[[ Upvalues[2]:
+					[1]: var1430_upvw (read and write)
+					[2]: clone_23_upvr (copied, readonly)
+				]]
+					if var1430_upvw == false then
+						var1430_upvw = true
+						clone_23_upvr.Frame.UseCommand.BackgroundColor3 = Color3.fromRGB(58, 108, 51)
+						clone_23_upvr.Frame.UseCommand.TextColor3 = Color3.fromRGB(25, 48, 21)
+						task.delay(4, function() -- Line 2341
+						--[[ Upvalues[2]:
+							[1]: var1430_upvw (copied, read and write)
+							[2]: clone_23_upvr (copied, readonly)
+						]]
+							var1430_upvw = false
+							clone_23_upvr.Frame.UseCommand.BackgroundColor3 = Color3.fromRGB(127, 255, 105)
+							clone_23_upvr.Frame.UseCommand.TextColor3 = Color3.fromRGB(61, 117, 52)
+						end)
+						local any_InvokeServer_result1_9 = game.ReplicatedStorage.Events.AdminEvent:InvokeServer(clone_23_upvr.Frame.PlayerName.Text, clone_23_upvr.Frame.CommandType.Text, clone_23_upvr.Frame.SugerCubeAmount.Text, clone_23_upvr.Frame.TowerName.Text)
+						if any_InvokeServer_result1_9 == nil then
+							clone_23_upvr.Frame.BanText.Text = "Command Finished"
+							clone_23_upvr.Frame.BanText.Visible = true
+							task.delay(3, function() -- Line 2354
+							--[[ Upvalues[1]:
+								[1]: clone_23_upvr (copied, readonly)
+							]]
+								clone_23_upvr.Frame.BanText.Visible = false
+							end)
+							return
+						end
+						clone_23_upvr.Frame.BanText.Text = tostring(any_InvokeServer_result1_9)
+						clone_23_upvr.Frame.BanText.Visible = true
+						task.delay(3, function() -- Line 2360
+						--[[ Upvalues[1]:
+							[1]: clone_23_upvr (copied, readonly)
+						]]
+							clone_23_upvr.Frame.BanText.Visible = false
+						end)
+					end
+				end)
+				clone_23_upvr.Frame.ButtonBan.Activated:Connect(function() -- Line 2366
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_9 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_9.Name, "Time") then
+							v_9.Visible = true
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = "Ban"
+				end)
+				clone_23_upvr.Frame.ButtonUnBan.Activated:Connect(function() -- Line 2375
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_10 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_10.Name, "Time") then
+							v_10.Visible = false
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = "UnBan"
+				end)
+				clone_23_upvr.Frame.ButtonIPBan.Activated:Connect(function() -- Line 2384
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_11 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_11.Name, "Time") then
+							v_11.Visible = false
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = "IPBan"
+				end)
+				clone_23_upvr.Frame.ButtonUnIPBan.Activated:Connect(function() -- Line 2393
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_12 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_12.Name, "Time") then
+							v_12.Visible = false
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = "UnIPBan"
+				end)
+				clone_23_upvr.Frame.ButtonCBR.Activated:Connect(function() -- Line 2402
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_13 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_13.Name, "Time") then
+							v_13.Visible = false
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = "CheckBanReason"
+				end)
+				clone_23_upvr.Frame.ButtonReset.Activated:Connect(function() -- Line 2411
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_14 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_14.Name, "Time") then
+							v_14.Visible = false
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = ""
+					clone_23_upvr.Frame.SugerCubeAmount.Text = ""
+					clone_23_upvr.Frame.TowerName.Text = ""
+				end)
+				clone_23_upvr.Frame.ButtonExploit.Activated:Connect(function() -- Line 2424
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					for _, v_15 in clone_23_upvr.Frame:GetChildren() do
+						if string.find(v_15.Name, "Time") then
+							v_15.Visible = false
+						end
+					end
+					clone_23_upvr.Frame.CommandType.Text = "IPBan"
+					clone_23_upvr.Frame.TowerName.Text = "Use of exploits is not allowed."
+				end)
+				clone_23_upvr.Frame.TimeP.Activated:Connect(function() -- Line 2435
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					clone_23_upvr.Frame.SugerCubeAmount.Text = ""
+				end)
+				clone_23_upvr.Frame.Time1X.Activated:Connect(function() -- Line 2439
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					clone_23_upvr.Frame.SugerCubeAmount.Text = 86400
+				end)
+				clone_23_upvr.Frame.Time3X.Activated:Connect(function() -- Line 2443
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					clone_23_upvr.Frame.SugerCubeAmount.Text = 259200
+				end)
+				clone_23_upvr.Frame.Time7X.Activated:Connect(function() -- Line 2447
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					clone_23_upvr.Frame.SugerCubeAmount.Text = 604800
+				end)
+				clone_23_upvr.Frame.Time1M.Activated:Connect(function()
+					-- Line 2451
+				--[[ Upvalues[1]:
+					[1]: clone_23_upvr (copied, readonly)
+				]]
+					clone_23_upvr.Frame.SugerCubeAmount.Text = 2592000
+				end)
+			end)
+		end
 	end)
+
 end;
 task.spawn(C_100);
 -- StarterGui.DebugVersion.Title.script_content.MainFour.ScrollingFrame.LocalScript
@@ -17318,7 +17495,7 @@ local function C_1f5()
 						local chasingValue = monster:FindFirstChild("ChasingValue")
 						if chasingValue and chasingValue:IsA("ObjectValue") then
 							local player = game.Players.LocalPlayer
-							if chasingValue.Value == player or chasingValue.Value == player.DisplayName or chasingValue.Value == player.Name then
+							if chasingValue and chasingValue:IsA("ObjectValue") and chasingValue.Value == game.Players.LocalPlayer or chasingValue and chasingValue:IsA("ObjectValue") and chasingValue.Value == game.Players.LocalPlayer.Character then
 								return true -- 🔹 Hay un monstruo persiguiéndote
 							end
 						end
