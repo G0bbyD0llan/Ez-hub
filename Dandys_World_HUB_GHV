@@ -8846,7 +8846,7 @@ local function C_ba()
 			end
 		end
 	end
-	v263()
+
 	local function v264()
 		local v337 = 1174 - (663 + 511)
 		local v338
