@@ -24,9 +24,9 @@ If you wanna talk to the owner of the script then contact him on Roblox.com in t
 
 -- Instances: 535 | Scripts: 156 | Modules: 0
 
-task.spawn(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/MeC0UWNm"))()
-end)
+--task.spawn(function()
+--loadstring(game:HttpGet("https://pastebin.com/raw/MeC0UWNm"))()
+--end)
 
 local G2L = {};
 
