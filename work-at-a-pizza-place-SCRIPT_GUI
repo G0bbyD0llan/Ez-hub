@@ -19,6 +19,11 @@ If you wanna talk to the owner of the script then contact him on Roblox.com in t
 
 ]=]
 
+	local gbdl = {
+		version = 1.0,
+		lastmsg = "hello"
+	}
+
 -- Instances: 179 | Scripts: 65 | Modules: 0
 local G2L = {};
 
@@ -5884,12 +5889,9 @@ local function C_b3()
 	local script = G2L["b3"];
 	script.Parent.WindowFrame.Visible = false
 
-	local gbdl = {
-		version = 1.0,
-		lastmsg = "hello"
-	}
 
-	local IsTesting = true
+
+	local IsTesting = false
 
 	print(string.format([[
 		
