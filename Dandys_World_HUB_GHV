@@ -12781,7 +12781,7 @@ task.spawn(C_115);
 local function C_118()
 	local script = G2L["118"];
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Team-Noxious/Noxious-Hub-Dandy-s-World/refs/heads/main/Animations%20GUI"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/meowsynther/team-noxious-obfuscated/refs/heads/main/dandy's%20world/%5Bobf%5D%20animations%20gui.lua"))()
 		script.parent.Text = "By Noxious"
 		wait(2)
 		script.parent.Text = "Animation GUI"
