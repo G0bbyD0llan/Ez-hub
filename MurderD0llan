@@ -20,8 +20,8 @@ The script was published and released to the public as version 1.0.0 by user "G0
 local MurderD0llan = {}
 
 MurderD0llan.information = {
-Version = "1.0.0",
-ChangeLog = [[The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025 in the afternoon.]]
+	Version = "1.0.0",
+	ChangeLog = [[The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025 in the afternoon.]]
 }
 
 function MurderD0llan:LoadIntro(OnFinished)
@@ -217,7 +217,7 @@ function MurderD0llan:LoadIntro(OnFinished)
 			introSound:Stop()
 			introSound:Destroy()
 		end
-		
+
 		if OnFinished then
 			OnFinished()
 		end
@@ -245,5 +245,9 @@ function MurderD0llan:Init()
 		warn("[MurderD0llan]: Error executing script: " .. errorMessage)
 	end
 end
+
+pcall(function()
+	getgenv().MurderD0llan = MurderD0llan --ensure that MurderD0llan is avaliable on getgenv() for the main script
+end)
 
 return MurderD0llan
