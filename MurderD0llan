@@ -1,0 +1,249 @@
+--[[
+MurderD0llan / Murder Mystery 2 Script Hub
+
+creator: G0bbyD0llan
+
+Version: 1.0.0
+
+Change Log:
+	- Added support for PC, Mobile
+    - Added Page 1, 2, 3, 4, 5, ALT_Page_options, ALT_page_feedback, ALT_page_search
+    - Made the script more readable
+    - Fixed bugs before Publishing
+    
+-----------------------------
+
+The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025 in the afternoon.
+
+]]
+
+local MurderD0llan = {}
+
+MurderD0llan.information = {
+Version = "1.0.0",
+ChangeLog = [[The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025 in the afternoon.]]
+}
+
+function MurderD0llan:LoadIntro(OnFinished)
+	-- Verificar soporte del sistema de archivos
+	local fs_supported = typeof(isfile) == "function" and typeof(writefile) == "function"
+	local FLAG_PATH = "workspace/already_openedMurderD0llan.txt"
+
+	if not fs_supported then
+		if OnFinished then OnFinished() end
+		return
+	end
+
+	if isfile(FLAG_PATH) then
+		if OnFinished then OnFinished() end
+		return
+	end
+
+	writefile(FLAG_PATH, "true")
+
+	-- [AQUÍ VA TU SCRIPT DE INTRO ORIGINAL]
+	-- Services
+	local TweenService   = game:GetService("TweenService")
+	local Lighting       = game:GetService("Lighting")
+	local Players        = game:GetService("Players")
+	local SoundService   = game:GetService("SoundService")
+	local RunService     = game:GetService("RunService")
+
+	-- Player references
+	local LocalPlayer    = Players.LocalPlayer
+	local PlayerGui      = LocalPlayer:WaitForChild("PlayerGui")
+
+	-- Configuration
+	local CONFIG = {
+		MAIN_TITLE_TEXT               = "MurderD0llan",
+		SUBTITLE_TEXT                 = "Created by G0bbyD0llan",
+		MAIN_TITLE_FONT              = Enum.Font.GothamBlack,
+		SUBTITLE_FONT                = Enum.Font.GothamSemibold,
+		TEXT_COLOR                   = Color3.fromRGB(255, 255, 255),
+		GLOW_COLOR                   = Color3.fromRGB(0, 0, 0),
+		GLOW_OFFSET                  = Vector2.new(2, 2),
+		GLOW_TRANSPARENCY_VISIBLE    = 0.6,
+
+		MAIN_TITLE_SIZE_INITIAL      = 60,
+		MAIN_TITLE_SIZE_FINAL        = 100,
+		SUBTITLE_SIZE_INITIAL        = 25,
+		SUBTITLE_SIZE_FINAL          = 40,
+
+		BLUR_AMOUNT                  = 16,
+		SOUND_ID                     = "rbxassetid://14646205673",
+		SOUND_TIME_POSITION          = 5,
+		SOUND_VOLUME                 = 2,
+
+		ANIM_DURATION_FADE_IN        = 1.5,
+		ANIM_DURATION_ZOOM_IN        = 1.8,
+		ANIM_DURATION_HOLD           = 2.5,
+		ANIM_DURATION_FADE_OUT       = 1.0,
+		ANIM_DURATION_ZOOM_OUT       = 1.0,
+		ANIM_DURATION_BLUR           = 1.0,
+
+		SUBTITLE_DELAY               = 0.3,
+	}
+
+	-- GUI Creation Functions
+	local function createScreenGui()
+		local screenGui = Instance.new("ScreenGui")
+		screenGui.Name = "CinematicIntroGui"
+		screenGui.ResetOnSpawn = false
+		screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+		screenGui.DisplayOrder = 9999
+		screenGui.IgnoreGuiInset = true
+		screenGui.Parent = PlayerGui
+		return screenGui
+	end
+
+	local function createTextLabel(text, name, font, initialSize, color, position, anchorPoint, zIndex)
+		local label = Instance.new("TextLabel")
+		label.Name = name
+		label.Text = text
+		label.Font = font
+		label.TextSize = initialSize
+		label.TextColor3 = color
+		label.TextStrokeTransparency = 1
+		label.BackgroundTransparency = 1
+		label.Size = UDim2.new(0, 0, 0, initialSize)
+		label.Position = position
+		label.AnchorPoint = anchorPoint
+		label.TextXAlignment = Enum.TextXAlignment.Center
+		label.TextYAlignment = Enum.TextYAlignment.Center
+		label.TextTransparency = 1
+		label.ZIndex = zIndex
+		return label
+	end
+
+	local function createGlowLabel(originalLabel, glowColor, offset, zIndex)
+		local glow = originalLabel:Clone()
+		glow.Name = originalLabel.Name .. "Glow"
+		glow.TextColor3 = glowColor
+		glow.TextStrokeTransparency = 1
+		glow.ZIndex = zIndex
+		glow.Position = originalLabel.Position + UDim2.new(0, offset.X, 0, offset.Y)
+		glow.TextTransparency = 1
+		return glow
+	end
+
+	local function playSound(soundId, timePosition, volume, parent)
+		local sound = Instance.new("Sound")
+		sound.SoundId = soundId
+		sound.TimePosition = timePosition
+		sound.Volume = volume
+		sound.Parent = parent
+		sound:Play()
+		return sound
+	end
+
+	-- Main Intro Animation
+	local function playIntroAnimation()
+		local screenGui = createScreenGui()
+
+		-- Blur Effect
+		local blurEffect = Instance.new("BlurEffect")
+		blurEffect.Size = 0
+		blurEffect.Parent = Lighting
+
+		-- Main Title
+		local mainTitle = createTextLabel(
+			CONFIG.MAIN_TITLE_TEXT, "MainTitle", CONFIG.MAIN_TITLE_FONT,
+			CONFIG.MAIN_TITLE_SIZE_INITIAL, CONFIG.TEXT_COLOR,
+			UDim2.new(0.5, 0, 0.42, 0), Vector2.new(0.5, 0.5), 2
+		)
+		mainTitle.Parent = screenGui
+
+		local mainTitleGlow = createGlowLabel(mainTitle, CONFIG.GLOW_COLOR, CONFIG.GLOW_OFFSET, 1)
+		mainTitleGlow.Parent = screenGui
+
+		-- Subtitle
+		local subtitle = createTextLabel(
+			CONFIG.SUBTITLE_TEXT, "Subtitle", CONFIG.SUBTITLE_FONT,
+			CONFIG.SUBTITLE_SIZE_INITIAL, CONFIG.TEXT_COLOR,
+			UDim2.new(0.5, 0, 0.58, 0), Vector2.new(0.5, 0.5), 2
+		)
+		subtitle.Parent = screenGui
+
+		local subtitleGlow = createGlowLabel(subtitle, CONFIG.GLOW_COLOR, CONFIG.GLOW_OFFSET, 1)
+		subtitleGlow.Parent = screenGui
+
+		-- Play Sound
+		local introSound = playSound(CONFIG.SOUND_ID, CONFIG.SOUND_TIME_POSITION, CONFIG.SOUND_VOLUME, screenGui)
+
+		-- TweenInfo Definitions
+		local fadeInInfo      = TweenInfo.new(CONFIG.ANIM_DURATION_FADE_IN, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+		local zoomInInfo      = TweenInfo.new(CONFIG.ANIM_DURATION_ZOOM_IN, Enum.EasingStyle.Elastic, Enum.EasingDirection.Out)
+		local glowFadeInInfo  = TweenInfo.new(CONFIG.ANIM_DURATION_FADE_IN, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local fadeOutInfo     = TweenInfo.new(CONFIG.ANIM_DURATION_FADE_OUT, Enum.EasingStyle.Quint, Enum.EasingDirection.In)
+		local zoomOutInfo     = TweenInfo.new(CONFIG.ANIM_DURATION_ZOOM_OUT, Enum.EasingStyle.Quint, Enum.EasingDirection.In)
+		local glowFadeOutInfo = TweenInfo.new(CONFIG.ANIM_DURATION_FADE_OUT, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+		local blurInOutInfo   = TweenInfo.new(CONFIG.ANIM_DURATION_BLUR, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
+		-- Entrance Animation
+		TweenService:Create(blurEffect, blurInOutInfo, {Size = CONFIG.BLUR_AMOUNT}):Play()
+		TweenService:Create(mainTitle, fadeInInfo, {TextTransparency = 0}):Play()
+		TweenService:Create(mainTitle, zoomInInfo, {TextSize = CONFIG.MAIN_TITLE_SIZE_FINAL}):Play()
+		TweenService:Create(mainTitleGlow, glowFadeInInfo, {TextTransparency = CONFIG.GLOW_TRANSPARENCY_VISIBLE}):Play()
+		TweenService:Create(mainTitleGlow, zoomInInfo, {TextSize = CONFIG.MAIN_TITLE_SIZE_FINAL}):Play()
+
+		task.delay(CONFIG.SUBTITLE_DELAY, function()
+			TweenService:Create(subtitle, fadeInInfo, {TextTransparency = 0}):Play()
+			TweenService:Create(subtitle, zoomInInfo, {TextSize = CONFIG.SUBTITLE_SIZE_FINAL}):Play()
+			TweenService:Create(subtitleGlow, glowFadeInInfo, {TextTransparency = CONFIG.GLOW_TRANSPARENCY_VISIBLE}):Play()
+			TweenService:Create(subtitleGlow, zoomInInfo, {TextSize = CONFIG.SUBTITLE_SIZE_FINAL}):Play()
+		end)
+
+		-- Hold Animation
+		local totalEntranceTime = math.max(CONFIG.ANIM_DURATION_FADE_IN, CONFIG.ANIM_DURATION_ZOOM_IN) + CONFIG.SUBTITLE_DELAY
+		task.wait(totalEntranceTime + CONFIG.ANIM_DURATION_HOLD)
+
+		-- Exit Animation
+		TweenService:Create(blurEffect, blurInOutInfo, {Size = 0}):Play()
+
+		TweenService:Create(mainTitle, fadeOutInfo, {TextTransparency = 1}):Play()
+		TweenService:Create(mainTitle, zoomOutInfo, {TextSize = CONFIG.MAIN_TITLE_SIZE_INITIAL * 0.8}):Play()
+		TweenService:Create(mainTitleGlow, glowFadeOutInfo, {TextTransparency = 1}):Play()
+		TweenService:Create(mainTitleGlow, zoomOutInfo, {TextSize = CONFIG.MAIN_TITLE_SIZE_INITIAL * 0.8}):Play()
+
+		TweenService:Create(subtitle, fadeOutInfo, {TextTransparency = 1}):Play()
+		TweenService:Create(subtitle, zoomOutInfo, {TextSize = CONFIG.SUBTITLE_SIZE_INITIAL * 0.8}):Play()
+		TweenService:Create(subtitleGlow, glowFadeOutInfo, {TextTransparency = 1}):Play()
+		TweenService:Create(subtitleGlow, zoomOutInfo, {TextSize = CONFIG.SUBTITLE_SIZE_INITIAL * 0.8}):Play()
+
+		task.wait(math.max(CONFIG.ANIM_DURATION_FADE_OUT, CONFIG.ANIM_DURATION_ZOOM_OUT, CONFIG.ANIM_DURATION_BLUR))
+
+		-- Cleanup
+		if introSound then
+			introSound:Stop()
+			introSound:Destroy()
+		end
+		
+		if OnFinished then
+			OnFinished()
+		end
+
+		screenGui:Destroy()
+		blurEffect:Destroy()
+	end
+
+	-- Trigger the Intro
+	if PlayerGui then
+		playIntroAnimation()
+	end
+
+end
+
+function MurderD0llan:Init()
+	local webpage = ""
+	--PCALL FUNCTION LOADSTRING
+	local success, errorMessage = pcall(function()
+		loadstring(game:HttpGet(webpage))()
+	end)
+	if success then
+		print("[MurderD0llan]: Script executed successfully!")
+	else
+		warn("[MurderD0llan]: Error executing script: " .. errorMessage)
+	end
+end
+
+return MurderD0llan
