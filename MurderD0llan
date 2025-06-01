@@ -234,7 +234,7 @@ function MurderD0llan:LoadIntro(OnFinished)
 end
 
 function MurderD0llan:Init()
-	local webpage = ""
+	local webpage = "https://raw.githubusercontent.com/G0bbyD0llan/Ez-hub/refs/heads/main/MurderD0llan.lua"
 	--PCALL FUNCTION LOADSTRING
 	local success, errorMessage = pcall(function()
 		loadstring(game:HttpGet(webpage))()
