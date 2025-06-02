@@ -3,25 +3,33 @@ MurderD0llan / Murder Mystery 2 Script Hub
 
 creator: G0bbyD0llan
 
-Version: 1.0.0
+Version: 1.0.1
 
 Change Log:
+    --------------------------------
+    Version 1.0.0
 	- Added support for PC, Mobile
-    - Added Page 1, 2, 3, 4, 5, ALT_Page_options, ALT_page_feedback, ALT_page_search
+    - Added Page 1, 2, 3, 4, ALT_Page_options, ALT_page_feedback, ALT_page_search
     - Made the script more readable
     - Fixed bugs before Publishing
-    
------------------------------
+    --------------------------------
+    Version 1.0.1
+    - Fixed bugs
+    - Added more functionality
+    - Added Page 5
+    -----------------------------
 
 The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025 in the afternoon.
+
+The script was updated by user "G0bbyD0llan" on June 2, 2025. The update includes bug fixes and additional functionality.
 
 ]]
 
 local MurderD0llan = {}
 
 MurderD0llan.information = {
-	Version = "1.0.0",
-	ChangeLog = [[The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025 in the afternoon.]]
+	Version = "1.0.1",
+	ChangeLog = [[The script was updated by user "G0bbyD0llan" on June 2, 2025. The update includes bug fixes and additional functionality.]]
 }
 
 function MurderD0llan:LoadIntro(OnFinished)
