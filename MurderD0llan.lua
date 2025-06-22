@@ -1,5 +1,4 @@
 --[=[
-
 MurderD0llan / Murder Mystery 2 Script Hub
 
 creator: G0bbyD0llan
@@ -10,11 +9,15 @@ Version: 1.0.1
 
 The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025.
 The script was last updated by user "G0bbyD0llan" Next Day, June 2, 2025, to version 1.0.1.
+The script was last updated by user "G0bbyD0llan" on June 22, 2025, to version 1.0.2.
 
 This GUI Was Converted Using GUI2LUA, and the GUI was created by "G0bbyD0llan" and the original GUI was made by AI Assistant from Roblox Studio, Thanks!
 
 - This Script Is NOT 100% Safe To Use, but functions of the script will work (this script Has Been Thoroughly Tested), use at your own risk
 - G0bbyD0llan Is Not Responsible For Any Damage to Any Account Caused By The Script.
+
+
+
 
 
 
@@ -28,7 +31,7 @@ This GUI Was Converted Using GUI2LUA, and the GUI was created by "G0bbyD0llan" a
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 401 | Scripts: 8 | Modules: 4
+-- Instances: 479 | Scripts: 8 | Modules: 9
 local G2L = {};
 
 -- StarterGui.MurderD0llan
@@ -47,6 +50,8 @@ G2L["2"]["ClipsDescendants"] = true;
 G2L["2"]["BorderColor3"] = Color3.fromRGB(61, 61, 61);
 G2L["2"]["Position"] = UDim2.new(0.5447618961334229, -307, 0.4021739363670349, -105);
 G2L["2"]["Name"] = [[MainWindow]];
+-- Attributes
+G2L["2"]:SetAttribute([[DRAG_ACTIVE]], true);
 
 -- StarterGui.MurderD0llan.MainWindow.UICorner
 G2L["3"] = Instance.new("UICorner", G2L["2"]);
@@ -68,7 +73,7 @@ G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]]
 G2L["5"]["TextSize"] = 16;
 G2L["5"]["TextColor3"] = Color3.fromRGB(241, 241, 241);
 G2L["5"]["Size"] = UDim2.new(1, -35, 1, 0);
-G2L["5"]["Text"] = [[MurderD0llan / Murder Mystery 2 - G0bbyD0llan1]];
+G2L["5"]["Text"] = [[MurderD0llan / Murder Mystery 2]];
 G2L["5"]["Name"] = [[TitleLabel]];
 G2L["5"]["BackgroundTransparency"] = 1;
 G2L["5"]["Position"] = UDim2.new(0, 5, 0, 0);
@@ -121,7 +126,7 @@ G2L["a"]["Name"] = [[ContentArea]];
 G2L["b"] = Instance.new("ScrollingFrame", G2L["a"]);
 G2L["b"]["Active"] = true;
 G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["CanvasSize"] = UDim2.new(0, 0, 0, 1109);
+G2L["b"]["CanvasSize"] = UDim2.new(0, 0, 0, 1187);
 G2L["b"]["TopImage"] = [[]];
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["b"]["BackgroundTransparency"] = 0.9599999785423279;
@@ -919,196 +924,186 @@ G2L["57"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0)
 G2L["58"] = Instance.new("UIGradient", G2L["56"]);
 G2L["58"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages
-G2L["59"] = Instance.new("Frame", G2L["a"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.MakeTheGameUnplayable
+G2L["59"] = Instance.new("TextButton", G2L["b"]);
+G2L["59"]["TextWrapped"] = true;
+G2L["59"]["TextStrokeTransparency"] = 0;
 G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["BackgroundTransparency"] = 1;
-G2L["59"]["Size"] = UDim2.new(0, 121, 0, 250);
+G2L["59"]["TextSize"] = 21;
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["59"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["59"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["59"]["Name"] = [[MakeTheGameUnplayable]];
 G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["59"]["Position"] = UDim2.new(0.7683397531509399, 0, -0.004002616740763187, 0);
-G2L["59"]["Name"] = [[Pages]];
+G2L["59"]["Text"] = [[Make the game unplayable  ]];
+G2L["59"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.MakeTheGameUnplayable.Frame
+G2L["5a"] = Instance.new("Frame", G2L["59"]);
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["5a"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.MakeTheGameUnplayable.UIGradient
+G2L["5b"] = Instance.new("UIGradient", G2L["59"]);
+G2L["5b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.NoSheriffsInRound
+G2L["5c"] = Instance.new("TextButton", G2L["b"]);
+G2L["5c"]["TextWrapped"] = true;
+G2L["5c"]["TextStrokeTransparency"] = 0;
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5c"]["TextSize"] = 21;
+G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5c"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["5c"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["5c"]["Name"] = [[NoSheriffsInRound]];
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["Text"] = [[No Sheriffs In Round  ]];
+G2L["5c"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.NoSheriffsInRound.Frame
+G2L["5d"] = Instance.new("Frame", G2L["5c"]);
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["5d"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.NoSheriffsInRound.UIGradient
+G2L["5e"] = Instance.new("UIGradient", G2L["5c"]);
+G2L["5e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages
+G2L["5f"] = Instance.new("Frame", G2L["a"]);
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5f"]["BackgroundTransparency"] = 1;
+G2L["5f"]["Size"] = UDim2.new(0, 121, 0, 250);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Position"] = UDim2.new(0.7683397531509399, 0, -0.004002616740763187, 0);
+G2L["5f"]["Name"] = [[Pages]];
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Main
-G2L["5a"] = Instance.new("TextButton", G2L["59"]);
-G2L["5a"]["TextWrapped"] = true;
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["5a"]["TextSize"] = 14;
-G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5a"]["Size"] = UDim2.new(0, 77, 0, 28);
-G2L["5a"]["Name"] = [[Main]];
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5a"]["Text"] = [[Main]];
-G2L["5a"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.04437548667192459, 0);
+G2L["60"] = Instance.new("TextButton", G2L["5f"]);
+G2L["60"]["TextWrapped"] = true;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["60"]["TextSize"] = 14;
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["Size"] = UDim2.new(0, 77, 0, 28);
+G2L["60"]["Name"] = [[Main]];
+G2L["60"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["Text"] = [[Main]];
+G2L["60"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.04437548667192459, 0);
 -- Attributes
-G2L["5a"]:SetAttribute([[SELECTED_PAGE]], [[page_1]]);
+G2L["60"]:SetAttribute([[SELECTED_PAGE]], [[page_1]]);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Target
-G2L["5b"] = Instance.new("TextButton", G2L["59"]);
-G2L["5b"]["TextWrapped"] = true;
-G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["5b"]["TextSize"] = 14;
-G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["Size"] = UDim2.new(0, 77, 0, 28);
-G2L["5b"]["Name"] = [[Target]];
-G2L["5b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["Text"] = [[Target]];
-G2L["5b"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.18437549471855164, 0);
+G2L["61"] = Instance.new("TextButton", G2L["5f"]);
+G2L["61"]["TextWrapped"] = true;
+G2L["61"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["61"]["TextSize"] = 14;
+G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["Size"] = UDim2.new(0, 77, 0, 28);
+G2L["61"]["Name"] = [[Target]];
+G2L["61"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["61"]["Text"] = [[Target]];
+G2L["61"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.18437549471855164, 0);
 -- Attributes
-G2L["5b"]:SetAttribute([[SELECTED_PAGE]], [[page_2]]);
+G2L["61"]:SetAttribute([[SELECTED_PAGE]], [[page_2]]);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Murder
-G2L["5c"] = Instance.new("TextButton", G2L["59"]);
-G2L["5c"]["TextWrapped"] = true;
-G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["5c"]["TextSize"] = 14;
-G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5c"]["Size"] = UDim2.new(0, 77, 0, 28);
-G2L["5c"]["Name"] = [[Murder]];
-G2L["5c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5c"]["Text"] = [[Murder]];
-G2L["5c"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.3203755021095276, 0);
+G2L["62"] = Instance.new("TextButton", G2L["5f"]);
+G2L["62"]["TextWrapped"] = true;
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["62"]["TextSize"] = 14;
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["Size"] = UDim2.new(0, 77, 0, 28);
+G2L["62"]["Name"] = [[Murder]];
+G2L["62"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["62"]["Text"] = [[Murder]];
+G2L["62"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.3203755021095276, 0);
 -- Attributes
-G2L["5c"]:SetAttribute([[SELECTED_PAGE]], [[page_3]]);
+G2L["62"]:SetAttribute([[SELECTED_PAGE]], [[page_3]]);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Sherrif
-G2L["5d"] = Instance.new("TextButton", G2L["59"]);
-G2L["5d"]["TextWrapped"] = true;
-G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["5d"]["TextSize"] = 14;
-G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["Size"] = UDim2.new(0, 77, 0, 28);
-G2L["5d"]["Name"] = [[Sherrif]];
-G2L["5d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["Text"] = [[Sherrif]];
-G2L["5d"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.46037548780441284, 0);
+G2L["63"] = Instance.new("TextButton", G2L["5f"]);
+G2L["63"]["TextWrapped"] = true;
+G2L["63"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["63"]["TextSize"] = 14;
+G2L["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["63"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["Size"] = UDim2.new(0, 77, 0, 28);
+G2L["63"]["Name"] = [[Sherrif]];
+G2L["63"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["63"]["Text"] = [[Sherrif]];
+G2L["63"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.46037548780441284, 0);
 -- Attributes
-G2L["5d"]:SetAttribute([[SELECTED_PAGE]], [[page_4]]);
+G2L["63"]:SetAttribute([[SELECTED_PAGE]], [[page_4]]);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Innocent
-G2L["5e"] = Instance.new("TextButton", G2L["59"]);
-G2L["5e"]["TextWrapped"] = true;
-G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["5e"]["TextSize"] = 14;
-G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["Size"] = UDim2.new(0, 77, 0, 28);
-G2L["5e"]["Name"] = [[Innocent]];
-G2L["5e"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["Text"] = [[Innocent]];
-G2L["5e"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.5963754653930664, 0);
--- Attributes
-G2L["5e"]:SetAttribute([[SELECTED_PAGE]], [[page_5]]);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Options
-G2L["5f"] = Instance.new("TextButton", G2L["59"]);
-G2L["5f"]["TextWrapped"] = true;
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["5f"]["TextSize"] = 14;
-G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["Size"] = UDim2.new(0, 77, 0, 28);
-G2L["5f"]["Name"] = [[Options]];
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5f"]["Text"] = [[Options]];
-G2L["5f"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.7323755025863647, 0);
--- Attributes
-G2L["5f"]:SetAttribute([[SELECTED_PAGE]], [[ALT_page_options]]);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options
-G2L["60"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["60"]["Active"] = true;
-G2L["60"]["BorderSizePixel"] = 0;
-G2L["60"]["CanvasSize"] = UDim2.new(0, 0, 0, 702);
-G2L["60"]["TopImage"] = [[]];
-G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["60"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["60"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["60"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["60"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["60"]["Visible"] = false;
-G2L["60"]["Name"] = [[ALT_page_options]];
-G2L["60"]["BottomImage"] = [[]];
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.UIListLayout
-G2L["61"] = Instance.new("UIListLayout", G2L["60"]);
-G2L["61"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["61"]["Padding"] = UDim.new(0, 5);
-G2L["61"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ThemeSelector
-G2L["62"] = Instance.new("TextButton", G2L["60"]);
-G2L["62"]["TextWrapped"] = true;
-G2L["62"]["TextStrokeTransparency"] = 0;
-G2L["62"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["TextSize"] = 20;
-G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["62"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["62"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["62"]["Name"] = [[ThemeSelector]];
-G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["62"]["Text"] = [[  Theme - Original]];
-G2L["62"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ThemeSelector.UIGradient
-G2L["63"] = Instance.new("UIGradient", G2L["62"]);
-G2L["63"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ThemeSelector.change
-G2L["64"] = Instance.new("TextButton", G2L["62"]);
+G2L["64"] = Instance.new("TextButton", G2L["5f"]);
 G2L["64"]["TextWrapped"] = true;
 G2L["64"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
 G2L["64"]["TextSize"] = 14;
 G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["64"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["64"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["64"]["Name"] = [[change]];
+G2L["64"]["Size"] = UDim2.new(0, 77, 0, 28);
+G2L["64"]["Name"] = [[Innocent]];
 G2L["64"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["64"]["Text"] = [[change]];
-G2L["64"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+G2L["64"]["Text"] = [[Innocent]];
+G2L["64"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.5963754653930664, 0);
+-- Attributes
+G2L["64"]:SetAttribute([[SELECTED_PAGE]], [[page_5]]);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragSpeed
-G2L["65"] = Instance.new("TextButton", G2L["60"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.Pages.Options
+G2L["65"] = Instance.new("TextButton", G2L["5f"]);
 G2L["65"]["TextWrapped"] = true;
-G2L["65"]["TextStrokeTransparency"] = 0;
-G2L["65"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["TextSize"] = 20;
-G2L["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["65"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["65"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["65"]["Name"] = [[DragSpeed]];
-G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["65"]["Text"] = [[  Drag Speed - 0.25x]];
-G2L["65"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["65"]["TextSize"] = 14;
+G2L["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["65"]["Size"] = UDim2.new(0, 77, 0, 28);
+G2L["65"]["Name"] = [[Options]];
+G2L["65"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["65"]["Text"] = [[Options]];
+G2L["65"]["Position"] = UDim2.new(0.11343560367822647, 0, 0.7323755025863647, 0);
+-- Attributes
+G2L["65"]:SetAttribute([[SELECTED_PAGE]], [[ALT_page_options]]);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragSpeed.UIGradient
-G2L["66"] = Instance.new("UIGradient", G2L["65"]);
-G2L["66"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options
+G2L["66"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["66"]["Active"] = true;
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["CanvasSize"] = UDim2.new(0, 0, 0, 970);
+G2L["66"]["TopImage"] = [[]];
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["66"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["66"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["66"]["Visible"] = false;
+G2L["66"]["Name"] = [[ALT_page_options]];
+G2L["66"]["BottomImage"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragSpeed.change
-G2L["67"] = Instance.new("TextButton", G2L["65"]);
-G2L["67"]["TextWrapped"] = true;
-G2L["67"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["67"]["TextSize"] = 14;
-G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["67"]["Name"] = [[change]];
-G2L["67"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["Text"] = [[change]];
-G2L["67"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.UIListLayout
+G2L["67"] = Instance.new("UIListLayout", G2L["66"]);
+G2L["67"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["67"]["Padding"] = UDim.new(0, 5);
+G2L["67"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragEnabled
-G2L["68"] = Instance.new("TextButton", G2L["60"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ThemeSelector
+G2L["68"] = Instance.new("TextButton", G2L["66"]);
 G2L["68"]["TextWrapped"] = true;
 G2L["68"]["TextStrokeTransparency"] = 0;
 G2L["68"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1118,16 +1113,16 @@ G2L["68"]["TextSize"] = 20;
 G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["68"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["68"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["68"]["Name"] = [[DragEnabled]];
+G2L["68"]["Name"] = [[ThemeSelector]];
 G2L["68"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["68"]["Text"] = [[  Drag - True]];
+G2L["68"]["Text"] = [[  Theme - Original]];
 G2L["68"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragEnabled.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ThemeSelector.UIGradient
 G2L["69"] = Instance.new("UIGradient", G2L["68"]);
 G2L["69"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragEnabled.change
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ThemeSelector.change
 G2L["6a"] = Instance.new("TextButton", G2L["68"]);
 G2L["6a"]["TextWrapped"] = true;
 G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
@@ -1137,30 +1132,30 @@ G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6a"]["Size"] = UDim2.new(0, 66, 0, 22);
 G2L["6a"]["Name"] = [[change]];
 G2L["6a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["Text"] = [[Toggle]];
+G2L["6a"]["Text"] = [[change]];
 G2L["6a"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.CenterButtonEnabled
-G2L["6b"] = Instance.new("TextButton", G2L["60"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragSpeed
+G2L["6b"] = Instance.new("TextButton", G2L["66"]);
 G2L["6b"]["TextWrapped"] = true;
 G2L["6b"]["TextStrokeTransparency"] = 0;
 G2L["6b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["TextSize"] = 16;
+G2L["6b"]["TextSize"] = 20;
 G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["6b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["6b"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["6b"]["Name"] = [[CenterButtonEnabled]];
+G2L["6b"]["Name"] = [[DragSpeed]];
 G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6b"]["Text"] = [[  center position button - false]];
+G2L["6b"]["Text"] = [[  Drag Speed - 0.25x]];
 G2L["6b"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.CenterButtonEnabled.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragSpeed.UIGradient
 G2L["6c"] = Instance.new("UIGradient", G2L["6b"]);
 G2L["6c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.CenterButtonEnabled.change
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragSpeed.change
 G2L["6d"] = Instance.new("TextButton", G2L["6b"]);
 G2L["6d"]["TextWrapped"] = true;
 G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
@@ -1170,95 +1165,91 @@ G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["6d"]["Size"] = UDim2.new(0, 66, 0, 22);
 G2L["6d"]["Name"] = [[change]];
 G2L["6d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["Text"] = [[Toggle]];
+G2L["6d"]["Text"] = [[change]];
 G2L["6d"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
-G2L["6e"] = Instance.new("TextLabel", G2L["60"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragEnabled
+G2L["6e"] = Instance.new("TextButton", G2L["66"]);
 G2L["6e"]["TextWrapped"] = true;
-G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextStrokeTransparency"] = 0;
+G2L["6e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6e"]["TextSize"] = 16;
-G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["6e"]["TextSize"] = 20;
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["6e"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["6e"]["Name"] = [[DragEnabled]];
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Text"] = [[- - - - - - - -  - - - - -Notifications - - - - -  - - - - -  -  ]];
-G2L["6e"]["BackgroundTransparency"] = 1;
-G2L["6e"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["6e"]["Text"] = [[  Drag - True]];
+G2L["6e"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragEnabled.UIGradient
+G2L["6f"] = Instance.new("UIGradient", G2L["6e"]);
+G2L["6f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.DragEnabled.change
+G2L["70"] = Instance.new("TextButton", G2L["6e"]);
+G2L["70"]["TextWrapped"] = true;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["70"]["TextSize"] = 14;
+G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["70"]["Name"] = [[change]];
+G2L["70"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["Text"] = [[Toggle]];
+G2L["70"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.CenterButtonEnabled
+G2L["71"] = Instance.new("TextButton", G2L["66"]);
+G2L["71"]["TextWrapped"] = true;
+G2L["71"]["TextStrokeTransparency"] = 0;
+G2L["71"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["TextSize"] = 16;
+G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["71"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["71"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["71"]["Name"] = [[CenterButtonEnabled]];
+G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["71"]["Text"] = [[  center position button - false]];
+G2L["71"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.CenterButtonEnabled.UIGradient
+G2L["72"] = Instance.new("UIGradient", G2L["71"]);
+G2L["72"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.CenterButtonEnabled.change
+G2L["73"] = Instance.new("TextButton", G2L["71"]);
+G2L["73"]["TextWrapped"] = true;
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["73"]["TextSize"] = 14;
+G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["73"]["Name"] = [[change]];
+G2L["73"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["Text"] = [[Toggle]];
+G2L["73"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
+G2L["74"] = Instance.new("TextLabel", G2L["66"]);
+G2L["74"]["TextWrapped"] = true;
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["74"]["TextSize"] = 16;
+G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Text"] = [[- - - - - - - -  - - - - -Notifications - - - - -  - - - - -  -  ]];
+G2L["74"]["BackgroundTransparency"] = 1;
+G2L["74"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1DFT
-G2L["6f"] = Instance.new("TextButton", G2L["60"]);
-G2L["6f"]["TextWrapped"] = true;
-G2L["6f"]["TextStrokeTransparency"] = 0;
-G2L["6f"]["BorderSizePixel"] = 0;
-G2L["6f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6f"]["TextSize"] = 20;
-G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["6f"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["6f"]["Name"] = [[TextBoxButton1DFT]];
-G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6f"]["Text"] = [[  Default Fade Time]];
-G2L["6f"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1DFT.UIGradient
-G2L["70"] = Instance.new("UIGradient", G2L["6f"]);
-G2L["70"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1DFT.TextBox
-G2L["71"] = Instance.new("TextBox", G2L["6f"]);
-G2L["71"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["71"]["TextSize"] = 14;
-G2L["71"]["TextWrapped"] = true;
-G2L["71"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["71"]["PlaceholderText"] = [[enter...]];
-G2L["71"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["71"]["Text"] = [[]];
-G2L["71"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1ND
-G2L["72"] = Instance.new("TextButton", G2L["60"]);
-G2L["72"]["TextWrapped"] = true;
-G2L["72"]["TextStrokeTransparency"] = 0;
-G2L["72"]["BorderSizePixel"] = 0;
-G2L["72"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["TextSize"] = 20;
-G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["72"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["72"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["72"]["Name"] = [[TextBoxButton1ND]];
-G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["72"]["Text"] = [[  Notification Duration]];
-G2L["72"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1ND.UIGradient
-G2L["73"] = Instance.new("UIGradient", G2L["72"]);
-G2L["73"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1ND.TextBox
-G2L["74"] = Instance.new("TextBox", G2L["72"]);
-G2L["74"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["74"]["TextSize"] = 14;
-G2L["74"]["TextWrapped"] = true;
-G2L["74"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["74"]["PlaceholderText"] = [[enter...]];
-G2L["74"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["74"]["Text"] = [[]];
-G2L["74"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1MVN
-G2L["75"] = Instance.new("TextButton", G2L["60"]);
+G2L["75"] = Instance.new("TextButton", G2L["66"]);
 G2L["75"]["TextWrapped"] = true;
 G2L["75"]["TextStrokeTransparency"] = 0;
 G2L["75"]["BorderSizePixel"] = 0;
@@ -1269,16 +1260,16 @@ G2L["75"]["TextSize"] = 20;
 G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["75"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["75"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["75"]["Name"] = [[TextBoxButton1MVN]];
+G2L["75"]["Name"] = [[TextBoxButton1DFT]];
 G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["75"]["Text"] = [[  Max Visible Notifications]];
+G2L["75"]["Text"] = [[  Default Fade Time]];
 G2L["75"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1MVN.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1DFT.UIGradient
 G2L["76"] = Instance.new("UIGradient", G2L["75"]);
 G2L["76"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1MVN.TextBox
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1DFT.TextBox
 G2L["77"] = Instance.new("TextBox", G2L["75"]);
 G2L["77"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
 G2L["77"]["TextSize"] = 14;
@@ -1292,10 +1283,11 @@ G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["77"]["Text"] = [[]];
 G2L["77"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.AllowNotification
-G2L["78"] = Instance.new("TextButton", G2L["60"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1ND
+G2L["78"] = Instance.new("TextButton", G2L["66"]);
 G2L["78"]["TextWrapped"] = true;
 G2L["78"]["TextStrokeTransparency"] = 0;
+G2L["78"]["BorderSizePixel"] = 0;
 G2L["78"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["78"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1303,306 +1295,319 @@ G2L["78"]["TextSize"] = 20;
 G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["78"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["78"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["78"]["Name"] = [[AllowNotification]];
+G2L["78"]["Name"] = [[TextBoxButton1ND]];
 G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["78"]["Text"] = [[  Allow Notifications - true]];
-G2L["78"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+G2L["78"]["Text"] = [[  Notification Duration]];
+G2L["78"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.AllowNotification.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1ND.UIGradient
 G2L["79"] = Instance.new("UIGradient", G2L["78"]);
 G2L["79"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.AllowNotification.change
-G2L["7a"] = Instance.new("TextButton", G2L["78"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1ND.TextBox
+G2L["7a"] = Instance.new("TextBox", G2L["78"]);
+G2L["7a"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["7a"]["TextSize"] = 14;
 G2L["7a"]["TextWrapped"] = true;
 G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["7a"]["TextSize"] = 14;
-G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["7a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7a"]["PlaceholderText"] = [[enter...]];
 G2L["7a"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["7a"]["Name"] = [[change]];
-G2L["7a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["Text"] = [[Toggle]];
-G2L["7a"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Text"] = [[]];
+G2L["7a"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1MVN
+G2L["7b"] = Instance.new("TextButton", G2L["66"]);
+G2L["7b"]["TextWrapped"] = true;
+G2L["7b"]["TextStrokeTransparency"] = 0;
+G2L["7b"]["BorderSizePixel"] = 0;
+G2L["7b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["TextSize"] = 20;
+G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["7b"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["7b"]["Name"] = [[TextBoxButton1MVN]];
+G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7b"]["Text"] = [[  Max Visible Notifications]];
+G2L["7b"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1MVN.UIGradient
+G2L["7c"] = Instance.new("UIGradient", G2L["7b"]);
+G2L["7c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1MVN.TextBox
+G2L["7d"] = Instance.new("TextBox", G2L["7b"]);
+G2L["7d"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["7d"]["TextSize"] = 14;
+G2L["7d"]["TextWrapped"] = true;
+G2L["7d"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7d"]["PlaceholderText"] = [[enter...]];
+G2L["7d"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7d"]["Text"] = [[]];
+G2L["7d"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.AllowNotification
+G2L["7e"] = Instance.new("TextButton", G2L["66"]);
+G2L["7e"]["TextWrapped"] = true;
+G2L["7e"]["TextStrokeTransparency"] = 0;
+G2L["7e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["TextSize"] = 20;
+G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["7e"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["7e"]["Name"] = [[AllowNotification]];
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Text"] = [[  Allow Notifications - true]];
+G2L["7e"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.AllowNotification.UIGradient
+G2L["7f"] = Instance.new("UIGradient", G2L["7e"]);
+G2L["7f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.AllowNotification.change
+G2L["80"] = Instance.new("TextButton", G2L["7e"]);
+G2L["80"]["TextWrapped"] = true;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["80"]["TextSize"] = 14;
+G2L["80"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["80"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["80"]["Name"] = [[change]];
+G2L["80"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["Text"] = [[Toggle]];
+G2L["80"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
-G2L["7b"] = Instance.new("TextLabel", G2L["60"]);
-G2L["7b"]["TextWrapped"] = true;
-G2L["7b"]["BorderSizePixel"] = 0;
-G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7b"]["TextSize"] = 16;
-G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7b"]["Text"] = [[- - -  ]];
-G2L["7b"]["BackgroundTransparency"] = 1;
-G2L["7b"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["81"] = Instance.new("TextLabel", G2L["66"]);
+G2L["81"]["TextWrapped"] = true;
+G2L["81"]["BorderSizePixel"] = 0;
+G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["81"]["TextSize"] = 16;
+G2L["81"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["81"]["Text"] = [[- - -  ]];
+G2L["81"]["BackgroundTransparency"] = 1;
+G2L["81"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1TESTN
-G2L["7c"] = Instance.new("TextButton", G2L["60"]);
-G2L["7c"]["TextWrapped"] = true;
-G2L["7c"]["TextStrokeTransparency"] = 0;
-G2L["7c"]["BorderSizePixel"] = 0;
-G2L["7c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7c"]["TextSize"] = 20;
-G2L["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["7c"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["7c"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["7c"]["Name"] = [[TextBoxButton1TESTN]];
-G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7c"]["Text"] = [[  Test Notifcation (Text)]];
-G2L["7c"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
+G2L["82"] = Instance.new("TextButton", G2L["66"]);
+G2L["82"]["TextWrapped"] = true;
+G2L["82"]["TextStrokeTransparency"] = 0;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["TextSize"] = 20;
+G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["82"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["82"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["82"]["Name"] = [[TextBoxButton1TESTN]];
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Text"] = [[  Test Notifcation (Text)]];
+G2L["82"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.8508771657943726, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1TESTN.UIGradient
-G2L["7d"] = Instance.new("UIGradient", G2L["7c"]);
-G2L["7d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["83"] = Instance.new("UIGradient", G2L["82"]);
+G2L["83"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextBoxButton1TESTN.TextBox
-G2L["7e"] = Instance.new("TextBox", G2L["7c"]);
-G2L["7e"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["7e"]["TextSize"] = 14;
-G2L["7e"]["TextWrapped"] = true;
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7e"]["PlaceholderText"] = [[enter...]];
-G2L["7e"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7e"]["Text"] = [[]];
-G2L["7e"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
+G2L["84"] = Instance.new("TextBox", G2L["82"]);
+G2L["84"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["84"]["TextSize"] = 14;
+G2L["84"]["TextWrapped"] = true;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["84"]["PlaceholderText"] = [[enter...]];
+G2L["84"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Text"] = [[]];
+G2L["84"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.RESETNOTIFCFG
-G2L["7f"] = Instance.new("TextButton", G2L["60"]);
-G2L["7f"]["TextWrapped"] = true;
-G2L["7f"]["TextStrokeTransparency"] = 0;
-G2L["7f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7f"]["TextSize"] = 20;
-G2L["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["7f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["7f"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["7f"]["Name"] = [[RESETNOTIFCFG]];
-G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7f"]["Text"] = [[  Reset Notif Configuration]];
-G2L["7f"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+G2L["85"] = Instance.new("TextButton", G2L["66"]);
+G2L["85"]["TextWrapped"] = true;
+G2L["85"]["TextStrokeTransparency"] = 0;
+G2L["85"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["TextSize"] = 20;
+G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["85"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["85"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["85"]["Name"] = [[RESETNOTIFCFG]];
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Text"] = [[  Reset Notif Configuration]];
+G2L["85"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.RESETNOTIFCFG.UIGradient
-G2L["80"] = Instance.new("UIGradient", G2L["7f"]);
-G2L["80"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["86"] = Instance.new("UIGradient", G2L["85"]);
+G2L["86"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.RESETNOTIFCFG.change
-G2L["81"] = Instance.new("TextButton", G2L["7f"]);
-G2L["81"]["TextWrapped"] = true;
-G2L["81"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["81"]["TextSize"] = 14;
-G2L["81"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["81"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["81"]["Name"] = [[change]];
-G2L["81"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["Text"] = [[RESET]];
-G2L["81"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+G2L["87"] = Instance.new("TextButton", G2L["85"]);
+G2L["87"]["TextWrapped"] = true;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["87"]["TextSize"] = 14;
+G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["87"]["Name"] = [[change]];
+G2L["87"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["Text"] = [[RESET]];
+G2L["87"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
-G2L["82"] = Instance.new("TextLabel", G2L["60"]);
-G2L["82"]["TextWrapped"] = true;
-G2L["82"]["BorderSizePixel"] = 0;
-G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["82"]["TextSize"] = 16;
-G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["82"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["82"]["Text"] = [[- - - - - - - -  - - - - -HotKey - - - - -  - - - - -  -  ]];
-G2L["82"]["BackgroundTransparency"] = 1;
-G2L["82"]["Position"] = UDim2.new(-0.00136239780113101, 0, 0.75, 0);
+G2L["88"] = Instance.new("TextLabel", G2L["66"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["88"]["TextSize"] = 16;
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[- - - - - - - -  - - - - -HotKey - - - - -  - - - - -  -  ]];
+G2L["88"]["BackgroundTransparency"] = 1;
+G2L["88"]["Position"] = UDim2.new(-0.00136239780113101, 0, 0.75, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HSGKey
-G2L["83"] = Instance.new("TextButton", G2L["60"]);
-G2L["83"]["TextWrapped"] = true;
-G2L["83"]["TextStrokeTransparency"] = 0;
-G2L["83"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["83"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["83"]["TextSize"] = 20;
-G2L["83"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["83"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["83"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["83"]["Name"] = [[HSGKey]];
-G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["83"]["Text"] = [[  Hide / Show GUI - None]];
-G2L["83"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
--- Attributes
-G2L["83"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HSGKey.UIGradient
-G2L["84"] = Instance.new("UIGradient", G2L["83"]);
-G2L["84"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
-G2L["85"] = Instance.new("TextLabel", G2L["60"]);
-G2L["85"]["TextWrapped"] = true;
-G2L["85"]["BorderSizePixel"] = 0;
-G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["85"]["TextSize"] = 16;
-G2L["85"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["85"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["85"]["Text"] = [[- - - - - - - -  - - - - -Others - - - - -  - - - - -  -  ]];
-G2L["85"]["BackgroundTransparency"] = 1;
-G2L["85"]["Position"] = UDim2.new(-0.00136239780113101, 0, 0.75, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ReSiZeTool
-G2L["86"] = Instance.new("TextButton", G2L["60"]);
-G2L["86"]["TextWrapped"] = true;
-G2L["86"]["TextStrokeTransparency"] = 0;
-G2L["86"]["BorderSizePixel"] = 0;
-G2L["86"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["TextSize"] = 20;
-G2L["86"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["86"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["86"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["86"]["Name"] = [[ReSiZeTool]];
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Text"] = [[  ReSiZe GUI Tool]];
-G2L["86"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ReSiZeTool.Frame
-G2L["87"] = Instance.new("Frame", G2L["86"]);
-G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["87"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["87"]["Position"] = UDim2.new(0.871874988079071, 0, 0.20588235557079315, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ReSiZeTool.UIGradient
-G2L["88"] = Instance.new("UIGradient", G2L["86"]);
-G2L["88"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.VerticalScrollBarPositionBUTTON
-G2L["89"] = Instance.new("TextButton", G2L["60"]);
+G2L["89"] = Instance.new("TextButton", G2L["66"]);
 G2L["89"]["TextWrapped"] = true;
 G2L["89"]["TextStrokeTransparency"] = 0;
 G2L["89"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["89"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["TextSize"] = 18;
+G2L["89"]["TextSize"] = 20;
 G2L["89"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["89"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["89"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["89"]["Name"] = [[VerticalScrollBarPositionBUTTON]];
+G2L["89"]["Name"] = [[HSGKey]];
 G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Text"] = [[  Vertical Scroll Bar Position]];
+G2L["89"]["Text"] = [[  Hide / Show GUI - None]];
 G2L["89"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+-- Attributes
+G2L["89"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.VerticalScrollBarPositionBUTTON.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HSGKey.UIGradient
 G2L["8a"] = Instance.new("UIGradient", G2L["89"]);
 G2L["8a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.VerticalScrollBarPositionBUTTON.change
-G2L["8b"] = Instance.new("TextButton", G2L["89"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.KeyListener
+G2L["8b"] = Instance.new("TextButton", G2L["66"]);
 G2L["8b"]["TextWrapped"] = true;
-G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["8b"]["TextSize"] = 14;
-G2L["8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8b"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["8b"]["Name"] = [[change]];
-G2L["8b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8b"]["Text"] = [[change]];
-G2L["8b"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+G2L["8b"]["TextStrokeTransparency"] = 0;
+G2L["8b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8b"]["TextSize"] = 20;
+G2L["8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["8b"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["8b"]["Name"] = [[KeyListener]];
+G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8b"]["Text"] = [[  Key Listener [ONLY FOR PC]];
+G2L["8b"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+-- Attributes
+G2L["8b"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HorizontalAlignment
-G2L["8c"] = Instance.new("TextButton", G2L["60"]);
-G2L["8c"]["TextWrapped"] = true;
-G2L["8c"]["TextStrokeTransparency"] = 0;
-G2L["8c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["TextSize"] = 13;
-G2L["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8c"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["8c"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["8c"]["Name"] = [[HorizontalAlignment]];
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Text"] = [[  ScrollingFrame Horizontal Alignment]];
-G2L["8c"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.KeyListener.UIGradient
+G2L["8c"] = Instance.new("UIGradient", G2L["8b"]);
+G2L["8c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HorizontalAlignment.UIGradient
-G2L["8d"] = Instance.new("UIGradient", G2L["8c"]);
-G2L["8d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
+G2L["8d"] = Instance.new("TextLabel", G2L["66"]);
+G2L["8d"]["TextWrapped"] = true;
+G2L["8d"]["BorderSizePixel"] = 0;
+G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8d"]["TextSize"] = 16;
+G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8d"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8d"]["Text"] = [[- - - - - - - -  - - - - -Others - - - - -  - - - - -  -  ]];
+G2L["8d"]["BackgroundTransparency"] = 1;
+G2L["8d"]["Position"] = UDim2.new(-0.00136239780113101, 0, 0.75, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HorizontalAlignment.change
-G2L["8e"] = Instance.new("TextButton", G2L["8c"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.VerticalScrollBarPositionBUTTON
+G2L["8e"] = Instance.new("TextButton", G2L["66"]);
 G2L["8e"]["TextWrapped"] = true;
-G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["8e"]["TextSize"] = 14;
-G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["8e"]["Name"] = [[change]];
-G2L["8e"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["Text"] = [[change]];
-G2L["8e"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
+G2L["8e"]["TextStrokeTransparency"] = 0;
+G2L["8e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8e"]["TextSize"] = 18;
+G2L["8e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["8e"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["8e"]["Name"] = [[VerticalScrollBarPositionBUTTON]];
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Text"] = [[  Vertical Scroll Bar Position]];
+G2L["8e"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ISTool
-G2L["8f"] = Instance.new("TextButton", G2L["60"]);
-G2L["8f"]["TextWrapped"] = true;
-G2L["8f"]["TextStrokeTransparency"] = 0;
-G2L["8f"]["BorderSizePixel"] = 0;
-G2L["8f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["TextSize"] = 20;
-G2L["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["8f"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["8f"]["Name"] = [[ISTool]];
-G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8f"]["Text"] = [[  Item Searcher Tool]];
-G2L["8f"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.VerticalScrollBarPositionBUTTON.UIGradient
+G2L["8f"] = Instance.new("UIGradient", G2L["8e"]);
+G2L["8f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ISTool.Frame
-G2L["90"] = Instance.new("Frame", G2L["8f"]);
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["90"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["Position"] = UDim2.new(0.871874988079071, 0, 0.20588235557079315, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.VerticalScrollBarPositionBUTTON.change
+G2L["90"] = Instance.new("TextButton", G2L["8e"]);
+G2L["90"]["TextWrapped"] = true;
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["90"]["TextSize"] = 14;
+G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["90"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["90"]["Name"] = [[change]];
+G2L["90"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["Text"] = [[change]];
+G2L["90"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ISTool.UIGradient
-G2L["91"] = Instance.new("UIGradient", G2L["8f"]);
-G2L["91"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.translategui
+G2L["91"] = Instance.new("TextButton", G2L["66"]);
+G2L["91"]["TextWrapped"] = true;
+G2L["91"]["TextStrokeTransparency"] = 0;
+G2L["91"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["TextSize"] = 18;
+G2L["91"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["91"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["91"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["91"]["Name"] = [[translategui]];
+G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["91"]["Text"] = [[  Try To Translate Script GUI]];
+G2L["91"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2
-G2L["92"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["92"]["Active"] = true;
-G2L["92"]["BorderSizePixel"] = 0;
-G2L["92"]["CanvasSize"] = UDim2.new(0, 0, 0, 864);
-G2L["92"]["TopImage"] = [[]];
-G2L["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["92"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["92"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["92"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["92"]["Visible"] = false;
-G2L["92"]["Name"] = [[page_2]];
-G2L["92"]["BottomImage"] = [[]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.translategui.UIGradient
+G2L["92"] = Instance.new("UIGradient", G2L["91"]);
+G2L["92"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.UIListLayout
-G2L["93"] = Instance.new("UIListLayout", G2L["92"]);
-G2L["93"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["93"]["Padding"] = UDim.new(0, 5);
-G2L["93"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.translategui.change
+G2L["93"] = Instance.new("TextButton", G2L["91"]);
+G2L["93"]["TextWrapped"] = true;
+G2L["93"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["93"]["TextSize"] = 14;
+G2L["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["93"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["93"]["Name"] = [[change]];
+G2L["93"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["93"]["Text"] = [[TEST]];
+G2L["93"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TextBoxButton1PlayerName
-G2L["94"] = Instance.new("TextButton", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ReSiZeTool
+G2L["94"] = Instance.new("TextButton", G2L["66"]);
 G2L["94"]["TextWrapped"] = true;
 G2L["94"]["TextStrokeTransparency"] = 0;
 G2L["94"]["BorderSizePixel"] = 0;
@@ -1613,242 +1618,257 @@ G2L["94"]["TextSize"] = 20;
 G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["94"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["94"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["94"]["Name"] = [[TextBoxButton1PlayerName]];
+G2L["94"]["Name"] = [[ReSiZeTool]];
 G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["94"]["Text"] = [[  Enter Player Here...]];
-G2L["94"]["Position"] = UDim2.new(0.5456903576850891, 0, 0.8142253160476685, 0);
+G2L["94"]["Text"] = [[  ReSiZe GUI Tool]];
+G2L["94"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TextBoxButton1PlayerName.UIGradient
-G2L["95"] = Instance.new("UIGradient", G2L["94"]);
-G2L["95"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ReSiZeTool.Frame
+G2L["95"] = Instance.new("Frame", G2L["94"]);
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["95"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Position"] = UDim2.new(0.871874988079071, 0, 0.20588235557079315, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TextBoxButton1PlayerName.TextBox
-G2L["96"] = Instance.new("TextBox", G2L["94"]);
-G2L["96"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["96"]["TextSize"] = 14;
-G2L["96"]["TextWrapped"] = true;
-G2L["96"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["96"]["PlaceholderText"] = [[enter...]];
-G2L["96"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["Text"] = [[]];
-G2L["96"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ReSiZeTool.UIGradient
+G2L["96"] = Instance.new("UIGradient", G2L["94"]);
+G2L["96"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.playername
-G2L["97"] = Instance.new("TextLabel", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HorizontalAlignment
+G2L["97"] = Instance.new("TextButton", G2L["66"]);
 G2L["97"]["TextWrapped"] = true;
-G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["TextStrokeTransparency"] = 0;
+G2L["97"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["97"]["TextSize"] = 16;
-G2L["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["97"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["97"]["TextSize"] = 13;
+G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["97"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["97"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["97"]["Name"] = [[HorizontalAlignment]];
 G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["97"]["Text"] = [[- Player Name: @None -]];
-G2L["97"]["Name"] = [[playername]];
-G2L["97"]["BackgroundTransparency"] = 1;
-G2L["97"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["97"]["Text"] = [[  ScrollingFrame Horizontal Alignment]];
+G2L["97"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.dectections
-G2L["98"] = Instance.new("TextLabel", G2L["92"]);
-G2L["98"]["TextWrapped"] = true;
-G2L["98"]["BorderSizePixel"] = 0;
-G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["98"]["TextSize"] = 16;
-G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["98"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["98"]["Text"] = [[- NOT DECTECTED -]];
-G2L["98"]["Name"] = [[dectections]];
-G2L["98"]["BackgroundTransparency"] = 1;
-G2L["98"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HorizontalAlignment.UIGradient
+G2L["98"] = Instance.new("UIGradient", G2L["97"]);
+G2L["98"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.HandlerV2
-G2L["99"] = Instance.new("LocalScript", G2L["92"]);
-G2L["99"]["Name"] = [[HandlerV2]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.HorizontalAlignment.change
+G2L["99"] = Instance.new("TextButton", G2L["97"]);
+G2L["99"]["TextWrapped"] = true;
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["99"]["TextSize"] = 14;
+G2L["99"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["99"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["99"]["Name"] = [[change]];
+G2L["99"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["Text"] = [[change]];
+G2L["99"]["Position"] = UDim2.new(0.7406250238418579, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.dectections
-G2L["9a"] = Instance.new("TextLabel", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ISTool
+G2L["9a"] = Instance.new("TextButton", G2L["66"]);
 G2L["9a"]["TextWrapped"] = true;
+G2L["9a"]["TextStrokeTransparency"] = 0;
 G2L["9a"]["BorderSizePixel"] = 0;
+G2L["9a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9a"]["TextSize"] = 16;
-G2L["9a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9a"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["9a"]["TextSize"] = 20;
+G2L["9a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9a"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["9a"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["9a"]["Name"] = [[ISTool]];
 G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9a"]["Text"] = [[-----------------------------------------------------------]];
-G2L["9a"]["Name"] = [[dectections]];
-G2L["9a"]["BackgroundTransparency"] = 1;
-G2L["9a"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["9a"]["Text"] = [[  Item Searcher Tool]];
+G2L["9a"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
-G2L["9b"] = Instance.new("TextButton", G2L["92"]);
-G2L["9b"]["TextWrapped"] = true;
-G2L["9b"]["TextStrokeTransparency"] = 0;
-G2L["9b"]["BorderSizePixel"] = 0;
-G2L["9b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["TextSize"] = 20;
-G2L["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["9b"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["9b"]["Name"] = [[TemplateButton]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ISTool.Frame
+G2L["9b"] = Instance.new("Frame", G2L["9a"]);
+G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["9b"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9b"]["Text"] = [[Kill  ]];
-G2L["9b"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["9b"]["Position"] = UDim2.new(0.871874988079071, 0, 0.20588235557079315, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
-G2L["9c"] = Instance.new("UIGradient", G2L["9b"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.ISTool.UIGradient
+G2L["9c"] = Instance.new("UIGradient", G2L["9a"]);
 G2L["9c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
-G2L["9d"] = Instance.new("TextButton", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
+G2L["9d"] = Instance.new("TextLabel", G2L["66"]);
 G2L["9d"]["TextWrapped"] = true;
-G2L["9d"]["TextStrokeTransparency"] = 0;
 G2L["9d"]["BorderSizePixel"] = 0;
-G2L["9d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9d"]["TextSize"] = 20;
-G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9d"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["9d"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["9d"]["Name"] = [[TemplateButton]];
+G2L["9d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9d"]["TextSize"] = 16;
+G2L["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9d"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9d"]["Text"] = [[Fling  ]];
-G2L["9d"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["9d"]["Text"] = [[- - - - - - - -  - - - - -credits - - - - -  - - - - -  -  ]];
+G2L["9d"]["BackgroundTransparency"] = 1;
+G2L["9d"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
-G2L["9e"] = Instance.new("UIGradient", G2L["9d"]);
-G2L["9e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel1
+G2L["9e"] = Instance.new("TextLabel", G2L["66"]);
+G2L["9e"]["TextWrapped"] = true;
+G2L["9e"]["BorderSizePixel"] = 0;
+G2L["9e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9e"]["TextSize"] = 16;
+G2L["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9e"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9e"]["Text"] = [[script made by: G0bbyD0llan]];
+G2L["9e"]["Name"] = [[TextLabel1]];
+G2L["9e"]["BackgroundTransparency"] = 1;
+G2L["9e"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
-G2L["9f"] = Instance.new("TextButton", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel2
+G2L["9f"] = Instance.new("TextLabel", G2L["66"]);
 G2L["9f"]["TextWrapped"] = true;
-G2L["9f"]["TextStrokeTransparency"] = 0;
 G2L["9f"]["BorderSizePixel"] = 0;
-G2L["9f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["TextSize"] = 20;
-G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["9f"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["9f"]["Name"] = [[TemplateButton]];
+G2L["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9f"]["TextSize"] = 16;
+G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9f"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["Text"] = [[Teleport  ]];
-G2L["9f"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.28947383165359497, 0);
+G2L["9f"]["Text"] = [[- YouTube: @G0bbyD0llan57-ee1vl -]];
+G2L["9f"]["Name"] = [[TextLabel2]];
+G2L["9f"]["BackgroundTransparency"] = 1;
+G2L["9f"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
-G2L["a0"] = Instance.new("UIGradient", G2L["9f"]);
-G2L["a0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.TextLabel
+G2L["a0"] = Instance.new("TextLabel", G2L["66"]);
+G2L["a0"]["TextWrapped"] = true;
+G2L["a0"]["BorderSizePixel"] = 0;
+G2L["a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a0"]["TextSize"] = 16;
+G2L["a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a0"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a0"]["Text"] = [[- - - - - - - -  - - - - - - - - - -  - - - - -  -  ]];
+G2L["a0"]["BackgroundTransparency"] = 1;
+G2L["a0"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
-G2L["a1"] = Instance.new("TextLabel", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.sendfeedback
+G2L["a1"] = Instance.new("TextButton", G2L["66"]);
 G2L["a1"]["TextWrapped"] = true;
-G2L["a1"]["BorderSizePixel"] = 0;
+G2L["a1"]["TextStrokeTransparency"] = 0;
+G2L["a1"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a1"]["TextSize"] = 16;
-G2L["a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a1"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["a1"]["TextSize"] = 20;
+G2L["a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a1"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["a1"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["a1"]["LayoutOrder"] = 55;
+G2L["a1"]["Name"] = [[sendfeedback]];
 G2L["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a1"]["Text"] = [[- - -  ]];
-G2L["a1"]["Name"] = [[FastSeparator]];
-G2L["a1"]["BackgroundTransparency"] = 1;
-G2L["a1"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["a1"]["Text"] = [[  send feedback]];
+G2L["a1"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.tellsherrifandmurder
-G2L["a2"] = Instance.new("TextButton", G2L["92"]);
-G2L["a2"]["TextWrapped"] = true;
-G2L["a2"]["TextStrokeTransparency"] = 0;
-G2L["a2"]["BorderSizePixel"] = 0;
-G2L["a2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a2"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a2"]["TextSize"] = 20;
-G2L["a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a2"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["a2"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["a2"]["Name"] = [[tellsherrifandmurder]];
-G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Text"] = [[Tell Sherrif And Murder  ]];
-G2L["a2"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.sendfeedback.UIGradient
+G2L["a2"] = Instance.new("UIGradient", G2L["a1"]);
+G2L["a2"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.tellsherrifandmurder.Frame
-G2L["a3"] = Instance.new("Frame", G2L["a2"]);
-G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["a3"]["Size"] = UDim2.new(0, 24, 0, 20);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.faq
+G2L["a3"] = Instance.new("TextButton", G2L["66"]);
+G2L["a3"]["TextWrapped"] = true;
+G2L["a3"]["TextStrokeTransparency"] = 0;
+G2L["a3"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a3"]["TextSize"] = 20;
+G2L["a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a3"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["a3"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["a3"]["LayoutOrder"] = 55;
+G2L["a3"]["Name"] = [[faq]];
 G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a3"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["a3"]["Text"] = [[  FAQ / Help With Questions]];
+G2L["a3"]["Position"] = UDim2.new(0.06403269618749619, 0, -6.692451393064403e-08, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.tellsherrifandmurder.UIGradient
-G2L["a4"] = Instance.new("UIGradient", G2L["a2"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_options.faq.UIGradient
+G2L["a4"] = Instance.new("UIGradient", G2L["a3"]);
 G2L["a4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.telltrapsandgundropped
-G2L["a5"] = Instance.new("TextButton", G2L["92"]);
-G2L["a5"]["TextWrapped"] = true;
-G2L["a5"]["TextStrokeTransparency"] = 0;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2
+G2L["a5"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["a5"]["Active"] = true;
 G2L["a5"]["BorderSizePixel"] = 0;
-G2L["a5"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["a5"]["CanvasSize"] = UDim2.new(0, 0, 0, 931);
+G2L["a5"]["TopImage"] = [[]];
 G2L["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a5"]["TextSize"] = 20;
-G2L["a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a5"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["a5"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["a5"]["Name"] = [[telltrapsandgundropped]];
+G2L["a5"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["a5"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["a5"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a5"]["Text"] = [[Tell Traps And Gun Dropped  ]];
-G2L["a5"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["a5"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["a5"]["Visible"] = false;
+G2L["a5"]["Name"] = [[page_2]];
+G2L["a5"]["BottomImage"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.telltrapsandgundropped.Frame
-G2L["a6"] = Instance.new("Frame", G2L["a5"]);
-G2L["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["a6"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a6"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.UIListLayout
+G2L["a6"] = Instance.new("UIListLayout", G2L["a5"]);
+G2L["a6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["a6"]["Padding"] = UDim.new(0, 5);
+G2L["a6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.telltrapsandgundropped.UIGradient
-G2L["a7"] = Instance.new("UIGradient", G2L["a5"]);
-G2L["a7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TextBoxButton1PlayerName
+G2L["a7"] = Instance.new("TextButton", G2L["a5"]);
+G2L["a7"]["TextWrapped"] = true;
+G2L["a7"]["TextStrokeTransparency"] = 0;
+G2L["a7"]["BorderSizePixel"] = 0;
+G2L["a7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a7"]["TextSize"] = 20;
+G2L["a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a7"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["a7"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["a7"]["Name"] = [[TextBoxButton1PlayerName]];
+G2L["a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a7"]["Text"] = [[  Enter Player Here...]];
+G2L["a7"]["Position"] = UDim2.new(0.5456903576850891, 0, 0.8142253160476685, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.helpwhenmurdersherrif
-G2L["a8"] = Instance.new("TextButton", G2L["92"]);
-G2L["a8"]["TextWrapped"] = true;
-G2L["a8"]["TextStrokeTransparency"] = 0;
-G2L["a8"]["BorderSizePixel"] = 0;
-G2L["a8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a8"]["TextSize"] = 20;
-G2L["a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a8"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["a8"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["a8"]["Name"] = [[helpwhenmurdersherrif]];
-G2L["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a8"]["Text"] = [[Help When Murder / Sherrif  ]];
-G2L["a8"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TextBoxButton1PlayerName.UIGradient
+G2L["a8"] = Instance.new("UIGradient", G2L["a7"]);
+G2L["a8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.helpwhenmurdersherrif.Frame
-G2L["a9"] = Instance.new("Frame", G2L["a8"]);
-G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["a9"]["Size"] = UDim2.new(0, 24, 0, 20);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TextBoxButton1PlayerName.TextBox
+G2L["a9"] = Instance.new("TextBox", G2L["a7"]);
+G2L["a9"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["a9"]["TextSize"] = 14;
+G2L["a9"]["TextWrapped"] = true;
+G2L["a9"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a9"]["PlaceholderText"] = [[enter...]];
+G2L["a9"]["Size"] = UDim2.new(0, 66, 0, 22);
 G2L["a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a9"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["a9"]["Text"] = [[]];
+G2L["a9"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.helpwhenmurdersherrif.UIGradient
-G2L["aa"] = Instance.new("UIGradient", G2L["a8"]);
-G2L["aa"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.playername
+G2L["aa"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["aa"]["TextWrapped"] = true;
+G2L["aa"]["BorderSizePixel"] = 0;
+G2L["aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["aa"]["TextSize"] = 16;
+G2L["aa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["aa"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["aa"]["Text"] = [[- Player Name: @None -]];
+G2L["aa"]["Name"] = [[playername]];
+G2L["aa"]["BackgroundTransparency"] = 1;
+G2L["aa"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
-G2L["ab"] = Instance.new("TextLabel", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.dectections
+G2L["ab"] = Instance.new("TextLabel", G2L["a5"]);
 G2L["ab"]["TextWrapped"] = true;
 G2L["ab"]["BorderSizePixel"] = 0;
 G2L["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1857,69 +1877,74 @@ G2L["ab"]["TextSize"] = 16;
 G2L["ab"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ab"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ab"]["Text"] = [[- - -  ]];
-G2L["ab"]["Name"] = [[FastSeparator]];
+G2L["ab"]["Text"] = [[- NOT DECTECTED -]];
+G2L["ab"]["Name"] = [[dectections]];
 G2L["ab"]["BackgroundTransparency"] = 1;
 G2L["ab"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhenkilled
-G2L["ac"] = Instance.new("TextButton", G2L["92"]);
-G2L["ac"]["TextWrapped"] = true;
-G2L["ac"]["TextStrokeTransparency"] = 0;
-G2L["ac"]["BorderSizePixel"] = 0;
-G2L["ac"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ac"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ac"]["TextSize"] = 20;
-G2L["ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["ac"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["ac"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["ac"]["Name"] = [[notifywhenkilled]];
-G2L["ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ac"]["Text"] = [[Notify When Killed  ]];
-G2L["ac"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.HandlerV2
+G2L["ac"] = Instance.new("LocalScript", G2L["a5"]);
+G2L["ac"]["Name"] = [[HandlerV2]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhenkilled.Frame
-G2L["ad"] = Instance.new("Frame", G2L["ac"]);
-G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["ad"]["Size"] = UDim2.new(0, 24, 0, 20);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.dectections
+G2L["ad"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["ad"]["TextWrapped"] = true;
+G2L["ad"]["BorderSizePixel"] = 0;
+G2L["ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["ad"]["TextSize"] = 16;
+G2L["ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ad"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ad"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["ad"]["Text"] = [[-----------------------------------------------------------]];
+G2L["ad"]["Name"] = [[dectections]];
+G2L["ad"]["BackgroundTransparency"] = 1;
+G2L["ad"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhenkilled.UIGradient
-G2L["ae"] = Instance.new("UIGradient", G2L["ac"]);
-G2L["ae"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
+G2L["ae"] = Instance.new("TextButton", G2L["a5"]);
+G2L["ae"]["TextWrapped"] = true;
+G2L["ae"]["TextStrokeTransparency"] = 0;
+G2L["ae"]["BorderSizePixel"] = 0;
+G2L["ae"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ae"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ae"]["TextSize"] = 20;
+G2L["ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ae"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["ae"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["ae"]["Name"] = [[TemplateButton]];
+G2L["ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ae"]["Text"] = [[Kill  ]];
+G2L["ae"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.view
-G2L["af"] = Instance.new("TextButton", G2L["92"]);
-G2L["af"]["TextWrapped"] = true;
-G2L["af"]["TextStrokeTransparency"] = 0;
-G2L["af"]["BorderSizePixel"] = 0;
-G2L["af"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["af"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["af"]["TextSize"] = 20;
-G2L["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["af"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["af"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["af"]["Name"] = [[view]];
-G2L["af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["af"]["Text"] = [[View  ]];
-G2L["af"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
+G2L["af"] = Instance.new("UIGradient", G2L["ae"]);
+G2L["af"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.view.Frame
-G2L["b0"] = Instance.new("Frame", G2L["af"]);
-G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["b0"]["Size"] = UDim2.new(0, 24, 0, 20);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
+G2L["b0"] = Instance.new("TextButton", G2L["a5"]);
+G2L["b0"]["TextWrapped"] = true;
+G2L["b0"]["TextStrokeTransparency"] = 0;
+G2L["b0"]["BorderSizePixel"] = 0;
+G2L["b0"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b0"]["TextSize"] = 20;
+G2L["b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b0"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["b0"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["b0"]["Name"] = [[TemplateButton]];
 G2L["b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b0"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["b0"]["Text"] = [[Fling  ]];
+G2L["b0"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.view.UIGradient
-G2L["b1"] = Instance.new("UIGradient", G2L["af"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
+G2L["b1"] = Instance.new("UIGradient", G2L["b0"]);
 G2L["b1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhennewrole
-G2L["b2"] = Instance.new("TextButton", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
+G2L["b2"] = Instance.new("TextButton", G2L["a5"]);
 G2L["b2"]["TextWrapped"] = true;
 G2L["b2"]["TextStrokeTransparency"] = 0;
 G2L["b2"]["BorderSizePixel"] = 0;
@@ -1930,123 +1955,131 @@ G2L["b2"]["TextSize"] = 20;
 G2L["b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["b2"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["b2"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["b2"]["Name"] = [[notifywhennewrole]];
+G2L["b2"]["Name"] = [[TemplateButton]];
 G2L["b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b2"]["Text"] = [[Notify When New Role  ]];
-G2L["b2"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["b2"]["Text"] = [[Teleport  ]];
+G2L["b2"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.28947383165359497, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhennewrole.Frame
-G2L["b3"] = Instance.new("Frame", G2L["b2"]);
-G2L["b3"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["b3"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b3"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhennewrole.UIGradient
-G2L["b4"] = Instance.new("UIGradient", G2L["b2"]);
-G2L["b4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
+G2L["b3"] = Instance.new("UIGradient", G2L["b2"]);
+G2L["b3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
-G2L["b5"] = Instance.new("TextLabel", G2L["92"]);
+G2L["b4"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["b4"]["TextWrapped"] = true;
+G2L["b4"]["BorderSizePixel"] = 0;
+G2L["b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b4"]["TextSize"] = 16;
+G2L["b4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b4"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b4"]["Text"] = [[- - -  ]];
+G2L["b4"]["Name"] = [[FastSeparator]];
+G2L["b4"]["BackgroundTransparency"] = 1;
+G2L["b4"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.tellsherrifandmurder
+G2L["b5"] = Instance.new("TextButton", G2L["a5"]);
 G2L["b5"]["TextWrapped"] = true;
+G2L["b5"]["TextStrokeTransparency"] = 0;
 G2L["b5"]["BorderSizePixel"] = 0;
+G2L["b5"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["b5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b5"]["TextSize"] = 16;
-G2L["b5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b5"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["b5"]["TextSize"] = 20;
+G2L["b5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b5"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["b5"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["b5"]["Name"] = [[tellsherrifandmurder]];
 G2L["b5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b5"]["Text"] = [[- - -  ]];
-G2L["b5"]["Name"] = [[FastSeparator]];
-G2L["b5"]["BackgroundTransparency"] = 1;
-G2L["b5"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["b5"]["Text"] = [[Tell Sherrif And Murder  ]];
+G2L["b5"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.loopflingantiplay
-G2L["b6"] = Instance.new("TextButton", G2L["92"]);
-G2L["b6"]["TextWrapped"] = true;
-G2L["b6"]["TextStrokeTransparency"] = 0;
-G2L["b6"]["BorderSizePixel"] = 0;
-G2L["b6"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b6"]["TextSize"] = 20;
-G2L["b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["b6"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["b6"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["b6"]["Name"] = [[loopflingantiplay]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.tellsherrifandmurder.Frame
+G2L["b6"] = Instance.new("Frame", G2L["b5"]);
+G2L["b6"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["b6"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b6"]["Text"] = [[Loop Fling / Anti-Play  ]];
-G2L["b6"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["b6"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.loopflingantiplay.Frame
-G2L["b7"] = Instance.new("Frame", G2L["b6"]);
-G2L["b7"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["b7"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b7"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.tellsherrifandmurder.UIGradient
+G2L["b7"] = Instance.new("UIGradient", G2L["b5"]);
+G2L["b7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.loopflingantiplay.UIGradient
-G2L["b8"] = Instance.new("UIGradient", G2L["b6"]);
-G2L["b8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.telltrapsandgundropped
+G2L["b8"] = Instance.new("TextButton", G2L["a5"]);
+G2L["b8"]["TextWrapped"] = true;
+G2L["b8"]["TextStrokeTransparency"] = 0;
+G2L["b8"]["BorderSizePixel"] = 0;
+G2L["b8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b8"]["TextSize"] = 20;
+G2L["b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b8"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["b8"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["b8"]["Name"] = [[telltrapsandgundropped]];
+G2L["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b8"]["Text"] = [[Tell Traps And Gun Dropped  ]];
+G2L["b8"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.antimurder
-G2L["b9"] = Instance.new("TextButton", G2L["92"]);
-G2L["b9"]["TextWrapped"] = true;
-G2L["b9"]["TextStrokeTransparency"] = 0;
-G2L["b9"]["BorderSizePixel"] = 0;
-G2L["b9"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b9"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b9"]["TextSize"] = 20;
-G2L["b9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["b9"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["b9"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["b9"]["Name"] = [[antimurder]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.telltrapsandgundropped.Frame
+G2L["b9"] = Instance.new("Frame", G2L["b8"]);
+G2L["b9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["b9"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b9"]["Text"] = [[Anti-Murder  ]];
-G2L["b9"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["b9"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.antimurder.Frame
-G2L["ba"] = Instance.new("Frame", G2L["b9"]);
-G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["ba"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ba"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.telltrapsandgundropped.UIGradient
+G2L["ba"] = Instance.new("UIGradient", G2L["b8"]);
+G2L["ba"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.antimurder.UIGradient
-G2L["bb"] = Instance.new("UIGradient", G2L["b9"]);
-G2L["bb"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.helpwhenmurdersherrif
+G2L["bb"] = Instance.new("TextButton", G2L["a5"]);
+G2L["bb"]["TextWrapped"] = true;
+G2L["bb"]["TextStrokeTransparency"] = 0;
+G2L["bb"]["BorderSizePixel"] = 0;
+G2L["bb"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bb"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["bb"]["TextSize"] = 20;
+G2L["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["bb"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["bb"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["bb"]["Name"] = [[helpwhenmurdersherrif]];
+G2L["bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["bb"]["Text"] = [[Help When Murder / Sherrif  ]];
+G2L["bb"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.specialesp
-G2L["bc"] = Instance.new("TextButton", G2L["92"]);
-G2L["bc"]["TextWrapped"] = true;
-G2L["bc"]["TextStrokeTransparency"] = 0;
-G2L["bc"]["BorderSizePixel"] = 0;
-G2L["bc"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bc"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["bc"]["TextSize"] = 20;
-G2L["bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["bc"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["bc"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["bc"]["Name"] = [[specialesp]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.helpwhenmurdersherrif.Frame
+G2L["bc"] = Instance.new("Frame", G2L["bb"]);
+G2L["bc"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["bc"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bc"]["Text"] = [[Special-ESP  ]];
-G2L["bc"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["bc"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.specialesp.Frame
-G2L["bd"] = Instance.new("Frame", G2L["bc"]);
-G2L["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["bd"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bd"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.helpwhenmurdersherrif.UIGradient
+G2L["bd"] = Instance.new("UIGradient", G2L["bb"]);
+G2L["bd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.specialesp.UIGradient
-G2L["be"] = Instance.new("UIGradient", G2L["bc"]);
-G2L["be"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
+G2L["be"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["be"]["TextWrapped"] = true;
+G2L["be"]["BorderSizePixel"] = 0;
+G2L["be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["be"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["be"]["TextSize"] = 16;
+G2L["be"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["be"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["be"]["Text"] = [[- - -  ]];
+G2L["be"]["Name"] = [[FastSeparator]];
+G2L["be"]["BackgroundTransparency"] = 1;
+G2L["be"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.looptrade
-G2L["bf"] = Instance.new("TextButton", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhenkilled
+G2L["bf"] = Instance.new("TextButton", G2L["a5"]);
 G2L["bf"]["TextWrapped"] = true;
 G2L["bf"]["TextStrokeTransparency"] = 0;
 G2L["bf"]["BorderSizePixel"] = 0;
@@ -2057,60 +2090,52 @@ G2L["bf"]["TextSize"] = 20;
 G2L["bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["bf"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["bf"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["bf"]["Name"] = [[looptrade]];
+G2L["bf"]["Name"] = [[notifywhenkilled]];
 G2L["bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["bf"]["Text"] = [[Loop Trade  ]];
+G2L["bf"]["Text"] = [[Notify When Killed  ]];
 G2L["bf"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.looptrade.Frame
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhenkilled.Frame
 G2L["c0"] = Instance.new("Frame", G2L["bf"]);
 G2L["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["c0"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c0"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.looptrade.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhenkilled.UIGradient
 G2L["c1"] = Instance.new("UIGradient", G2L["bf"]);
 G2L["c1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
-G2L["c2"] = Instance.new("TextLabel", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.view
+G2L["c2"] = Instance.new("TextButton", G2L["a5"]);
 G2L["c2"]["TextWrapped"] = true;
+G2L["c2"]["TextStrokeTransparency"] = 0;
 G2L["c2"]["BorderSizePixel"] = 0;
+G2L["c2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c2"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["c2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c2"]["TextSize"] = 16;
-G2L["c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c2"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["c2"]["TextSize"] = 20;
+G2L["c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c2"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["c2"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["c2"]["Name"] = [[view]];
 G2L["c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c2"]["Text"] = [[- - -  ]];
-G2L["c2"]["Name"] = [[FastSeparator]];
-G2L["c2"]["BackgroundTransparency"] = 1;
-G2L["c2"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["c2"]["Text"] = [[View  ]];
+G2L["c2"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
-G2L["c3"] = Instance.new("TextButton", G2L["92"]);
-G2L["c3"]["TextWrapped"] = true;
-G2L["c3"]["TextStrokeTransparency"] = 0;
-G2L["c3"]["BorderSizePixel"] = 0;
-G2L["c3"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c3"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c3"]["TextSize"] = 20;
-G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["c3"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["c3"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["c3"]["Name"] = [[TemplateButton]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.view.Frame
+G2L["c3"] = Instance.new("Frame", G2L["c2"]);
+G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["c3"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c3"]["Text"] = [[Check Role  ]];
-G2L["c3"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["c3"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
-G2L["c4"] = Instance.new("UIGradient", G2L["c3"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.view.UIGradient
+G2L["c4"] = Instance.new("UIGradient", G2L["c2"]);
 G2L["c4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
-G2L["c5"] = Instance.new("TextButton", G2L["92"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhennewrole
+G2L["c5"] = Instance.new("TextButton", G2L["a5"]);
 G2L["c5"]["TextWrapped"] = true;
 G2L["c5"]["TextStrokeTransparency"] = 0;
 G2L["c5"]["BorderSizePixel"] = 0;
@@ -2121,102 +2146,95 @@ G2L["c5"]["TextSize"] = 20;
 G2L["c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["c5"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["c5"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["c5"]["Name"] = [[TemplateButton]];
+G2L["c5"]["Name"] = [[notifywhennewrole]];
 G2L["c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c5"]["Text"] = [[In Round  ]];
-G2L["c5"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["c5"]["Text"] = [[Notify When New Role  ]];
+G2L["c5"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
-G2L["c6"] = Instance.new("UIGradient", G2L["c5"]);
-G2L["c6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhennewrole.Frame
+G2L["c6"] = Instance.new("Frame", G2L["c5"]);
+G2L["c6"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["c6"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c6"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
-G2L["c7"] = Instance.new("TextButton", G2L["92"]);
-G2L["c7"]["TextWrapped"] = true;
-G2L["c7"]["TextStrokeTransparency"] = 0;
-G2L["c7"]["BorderSizePixel"] = 0;
-G2L["c7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c7"]["TextSize"] = 20;
-G2L["c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["c7"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["c7"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["c7"]["Name"] = [[TemplateButton]];
-G2L["c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c7"]["Text"] = [[Check Pro Player (from 1 to 10)  ]];
-G2L["c7"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.notifywhennewrole.UIGradient
+G2L["c7"] = Instance.new("UIGradient", G2L["c5"]);
+G2L["c7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
-G2L["c8"] = Instance.new("UIGradient", G2L["c7"]);
-G2L["c8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
+G2L["c8"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["c8"]["TextWrapped"] = true;
+G2L["c8"]["BorderSizePixel"] = 0;
+G2L["c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c8"]["TextSize"] = 16;
+G2L["c8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c8"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c8"]["Text"] = [[- - -  ]];
+G2L["c8"]["Name"] = [[FastSeparator]];
+G2L["c8"]["BackgroundTransparency"] = 1;
+G2L["c8"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3
-G2L["c9"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["c9"]["Active"] = true;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.loopflingantiplay
+G2L["c9"] = Instance.new("TextButton", G2L["a5"]);
+G2L["c9"]["TextWrapped"] = true;
+G2L["c9"]["TextStrokeTransparency"] = 0;
 G2L["c9"]["BorderSizePixel"] = 0;
-G2L["c9"]["CanvasSize"] = UDim2.new(0, 0, 0, 724);
-G2L["c9"]["TopImage"] = [[]];
+G2L["c9"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c9"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c9"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["c9"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["c9"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c9"]["TextSize"] = 20;
+G2L["c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c9"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["c9"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["c9"]["Name"] = [[loopflingantiplay]];
 G2L["c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c9"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["c9"]["Visible"] = false;
-G2L["c9"]["Name"] = [[page_3]];
-G2L["c9"]["BottomImage"] = [[]];
+G2L["c9"]["Text"] = [[Loop Fling / Anti-Play  ]];
+G2L["c9"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.UIListLayout
-G2L["ca"] = Instance.new("UIListLayout", G2L["c9"]);
-G2L["ca"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["ca"]["Padding"] = UDim.new(0, 5);
-G2L["ca"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.loopflingantiplay.Frame
+G2L["ca"] = Instance.new("Frame", G2L["c9"]);
+G2L["ca"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["ca"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ca"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
-G2L["cb"] = Instance.new("TextButton", G2L["c9"]);
-G2L["cb"]["TextWrapped"] = true;
-G2L["cb"]["TextStrokeTransparency"] = 0;
-G2L["cb"]["BorderSizePixel"] = 0;
-G2L["cb"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cb"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cb"]["TextSize"] = 20;
-G2L["cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["cb"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["cb"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["cb"]["Name"] = [[TemplateButton]];
-G2L["cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cb"]["Text"] = [[Kill Everyone  ]];
-G2L["cb"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.loopflingantiplay.UIGradient
+G2L["cb"] = Instance.new("UIGradient", G2L["c9"]);
+G2L["cb"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
-G2L["cc"] = Instance.new("UIGradient", G2L["cb"]);
-G2L["cc"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.antimurder
+G2L["cc"] = Instance.new("TextButton", G2L["a5"]);
+G2L["cc"]["TextWrapped"] = true;
+G2L["cc"]["TextStrokeTransparency"] = 0;
+G2L["cc"]["BorderSizePixel"] = 0;
+G2L["cc"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cc"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["cc"]["TextSize"] = 20;
+G2L["cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["cc"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["cc"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["cc"]["Name"] = [[antimurder]];
+G2L["cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["cc"]["Text"] = [[Anti-Murder  ]];
+G2L["cc"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
-G2L["cd"] = Instance.new("TextButton", G2L["c9"]);
-G2L["cd"]["TextWrapped"] = true;
-G2L["cd"]["TextStrokeTransparency"] = 0;
-G2L["cd"]["BorderSizePixel"] = 0;
-G2L["cd"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cd"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["cd"]["TextSize"] = 20;
-G2L["cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["cd"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["cd"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["cd"]["Name"] = [[TemplateButton]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.antimurder.Frame
+G2L["cd"] = Instance.new("Frame", G2L["cc"]);
+G2L["cd"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["cd"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cd"]["Text"] = [[Select Any One For Kill  ]];
-G2L["cd"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["cd"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
-G2L["ce"] = Instance.new("UIGradient", G2L["cd"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.antimurder.UIGradient
+G2L["ce"] = Instance.new("UIGradient", G2L["cc"]);
 G2L["ce"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autokilleveryone
-G2L["cf"] = Instance.new("TextButton", G2L["c9"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.specialesp
+G2L["cf"] = Instance.new("TextButton", G2L["a5"]);
 G2L["cf"]["TextWrapped"] = true;
 G2L["cf"]["TextStrokeTransparency"] = 0;
 G2L["cf"]["BorderSizePixel"] = 0;
@@ -2227,67 +2245,67 @@ G2L["cf"]["TextSize"] = 20;
 G2L["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["cf"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["cf"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["cf"]["Name"] = [[autokilleveryone]];
+G2L["cf"]["Name"] = [[specialesp]];
 G2L["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["cf"]["Text"] = [[Auto Kill Everyone  ]];
+G2L["cf"]["Text"] = [[Special-ESP  ]];
 G2L["cf"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autokilleveryone.Frame
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.specialesp.Frame
 G2L["d0"] = Instance.new("Frame", G2L["cf"]);
 G2L["d0"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["d0"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d0"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autokilleveryone.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.specialesp.UIGradient
 G2L["d1"] = Instance.new("UIGradient", G2L["cf"]);
 G2L["d1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.Separator
-G2L["d2"] = Instance.new("TextLabel", G2L["c9"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.looptrade
+G2L["d2"] = Instance.new("TextButton", G2L["a5"]);
 G2L["d2"]["TextWrapped"] = true;
+G2L["d2"]["TextStrokeTransparency"] = 0;
 G2L["d2"]["BorderSizePixel"] = 0;
+G2L["d2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d2"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d2"]["TextSize"] = 16;
-G2L["d2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d2"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["d2"]["TextSize"] = 20;
+G2L["d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["d2"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["d2"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["d2"]["Name"] = [[looptrade]];
 G2L["d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d2"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
-G2L["d2"]["Name"] = [[Separator]];
-G2L["d2"]["BackgroundTransparency"] = 1;
-G2L["d2"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["d2"]["Text"] = [[Loop Trade  ]];
+G2L["d2"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autothrowknifewhenvisibleplayer
-G2L["d3"] = Instance.new("TextButton", G2L["c9"]);
-G2L["d3"]["TextWrapped"] = true;
-G2L["d3"]["TextStrokeTransparency"] = 0;
-G2L["d3"]["BorderSizePixel"] = 0;
-G2L["d3"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d3"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d3"]["TextSize"] = 20;
-G2L["d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["d3"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["d3"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["d3"]["Name"] = [[autothrowknifewhenvisibleplayer]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.looptrade.Frame
+G2L["d3"] = Instance.new("Frame", G2L["d2"]);
+G2L["d3"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["d3"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d3"]["Text"] = [[Auto Throw Knife  ]];
-G2L["d3"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["d3"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autothrowknifewhenvisibleplayer.Frame
-G2L["d4"] = Instance.new("Frame", G2L["d3"]);
-G2L["d4"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["d4"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d4"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.looptrade.UIGradient
+G2L["d4"] = Instance.new("UIGradient", G2L["d2"]);
+G2L["d4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autothrowknifewhenvisibleplayer.UIGradient
-G2L["d5"] = Instance.new("UIGradient", G2L["d3"]);
-G2L["d5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
+G2L["d5"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["d5"]["TextWrapped"] = true;
+G2L["d5"]["BorderSizePixel"] = 0;
+G2L["d5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d5"]["TextSize"] = 16;
+G2L["d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d5"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["d5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d5"]["Text"] = [[- - -  ]];
+G2L["d5"]["Name"] = [[FastSeparator]];
+G2L["d5"]["BackgroundTransparency"] = 1;
+G2L["d5"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
-G2L["d6"] = Instance.new("TextButton", G2L["c9"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
+G2L["d6"] = Instance.new("TextButton", G2L["a5"]);
 G2L["d6"]["TextWrapped"] = true;
 G2L["d6"]["TextStrokeTransparency"] = 0;
 G2L["d6"]["BorderSizePixel"] = 0;
@@ -2300,17 +2318,15 @@ G2L["d6"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["d6"]["Size"] = UDim2.new(0, 320, 0, 34);
 G2L["d6"]["Name"] = [[TemplateButton]];
 G2L["d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d6"]["Text"] = [[Select Key For Predict Throw Knife  ]];
+G2L["d6"]["Text"] = [[Check Role  ]];
 G2L["d6"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
--- Attributes
-G2L["d6"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
 G2L["d7"] = Instance.new("UIGradient", G2L["d6"]);
 G2L["d7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.presskeyforpredictthrowknife
-G2L["d8"] = Instance.new("TextButton", G2L["c9"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
+G2L["d8"] = Instance.new("TextButton", G2L["a5"]);
 G2L["d8"]["TextWrapped"] = true;
 G2L["d8"]["TextStrokeTransparency"] = 0;
 G2L["d8"]["BorderSizePixel"] = 0;
@@ -2321,1131 +2337,1090 @@ G2L["d8"]["TextSize"] = 20;
 G2L["d8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["d8"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["d8"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["d8"]["Name"] = [[presskeyforpredictthrowknife]];
+G2L["d8"]["Name"] = [[TemplateButton]];
 G2L["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d8"]["Text"] = [[ Key for Predict Throw Knife  ]];
-G2L["d8"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["d8"]["Text"] = [[In Round  ]];
+G2L["d8"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.presskeyforpredictthrowknife.Frame
-G2L["d9"] = Instance.new("Frame", G2L["d8"]);
-G2L["d9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["d9"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d9"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
+G2L["d9"] = Instance.new("UIGradient", G2L["d8"]);
+G2L["d9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.presskeyforpredictthrowknife.UIGradient
-G2L["da"] = Instance.new("UIGradient", G2L["d8"]);
-G2L["da"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton
+G2L["da"] = Instance.new("TextButton", G2L["a5"]);
+G2L["da"]["TextWrapped"] = true;
+G2L["da"]["TextStrokeTransparency"] = 0;
+G2L["da"]["BorderSizePixel"] = 0;
+G2L["da"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["da"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["da"]["TextSize"] = 20;
+G2L["da"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["da"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["da"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["da"]["Name"] = [[TemplateButton]];
+G2L["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["da"]["Text"] = [[Check Pro Player (from 1 to 10)  ]];
+G2L["da"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.FastSeparator
-G2L["db"] = Instance.new("TextLabel", G2L["c9"]);
-G2L["db"]["TextWrapped"] = true;
-G2L["db"]["BorderSizePixel"] = 0;
-G2L["db"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["db"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["db"]["TextSize"] = 16;
-G2L["db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["db"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["db"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["db"]["Text"] = [[- - -  ]];
-G2L["db"]["Name"] = [[FastSeparator]];
-G2L["db"]["BackgroundTransparency"] = 1;
-G2L["db"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.TemplateButton.UIGradient
+G2L["db"] = Instance.new("UIGradient", G2L["da"]);
+G2L["db"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.FastSeparator
+G2L["dc"] = Instance.new("TextLabel", G2L["a5"]);
+G2L["dc"]["TextWrapped"] = true;
+G2L["dc"]["BorderSizePixel"] = 0;
+G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dc"]["TextSize"] = 16;
+G2L["dc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dc"]["Text"] = [[- - -  ]];
+G2L["dc"]["Name"] = [[FastSeparator]];
+G2L["dc"]["BackgroundTransparency"] = 1;
+G2L["dc"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.giveAdmin
+G2L["dd"] = Instance.new("TextButton", G2L["a5"]);
+G2L["dd"]["TextWrapped"] = true;
+G2L["dd"]["TextStrokeTransparency"] = 0;
+G2L["dd"]["BorderSizePixel"] = 0;
+G2L["dd"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dd"]["TextSize"] = 20;
+G2L["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["dd"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["dd"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["dd"]["Name"] = [[giveAdmin]];
+G2L["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["dd"]["Text"] = [[Give MurderD0llan Admin  ]];
+G2L["dd"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.giveAdmin.Frame
+G2L["de"] = Instance.new("Frame", G2L["dd"]);
+G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["de"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["de"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.giveAdmin.UIGradient
+G2L["df"] = Instance.new("UIGradient", G2L["dd"]);
+G2L["df"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3
+G2L["e0"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["e0"]["Active"] = true;
+G2L["e0"]["BorderSizePixel"] = 0;
+G2L["e0"]["CanvasSize"] = UDim2.new(0, 0, 0, 763);
+G2L["e0"]["TopImage"] = [[]];
+G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e0"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["e0"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["e0"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e0"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["e0"]["Visible"] = false;
+G2L["e0"]["Name"] = [[page_3]];
+G2L["e0"]["BottomImage"] = [[]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.UIListLayout
+G2L["e1"] = Instance.new("UIListLayout", G2L["e0"]);
+G2L["e1"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["e1"]["Padding"] = UDim.new(0, 5);
+G2L["e1"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
-G2L["dc"] = Instance.new("TextButton", G2L["c9"]);
-G2L["dc"]["TextWrapped"] = true;
-G2L["dc"]["TextStrokeTransparency"] = 0;
-G2L["dc"]["BorderSizePixel"] = 0;
-G2L["dc"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["dc"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["dc"]["TextSize"] = 20;
-G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["dc"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["dc"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["dc"]["Name"] = [[TemplateButton]];
-G2L["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dc"]["Text"] = [[Teleport Kill All  ]];
-G2L["dc"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["e2"] = Instance.new("TextButton", G2L["e0"]);
+G2L["e2"]["TextWrapped"] = true;
+G2L["e2"]["TextStrokeTransparency"] = 0;
+G2L["e2"]["BorderSizePixel"] = 0;
+G2L["e2"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e2"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e2"]["TextSize"] = 20;
+G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e2"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["e2"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["e2"]["Name"] = [[TemplateButton]];
+G2L["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e2"]["Text"] = [[Kill Everyone  ]];
+G2L["e2"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
-G2L["dd"] = Instance.new("UIGradient", G2L["dc"]);
-G2L["dd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.trashtalkwhenkillingsomeone
-G2L["de"] = Instance.new("TextButton", G2L["c9"]);
-G2L["de"]["TextWrapped"] = true;
-G2L["de"]["TextStrokeTransparency"] = 0;
-G2L["de"]["BorderSizePixel"] = 0;
-G2L["de"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["de"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["de"]["TextSize"] = 18;
-G2L["de"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["de"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["de"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["de"]["Name"] = [[trashtalkwhenkillingsomeone]];
-G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["Text"] = [[TrashTalk when killing Someone  ]];
-G2L["de"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.trashtalkwhenkillingsomeone.Frame
-G2L["df"] = Instance.new("Frame", G2L["de"]);
-G2L["df"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["df"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["df"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.trashtalkwhenkillingsomeone.UIGradient
-G2L["e0"] = Instance.new("UIGradient", G2L["de"]);
-G2L["e0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.antimurder
-G2L["e1"] = Instance.new("TextButton", G2L["c9"]);
-G2L["e1"]["TextWrapped"] = true;
-G2L["e1"]["TextStrokeTransparency"] = 0;
-G2L["e1"]["BorderSizePixel"] = 0;
-G2L["e1"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e1"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e1"]["TextSize"] = 20;
-G2L["e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["e1"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["e1"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["e1"]["Name"] = [[antimurder]];
-G2L["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e1"]["Text"] = [[Anti-Murder  ]];
-G2L["e1"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.antimurder.Frame
-G2L["e2"] = Instance.new("Frame", G2L["e1"]);
-G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["e2"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e2"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.antimurder.UIGradient
-G2L["e3"] = Instance.new("UIGradient", G2L["e1"]);
+G2L["e3"] = Instance.new("UIGradient", G2L["e2"]);
 G2L["e3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
+G2L["e4"] = Instance.new("TextButton", G2L["e0"]);
+G2L["e4"]["TextWrapped"] = true;
+G2L["e4"]["TextStrokeTransparency"] = 0;
+G2L["e4"]["BorderSizePixel"] = 0;
+G2L["e4"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e4"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e4"]["TextSize"] = 20;
+G2L["e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e4"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["e4"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["e4"]["Name"] = [[TemplateButton]];
+G2L["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e4"]["Text"] = [[Select Any One For Kill  ]];
+G2L["e4"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
+G2L["e5"] = Instance.new("UIGradient", G2L["e4"]);
+G2L["e5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autokilleveryone
+G2L["e6"] = Instance.new("TextButton", G2L["e0"]);
+G2L["e6"]["TextWrapped"] = true;
+G2L["e6"]["TextStrokeTransparency"] = 0;
+G2L["e6"]["BorderSizePixel"] = 0;
+G2L["e6"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e6"]["TextSize"] = 20;
+G2L["e6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e6"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["e6"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["e6"]["Name"] = [[autokilleveryone]];
+G2L["e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e6"]["Text"] = [[Auto Kill Everyone  ]];
+G2L["e6"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autokilleveryone.Frame
+G2L["e7"] = Instance.new("Frame", G2L["e6"]);
+G2L["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["e7"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e7"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autokilleveryone.UIGradient
+G2L["e8"] = Instance.new("UIGradient", G2L["e6"]);
+G2L["e8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.Separator
+G2L["e9"] = Instance.new("TextLabel", G2L["e0"]);
+G2L["e9"]["TextWrapped"] = true;
+G2L["e9"]["BorderSizePixel"] = 0;
+G2L["e9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e9"]["TextSize"] = 16;
+G2L["e9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e9"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e9"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
+G2L["e9"]["Name"] = [[Separator]];
+G2L["e9"]["BackgroundTransparency"] = 1;
+G2L["e9"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autothrowknifewhenvisibleplayer
+G2L["ea"] = Instance.new("TextButton", G2L["e0"]);
+G2L["ea"]["TextWrapped"] = true;
+G2L["ea"]["TextStrokeTransparency"] = 0;
+G2L["ea"]["BorderSizePixel"] = 0;
+G2L["ea"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ea"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["ea"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ea"]["TextSize"] = 20;
+G2L["ea"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ea"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["ea"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["ea"]["Name"] = [[autothrowknifewhenvisibleplayer]];
+G2L["ea"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ea"]["Text"] = [[Auto Throw Knife  ]];
+G2L["ea"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autothrowknifewhenvisibleplayer.Frame
+G2L["eb"] = Instance.new("Frame", G2L["ea"]);
+G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["eb"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["eb"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.autothrowknifewhenvisibleplayer.UIGradient
+G2L["ec"] = Instance.new("UIGradient", G2L["ea"]);
+G2L["ec"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
+G2L["ed"] = Instance.new("TextButton", G2L["e0"]);
+G2L["ed"]["TextWrapped"] = true;
+G2L["ed"]["TextStrokeTransparency"] = 0;
+G2L["ed"]["BorderSizePixel"] = 0;
+G2L["ed"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ed"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ed"]["TextSize"] = 20;
+G2L["ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ed"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["ed"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["ed"]["Name"] = [[TemplateButton]];
+G2L["ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ed"]["Text"] = [[Select Key For Predict Throw Knife  ]];
+G2L["ed"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+-- Attributes
+G2L["ed"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
+G2L["ee"] = Instance.new("UIGradient", G2L["ed"]);
+G2L["ee"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.presskeyforpredictthrowknife
+G2L["ef"] = Instance.new("TextButton", G2L["e0"]);
+G2L["ef"]["TextWrapped"] = true;
+G2L["ef"]["TextStrokeTransparency"] = 0;
+G2L["ef"]["BorderSizePixel"] = 0;
+G2L["ef"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ef"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["ef"]["TextSize"] = 20;
+G2L["ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["ef"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["ef"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["ef"]["Name"] = [[presskeyforpredictthrowknife]];
+G2L["ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["ef"]["Text"] = [[ Key for Predict Throw Knife  ]];
+G2L["ef"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.presskeyforpredictthrowknife.Frame
+G2L["f0"] = Instance.new("Frame", G2L["ef"]);
+G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["f0"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f0"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.presskeyforpredictthrowknife.UIGradient
+G2L["f1"] = Instance.new("UIGradient", G2L["ef"]);
+G2L["f1"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.FastSeparator
+G2L["f2"] = Instance.new("TextLabel", G2L["e0"]);
+G2L["f2"]["TextWrapped"] = true;
+G2L["f2"]["BorderSizePixel"] = 0;
+G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f2"]["TextSize"] = 16;
+G2L["f2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f2"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f2"]["Text"] = [[- - -  ]];
+G2L["f2"]["Name"] = [[FastSeparator]];
+G2L["f2"]["BackgroundTransparency"] = 1;
+G2L["f2"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton
+G2L["f3"] = Instance.new("TextButton", G2L["e0"]);
+G2L["f3"]["TextWrapped"] = true;
+G2L["f3"]["TextStrokeTransparency"] = 0;
+G2L["f3"]["BorderSizePixel"] = 0;
+G2L["f3"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f3"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["f3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f3"]["TextSize"] = 20;
+G2L["f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f3"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["f3"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["f3"]["Name"] = [[TemplateButton]];
+G2L["f3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f3"]["Text"] = [[Teleport Kill All  ]];
+G2L["f3"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TemplateButton.UIGradient
+G2L["f4"] = Instance.new("UIGradient", G2L["f3"]);
+G2L["f4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.trashtalkwhenkillingsomeone
+G2L["f5"] = Instance.new("TextButton", G2L["e0"]);
+G2L["f5"]["TextWrapped"] = true;
+G2L["f5"]["TextStrokeTransparency"] = 0;
+G2L["f5"]["BorderSizePixel"] = 0;
+G2L["f5"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f5"]["TextSize"] = 18;
+G2L["f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f5"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["f5"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["f5"]["Name"] = [[trashtalkwhenkillingsomeone]];
+G2L["f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f5"]["Text"] = [[TrashTalk when killing Someone  ]];
+G2L["f5"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.trashtalkwhenkillingsomeone.Frame
+G2L["f6"] = Instance.new("Frame", G2L["f5"]);
+G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["f6"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f6"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.trashtalkwhenkillingsomeone.UIGradient
+G2L["f7"] = Instance.new("UIGradient", G2L["f5"]);
+G2L["f7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.antimurder
+G2L["f8"] = Instance.new("TextButton", G2L["e0"]);
+G2L["f8"]["TextWrapped"] = true;
+G2L["f8"]["TextStrokeTransparency"] = 0;
+G2L["f8"]["BorderSizePixel"] = 0;
+G2L["f8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f8"]["TextSize"] = 20;
+G2L["f8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f8"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["f8"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["f8"]["Name"] = [[antimurder]];
+G2L["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f8"]["Text"] = [[Anti-Murder  ]];
+G2L["f8"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.antimurder.Frame
+G2L["f9"] = Instance.new("Frame", G2L["f8"]);
+G2L["f9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["f9"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f9"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.antimurder.UIGradient
+G2L["fa"] = Instance.new("UIGradient", G2L["f8"]);
+G2L["fa"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.HandlerV3
-G2L["e4"] = Instance.new("LocalScript", G2L["c9"]);
-G2L["e4"]["Name"] = [[HandlerV3]];
+G2L["fb"] = Instance.new("LocalScript", G2L["e0"]);
+G2L["fb"]["Name"] = [[HandlerV3]];
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killsherrifwhenbeingmurder
-G2L["e5"] = Instance.new("TextButton", G2L["c9"]);
-G2L["e5"]["TextWrapped"] = true;
-G2L["e5"]["TextStrokeTransparency"] = 0;
-G2L["e5"]["BorderSizePixel"] = 0;
-G2L["e5"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e5"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e5"]["TextSize"] = 18;
-G2L["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["e5"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["e5"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["e5"]["Name"] = [[killsherrifwhenbeingmurder]];
-G2L["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e5"]["Text"] = [[Kill Sheriff When Being Murder  ]];
-G2L["e5"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["fc"] = Instance.new("TextButton", G2L["e0"]);
+G2L["fc"]["TextWrapped"] = true;
+G2L["fc"]["TextStrokeTransparency"] = 0;
+G2L["fc"]["BorderSizePixel"] = 0;
+G2L["fc"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fc"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["fc"]["TextSize"] = 18;
+G2L["fc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["fc"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["fc"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["fc"]["Name"] = [[killsherrifwhenbeingmurder]];
+G2L["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fc"]["Text"] = [[Kill Sheriff When Being Murder  ]];
+G2L["fc"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killsherrifwhenbeingmurder.Frame
-G2L["e6"] = Instance.new("Frame", G2L["e5"]);
-G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["e6"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e6"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["fd"] = Instance.new("Frame", G2L["fc"]);
+G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["fd"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["fd"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killsherrifwhenbeingmurder.UIGradient
-G2L["e7"] = Instance.new("UIGradient", G2L["e5"]);
-G2L["e7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["fe"] = Instance.new("UIGradient", G2L["fc"]);
+G2L["fe"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.activateKnifeWhenNearPlayer
-G2L["e8"] = Instance.new("TextButton", G2L["c9"]);
-G2L["e8"]["TextWrapped"] = true;
-G2L["e8"]["TextStrokeTransparency"] = 0;
-G2L["e8"]["BorderSizePixel"] = 0;
-G2L["e8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["e8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e8"]["TextSize"] = 18;
-G2L["e8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["e8"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["e8"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["e8"]["Name"] = [[activateKnifeWhenNearPlayer]];
-G2L["e8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e8"]["Text"] = [[activate knife when near player  ]];
-G2L["e8"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.activateKnifeWhenNearPlayer.Frame
-G2L["e9"] = Instance.new("Frame", G2L["e8"]);
-G2L["e9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["e9"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["e9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e9"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.activateKnifeWhenNearPlayer.UIGradient
-G2L["ea"] = Instance.new("UIGradient", G2L["e8"]);
-G2L["ea"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.knifeaura
-G2L["eb"] = Instance.new("TextButton", G2L["c9"]);
-G2L["eb"]["TextWrapped"] = true;
-G2L["eb"]["TextStrokeTransparency"] = 0;
-G2L["eb"]["BorderSizePixel"] = 0;
-G2L["eb"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["eb"]["TextSize"] = 18;
-G2L["eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["eb"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["eb"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["eb"]["Name"] = [[knifeaura]];
-G2L["eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["eb"]["Text"] = [[Knife Aura  ]];
-G2L["eb"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.knifeaura.Frame
-G2L["ec"] = Instance.new("Frame", G2L["eb"]);
-G2L["ec"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["ec"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["ec"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ec"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.knifeaura.UIGradient
-G2L["ed"] = Instance.new("UIGradient", G2L["eb"]);
-G2L["ed"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1KnifeAura
-G2L["ee"] = Instance.new("TextButton", G2L["c9"]);
-G2L["ee"]["TextWrapped"] = true;
-G2L["ee"]["TextStrokeTransparency"] = 0;
-G2L["ee"]["BorderSizePixel"] = 0;
-G2L["ee"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ee"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["ee"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ee"]["TextSize"] = 20;
-G2L["ee"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["ee"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["ee"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["ee"]["Name"] = [[TextBoxButton1KnifeAura]];
-G2L["ee"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ee"]["Text"] = [[  Enter Knife Aura Value...]];
-G2L["ee"]["Position"] = UDim2.new(0.5456903576850891, 0, 0.8142253160476685, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1KnifeAura.UIGradient
-G2L["ef"] = Instance.new("UIGradient", G2L["ee"]);
-G2L["ef"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1KnifeAura.TextBox
-G2L["f0"] = Instance.new("TextBox", G2L["ee"]);
-G2L["f0"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["f0"]["TextSize"] = 14;
-G2L["f0"]["TextWrapped"] = true;
-G2L["f0"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["f0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f0"]["PlaceholderText"] = [[enter...]];
-G2L["f0"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["f0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f0"]["Text"] = [[]];
-G2L["f0"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.throwaura
-G2L["f1"] = Instance.new("TextButton", G2L["c9"]);
-G2L["f1"]["TextWrapped"] = true;
-G2L["f1"]["TextStrokeTransparency"] = 0;
-G2L["f1"]["BorderSizePixel"] = 0;
-G2L["f1"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f1"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f1"]["TextSize"] = 18;
-G2L["f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["f1"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["f1"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["f1"]["Name"] = [[throwaura]];
-G2L["f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f1"]["Text"] = [[Throw Aura  ]];
-G2L["f1"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.throwaura.Frame
-G2L["f2"] = Instance.new("Frame", G2L["f1"]);
-G2L["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["f2"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f2"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.throwaura.UIGradient
-G2L["f3"] = Instance.new("UIGradient", G2L["f1"]);
-G2L["f3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1ThrowAura
-G2L["f4"] = Instance.new("TextButton", G2L["c9"]);
-G2L["f4"]["TextWrapped"] = true;
-G2L["f4"]["TextStrokeTransparency"] = 0;
-G2L["f4"]["BorderSizePixel"] = 0;
-G2L["f4"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f4"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["f4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f4"]["TextSize"] = 20;
-G2L["f4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["f4"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["f4"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["f4"]["Name"] = [[TextBoxButton1ThrowAura]];
-G2L["f4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f4"]["Text"] = [[  Enter Throw Aura Value...]];
-G2L["f4"]["Position"] = UDim2.new(0.5456903576850891, 0, 0.8142253160476685, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1ThrowAura.UIGradient
-G2L["f5"] = Instance.new("UIGradient", G2L["f4"]);
-G2L["f5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1ThrowAura.TextBox
-G2L["f6"] = Instance.new("TextBox", G2L["f4"]);
-G2L["f6"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
-G2L["f6"]["TextSize"] = 14;
-G2L["f6"]["TextWrapped"] = true;
-G2L["f6"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
-G2L["f6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f6"]["PlaceholderText"] = [[enter...]];
-G2L["f6"]["Size"] = UDim2.new(0, 66, 0, 22);
-G2L["f6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f6"]["Text"] = [[]];
-G2L["f6"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killanyonewhotalks
-G2L["f7"] = Instance.new("TextButton", G2L["c9"]);
-G2L["f7"]["TextWrapped"] = true;
-G2L["f7"]["TextStrokeTransparency"] = 0;
-G2L["f7"]["BorderSizePixel"] = 0;
-G2L["f7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f7"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f7"]["TextSize"] = 20;
-G2L["f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["f7"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["f7"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["f7"]["Name"] = [[killanyonewhotalks]];
-G2L["f7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f7"]["Text"] = [[Kill Anyone Who Talks  ]];
-G2L["f7"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killanyonewhotalks.Frame
-G2L["f8"] = Instance.new("Frame", G2L["f7"]);
-G2L["f8"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["f8"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["f8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f8"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killanyonewhotalks.UIGradient
-G2L["f9"] = Instance.new("UIGradient", G2L["f7"]);
-G2L["f9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.KillGun
-G2L["fa"] = Instance.new("TextButton", G2L["c9"]);
-G2L["fa"]["TextWrapped"] = true;
-G2L["fa"]["TextStrokeTransparency"] = 0;
-G2L["fa"]["BorderSizePixel"] = 0;
-G2L["fa"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fa"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["fa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fa"]["TextSize"] = 20;
-G2L["fa"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["fa"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["fa"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["fa"]["Name"] = [[KillGun]];
-G2L["fa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fa"]["Text"] = [[Kill-Gun [CLIENT-SIDED]  ]];
-G2L["fa"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.KillGun.Frame
-G2L["fb"] = Instance.new("Frame", G2L["fa"]);
-G2L["fb"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["fb"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fb"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.KillGun.UIGradient
-G2L["fc"] = Instance.new("UIGradient", G2L["fa"]);
-G2L["fc"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4
-G2L["fd"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["fd"]["Active"] = true;
-G2L["fd"]["BorderSizePixel"] = 0;
-G2L["fd"]["CanvasSize"] = UDim2.new(0, 0, 0, 847);
-G2L["fd"]["CanvasPosition"] = Vector2.new(0, 339);
-G2L["fd"]["TopImage"] = [[]];
-G2L["fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["fd"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["fd"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["fd"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["fd"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["fd"]["Visible"] = false;
-G2L["fd"]["Name"] = [[page_4]];
-G2L["fd"]["BottomImage"] = [[]];
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.UIListLayout
-G2L["fe"] = Instance.new("UIListLayout", G2L["fd"]);
-G2L["fe"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["fe"]["Padding"] = UDim.new(0, 5);
-G2L["fe"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["ff"] = Instance.new("TextButton", G2L["fd"]);
+G2L["ff"] = Instance.new("TextButton", G2L["e0"]);
 G2L["ff"]["TextWrapped"] = true;
 G2L["ff"]["TextStrokeTransparency"] = 0;
 G2L["ff"]["BorderSizePixel"] = 0;
 G2L["ff"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ff"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["ff"]["TextSize"] = 20;
+G2L["ff"]["TextSize"] = 18;
 G2L["ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["ff"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["ff"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["ff"]["Name"] = [[TemplateButton]];
+G2L["ff"]["Name"] = [[activateKnifeWhenNearPlayer]];
 G2L["ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["ff"]["Text"] = [[shoot at random player  ]];
-G2L["ff"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["ff"]["Text"] = [[activate knife when near player  ]];
+G2L["ff"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["100"] = Instance.new("UIGradient", G2L["ff"]);
-G2L["100"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.activateKnifeWhenNearPlayer.Frame
+G2L["100"] = Instance.new("Frame", G2L["ff"]);
+G2L["100"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["100"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["100"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["100"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["101"] = Instance.new("TextButton", G2L["fd"]);
-G2L["101"]["TextWrapped"] = true;
-G2L["101"]["TextStrokeTransparency"] = 0;
-G2L["101"]["BorderSizePixel"] = 0;
-G2L["101"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["101"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["101"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["101"]["TextSize"] = 20;
-G2L["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["101"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["101"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["101"]["Name"] = [[TemplateButton]];
-G2L["101"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["101"]["Text"] = [[shoot at murder  ]];
-G2L["101"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.activateKnifeWhenNearPlayer.UIGradient
+G2L["101"] = Instance.new("UIGradient", G2L["ff"]);
+G2L["101"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["102"] = Instance.new("UIGradient", G2L["101"]);
-G2L["102"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.knifeaura
+G2L["102"] = Instance.new("TextButton", G2L["e0"]);
+G2L["102"]["TextWrapped"] = true;
+G2L["102"]["TextStrokeTransparency"] = 0;
+G2L["102"]["BorderSizePixel"] = 0;
+G2L["102"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["102"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["102"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["102"]["TextSize"] = 18;
+G2L["102"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["102"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["102"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["102"]["Name"] = [[knifeaura]];
+G2L["102"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["102"]["Text"] = [[Knife Aura  ]];
+G2L["102"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.Separator
-G2L["103"] = Instance.new("TextLabel", G2L["fd"]);
-G2L["103"]["TextWrapped"] = true;
-G2L["103"]["BorderSizePixel"] = 0;
-G2L["103"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["103"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["103"]["TextSize"] = 16;
-G2L["103"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["103"]["Size"] = UDim2.new(0, 356, 0, 23);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.knifeaura.Frame
+G2L["103"] = Instance.new("Frame", G2L["102"]);
+G2L["103"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["103"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["103"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["103"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
-G2L["103"]["Name"] = [[Separator]];
-G2L["103"]["BackgroundTransparency"] = 1;
-G2L["103"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["103"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.autoshootatmurder
-G2L["104"] = Instance.new("TextButton", G2L["fd"]);
-G2L["104"]["TextWrapped"] = true;
-G2L["104"]["TextStrokeTransparency"] = 0;
-G2L["104"]["BorderSizePixel"] = 0;
-G2L["104"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["104"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["104"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["104"]["TextSize"] = 20;
-G2L["104"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["104"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["104"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["104"]["Name"] = [[autoshootatmurder]];
-G2L["104"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["104"]["Text"] = [[Auto-Shoot At Murder  ]];
-G2L["104"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.knifeaura.UIGradient
+G2L["104"] = Instance.new("UIGradient", G2L["102"]);
+G2L["104"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.autoshootatmurder.Frame
-G2L["105"] = Instance.new("Frame", G2L["104"]);
-G2L["105"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["105"]["Size"] = UDim2.new(0, 24, 0, 20);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1KnifeAura
+G2L["105"] = Instance.new("TextButton", G2L["e0"]);
+G2L["105"]["TextWrapped"] = true;
+G2L["105"]["TextStrokeTransparency"] = 0;
+G2L["105"]["BorderSizePixel"] = 0;
+G2L["105"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["105"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["105"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["105"]["TextSize"] = 20;
+G2L["105"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["105"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["105"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["105"]["Name"] = [[TextBoxButton1KnifeAura]];
 G2L["105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["105"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["105"]["Text"] = [[  Enter Knife Aura Value...]];
+G2L["105"]["Position"] = UDim2.new(0.5456903576850891, 0, 0.8142253160476685, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.autoshootatmurder.UIGradient
-G2L["106"] = Instance.new("UIGradient", G2L["104"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1KnifeAura.UIGradient
+G2L["106"] = Instance.new("UIGradient", G2L["105"]);
 G2L["106"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["107"] = Instance.new("TextButton", G2L["fd"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1KnifeAura.TextBox
+G2L["107"] = Instance.new("TextBox", G2L["105"]);
+G2L["107"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["107"]["TextSize"] = 14;
 G2L["107"]["TextWrapped"] = true;
-G2L["107"]["TextStrokeTransparency"] = 0;
-G2L["107"]["BorderSizePixel"] = 0;
-G2L["107"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["107"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["107"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["107"]["TextSize"] = 20;
-G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["107"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["107"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["107"]["Name"] = [[TemplateButton]];
+G2L["107"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["107"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["107"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["107"]["PlaceholderText"] = [[enter...]];
+G2L["107"]["Size"] = UDim2.new(0, 66, 0, 22);
 G2L["107"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["107"]["Text"] = [[shoot murder - not selected key  ]];
-G2L["107"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
--- Attributes
-G2L["107"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
+G2L["107"]["Text"] = [[]];
+G2L["107"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["108"] = Instance.new("UIGradient", G2L["107"]);
-G2L["108"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.throwaura
+G2L["108"] = Instance.new("TextButton", G2L["e0"]);
+G2L["108"]["TextWrapped"] = true;
+G2L["108"]["TextStrokeTransparency"] = 0;
+G2L["108"]["BorderSizePixel"] = 0;
+G2L["108"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["108"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["108"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["108"]["TextSize"] = 18;
+G2L["108"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["108"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["108"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["108"]["Name"] = [[throwaura]];
+G2L["108"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["108"]["Text"] = [[Throw Aura  ]];
+G2L["108"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.shootmurderwhenpressingkey
-G2L["109"] = Instance.new("TextButton", G2L["fd"]);
-G2L["109"]["TextWrapped"] = true;
-G2L["109"]["TextStrokeTransparency"] = 0;
-G2L["109"]["BorderSizePixel"] = 0;
-G2L["109"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["109"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["109"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["109"]["TextSize"] = 18;
-G2L["109"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["109"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["109"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["109"]["Name"] = [[shootmurderwhenpressingkey]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.throwaura.Frame
+G2L["109"] = Instance.new("Frame", G2L["108"]);
+G2L["109"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["109"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["109"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["109"]["Text"] = [[Shoot Murder when Pressing key  ]];
-G2L["109"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["109"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.shootmurderwhenpressingkey.Frame
-G2L["10a"] = Instance.new("Frame", G2L["109"]);
-G2L["10a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["10a"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["10a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10a"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.throwaura.UIGradient
+G2L["10a"] = Instance.new("UIGradient", G2L["108"]);
+G2L["10a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.shootmurderwhenpressingkey.UIGradient
-G2L["10b"] = Instance.new("UIGradient", G2L["109"]);
-G2L["10b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1ThrowAura
+G2L["10b"] = Instance.new("TextButton", G2L["e0"]);
+G2L["10b"]["TextWrapped"] = true;
+G2L["10b"]["TextStrokeTransparency"] = 0;
+G2L["10b"]["BorderSizePixel"] = 0;
+G2L["10b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10b"]["TextSize"] = 20;
+G2L["10b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["10b"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["10b"]["Name"] = [[TextBoxButton1ThrowAura]];
+G2L["10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10b"]["Text"] = [[  Enter Throw Aura Value...]];
+G2L["10b"]["Position"] = UDim2.new(0.5456903576850891, 0, 0.8142253160476685, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["10c"] = Instance.new("TextButton", G2L["fd"]);
-G2L["10c"]["TextWrapped"] = true;
-G2L["10c"]["TextStrokeTransparency"] = 0;
-G2L["10c"]["BorderSizePixel"] = 0;
-G2L["10c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10c"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["10c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10c"]["TextSize"] = 20;
-G2L["10c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["10c"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["10c"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["10c"]["Name"] = [[TemplateButton]];
-G2L["10c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10c"]["Text"] = [[TP-Kill Murder  ]];
-G2L["10c"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1ThrowAura.UIGradient
+G2L["10c"] = Instance.new("UIGradient", G2L["10b"]);
+G2L["10c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["10d"] = Instance.new("UIGradient", G2L["10c"]);
-G2L["10d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.TextBoxButton1ThrowAura.TextBox
+G2L["10d"] = Instance.new("TextBox", G2L["10b"]);
+G2L["10d"]["PlaceholderColor3"] = Color3.fromRGB(179, 179, 179);
+G2L["10d"]["TextSize"] = 14;
+G2L["10d"]["TextWrapped"] = true;
+G2L["10d"]["BackgroundColor3"] = Color3.fromRGB(72, 72, 72);
+G2L["10d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10d"]["PlaceholderText"] = [[enter...]];
+G2L["10d"]["Size"] = UDim2.new(0, 66, 0, 22);
+G2L["10d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10d"]["Text"] = [[]];
+G2L["10d"]["Position"] = UDim2.new(0.7409999966621399, 0, 0.17599999904632568, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
-G2L["10e"] = Instance.new("TextLabel", G2L["fd"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killanyonewhotalks
+G2L["10e"] = Instance.new("TextButton", G2L["e0"]);
 G2L["10e"]["TextWrapped"] = true;
+G2L["10e"]["TextStrokeTransparency"] = 0;
 G2L["10e"]["BorderSizePixel"] = 0;
+G2L["10e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10e"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["10e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10e"]["TextSize"] = 16;
-G2L["10e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10e"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["10e"]["TextSize"] = 20;
+G2L["10e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["10e"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["10e"]["Name"] = [[killanyonewhotalks]];
 G2L["10e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10e"]["Text"] = [[- - -  ]];
-G2L["10e"]["Name"] = [[FastSeparator]];
-G2L["10e"]["BackgroundTransparency"] = 1;
-G2L["10e"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["10e"]["Text"] = [[Kill Anyone Who Talks  ]];
+G2L["10e"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.spamgun
-G2L["10f"] = Instance.new("TextButton", G2L["fd"]);
-G2L["10f"]["TextWrapped"] = true;
-G2L["10f"]["TextStrokeTransparency"] = 0;
-G2L["10f"]["BorderSizePixel"] = 0;
-G2L["10f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10f"]["TextSize"] = 20;
-G2L["10f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["10f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["10f"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["10f"]["Name"] = [[spamgun]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killanyonewhotalks.Frame
+G2L["10f"] = Instance.new("Frame", G2L["10e"]);
+G2L["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["10f"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10f"]["Text"] = [[spam gun  ]];
-G2L["10f"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["10f"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.spamgun.Frame
-G2L["110"] = Instance.new("Frame", G2L["10f"]);
-G2L["110"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["110"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["110"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["110"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.killanyonewhotalks.UIGradient
+G2L["110"] = Instance.new("UIGradient", G2L["10e"]);
+G2L["110"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.spamgun.UIGradient
-G2L["111"] = Instance.new("UIGradient", G2L["10f"]);
-G2L["111"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.KillGun
+G2L["111"] = Instance.new("TextButton", G2L["e0"]);
+G2L["111"]["TextWrapped"] = true;
+G2L["111"]["TextStrokeTransparency"] = 0;
+G2L["111"]["BorderSizePixel"] = 0;
+G2L["111"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["111"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["111"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["111"]["TextSize"] = 20;
+G2L["111"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["111"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["111"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["111"]["Name"] = [[KillGun]];
+G2L["111"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["111"]["Text"] = [[Kill-Gun [CLIENT-SIDED]  ]];
+G2L["111"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.antisherrif
-G2L["112"] = Instance.new("TextButton", G2L["fd"]);
-G2L["112"]["TextWrapped"] = true;
-G2L["112"]["TextStrokeTransparency"] = 0;
-G2L["112"]["BorderSizePixel"] = 0;
-G2L["112"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["112"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["112"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["112"]["TextSize"] = 20;
-G2L["112"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["112"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["112"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["112"]["Name"] = [[antisherrif]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.KillGun.Frame
+G2L["112"] = Instance.new("Frame", G2L["111"]);
+G2L["112"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["112"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["112"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["112"]["Text"] = [[Anti-Sherrif  ]];
-G2L["112"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["112"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.antisherrif.Frame
-G2L["113"] = Instance.new("Frame", G2L["112"]);
-G2L["113"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["113"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["113"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["113"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.KillGun.UIGradient
+G2L["113"] = Instance.new("UIGradient", G2L["111"]);
+G2L["113"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.antisherrif.UIGradient
-G2L["114"] = Instance.new("UIGradient", G2L["112"]);
-G2L["114"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.STOPTHETIME
+G2L["114"] = Instance.new("TextButton", G2L["e0"]);
+G2L["114"]["TextWrapped"] = true;
+G2L["114"]["TextStrokeTransparency"] = 0;
+G2L["114"]["BorderSizePixel"] = 0;
+G2L["114"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["114"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["114"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["114"]["TextSize"] = 20;
+G2L["114"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["114"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["114"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["114"]["Name"] = [[STOPTHETIME]];
+G2L["114"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["114"]["Text"] = [[stop the time [TOOL]  ]];
+G2L["114"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.AimBotToMurder
-G2L["115"] = Instance.new("TextButton", G2L["fd"]);
-G2L["115"]["TextWrapped"] = true;
-G2L["115"]["TextStrokeTransparency"] = 0;
-G2L["115"]["BorderSizePixel"] = 0;
-G2L["115"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["115"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["115"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["115"]["TextSize"] = 20;
-G2L["115"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["115"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["115"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["115"]["Name"] = [[AimBotToMurder]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.STOPTHETIME.Frame
+G2L["115"] = Instance.new("Frame", G2L["114"]);
+G2L["115"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["115"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["115"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["115"]["Text"] = [[Aim-Bot To Murder  ]];
-G2L["115"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["115"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.AimBotToMurder.Frame
-G2L["116"] = Instance.new("Frame", G2L["115"]);
-G2L["116"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["116"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["116"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["116"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.STOPTHETIME.UIGradient
+G2L["116"] = Instance.new("UIGradient", G2L["114"]);
+G2L["116"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.AimBotToMurder.UIGradient
-G2L["117"] = Instance.new("UIGradient", G2L["115"]);
-G2L["117"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4
+G2L["117"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["117"]["Active"] = true;
+G2L["117"]["BorderSizePixel"] = 0;
+G2L["117"]["CanvasSize"] = UDim2.new(0, 0, 0, 847);
+G2L["117"]["TopImage"] = [[]];
+G2L["117"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["117"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["117"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["117"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["117"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["117"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["117"]["Visible"] = false;
+G2L["117"]["Name"] = [[page_4]];
+G2L["117"]["BottomImage"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.HandlerV4
-G2L["118"] = Instance.new("LocalScript", G2L["fd"]);
-G2L["118"]["Name"] = [[HandlerV4]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.UIListLayout
+G2L["118"] = Instance.new("UIListLayout", G2L["117"]);
+G2L["118"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["118"]["Padding"] = UDim.new(0, 5);
+G2L["118"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["119"] = Instance.new("TextButton", G2L["fd"]);
+G2L["119"] = Instance.new("TextButton", G2L["117"]);
 G2L["119"]["TextWrapped"] = true;
 G2L["119"]["TextStrokeTransparency"] = 0;
 G2L["119"]["BorderSizePixel"] = 0;
 G2L["119"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["119"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["119"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["119"]["TextSize"] = 18;
+G2L["119"]["TextSize"] = 20;
 G2L["119"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["119"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["119"]["Size"] = UDim2.new(0, 320, 0, 34);
 G2L["119"]["Name"] = [[TemplateButton]];
 G2L["119"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["119"]["Text"] = [[camera kill Murder - not selected key  ]];
+G2L["119"]["Text"] = [[shoot at random player  ]];
 G2L["119"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
--- Attributes
-G2L["119"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
 G2L["11a"] = Instance.new("UIGradient", G2L["119"]);
 G2L["11a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.CKM
-G2L["11b"] = Instance.new("TextButton", G2L["fd"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
+G2L["11b"] = Instance.new("TextButton", G2L["117"]);
 G2L["11b"]["TextWrapped"] = true;
 G2L["11b"]["TextStrokeTransparency"] = 0;
 G2L["11b"]["BorderSizePixel"] = 0;
 G2L["11b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11b"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["11b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11b"]["TextSize"] = 18;
+G2L["11b"]["TextSize"] = 20;
 G2L["11b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["11b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["11b"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["11b"]["Name"] = [[CKM]];
+G2L["11b"]["Name"] = [[TemplateButton]];
 G2L["11b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11b"]["Text"] = [[Camera Kill when Pressing key  ]];
-G2L["11b"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["11b"]["Text"] = [[shoot at murder  ]];
+G2L["11b"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.CKM.Frame
-G2L["11c"] = Instance.new("Frame", G2L["11b"]);
-G2L["11c"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["11c"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["11c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11c"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
+G2L["11c"] = Instance.new("UIGradient", G2L["11b"]);
+G2L["11c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.CKM.UIGradient
-G2L["11d"] = Instance.new("UIGradient", G2L["11b"]);
-G2L["11d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.Separator
+G2L["11d"] = Instance.new("TextLabel", G2L["117"]);
+G2L["11d"]["TextWrapped"] = true;
+G2L["11d"]["BorderSizePixel"] = 0;
+G2L["11d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11d"]["TextSize"] = 16;
+G2L["11d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11d"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["11d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11d"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
+G2L["11d"]["Name"] = [[Separator]];
+G2L["11d"]["BackgroundTransparency"] = 1;
+G2L["11d"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
-G2L["11e"] = Instance.new("TextLabel", G2L["fd"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.autoshootatmurder
+G2L["11e"] = Instance.new("TextButton", G2L["117"]);
 G2L["11e"]["TextWrapped"] = true;
+G2L["11e"]["TextStrokeTransparency"] = 0;
 G2L["11e"]["BorderSizePixel"] = 0;
+G2L["11e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11e"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["11e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11e"]["TextSize"] = 16;
-G2L["11e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11e"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["11e"]["TextSize"] = 20;
+G2L["11e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["11e"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["11e"]["Name"] = [[autoshootatmurder]];
 G2L["11e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11e"]["Text"] = [[- - -  ]];
-G2L["11e"]["Name"] = [[FastSeparator]];
-G2L["11e"]["BackgroundTransparency"] = 1;
-G2L["11e"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["11e"]["Text"] = [[Auto-Shoot At Murder  ]];
+G2L["11e"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swnm
-G2L["11f"] = Instance.new("TextButton", G2L["fd"]);
-G2L["11f"]["TextWrapped"] = true;
-G2L["11f"]["TextStrokeTransparency"] = 0;
-G2L["11f"]["BorderSizePixel"] = 0;
-G2L["11f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["11f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11f"]["TextSize"] = 18;
-G2L["11f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["11f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["11f"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["11f"]["Name"] = [[swnm]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.autoshootatmurder.Frame
+G2L["11f"] = Instance.new("Frame", G2L["11e"]);
+G2L["11f"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["11f"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["11f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11f"]["Text"] = [[sound when near Murder  ]];
-G2L["11f"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["11f"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swnm.Frame
-G2L["120"] = Instance.new("Frame", G2L["11f"]);
-G2L["120"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["120"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["120"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["120"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swnm.UIGradient
-G2L["121"] = Instance.new("UIGradient", G2L["11f"]);
-G2L["121"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swmpk
-G2L["122"] = Instance.new("TextButton", G2L["fd"]);
-G2L["122"]["TextWrapped"] = true;
-G2L["122"]["TextStrokeTransparency"] = 0;
-G2L["122"]["BorderSizePixel"] = 0;
-G2L["122"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["122"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["122"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["122"]["TextSize"] = 18;
-G2L["122"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["122"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["122"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["122"]["Name"] = [[swmpk]];
-G2L["122"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["122"]["Text"] = [[sound when murder pulls knife  ]];
-G2L["122"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swmpk.Frame
-G2L["123"] = Instance.new("Frame", G2L["122"]);
-G2L["123"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["123"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["123"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["123"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swmpk.UIGradient
-G2L["124"] = Instance.new("UIGradient", G2L["122"]);
-G2L["124"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.autoshootatmurder.UIGradient
+G2L["120"] = Instance.new("UIGradient", G2L["11e"]);
+G2L["120"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["125"] = Instance.new("TextButton", G2L["fd"]);
-G2L["125"]["TextWrapped"] = true;
-G2L["125"]["TextStrokeTransparency"] = 0;
-G2L["125"]["BorderSizePixel"] = 0;
-G2L["125"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["125"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["125"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["125"]["TextSize"] = 20;
-G2L["125"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["125"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["125"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["125"]["Name"] = [[TemplateButton]];
-G2L["125"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["125"]["Text"] = [[reset but no one can pick the gun  ]];
-G2L["125"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.1666666716337204, 0);
+G2L["121"] = Instance.new("TextButton", G2L["117"]);
+G2L["121"]["TextWrapped"] = true;
+G2L["121"]["TextStrokeTransparency"] = 0;
+G2L["121"]["BorderSizePixel"] = 0;
+G2L["121"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["121"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["121"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["121"]["TextSize"] = 20;
+G2L["121"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["121"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["121"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["121"]["Name"] = [[TemplateButton]];
+G2L["121"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["121"]["Text"] = [[shoot murder - not selected key  ]];
+G2L["121"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+-- Attributes
+G2L["121"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["126"] = Instance.new("UIGradient", G2L["125"]);
-G2L["126"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["122"] = Instance.new("UIGradient", G2L["121"]);
+G2L["122"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.shootmurderwhenpressingkey
+G2L["123"] = Instance.new("TextButton", G2L["117"]);
+G2L["123"]["TextWrapped"] = true;
+G2L["123"]["TextStrokeTransparency"] = 0;
+G2L["123"]["BorderSizePixel"] = 0;
+G2L["123"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["123"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["123"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["123"]["TextSize"] = 18;
+G2L["123"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["123"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["123"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["123"]["Name"] = [[shootmurderwhenpressingkey]];
+G2L["123"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["123"]["Text"] = [[Shoot Murder when Pressing key  ]];
+G2L["123"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.shootmurderwhenpressingkey.Frame
+G2L["124"] = Instance.new("Frame", G2L["123"]);
+G2L["124"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["124"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["124"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["124"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.shootmurderwhenpressingkey.UIGradient
+G2L["125"] = Instance.new("UIGradient", G2L["123"]);
+G2L["125"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
+G2L["126"] = Instance.new("TextButton", G2L["117"]);
+G2L["126"]["TextWrapped"] = true;
+G2L["126"]["TextStrokeTransparency"] = 0;
+G2L["126"]["BorderSizePixel"] = 0;
+G2L["126"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["126"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["126"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["126"]["TextSize"] = 20;
+G2L["126"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["126"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["126"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["126"]["Name"] = [[TemplateButton]];
+G2L["126"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["126"]["Text"] = [[TP-Kill Murder  ]];
+G2L["126"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
+G2L["127"] = Instance.new("UIGradient", G2L["126"]);
+G2L["127"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
-G2L["127"] = Instance.new("TextLabel", G2L["fd"]);
-G2L["127"]["TextWrapped"] = true;
-G2L["127"]["BorderSizePixel"] = 0;
-G2L["127"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["127"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["127"]["TextSize"] = 16;
-G2L["127"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["127"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["127"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["127"]["Text"] = [[- - -  ]];
-G2L["127"]["Name"] = [[FastSeparator]];
-G2L["127"]["BackgroundTransparency"] = 1;
-G2L["127"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["128"] = Instance.new("TextButton", G2L["fd"]);
+G2L["128"] = Instance.new("TextLabel", G2L["117"]);
 G2L["128"]["TextWrapped"] = true;
-G2L["128"]["TextStrokeTransparency"] = 0;
 G2L["128"]["BorderSizePixel"] = 0;
-G2L["128"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["128"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["128"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["128"]["TextSize"] = 20;
-G2L["128"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["128"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["128"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["128"]["Name"] = [[TemplateButton]];
+G2L["128"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["128"]["TextSize"] = 16;
+G2L["128"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["128"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["128"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["128"]["Text"] = [[select a player here...  ]];
-G2L["128"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.1666666716337204, 0);
+G2L["128"]["Text"] = [[- - -  ]];
+G2L["128"]["Name"] = [[FastSeparator]];
+G2L["128"]["BackgroundTransparency"] = 1;
+G2L["128"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["129"] = Instance.new("UIGradient", G2L["128"]);
-G2L["129"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.spamgun
+G2L["129"] = Instance.new("TextButton", G2L["117"]);
+G2L["129"]["TextWrapped"] = true;
+G2L["129"]["TextStrokeTransparency"] = 0;
+G2L["129"]["BorderSizePixel"] = 0;
+G2L["129"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["129"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["129"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["129"]["TextSize"] = 20;
+G2L["129"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["129"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["129"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["129"]["Name"] = [[spamgun]];
+G2L["129"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["129"]["Text"] = [[spam gun  ]];
+G2L["129"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
-G2L["12a"] = Instance.new("TextButton", G2L["fd"]);
-G2L["12a"]["TextWrapped"] = true;
-G2L["12a"]["TextStrokeTransparency"] = 0;
-G2L["12a"]["BorderSizePixel"] = 0;
-G2L["12a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["12a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12a"]["TextSize"] = 20;
-G2L["12a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12a"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["12a"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["12a"]["Name"] = [[TemplateButton]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.spamgun.Frame
+G2L["12a"] = Instance.new("Frame", G2L["129"]);
+G2L["12a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["12a"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["12a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12a"]["Text"] = [[give gun to player (KILLS YOU)  ]];
-G2L["12a"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.1666666716337204, 0);
+G2L["12a"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
-G2L["12b"] = Instance.new("UIGradient", G2L["12a"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.spamgun.UIGradient
+G2L["12b"] = Instance.new("UIGradient", G2L["129"]);
 G2L["12b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
-G2L["12c"] = Instance.new("TextLabel", G2L["fd"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.antisherrif
+G2L["12c"] = Instance.new("TextButton", G2L["117"]);
 G2L["12c"]["TextWrapped"] = true;
+G2L["12c"]["TextStrokeTransparency"] = 0;
 G2L["12c"]["BorderSizePixel"] = 0;
+G2L["12c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12c"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["12c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12c"]["TextSize"] = 16;
-G2L["12c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12c"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["12c"]["TextSize"] = 20;
+G2L["12c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12c"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["12c"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["12c"]["Name"] = [[antisherrif]];
 G2L["12c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12c"]["Text"] = [[- - -  ]];
-G2L["12c"]["Name"] = [[FastSeparator]];
-G2L["12c"]["BackgroundTransparency"] = 1;
-G2L["12c"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["12c"]["Text"] = [[Anti-Sherrif  ]];
+G2L["12c"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.lookatmurder
-G2L["12d"] = Instance.new("TextButton", G2L["fd"]);
-G2L["12d"]["TextWrapped"] = true;
-G2L["12d"]["TextStrokeTransparency"] = 0;
-G2L["12d"]["BorderSizePixel"] = 0;
-G2L["12d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["12d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12d"]["TextSize"] = 18;
-G2L["12d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12d"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["12d"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["12d"]["Name"] = [[lookatmurder]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.antisherrif.Frame
+G2L["12d"] = Instance.new("Frame", G2L["12c"]);
+G2L["12d"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["12d"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["12d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12d"]["Text"] = [[LookAt Murder  ]];
-G2L["12d"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["12d"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.lookatmurder.Frame
-G2L["12e"] = Instance.new("Frame", G2L["12d"]);
-G2L["12e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["12e"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["12e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12e"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.antisherrif.UIGradient
+G2L["12e"] = Instance.new("UIGradient", G2L["12c"]);
+G2L["12e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.lookatmurder.UIGradient
-G2L["12f"] = Instance.new("UIGradient", G2L["12d"]);
-G2L["12f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.AimBotToMurder
+G2L["12f"] = Instance.new("TextButton", G2L["117"]);
+G2L["12f"]["TextWrapped"] = true;
+G2L["12f"]["TextStrokeTransparency"] = 0;
+G2L["12f"]["BorderSizePixel"] = 0;
+G2L["12f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["12f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12f"]["TextSize"] = 20;
+G2L["12f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["12f"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["12f"]["Name"] = [[AimBotToMurder]];
+G2L["12f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12f"]["Text"] = [[Aim-Bot To Murder  ]];
+G2L["12f"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.triggerbot
-G2L["130"] = Instance.new("TextButton", G2L["fd"]);
-G2L["130"]["TextWrapped"] = true;
-G2L["130"]["TextStrokeTransparency"] = 0;
-G2L["130"]["BorderSizePixel"] = 0;
-G2L["130"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["130"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["130"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["130"]["TextSize"] = 18;
-G2L["130"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["130"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["130"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["130"]["Name"] = [[triggerbot]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.AimBotToMurder.Frame
+G2L["130"] = Instance.new("Frame", G2L["12f"]);
+G2L["130"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["130"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["130"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["130"]["Text"] = [[TriggerBot Murder [PC-Only]  ]];
-G2L["130"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["130"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.triggerbot.Frame
-G2L["131"] = Instance.new("Frame", G2L["130"]);
-G2L["131"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["131"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["131"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["131"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.AimBotToMurder.UIGradient
+G2L["131"] = Instance.new("UIGradient", G2L["12f"]);
+G2L["131"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.triggerbot.UIGradient
-G2L["132"] = Instance.new("UIGradient", G2L["130"]);
-G2L["132"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.HandlerV4
+G2L["132"] = Instance.new("LocalScript", G2L["117"]);
+G2L["132"]["Name"] = [[HandlerV4]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback
-G2L["133"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["133"]["Active"] = true;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
+G2L["133"] = Instance.new("TextButton", G2L["117"]);
+G2L["133"]["TextWrapped"] = true;
+G2L["133"]["TextStrokeTransparency"] = 0;
 G2L["133"]["BorderSizePixel"] = 0;
-G2L["133"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
-G2L["133"]["TopImage"] = [[]];
+G2L["133"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["133"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["133"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["133"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["133"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["133"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["133"]["TextSize"] = 18;
+G2L["133"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["133"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["133"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["133"]["Name"] = [[TemplateButton]];
 G2L["133"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["133"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["133"]["Visible"] = false;
-G2L["133"]["Name"] = [[ALT_page_feedback]];
-G2L["133"]["BottomImage"] = [[]];
+G2L["133"]["Text"] = [[camera kill Murder - not selected key  ]];
+G2L["133"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 -- Attributes
-G2L["133"]:SetAttribute([[rate]], 0);
+G2L["133"]:SetAttribute([[SELECTED_KEY]], [[Unknown]]);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.UIListLayout
-G2L["134"] = Instance.new("UIListLayout", G2L["133"]);
-G2L["134"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["134"]["Padding"] = UDim.new(0, 5);
-G2L["134"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
+G2L["134"] = Instance.new("UIGradient", G2L["133"]);
+G2L["134"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
-G2L["135"] = Instance.new("TextLabel", G2L["133"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.CKM
+G2L["135"] = Instance.new("TextButton", G2L["117"]);
 G2L["135"]["TextWrapped"] = true;
+G2L["135"]["TextStrokeTransparency"] = 0;
 G2L["135"]["BorderSizePixel"] = 0;
-G2L["135"]["TextScaled"] = true;
+G2L["135"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["135"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["135"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["135"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["135"]["TextSize"] = 16;
-G2L["135"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["135"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["135"]["TextSize"] = 18;
+G2L["135"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["135"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["135"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["135"]["Name"] = [[CKM]];
 G2L["135"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["135"]["Text"] = [[This script is dedicated to the entire Murder Mystery 2 exploit community]];
-G2L["135"]["Name"] = [[Separator]];
-G2L["135"]["BackgroundTransparency"] = 1;
-G2L["135"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["135"]["Text"] = [[Camera Kill when Pressing key  ]];
+G2L["135"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
-G2L["136"] = Instance.new("TextLabel", G2L["133"]);
-G2L["136"]["TextWrapped"] = true;
-G2L["136"]["BorderSizePixel"] = 0;
-G2L["136"]["TextScaled"] = true;
-G2L["136"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["136"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["136"]["TextSize"] = 16;
-G2L["136"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["136"]["Size"] = UDim2.new(0, 356, 0, 23);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.CKM.Frame
+G2L["136"] = Instance.new("Frame", G2L["135"]);
+G2L["136"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["136"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["136"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["136"]["Text"] = [[I hope you find it useful!]];
-G2L["136"]["Name"] = [[Separator]];
-G2L["136"]["BackgroundTransparency"] = 1;
-G2L["136"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["136"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
-G2L["137"] = Instance.new("TextLabel", G2L["133"]);
-G2L["137"]["TextWrapped"] = true;
-G2L["137"]["BorderSizePixel"] = 0;
-G2L["137"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["137"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["137"]["TextSize"] = 16;
-G2L["137"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["137"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["137"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["137"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
-G2L["137"]["Name"] = [[Separator]];
-G2L["137"]["BackgroundTransparency"] = 1;
-G2L["137"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.CKM.UIGradient
+G2L["137"] = Instance.new("UIGradient", G2L["135"]);
+G2L["137"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.FeedBackBOX
-G2L["138"] = Instance.new("TextBox", G2L["133"]);
-G2L["138"]["TextSize"] = 20;
-G2L["138"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
+G2L["138"] = Instance.new("TextLabel", G2L["117"]);
 G2L["138"]["TextWrapped"] = true;
-G2L["138"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["138"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
-G2L["138"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["138"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["138"]["MultiLine"] = true;
-G2L["138"]["PlaceholderText"] = [[Put your thoughts, ideas, or whatever you  want here as long as it's related to the script's operation or something else...]];
-G2L["138"]["Size"] = UDim2.new(0, 317, 0, 131);
+G2L["138"]["BorderSizePixel"] = 0;
+G2L["138"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["138"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["138"]["TextSize"] = 16;
+G2L["138"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["138"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["138"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["138"]["Text"] = [[]];
-G2L["138"]["Position"] = UDim2.new(0.08557844907045364, 0, 0.41133004426956177, 0);
-G2L["138"]["Name"] = [[FeedBackBOX]];
-G2L["138"]["ClearTextOnFocus"] = false;
+G2L["138"]["Text"] = [[- - -  ]];
+G2L["138"]["Name"] = [[FastSeparator]];
+G2L["138"]["BackgroundTransparency"] = 1;
+G2L["138"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
-G2L["139"] = Instance.new("TextLabel", G2L["133"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swnm
+G2L["139"] = Instance.new("TextButton", G2L["117"]);
 G2L["139"]["TextWrapped"] = true;
+G2L["139"]["TextStrokeTransparency"] = 0;
 G2L["139"]["BorderSizePixel"] = 0;
-G2L["139"]["TextScaled"] = true;
+G2L["139"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["139"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["139"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["139"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["139"]["TextSize"] = 16;
-G2L["139"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["139"]["LayoutOrder"] = 6;
-G2L["139"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["139"]["TextSize"] = 18;
+G2L["139"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["139"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["139"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["139"]["Name"] = [[swnm]];
 G2L["139"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["139"]["Text"] = [[Select the boxes to choose the rating you give our script.]];
-G2L["139"]["Name"] = [[Separator]];
-G2L["139"]["BackgroundTransparency"] = 1;
-G2L["139"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["139"]["Text"] = [[sound when near Murder  ]];
+G2L["139"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame
-G2L["13a"] = Instance.new("Frame", G2L["133"]);
-G2L["13a"]["BackgroundColor3"] = Color3.fromRGB(92, 92, 92);
-G2L["13a"]["LayoutOrder"] = 6;
-G2L["13a"]["Size"] = UDim2.new(0, 296, 0, 62);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swnm.Frame
+G2L["13a"] = Instance.new("Frame", G2L["139"]);
+G2L["13a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["13a"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["13a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13a"]["Position"] = UDim2.new(0.06675749272108078, 0, 0.4956139624118805, 0);
-G2L["13a"]["Name"] = [[RatingFrame]];
+G2L["13a"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star1
-G2L["13b"] = Instance.new("TextButton", G2L["13a"]);
-G2L["13b"]["BorderSizePixel"] = 0;
-G2L["13b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13b"]["TextSize"] = 14;
-G2L["13b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13b"]["Size"] = UDim2.new(0, 56, 0, 61);
-G2L["13b"]["Name"] = [[star1]];
-G2L["13b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13b"]["Text"] = [[]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swnm.UIGradient
+G2L["13b"] = Instance.new("UIGradient", G2L["139"]);
+G2L["13b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.UIListLayout
-G2L["13c"] = Instance.new("UIListLayout", G2L["13a"]);
-G2L["13c"]["FillDirection"] = Enum.FillDirection.Horizontal;
-G2L["13c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["13c"]["Padding"] = UDim.new(0, 2);
-G2L["13c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swmpk
+G2L["13c"] = Instance.new("TextButton", G2L["117"]);
+G2L["13c"]["TextWrapped"] = true;
+G2L["13c"]["TextStrokeTransparency"] = 0;
+G2L["13c"]["BorderSizePixel"] = 0;
+G2L["13c"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13c"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["13c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13c"]["TextSize"] = 18;
+G2L["13c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13c"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["13c"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["13c"]["Name"] = [[swmpk]];
+G2L["13c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13c"]["Text"] = [[sound when murder pulls knife  ]];
+G2L["13c"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star2
-G2L["13d"] = Instance.new("TextButton", G2L["13a"]);
-G2L["13d"]["BorderSizePixel"] = 0;
-G2L["13d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13d"]["TextSize"] = 14;
-G2L["13d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13d"]["Size"] = UDim2.new(0, 56, 0, 61);
-G2L["13d"]["Name"] = [[star2]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swmpk.Frame
+G2L["13d"] = Instance.new("Frame", G2L["13c"]);
+G2L["13d"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["13d"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["13d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13d"]["Text"] = [[]];
+G2L["13d"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star3
-G2L["13e"] = Instance.new("TextButton", G2L["13a"]);
-G2L["13e"]["BorderSizePixel"] = 0;
-G2L["13e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13e"]["TextSize"] = 14;
-G2L["13e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13e"]["Size"] = UDim2.new(0, 56, 0, 61);
-G2L["13e"]["Name"] = [[star3]];
-G2L["13e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13e"]["Text"] = [[]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.swmpk.UIGradient
+G2L["13e"] = Instance.new("UIGradient", G2L["13c"]);
+G2L["13e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star4
-G2L["13f"] = Instance.new("TextButton", G2L["13a"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
+G2L["13f"] = Instance.new("TextButton", G2L["117"]);
+G2L["13f"]["TextWrapped"] = true;
+G2L["13f"]["TextStrokeTransparency"] = 0;
 G2L["13f"]["BorderSizePixel"] = 0;
+G2L["13f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["13f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13f"]["TextSize"] = 14;
-G2L["13f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["13f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13f"]["Size"] = UDim2.new(0, 56, 0, 61);
-G2L["13f"]["Name"] = [[star4]];
+G2L["13f"]["TextSize"] = 20;
+G2L["13f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["13f"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["13f"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["13f"]["Name"] = [[TemplateButton]];
 G2L["13f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13f"]["Text"] = [[]];
+G2L["13f"]["Text"] = [[reset but no one can pick the gun  ]];
+G2L["13f"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.1666666716337204, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star5
-G2L["140"] = Instance.new("TextButton", G2L["13a"]);
-G2L["140"]["BorderSizePixel"] = 0;
-G2L["140"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["140"]["TextSize"] = 14;
-G2L["140"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["140"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["140"]["Size"] = UDim2.new(0, 56, 0, 61);
-G2L["140"]["Name"] = [[star5]];
-G2L["140"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["140"]["Text"] = [[]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
+G2L["140"] = Instance.new("UIGradient", G2L["13f"]);
+G2L["140"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.RatingSystem
-G2L["141"] = Instance.new("LocalScript", G2L["13a"]);
-G2L["141"]["Name"] = [[RatingSystem]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
+G2L["141"] = Instance.new("TextLabel", G2L["117"]);
+G2L["141"]["TextWrapped"] = true;
+G2L["141"]["BorderSizePixel"] = 0;
+G2L["141"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["141"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["141"]["TextSize"] = 16;
+G2L["141"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["141"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["141"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["141"]["Text"] = [[- - -  ]];
+G2L["141"]["Name"] = [[FastSeparator]];
+G2L["141"]["BackgroundTransparency"] = 1;
+G2L["141"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.starcount
-G2L["142"] = Instance.new("TextLabel", G2L["133"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
+G2L["142"] = Instance.new("TextButton", G2L["117"]);
 G2L["142"]["TextWrapped"] = true;
+G2L["142"]["TextStrokeTransparency"] = 0;
 G2L["142"]["BorderSizePixel"] = 0;
-G2L["142"]["TextScaled"] = true;
+G2L["142"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["142"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["142"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["142"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["142"]["TextSize"] = 16;
-G2L["142"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["142"]["LayoutOrder"] = 6;
-G2L["142"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["142"]["TextSize"] = 20;
+G2L["142"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["142"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["142"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["142"]["Name"] = [[TemplateButton]];
 G2L["142"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["142"]["Text"] = [[zero stars (0)]];
-G2L["142"]["Name"] = [[starcount]];
-G2L["142"]["BackgroundTransparency"] = 1;
-G2L["142"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["142"]["Text"] = [[select a player here...  ]];
+G2L["142"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.1666666716337204, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.FastSeparator
-G2L["143"] = Instance.new("TextLabel", G2L["133"]);
-G2L["143"]["TextWrapped"] = true;
-G2L["143"]["BorderSizePixel"] = 0;
-G2L["143"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["143"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["143"]["TextSize"] = 16;
-G2L["143"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["143"]["LayoutOrder"] = 7;
-G2L["143"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["143"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["143"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
-G2L["143"]["Name"] = [[FastSeparator]];
-G2L["143"]["BackgroundTransparency"] = 1;
-G2L["143"]["Position"] = UDim2.new(0.0286103542894125, 0, 0.25438597798347473, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
+G2L["143"] = Instance.new("UIGradient", G2L["142"]);
+G2L["143"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.TemplateButton
-G2L["144"] = Instance.new("TextButton", G2L["133"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton
+G2L["144"] = Instance.new("TextButton", G2L["117"]);
 G2L["144"]["TextWrapped"] = true;
 G2L["144"]["TextStrokeTransparency"] = 0;
 G2L["144"]["BorderSizePixel"] = 0;
@@ -3456,269 +3431,307 @@ G2L["144"]["TextSize"] = 20;
 G2L["144"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["144"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["144"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["144"]["LayoutOrder"] = 8;
 G2L["144"]["Name"] = [[TemplateButton]];
 G2L["144"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["144"]["Text"] = [[Submit Feedback  ]];
-G2L["144"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["144"]["Text"] = [[give gun to player (KILLS YOU)  ]];
+G2L["144"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.1666666716337204, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.TemplateButton.UIGradient
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.TemplateButton.UIGradient
 G2L["145"] = Instance.new("UIGradient", G2L["144"]);
 G2L["145"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.feedbacksystemworking
-G2L["146"] = Instance.new("TextButton", G2L["133"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.FastSeparator
+G2L["146"] = Instance.new("TextLabel", G2L["117"]);
 G2L["146"]["TextWrapped"] = true;
-G2L["146"]["Active"] = false;
 G2L["146"]["BorderSizePixel"] = 0;
-G2L["146"]["AutoButtonColor"] = false;
-G2L["146"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["146"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["146"]["TextSize"] = 20;
-G2L["146"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["146"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["146"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["146"]["Name"] = [[feedbacksystemworking]];
+G2L["146"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["146"]["TextSize"] = 16;
+G2L["146"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["146"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["146"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["146"]["Text"] = [[¿FeedBack System Working?  ]];
-G2L["146"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["146"]["Text"] = [[- - -  ]];
+G2L["146"]["Name"] = [[FastSeparator]];
+G2L["146"]["BackgroundTransparency"] = 1;
+G2L["146"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.feedbacksystemworking.Frame
-G2L["147"] = Instance.new("Frame", G2L["146"]);
-G2L["147"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["147"]["Size"] = UDim2.new(0, 24, 0, 20);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.lookatmurder
+G2L["147"] = Instance.new("TextButton", G2L["117"]);
+G2L["147"]["TextWrapped"] = true;
+G2L["147"]["TextStrokeTransparency"] = 0;
+G2L["147"]["BorderSizePixel"] = 0;
+G2L["147"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["147"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["147"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["147"]["TextSize"] = 18;
+G2L["147"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["147"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["147"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["147"]["Name"] = [[lookatmurder]];
 G2L["147"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["147"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+G2L["147"]["Text"] = [[LookAt Murder  ]];
+G2L["147"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.feedbacksystemworking.UIGradient
-G2L["148"] = Instance.new("UIGradient", G2L["146"]);
-G2L["148"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.lookatmurder.Frame
+G2L["148"] = Instance.new("Frame", G2L["147"]);
+G2L["148"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["148"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["148"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["148"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.lookatmurder.UIGradient
+G2L["149"] = Instance.new("UIGradient", G2L["147"]);
+G2L["149"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.triggerbot
+G2L["14a"] = Instance.new("TextButton", G2L["117"]);
+G2L["14a"]["TextWrapped"] = true;
+G2L["14a"]["TextStrokeTransparency"] = 0;
+G2L["14a"]["BorderSizePixel"] = 0;
+G2L["14a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["14a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14a"]["TextSize"] = 18;
+G2L["14a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14a"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["14a"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["14a"]["Name"] = [[triggerbot]];
+G2L["14a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14a"]["Text"] = [[TriggerBot Murder [PC-Only]  ]];
+G2L["14a"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.triggerbot.Frame
+G2L["14b"] = Instance.new("Frame", G2L["14a"]);
+G2L["14b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["14b"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["14b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14b"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.triggerbot.UIGradient
+G2L["14c"] = Instance.new("UIGradient", G2L["14a"]);
+G2L["14c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback
+G2L["14d"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["14d"]["Active"] = true;
+G2L["14d"]["BorderSizePixel"] = 0;
+G2L["14d"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
+G2L["14d"]["TopImage"] = [[]];
+G2L["14d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14d"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["14d"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["14d"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14d"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["14d"]["Visible"] = false;
+G2L["14d"]["Name"] = [[ALT_page_feedback]];
+G2L["14d"]["BottomImage"] = [[]];
+-- Attributes
+G2L["14d"]:SetAttribute([[rate]], 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.UIListLayout
+G2L["14e"] = Instance.new("UIListLayout", G2L["14d"]);
+G2L["14e"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["14e"]["Padding"] = UDim.new(0, 5);
+G2L["14e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
-G2L["149"] = Instance.new("TextLabel", G2L["133"]);
-G2L["149"]["TextWrapped"] = true;
-G2L["149"]["BorderSizePixel"] = 0;
-G2L["149"]["TextScaled"] = true;
-G2L["149"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["149"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["149"]["TextSize"] = 16;
-G2L["149"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["149"]["LayoutOrder"] = 9;
-G2L["149"]["Size"] = UDim2.new(0, 347, 0, 231);
-G2L["149"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["149"]["Text"] = [[This section is used to track ratings for our script while respecting your privacy. We do not record personally identifiable information, such as usernames.
+G2L["14f"] = Instance.new("TextLabel", G2L["14d"]);
+G2L["14f"]["TextWrapped"] = true;
+G2L["14f"]["BorderSizePixel"] = 0;
+G2L["14f"]["TextScaled"] = true;
+G2L["14f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14f"]["TextSize"] = 16;
+G2L["14f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14f"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["14f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14f"]["Text"] = [[This script is dedicated to the entire Murder Mystery 2 exploit community]];
+G2L["14f"]["Name"] = [[Separator]];
+G2L["14f"]["BackgroundTransparency"] = 1;
+G2L["14f"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
-When you submit your review, the following are sent:
-
--Current PlaceId
--Exploit used
--The rating given by the user
--The text entered by the user in the FeedbackBox.
-
-We use feedback submitted in good faith to improve this GUI script and provide better support. Thank you!]];
-G2L["149"]["Name"] = [[Separator]];
-G2L["149"]["BackgroundTransparency"] = 1;
-G2L["149"]["Position"] = UDim2.new(0.014986376278102398, 0, -0.04179951176047325, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search
-G2L["14a"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["14a"]["Active"] = true;
-G2L["14a"]["BorderSizePixel"] = 0;
-G2L["14a"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
-G2L["14a"]["TopImage"] = [[]];
-G2L["14a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14a"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["14a"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["14a"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14a"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["14a"]["Visible"] = false;
-G2L["14a"]["Name"] = [[ALT_page_search]];
-G2L["14a"]["BottomImage"] = [[]];
--- Attributes
-G2L["14a"]:SetAttribute([[OLD_PAGE]], [[nil]]);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.UIListLayout
-G2L["14b"] = Instance.new("UIListLayout", G2L["14a"]);
-G2L["14b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["14b"]["Padding"] = UDim.new(0, 5);
-G2L["14b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.TextLabel
-G2L["14c"] = Instance.new("TextLabel", G2L["14a"]);
-G2L["14c"]["TextWrapped"] = true;
-G2L["14c"]["BorderSizePixel"] = 0;
-G2L["14c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14c"]["TextSize"] = 16;
-G2L["14c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14c"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["14c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14c"]["Text"] = [[search for anything]];
-G2L["14c"]["BackgroundTransparency"] = 1;
-G2L["14c"]["Position"] = UDim2.new(-0.00136239780113101, 0, 0.75, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template
-G2L["14d"] = Instance.new("Frame", G2L["14a"]);
-G2L["14d"]["ZIndex"] = 3;
-G2L["14d"]["BackgroundColor3"] = Color3.fromRGB(150, 150, 150);
-G2L["14d"]["Size"] = UDim2.new(0, 341, 0, 100);
-G2L["14d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14d"]["Position"] = UDim2.new(0.06666667014360428, 0, 0.2783018946647644, 0);
-G2L["14d"]["Visible"] = false;
-G2L["14d"]["Name"] = [[Template]];
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.Information
-G2L["14e"] = Instance.new("TextLabel", G2L["14d"]);
-G2L["14e"]["TextWrapped"] = true;
-G2L["14e"]["BorderSizePixel"] = 0;
-G2L["14e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["14e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14e"]["TextSize"] = 20;
-G2L["14e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14e"]["Size"] = UDim2.new(0, 248, 0, 44);
-G2L["14e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14e"]["Text"] = [[  %s in page %f - %s]];
-G2L["14e"]["Name"] = [[Information]];
-G2L["14e"]["BackgroundTransparency"] = 1;
-G2L["14e"]["Position"] = UDim2.new(2.2373590979896107e-08, 0, 0, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.UIGradient
-G2L["14f"] = Instance.new("UIGradient", G2L["14d"]);
-G2L["14f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(208, 208, 208))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewInPage
-G2L["150"] = Instance.new("TextButton", G2L["14d"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
+G2L["150"] = Instance.new("TextLabel", G2L["14d"]);
 G2L["150"]["TextWrapped"] = true;
+G2L["150"]["BorderSizePixel"] = 0;
 G2L["150"]["TextScaled"] = true;
-G2L["150"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
-G2L["150"]["TextSize"] = 14;
-G2L["150"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["150"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["150"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["150"]["TextSize"] = 16;
 G2L["150"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["150"]["Size"] = UDim2.new(0, 72, 0, 32);
-G2L["150"]["Name"] = [[ViewInPage]];
+G2L["150"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["150"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["150"]["Text"] = [[View in page]];
-G2L["150"]["Position"] = UDim2.new(0.7712609767913818, 0, 0.05999999865889549, 0);
+G2L["150"]["Text"] = [[I hope you find it useful!]];
+G2L["150"]["Name"] = [[Separator]];
+G2L["150"]["BackgroundTransparency"] = 1;
+G2L["150"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewPortFrame
-G2L["151"] = Instance.new("Frame", G2L["14d"]);
-G2L["151"]["ZIndex"] = 2;
-G2L["151"]["BackgroundColor3"] = Color3.fromRGB(177, 177, 177);
-G2L["151"]["Size"] = UDim2.new(0, 341, 0, 56);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
+G2L["151"] = Instance.new("TextLabel", G2L["14d"]);
+G2L["151"]["TextWrapped"] = true;
+G2L["151"]["BorderSizePixel"] = 0;
+G2L["151"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["151"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["151"]["TextSize"] = 16;
+G2L["151"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["151"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["151"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["151"]["Position"] = UDim2.new(0, 0, 0.4399999976158142, 0);
-G2L["151"]["Name"] = [[ViewPortFrame]];
+G2L["151"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
+G2L["151"]["Name"] = [[Separator]];
+G2L["151"]["BackgroundTransparency"] = 1;
+G2L["151"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewPortFrame.UIListLayout
-G2L["152"] = Instance.new("UIListLayout", G2L["151"]);
-G2L["152"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
-G2L["152"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["152"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.FeedBackBOX
+G2L["152"] = Instance.new("TextBox", G2L["14d"]);
+G2L["152"]["TextSize"] = 20;
+G2L["152"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["152"]["TextWrapped"] = true;
+G2L["152"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["152"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
+G2L["152"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["152"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["152"]["MultiLine"] = true;
+G2L["152"]["PlaceholderText"] = [[Put your thoughts, ideas, or whatever you  want here as long as it's related to the script's operation or something else...]];
+G2L["152"]["Size"] = UDim2.new(0, 317, 0, 131);
+G2L["152"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["152"]["Text"] = [[]];
+G2L["152"]["Position"] = UDim2.new(0.08557844907045364, 0, 0.41133004426956177, 0);
+G2L["152"]["Name"] = [[FeedBackBOX]];
+G2L["152"]["ClearTextOnFocus"] = false;
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewPortFrame.UIGradient
-G2L["153"] = Instance.new("UIGradient", G2L["151"]);
-G2L["153"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(208, 208, 208))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
+G2L["153"] = Instance.new("TextLabel", G2L["14d"]);
+G2L["153"]["TextWrapped"] = true;
+G2L["153"]["BorderSizePixel"] = 0;
+G2L["153"]["TextScaled"] = true;
+G2L["153"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["153"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["153"]["TextSize"] = 16;
+G2L["153"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["153"]["LayoutOrder"] = 6;
+G2L["153"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["153"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["153"]["Text"] = [[Select the boxes to choose the rating you give our script.]];
+G2L["153"]["Name"] = [[Separator]];
+G2L["153"]["BackgroundTransparency"] = 1;
+G2L["153"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ApplyInformation
-G2L["154"] = Instance.new("ModuleScript", G2L["14d"]);
-G2L["154"]["Name"] = [[ApplyInformation]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame
+G2L["154"] = Instance.new("Frame", G2L["14d"]);
+G2L["154"]["BackgroundColor3"] = Color3.fromRGB(92, 92, 92);
+G2L["154"]["LayoutOrder"] = 6;
+G2L["154"]["Size"] = UDim2.new(0, 296, 0, 62);
+G2L["154"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["154"]["Position"] = UDim2.new(0.06675749272108078, 0, 0.4956139624118805, 0);
+G2L["154"]["Name"] = [[RatingFrame]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.SearchSystem
-G2L["155"] = Instance.new("ModuleScript", G2L["14a"]);
-G2L["155"]["Name"] = [[SearchSystem]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star1
+G2L["155"] = Instance.new("TextButton", G2L["154"]);
+G2L["155"]["BorderSizePixel"] = 0;
+G2L["155"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["155"]["TextSize"] = 14;
+G2L["155"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["155"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["155"]["Size"] = UDim2.new(0, 56, 0, 61);
+G2L["155"]["Name"] = [[star1]];
+G2L["155"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["155"]["Text"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5
-G2L["156"] = Instance.new("ScrollingFrame", G2L["a"]);
-G2L["156"]["Active"] = true;
-G2L["156"]["BorderSizePixel"] = 0;
-G2L["156"]["CanvasSize"] = UDim2.new(0, 0, 0, 451);
-G2L["156"]["TopImage"] = [[]];
-G2L["156"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["156"]["BackgroundTransparency"] = 0.9599999785423279;
-G2L["156"]["Size"] = UDim2.new(0, 367, 0, 228);
-G2L["156"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["156"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["156"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
-G2L["156"]["Visible"] = false;
-G2L["156"]["Name"] = [[page_5]];
-G2L["156"]["BottomImage"] = [[]];
--- Attributes
-G2L["156"]:SetAttribute([[WIP]], true);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.UIListLayout
+G2L["156"] = Instance.new("UIListLayout", G2L["154"]);
+G2L["156"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["156"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["156"]["Padding"] = UDim.new(0, 2);
+G2L["156"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.UIListLayout
-G2L["157"] = Instance.new("UIListLayout", G2L["156"]);
-G2L["157"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
-G2L["157"]["Padding"] = UDim.new(0, 5);
-G2L["157"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star2
+G2L["157"] = Instance.new("TextButton", G2L["154"]);
+G2L["157"]["BorderSizePixel"] = 0;
+G2L["157"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["157"]["TextSize"] = 14;
+G2L["157"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["157"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["157"]["Size"] = UDim2.new(0, 56, 0, 61);
+G2L["157"]["Name"] = [[star2]];
+G2L["157"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["157"]["Text"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TemplateButton
-G2L["158"] = Instance.new("TextButton", G2L["156"]);
-G2L["158"]["TextWrapped"] = true;
-G2L["158"]["TextStrokeTransparency"] = 0;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star3
+G2L["158"] = Instance.new("TextButton", G2L["154"]);
 G2L["158"]["BorderSizePixel"] = 0;
-G2L["158"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["158"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["158"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["158"]["TextSize"] = 20;
-G2L["158"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["158"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["158"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["158"]["Name"] = [[TemplateButton]];
+G2L["158"]["TextSize"] = 14;
+G2L["158"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["158"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["158"]["Size"] = UDim2.new(0, 56, 0, 61);
+G2L["158"]["Name"] = [[star3]];
 G2L["158"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["158"]["Text"] = [[Tell Sherrif And Murderer in Chat  ]];
-G2L["158"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["158"]["Text"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TemplateButton.UIGradient
-G2L["159"] = Instance.new("UIGradient", G2L["158"]);
-G2L["159"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star4
+G2L["159"] = Instance.new("TextButton", G2L["154"]);
+G2L["159"]["BorderSizePixel"] = 0;
+G2L["159"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["159"]["TextSize"] = 14;
+G2L["159"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["159"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["159"]["Size"] = UDim2.new(0, 56, 0, 61);
+G2L["159"]["Name"] = [[star4]];
+G2L["159"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["159"]["Text"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.tellblueandredinchat
-G2L["15a"] = Instance.new("TextButton", G2L["156"]);
-G2L["15a"]["TextWrapped"] = true;
-G2L["15a"]["TextStrokeTransparency"] = 0;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.star5
+G2L["15a"] = Instance.new("TextButton", G2L["154"]);
 G2L["15a"]["BorderSizePixel"] = 0;
-G2L["15a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["15a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15a"]["TextSize"] = 20;
-G2L["15a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["15a"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["15a"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["15a"]["Name"] = [[tellblueandredinchat]];
+G2L["15a"]["TextSize"] = 14;
+G2L["15a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15a"]["Size"] = UDim2.new(0, 56, 0, 61);
+G2L["15a"]["Name"] = [[star5]];
 G2L["15a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15a"]["Text"] = [[Tell Blue And Red In Chat  ]];
-G2L["15a"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["15a"]["Text"] = [[]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.tellblueandredinchat.Frame
-G2L["15b"] = Instance.new("Frame", G2L["15a"]);
-G2L["15b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["15b"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["15b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15b"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.RatingSystem
+G2L["15b"] = Instance.new("LocalScript", G2L["154"]);
+G2L["15b"]["Name"] = [[RatingSystem]];
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.tellblueandredinchat.UIGradient
-G2L["15c"] = Instance.new("UIGradient", G2L["15a"]);
-G2L["15c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.starcount
+G2L["15c"] = Instance.new("TextLabel", G2L["14d"]);
+G2L["15c"]["TextWrapped"] = true;
+G2L["15c"]["BorderSizePixel"] = 0;
+G2L["15c"]["TextScaled"] = true;
+G2L["15c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15c"]["TextSize"] = 16;
+G2L["15c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15c"]["LayoutOrder"] = 6;
+G2L["15c"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["15c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15c"]["Text"] = [[zero stars (0)]];
+G2L["15c"]["Name"] = [[starcount]];
+G2L["15c"]["BackgroundTransparency"] = 1;
+G2L["15c"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.FastSeparator
-G2L["15d"] = Instance.new("TextLabel", G2L["156"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.FastSeparator
+G2L["15d"] = Instance.new("TextLabel", G2L["14d"]);
 G2L["15d"]["TextWrapped"] = true;
 G2L["15d"]["BorderSizePixel"] = 0;
 G2L["15d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["15d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["15d"]["TextSize"] = 16;
 G2L["15d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15d"]["LayoutOrder"] = 7;
 G2L["15d"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["15d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15d"]["Text"] = [[- - -  ]];
+G2L["15d"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
 G2L["15d"]["Name"] = [[FastSeparator]];
 G2L["15d"]["BackgroundTransparency"] = 1;
-G2L["15d"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+G2L["15d"]["Position"] = UDim2.new(0.0286103542894125, 0, 0.25438597798347473, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringmurderclientsided
-G2L["15e"] = Instance.new("TextButton", G2L["156"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.TemplateButton
+G2L["15e"] = Instance.new("TextButton", G2L["14d"]);
 G2L["15e"]["TextWrapped"] = true;
 G2L["15e"]["TextStrokeTransparency"] = 0;
 G2L["15e"]["BorderSizePixel"] = 0;
@@ -3729,599 +3742,1528 @@ G2L["15e"]["TextSize"] = 20;
 G2L["15e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["15e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
 G2L["15e"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["15e"]["Name"] = [[bringmurderclientsided]];
+G2L["15e"]["LayoutOrder"] = 8;
+G2L["15e"]["Name"] = [[TemplateButton]];
 G2L["15e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15e"]["Text"] = [[Bring Murder (CLIENT-SIDED)  ]];
-G2L["15e"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["15e"]["Text"] = [[Submit Feedback  ]];
+G2L["15e"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringmurderclientsided.Frame
-G2L["15f"] = Instance.new("Frame", G2L["15e"]);
-G2L["15f"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["15f"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["15f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15f"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.TemplateButton.UIGradient
+G2L["15f"] = Instance.new("UIGradient", G2L["15e"]);
+G2L["15f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringmurderclientsided.UIGradient
-G2L["160"] = Instance.new("UIGradient", G2L["15e"]);
-G2L["160"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.feedbacksystemworking
+G2L["160"] = Instance.new("TextButton", G2L["14d"]);
+G2L["160"]["TextWrapped"] = true;
+G2L["160"]["Active"] = false;
+G2L["160"]["BorderSizePixel"] = 0;
+G2L["160"]["AutoButtonColor"] = false;
+G2L["160"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["160"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["160"]["TextSize"] = 20;
+G2L["160"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["160"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["160"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["160"]["Name"] = [[feedbacksystemworking]];
+G2L["160"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["160"]["Text"] = [[¿FeedBack System Working?  ]];
+G2L["160"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringsheriffclientsided
-G2L["161"] = Instance.new("TextButton", G2L["156"]);
-G2L["161"]["TextWrapped"] = true;
-G2L["161"]["TextStrokeTransparency"] = 0;
-G2L["161"]["BorderSizePixel"] = 0;
-G2L["161"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["161"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["161"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["161"]["TextSize"] = 20;
-G2L["161"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["161"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["161"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["161"]["Name"] = [[bringsheriffclientsided]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.feedbacksystemworking.Frame
+G2L["161"] = Instance.new("Frame", G2L["160"]);
+G2L["161"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["161"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["161"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["161"]["Text"] = [[Bring Sheriff (CLIENT-SIDED)  ]];
-G2L["161"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+G2L["161"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringsheriffclientsided.Frame
-G2L["162"] = Instance.new("Frame", G2L["161"]);
-G2L["162"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["162"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["162"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["162"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.feedbacksystemworking.UIGradient
+G2L["162"] = Instance.new("UIGradient", G2L["160"]);
+G2L["162"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringsheriffclientsided.UIGradient
-G2L["163"] = Instance.new("UIGradient", G2L["161"]);
-G2L["163"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.Separator
+G2L["163"] = Instance.new("TextLabel", G2L["14d"]);
+G2L["163"]["TextWrapped"] = true;
+G2L["163"]["BorderSizePixel"] = 0;
+G2L["163"]["TextScaled"] = true;
+G2L["163"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["163"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["163"]["TextSize"] = 16;
+G2L["163"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["163"]["LayoutOrder"] = 9;
+G2L["163"]["Size"] = UDim2.new(0, 347, 0, 231);
+G2L["163"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["163"]["Text"] = [[This section is used to track ratings for our script while respecting your privacy. We do not record personally identifiable information, such as usernames.
+
+When you submit your review, the following are sent:
+
+-Current PlaceId
+-Exploit used
+-The rating given by the user
+-The text entered by the user in the FeedbackBox.
+
+We use feedback submitted in good faith to improve this GUI script and provide better support. Thank you!]];
+G2L["163"]["Name"] = [[Separator]];
+G2L["163"]["BackgroundTransparency"] = 1;
+G2L["163"]["Position"] = UDim2.new(0.014986376278102398, 0, -0.04179951176047325, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search
+G2L["164"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["164"]["Active"] = true;
+G2L["164"]["BorderSizePixel"] = 0;
+G2L["164"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
+G2L["164"]["TopImage"] = [[]];
+G2L["164"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["164"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["164"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["164"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["164"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["164"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["164"]["Visible"] = false;
+G2L["164"]["Name"] = [[ALT_page_search]];
+G2L["164"]["BottomImage"] = [[]];
+-- Attributes
+G2L["164"]:SetAttribute([[OLD_PAGE]], [[nil]]);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.UIListLayout
+G2L["165"] = Instance.new("UIListLayout", G2L["164"]);
+G2L["165"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["165"]["Padding"] = UDim.new(0, 5);
+G2L["165"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.TextLabel
+G2L["166"] = Instance.new("TextLabel", G2L["164"]);
+G2L["166"]["TextWrapped"] = true;
+G2L["166"]["BorderSizePixel"] = 0;
+G2L["166"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["166"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["166"]["TextSize"] = 16;
+G2L["166"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["166"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["166"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["166"]["Text"] = [[search for anything]];
+G2L["166"]["BackgroundTransparency"] = 1;
+G2L["166"]["Position"] = UDim2.new(-0.00136239780113101, 0, 0.75, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template
+G2L["167"] = Instance.new("Frame", G2L["164"]);
+G2L["167"]["ZIndex"] = 3;
+G2L["167"]["BackgroundColor3"] = Color3.fromRGB(150, 150, 150);
+G2L["167"]["Size"] = UDim2.new(0, 341, 0, 100);
+G2L["167"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["167"]["Position"] = UDim2.new(0.06666667014360428, 0, 0.2783018946647644, 0);
+G2L["167"]["Visible"] = false;
+G2L["167"]["Name"] = [[Template]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.Information
+G2L["168"] = Instance.new("TextLabel", G2L["167"]);
+G2L["168"]["TextWrapped"] = true;
+G2L["168"]["BorderSizePixel"] = 0;
+G2L["168"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["168"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["168"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["168"]["TextSize"] = 20;
+G2L["168"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["168"]["Size"] = UDim2.new(0, 248, 0, 44);
+G2L["168"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["168"]["Text"] = [[  %s in page %f - %s]];
+G2L["168"]["Name"] = [[Information]];
+G2L["168"]["BackgroundTransparency"] = 1;
+G2L["168"]["Position"] = UDim2.new(2.2373590979896107e-08, 0, 0, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.UIGradient
+G2L["169"] = Instance.new("UIGradient", G2L["167"]);
+G2L["169"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(208, 208, 208))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewInPage
+G2L["16a"] = Instance.new("TextButton", G2L["167"]);
+G2L["16a"]["TextWrapped"] = true;
+G2L["16a"]["TextScaled"] = true;
+G2L["16a"]["BackgroundColor3"] = Color3.fromRGB(95, 95, 95);
+G2L["16a"]["TextSize"] = 14;
+G2L["16a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16a"]["Size"] = UDim2.new(0, 72, 0, 32);
+G2L["16a"]["Name"] = [[ViewInPage]];
+G2L["16a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16a"]["Text"] = [[View in page]];
+G2L["16a"]["Position"] = UDim2.new(0.7712609767913818, 0, 0.05999999865889549, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewPortFrame
+G2L["16b"] = Instance.new("Frame", G2L["167"]);
+G2L["16b"]["ZIndex"] = 2;
+G2L["16b"]["BackgroundColor3"] = Color3.fromRGB(177, 177, 177);
+G2L["16b"]["Size"] = UDim2.new(0, 341, 0, 56);
+G2L["16b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16b"]["Position"] = UDim2.new(0, 0, 0.4399999976158142, 0);
+G2L["16b"]["Name"] = [[ViewPortFrame]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewPortFrame.UIListLayout
+G2L["16c"] = Instance.new("UIListLayout", G2L["16b"]);
+G2L["16c"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["16c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["16c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ViewPortFrame.UIGradient
+G2L["16d"] = Instance.new("UIGradient", G2L["16b"]);
+G2L["16d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(208, 208, 208))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.Template.ApplyInformation
+G2L["16e"] = Instance.new("ModuleScript", G2L["167"]);
+G2L["16e"]["Name"] = [[ApplyInformation]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.LocalScript
+G2L["16f"] = Instance.new("LocalScript", G2L["164"]);
+
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5
+G2L["170"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["170"]["Active"] = true;
+G2L["170"]["BorderSizePixel"] = 0;
+G2L["170"]["CanvasSize"] = UDim2.new(0, 0, 0, 574);
+G2L["170"]["TopImage"] = [[]];
+G2L["170"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["170"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["170"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["170"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["170"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["170"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["170"]["Visible"] = false;
+G2L["170"]["Name"] = [[page_5]];
+G2L["170"]["BottomImage"] = [[]];
+-- Attributes
+G2L["170"]:SetAttribute([[WIP]], true);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.UIListLayout
+G2L["171"] = Instance.new("UIListLayout", G2L["170"]);
+G2L["171"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["171"]["Padding"] = UDim.new(0, 5);
+G2L["171"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TemplateButton
-G2L["164"] = Instance.new("TextButton", G2L["156"]);
-G2L["164"]["TextWrapped"] = true;
-G2L["164"]["TextStrokeTransparency"] = 0;
-G2L["164"]["BorderSizePixel"] = 0;
-G2L["164"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["164"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["164"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["164"]["TextSize"] = 20;
-G2L["164"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["164"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["164"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["164"]["Name"] = [[TemplateButton]];
-G2L["164"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["164"]["Text"] = [[God-Mode (Kills You)  ]];
-G2L["164"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+G2L["172"] = Instance.new("TextButton", G2L["170"]);
+G2L["172"]["TextWrapped"] = true;
+G2L["172"]["TextStrokeTransparency"] = 0;
+G2L["172"]["BorderSizePixel"] = 0;
+G2L["172"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["172"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["172"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["172"]["TextSize"] = 20;
+G2L["172"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["172"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["172"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["172"]["Name"] = [[TemplateButton]];
+G2L["172"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["172"]["Text"] = [[Tell Sherrif And Murderer in Chat  ]];
+G2L["172"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TemplateButton.UIGradient
-G2L["165"] = Instance.new("UIGradient", G2L["164"]);
-G2L["165"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+G2L["173"] = Instance.new("UIGradient", G2L["172"]);
+G2L["173"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.safezonefarm
-G2L["166"] = Instance.new("TextButton", G2L["156"]);
-G2L["166"]["TextWrapped"] = true;
-G2L["166"]["TextStrokeTransparency"] = 0;
-G2L["166"]["BorderSizePixel"] = 0;
-G2L["166"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["166"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["166"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["166"]["TextSize"] = 20;
-G2L["166"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["166"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["166"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["166"]["Name"] = [[safezonefarm]];
-G2L["166"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["166"]["Text"] = [[Safe-Zone Farm  ]];
-G2L["166"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.tellblueandredinchat
+G2L["174"] = Instance.new("TextButton", G2L["170"]);
+G2L["174"]["TextWrapped"] = true;
+G2L["174"]["TextStrokeTransparency"] = 0;
+G2L["174"]["BorderSizePixel"] = 0;
+G2L["174"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["174"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["174"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["174"]["TextSize"] = 20;
+G2L["174"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["174"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["174"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["174"]["Name"] = [[tellblueandredinchat]];
+G2L["174"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["174"]["Text"] = [[Tell Blue And Red In Chat  ]];
+G2L["174"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.safezonefarm.Frame
-G2L["167"] = Instance.new("Frame", G2L["166"]);
-G2L["167"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["167"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["167"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["167"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.tellblueandredinchat.Frame
+G2L["175"] = Instance.new("Frame", G2L["174"]);
+G2L["175"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["175"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["175"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["175"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.safezonefarm.UIGradient
-G2L["168"] = Instance.new("UIGradient", G2L["166"]);
-G2L["168"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.coinsfarm
-G2L["169"] = Instance.new("TextButton", G2L["156"]);
-G2L["169"]["TextWrapped"] = true;
-G2L["169"]["TextStrokeTransparency"] = 0;
-G2L["169"]["BorderSizePixel"] = 0;
-G2L["169"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["169"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["169"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["169"]["TextSize"] = 20;
-G2L["169"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["169"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["169"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["169"]["Name"] = [[coinsfarm]];
-G2L["169"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["169"]["Text"] = [[Coins-Farm [WIP]  ]];
-G2L["169"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.coinsfarm.Frame
-G2L["16a"] = Instance.new("Frame", G2L["169"]);
-G2L["16a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["16a"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["16a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16a"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.coinsfarm.UIGradient
-G2L["16b"] = Instance.new("UIGradient", G2L["169"]);
-G2L["16b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.tellblueandredinchat.UIGradient
+G2L["176"] = Instance.new("UIGradient", G2L["174"]);
+G2L["176"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.FastSeparator
-G2L["16c"] = Instance.new("TextLabel", G2L["156"]);
-G2L["16c"]["TextWrapped"] = true;
-G2L["16c"]["BorderSizePixel"] = 0;
-G2L["16c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16c"]["TextSize"] = 16;
-G2L["16c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16c"]["Size"] = UDim2.new(0, 356, 0, 23);
-G2L["16c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16c"]["Text"] = [[- - -  ]];
-G2L["16c"]["Name"] = [[FastSeparator]];
-G2L["16c"]["BackgroundTransparency"] = 1;
-G2L["16c"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenyourfriendiskilled
-G2L["16d"] = Instance.new("TextButton", G2L["156"]);
-G2L["16d"]["TextWrapped"] = true;
-G2L["16d"]["TextStrokeTransparency"] = 0;
-G2L["16d"]["BorderSizePixel"] = 0;
-G2L["16d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["16d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16d"]["TextSize"] = 18;
-G2L["16d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["16d"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["16d"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["16d"]["Name"] = [[notifywhenyourfriendiskilled]];
-G2L["16d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16d"]["Text"] = [[Notify When Your Friend Is Killed  ]];
-G2L["16d"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenyourfriendiskilled.Frame
-G2L["16e"] = Instance.new("Frame", G2L["16d"]);
-G2L["16e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["16e"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["16e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16e"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenyourfriendiskilled.UIGradient
-G2L["16f"] = Instance.new("UIGradient", G2L["16d"]);
-G2L["16f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhensherrifiskilled
-G2L["170"] = Instance.new("TextButton", G2L["156"]);
-G2L["170"]["TextWrapped"] = true;
-G2L["170"]["TextStrokeTransparency"] = 0;
-G2L["170"]["BorderSizePixel"] = 0;
-G2L["170"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["170"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["170"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["170"]["TextSize"] = 20;
-G2L["170"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["170"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["170"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["170"]["Name"] = [[notifywhensherrifiskilled]];
-G2L["170"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["170"]["Text"] = [[Notify When Sheriff Is Killed  ]];
-G2L["170"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhensherrifiskilled.Frame
-G2L["171"] = Instance.new("Frame", G2L["170"]);
-G2L["171"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["171"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["171"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["171"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhensherrifiskilled.UIGradient
-G2L["172"] = Instance.new("UIGradient", G2L["170"]);
-G2L["172"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenaplayeriskilled
-G2L["173"] = Instance.new("TextButton", G2L["156"]);
-G2L["173"]["TextWrapped"] = true;
-G2L["173"]["TextStrokeTransparency"] = 0;
-G2L["173"]["BorderSizePixel"] = 0;
-G2L["173"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["173"]["TextXAlignment"] = Enum.TextXAlignment.Right;
-G2L["173"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["173"]["TextSize"] = 20;
-G2L["173"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["173"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
-G2L["173"]["Size"] = UDim2.new(0, 320, 0, 34);
-G2L["173"]["Name"] = [[notifywhenaplayeriskilled]];
-G2L["173"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["173"]["Text"] = [[Notify When A Player Is Killed  ]];
-G2L["173"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenaplayeriskilled.Frame
-G2L["174"] = Instance.new("Frame", G2L["173"]);
-G2L["174"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["174"]["Size"] = UDim2.new(0, 24, 0, 20);
-G2L["174"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["174"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenaplayeriskilled.UIGradient
-G2L["175"] = Instance.new("UIGradient", G2L["173"]);
-G2L["175"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
--- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.HandlerV5
-G2L["176"] = Instance.new("LocalScript", G2L["156"]);
-G2L["176"]["Name"] = [[HandlerV5]];
-
--- StarterGui.MurderD0llan.MainWindow.StarterLabel
-G2L["177"] = Instance.new("TextLabel", G2L["2"]);
+G2L["177"] = Instance.new("TextLabel", G2L["170"]);
 G2L["177"]["TextWrapped"] = true;
 G2L["177"]["BorderSizePixel"] = 0;
-G2L["177"]["TextScaled"] = true;
 G2L["177"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["177"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["177"]["TextSize"] = 14;
-G2L["177"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["177"]["Size"] = UDim2.new(0, 483, 0, 228);
+G2L["177"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["177"]["TextSize"] = 16;
+G2L["177"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["177"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["177"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["177"]["Text"] = [[By G0bbyD0llan]];
-G2L["177"]["Name"] = [[StarterLabel]];
-G2L["177"]["Visible"] = false;
-G2L["177"]["BackgroundTransparency"] = 0.20000000298023224;
-G2L["177"]["Position"] = UDim2.new(0, 0, 0.11583017557859421, 0);
+G2L["177"]["Text"] = [[- - -  ]];
+G2L["177"]["Name"] = [[FastSeparator]];
+G2L["177"]["BackgroundTransparency"] = 1;
+G2L["177"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
 
--- StarterGui.MurderD0llan.MainWindow.ACTIVATE_CLOSE
-G2L["178"] = Instance.new("Frame", G2L["2"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringmurderclientsided
+G2L["178"] = Instance.new("TextButton", G2L["170"]);
+G2L["178"]["TextWrapped"] = true;
+G2L["178"]["TextStrokeTransparency"] = 0;
 G2L["178"]["BorderSizePixel"] = 0;
+G2L["178"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["178"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["178"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["178"]["BackgroundTransparency"] = 1;
-G2L["178"]["Size"] = UDim2.new(0, 482, 0, 259);
+G2L["178"]["TextSize"] = 20;
+G2L["178"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["178"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["178"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["178"]["Name"] = [[bringmurderclientsided]];
 G2L["178"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["178"]["Visible"] = false;
-G2L["178"]["Name"] = [[ACTIVATE_CLOSE]];
--- Attributes
-G2L["178"]:SetAttribute([[CHANGE_TO_TRIGGER]], false);
+G2L["178"]["Text"] = [[Bring Murder (CLIENT-SIDED)  ]];
+G2L["178"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.MainWindow.NOTIFICATION_TEXT
-G2L["179"] = Instance.new("TextLabel", G2L["2"]);
-G2L["179"]["TextWrapped"] = true;
-G2L["179"]["TextStrokeTransparency"] = 0;
-G2L["179"]["BorderSizePixel"] = 0;
-G2L["179"]["TextScaled"] = true;
-G2L["179"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["179"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["179"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["179"]["TextSize"] = 14;
-G2L["179"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["179"]["Size"] = UDim2.new(0, 327, 0, 30);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringmurderclientsided.Frame
+G2L["179"] = Instance.new("Frame", G2L["178"]);
+G2L["179"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["179"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["179"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["179"]["Name"] = [[NOTIFICATION_TEXT]];
-G2L["179"]["Visible"] = false;
-G2L["179"]["BackgroundTransparency"] = 0.9900000095367432;
-G2L["179"]["Position"] = UDim2.new(0.16149067878723145, 0, 0.8146718144416809, 0);
--- Attributes
-G2L["179"]:SetAttribute([[TEXT_TO_DISPLAY]], [[Label]]);
+G2L["179"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.MainWindow.searchHere
-G2L["17a"] = Instance.new("TextBox", G2L["2"]);
-G2L["17a"]["ZIndex"] = 20;
-G2L["17a"]["TextSize"] = 14;
-G2L["17a"]["TextWrapped"] = true;
-G2L["17a"]["TextScaled"] = true;
-G2L["17a"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
-G2L["17a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["17a"]["PlaceholderText"] = [[enter to search here...]];
-G2L["17a"]["Size"] = UDim2.new(0, 113, 0, 17);
-G2L["17a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17a"]["Text"] = [[]];
-G2L["17a"]["Position"] = UDim2.new(0.761904776096344, 0, 0.9273278713226318, 0);
-G2L["17a"]["Visible"] = false;
-G2L["17a"]["Name"] = [[searchHere]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringmurderclientsided.UIGradient
+G2L["17a"] = Instance.new("UIGradient", G2L["178"]);
+G2L["17a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.MainWindow.searchHere.SearchSystemController
-G2L["17b"] = Instance.new("LocalScript", G2L["17a"]);
-G2L["17b"]["Name"] = [[SearchSystemController]];
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringsheriffclientsided
+G2L["17b"] = Instance.new("TextButton", G2L["170"]);
+G2L["17b"]["TextWrapped"] = true;
+G2L["17b"]["TextStrokeTransparency"] = 0;
+G2L["17b"]["BorderSizePixel"] = 0;
+G2L["17b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17b"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["17b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17b"]["TextSize"] = 20;
+G2L["17b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17b"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["17b"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["17b"]["Name"] = [[bringsheriffclientsided]];
+G2L["17b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17b"]["Text"] = [[Bring Sheriff (CLIENT-SIDED)  ]];
+G2L["17b"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.Themes
-G2L["17c"] = Instance.new("TextLabel", G2L["1"]);
-G2L["17c"]["BorderSizePixel"] = 0;
-G2L["17c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17c"]["TextSize"] = 14;
-G2L["17c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringsheriffclientsided.Frame
+G2L["17c"] = Instance.new("Frame", G2L["17b"]);
+G2L["17c"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["17c"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["17c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17c"]["Name"] = [[Themes]];
-G2L["17c"]["Visible"] = false;
+G2L["17c"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.Themes.Original
-G2L["17d"] = Instance.new("TextLabel", G2L["17c"]);
-G2L["17d"]["BorderSizePixel"] = 0;
-G2L["17d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17d"]["TextSize"] = 14;
-G2L["17d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17d"]["Name"] = [[Original]];
-G2L["17d"]["Visible"] = false;
--- Attributes
-G2L["17d"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
-G2L["17d"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(61, 61, 61));
-G2L["17d"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
-G2L["17d"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(31, 31, 31));
-G2L["17d"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(46, 46, 46));
-G2L["17d"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(241, 241, 241));
-G2L["17d"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
-G2L["17d"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.bringsheriffclientsided.UIGradient
+G2L["17d"] = Instance.new("UIGradient", G2L["17b"]);
+G2L["17d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.Themes.Inferno
-G2L["17e"] = Instance.new("TextLabel", G2L["17c"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TemplateButton
+G2L["17e"] = Instance.new("TextButton", G2L["170"]);
+G2L["17e"]["TextWrapped"] = true;
+G2L["17e"]["TextStrokeTransparency"] = 0;
 G2L["17e"]["BorderSizePixel"] = 0;
+G2L["17e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17e"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["17e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17e"]["TextSize"] = 14;
-G2L["17e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17e"]["TextSize"] = 20;
+G2L["17e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17e"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["17e"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["17e"]["Name"] = [[TemplateButton]];
 G2L["17e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17e"]["Name"] = [[Inferno]];
-G2L["17e"]["Visible"] = false;
--- Attributes
-G2L["17e"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(255, 81, 0));
-G2L["17e"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(121, 41, 31));
-G2L["17e"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
-G2L["17e"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(51, 0, 0));
-G2L["17e"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(81, 21, 21));
-G2L["17e"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 201, 181));
-G2L["17e"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(185, 158, 24)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 101, 0))});
-G2L["17e"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["17e"]["Text"] = [[God-Mode (Kills You)  ]];
+G2L["17e"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
 
--- StarterGui.MurderD0llan.Themes.LightSoft
-G2L["17f"] = Instance.new("TextLabel", G2L["17c"]);
-G2L["17f"]["BorderSizePixel"] = 0;
-G2L["17f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17f"]["TextSize"] = 14;
-G2L["17f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17f"]["Name"] = [[LightSoft]];
-G2L["17f"]["Visible"] = false;
--- Attributes
-G2L["17f"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
-G2L["17f"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(201, 201, 201));
-G2L["17f"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
-G2L["17f"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(221, 221, 221));
-G2L["17f"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(241, 241, 241));
-G2L["17f"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(31, 31, 31));
-G2L["17f"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(241, 241, 241)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 121, 216))});
-G2L["17f"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TemplateButton.UIGradient
+G2L["17f"] = Instance.new("UIGradient", G2L["17e"]);
+G2L["17f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.Themes.Midnight
-G2L["180"] = Instance.new("TextLabel", G2L["17c"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.safezonefarm
+G2L["180"] = Instance.new("TextButton", G2L["170"]);
+G2L["180"]["TextWrapped"] = true;
+G2L["180"]["TextStrokeTransparency"] = 0;
 G2L["180"]["BorderSizePixel"] = 0;
+G2L["180"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["180"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["180"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["180"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["180"]["TextSize"] = 14;
-G2L["180"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["180"]["TextSize"] = 20;
+G2L["180"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["180"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["180"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["180"]["Name"] = [[safezonefarm]];
 G2L["180"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["180"]["Name"] = [[Midnight]];
-G2L["180"]["Visible"] = false;
--- Attributes
-G2L["180"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 151, 255));
-G2L["180"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 31, 51));
-G2L["180"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 31, 61));
-G2L["180"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(11, 11, 21));
-G2L["180"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(21, 21, 41));
-G2L["180"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(201, 201, 255));
-G2L["180"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(44, 44, 130)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 151, 255))});
-G2L["180"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["180"]["Text"] = [[Safe-Zone Farm  ]];
+G2L["180"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.Themes.ForestGreen
-G2L["181"] = Instance.new("TextLabel", G2L["17c"]);
-G2L["181"]["BorderSizePixel"] = 0;
-G2L["181"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["181"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["181"]["TextSize"] = 14;
-G2L["181"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.safezonefarm.Frame
+G2L["181"] = Instance.new("Frame", G2L["180"]);
+G2L["181"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["181"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["181"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["181"]["Name"] = [[ForestGreen]];
-G2L["181"]["Visible"] = false;
--- Attributes
-G2L["181"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(81, 201, 121));
-G2L["181"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(51, 101, 61));
-G2L["181"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(201, 51, 51));
-G2L["181"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(16, 31, 16));
-G2L["181"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(31, 61, 31));
-G2L["181"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(211, 255, 221));
-G2L["181"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(40, 146, 134)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(81, 201, 121))});
-G2L["181"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["181"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.Themes.Terminal
-G2L["182"] = Instance.new("TextLabel", G2L["17c"]);
-G2L["182"]["BorderSizePixel"] = 0;
-G2L["182"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["182"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["182"]["TextSize"] = 14;
-G2L["182"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["182"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["182"]["Name"] = [[Terminal]];
-G2L["182"]["Visible"] = false;
--- Attributes
-G2L["182"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 255, 0));
-G2L["182"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 255, 31));
-G2L["182"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
-G2L["182"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(0, 0, 0));
-G2L["182"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(16, 16, 16));
-G2L["182"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(0, 255, 0));
-G2L["182"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 0))});
-G2L["182"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.safezonefarm.UIGradient
+G2L["182"] = Instance.new("UIGradient", G2L["180"]);
+G2L["182"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.Themes.MonoChrome
-G2L["183"] = Instance.new("TextLabel", G2L["17c"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.coinsfarm
+G2L["183"] = Instance.new("TextButton", G2L["170"]);
+G2L["183"]["TextWrapped"] = true;
+G2L["183"]["TextStrokeTransparency"] = 0;
 G2L["183"]["BorderSizePixel"] = 0;
+G2L["183"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["183"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["183"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["183"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["183"]["TextSize"] = 14;
-G2L["183"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["183"]["TextSize"] = 20;
+G2L["183"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["183"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["183"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["183"]["Name"] = [[coinsfarm]];
 G2L["183"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["183"]["Name"] = [[MonoChrome]];
-G2L["183"]["Visible"] = false;
--- Attributes
-G2L["183"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(201, 201, 201));
-G2L["183"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(101, 101, 101));
-G2L["183"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 51, 51));
-G2L["183"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(41, 41, 41));
-G2L["183"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(61, 61, 61));
-G2L["183"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 255, 255));
-G2L["183"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
-G2L["183"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["183"]["Text"] = [[Coins-Farm [WIP]  ]];
+G2L["183"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
 
--- StarterGui.MurderD0llan.Themes.SolarizedLight
-G2L["184"] = Instance.new("TextLabel", G2L["17c"]);
-G2L["184"]["BorderSizePixel"] = 0;
-G2L["184"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["184"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["184"]["TextSize"] = 14;
-G2L["184"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.coinsfarm.Frame
+G2L["184"] = Instance.new("Frame", G2L["183"]);
+G2L["184"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["184"]["Size"] = UDim2.new(0, 24, 0, 20);
 G2L["184"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["184"]["Name"] = [[SolarizedLight]];
-G2L["184"]["Visible"] = false;
--- Attributes
-G2L["184"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(39, 140, 211));
-G2L["184"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(148, 162, 162));
-G2L["184"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(221, 51, 48));
-G2L["184"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(254, 247, 228));
-G2L["184"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(239, 233, 214));
-G2L["184"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(102, 124, 132));
-G2L["184"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 140, 211)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(211, 211, 211))});
-G2L["184"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["184"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
 
--- StarterGui.MurderD0llan.Themes.IcyBlue
-G2L["185"] = Instance.new("TextLabel", G2L["17c"]);
-G2L["185"]["BorderSizePixel"] = 0;
-G2L["185"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["185"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["185"]["TextSize"] = 14;
-G2L["185"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["185"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["185"]["Name"] = [[IcyBlue]];
-G2L["185"]["Visible"] = false;
--- Attributes
-G2L["185"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 181, 255));
-G2L["185"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(81, 121, 151));
-G2L["185"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 81));
-G2L["185"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(21, 41, 61));
-G2L["185"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(41, 61, 81));
-G2L["185"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(221, 241, 255));
-G2L["185"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(21, 51, 150)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 255))});
-G2L["185"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.coinsfarm.UIGradient
+G2L["185"] = Instance.new("UIGradient", G2L["183"]);
+G2L["185"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
--- StarterGui.MurderD0llan.Themes.NeonViolet
-G2L["186"] = Instance.new("TextLabel", G2L["17c"]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.FastSeparator
+G2L["186"] = Instance.new("TextLabel", G2L["170"]);
+G2L["186"]["TextWrapped"] = true;
 G2L["186"]["BorderSizePixel"] = 0;
 G2L["186"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["186"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["186"]["TextSize"] = 14;
-G2L["186"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["186"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["186"]["TextSize"] = 16;
+G2L["186"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["186"]["Size"] = UDim2.new(0, 356, 0, 23);
 G2L["186"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["186"]["Name"] = [[NeonViolet]];
-G2L["186"]["Visible"] = false;
+G2L["186"]["Text"] = [[- - -  ]];
+G2L["186"]["Name"] = [[FastSeparator]];
+G2L["186"]["BackgroundTransparency"] = 1;
+G2L["186"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenyourfriendiskilled
+G2L["187"] = Instance.new("TextButton", G2L["170"]);
+G2L["187"]["TextWrapped"] = true;
+G2L["187"]["TextStrokeTransparency"] = 0;
+G2L["187"]["BorderSizePixel"] = 0;
+G2L["187"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["187"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["187"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["187"]["TextSize"] = 18;
+G2L["187"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["187"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["187"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["187"]["Name"] = [[notifywhenyourfriendiskilled]];
+G2L["187"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["187"]["Text"] = [[Notify When Your Friend Is Killed  ]];
+G2L["187"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenyourfriendiskilled.Frame
+G2L["188"] = Instance.new("Frame", G2L["187"]);
+G2L["188"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["188"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["188"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["188"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenyourfriendiskilled.UIGradient
+G2L["189"] = Instance.new("UIGradient", G2L["187"]);
+G2L["189"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhensherrifiskilled
+G2L["18a"] = Instance.new("TextButton", G2L["170"]);
+G2L["18a"]["TextWrapped"] = true;
+G2L["18a"]["TextStrokeTransparency"] = 0;
+G2L["18a"]["BorderSizePixel"] = 0;
+G2L["18a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["18a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18a"]["TextSize"] = 20;
+G2L["18a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["18a"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["18a"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["18a"]["Name"] = [[notifywhensherrifiskilled]];
+G2L["18a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18a"]["Text"] = [[Notify When Sheriff Is Killed  ]];
+G2L["18a"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhensherrifiskilled.Frame
+G2L["18b"] = Instance.new("Frame", G2L["18a"]);
+G2L["18b"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["18b"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["18b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18b"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhensherrifiskilled.UIGradient
+G2L["18c"] = Instance.new("UIGradient", G2L["18a"]);
+G2L["18c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenaplayeriskilled
+G2L["18d"] = Instance.new("TextButton", G2L["170"]);
+G2L["18d"]["TextWrapped"] = true;
+G2L["18d"]["TextStrokeTransparency"] = 0;
+G2L["18d"]["BorderSizePixel"] = 0;
+G2L["18d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18d"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["18d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18d"]["TextSize"] = 20;
+G2L["18d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["18d"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["18d"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["18d"]["Name"] = [[notifywhenaplayeriskilled]];
+G2L["18d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18d"]["Text"] = [[Notify When A Player Is Killed  ]];
+G2L["18d"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenaplayeriskilled.Frame
+G2L["18e"] = Instance.new("Frame", G2L["18d"]);
+G2L["18e"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["18e"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["18e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18e"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.notifywhenaplayeriskilled.UIGradient
+G2L["18f"] = Instance.new("UIGradient", G2L["18d"]);
+G2L["18f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.HandlerV5
+G2L["190"] = Instance.new("LocalScript", G2L["170"]);
+G2L["190"]["Name"] = [[HandlerV5]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.FastSeparator
+G2L["191"] = Instance.new("TextLabel", G2L["170"]);
+G2L["191"]["TextWrapped"] = true;
+G2L["191"]["BorderSizePixel"] = 0;
+G2L["191"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["191"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["191"]["TextSize"] = 16;
+G2L["191"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["191"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["191"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["191"]["Text"] = [[- - -  ]];
+G2L["191"]["Name"] = [[FastSeparator]];
+G2L["191"]["BackgroundTransparency"] = 1;
+G2L["191"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.trytobesheriff
+G2L["192"] = Instance.new("TextButton", G2L["170"]);
+G2L["192"]["TextWrapped"] = true;
+G2L["192"]["TextStrokeTransparency"] = 0;
+G2L["192"]["BorderSizePixel"] = 0;
+G2L["192"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["192"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["192"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["192"]["TextSize"] = 18;
+G2L["192"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["192"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["192"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["192"]["Name"] = [[trytobesheriff]];
+G2L["192"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["192"]["Text"] = [[Try To Be Sheriff in every Round  ]];
+G2L["192"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.trytobesheriff.Frame
+G2L["193"] = Instance.new("Frame", G2L["192"]);
+G2L["193"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["193"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["193"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["193"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.trytobesheriff.UIGradient
+G2L["194"] = Instance.new("UIGradient", G2L["192"]);
+G2L["194"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TryToDodgeMurderer
+G2L["195"] = Instance.new("TextButton", G2L["170"]);
+G2L["195"]["TextWrapped"] = true;
+G2L["195"]["TextStrokeTransparency"] = 0;
+G2L["195"]["BorderSizePixel"] = 0;
+G2L["195"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["195"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["195"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["195"]["TextSize"] = 18;
+G2L["195"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["195"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["195"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["195"]["Name"] = [[TryToDodgeMurderer]];
+G2L["195"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["195"]["Text"] = [[Try to dodge the Murderer  ]];
+G2L["195"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.7324561476707458, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TryToDodgeMurderer.Frame
+G2L["196"] = Instance.new("Frame", G2L["195"]);
+G2L["196"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["196"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["196"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["196"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.TryToDodgeMurderer.UIGradient
+G2L["197"] = Instance.new("UIGradient", G2L["195"]);
+G2L["197"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.LockScript
+G2L["198"] = Instance.new("Frame", G2L["a"]);
+G2L["198"]["ZIndex"] = 55;
+G2L["198"]["BorderSizePixel"] = 0;
+G2L["198"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["198"]["BackgroundTransparency"] = 0.4000000059604645;
+G2L["198"]["Size"] = UDim2.new(1.0055201053619385, -2, 1.13614821434021, -32);
+G2L["198"]["ClipsDescendants"] = true;
+G2L["198"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["198"]["Position"] = UDim2.new(-0.001362187904305756, 0, 0, 0);
+G2L["198"]["Visible"] = false;
+G2L["198"]["Name"] = [[LockScript]];
 -- Attributes
-G2L["186"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(181, 0, 255));
-G2L["186"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(91, 31, 111));
-G2L["186"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 101));
-G2L["186"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(26, 0, 36));
-G2L["186"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(51, 11, 71));
-G2L["186"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 221, 255));
-G2L["186"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(70, 0, 100)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(181, 0, 255))});
-G2L["186"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["198"]:SetAttribute([[SYSTEM_MESSAGE]], [[]]);
+G2L["198"]:SetAttribute([[ERROR]], false);
+G2L["198"]:SetAttribute([[BAN]], false);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.LockScript.TextLabel
+G2L["199"] = Instance.new("TextLabel", G2L["198"]);
+G2L["199"]["TextWrapped"] = true;
+G2L["199"]["TextScaled"] = true;
+G2L["199"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["199"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["199"]["TextSize"] = 20;
+G2L["199"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["199"]["Size"] = UDim2.new(0, 421, 0, 63);
+G2L["199"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["199"]["Text"] = [[This script has been disabled for you, the system has left a message:]];
+G2L["199"]["Position"] = UDim2.new(0.0498281791806221, 0, 0.043859440833330154, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.LockScript.TextBox
+G2L["19a"] = Instance.new("TextBox", G2L["198"]);
+G2L["19a"]["TextSize"] = 20;
+G2L["19a"]["TextWrapped"] = true;
+G2L["19a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["19a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Nunito.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19a"]["MultiLine"] = true;
+G2L["19a"]["PlaceholderText"] = [[enter system message here...]];
+G2L["19a"]["Size"] = UDim2.new(0, 421, 0, 126);
+G2L["19a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19a"]["Text"] = [[]];
+G2L["19a"]["Position"] = UDim2.new(0.0498281791806221, 0, 0.3684210777282715, 0);
+G2L["19a"]["ClearTextOnFocus"] = false;
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ
+G2L["19b"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["19b"]["Active"] = true;
+G2L["19b"]["BorderSizePixel"] = 0;
+G2L["19b"]["CanvasSize"] = UDim2.new(0, 0, 0, 1135);
+G2L["19b"]["TopImage"] = [[]];
+G2L["19b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19b"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["19b"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["19b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19b"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["19b"]["Visible"] = false;
+G2L["19b"]["Name"] = [[ALT_page_FAQ]];
+G2L["19b"]["BottomImage"] = [[]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.UIListLayout
+G2L["19c"] = Instance.new("UIListLayout", G2L["19b"]);
+G2L["19c"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["19c"]["Padding"] = UDim.new(0, 5);
+G2L["19c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["19d"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["19d"]["TextWrapped"] = true;
+G2L["19d"]["BorderSizePixel"] = 0;
+G2L["19d"]["TextScaled"] = true;
+G2L["19d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19d"]["TextSize"] = 16;
+G2L["19d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19d"]["Size"] = UDim2.new(0, 356, 0, 67);
+G2L["19d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19d"]["Text"] = [[Hello, this page is text-based. You'll be able to see some frequently asked questions from the exploiting community or about this script. Greetings!]];
+G2L["19d"]["Name"] = [[Separator]];
+G2L["19d"]["BackgroundTransparency"] = 1;
+G2L["19d"]["Position"] = UDim2.new(0.014986376278102398, 0, -6.692451393064403e-08, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["19e"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["19e"]["TextWrapped"] = true;
+G2L["19e"]["BorderSizePixel"] = 0;
+G2L["19e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19e"]["TextSize"] = 16;
+G2L["19e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19e"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["19e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19e"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
+G2L["19e"]["Name"] = [[Separator]];
+G2L["19e"]["BackgroundTransparency"] = 1;
+G2L["19e"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["19f"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["19f"]["TextWrapped"] = true;
+G2L["19f"]["BorderSizePixel"] = 0;
+G2L["19f"]["TextScaled"] = true;
+G2L["19f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19f"]["TextSize"] = 16;
+G2L["19f"]["TextColor3"] = Color3.fromRGB(176, 180, 255);
+G2L["19f"]["Size"] = UDim2.new(0, 356, 0, 21);
+G2L["19f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19f"]["Text"] = [[¿ Is this script bannable ?]];
+G2L["19f"]["Name"] = [[Separator]];
+G2L["19f"]["BackgroundTransparency"] = 1;
+G2L["19f"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.4385964274406433, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a0"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a0"]["TextWrapped"] = true;
+G2L["1a0"]["BorderSizePixel"] = 0;
+G2L["1a0"]["TextScaled"] = true;
+G2L["1a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a0"]["TextSize"] = 16;
+G2L["1a0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a0"]["Size"] = UDim2.new(0, 349, 0, 68);
+G2L["1a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a0"]["Text"] = [[From my point of view, this script is not bannable, depending on the exploit you use and the way you use it, what I mean is that you should not manipulate things about the local player excessively, since the game can fail and kick you due to invalid position.]];
+G2L["1a0"]["Name"] = [[Separator]];
+G2L["1a0"]["BackgroundTransparency"] = 1;
+G2L["1a0"]["Position"] = UDim2.new(0.024523161351680756, 0, 0.5526314973831177, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a1"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a1"]["TextWrapped"] = true;
+G2L["1a1"]["BorderSizePixel"] = 0;
+G2L["1a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a1"]["TextSize"] = 16;
+G2L["1a1"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a1"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a1"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1a1"]["Name"] = [[Separator]];
+G2L["1a1"]["BackgroundTransparency"] = 1;
+G2L["1a1"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a2"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a2"]["TextWrapped"] = true;
+G2L["1a2"]["BorderSizePixel"] = 0;
+G2L["1a2"]["TextScaled"] = true;
+G2L["1a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a2"]["TextSize"] = 16;
+G2L["1a2"]["TextColor3"] = Color3.fromRGB(176, 180, 255);
+G2L["1a2"]["Size"] = UDim2.new(0, 338, 0, 21);
+G2L["1a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a2"]["Text"] = [[¿ Does this script work on all executors ?]];
+G2L["1a2"]["Name"] = [[Separator]];
+G2L["1a2"]["BackgroundTransparency"] = 1;
+G2L["1a2"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.38157889246940613, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a3"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a3"]["TextWrapped"] = true;
+G2L["1a3"]["BorderSizePixel"] = 0;
+G2L["1a3"]["TextScaled"] = true;
+G2L["1a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a3"]["TextSize"] = 1;
+G2L["1a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a3"]["Size"] = UDim2.new(0, 349, 0, 68);
+G2L["1a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a3"]["Text"] = [[Not all features are guaranteed to work with every executor. It’s recommended to use a Level 7 executor for full compatibility.]];
+G2L["1a3"]["Name"] = [[Separator]];
+G2L["1a3"]["BackgroundTransparency"] = 1;
+G2L["1a3"]["Position"] = UDim2.new(0.024523161351680756, 0, 0.5526314973831177, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a4"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a4"]["TextWrapped"] = true;
+G2L["1a4"]["BorderSizePixel"] = 0;
+G2L["1a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a4"]["TextSize"] = 16;
+G2L["1a4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a4"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a4"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1a4"]["Name"] = [[Separator]];
+G2L["1a4"]["BackgroundTransparency"] = 1;
+G2L["1a4"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a5"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a5"]["TextWrapped"] = true;
+G2L["1a5"]["BorderSizePixel"] = 0;
+G2L["1a5"]["TextScaled"] = true;
+G2L["1a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a5"]["TextSize"] = 16;
+G2L["1a5"]["TextColor3"] = Color3.fromRGB(176, 180, 255);
+G2L["1a5"]["Size"] = UDim2.new(0, 338, 0, 21);
+G2L["1a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a5"]["Text"] = [[¿ Can other players see what I’m doing ?]];
+G2L["1a5"]["Name"] = [[Separator]];
+G2L["1a5"]["BackgroundTransparency"] = 1;
+G2L["1a5"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.38157889246940613, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a6"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a6"]["TextWrapped"] = true;
+G2L["1a6"]["BorderSizePixel"] = 0;
+G2L["1a6"]["TextScaled"] = true;
+G2L["1a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a6"]["TextSize"] = 1;
+G2L["1a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a6"]["Size"] = UDim2.new(0, 349, 0, 68);
+G2L["1a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a6"]["Text"] = [[It depends. Most exploits (like ESP) are client-sided, meaning only you can see or experience them. However, anything that affects other players might be visible and reportable.]];
+G2L["1a6"]["Name"] = [[Separator]];
+G2L["1a6"]["BackgroundTransparency"] = 1;
+G2L["1a6"]["Position"] = UDim2.new(0.024523161351680756, 0, 0.5526314973831177, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a7"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a7"]["TextWrapped"] = true;
+G2L["1a7"]["BorderSizePixel"] = 0;
+G2L["1a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a7"]["TextSize"] = 16;
+G2L["1a7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a7"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a7"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1a7"]["Name"] = [[Separator]];
+G2L["1a7"]["BackgroundTransparency"] = 1;
+G2L["1a7"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a8"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a8"]["TextWrapped"] = true;
+G2L["1a8"]["BorderSizePixel"] = 0;
+G2L["1a8"]["TextScaled"] = true;
+G2L["1a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a8"]["TextSize"] = 16;
+G2L["1a8"]["TextColor3"] = Color3.fromRGB(176, 180, 255);
+G2L["1a8"]["Size"] = UDim2.new(0, 338, 0, 21);
+G2L["1a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a8"]["Text"] = [[¿ Is this safe to run ?]];
+G2L["1a8"]["Name"] = [[Separator]];
+G2L["1a8"]["BackgroundTransparency"] = 1;
+G2L["1a8"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.38157889246940613, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1a9"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1a9"]["TextWrapped"] = true;
+G2L["1a9"]["BorderSizePixel"] = 0;
+G2L["1a9"]["TextScaled"] = true;
+G2L["1a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a9"]["TextSize"] = 1;
+G2L["1a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["Size"] = UDim2.new(0, 349, 0, 115);
+G2L["1a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a9"]["Text"] = [[As long as you use a trusted executor and the script is from a reputable source, it should be safe. Always check the script code or scan it for malicious content before running it. (owner's note: this script does not contain anything malicious, it will only use HttpRequest when you use the script rating system)]];
+G2L["1a9"]["Name"] = [[Separator]];
+G2L["1a9"]["BackgroundTransparency"] = 1;
+G2L["1a9"]["Position"] = UDim2.new(0.024523161351680756, 0, 0.21258644759655, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1aa"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1aa"]["TextWrapped"] = true;
+G2L["1aa"]["BorderSizePixel"] = 0;
+G2L["1aa"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1aa"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1aa"]["TextSize"] = 16;
+G2L["1aa"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1aa"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1aa"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1aa"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1aa"]["Name"] = [[Separator]];
+G2L["1aa"]["BackgroundTransparency"] = 1;
+G2L["1aa"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1ab"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1ab"]["TextWrapped"] = true;
+G2L["1ab"]["BorderSizePixel"] = 0;
+G2L["1ab"]["TextScaled"] = true;
+G2L["1ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ab"]["TextSize"] = 16;
+G2L["1ab"]["TextColor3"] = Color3.fromRGB(176, 180, 255);
+G2L["1ab"]["Size"] = UDim2.new(0, 338, 0, 21);
+G2L["1ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ab"]["Text"] = [[¿ Can I use this on mobile ?]];
+G2L["1ab"]["Name"] = [[Separator]];
+G2L["1ab"]["BackgroundTransparency"] = 1;
+G2L["1ab"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.38157889246940613, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1ac"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1ac"]["TextWrapped"] = true;
+G2L["1ac"]["BorderSizePixel"] = 0;
+G2L["1ac"]["TextScaled"] = true;
+G2L["1ac"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ac"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ac"]["TextSize"] = 1;
+G2L["1ac"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ac"]["Size"] = UDim2.new(0, 349, 0, 85);
+G2L["1ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ac"]["Text"] = [[Most scripts are designed for PC and require a Windows-based executor. Mobile exploitation is limited and less reliable, so this script likely won’t work on mobile.]];
+G2L["1ac"]["Name"] = [[Separator]];
+G2L["1ac"]["BackgroundTransparency"] = 1;
+G2L["1ac"]["Position"] = UDim2.new(0.024523161351680756, 0, -0.08333340287208557, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1ad"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1ad"]["TextWrapped"] = true;
+G2L["1ad"]["BorderSizePixel"] = 0;
+G2L["1ad"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ad"]["TextSize"] = 16;
+G2L["1ad"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ad"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ad"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1ad"]["Name"] = [[Separator]];
+G2L["1ad"]["BackgroundTransparency"] = 1;
+G2L["1ad"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1ae"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1ae"]["TextWrapped"] = true;
+G2L["1ae"]["BorderSizePixel"] = 0;
+G2L["1ae"]["TextScaled"] = true;
+G2L["1ae"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ae"]["TextSize"] = 16;
+G2L["1ae"]["TextColor3"] = Color3.fromRGB(176, 180, 255);
+G2L["1ae"]["Size"] = UDim2.new(0, 338, 0, 21);
+G2L["1ae"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ae"]["Text"] = [[¿ Can I use this script in private servers ?]];
+G2L["1ae"]["Name"] = [[Separator]];
+G2L["1ae"]["BackgroundTransparency"] = 1;
+G2L["1ae"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.38157889246940613, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1af"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1af"]["TextWrapped"] = true;
+G2L["1af"]["BorderSizePixel"] = 0;
+G2L["1af"]["TextScaled"] = true;
+G2L["1af"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1af"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1af"]["TextSize"] = 1;
+G2L["1af"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1af"]["Size"] = UDim2.new(0, 349, 0, 85);
+G2L["1af"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1af"]["Text"] = [[Yes, most features will work in private servers. In fact, testing in a private server is recommended before using it in public to avoid detection or reports.]];
+G2L["1af"]["Name"] = [[Separator]];
+G2L["1af"]["BackgroundTransparency"] = 1;
+G2L["1af"]["Position"] = UDim2.new(0.024523161351680756, 0, -0.08333340287208557, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1b0"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1b0"]["TextWrapped"] = true;
+G2L["1b0"]["BorderSizePixel"] = 0;
+G2L["1b0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b0"]["TextSize"] = 16;
+G2L["1b0"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b0"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1b0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b0"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1b0"]["Name"] = [[Separator]];
+G2L["1b0"]["BackgroundTransparency"] = 1;
+G2L["1b0"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1b1"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1b1"]["TextWrapped"] = true;
+G2L["1b1"]["BorderSizePixel"] = 0;
+G2L["1b1"]["TextScaled"] = true;
+G2L["1b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b1"]["TextSize"] = 16;
+G2L["1b1"]["TextColor3"] = Color3.fromRGB(255, 168, 169);
+G2L["1b1"]["Size"] = UDim2.new(0, 338, 0, 21);
+G2L["1b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b1"]["Text"] = [[¿ Is exploiting against Roblox TOS ?]];
+G2L["1b1"]["Name"] = [[Separator]];
+G2L["1b1"]["BackgroundTransparency"] = 1;
+G2L["1b1"]["Position"] = UDim2.new(0.014986376278102398, 0, 0.38157889246940613, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1b2"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1b2"]["TextWrapped"] = true;
+G2L["1b2"]["BorderSizePixel"] = 0;
+G2L["1b2"]["TextScaled"] = true;
+G2L["1b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b2"]["TextSize"] = 1;
+G2L["1b2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b2"]["Size"] = UDim2.new(0, 349, 0, 85);
+G2L["1b2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b2"]["Text"] = [[Yes, exploiting is a violation of Roblox's Terms of Service. Using scripts may result in temporary or permanent bans from Roblox if detected.]];
+G2L["1b2"]["Name"] = [[Separator]];
+G2L["1b2"]["BackgroundTransparency"] = 1;
+G2L["1b2"]["Position"] = UDim2.new(0.024523161351680756, 0, -0.08333340287208557, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FAQ.Separator
+G2L["1b3"] = Instance.new("TextLabel", G2L["19b"]);
+G2L["1b3"]["TextWrapped"] = true;
+G2L["1b3"]["BorderSizePixel"] = 0;
+G2L["1b3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b3"]["TextSize"] = 16;
+G2L["1b3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b3"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b3"]["Text"] = [[- - - - - - - - - - ]];
+G2L["1b3"]["Name"] = [[Separator]];
+G2L["1b3"]["BackgroundTransparency"] = 1;
+G2L["1b3"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener
+G2L["1b4"] = Instance.new("ScrollingFrame", G2L["a"]);
+G2L["1b4"]["Active"] = true;
+G2L["1b4"]["BorderSizePixel"] = 0;
+G2L["1b4"]["CanvasSize"] = UDim2.new(0, 0, 0, 970);
+G2L["1b4"]["TopImage"] = [[]];
+G2L["1b4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b4"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["1b4"]["Size"] = UDim2.new(0, 367, 0, 228);
+G2L["1b4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b4"]["Position"] = UDim2.new(0, 0, -6.667785612535226e-08, 0);
+G2L["1b4"]["Visible"] = false;
+G2L["1b4"]["Name"] = [[ALT_page_keylistener]];
+G2L["1b4"]["BottomImage"] = [[]];
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.UIListLayout
+G2L["1b5"] = Instance.new("UIListLayout", G2L["1b4"]);
+G2L["1b5"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["1b5"]["Padding"] = UDim.new(0, 5);
+G2L["1b5"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.TemplateButton
+G2L["1b6"] = Instance.new("TextButton", G2L["1b4"]);
+G2L["1b6"]["TextWrapped"] = true;
+G2L["1b6"]["TextStrokeTransparency"] = 0;
+G2L["1b6"]["BorderSizePixel"] = 0;
+G2L["1b6"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b6"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1b6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b6"]["TextSize"] = 20;
+G2L["1b6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1b6"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["1b6"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["1b6"]["Name"] = [[TemplateButton]];
+G2L["1b6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b6"]["Text"] = [[Start Selection Mode  ]];
+G2L["1b6"]["Position"] = UDim2.new(0.06403269618749619, 0, 0.5860804319381714, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.TemplateButton.UIGradient
+G2L["1b7"] = Instance.new("UIGradient", G2L["1b6"]);
+G2L["1b7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.onlyworkwhenguihiden
+G2L["1b8"] = Instance.new("TextButton", G2L["1b4"]);
+G2L["1b8"]["TextWrapped"] = true;
+G2L["1b8"]["BorderSizePixel"] = 0;
+G2L["1b8"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b8"]["TextSize"] = 19;
+G2L["1b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1b8"]["TextColor3"] = Color3.fromRGB(99, 99, 99);
+G2L["1b8"]["Size"] = UDim2.new(0, 320, 0, 34);
+G2L["1b8"]["Name"] = [[onlyworkwhenguihiden]];
+G2L["1b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b8"]["Text"] = [[Only Work When GUI is Hidden  ]];
+G2L["1b8"]["Position"] = UDim2.new(0.09183673560619354, 0, 0.1088709682226181, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.onlyworkwhenguihiden.Frame
+G2L["1b9"] = Instance.new("Frame", G2L["1b8"]);
+G2L["1b9"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["1b9"]["Size"] = UDim2.new(0, 24, 0, 20);
+G2L["1b9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b9"]["Position"] = UDim2.new(0.02500000037252903, 0, 0.1764705926179886, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.onlyworkwhenguihiden.UIGradient
+G2L["1ba"] = Instance.new("UIGradient", G2L["1b8"]);
+G2L["1ba"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.Separator
+G2L["1bb"] = Instance.new("TextLabel", G2L["1b4"]);
+G2L["1bb"]["TextWrapped"] = true;
+G2L["1bb"]["BorderSizePixel"] = 0;
+G2L["1bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bb"]["TextSize"] = 16;
+G2L["1bb"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bb"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bb"]["Text"] = [[- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ]];
+G2L["1bb"]["Name"] = [[Separator]];
+G2L["1bb"]["BackgroundTransparency"] = 1;
+G2L["1bb"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.Separator
+G2L["1bc"] = Instance.new("TextLabel", G2L["1b4"]);
+G2L["1bc"]["TextWrapped"] = true;
+G2L["1bc"]["BorderSizePixel"] = 0;
+G2L["1bc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bc"]["TextSize"] = 16;
+G2L["1bc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bc"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1bc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bc"]["Text"] = [[( ACTIVE KEY LISTENERS )]];
+G2L["1bc"]["Name"] = [[Separator]];
+G2L["1bc"]["BackgroundTransparency"] = 1;
+G2L["1bc"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.template
+G2L["1bd"] = Instance.new("TextLabel", G2L["1b4"]);
+G2L["1bd"]["TextWrapped"] = true;
+G2L["1bd"]["BorderSizePixel"] = 0;
+G2L["1bd"]["TextScaled"] = true;
+G2L["1bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1bd"]["TextSize"] = 16;
+G2L["1bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bd"]["Size"] = UDim2.new(0, 356, 0, 23);
+G2L["1bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bd"]["Text"] = [[[numbertext Key Listener] key: "keyname", executes: "buttontext"]];
+G2L["1bd"]["Name"] = [[template]];
+G2L["1bd"]["Visible"] = false;
+G2L["1bd"]["BackgroundTransparency"] = 1;
+G2L["1bd"]["Position"] = UDim2.new(0.25671717524528503, 0, 0.518768310546875, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_keylistener.template.ClickForRemove
+G2L["1be"] = Instance.new("TextButton", G2L["1bd"]);
+G2L["1be"]["BorderSizePixel"] = 0;
+G2L["1be"]["TextTransparency"] = 1;
+G2L["1be"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1be"]["TextSize"] = 14;
+G2L["1be"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1be"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1be"]["Size"] = UDim2.new(0, 349, 0, 23);
+G2L["1be"]["Name"] = [[ClickForRemove]];
+G2L["1be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1be"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MurderD0llan.MainWindow.StarterLabel
+G2L["1bf"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1bf"]["TextWrapped"] = true;
+G2L["1bf"]["BorderSizePixel"] = 0;
+G2L["1bf"]["TextScaled"] = true;
+G2L["1bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1bf"]["TextSize"] = 14;
+G2L["1bf"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bf"]["Size"] = UDim2.new(0, 483, 0, 228);
+G2L["1bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1bf"]["Text"] = [[By G0bbyD0llan]];
+G2L["1bf"]["Name"] = [[StarterLabel]];
+G2L["1bf"]["Visible"] = false;
+G2L["1bf"]["BackgroundTransparency"] = 0.20000000298023224;
+G2L["1bf"]["Position"] = UDim2.new(0, 0, 0.11583017557859421, 0);
+
+-- StarterGui.MurderD0llan.MainWindow.ACTIVATE_CLOSE
+G2L["1c0"] = Instance.new("Frame", G2L["2"]);
+G2L["1c0"]["BorderSizePixel"] = 0;
+G2L["1c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c0"]["BackgroundTransparency"] = 1;
+G2L["1c0"]["Size"] = UDim2.new(0, 482, 0, 259);
+G2L["1c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c0"]["Visible"] = false;
+G2L["1c0"]["Name"] = [[ACTIVATE_CLOSE]];
+-- Attributes
+G2L["1c0"]:SetAttribute([[CHANGE_TO_TRIGGER]], false);
+
+-- StarterGui.MurderD0llan.MainWindow.NOTIFICATION_TEXT
+G2L["1c1"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c1"]["TextWrapped"] = true;
+G2L["1c1"]["TextStrokeTransparency"] = 0;
+G2L["1c1"]["BorderSizePixel"] = 0;
+G2L["1c1"]["TextScaled"] = true;
+G2L["1c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c1"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c1"]["TextSize"] = 14;
+G2L["1c1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c1"]["Size"] = UDim2.new(0, 327, 0, 30);
+G2L["1c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c1"]["Name"] = [[NOTIFICATION_TEXT]];
+G2L["1c1"]["Visible"] = false;
+G2L["1c1"]["BackgroundTransparency"] = 0.9900000095367432;
+G2L["1c1"]["Position"] = UDim2.new(0.16149067878723145, 0, 0.8146718144416809, 0);
+-- Attributes
+G2L["1c1"]:SetAttribute([[TEXT_TO_DISPLAY]], [[Label]]);
+
+-- StarterGui.MurderD0llan.MainWindow.searchHere
+G2L["1c2"] = Instance.new("TextBox", G2L["2"]);
+G2L["1c2"]["ZIndex"] = 20;
+G2L["1c2"]["TextSize"] = 14;
+G2L["1c2"]["TextWrapped"] = true;
+G2L["1c2"]["TextScaled"] = true;
+G2L["1c2"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["1c2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c2"]["PlaceholderText"] = [[enter to search here...]];
+G2L["1c2"]["Size"] = UDim2.new(0, 113, 0, 17);
+G2L["1c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c2"]["Text"] = [[]];
+G2L["1c2"]["Position"] = UDim2.new(0.761904776096344, 0, 0.9273278713226318, 0);
+G2L["1c2"]["Visible"] = false;
+G2L["1c2"]["Name"] = [[searchHere]];
+
+-- StarterGui.MurderD0llan.Themes
+G2L["1c3"] = Instance.new("TextLabel", G2L["1"]);
+G2L["1c3"]["BorderSizePixel"] = 0;
+G2L["1c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c3"]["TextSize"] = 14;
+G2L["1c3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c3"]["Name"] = [[Themes]];
+G2L["1c3"]["Visible"] = false;
+
+-- StarterGui.MurderD0llan.Themes.Original
+G2L["1c4"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1c4"]["BorderSizePixel"] = 0;
+G2L["1c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c4"]["TextSize"] = 14;
+G2L["1c4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c4"]["Name"] = [[Original]];
+G2L["1c4"]["Visible"] = false;
+-- Attributes
+G2L["1c4"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
+G2L["1c4"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(61, 61, 61));
+G2L["1c4"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
+G2L["1c4"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(31, 31, 31));
+G2L["1c4"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(46, 46, 46));
+G2L["1c4"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(241, 241, 241));
+G2L["1c4"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
+G2L["1c4"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.Inferno
+G2L["1c5"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1c5"]["BorderSizePixel"] = 0;
+G2L["1c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c5"]["TextSize"] = 14;
+G2L["1c5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c5"]["Name"] = [[Inferno]];
+G2L["1c5"]["Visible"] = false;
+-- Attributes
+G2L["1c5"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(255, 81, 0));
+G2L["1c5"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(121, 41, 31));
+G2L["1c5"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
+G2L["1c5"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(51, 0, 0));
+G2L["1c5"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(81, 21, 21));
+G2L["1c5"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 201, 181));
+G2L["1c5"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(185, 158, 24)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 101, 0))});
+G2L["1c5"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.LightSoft
+G2L["1c6"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1c6"]["BorderSizePixel"] = 0;
+G2L["1c6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c6"]["TextSize"] = 14;
+G2L["1c6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c6"]["Name"] = [[LightSoft]];
+G2L["1c6"]["Visible"] = false;
+-- Attributes
+G2L["1c6"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
+G2L["1c6"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(201, 201, 201));
+G2L["1c6"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
+G2L["1c6"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(221, 221, 221));
+G2L["1c6"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(241, 241, 241));
+G2L["1c6"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(31, 31, 31));
+G2L["1c6"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(241, 241, 241)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 121, 216))});
+G2L["1c6"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.Midnight
+G2L["1c7"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1c7"]["BorderSizePixel"] = 0;
+G2L["1c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c7"]["TextSize"] = 14;
+G2L["1c7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c7"]["Name"] = [[Midnight]];
+G2L["1c7"]["Visible"] = false;
+-- Attributes
+G2L["1c7"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 151, 255));
+G2L["1c7"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 31, 51));
+G2L["1c7"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 31, 61));
+G2L["1c7"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(11, 11, 21));
+G2L["1c7"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(21, 21, 41));
+G2L["1c7"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(201, 201, 255));
+G2L["1c7"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(44, 44, 130)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 151, 255))});
+G2L["1c7"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.ForestGreen
+G2L["1c8"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1c8"]["BorderSizePixel"] = 0;
+G2L["1c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c8"]["TextSize"] = 14;
+G2L["1c8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c8"]["Name"] = [[ForestGreen]];
+G2L["1c8"]["Visible"] = false;
+-- Attributes
+G2L["1c8"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(81, 201, 121));
+G2L["1c8"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(51, 101, 61));
+G2L["1c8"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(201, 51, 51));
+G2L["1c8"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(16, 31, 16));
+G2L["1c8"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(31, 61, 31));
+G2L["1c8"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(211, 255, 221));
+G2L["1c8"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(40, 146, 134)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(81, 201, 121))});
+G2L["1c8"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.Terminal
+G2L["1c9"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1c9"]["BorderSizePixel"] = 0;
+G2L["1c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c9"]["TextSize"] = 14;
+G2L["1c9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c9"]["Name"] = [[Terminal]];
+G2L["1c9"]["Visible"] = false;
+-- Attributes
+G2L["1c9"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 255, 0));
+G2L["1c9"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 255, 31));
+G2L["1c9"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
+G2L["1c9"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(0, 0, 0));
+G2L["1c9"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(16, 16, 16));
+G2L["1c9"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(0, 255, 0));
+G2L["1c9"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 0))});
+G2L["1c9"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.MonoChrome
+G2L["1ca"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1ca"]["BorderSizePixel"] = 0;
+G2L["1ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ca"]["TextSize"] = 14;
+G2L["1ca"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ca"]["Name"] = [[MonoChrome]];
+G2L["1ca"]["Visible"] = false;
+-- Attributes
+G2L["1ca"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(201, 201, 201));
+G2L["1ca"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(101, 101, 101));
+G2L["1ca"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 51, 51));
+G2L["1ca"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(41, 41, 41));
+G2L["1ca"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(61, 61, 61));
+G2L["1ca"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 255, 255));
+G2L["1ca"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
+G2L["1ca"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.SolarizedLight
+G2L["1cb"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1cb"]["BorderSizePixel"] = 0;
+G2L["1cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1cb"]["TextSize"] = 14;
+G2L["1cb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cb"]["Name"] = [[SolarizedLight]];
+G2L["1cb"]["Visible"] = false;
+-- Attributes
+G2L["1cb"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(39, 140, 211));
+G2L["1cb"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(148, 162, 162));
+G2L["1cb"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(221, 51, 48));
+G2L["1cb"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(254, 247, 228));
+G2L["1cb"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(239, 233, 214));
+G2L["1cb"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(102, 124, 132));
+G2L["1cb"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 140, 211)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(211, 211, 211))});
+G2L["1cb"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.IcyBlue
+G2L["1cc"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1cc"]["BorderSizePixel"] = 0;
+G2L["1cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1cc"]["TextSize"] = 14;
+G2L["1cc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cc"]["Name"] = [[IcyBlue]];
+G2L["1cc"]["Visible"] = false;
+-- Attributes
+G2L["1cc"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 181, 255));
+G2L["1cc"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(81, 121, 151));
+G2L["1cc"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 81));
+G2L["1cc"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(21, 41, 61));
+G2L["1cc"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(41, 61, 81));
+G2L["1cc"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(221, 241, 255));
+G2L["1cc"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(21, 51, 150)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 255))});
+G2L["1cc"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.NeonViolet
+G2L["1cd"] = Instance.new("TextLabel", G2L["1c3"]);
+G2L["1cd"]["BorderSizePixel"] = 0;
+G2L["1cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1cd"]["TextSize"] = 14;
+G2L["1cd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cd"]["Name"] = [[NeonViolet]];
+G2L["1cd"]["Visible"] = false;
+-- Attributes
+G2L["1cd"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(181, 0, 255));
+G2L["1cd"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(91, 31, 111));
+G2L["1cd"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 101));
+G2L["1cd"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(26, 0, 36));
+G2L["1cd"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(51, 11, 71));
+G2L["1cd"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 221, 255));
+G2L["1cd"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(70, 0, 100)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(181, 0, 255))});
+G2L["1cd"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
 
 -- StarterGui.MurderD0llan.WindowsUIScript
-G2L["187"] = Instance.new("LocalScript", G2L["1"]);
-G2L["187"]["Name"] = [[WindowsUIScript]];
+G2L["1ce"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1ce"]["Name"] = [[WindowsUIScript]];
 -- Attributes
-G2L["187"]:SetAttribute([[TestingPage]], false);
+G2L["1ce"]:SetAttribute([[TestingPage]], true);
 
 -- StarterGui.MurderD0llan.NotificationService
-G2L["188"] = Instance.new("ModuleScript", G2L["1"]);
-G2L["188"]["Name"] = [[NotificationService]];
+G2L["1cf"] = Instance.new("ModuleScript", G2L["1"]);
+G2L["1cf"]["Name"] = [[NotificationService]];
 -- Attributes
-G2L["188"]:SetAttribute([[MAX_VISIBLE_NOTIFICATIONS]], 5);
-G2L["188"]:SetAttribute([[DEFAULT_FADE_TIME]], 0.3);
-G2L["188"]:SetAttribute([[DEFAULT_NOTIFICATION_DURATION]], 5);
+G2L["1cf"]:SetAttribute([[MAX_VISIBLE_NOTIFICATIONS]], 5);
+G2L["1cf"]:SetAttribute([[DEFAULT_FADE_TIME]], 0.3);
+G2L["1cf"]:SetAttribute([[DEFAULT_NOTIFICATION_DURATION]], 5);
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate
-G2L["189"] = Instance.new("ScreenGui", G2L["188"]);
-G2L["189"]["Enabled"] = false;
-G2L["189"]["Name"] = [[NotificationGuiTemplate]];
-G2L["189"]["ResetOnSpawn"] = false;
+G2L["1d0"] = Instance.new("ScreenGui", G2L["1cf"]);
+G2L["1d0"]["Enabled"] = false;
+G2L["1d0"]["Name"] = [[NotificationGuiTemplate]];
+G2L["1d0"]["ResetOnSpawn"] = false;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate
-G2L["18a"] = Instance.new("Frame", G2L["189"]);
-G2L["18a"]["BorderSizePixel"] = 0;
-G2L["18a"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["18a"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["18a"]["Size"] = UDim2.new(1, 0, 0, 0);
-G2L["18a"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["18a"]["Name"] = [[NotificationFrameTemplate]];
+G2L["1d1"] = Instance.new("Frame", G2L["1d0"]);
+G2L["1d1"]["BorderSizePixel"] = 0;
+G2L["1d1"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1d1"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["1d1"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["1d1"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["1d1"]["Name"] = [[NotificationFrameTemplate]];
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.UICorner
-G2L["18b"] = Instance.new("UICorner", G2L["18a"]);
+G2L["1d2"] = Instance.new("UICorner", G2L["1d1"]);
 
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.UIPadding
-G2L["18c"] = Instance.new("UIPadding", G2L["18a"]);
-G2L["18c"]["PaddingTop"] = UDim.new(0, 10);
-G2L["18c"]["PaddingRight"] = UDim.new(0, 10);
-G2L["18c"]["PaddingBottom"] = UDim.new(0, 10);
-G2L["18c"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["1d3"] = Instance.new("UIPadding", G2L["1d1"]);
+G2L["1d3"]["PaddingTop"] = UDim.new(0, 10);
+G2L["1d3"]["PaddingRight"] = UDim.new(0, 10);
+G2L["1d3"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["1d3"]["PaddingLeft"] = UDim.new(0, 10);
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.ContentLayout
-G2L["18d"] = Instance.new("UIListLayout", G2L["18a"]);
-G2L["18d"]["Name"] = [[ContentLayout]];
-G2L["18d"]["Padding"] = UDim.new(0, 5);
-G2L["18d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1d4"] = Instance.new("UIListLayout", G2L["1d1"]);
+G2L["1d4"]["Name"] = [[ContentLayout]];
+G2L["1d4"]["Padding"] = UDim.new(0, 5);
+G2L["1d4"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.TitleLabel
-G2L["18e"] = Instance.new("TextLabel", G2L["18a"]);
-G2L["18e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["18e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["18e"]["TextSize"] = 16;
-G2L["18e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18e"]["LayoutOrder"] = 1;
-G2L["18e"]["Size"] = UDim2.new(1, -25, 0, 20);
-G2L["18e"]["Text"] = [[Notification Title]];
-G2L["18e"]["Name"] = [[TitleLabel]];
-G2L["18e"]["BackgroundTransparency"] = 1;
+G2L["1d5"] = Instance.new("TextLabel", G2L["1d1"]);
+G2L["1d5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d5"]["TextSize"] = 16;
+G2L["1d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d5"]["LayoutOrder"] = 1;
+G2L["1d5"]["Size"] = UDim2.new(1, -25, 0, 20);
+G2L["1d5"]["Text"] = [[Notification Title]];
+G2L["1d5"]["Name"] = [[TitleLabel]];
+G2L["1d5"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.TextLabel
-G2L["18f"] = Instance.new("TextLabel", G2L["18a"]);
-G2L["18f"]["TextWrapped"] = true;
-G2L["18f"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["18f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["18f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["18f"]["TextSize"] = 14;
-G2L["18f"]["TextColor3"] = Color3.fromRGB(221, 221, 221);
-G2L["18f"]["LayoutOrder"] = 2;
-G2L["18f"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["18f"]["Size"] = UDim2.new(1, 0, 0, 0);
-G2L["18f"]["Text"] = [[This is the notification message content. It can be a bit longer to demonstrate wrapping.]];
-G2L["18f"]["BackgroundTransparency"] = 1;
+G2L["1d6"] = Instance.new("TextLabel", G2L["1d1"]);
+G2L["1d6"]["TextWrapped"] = true;
+G2L["1d6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1d6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d6"]["TextSize"] = 14;
+G2L["1d6"]["TextColor3"] = Color3.fromRGB(221, 221, 221);
+G2L["1d6"]["LayoutOrder"] = 2;
+G2L["1d6"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["1d6"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["1d6"]["Text"] = [[This is the notification message content. It can be a bit longer to demonstrate wrapping.]];
+G2L["1d6"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.CloseButton
-G2L["190"] = Instance.new("TextButton", G2L["18a"]);
-G2L["190"]["ZIndex"] = 2;
-G2L["190"]["TextSize"] = 16;
-G2L["190"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["190"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["190"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["190"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["190"]["Name"] = [[CloseButton]];
-G2L["190"]["Text"] = [[X]];
-G2L["190"]["Position"] = UDim2.new(1, -5, 0, 5);
-G2L["190"]["BackgroundTransparency"] = 1;
+G2L["1d7"] = Instance.new("TextButton", G2L["1d1"]);
+G2L["1d7"]["ZIndex"] = 2;
+G2L["1d7"]["TextSize"] = 16;
+G2L["1d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d7"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["1d7"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1d7"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1d7"]["Name"] = [[CloseButton]];
+G2L["1d7"]["Text"] = [[X]];
+G2L["1d7"]["Position"] = UDim2.new(1, -5, 0, 5);
+G2L["1d7"]["BackgroundTransparency"] = 1;
 
--- StarterGui.MurderD0llan.SafeZone
-G2L["191"] = Instance.new("ModuleScript", G2L["1"]);
-G2L["191"]["Name"] = [[SafeZone]];
+-- StarterGui.MurderD0llan.HelpModules
+G2L["1d8"] = Instance.new("Frame", G2L["1"]);
+G2L["1d8"]["BorderSizePixel"] = 0;
+G2L["1d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d8"]["Visible"] = false;
+G2L["1d8"]["Name"] = [[HelpModules]];
+
+-- StarterGui.MurderD0llan.HelpModules.DodgeModule
+G2L["1d9"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1d9"]["Name"] = [[DodgeModule]];
+
+-- StarterGui.MurderD0llan.HelpModules.SafeZone
+G2L["1da"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1da"]["Name"] = [[SafeZone]];
+
+-- StarterGui.MurderD0llan.HelpModules.MurderD0llanAdminModule
+G2L["1db"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1db"]["Name"] = [[MurderD0llanAdminModule]];
+
+-- StarterGui.MurderD0llan.HelpModules.KeyBindBTNModule
+G2L["1dc"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1dc"]["Name"] = [[KeyBindBTNModule]];
+
+-- StarterGui.MurderD0llan.HelpModules.TranslatorModule
+G2L["1dd"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1dd"]["Name"] = [[TranslatorModule]];
+
+-- StarterGui.MurderD0llan.HelpModules.ButtonSelectorModule
+G2L["1de"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1de"]["Name"] = [[ButtonSelectorModule]];
+
+-- StarterGui.MurderD0llan.HelpModules.KeySelectorModule
+G2L["1df"] = Instance.new("ModuleScript", G2L["1d8"]);
+G2L["1df"]["Name"] = [[KeySelectorModule]];
 
 -- Require G2L wrapper
 local G2L_REQUIRE = require;
@@ -4338,9 +5280,9 @@ local function require(Module:ModuleScript)
 	return G2L_REQUIRE(Module);
 end
 
-G2L_MODULES[G2L["154"]] = {
+G2L_MODULES[G2L["16e"]] = {
 	Closure = function()
-		local script = G2L["154"];
+		local script = G2L["16e"];
 		local ApplyInformation = {}
 
 		local InfoFrame = script.Parent
@@ -4392,296 +5334,9 @@ G2L_MODULES[G2L["154"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["155"]] = {
+G2L_MODULES[G2L["1cf"]] = {
 	Closure = function()
-		local script = G2L["155"];
-		local SearchSystem = {}
-
-		-- UI Element References
-		local Template = script.Parent:FindFirstChild("Template")
-		local ContentArea = script.Parent.Parent
-		local SearchResultsContainer = script.Parent
-		local StatusLabelTemplate = script.Parent:FindFirstChild("TextLabel") -- Expected to be Instance_1_9369
-
-		-- Constants
-		local MIN_SEARCH_TEXT_LENGTH = 3
-		local STATUS_MESSAGE_NAME = "StatusMessageLabel"
-		local SEARCH_RESULT_PREFIX = "SearchResult_"
-		local OLD_PAGE = nil
-
-		-- Initial Checks for critical components
-		if not Template then
-			warn("SearchSystem: Template frame not found. Search functionality will be severely limited.")
-		end
-		if Template and (not Template:FindFirstChild("ApplyInformation") or not Template.ApplyInformation:IsA("ModuleScript")) then
-			warn("SearchSystem: ApplyInformation ModuleScript not found within the Template. Search results cannot be processed.")
-		end
-		if not ContentArea then
-			warn("SearchSystem: ContentArea not found. Cannot search for items.")
-		end
-		if not SearchResultsContainer or not SearchResultsContainer:IsA("ScrollingFrame") then
-			warn("SearchSystem: SearchResultsContainer is not a ScrollingFrame. Results cannot be displayed.")
-		end
-		if not StatusLabelTemplate then
-			warn("SearchSystem: StatusLabelTemplate (TextLabel child of ALT_page_search) not found. Status messages cannot be displayed.")
-		end
-
-
-		-- Helper function to clear previous search results and status messages
-		local function ClearPreviousItems()
-			if not SearchResultsContainer then return end
-			StatusLabelTemplate.Visible = false
-			local childrenToClear = SearchResultsContainer:GetChildren()
-			for i = #childrenToClear, 1, -1 do
-				local child = childrenToClear[i]
-				if child then
-					if (child:IsA("Frame") and child.Name:match("^" .. SEARCH_RESULT_PREFIX)) or 
-						(child:IsA("TextLabel") and child.Name == STATUS_MESSAGE_NAME) then
-						child:Destroy()
-					end
-				end
-			end
-		end
-
-		local function UpdateCanvaSizeFromScrollingFrame()
-			local scrollingFrame = SearchResultsContainer
-			if scrollingFrame and scrollingFrame:IsA("ScrollingFrame") then
-				scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, scrollingFrame.UIListLayout.AbsoluteContentSize.Y + 110)
-			else
-				warn("SearchSystem: SearchResultsContainer is not a ScrollingFrame, cannot update CanvasSize.")
-			end
-		end
-
-		-- Helper function to show status messages (errors, no results, etc.)
-		local function ShowStatusMessage(messageText, isError)
-			local previousStatusMessage = SearchResultsContainer:FindFirstChild(STATUS_MESSAGE_NAME)
-			if previousStatusMessage then
-				previousStatusMessage:Destroy()
-			end
-
-			if not StatusLabelTemplate then
-				warn("SearchSystem: Cannot show status message because StatusLabelTemplate is missing. Message: " .. messageText)
-				return
-			end
-			if not SearchResultsContainer then
-				warn("SearchSystem: Cannot show status message because SearchResultsContainer is missing. Message: " .. messageText)
-				return
-			end
-
-			local messageLabel = StatusLabelTemplate:Clone()
-			messageLabel.Name = STATUS_MESSAGE_NAME
-			messageLabel.Text = messageText
-			if isError then
-				messageLabel.TextColor3 = Color3.fromRGB(255, 50, 50) -- Red for errors
-			else
-				messageLabel.TextColor3 = Color3.fromRGB(200, 200, 200) -- A neutral/info color
-			end
-			messageLabel.Visible = true
-			messageLabel.Parent = SearchResultsContainer
-		end
-
-		function SearchSystem.Search(searchText, filterType)
-			ClearPreviousItems()
-
-			-- Ensure search results page is visible and others are hidden at the start of a new search
-			if SearchResultsContainer then
-				SearchResultsContainer.Visible = true
-			end
-			if ContentArea then
-				for _, childInContentArea in ContentArea:GetChildren() do
-					if childInContentArea:IsA("ScrollingFrame") and childInContentArea ~= SearchResultsContainer then
-						if childInContentArea.Visible == true then
-							childInContentArea.Visible = false
-							SearchResultsContainer:SetAttribute("OLD_PAGE", childInContentArea.Name)
-						end
-					end
-				end
-			end
-
-			if not Template or not ContentArea or not SearchResultsContainer then
-				ShowStatusMessage("Search system critical components missing. Please check setup.", true)
-				return
-			end
-
-			local lowerSearchText = ""
-			local trimmedSearchText = searchText and searchText:match("^%s*(.-)%s*$") or ""
-
-			if not filterType or filterType == "" then
-				if trimmedSearchText == "" then
-					ShowStatusMessage("Search text cannot be empty or only spaces.", true)
-					return
-				end
-				if #trimmedSearchText < MIN_SEARCH_TEXT_LENGTH then
-					ShowStatusMessage("Search text must be at least " .. MIN_SEARCH_TEXT_LENGTH .. " characters long.", true)
-					return
-				end
-				lowerSearchText = string.lower(trimmedSearchText)
-			else 
-				lowerSearchText = string.lower(trimmedSearchText) 
-			end
-
-			local resultsFound = false
-			local resultsCount = 0
-
-			for _, pageInstance in ContentArea:GetChildren() do
-				if pageInstance:IsA("ScrollingFrame") and pageInstance ~= SearchResultsContainer then
-					local pageName = pageInstance.Name
-					--EXCLUDE ANY LETTER
-					local inWhatPageNumber = tonumber(string.match(pageName, "%d+")) or 0
-					for _, itemInPage in pageInstance:GetChildren() do
-						local itemPassesFilter = false
-						if not filterType or filterType == "" then
-							itemPassesFilter = true 
-						else
-							if filterType == "toggle" then
-								itemPassesFilter = (itemInPage:FindFirstChildOfClass("Frame") ~= nil)
-							elseif filterType == "button_with_box" then
-								itemPassesFilter = (itemInPage:FindFirstChildOfClass("TextBox") ~= nil)
-							elseif filterType == "change_button" then
-								local innerButton = itemInPage:FindFirstChildOfClass("TextButton")
-								itemPassesFilter = (innerButton ~= nil and innerButton ~= itemInPage) 
-							end
-						end
-
-						if not itemPassesFilter then
-							continue 
-						end
-
-						local textContent = nil
-						if itemInPage:IsA("TextButton") then
-							textContent = itemInPage.Text
-						else
-							local textLabelChild = itemInPage:FindFirstChildOfClass("TextLabel")
-							if textLabelChild then
-								textContent = textLabelChild.Text
-							end
-						end
-
-						local itemIsMatch = false
-						if filterType and filterType ~= "" and (lowerSearchText == "") then 
-							itemIsMatch = true
-						elseif lowerSearchText ~= "" then
-							if textContent and textContent ~= "" and string.find(string.lower(textContent), lowerSearchText, 1, true) then
-								itemIsMatch = true
-							end
-						elseif not filterType or filterType == "" then
-							itemIsMatch = false 
-						end
-
-						if itemIsMatch then
-							resultsFound = true
-							resultsCount += 1
-
-							UpdateCanvaSizeFromScrollingFrame()
-							task.spawn(function()
-								local message = ""
-								if filterType and filterType ~= "" then
-									if lowerSearchText ~= "" then
-										message = string.format("Found %d result(s) with filter '%s' for text '%s'.", resultsCount, filterType, trimmedSearchText)
-									else
-										message = string.format("Found %d result(s) with filter '%s'.", resultsCount, filterType)
-									end
-								else
-									message = string.format("Found %d result(s) for '%s'.", resultsCount, trimmedSearchText)
-								end
-								StatusLabelTemplate.Visible = true
-								StatusLabelTemplate.Text = message
-							end)
-							local newResultDisplay = Template:Clone()
-							newResultDisplay.Name = SEARCH_RESULT_PREFIX .. itemInPage.Name
-							newResultDisplay.Parent = SearchResultsContainer
-							newResultDisplay.Visible = true
-
-							local clonedApplyInfoModuleScript = newResultDisplay:FindFirstChild("ApplyInformation")
-							if clonedApplyInfoModuleScript and clonedApplyInfoModuleScript:IsA("ModuleScript") then
-								local ClonedApplyInformation = require(clonedApplyInfoModuleScript)
-								local success, err = pcall(ClonedApplyInformation.Apply, itemInPage.Name, inWhatPageNumber, nil, itemInPage)
-								if not success then
-									warn("SearchSystem: Error calling ApplyInformation.Apply for item '" .. itemInPage.Name .. "': " .. tostring(err))
-									newResultDisplay:Destroy() 
-								end
-							else
-								warn("SearchSystem: ApplyInformation module not found in cloned template for item '" .. itemInPage.Name .. "'.")
-								newResultDisplay:Destroy() 
-							end
-
-							-- Add ViewInPage button functionality
-							local viewInPageButton = newResultDisplay:FindFirstChild("ViewInPage")
-							if viewInPageButton and viewInPageButton:IsA("TextButton") then
-								viewInPageButton.MouseButton1Click:Connect(function()
-									if not SearchResultsContainer or not ContentArea or not pageInstance or not itemInPage or not itemInPage.Parent then
-										warn("SearchSystem: Missing components for ViewInPage action. Item: " .. (itemInPage and itemInPage.Name or "nil") .. ", Page: " .. (pageInstance and pageInstance.Name or "nil"))
-										return
-									end
-
-									-- 1. Hide SearchResultsContainer
-									SearchResultsContainer.Visible = false
-
-									-- 2. Show the original pageInstance and hide others in ContentArea
-									pageInstance.Visible = true -- Show the target page first
-									for _, childInContentArea in ContentArea:GetChildren() do
-										if childInContentArea:IsA("ScrollingFrame") then
-											if childInContentArea ~= pageInstance and childInContentArea ~= SearchResultsContainer then
-												childInContentArea.Visible = false
-											end
-										end
-									end
-
-									-- 3. Scroll pageInstance to itemInPage
-									if itemInPage.Parent == pageInstance then
-										-- Calculate Y position of the item's top edge within the canvas's coordinate system
-										local itemAbsoluteYOnCanvas = itemInPage.AbsolutePosition.Y - pageInstance.AbsolutePosition.Y + pageInstance.CanvasPosition.Y
-
-										local viewPortHeight = pageInstance.AbsoluteSize.Y
-										local itemHeight = itemInPage.AbsoluteSize.Y
-										-- Calculate desired CanvasPosition.Y to center the item
-										local desiredCanvasPositionY = itemAbsoluteYOnCanvas - (viewPortHeight / 2) + (itemHeight / 2)
-
-										local absoluteCanvasHeight = pageInstance.AbsoluteCanvasSize.Y
-
-										if viewPortHeight > 0 then
-											desiredCanvasPositionY = math.clamp(desiredCanvasPositionY, 0, math.max(0, absoluteCanvasHeight - viewPortHeight))
-										else 
-											desiredCanvasPositionY = 0 -- Fallback if viewport has no height
-										end
-
-										pageInstance.CanvasPosition = Vector2.new(pageInstance.CanvasPosition.X, desiredCanvasPositionY)
-									else
-										warn("SearchSystem: itemInPage '" .. itemInPage.Name .. "' is no longer parented to pageInstance '" .. pageInstance.Name .. "' when trying to scroll.")
-									end
-								end)
-							end
-						end
-					end
-				end
-			end
-
-
-			if not resultsFound then
-				if StatusLabelTemplate.Visible == true then
-					StatusLabelTemplate.Visible = false
-				end
-				local message
-				if filterType and filterType ~= "" then
-					if lowerSearchText ~= "" then
-						message = "No items found for filter '" .. filterType .. "' matching text '" .. trimmedSearchText .. "'."
-					else
-						message = "No items found for filter: " .. filterType .. "."
-					end
-				else
-					message = "No results found for '" .. trimmedSearchText .. "'."
-				end
-				ShowStatusMessage(message, false) 
-			end
-		end
-
-		return SearchSystem
-
-	end;
-};
-G2L_MODULES[G2L["188"]] = {
-	Closure = function()
-		local script = G2L["188"];
+		local script = G2L["1cf"];
 		--this service was made by Roblox AI Assistant - PROMPT: G0bbyD0llan
 
 		local NotificationService = {}
@@ -5244,9 +5899,166 @@ G2L_MODULES[G2L["188"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["191"]] = {
+G2L_MODULES[G2L["1d9"]] = {
 	Closure = function()
-		local script = G2L["191"];
+		local script = G2L["1d9"];
+		-- DodgeModule.lua
+		-- A module that allows the local player's character to dynamically evade a specific real player using intelligent vector math and realistic movement
+
+		local Players = game:GetService("Players")
+		local TweenService = game:GetService("TweenService")
+		local RunService = game:GetService("RunService")
+		local Workspace = game:GetService("Workspace")
+
+		local DodgeModule = {}
+
+		local isDodging = false
+		local dodgeConnection = nil
+		local targetPlayer = nil
+
+		local localPlayer = Players.LocalPlayer
+		local character = nil
+		local humanoid = nil
+		local rootPart = nil
+
+		-- Constants
+		local SAFE_DISTANCE = 20             -- Distance at which to begin evasion
+		local CLOSE_DISTANCE = 10            -- When to trigger more aggressive evasive moves
+		local JUMP_DISTANCE = 6              -- When to jump to avoid direct impact
+		local DODGE_SPEED = 12               -- Movement speed for evasion
+		local RAYCAST_DISTANCE = 5           -- Distance to raycast to avoid obstacles
+		local TWEEN_TIME = 0.25              -- Smooth interpolation duration
+
+		-- Utility Functions
+
+		-- Get distance between two Vector3 positions
+		local function getDistance(pos1, pos2)
+			return (pos1 - pos2).Magnitude
+		end
+
+		-- Get direction from one Vector3 to another
+		local function getDirection(from, to)
+			return (to - from).Unit
+		end
+
+		-- Predict future position based on velocity
+		local function predictPosition(targetRoot)
+			local velocity = targetRoot.Velocity
+			local predictionTime = 0.3
+			return targetRoot.Position + velocity * predictionTime
+		end
+
+		-- Check if the path is blocked using raycasting
+		local function isPathBlocked(direction)
+			local origin = rootPart.Position
+			local rayParams = RaycastParams.new()
+			rayParams.FilterDescendantsInstances = {character}
+			rayParams.FilterType = Enum.RaycastFilterType.Blacklist
+
+			local result = Workspace:Raycast(origin, direction * RAYCAST_DISTANCE, rayParams)
+			return result ~= nil
+		end
+
+		-- Jump if the target is approaching head-on
+		local function shouldJump(enemyDirection)
+			local forward = rootPart.CFrame.LookVector
+			local dot = forward:Dot(enemyDirection)
+			return dot > 0.8
+		end
+
+		-- Move the character in a direction with smooth interpolation
+		local function moveSmoothly(direction)
+			local goalPosition = rootPart.Position + direction * DODGE_SPEED
+
+			-- Adjust to avoid obstacles
+			if isPathBlocked(direction) then
+				-- Try strafing sideways
+				local right = rootPart.CFrame.RightVector
+				local altDirection = (direction + right).Unit
+				goalPosition = rootPart.Position + altDirection * DODGE_SPEED
+			end
+
+			local tween = TweenService:Create(
+				rootPart,
+				TweenInfo.new(TWEEN_TIME, Enum.EasingStyle.Sine, Enum.EasingDirection.Out),
+				{CFrame = CFrame.new(goalPosition)}
+			)
+			tween:Play()
+		end
+
+		-- Main evasion logic (runs every frame)
+		local function dodgeStep()
+			if not targetPlayer or not targetPlayer.Character or not targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+				return
+			end
+
+			local targetRoot = targetPlayer.Character.HumanoidRootPart
+			local predictedPos = predictPosition(targetRoot)
+			local distance = getDistance(rootPart.Position, predictedPos)
+
+			if distance < SAFE_DISTANCE then
+				local evadeDirection = (rootPart.Position - predictedPos).Unit
+
+				-- From behind? (dot product < -0.6)
+				local targetDir = getDirection(predictedPos, rootPart.Position)
+				local localLook = rootPart.CFrame.LookVector
+				if localLook:Dot(targetDir) < -0.6 then
+					-- Move quickly sideways to dodge
+					local dodgeSide = rootPart.CFrame.RightVector * (math.random() > 0.5 and 1 or -1)
+					evadeDirection = (evadeDirection + dodgeSide).Unit
+				end
+
+				-- Jump if very close and head-on
+				if distance < JUMP_DISTANCE and shouldJump(getDirection(predictedPos, rootPart.Position)) then
+					if humanoid and humanoid.FloorMaterial ~= Enum.Material.Air then
+						humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+					end
+				end
+
+				moveSmoothly(evadeDirection)
+			end
+		end
+
+		-- Initializes character references
+		local function updateCharacter()
+			character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+			humanoid = character:WaitForChild("Humanoid")
+			rootPart = character:WaitForChild("HumanoidRootPart")
+		end
+
+		-- Starts the evasion loop
+		function DodgeModule.StartDodging(target)
+			assert(target and target:IsA("Player") and target ~= localPlayer, "Invalid target player")
+
+			targetPlayer = target
+			updateCharacter()
+
+			if isDodging then return end
+			isDodging = true
+
+			dodgeConnection = RunService.RenderStepped:Connect(function()
+				if character and humanoid and humanoid.Health > 0 then
+					dodgeStep()
+				end
+			end)
+		end
+
+		-- Stops the evasion loop
+		function DodgeModule.StopDodging()
+			isDodging = false
+			if dodgeConnection then
+				dodgeConnection:Disconnect()
+				dodgeConnection = nil
+			end
+		end
+
+		return DodgeModule
+
+	end;
+};
+G2L_MODULES[G2L["1da"]] = {
+	Closure = function()
+		local script = G2L["1da"];
 		local SafeZone = {}
 
 		local TheSafeZone = nil
@@ -6365,6 +7177,1086 @@ G2L_MODULES[G2L["191"]] = {
 
 	end;
 };
+G2L_MODULES[G2L["1db"]] = {
+	Closure = function()
+		local script = G2L["1db"];
+		-- MurderD0llanAdminModule
+		-- Admin command system for local player, controlled by whilelisted players via .Chatted
+
+		local Players = game:GetService("Players")
+		local TextChatService = game:GetService("TextChatService")
+		local LocalPlayer = Players.LocalPlayer
+
+		local MurderD0llanAdminModule = {}
+
+		local localplayer = game:GetService("Players").LocalPlayer
+		local Players = game:GetService("Players")
+		local playerData = {}
+
+		local Notificaciones = {
+			Error = "rbxassetid://4041673253",
+			Aviso = "rbxassetid://4026367629",
+			Correcto = "rbxassetid://4094488012",
+		}
+
+
+		local Notification_Service = require(script.Parent.Parent:FindFirstChild("NotificationService"))
+
+		local function errornotify(text)
+			Notification_Service.ShowNotification({
+				title = "Error / MurderD0llan",
+				text = text,
+				soundOnOpen = Notificaciones.Error,
+				theme = "Error"
+			})
+		end
+
+		local function sucessnotify(text)
+			Notification_Service.ShowNotification({
+				title = "Success / MurderD0llan",
+				text = text,
+				soundOnOpen = Notificaciones.Correcto,
+				theme = "Success"
+			})
+		end
+
+		local function warningnotify(text)
+			Notification_Service.ShowNotification({
+				title = "Warning / MurderD0llan",
+				text = text,
+				soundOnOpen = Notificaciones.Aviso,
+				theme = "Warning"
+			})
+		end
+
+
+		local function GetTarget(Name: string)
+			for i, v in pairs(Players:GetPlayers()) do
+				if string.find(string.lower(v.Name), string.lower(Name)) then
+					return v
+				end
+			end
+		end
+
+		-- Helpers
+		local Help_Functions = {
+			findMurderer = function()
+				for _, i in ipairs(Players:GetPlayers()) do
+					if i.Backpack:FindFirstChild("Knife") or (i.Character and i.Character:FindFirstChild("Knife")) or i.Backpack:FindFirstChild("knife") or (i.Character and i.Character:FindFirstChild("knife")) then
+						return i
+					end
+				end
+				for player, data in pairs(playerData) do
+					if data.Role == "Murderer" and Players:FindFirstChild(player) then
+						return Players:FindFirstChild(player)
+					end
+				end
+				return nil
+			end,
+
+			findSheriff = function()
+				for _, i in ipairs(Players:GetPlayers()) do
+					if i.Backpack:FindFirstChild("Gun") or (i.Character and i.Character:FindFirstChild("Gun")) then
+						return i
+					end
+				end
+				for player, data in pairs(playerData) do
+					if data.Role == "Sheriff" and Players:FindFirstChild(player) then
+						return Players:FindFirstChild(player)
+					end
+				end
+				return nil
+			end,
+
+			findSheriffThatsNotMe = function()
+				for _, i in ipairs(Players:GetPlayers()) do
+					if i ~= localplayer and (i.Backpack:FindFirstChild("Gun") or (i.Character and i.Character:FindFirstChild("Gun"))) then
+						return i
+					end
+				end
+				for player, data in pairs(playerData) do
+					if data.Role == "Sheriff" and Players:FindFirstChild(player) and Players:FindFirstChild(player) ~= localplayer then
+						return Players:FindFirstChild(player)
+					end
+				end
+				return nil
+			end,
+
+			SkidFling = function(TargetPlayer)
+				local Player = game:GetService("Players").LocalPlayer
+				local Character = Player.Character
+				local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+				local RootPart = Humanoid and Humanoid.RootPart
+
+				if not TargetPlayer or not TargetPlayer.Character then
+					errornotify("Target player is invalid or has no character.")
+					return
+				end
+
+				local TCharacter = TargetPlayer.Character
+				local THumanoid = TCharacter:FindFirstChildOfClass("Humanoid")
+				local TRootPart = THumanoid and THumanoid.RootPart
+				local THead = TCharacter:FindFirstChild("Head")
+				local Accessory = TCharacter:FindFirstChildOfClass("Accessory")
+				local Handle = Accessory and Accessory:FindFirstChild("Handle")
+
+				if not Character or not Humanoid or not RootPart then
+					errornotify("Your character is not fully loaded.")
+					return
+				end
+
+				if not TCharacter:FindFirstChildWhichIsA("BasePart") then
+					errornotify("Target player has no BasePart.")
+					return
+				end
+
+				sucessnotify("Fling started on target: " .. TargetPlayer.Name)
+
+				if RootPart.Velocity.Magnitude < 50 then
+					getgenv().OldPos = RootPart.CFrame
+				end
+
+				if THead then
+					workspace.CurrentCamera.CameraSubject = THead
+				elseif Handle then
+					workspace.CurrentCamera.CameraSubject = Handle
+				elseif THumanoid and TRootPart then
+					workspace.CurrentCamera.CameraSubject = THumanoid
+				end
+
+				local function FPos(BasePart, Pos, Ang)
+					RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
+					Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
+					RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+					RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+				end
+
+				local function SFBasePart(BasePart)
+					local TimeToWait = 2
+					local Time = tick()
+					local Angle = 0
+
+					repeat
+						if RootPart and THumanoid then
+							if BasePart.Velocity.Magnitude < 50 then
+								Angle = Angle + 100
+
+								FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+								task.wait()
+
+								FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+								task.wait()
+
+								FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+								task.wait()
+
+								FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+								task.wait()
+							else
+								FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+								task.wait()
+							end
+						else
+							break
+						end
+					until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+				end
+
+				workspace.FallenPartsDestroyHeight = 0/0
+
+				local BV = Instance.new("BodyVelocity")
+				BV.Name = "EpixVel"
+				BV.Parent = RootPart
+				BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
+				BV.MaxForce = Vector3.new(1/0, 1/0, 1/0)
+
+				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+
+				if TRootPart and THead then
+					if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
+						SFBasePart(THead)
+					else
+						SFBasePart(TRootPart)
+					end
+				elseif TRootPart then
+					SFBasePart(TRootPart)
+				elseif THead then
+					SFBasePart(THead)
+				elseif Handle then
+					SFBasePart(Handle)
+				else
+					errornotify("No valid fling target part found.")
+				end
+
+				BV:Destroy()
+				Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+				workspace.CurrentCamera.CameraSubject = Humanoid
+
+				repeat
+					RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
+					Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
+					Humanoid:ChangeState("GettingUp")
+					for _, x in ipairs(Character:GetChildren()) do
+						if x:IsA("BasePart") then
+							x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+						end
+					end
+					task.wait()
+				until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
+
+				workspace.FallenPartsDestroyHeight = getgenv().FPDH
+
+				sucessnotify("Fling finished successfully.")
+			end
+		}
+
+		-- CONFIGURATION
+		local COMMAND_PREFIX = "!" -- Changeable prefix for commands
+		local WHISPER_CHANNEL = "RBXGeneral"
+		local MAX_WHISPER_LENGTH = 200 -- Roblox whisper max length
+
+		-- Private storage
+		local whilelisted = {} -- [UserId] = Player
+		local chattedConnections = {} -- [UserId] = RBXScriptConnection
+		local commandCooldowns = {} -- [UserId][command] = lastUsedTimestamp
+		local commandLog = {} -- { {timestamp, playerName, command, args} }
+
+		-- Utility: split string by separator
+		local function split(str, sep)
+			local result = {}
+			for word in string.gmatch(str, "[^"..sep.."]+") do
+				table.insert(result, word)
+			end
+			return result
+		end
+
+		-- Utility: join table of strings with sep
+		local function join(tbl, sep)
+			local s = ""
+			for i, v in tbl do
+				if i > 1 then
+					s = s .. sep
+				end
+				s = s .. tostring(v)
+			end
+			return s
+		end
+
+		-- Utility: send a whisper to a player (by name)
+		local function whisperTo(playerName, message)
+			local channel = TextChatService:FindFirstChild("TextChannels") and TextChatService.TextChannels:FindFirstChild(WHISPER_CHANNEL)
+			if not channel then return end
+			-- Split message if too long
+			local prefix = "/w " .. playerName .. " "
+			local maxMsgLen = MAX_WHISPER_LENGTH - #prefix
+			local messages = {}
+			local msg = ""
+			for word in string.gmatch(message, "[^ ]+") do
+				if #msg + #word + 1 > maxMsgLen then
+					table.insert(messages, msg)
+					msg = word
+				else
+					if #msg > 0 then
+						msg = msg .. " "
+					end
+					msg = msg .. word
+				end
+			end
+			if #msg > 0 then
+				table.insert(messages, msg)
+			end
+			for i, m in messages do
+				channel:SendAsync(prefix .. m)
+			end
+		end
+
+		-- Command registry
+		commands = {
+			--Custom Commands
+			Murderer = {
+				description = "find out who the murderer is",
+				enabled = true,
+				cooldown = 1,
+				handler = function(args, fromPlayer)
+					local Murderer = Help_Functions.findMurderer()
+					if Murderer then
+						whisperTo(fromPlayer.Name, "the murderer is: "..Murderer["Name"])
+					else
+						whisperTo(fromPlayer.Name, "no murderer has been detected")
+					end
+				end,
+			},
+			sheriff = {
+				description = "find out who the sheriff is",
+				enabled = true,
+				cooldown = 1,
+				handler = function(args, fromPlayer)
+					local Sheriff = Help_Functions.findSheriff()
+					if Sheriff then
+						whisperTo(fromPlayer.Name, "the Sheriff is: "..Sheriff["Name"])
+					else
+						whisperTo(fromPlayer.Name, "no Sheriff has been detected")
+					end
+				end,
+			},
+			fling = {
+				description = [[Flings a player by name (you can use "murderer" or "sheriff")]],
+				enabled = true,
+				cooldown = 2.5,
+				handler = function(args, fromPlayer)
+					if not args[1] then
+						whisperTo(fromPlayer.Name, "You must provide a name or role (murderer/sheriff).")
+						return false
+					end
+
+					local targetArg = string.lower(args[1])
+					local targetPlayer
+
+					if targetArg == "murderer" then
+						targetPlayer = Help_Functions.findMurderer()
+					elseif targetArg == "sheriff" then
+						targetPlayer = Help_Functions.findSheriff()
+					else
+						targetPlayer = GetTarget(targetArg)
+					end
+
+					if not targetPlayer then
+						whisperTo(fromPlayer.Name, "player not found")
+						return false
+					end
+
+					-- Llamamos a la función de fling
+					Help_Functions.SkidFling(targetPlayer)
+
+					return true
+				end
+			},
+
+			-- Built-in: cmds
+			cancel = {
+				description = "Removes yourself from the whilelist.",
+				enabled = true,
+				cooldown = 1,
+				handler = function(args, fromPlayer)
+					if whilelisted[fromPlayer.UserId] then
+						MurderD0llanAdminModule.unwhilelist(fromPlayer)
+						whisperTo(fromPlayer.Name, "You have been removed from the whilelist by your request.")
+						return true
+					else
+						return false, "You are not whilelisted."
+					end
+				end
+			},
+
+			cmds = {
+				description = "Lists all available commands.",
+				enabled = true,
+				cooldown = 2,
+				handler = function(args, fromPlayer)
+					-- List all enabled commands
+					local available = {}
+					for name, cmd in commands do
+						if cmd.enabled then
+							table.insert(available, name)
+						end
+					end
+					table.sort(available)
+					local msg = "Available commands: " .. join(available, ", ")
+					-- Split into multiple whispers if needed
+					whisperTo(fromPlayer.Name, msg)
+					return true
+				end
+			}
+			-- Add more commands here as needed
+		}
+
+		-- Command enable/disable API
+		function MurderD0llanAdminModule.setCommandEnabled(cmdName, enabled)
+			local cmd = commands[cmdName]
+			if cmd then
+				cmd.enabled = enabled and true or false
+				return true
+			end
+			return false
+		end
+
+		-- Command log API
+		function MurderD0llanAdminModule.getCommandLog()
+			return commandLog
+		end
+
+		-- Helper: check cooldown
+		local function isOnCooldown(userId, cmdName)
+			if not commandCooldowns[userId] then
+				commandCooldowns[userId] = {}
+			end
+			local last = commandCooldowns[userId][cmdName]
+			local now = os.clock()
+			local cd = commands[cmdName] and commands[cmdName].cooldown or 0
+			if last and now - last < cd then
+				return true, cd - (now - last)
+			end
+			commandCooldowns[userId][cmdName] = now
+			return false
+		end
+
+		-- Handle .Chatted event from a whilelisted player
+		local function onChatted(fromPlayer, msg)
+			-- Check prefix
+			if string.sub(msg, 1, #COMMAND_PREFIX) ~= COMMAND_PREFIX then
+				return
+			end
+			local args = split(string.sub(msg, #COMMAND_PREFIX + 1), " ")
+			local command = args[1] and string.lower(args[1])
+			table.remove(args, 1)
+			-- Logging
+			table.insert(commandLog, {
+				timestamp = os.time(),
+				playerName = fromPlayer.Name,
+				command = command,
+				args = args
+			})
+			-- Check whilelist
+			if not whilelisted[fromPlayer.UserId] then
+				whisperTo(fromPlayer.Name, "You are not whilelisted to use admin commands.")
+				return
+			end
+			-- Check command exists
+			local cmd = commands[command]
+			if not cmd or not cmd.enabled then
+				whisperTo(fromPlayer.Name, "Unknown or disabled command: " .. tostring(command))
+				return
+			end
+			-- Check cooldown
+			local onCd, timeLeft = isOnCooldown(fromPlayer.UserId, command)
+			if onCd then
+				whisperTo(fromPlayer.Name, "Please wait " .. math.ceil(timeLeft) .. "s before using /" .. command .. " again.")
+				return
+			end
+			-- Call handler
+			local ok, err = cmd.handler(args, fromPlayer)
+			if not ok then
+				whisperTo(fromPlayer.Name, "Error: " .. (err or "Invalid arguments."))
+			end
+		end
+
+		-- Connect .Chatted for a player
+		local function connectChatted(player)
+			if not player or chattedConnections[player.UserId] then return end
+			chattedConnections[player.UserId] = player.Chatted:Connect(function(msg)
+				onChatted(player, msg)
+			end)
+		end
+
+		-- Disconnect .Chatted for a player
+		local function disconnectChatted(player)
+			local conn = chattedConnections[player.UserId]
+			if conn then
+				conn:Disconnect()
+				chattedConnections[player.UserId] = nil
+			end
+		end
+
+		-- Public API
+
+		-- Adds a player to the whilelist
+		function MurderD0llanAdminModule.whilelist(user)
+			if not user or not user.UserId then return end
+			if not whilelisted[user.UserId] then
+				whilelisted[user.UserId] = user
+				connectChatted(user)
+				-- Whisper the player if they're still in the game
+				local found = Players:FindFirstChild(user.Name)
+				if found then
+					whisperTo(user.Name, "You have been whilelisted, Now you have commands, Use !cmds to view commands")
+				end
+			end
+		end
+
+		-- Removes a player from the whilelist
+		function MurderD0llanAdminModule.unwhilelist(user)
+			if not user or not user.UserId then return end
+			if whilelisted[user.UserId] then
+				disconnectChatted(user)
+				whilelisted[user.UserId] = nil
+				-- Whisper the player if they're still in the game
+				local found = Players:FindFirstChild(user.Name)
+				if found then
+					whisperTo(user.Name, "You have been removed from the whilelist. you are no longer able to execute commands")
+				end
+			end
+		end
+
+		-- Returns the current table of whilelisted players
+		function MurderD0llanAdminModule.whilelistedList()
+			local list = {}
+			for _, player in whilelisted do
+				table.insert(list, player)
+			end
+			return list
+		end
+
+		-- Optional: Clean up on player removing
+		Players.PlayerRemoving:Connect(function(player)
+			MurderD0llanAdminModule.unwhilelist(player)
+		end)
+
+		return MurderD0llanAdminModule
+
+
+	end;
+};
+G2L_MODULES[G2L["1dc"]] = {
+	Closure = function()
+		local script = G2L["1dc"];
+--[[
+    KeyBindBTNModule
+    Allows developers to bind keyboard keys to UI buttons so that pressing a key triggers the button's MouseButton1Click event.
+    API:
+        .connect(keyToPress: string, button: Instance, OnFireSignalNotEnabled: function [optional])
+        .disconnect(keyToPress: string)
+        .update(keyToPress: string, newButton: Instance)
+        .getBindings()
+    Usage:
+        local KeyBindBTNModule = require(path.to.KeyBindBTNModule)
+        KeyBindBTNModule.connect("E", myButton, function(button)
+            -- fallback logic if firesignal is not available
+            button.MouseButton1Click:Fire()
+        end)
+--]]
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local KeyBindBTNModule = {}
+		-- bindings[key] = {button = GuiButton, fallback = function or nil}
+		local bindings = {}
+		local validButtonClasses = {
+			TextButton = true,
+			ImageButton = true,
+		}
+		local work_when_gui_is_hidden = false
+
+		-- Internal: Fires the MouseButton1Click event for a button if possible
+		local function fireButton(binding)
+			if not binding then return end
+			local button = binding.button
+			local fallback = binding.fallback
+			if button and button.Parent and validButtonClasses[button.ClassName] then
+				-- Only fire if button is enabled and visible
+				if button.Visible and button.AutoButtonColor ~= false and button.Active ~= false then
+					-- Fire MouseButton1Click event using firesignal if available, else fallback
+					if button.MouseButton1Click then
+						if work_when_gui_is_hidden == true and script.Parent.Parent.Enabled == true then
+							return
+						end
+
+						if typeof(firesignal) == "function" then
+							firesignal(button.MouseButton1Click)
+						elseif typeof(fallback) == "function" then
+							fallback(button)
+							return
+						else
+							-- Default fallback: try :Fire()
+							if typeof(button.MouseButton1Click.Fire) == "function" then
+								button.MouseButton1Click:Fire()
+							end
+						end
+					end
+				end
+			end
+		end
+
+		-- Internal: Listen for key presses
+		UserInputService.InputBegan:Connect(function(input, gameProcessed)
+			if gameProcessed then return end
+			if input.UserInputType == Enum.UserInputType.Keyboard then
+				local key = input.KeyCode.Name
+				local binding = bindings[key]
+				fireButton(binding)
+			end
+		end)
+
+		-- Defensive check for key string
+		local function isValidKey(key)
+			return typeof(key) == "string" and Enum.KeyCode[key] ~= nil
+		end
+
+		-- Defensive check for button instance
+		local function isValidButton(button)
+			return typeof(button) == "Instance" and validButtonClasses[button.ClassName]
+		end
+
+		-- Binds a key to a button, with optional fallback callback if firesignal is not available
+		function KeyBindBTNModule.connect(keyToPress, button, OnFireSignalNotEnabled)
+			assert(isValidKey(keyToPress), "KeyBindBTNModule.connect: keyToPress must be a valid KeyCode string")
+			assert(isValidButton(button), "KeyBindBTNModule.connect: button must be a valid GuiButton (TextButton/ImageButton)")
+			bindings[keyToPress] = {button = button, fallback = OnFireSignalNotEnabled}
+		end
+
+		-- Removes a key binding
+		function KeyBindBTNModule.disconnect(keyToPress)
+			assert(isValidKey(keyToPress), "KeyBindBTNModule.disconnect: keyToPress must be a valid KeyCode string")
+			bindings[keyToPress] = nil
+		end
+
+		-- Updates an existing binding to a new button (keeps the fallback callback)
+		function KeyBindBTNModule.update(keyToPress, newButton)
+			assert(isValidKey(keyToPress), "KeyBindBTNModule.update: keyToPress must be a valid KeyCode string")
+			assert(isValidButton(newButton), "KeyBindBTNModule.update: newButton must be a valid GuiButton (TextButton/ImageButton)")
+			if bindings[keyToPress] then
+				bindings[keyToPress].button = newButton
+			else
+				error("KeyBindBTNModule.update: No existing binding for key '" .. keyToPress .. "'")
+			end
+		end
+
+		-- Returns a shallow copy of all current key-button bindings (returns button only, not fallback)
+		function KeyBindBTNModule.getBindings()
+			local copy = {}
+			for key, binding in bindings do
+				copy[key] = binding.button
+			end
+			return copy
+		end
+
+		function KeyBindBTNModule.set_WWGIH_Bool(bool: boolean)
+			work_when_gui_is_hidden = bool
+		end
+
+		function KeyBindBTNModule.get_WWGIH_Bool()
+			return work_when_gui_is_hidden
+		end
+		return KeyBindBTNModule
+	end;
+};
+G2L_MODULES[G2L["1dd"]] = {
+	Closure = function()
+		local script = G2L["1dd"];
+		-- TranslatorModule
+		local HttpService = game:GetService("HttpService")
+		local Players = game:GetService("Players")
+
+		-- Excluded texts that should not be translated
+		local excludedTexts = {
+			"- - -  ",
+			"- - - - - - - - - -  - - - - - - - - - -  - - - - - - - - - -  ",
+			"MurderD0llan / Murder Mystery 2",
+			"Main",
+			"Target",
+			"Murder",
+			"Sherrif",
+			"Innocent",
+			"Options",
+			"X",
+			"+",
+			"-"
+		}
+
+		local function isExcluded(text)
+			for _, excluded in excludedTexts do
+				if text == excluded then
+					return true
+				end
+			end
+			return false
+		end
+
+		local Translator = {}
+
+		-- Table to store original text values for undo
+		local originalTexts = {}
+
+		local function getHttpRequest()
+			return (http_request or request or (syn and syn.request) or (http and http.request) or (fluxus and fluxus.request))
+		end
+
+		local function getTargetLanguage()
+			local localeId = Players.LocalPlayer.LocaleId
+			return string.sub(localeId, 1, 2)
+		end
+
+		function Translator.TranslateText(text, targetLang)
+			local httpRequest = getHttpRequest()
+			if not httpRequest then
+				return nil, "No compatible HTTP request function found."
+			end
+
+			local url = "https://translate.googleapis.com/translate_a/single"
+			local query = string.format("?client=gtx&sl=auto&tl=%s&dt=t&q=%s", targetLang, HttpService:UrlEncode(text))
+
+			local success, response = pcall(function()
+				return httpRequest({
+					Url = url .. query,
+					Method = "GET"
+				})
+			end)
+
+			if not success or not response or not response.Body then
+				return nil, "HTTP request failed."
+			end
+
+			local decoded
+			success, decoded = pcall(function()
+				return HttpService:JSONDecode(response.Body)
+			end)
+
+			if not success or not decoded then
+				return nil, "JSON decoding failed."
+			end
+
+			local translated = decoded[1] and decoded[1][1] and decoded[1][1][1]
+			if translated then
+				return translated
+			else
+				return nil, "Translation not found in response."
+			end
+		end
+
+		function Translator.TranslateGui(screenGui)
+			local targetLang = getTargetLanguage()
+
+			local function translateInstance(obj)
+				if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+					if obj.Text and #obj.Text > 0 and not isExcluded(obj.Text) then
+						-- Store original text if not already stored
+						if not originalTexts[obj] then
+							originalTexts[obj] = { Text = obj.Text }
+						end
+						local translated, err = Translator.TranslateText(obj.Text, targetLang)
+						if translated then
+							obj.Text = translated
+						else
+							return false, string.format("Failed to translate '%s': %s", obj.Text, err)
+						end
+						task.wait(0.2)
+					end
+				elseif obj:IsA("TextBox") then
+					-- Store original text and placeholder if not already stored
+					if not originalTexts[obj] then
+						originalTexts[obj] = { Text = obj.Text, PlaceholderText = obj.PlaceholderText }
+					end
+					-- Traducir TextBox.Text
+					if obj.Text and #obj.Text > 0 and not isExcluded(obj.Text) then
+						local translated, err = Translator.TranslateText(obj.Text, targetLang)
+						if translated then
+							obj.Text = translated
+						else
+							return false, string.format("Failed to translate TextBox.Text '%s': %s", obj.Text, err)
+						end
+						task.wait(0.2)
+					end
+					-- Traducir TextBox.PlaceholderText
+					if obj.PlaceholderText and #obj.PlaceholderText > 0 and not isExcluded(obj.PlaceholderText) then
+						local translated, err = Translator.TranslateText(obj.PlaceholderText, targetLang)
+						if translated then
+							obj.PlaceholderText = translated
+						else
+							return false, string.format("Failed to translate TextBox.PlaceholderText '%s': %s", obj.PlaceholderText, err)
+						end
+						task.wait(0.2)
+					end
+				end
+
+				for _, child in obj:GetChildren() do
+					local ok, err = translateInstance(child)
+					if not ok then
+						return false, err
+					end
+				end
+
+				return true
+			end
+
+			return translateInstance(screenGui)
+		end
+
+		function Translator.UndoTranslation(screenGui)
+			-- Recursively restore original text values
+			local function restoreInstance(obj)
+				local original = originalTexts[obj]
+				if original then
+					if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+						if original.Text then
+							obj.Text = original.Text
+						end
+					elseif obj:IsA("TextBox") then
+						if original.Text then
+							obj.Text = original.Text
+						end
+						if original.PlaceholderText then
+							obj.PlaceholderText = original.PlaceholderText
+						end
+					end
+				end
+				for _, child in obj:GetChildren() do
+					restoreInstance(child)
+				end
+			end
+			restoreInstance(screenGui)
+		end
+
+		return Translator
+
+
+	end;
+};
+G2L_MODULES[G2L["1de"]] = {
+	Closure = function()
+		local script = G2L["1de"];
+		local UserInputService = game:GetService("UserInputService")
+		local Players = game:GetService("Players")
+		local GuiService = game:GetService("GuiService")
+
+		local ButtonSelectorModule = {}
+		local connection
+		local selecting = false
+		local instructionLabel
+
+		local IsStudio = game:GetService("RunService"):IsStudio()
+		local PathToVerify
+
+		if IsStudio then
+			PathToVerify = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+		else
+			PathToVerify = game:GetService("CoreGui")
+		end
+
+		print(PathToVerify:GetFullName())
+		-- Verifica si un botón está dentro de una instancia excluida
+		local function isExcluded(button, excludeList)
+			for _, excludedContainer in (excludeList or {}) do
+				if button.Parent == excludedContainer then
+					print("[ButtonSelectorModule][isExcluded] Button", button:GetFullName(), "is excluded by", excludedContainer:GetFullName())
+					return true
+				end
+			end
+			return false
+		end
+
+		-- Crea una UI temporal de instrucciones
+		local function showInstructionUI(parentGui)
+			if instructionLabel and instructionLabel.Parent then
+				print("[ButtonSelectorModule][showInstructionUI] Destroying previous instruction label")
+				instructionLabel:Destroy()
+			end
+
+			instructionLabel = Instance.new("TextLabel")
+			instructionLabel.Name = "SelectionInstructions"
+			instructionLabel.Size = UDim2.new(0.6, 0, 0.1, 0)
+			instructionLabel.Position = UDim2.new(0.2, 0, 0.05, 0)
+			instructionLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			instructionLabel.BackgroundTransparency = 0.3
+			instructionLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			instructionLabel.Font = Enum.Font.GothamBold
+			instructionLabel.TextScaled = true
+			instructionLabel.Text = "Right-click a button to select it..."
+			instructionLabel.ZIndex = 100
+
+			instructionLabel.Parent = parentGui
+			print("[ButtonSelectorModule][showInstructionUI] Instruction label shown on", parentGui:GetFullName())
+
+			-- Desaparece después de 5 segundos si no se selecciona nada
+			task.delay(5, function()
+				if instructionLabel and instructionLabel.Parent then
+					print("[ButtonSelectorModule][showInstructionUI] Instruction label auto-destroyed after 5s")
+					instructionLabel:Destroy()
+				end
+			end)
+		end
+
+		function ButtonSelectorModule.Start(rootGui: Instance, exclude: {Instance}?, SelectionNotificationCallBack: () -> (), callback: (Instance) -> ())
+			if selecting then
+				print("[ButtonSelectorModule][Start] Already selecting, aborting.")
+				return
+			end
+			selecting = true
+			print("[ButtonSelectorModule][Start] Selection started on", rootGui:GetFullName())
+
+			if typeof(SelectionNotificationCallBack) == "function" then
+				print("[ButtonSelectorModule][Start] Calling SelectionNotificationCallBack")
+				SelectionNotificationCallBack()
+			end
+
+			showInstructionUI(rootGui)
+
+			connection = UserInputService.InputBegan:Connect(function(input, processed)
+				print("[ButtonSelectorModule][InputBegan] Input:", input.UserInputType, "Processed:", processed)
+				if input.UserInputType ~= Enum.UserInputType.MouseButton2 then return end
+
+				local mousePos = UserInputService:GetMouseLocation()
+				print("[ButtonSelectorModule][InputBegan] Mouse position:", mousePos.X, mousePos.Y)
+				local guiObjects = PathToVerify:GetGuiObjectsAtPosition(mousePos.X, mousePos.Y)
+				print("[ButtonSelectorModule][InputBegan] GuiObjects at position:", #guiObjects)
+
+				local button = nil
+				for i, gui in guiObjects do
+					print("[ButtonSelectorModule][InputBegan] Checking gui:", gui:GetFullName())
+					if gui:IsA("GuiButton") and not isExcluded(gui, exclude) then
+						print("[ButtonSelectorModule][InputBegan] Found selectable button:", gui:GetFullName())
+						button = gui
+						break
+					end
+				end
+
+				if button then
+					if typeof(callback) == "function" then
+						print("[ButtonSelectorModule][InputBegan] Calling callback for button:", button:GetFullName())
+						callback(button)
+					end
+					ButtonSelectorModule.Stop()
+				else
+					print("[ButtonSelectorModule][InputBegan] No valid button found under mouse.")
+				end
+			end)
+		end
+
+		function ButtonSelectorModule.Stop()
+			if connection then
+				print("[ButtonSelectorModule][Stop] Disconnecting input connection.")
+				connection:Disconnect()
+				connection = nil
+			end
+			if instructionLabel then
+				print("[ButtonSelectorModule][Stop] Destroying instruction label.")
+				instructionLabel:Destroy()
+				instructionLabel = nil
+			end
+			selecting = false
+			print("[ButtonSelectorModule][Stop] Selection stopped.")
+		end
+
+		-- Applies a one-time click connection to every button in the gui, excluding those in the exclude list
+		function ButtonSelectorModule.ApplyOnceToButtons(rootGui: Instance, exclude: {Instance}?, callback: (Instance) -> ())
+			if not rootGui then
+				print("[ButtonSelectorModule][ApplyOnceToButtons] No rootGui provided.")
+				return
+			end
+			print("[ButtonSelectorModule][ApplyOnceToButtons] Applying once-connection to buttons in", rootGui:GetFullName())
+			for _, descendant in rootGui:GetDescendants() do
+				if descendant:IsA("GuiButton") and not isExcluded(descendant, exclude) then
+					print("[ButtonSelectorModule][ApplyOnceToButtons] Connecting to button:", descendant:GetFullName())
+					local conn
+					conn = descendant.MouseButton1Click:Connect(function()
+						print("[ButtonSelectorModule][ApplyOnceToButtons] Button clicked (once):", descendant:GetFullName())
+						if typeof(callback) == "function" then
+							callback(descendant)
+						end
+						if conn then
+							print("[ButtonSelectorModule][ApplyOnceToButtons] Disconnecting connection for button:", descendant:GetFullName())
+							conn:Disconnect()
+							conn = nil
+						end
+					end)
+				else
+					if descendant:IsA("GuiButton") then
+						print("[ButtonSelectorModule][ApplyOnceToButtons] Button excluded:", descendant:GetFullName())
+					end
+				end
+			end
+		end
+
+		return ButtonSelectorModule
+
+
+	end;
+};
+G2L_MODULES[G2L["1df"]] = {
+	Closure = function()
+		local script = G2L["1df"];
+		local Players = game:GetService("Players")
+		local UserInputService = game:GetService("UserInputService")
+
+		local KeySelectorModule = {}
+
+		local active = false
+		local connection
+		local ui
+
+		local function createOverlay()
+			local playerGui = Players.LocalPlayer:WaitForChild("PlayerGui")
+
+			local screenGui = Instance.new("ScreenGui")
+			screenGui.Name = "KeySelectorOverlay"
+			screenGui.ResetOnSpawn = false
+			screenGui.IgnoreGuiInset = true
+
+			local background = Instance.new("Frame")
+			background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			background.BackgroundTransparency = 0.4
+			background.Size = UDim2.new(1, 0, 1, 0)
+			background.Position = UDim2.new(0, 0, 0, 0)
+			background.Parent = screenGui
+
+			-- Texto principal
+			local mainLabel = Instance.new("TextLabel")
+			mainLabel.Size = UDim2.new(1, 0, 0.2, 0)
+			mainLabel.Position = UDim2.new(0, 0, 0.4, 0)
+			mainLabel.BackgroundTransparency = 1
+			mainLabel.Text = "Press any key to proceed with the action"
+			mainLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			mainLabel.TextScaled = true
+			mainLabel.Font = Enum.Font.GothamBold
+			mainLabel.Parent = screenGui
+
+			-- Texto secundario (Escape)
+			local secondaryLabel = Instance.new("TextLabel")
+			secondaryLabel.Size = UDim2.new(1, 0, 0.05, 0)
+			secondaryLabel.Position = UDim2.new(0, 0, 0.6, 0)
+			secondaryLabel.BackgroundTransparency = 1
+			secondaryLabel.Text = [[or press the "Backspace" key to cancel the process]]
+			secondaryLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			secondaryLabel.TextTransparency = 0.4
+			secondaryLabel.TextScaled = true
+			secondaryLabel.Font = Enum.Font.Gotham
+			secondaryLabel.Parent = screenGui
+
+			screenGui.Parent = playerGui
+			ui = screenGui
+		end
+
+		local function cleanup()
+			if connection then
+				connection:Disconnect()
+				connection = nil
+			end
+			if ui then
+				ui:Destroy()
+				ui = nil
+			end
+			active = false
+		end
+
+		function KeySelectorModule.Start(callback: (string) -> ())
+			if active then return end
+			active = true
+
+			createOverlay()
+
+			connection = UserInputService.InputBegan:Connect(function(input, processed)
+				if processed or input.UserInputType ~= Enum.UserInputType.Keyboard then return end
+
+				local key = input.KeyCode
+				if key == Enum.KeyCode.Backspace then
+					cleanup()
+					return
+				end
+
+				if typeof(callback) == "function" then
+					callback(key.Name)
+				end
+
+				cleanup()
+			end)
+		end
+
+		function KeySelectorModule.Cancel()
+			cleanup()
+		end
+
+		return KeySelectorModule
+
+	end;
+};
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_1.Handler
 local function C_13()
 	local script = G2L["13"];
@@ -6407,7 +8299,7 @@ local function C_13()
 	local Help_Functions = {
 		findMurderer = function()
 			for _, i in ipairs(Players:GetPlayers()) do
-				if i.Backpack:FindFirstChild("Knife") or (i.Character and i.Character:FindFirstChild("Knife")) then
+				if i.Backpack:FindFirstChild("Knife") or (i.Character and i.Character:FindFirstChild("Knife")) or i.Backpack:FindFirstChild("knife") or (i.Character and i.Character:FindFirstChild("knife")) then
 					return i
 				end
 			end
@@ -6539,7 +8431,6 @@ local function C_13()
 			RemoveESP(player)
 		end
 	end
-
 	-- Activar / Desactivar ESP
 	Script.Buttons.ESP.Button.MouseButton1Click:Connect(function()
 		Loops.ESP.Active = not Loops.ESP.Active
@@ -6547,6 +8438,12 @@ local function C_13()
 		Script.Buttons.ESP.Indicator.BackgroundColor3 = Loops.ESP.Active and Color3.fromRGB(0, 255, 0) or Color3.fromRGB(255, 0, 0)
 		if Loops.ESP.Active then
 			ESP(Loops.ESP.TypeOf)
+			task.spawn(function()
+				while Loops.ESP.Active do
+					ESP(Loops.ESP.TypeOf)
+					task.wait(1)
+				end
+			end)
 		else
 			UnESP()
 		end
@@ -8679,11 +10576,72 @@ local function C_13()
 		setupCharacter(localplayer.Character)
 	end
 
+
+	local MTGU = script.Parent.MakeTheGameUnplayable
+
+	local IsActiveMTGU = false
+
+	local ConnectionV12
+
+	local MTGUFrame = script.Parent.MakeTheGameUnplayable.Frame
+
+	MTGU.MouseButton1Click:Connect(function()
+		if not IsActiveMTGU then
+			IsActiveMTGU = true
+			ConnectionV12 = workspace.ChildAdded:Connect(function(child)
+				if child:FindFirstChild("CoinContainer") and child:FindFirstChild("Spawns") then
+					task.delay(15, function()
+						SkidFling(Help_Functions.findMurderer())
+					end)
+				end
+			end)
+			MTGUFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			if ConnectionV12 then
+				ConnectionV12:Disconnect()
+			end
+			IsActiveMTGU = false
+			MTGUFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+
+
+
+	local NSIR = script.Parent.NoSheriffsInRound
+
+	local IsActiveNSIR = false
+
+	local ConnectionV13
+
+	local NSIRFrame = script.Parent.NoSheriffsInRound.Frame
+
+	NSIR.MouseButton1Click:Connect(function()
+		if not IsActiveNSIR then
+			IsActiveNSIR = true
+			ConnectionV13 = workspace.ChildAdded:Connect(function(child)
+				if child:FindFirstChild("CoinContainer") and child:FindFirstChild("Spawns") then
+					task.delay(15, function()
+						SkidFling(Help_Functions.findSheriffThatsNotMe())
+					end)
+				end
+			end)
+			NSIRFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			if ConnectionV13 then
+				ConnectionV13:Disconnect()
+			end
+			IsActiveNSIR = false
+			NSIRFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+
+
+
 end;
 task.spawn(C_13);
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_2.HandlerV2
-local function C_99()
-	local script = G2L["99"];
+local function C_ac()
+	local script = G2L["ac"];
 	local contenedorBusqueda = script.Parent -- Cambia esto a la ruta del objeto donde quieres buscar
 	local Notificaciones = {
 		Error = "rbxassetid://4041673253",
@@ -8792,6 +10750,7 @@ local function C_99()
 		if Target then
 			AssignTarget(Target)
 			playSound(Notificaciones.Correcto, Parent)
+			UpdateUIForTarget()
 		else
 			require(script.Parent.Parent.Parent.Parent.NotificationService).ShowNotification({
 				title = "Notification Error / InputBox",
@@ -9013,6 +10972,19 @@ local function C_99()
 		for _, i in ipairs(game.Players:GetPlayers()) do
 			if not i.Character then continue end
 			if i.Character:FindFirstChild("Knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if i.Backpack:FindFirstChild("knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if not i.Character then continue end
+			if i.Character:FindFirstChild("knife") then
 				return i
 			end
 		end
@@ -9750,11 +11722,67 @@ local function C_99()
 	MouseButton1Click("Check Pro Player", function()
 		sucessnotify("this function still in work, try again later.")
 	end)
+
+	-----------------
+	local MurderD0llanAdmin = require(script.Parent.Parent.Parent.Parent.HelpModules["MurderD0llanAdminModule"])
+
+	local GiveAdminButton = script.Parent.giveAdmin
+	local frameBGC3GAB = GiveAdminButton:WaitForChild("Frame")
+
+	-- Define colores (puedes cambiarlos según tu estilo)
+	local whilelistedColor = Color3.fromRGB(0, 170, 0)   -- Verde
+	local notWhilelistedColor = Color3.fromRGB(170, 0, 0) -- Rojo
+
+	-- Comprueba si el jugador está en la whitelist
+	local function IsPlayerWhilelisted(player: Player): boolean
+		local list = MurderD0llanAdmin.whilelistedList()
+		for _, p in pairs(list) do
+			if p == player then
+				return true
+			end
+		end
+		return false
+	end
+
+	-- Cambia el color de fondo del botón según el estado
+	local function ChangeBGC3(isWhilelisted: boolean)
+		if isWhilelisted then
+			frameBGC3GAB.BackgroundColor3 = whilelistedColor
+		else
+			frameBGC3GAB.BackgroundColor3 = notWhilelistedColor
+		end
+	end
+
+	-- Alternar admin: agregar o quitar dependiendo del estado
+	local function ToggleAdminForPlayer(player: Player)
+		if IsPlayerWhilelisted(player) then
+			MurderD0llanAdmin.unwhilelist(player)
+			ChangeBGC3(false)
+		else
+			MurderD0llanAdmin.whilelist(player)
+			ChangeBGC3(true)
+		end
+	end
+
+	-- Botón presionado
+	GiveAdminButton.MouseButton1Click:Connect(function()
+		if target then
+			ToggleAdminForPlayer(target)
+		end
+	end)
+
+	-- Función pública para actualizar visualmente el botón al cambiar el target
+	function UpdateUIForTarget()
+		if target then
+			ChangeBGC3(IsPlayerWhilelisted(target))
+		end
+	end
+
 end;
-task.spawn(C_99);
+task.spawn(C_ac);
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_3.HandlerV3
-local function C_e4()
-	local script = G2L["e4"];
+local function C_fb()
+	local script = G2L["fb"];
 	local contenedorBusqueda = script.Parent -- Cambia esto a la ruta del objeto donde quieres buscar
 	local Notificaciones = {
 		Error = "rbxassetid://4041673253",
@@ -10332,6 +12360,20 @@ local function C_e4()
 				return i
 			end
 		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if i.Backpack:FindFirstChild("knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if not i.Character then continue end
+			if i.Character:FindFirstChild("knife") then
+				return i
+			end
+		end
+
 
 		return nil
 	end
@@ -11173,11 +13215,157 @@ local function C_e4()
 			KillGunFrameBGC3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 		end
 	end)
+
+
+	--------------------------------
+
+	task.spawn(function()
+		local Players = game:GetService("Players")
+
+		local LocalPlayer = Players.LocalPlayer
+		local STOPTHETIMETool = script.Parent.STOPTHETIME
+		local STOPTHETIMEToolFrame = STOPTHETIMETool:WaitForChild("Frame")
+
+		local IsActiveSTTT = false
+		local ConnectionV14
+		local GeneratedToolSTTT
+
+		-- 🔧 Crea la herramienta solo una vez
+		local function createTool()
+			if GeneratedToolSTTT then return end
+
+			local tool = Instance.new("Tool")
+			tool.Name = "StopTheTime"
+			tool.RequiresHandle = true
+			tool.CanBeDropped = false
+
+			local handle = Instance.new("Part")
+			handle.Name = "Handle"
+			handle.Size = Vector3.new(1, 1, 1)
+			handle.Transparency = 1
+			handle.Anchored = false
+			handle.CanCollide = false
+			handle.Parent = tool
+
+
+			tool.Equipped:Connect(function()
+				local function freezePlayer(targetPlayer)
+					local char = targetPlayer.Character
+					if not char then return end
+
+					-- Congelar posición
+					for _, part in pairs(char:GetDescendants()) do
+						if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+							part.Anchored = true
+						end
+					end
+
+					-- Pausar animaciones
+					local humanoid = char:FindFirstChildOfClass("Humanoid")
+					if humanoid then
+						for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+							track:AdjustSpeed(0)
+						end
+					end
+
+					-- Congelar herramientas equipadas
+					local toolEquipped = char:FindFirstChildOfClass("Tool")
+					if toolEquipped then
+						local triedToRemove = false
+
+						-- Reequipar si la quitan
+						toolEquipped.AncestryChanged:Connect(function()
+							if triedToRemove then return end
+							triedToRemove = true
+							task.wait(0.1)
+							toolEquipped.Parent = char
+						end)
+					end
+				end
+
+				-- Aplica a todos los jugadores menos a uno mismo
+				for _, player in ipairs(game.Players:GetPlayers()) do
+					if player ~= LocalPlayer then
+						freezePlayer(player)
+					end
+				end
+			end)
+
+			tool.Unequipped:Connect(function()
+				-- Al soltar el tool, desancla y reanima
+				for _, player in ipairs(game.Players:GetPlayers()) do
+					if player ~= LocalPlayer and player.Character then
+						for _, part in pairs(player.Character:GetDescendants()) do
+							if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+								part.Anchored = false
+							end
+						end
+
+						local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+						if humanoid then
+							for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+								track:AdjustSpeed(1)
+							end
+						end
+					end
+				end
+			end)
+
+
+			tool.Parent = LocalPlayer:WaitForChild("Backpack")
+			GeneratedToolSTTT = tool
+		end
+
+		local function giveTool()
+			if not GeneratedToolSTTT then
+				createTool()
+			end
+
+			local backpack = LocalPlayer:FindFirstChild("Backpack")
+			if backpack and not backpack:FindFirstChild("StopTheTime") then
+				GeneratedToolSTTT.Parent = backpack
+			end
+		end
+
+		local function removeTool()
+			for _, loc in ipairs({LocalPlayer.Character, LocalPlayer.Backpack}) do
+				local tool = loc and loc:FindFirstChild("StopTheTime")
+				if tool then
+					tool.Parent = nil
+				end
+			end
+		end
+
+		local function toggleSTTT()
+			IsActiveSTTT = not IsActiveSTTT
+
+			if IsActiveSTTT then
+				STOPTHETIMEToolFrame.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+				giveTool()
+
+				ConnectionV14 = LocalPlayer.CharacterAdded:Connect(function()
+					task.wait(1)
+					giveTool()
+				end)
+			else
+				STOPTHETIMEToolFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+				removeTool()
+
+				if ConnectionV14 then
+					ConnectionV14:Disconnect()
+					ConnectionV14 = nil
+				end
+			end
+		end
+
+		STOPTHETIMETool.MouseButton1Click:Connect(toggleSTTT)
+
+	end)
 end;
-task.spawn(C_e4);
+task.spawn(C_fb);
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_4.HandlerV4
-local function C_118()
-	local script = G2L["118"];
+local function C_132()
+	local script = G2L["132"];
 	local contenedorBusqueda = script.Parent -- Cambia esto a la ruta del objeto donde quieres buscar
 	local Notificaciones = {
 		Error = "rbxassetid://4041673253",
@@ -11404,6 +13592,19 @@ local function C_118()
 			end
 		end
 
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if i.Backpack:FindFirstChild("knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if not i.Character then continue end
+			if i.Character:FindFirstChild("knife") then
+				return i
+			end
+		end
+
 		return nil
 	end
 
@@ -11464,48 +13665,63 @@ local function C_118()
 	local Connection
 
 	local Auto_Shoot_At_Murder = script.Parent.autoshootatmurder
-	local IsActiveASAM = Auto_Shoot_At_Murder.Frame
-
+	local IsActiveASAMframe = Auto_Shoot_At_Murder.Frame
+	local IsActiveASAM = false
 	local rs = game:GetService("RunService")
 	local localplayer = game:GetService("Players").LocalPlayer
 
+	local ConnectionForASAM 
 	script.Parent.autoshootatmurder.MouseButton1Click:Connect(function()
-		rs.Stepped:Connect(function()
-			if findSheriff() ~= localplayer then 
-				return 
+		if not IsActiveASAM then
+			IsActiveASAM = true
+			IsActiveASAMframe.BackgroundColor3 = Color3.new(0, 1, 0)
+			if ConnectionForASAM then
+				ConnectionForASAM:Disconnect()
 			end
-
-			local murderer = findMurderer()
-			if not murderer then
-				return
-			end
-
-			local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
-			if not murdererHRP then
-
-				return
-			end
-			-- shoot a ray from player to murderer
-			local origin = localplayer.Character.HumanoidRootPart.Position
-			local direction = (Vector3.new(murdererHRP.Position.X, origin.Y, murdererHRP.Position.Z) - origin).unit * 1000
-			local params = RaycastParams.new()
-
-			local raycastResult = workspace:Raycast(origin, direction, params)
-			if raycastResult then
-				if raycastResult.Instance == murdererHRP then
-					local predictedPosition = PredictShootPosition(murderer, shootOffset)
-
-					local args = {
-						[1] = 1,
-						[2] = predictedPosition,
-						[3] = "AH2"
-					}
-
-
-					localplayer.Character.Gun.KnifeLocal.CreateBeam.RemoteFunction:InvokeServer(unpack(args))
+			ConnectionForASAM = rs.Stepped:Connect(function()
+				if findSheriff() ~= localplayer then 
+					return 
 				end
+
+				local murderer = findMurderer()
+				if not murderer then
+					return
+				end
+
+				local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
+				if not murdererHRP then
+
+					return
+				end
+				-- shoot a ray from player to murderer
+				local origin = localplayer.Character.HumanoidRootPart.Position
+				local direction = (Vector3.new(murdererHRP.Position.X, origin.Y, murdererHRP.Position.Z) - origin).unit * 1000
+				local params = RaycastParams.new()
+
+				local raycastResult = workspace:Raycast(origin, direction, params)
+				if raycastResult then
+					if raycastResult.Instance == murdererHRP then
+						local predictedPosition = PredictShootPosition(murderer, shootOffset)
+
+						local args = {
+							[1] = 1,
+							[2] = predictedPosition,
+							[3] = "AH2"
+						}
+
+
+						localplayer.Character.Gun.KnifeLocal.CreateBeam.RemoteFunction:InvokeServer(unpack(args))
+					end
+				end
+			end)
+		else
+			IsActiveASAM = false
+			IsActiveASAMframe.BackgroundColor3 = Color3.new(1, 0, 0)
+			if ConnectionForASAM then
+				ConnectionForASAM:Disconnect()
 			end
-		end)	
+		end
+
 	end)
 
 	MouseButton1Click("TP-Kill murder", function()
@@ -12080,15 +14296,135 @@ local function C_118()
 			script.Parent.triggerbot.Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- green
 		end
 	end)
+	-------------------------------------
+
+
+	task.spawn(function()
+		local selectingKey = false
+		local UserInputService = game:GetService("UserInputService")
+		local button = FindButton("camera kill Murder - not selected key  ")
+		local flashing = false
+		local originalBGColor = button.BackgroundColor3
+		local originalTextStroke = button.TextStrokeColor3
+		local selectedKey = Enum.KeyCode.Unknown
+		local function startKeySelection()
+			if selectingKey then return end
+			selectingKey = true
+			button.Text = "  Press any key..."
+			button.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+			flashing = true
+
+			-- Flash stroke
+			task.spawn(function()
+				while flashing do
+					button.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+					task.wait(0.5)
+					button.TextStrokeColor3 = originalTextStroke
+					task.wait(0.5)
+				end
+			end)
+		end
+
+		local function onInputBegan(input, gameProcessed)
+			if selectingKey and not gameProcessed then
+				if input.UserInputType == Enum.UserInputType.Keyboard then
+					selectedKey = input.KeyCode
+					local keyName = selectedKey.Name
+					button:SetAttribute("SELECTED_KEY", keyName)
+					button.Text = string.format("camera kill Murder - %s  ", keyName)
+					selectingKey = false
+					flashing = false
+					button.BackgroundColor3 = originalBGColor
+					button.TextStrokeColor3 = originalTextStroke
+				end
+			end
+		end
+
+		button.MouseButton1Click:Connect(startKeySelection)
+		UserInputService.InputBegan:Connect(onInputBegan)
+	end)
+
+	local CKM = script.Parent.CKM
+	local IsActiveCKM = false
+	local IsActiveFrameCKM = SWKPButton.Frame
+	local ConnectionForCKM
+
+	local function getselectedkeyforCKM()
+		local button = FindButtonWithMatchedString("camera kill Murder -")
+		--
+		if button:GetAttribute("SELECTED_KEY") then
+			return Enum.KeyCode[button:GetAttribute("SELECTED_KEY")]
+		else
+			return Enum.KeyCode.Unknown
+		end
+	end
+
+	CKM.MouseButton1Click:Connect(function()
+		if not IsActiveCKM then
+			IsActiveCKM = true
+			IsActiveFrameCKM.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			ConnectionForCKM = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+				if input.KeyCode == getselectedkeyforCKM() and not gameProcessed then
+					if findSheriff() ~= localplayer then 
+						return 
+					end
+
+					local murderer = findMurderer()
+					if not murderer then
+						return
+					end
+
+					local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
+					if not murdererHRP then
+
+						return
+					end
+					-- shoot a ray from player to murderer
+					local origin = localplayer.Character.HumanoidRootPart.Position
+					local direction = (Vector3.new(murdererHRP.Position.X, origin.Y, murdererHRP.Position.Z) - origin).unit * 1000
+					local params = RaycastParams.new()
+
+					local raycastResult = workspace:Raycast(origin, direction, params)
+					if raycastResult then
+						if raycastResult.Instance == murdererHRP then
+
+							local predictedPosition = PredictShootPosition(murderer, shootOffset)
+							--MOVE CAMERA TO PREDICT POSITION
+							local camera = game.Workspace.CurrentCamera
+							local OLDPOSC = camera.CFrame.Position
+							camera.CFrame = CFrame.new(predictedPosition, murdererHRP.Position)
+							wait(0.3)
+							local args = {
+								[1] = 1,
+								[2] = predictedPosition,
+								[3] = "AH2"
+							}
+
+
+							localplayer.Character.Gun.KnifeLocal.CreateBeam.RemoteFunction:InvokeServer(unpack(args))
+							wait(0.2)
+							camera.CFrame = CFrame.new(OLDPOSC)
+						end
+					end
+				end
+			end)
+		else
+			if ConnectionForCKM then
+				IsActiveCKM = false
+				IsActiveFrameCKM.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				ConnectionForCKM:Disconnect()
+				ConnectionForCKM = nil
+			end
+		end
+	end)
 end;
-task.spawn(C_118);
+task.spawn(C_132);
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_feedback.RatingFrame.RatingSystem
-local function C_141()
-	local script = G2L["141"];
+local function C_15b()
+	local script = G2L["15b"];
 	local frame = script.Parent
 	local totalStars = 5
 	local selectedRating = 0
-	local specialSixthStar = false
 
 	local feedbackBox = frame.Parent:FindFirstChild("FeedBackBOX")
 	local starCountLabel = frame.Parent:FindFirstChild("starcount")
@@ -12130,11 +14466,6 @@ local function C_141()
 			color = Color3.fromRGB(0, 170, 255),
 			placeholder = "Amazing! Share what you loved most or any extra thoughts you have!"
 		},
-		[6] = {
-			text = "AWESOME BRO (6 stars)",
-			color = Color3.fromRGB(200, 100, 255),
-			placeholder = "You're a legend! Tell us what blew your mind or what inspired this top score!"
-		}
 	}
 
 	-- Sound speeds for each rating
@@ -12145,8 +14476,12 @@ local function C_141()
 		[3] = 0.8,
 		[4] = 0.9,
 		[5] = 1.0,
-		[6] = 1.1
 	}
+
+
+	local Debris = game:GetService("Debris")
+
+
 
 	-- Update visual stars and UI
 	local function updateRatingDisplay(rating)
@@ -12179,13 +14514,7 @@ local function C_141()
 	-- Handle star click
 	local function handleStarClick(index)
 
-		if index == 5 and selectedRating == 5 and not specialSixthStar then
-			selectedRating = 6
-			specialSixthStar = true
-		else
-			selectedRating = index
-			specialSixthStar = false
-		end
+		selectedRating = index
 		script.Parent.Parent:SetAttribute("rate", tonumber(index))
 		updateRatingDisplay(selectedRating)
 		print("⭐ Rating given:", selectedRating)
@@ -12214,10 +14543,334 @@ local function C_141()
 	updateRatingDisplay(0)
 
 end;
-task.spawn(C_141);
+task.spawn(C_15b);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_search.LocalScript
+local function C_16f()
+	local script = G2L["16f"];
+	local SearchSystem = {}
+
+	-- UI Element References
+	local Template = script.Parent:FindFirstChild("Template")
+	local ContentArea = script.Parent.Parent
+	local SearchResultsContainer = script.Parent
+	local StatusLabelTemplate = script.Parent:FindFirstChild("TextLabel") -- Expected to be Instance_1_9369
+
+	-- Constants
+	local MIN_SEARCH_TEXT_LENGTH = 3
+	local STATUS_MESSAGE_NAME = "StatusMessageLabel"
+	local SEARCH_RESULT_PREFIX = "SearchResult_"
+	local OLD_PAGE = nil
+
+	-- Initial Checks for critical components
+	if not Template then
+		warn("SearchSystem: Template frame not found. Search functionality will be severely limited.")
+	end
+	if Template and (not Template:FindFirstChild("ApplyInformation") or not Template.ApplyInformation:IsA("ModuleScript")) then
+		warn("SearchSystem: ApplyInformation ModuleScript not found within the Template. Search results cannot be processed.")
+	end
+	if not ContentArea then
+		warn("SearchSystem: ContentArea not found. Cannot search for items.")
+	end
+	if not SearchResultsContainer or not SearchResultsContainer:IsA("ScrollingFrame") then
+		warn("SearchSystem: SearchResultsContainer is not a ScrollingFrame. Results cannot be displayed.")
+	end
+	if not StatusLabelTemplate then
+		warn("SearchSystem: StatusLabelTemplate (TextLabel child of ALT_page_search) not found. Status messages cannot be displayed.")
+	end
+
+
+	-- Helper function to clear previous search results and status messages
+	local function ClearPreviousItems()
+		if not SearchResultsContainer then return end
+		StatusLabelTemplate.Visible = false
+		local childrenToClear = SearchResultsContainer:GetChildren()
+		for i = #childrenToClear, 1, -1 do
+			local child = childrenToClear[i]
+			if child then
+				if (child:IsA("Frame") and child.Name:match("^" .. SEARCH_RESULT_PREFIX)) or 
+					(child:IsA("TextLabel") and child.Name == STATUS_MESSAGE_NAME) then
+					child:Destroy()
+				end
+			end
+		end
+	end
+
+	local function UpdateCanvaSizeFromScrollingFrame()
+		local scrollingFrame = SearchResultsContainer
+		if scrollingFrame and scrollingFrame:IsA("ScrollingFrame") then
+			scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, scrollingFrame.UIListLayout.AbsoluteContentSize.Y + 110)
+		else
+			warn("SearchSystem: SearchResultsContainer is not a ScrollingFrame, cannot update CanvasSize.")
+		end
+	end
+
+	-- Helper function to show status messages (errors, no results, etc.)
+	local function ShowStatusMessage(messageText, isError)
+		local previousStatusMessage = SearchResultsContainer:FindFirstChild(STATUS_MESSAGE_NAME)
+		if previousStatusMessage then
+			previousStatusMessage:Destroy()
+		end
+
+		if not StatusLabelTemplate then
+			warn("SearchSystem: Cannot show status message because StatusLabelTemplate is missing. Message: " .. messageText)
+			return
+		end
+		if not SearchResultsContainer then
+			warn("SearchSystem: Cannot show status message because SearchResultsContainer is missing. Message: " .. messageText)
+			return
+		end
+
+		local messageLabel = StatusLabelTemplate:Clone()
+		messageLabel.Name = STATUS_MESSAGE_NAME
+		messageLabel.Text = messageText
+		if isError then
+			messageLabel.TextColor3 = Color3.fromRGB(255, 50, 50) -- Red for errors
+		else
+			messageLabel.TextColor3 = Color3.fromRGB(200, 200, 200) -- A neutral/info color
+		end
+		messageLabel.Visible = true
+		messageLabel.Parent = SearchResultsContainer
+	end
+
+	function SearchSystem.Search(searchText, filterType)
+		ClearPreviousItems()
+
+		-- Ensure search results page is visible and others are hidden at the start of a new search
+		if SearchResultsContainer then
+			SearchResultsContainer.Visible = true
+		end
+		if ContentArea then
+			for _, childInContentArea in ContentArea:GetChildren() do
+				if childInContentArea:IsA("ScrollingFrame") and childInContentArea ~= SearchResultsContainer then
+					if childInContentArea.Visible == true then
+						childInContentArea.Visible = false
+						SearchResultsContainer:SetAttribute("OLD_PAGE", childInContentArea.Name)
+					end
+				end
+			end
+		end
+
+		if not Template or not ContentArea or not SearchResultsContainer then
+			ShowStatusMessage("Search system critical components missing. Please check setup.", true)
+			return
+		end
+
+		local lowerSearchText = ""
+		local trimmedSearchText = searchText and searchText:match("^%s*(.-)%s*$") or ""
+
+		if not filterType or filterType == "" then
+			if trimmedSearchText == "" then
+				ShowStatusMessage("Search text cannot be empty or only spaces.", true)
+				return
+			end
+			if #trimmedSearchText < MIN_SEARCH_TEXT_LENGTH then
+				ShowStatusMessage("Search text must be at least " .. MIN_SEARCH_TEXT_LENGTH .. " characters long.", true)
+				return
+			end
+			lowerSearchText = string.lower(trimmedSearchText)
+		else 
+			lowerSearchText = string.lower(trimmedSearchText) 
+		end
+
+		local resultsFound = false
+		local resultsCount = 0
+
+		for _, pageInstance in ContentArea:GetChildren() do
+			if pageInstance:IsA("ScrollingFrame") and pageInstance ~= SearchResultsContainer then
+				local pageName = pageInstance.Name
+				--EXCLUDE ANY LETTER
+				local inWhatPageNumber = tonumber(string.match(pageName, "%d+")) or 0
+				for _, itemInPage in pageInstance:GetChildren() do
+					local itemPassesFilter = false
+					if not filterType or filterType == "" then
+						itemPassesFilter = true 
+					else
+						if filterType == "toggle" then
+							itemPassesFilter = (itemInPage:FindFirstChildOfClass("Frame") ~= nil)
+						elseif filterType == "button_with_box" then
+							itemPassesFilter = (itemInPage:FindFirstChildOfClass("TextBox") ~= nil)
+						elseif filterType == "change_button" then
+							local innerButton = itemInPage:FindFirstChildOfClass("TextButton")
+							itemPassesFilter = (innerButton ~= nil and innerButton ~= itemInPage) 
+						end
+					end
+
+					if not itemPassesFilter then
+						continue 
+					end
+
+					local textContent = nil
+					if itemInPage:IsA("TextButton") then
+						textContent = itemInPage.Text
+					else
+						local textLabelChild = itemInPage:FindFirstChildOfClass("TextLabel")
+						if textLabelChild then
+							textContent = textLabelChild.Text
+						end
+					end
+
+					local itemIsMatch = false
+					if filterType and filterType ~= "" and (lowerSearchText == "") then 
+						itemIsMatch = true
+					elseif lowerSearchText ~= "" then
+						if textContent and textContent ~= "" and string.find(string.lower(textContent), lowerSearchText, 1, true) then
+							itemIsMatch = true
+						end
+					elseif not filterType or filterType == "" then
+						itemIsMatch = false 
+					end
+
+					if itemIsMatch then
+						resultsFound = true
+						resultsCount += 1
+
+						UpdateCanvaSizeFromScrollingFrame()
+						task.spawn(function()
+							local message = ""
+							if filterType and filterType ~= "" then
+								if lowerSearchText ~= "" then
+									message = string.format("Found %d result(s) with filter '%s' for text '%s'.", resultsCount, filterType, trimmedSearchText)
+								else
+									message = string.format("Found %d result(s) with filter '%s'.", resultsCount, filterType)
+								end
+							else
+								message = string.format("Found %d result(s) for '%s'.", resultsCount, trimmedSearchText)
+							end
+							StatusLabelTemplate.Visible = true
+							StatusLabelTemplate.Text = message
+						end)
+						local newResultDisplay = Template:Clone()
+						newResultDisplay.Name = SEARCH_RESULT_PREFIX .. itemInPage.Name
+						newResultDisplay.Parent = SearchResultsContainer
+						newResultDisplay.Visible = true
+
+						local clonedApplyInfoModuleScript = newResultDisplay:FindFirstChild("ApplyInformation")
+						if clonedApplyInfoModuleScript and clonedApplyInfoModuleScript:IsA("ModuleScript") then
+							local ClonedApplyInformation = require(clonedApplyInfoModuleScript)
+							local success, err = pcall(ClonedApplyInformation.Apply, itemInPage.Name, inWhatPageNumber, nil, itemInPage)
+							if not success then
+								warn("SearchSystem: Error calling ApplyInformation.Apply for item '" .. itemInPage.Name .. "': " .. tostring(err))
+								newResultDisplay:Destroy() 
+							end
+						else
+							warn("SearchSystem: ApplyInformation module not found in cloned template for item '" .. itemInPage.Name .. "'.")
+							newResultDisplay:Destroy() 
+						end
+
+						-- Add ViewInPage button functionality
+						local viewInPageButton = newResultDisplay:FindFirstChild("ViewInPage")
+						if viewInPageButton and viewInPageButton:IsA("TextButton") then
+							viewInPageButton.MouseButton1Click:Connect(function()
+								if not SearchResultsContainer or not ContentArea or not pageInstance or not itemInPage or not itemInPage.Parent then
+									warn("SearchSystem: Missing components for ViewInPage action. Item: " .. (itemInPage and itemInPage.Name or "nil") .. ", Page: " .. (pageInstance and pageInstance.Name or "nil"))
+									return
+								end
+
+								-- 1. Hide SearchResultsContainer
+								SearchResultsContainer.Visible = false
+
+								-- 2. Show the original pageInstance and hide others in ContentArea
+								pageInstance.Visible = true -- Show the target page first
+								for _, childInContentArea in ContentArea:GetChildren() do
+									if childInContentArea:IsA("ScrollingFrame") then
+										if childInContentArea ~= pageInstance and childInContentArea ~= SearchResultsContainer then
+											childInContentArea.Visible = false
+										end
+									end
+								end
+
+								-- 3. Scroll pageInstance to itemInPage
+								if itemInPage.Parent == pageInstance then
+									-- Calculate Y position of the item's top edge within the canvas's coordinate system
+									local itemAbsoluteYOnCanvas = itemInPage.AbsolutePosition.Y - pageInstance.AbsolutePosition.Y + pageInstance.CanvasPosition.Y
+
+									local viewPortHeight = pageInstance.AbsoluteSize.Y
+									local itemHeight = itemInPage.AbsoluteSize.Y
+									-- Calculate desired CanvasPosition.Y to center the item
+									local desiredCanvasPositionY = itemAbsoluteYOnCanvas - (viewPortHeight / 2) + (itemHeight / 2)
+
+									local absoluteCanvasHeight = pageInstance.AbsoluteCanvasSize.Y
+
+									if viewPortHeight > 0 then
+										desiredCanvasPositionY = math.clamp(desiredCanvasPositionY, 0, math.max(0, absoluteCanvasHeight - viewPortHeight))
+									else 
+										desiredCanvasPositionY = 0 -- Fallback if viewport has no height
+									end
+
+									pageInstance.CanvasPosition = Vector2.new(pageInstance.CanvasPosition.X, desiredCanvasPositionY)
+								else
+									warn("SearchSystem: itemInPage '" .. itemInPage.Name .. "' is no longer parented to pageInstance '" .. pageInstance.Name .. "' when trying to scroll.")
+								end
+							end)
+						end
+					end
+				end
+			end
+		end
+
+
+		if not resultsFound then
+			if StatusLabelTemplate.Visible == true then
+				StatusLabelTemplate.Visible = false
+			end
+			local message
+			if filterType and filterType ~= "" then
+				if lowerSearchText ~= "" then
+					message = "No items found for filter '" .. filterType .. "' matching text '" .. trimmedSearchText .. "'."
+				else
+					message = "No items found for filter: " .. filterType .. "."
+				end
+			else
+				message = "No results found for '" .. trimmedSearchText .. "'."
+			end
+			ShowStatusMessage(message, false) 
+		end
+	end
+
+
+
+	local searchBox = script.Parent.Parent.Parent.searchHere
+	local searchPage = searchBox.Parent.ContentArea.ALT_page_search
+
+	local lastText = ""
+	local debounce = false
+	local MIN_SEARCH_LENGTH = 1
+
+	local function onSearchTextChanged()
+		if debounce then return end
+		debounce = true
+
+		task.delay(0.1, function() -- Pequeño retraso para permitir que el usuario termine de escribir
+			local currentText = searchBox.Text
+			if currentText == lastText then
+				debounce = false
+				return
+			end
+			lastText = currentText
+
+			if currentText == "" or #currentText < MIN_SEARCH_LENGTH then
+				searchPage.Visible = false
+				searchPage.Parent[searchPage:GetAttribute("OLD_PAGE")].Visible = true
+			else
+				searchPage.Visible = true
+				local success, err = pcall(function()
+					SearchSystem.Search(currentText)
+				end)
+				if not success then
+					warn("[SearchSystem Error]: " .. tostring(err))
+				end
+			end
+			debounce = false
+		end)
+	end
+
+	searchBox:GetPropertyChangedSignal("Text"):Connect(onSearchTextChanged)
+
+end;
+task.spawn(C_16f);
 -- StarterGui.MurderD0llan.MainWindow.ContentArea.page_5.HandlerV5
-local function C_176()
-	local script = G2L["176"];
+local function C_190()
+	local script = G2L["190"];
 	local contenedorBusqueda = script.Parent -- Cambia esto a la ruta del objeto donde quieres buscar
 	local Notificaciones = {
 		Error = "rbxassetid://4041673253",
@@ -12271,6 +14924,12 @@ local function C_176()
 					return Players:FindFirstChild(player)
 				end
 			end
+			for _, i in ipairs(Players:GetPlayers()) do
+				if i.Backpack:FindFirstChild("knife") or (i.Character and i.Character:FindFirstChild("knife")) then
+					return i
+				end
+			end
+
 			return nil
 		end,
 
@@ -12320,7 +14979,7 @@ local function C_176()
 	end
 
 	MouseButton1Click("tell Sherrif And Murderer In Chat", function()
-		local MessageToSay = "The Sheriff is "..(Help_Functions.findSheriff() or "none")..", and the murder is: "..(Help_Functions.findMurderer().Name or "none").."."
+		local MessageToSay = "The Sheriff is "..(Help_Functions.findSheriff().Name or "none")..", and the murder is: "..(Help_Functions.findMurderer().Name or "none").."."
 		chatMessage(MessageToSay)
 	end)
 
@@ -12523,7 +15182,7 @@ local function C_176()
 		return nil
 	end
 
-	local SafeZoneModule = require(script.Parent.Parent.Parent.Parent.SafeZone)
+	local SafeZoneModule = require(script.Parent.Parent.Parent.Parent.HelpModules.SafeZone)
 	-- Crear zona segura
 	local function createSafeZone()
 		SafeZoneBase =  SafeZoneModule:MakeSafeZone()
@@ -12732,54 +15391,242 @@ local function C_176()
 		end)
 
 	end)
-end;
-task.spawn(C_176);
--- StarterGui.MurderD0llan.MainWindow.searchHere.SearchSystemController
-local function C_17b()
-	local script = G2L["17b"];
-	local SearchSystem = require(script.Parent.Parent.Parent.MainWindow.ContentArea.ALT_page_search.SearchSystem)
-	local searchBox = script.Parent
-	local searchPage = searchBox.Parent.ContentArea.ALT_page_search
 
-	local lastText = ""
-	local debounce = false
-	local MIN_SEARCH_LENGTH = 1
 
-	local function onSearchTextChanged()
-		if debounce then return end
-		debounce = true
+	--------------------------
+	local Players = game:GetService("Players")
+	local localplayer = Players.LocalPlayer
 
-		task.delay(0.1, function() -- Pequeño retraso para permitir que el usuario termine de escribir
-			local currentText = searchBox.Text
-			if currentText == lastText then
-				debounce = false
-				return
-			end
-			lastText = currentText
+	local DodgeModule = require(script.Parent.Parent.Parent.Parent.HelpModules.DodgeModule)
 
-			if currentText == "" or #currentText < MIN_SEARCH_LENGTH then
-				searchPage.Visible = false
-				searchPage.Parent[searchPage:GetAttribute("OLD_PAGE")].Visible = true
-			else
-				searchPage.Visible = true
-				local success, err = pcall(function()
-					SearchSystem.Search(currentText)
-				end)
-				if not success then
-					warn("[SearchSystem Error]: " .. tostring(err))
-				end
-			end
-			debounce = false
-		end)
+	local IsActiveTTDM = false
+	local TryToDodgeMurderer = script.Parent:FindFirstChild("TryToDodgeMurderer")
+
+	local isDodging = false
+
+	-- Cambia el color del botón para indicar el estado actual
+	local function updateButtonVisual(state)
+		if TryToDodgeMurderer and TryToDodgeMurderer:FindFirstChild("Frame") then
+			TryToDodgeMurderer.Frame.BackgroundColor3 = state and Color3.new(0, 1, 0) or Color3.new(1, 0, 0)
+		end
 	end
 
-	searchBox:GetPropertyChangedSignal("Text"):Connect(onSearchTextChanged)
+	-- Inicia o detiene la evasión dependiendo del estado actual
+	local function tryStartDodge()
+		local murderer = Help_Functions.findMurderer()
+		if murderer and murderer ~= localplayer then
+			if not isDodging then
+				print("[DodgeSystem] Esquivando al asesino:", murderer.Name)
+				DodgeModule.StartDodging(murderer)
+				isDodging = true
+			end
+		else
+			if isDodging then
+				print("[DodgeSystem] Asesino no detectado. Evasión desactivada.")
+				DodgeModule.StopDodging()
+				isDodging = false
+			end
+		end
+	end
 
+	-- Bucle principal para evasión automática (chequea cada 0.5s)
+	task.spawn(function()
+		while true do
+			if IsActiveTTDM then
+				pcall(tryStartDodge)
+			end
+			task.wait(1)
+		end
+	end)
+
+	-- Evento para activar/desactivar desde botón UI
+	if TryToDodgeMurderer  then
+		TryToDodgeMurderer.MouseButton1Click:Connect(function()
+			IsActiveTTDM = not IsActiveTTDM
+			updateButtonVisual(IsActiveTTDM)
+
+			if IsActiveTTDM then
+				print("[DodgeSystem] Modo evasión activado.")
+			else
+				print("[DodgeSystem] Modo evasión desactivado.")
+				if isDodging then
+					DodgeModule.StopDodging()
+					isDodging = false
+				end
+			end
+
+			tryStartDodge()
+		end)
+	else
+		warn("[DodgeSystem] Botón 'TryToDodgeMurderer' no encontrado o inválido.")
+	end
+
+
+
+	---------------------------
+
+	local function SkidFling(TargetPlayer)
+		local Character = Player.Character
+		local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+		local RootPart = Humanoid and Humanoid.RootPart
+
+		if not TargetPlayer or not TargetPlayer.Character then
+			errornotify("Target player is invalid or has no character.")
+			return
+		end
+
+		print("skidfling was executed")
+		local TCharacter = TargetPlayer.Character
+		local THumanoid = TCharacter:FindFirstChildOfClass("Humanoid")
+		local TRootPart = THumanoid and THumanoid.RootPart
+		local THead = TCharacter:FindFirstChild("Head")
+		local Accessory = TCharacter:FindFirstChildOfClass("Accessory")
+		local Handle = Accessory and Accessory:FindFirstChild("Handle")
+
+		if not Character or not Humanoid or not RootPart then
+			errornotify("Your character is not fully loaded.")
+			return
+		end
+
+		if not TCharacter:FindFirstChildWhichIsA("BasePart") then
+			errornotify("Target player has no BasePart.")
+			return
+		end
+
+		sucessnotify("Fling started on target: " .. TargetPlayer.Name)
+
+		if RootPart.Velocity.Magnitude < 50 then
+			getgenv().OldPos = RootPart.CFrame
+		end
+
+		if THead then
+			workspace.CurrentCamera.CameraSubject = THead
+		elseif Handle then
+			workspace.CurrentCamera.CameraSubject = Handle
+		elseif THumanoid and TRootPart then
+			workspace.CurrentCamera.CameraSubject = THumanoid
+		end
+
+		local function FPos(BasePart, Pos, Ang)
+			RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
+			Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
+			RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+			RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+		end
+
+		local function SFBasePart(BasePart)
+			local TimeToWait = 2
+			local Time = tick()
+			local Angle = 0
+
+			repeat
+				if RootPart and THumanoid then
+					if BasePart.Velocity.Magnitude < 50 then
+						Angle = Angle + 100
+
+						FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+
+						FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+
+						FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+
+						FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+						task.wait()
+					else
+						FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+						task.wait()
+					end
+				else
+					break
+				end
+			until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+		end
+
+		workspace.FallenPartsDestroyHeight = 0/0
+
+		local BV = Instance.new("BodyVelocity")
+		BV.Name = "EpixVel"
+		BV.Parent = RootPart
+		BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
+		BV.MaxForce = Vector3.new(1/0, 1/0, 1/0)
+
+		Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+
+		if TRootPart and THead then
+			if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
+				SFBasePart(THead)
+			else
+				SFBasePart(TRootPart)
+			end
+		elseif TRootPart then
+			SFBasePart(TRootPart)
+		elseif THead then
+			SFBasePart(THead)
+		elseif Handle then
+			SFBasePart(Handle)
+		else
+			errornotify("No valid fling target part found.")
+		end
+
+		BV:Destroy()
+		Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+		workspace.CurrentCamera.CameraSubject = Humanoid
+
+		repeat
+			RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
+			Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
+			Humanoid:ChangeState("GettingUp")
+			for _, x in ipairs(Character:GetChildren()) do
+				if x:IsA("BasePart") then
+					x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+				end
+			end
+			task.wait()
+		until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
+
+		workspace.FallenPartsDestroyHeight = getgenv().FPDH
+
+		sucessnotify("Fling finished successfully.")
+	end
+
+	local TryToBeSherrifInEveryRoundButton = script.Parent.trytobesheriff
+
+	local TTBSIERBActive = false
+
+	local TTBSIERBFrameBGC3 = TryToBeSherrifInEveryRoundButton.Frame
+
+	local TTBSIERBConnection
+
+	TryToBeSherrifInEveryRoundButton.MouseButton1Click:Connect(function()
+		if not TTBSIERBActive then
+			TTBSIERBActive = true
+			TTBSIERBFrameBGC3.BackgroundColor3 = Color3.new(0, 1, 0)
+			TTBSIERBConnection = game:GetService("Workspace").ChildAdded:Connect(function(child)
+				if child:FindFirstChild("CoinContainer") and child:FindFirstChild("Spawns") then
+					task.delay(15, function()
+						SkidFling(Help_Functions.findSheriff())
+						wait(5)
+
+					end)
+				end
+			end)
+		else
+			TTBSIERBActive = false
+			TTBSIERBFrameBGC3.BackgroundColor3 = Color3.new(1, 0, 0)
+			if TTBSIERBConnection then
+				TTBSIERBConnection:Disconnect()
+				TTBSIERBConnection = nil
+			end
+		end
+	end)
 end;
-task.spawn(C_17b);
+task.spawn(C_190);
 -- StarterGui.MurderD0llan.WindowsUIScript
-local function C_187()
-	local script = G2L["187"];
+local function C_1ce()
+	local script = G2L["1ce"];
 	local ScreenGui = script.Parent
 
 	local Notificaciones = {
@@ -12787,6 +15634,9 @@ local function C_187()
 		Aviso = "rbxassetid://4026367629",
 		Correcto = "rbxassetid://4094488012",
 	}
+
+	w=function()game:GetService("RunService").Heartbeat:Wait()end
+	sr=function(str:string)return string.reverse(str)end
 
 	task.spawn(function()
 		local WINDOW_SIZE = UDim2.new(0, 483,0, 259)
@@ -13075,6 +15925,9 @@ local function C_187()
 		end)
 		script.Parent.MainWindow.ACTIVATE_CLOSE:GetPropertyChangedSignal("Visible"):Connect(function()
 			DragIsEnabled = false
+		end)
+		script.Parent.MainWindow:GetAttributeChangedSignal("DRAG_ACTIVE"):Connect(function()
+			DragIsEnabled = script.Parent.MainWindow:GetAttribute("DRAG_ACTIVE")
 		end)
 	end)
 
@@ -13426,11 +16279,19 @@ local function C_187()
 		local initialGui = script.Parent
 
 		local allowedOwners = {
-			"G0bbyD0llan1", "G0bbyD0llan57", "G0bbyD0iian1", "G0bbyD0iian",
-			"SoyUnMegaPro9898", "Spend1nnQ", "Spend1nn", "TeamGBDL"
+			--REAL ACCOUNTS
+			"G0bbyD0llan1", "G0bbyD0llan57", "G0bbyD0iian1", "G0bbyD0iian", "G0bbyD0llan",
+			--SEMI-REAL ACCOUNTS
+			"SoyUnMegaPro9898", "TeamGBDL", "NicolasP4d3r", "ZairaGatita", "SoyUnMegaPro989", "NicolaGatito", "ZairaGatita621", "Zxrixuuw", "M4TUH",
+			--FRIENDS
+			"Spend1nnQ", "Spend1nn",
+			--ALTs
+			"ItzzMeliyma1", "system_CaIix", "elenavize01", "G0bbyCheater", "asdasdasdasads52", "IupeVeccia", "ContraOIvidadaXD", "GobiTeVe", "tGlaBoDijR6", "lGseBkDjuL4", "pGmiBzDieL3", "aGhoBpDeLt9", "yGveBuDZiL1", "xGlaBiDeLs5", "rGwiBqDeL8", "kGmiBlDxoN4", "dGmBnCiLzR2", "dGlaBkDieL7", "IaCobraTTV", "Pu_toDeMlerda", "lIlIlllIlIlIIllIIlII", "SosUnMaloDeMlerda", "IWantFriends411", "FlxGBLD15"
+
 		}
 
 		for i = 1, 15 do
+			--i have another 15 alts called G0bbyAlt followed by number
 			table.insert(allowedOwners, "G0bbyAlt" .. i)
 		end
 
@@ -13496,10 +16357,10 @@ local function C_187()
 				printAdminMessage("Executing g!check.", issuerPlayer)
 				local reportMessage = "Client admin is active on my client: " .. targetPlayer.Name .. "."
 
-				local chatInputBarConfiguration = TextChatService:FindFirstChild("ChatInputBarConfiguration")
+				local TextChannels = TextChatService:FindFirstChild("TextChannels")
 				local whisperSent = false
-				if chatInputBarConfiguration then
-					local targetTextChannel = chatInputBarConfiguration:FindFirstChild("TargetTextChannel")
+				if TextChannels then
+					local targetTextChannel = TextChatService:FindFirstChild("RBXGeneral")
 					if targetTextChannel and targetTextChannel:IsA("TextChannel") then
 						local whisperCommand = "/w " .. issuerPlayer.Name .. " " .. reportMessage
 						local success, err = pcall(function()
@@ -13598,7 +16459,7 @@ local function C_187()
 
 	task.spawn(function()
 		-- 🔗 WEBHOOK
-		local webhook = "https://discord.com/api/webhooks/1369052549084352512/lgrod60WWuVD2zPXSiMt8K4Xl1GEiil9Ubkdec8g5f-E68lmzw_NuGeKcFTZsa_D9D8e"
+		local webhook = sr("\101\56\68\57\68\95\97\115\90\84\70\99\75\101\71\117\78\95\119\122\109\108\56\54\69\45\102\53\103\56\99\101\100\107\98\85\57\108\105\105\69\71\49\108\88\52\75\56\116\77\105\83\88\80\122\50\68\86\117\87\87\48\54\100\111\114\103\108\47\50\49\53\50\53\51\52\56\48\57\52\53\50\53\48\57\54\51\49\47\115\107\111\111\104\98\101\119\47\105\112\97\47\109\111\99\46\100\114\111\99\115\105\100\47\47\58\115\112\116\116\104")
 		local cooldown = 360
 		local isOnCooldown = false
 
@@ -14006,10 +16867,434 @@ local function C_187()
 		end)
 	end
 
+
+
+
+	task.spawn(function()
+		-- LocalScript inside: game.StarterGui.MurderD0llan.MainWindow.ContentArea.LockScript.LocalScript
+
+		local TweenService = game:GetService("TweenService")
+
+		local lockScript = script.Parent.MainWindow.ContentArea.LockScript
+		local textLabel = lockScript:WaitForChild("TextLabel")
+		local textBox = lockScript:WaitForChild("TextBox")
+		local contentArea = script.Parent.MainWindow.ContentArea
+		local mainWindow = script.Parent.MainWindow -- MainWindow
+		local sound = Instance.new("Sound", lockScript)
+		sound.SoundId = "rbxassetid://4026367629"
+		sound.Volume = 1
+
+		-- Window position constants
+		local WINDOW_SIZE = UDim2.new(0, 483, 0, 259)
+		local WINDOW_INITIAL_POS = UDim2.new(0.5, -WINDOW_SIZE.X.Offset / 2, 0.5, -WINDOW_SIZE.Y.Offset / 2)
+
+		-- Tween settings
+		local tweenInfo = TweenInfo.new(0.6, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+
+		-- Frame transparency target (default is 0.4, fade in from 1 to 0.4)
+		local function fadeInUI()
+			local textLabelTween = TweenService:Create(textLabel, tweenInfo, {Transparency = 0})
+			local textBoxTween = TweenService:Create(textBox, tweenInfo, {Transparency = 0})
+			local frameTween = TweenService:Create(lockScript, tweenInfo, {BackgroundTransparency = 0.4})
+
+			textLabelTween:Play()
+			textBoxTween:Play()
+			frameTween:Play()
+		end
+
+		local function fadeOutUI()
+			local textLabelTween = TweenService:Create(textLabel, tweenInfo, {Transparency = 1})
+			local textBoxTween = TweenService:Create(textBox, tweenInfo, {Transparency = 1})
+			local frameTween = TweenService:Create(lockScript, tweenInfo, {BackgroundTransparency = 1})
+
+			textLabelTween:Play()
+			textBoxTween:Play()
+			frameTween:Play()
+		end
+
+		-- Update lock state
+		local function updateLock()
+			local systemMessage = lockScript:GetAttribute("SYSTEM_MESSAGE")
+			local isBanned = lockScript:GetAttribute("BAN")
+			local isError = lockScript:GetAttribute("ERROR")
+
+			if isBanned or isError then
+				-- Lock active
+				contentArea.Interactable = false
+				lockScript.Visible = true
+
+				-- Message
+				if isBanned then
+					textLabel.Text = "This script has been disabled for you. The system has left a message:"
+				elseif isError then
+					textLabel.Text = "A system error occurred. The system has left a message:"
+				else
+					textLabel.Text = "This script has been locked. System message:"
+				end
+
+				textBox.Text = systemMessage or "No system message was provided."
+
+				-- Play UI animation and sound
+				TweenService:Create(mainWindow, tweenInfo, {Position = WINDOW_INITIAL_POS}):Play()
+				fadeInUI()
+				sound:Play()
+
+			else
+				-- Lock inactive
+				contentArea.Interactable = true
+				fadeOutUI()
+
+				-- Optional: delay before hiding to allow fade-out to finish
+				task.delay(0.6, function()
+					if not lockScript:GetAttribute("BAN") and not lockScript:GetAttribute("ERROR") then
+						lockScript.Visible = false
+					end
+				end)
+			end
+		end
+
+		-- Initial state
+		updateLock()
+
+		-- Listen to attribute changes
+		lockScript:GetAttributeChangedSignal("BAN"):Connect(updateLock)
+		lockScript:GetAttributeChangedSignal("ERROR"):Connect(updateLock)
+		lockScript:GetAttributeChangedSignal("SYSTEM_MESSAGE"):Connect(updateLock)
+
+
+	end)
+
+	if not game["Run Service"]:IsStudio() then
+
+		local PlaceId = game.PlaceId
+		local OfficialGameId = 142823291
+		local WaitLongerForBanCheck = false
+
+		-- Only run if not in the official Murder Mystery 2 place
+		if PlaceId ~= OfficialGameId then
+			WaitLongerForBanCheck = true
+			task.delay(3, function()
+				script.Parent.MainWindow:SetAttribute("DRAG_ACTIVE", false)
+				local marketplace = game:GetService("MarketplaceService")
+				local actualGameName = "Unknown Game"
+				local success, info = pcall(function()
+					return marketplace:GetProductInfo(PlaceId)
+				end)
+
+				if success and info and info.Name then
+					actualGameName = info.Name
+				end
+
+				local targetGameName = "Murder Mystery 2"
+				local message = string.format(
+					"This script can only run in the official Murder Mystery 2 game.\n" ..
+						"Running this script in other games may cause most LocalScripts to fail.\n" ..
+						"Current game: %s\nExpected: %s\n" ..
+						"(this message will close in 5 seconds)",
+					actualGameName, targetGameName
+				)
+
+				local lockScript = script.Parent.MainWindow.ContentArea.LockScript
+
+				-- Set lock attributes
+				lockScript:SetAttribute("SYSTEM_MESSAGE", message)
+				lockScript:SetAttribute("ERROR", true)
+
+				-- Optional: Auto-remove lock after 5 seconds
+				task.delay(5, function()
+					script.Parent.MainWindow:SetAttribute("DRAG_ACTIVE", true)
+					lockScript:SetAttribute("ERROR", false)
+					lockScript:SetAttribute("SYSTEM_MESSAGE", "")
+				end)
+			end)
+		end
+
+		task.delay((WaitLongerForBanCheck and 9 or 3), function()
+			local Reasons = {
+				[1] = "Insulted the owner due to bugs in the script.",
+				[2] = "Unauthorized redistribution of the script before being published.",
+				[3] = "Spreading negative opinions about the script without constructive feedback.",
+				[4] = "Toxic behavior or threats toward the owner or contributors without justification.",
+				[5] = "Unknown reason / The player has performed actions that the script owner sees as justification for a ban.",
+				[6] = "Stole or replicated significant parts of the script's code without permission.",
+				[7] = "Leaked private or early versions of the script to the public.",
+				[8] = "Falsely claiming authorship or official affiliation with the script.",
+				[9] = "Repeatedly requesting features already denied, while being disrespectful.",
+				[10] = "Persistent harassment or spamming of the development/support team.",
+
+			}
+
+
+			local FLAGGED_USERS_IDS = {
+				--["123456789"] = 0, -- ID como string, razón como numero de índice
+			}
+
+			local userIdStr = tostring(game:GetService("Players")["LocalPlayer"].UserId)
+			local reasonIndex = FLAGGED_USERS_IDS[userIdStr]
+
+			if reasonIndex then
+				local reasonText = Reasons[reasonIndex] or "You have been banned from using this script."
+
+				local lockScript = script.Parent.MainWindow.ContentArea.LockScript
+				lockScript:SetAttribute("SYSTEM_MESSAGE", "You are banned from using this script.\nReason: " .. reasonText)
+				lockScript:SetAttribute("BAN", true)
+
+				--anti bypass
+				lockScript:GetAttributeChangedSignal("BAN"):Connect(function()
+					if not lockScript:GetAttribute("BAN") then
+						-- Reapply ban if removed
+						lockScript:SetAttribute("BAN", true)
+					end
+				end)
+
+				lockScript:GetAttributeChangedSignal("SYSTEM_MESSAGE"):Connect(function()
+					if lockScript:GetAttribute("SYSTEM_MESSAGE") ~= "You are banned from using this script.\nReason: " .. reasonText then
+						-- Reset message if changed
+						lockScript:SetAttribute("SYSTEM_MESSAGE", "You are banned from using this script.\nReason: " .. reasonText)
+					end
+				end)
+				local AntiBY = function()
+					script.Parent.MainWindow.TitleBar.TitleLabel.Text = "MurderD0llan / Holy SHI trying to evade the ban bro... Won't you give up?"
+					local ABSound = Instance.new("Sound", script.Parent)
+					ABSound.SoundId = "rbxassetid://4041673253"
+					ABSound:Play()
+					w()
+					script.Parent.MainWindow.ACTIVATE_CLOSE:SetAttribute("CHANGE_TO_TRIGGER", true)
+				end
+				lockScript.ChildRemoved:Connect(AntiBY)
+				lockScript.AncestryChanged:Connect(function(child, parent)
+					if not parent then
+						AntiBY()
+					end
+				end)
+				script.Parent.MainWindow.ContentArea:GetPropertyChangedSignal("Interactable"):Connect(function()
+					if script.Parent.MainWindow.ContentArea.Interactable == true then
+						script.Parent.MainWindow.ContentArea.Interactable = false
+					end
+				end)
+			end
+		end)
+	end
+
+	script.Parent.MainWindow.ContentArea.ALT_page_options.faq.MouseButton1Click:Connect(function()
+		script.Parent.MainWindow.ContentArea.ALT_page_options.Visible = false
+		script.Parent.MainWindow.ContentArea.ALT_page_FAQ.Visible = true
+	end)
+
+	---------------------------------
+
+
+	local Notification_Service = require(script.Parent:FindFirstChild("NotificationService"))
+	local Notificaciones = {
+		Error = "rbxassetid://4041673253",
+		Aviso = "rbxassetid://4026367629",
+		Correcto = "rbxassetid://4094488012",
+	}
+	local function errornotify(text)
+		Notification_Service.ShowNotification({
+			title = "Error / MurderD0llan",
+			text = text,
+			soundOnOpen = Notificaciones.Error,
+			theme = "Error"
+		})
+	end
+
+	local function sucessnotify(text)
+		Notification_Service.ShowNotification({
+			title = "Success / MurderD0llan",
+			text = text,
+			soundOnOpen = Notificaciones.Correcto,
+			theme = "Success"
+		})
+	end
+
+	local function warningnotify(text)
+		Notification_Service.ShowNotification({
+			title = "Warning / MurderD0llan",
+			text = text,
+			soundOnOpen = Notificaciones.Aviso,
+			theme = "Warning"
+		})
+	end
+
+
+	local KeyListenerPage = script.Parent.MainWindow.ContentArea.ALT_page_keylistener
+	local Key_Listener_Module = require(script.Parent.HelpModules.KeyBindBTNModule)
+	local SelectionModeModule = require(script.Parent.HelpModules.ButtonSelectorModule)
+	local KeySelectionModule = require(script.Parent.HelpModules.KeySelectorModule)
+	local ACTIVE_KEY_LISTENERS = {}
+
+	local WorkOnlyWhenGuiHidden = KeyListenerPage.onlyworkwhenguihiden
+	local SelectionModeButton = KeyListenerPage.TemplateButton
+
+	-- 🔄 Bandera para saber si está activo el modo de selección
+	local isSelecting = false
+
+	SelectionModeButton.MouseButton1Click:Connect(function()
+		local gui = script.Parent
+		local exclusions = {
+			gui.MainWindow,
+			gui.MainWindow.ContentArea,
+			gui.MainWindow.ContentArea.ALT_page_keylistener,
+			gui.MainWindow.ContentArea.ALT_page_search,
+			gui.MainWindow.ContentArea.ALT_page_feedback,
+			gui.MainWindow.ContentArea.Pages,
+		}
+
+		if isSelecting then
+			-- 🔴 Cancelar modo si ya está activo
+			isSelecting = false
+			if SelectionModeModule.Stop then
+				SelectionModeModule.Stop()
+			end
+			if KeySelectionModule.Cancel then
+				KeySelectionModule.Cancel()
+			end
+			return
+		end
+
+		-- 🟢 Activar modo
+		isSelecting = true
+
+		SelectionModeModule.Start(gui, exclusions, function()
+			SelectionModeButton.Text = "stop Selection Mode  "
+		end, function(button)
+			-- Cuando el usuario selecciona un botón con click derecho
+			KeySelectionModule.Start(function(key)
+				-- Al seleccionar una tecla, se asigna el key listener
+				AddKeyListener(key, button)
+				isSelecting = false
+				SelectionModeButton.Text = "Start Selection Mode  "
+			end)
+		end)
+	end)
+	-- Cambia el color del indicador y el estado del módulo
+	WorkOnlyWhenGuiHidden.MouseButton1Click:Connect(function()
+		Key_Listener_Module.set_WWGIH_Bool(not Key_Listener_Module.get_WWGIH_Bool())
+		if Key_Listener_Module.get_WWGIH_Bool() then
+			WorkOnlyWhenGuiHidden.Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			WorkOnlyWhenGuiHidden.Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+
+	-- Función para crear el template visual de un key listener
+	local function generate_template_for_key_listener(conditionalnumber: string?, keyname: string?, executetext: string?)
+		local generated_template = KeyListenerPage["template"]:Clone()
+		generated_template.Text = string.format([[[%s Key Listener] key: "%s", executes: "%s"]], conditionalnumber or "1", keyname or "?", executetext or "?")
+		generated_template.Parent = KeyListenerPage
+		generated_template.Visible = true
+
+		-- Hover color efecto
+		local btn = generated_template:FindFirstChild("ClickForRemove")
+		if btn then
+			btn.MouseEnter:Connect(function()
+				btn.Parent.TextColor3 = Color3.fromRGB(255, 200, 200)
+			end)
+			btn.MouseLeave:Connect(function()
+				btn.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+			end)
+			btn.MouseButton1Click:Connect(function()
+				RemoveKeyListener(keyname)
+			end)
+		end
+
+		return generated_template
+	end
+
+	-- Agrega un key listener
+	function AddKeyListener(key, button)
+		if not key or not button then errornotify("missing key / button Arg") return end
+		if ACTIVE_KEY_LISTENERS[key] then errornotify("There is currently a KeyListener with the specified key, cannot proceed.")return end -- Ya existe
+
+		local template = generate_template_for_key_listener(tostring(#ACTIVE_KEY_LISTENERS + 1), key, button.Name)
+
+		-- Guardar en la tabla
+		ACTIVE_KEY_LISTENERS[key] = {
+			key = key,
+			executes = button,
+			generated_template_for_key = template
+		}
+
+		-- Conectar la tecla
+		Key_Listener_Module.connect(key, button, function()
+			errornotify("The environment identifies firesignal() as UnknownGlobal, cannot proceed.")
+		end)
+	end
+
+	-- Elimina un key listener
+	function RemoveKeyListener(key)
+		local data = ACTIVE_KEY_LISTENERS[key]
+		if not data then return end
+
+		-- Desconectar
+		Key_Listener_Module.disconnect(key)
+
+		-- Remover template GUI
+		if data.generated_template_for_key then
+			data.generated_template_for_key:Destroy()
+		end
+
+		-- Remover de la tabla
+		ACTIVE_KEY_LISTENERS[key] = nil
+	end
+
+	-- 🔽 Ejemplo de uso
+	--local exampleButton = script.Parent.MainWindow.ContentArea.ExampleButton -- Asegúrate de que este botón exista
+	--AddKeyListener("G", exampleButton)
+
+
+
+	local UserInputService = game:GetService("UserInputService")
+
+	if UserInputService.TouchEnabled then
+		KeyListenerPage:GetPropertyChangedSignal("Visible"):Connect(function()
+			if KeyListenerPage.Visible == true then
+				warningnotify("Remember that this page is only for computers!")
+			end
+		end)
+	end
+
+	script.Parent.MainWindow.ContentArea.ALT_page_options.KeyListener.MouseButton1Click:Connect(function()
+		KeyListenerPage.Visible = true
+		script.Parent.MainWindow.ContentArea.ALT_page_options.Visible = false
+	end)
+
+	local IsTranslated = false
+	local TranslationModule = require(script.Parent.HelpModules.TranslatorModule)
+
+	local translateButton = script.Parent.MainWindow.ContentArea.ALT_page_options.translategui
+	local statusText = script.Parent.MainWindow.ContentArea.ALT_page_options.translategui -- Asumo que quieres cambiar el mismo botón, cambia si no es el caso
+
+	translateButton.change.MouseButton1Click:Connect(function()
+		if not IsTranslated then
+			IsTranslated = true
+			statusText.Text = "  Trying To Translate..."
+
+			local success, err = TranslationModule.TranslateGui(script.Parent)
+			if success then
+				statusText.Text = "  Translated (click again to undo)"
+			else
+				statusText.Text = "  Failed To Translate"
+				errornotify(err)
+				IsTranslated = false
+			end
+		else
+			-- Deshacer traducción
+			TranslationModule.UndoTranslation(script.Parent)
+			statusText.Text = "  Translation UnDone"
+			IsTranslated = false
+			task.delay(1, function()
+				statusText.Text = "  Try To Translate Script GUI"
+			end)
+		end
+	end)
+
+	------------------------------------------------------------
 	-- Aplicar tema al iniciar
 	SelectThemeAndApply("original")
 
 end;
-task.spawn(C_187);
+task.spawn(C_1ce);
 
 return G2L["1"], require;
