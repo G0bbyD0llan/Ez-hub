@@ -3,18 +3,20 @@ MurderD0llan / Murder Mystery 2 Script Hub
 
 creator: G0bbyD0llan
 
-Version: 1.0.1
+Version: 1.0.3
     
 -----------------------------
 
 The script was published and released to the public as version 1.0.0 by user "G0bbyD0llan" on June 1, 2025.
 The script was last updated by user "G0bbyD0llan" Next Day, June 2, 2025, to version 1.0.1.
 The script was last updated by user "G0bbyD0llan" on June 22, 2025, to version 1.0.2.
+The script was last updated by user "G0bbyD0llan" on July 5 2025, to version 1.0.3.
 
 This GUI Was Converted Using GUI2LUA, and the GUI was created by "G0bbyD0llan" and the original GUI was made by AI Assistant from Roblox Studio, Thanks!
 
 - This Script Is NOT 100% Safe To Use, but functions of the script will work (this script Has Been Thoroughly Tested), use at your own risk
 - G0bbyD0llan Is Not Responsible For Any Damage to Any Account Caused By The Script.
+
 
 
 
@@ -31,7 +33,7 @@ This GUI Was Converted Using GUI2LUA, and the GUI was created by "G0bbyD0llan" a
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 479 | Scripts: 8 | Modules: 9
+-- Instances: 485 | Scripts: 9 | Modules: 9
 local G2L = {};
 
 -- StarterGui.MurderD0llan
@@ -4867,403 +4869,467 @@ G2L["1be"]["Name"] = [[ClickForRemove]];
 G2L["1be"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1be"]["BackgroundTransparency"] = 1;
 
--- StarterGui.MurderD0llan.MainWindow.StarterLabel
-G2L["1bf"] = Instance.new("TextLabel", G2L["2"]);
-G2L["1bf"]["TextWrapped"] = true;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox
+G2L["1bf"] = Instance.new("Frame", G2L["a"]);
+G2L["1bf"]["Active"] = true;
 G2L["1bf"]["BorderSizePixel"] = 0;
-G2L["1bf"]["TextScaled"] = true;
 G2L["1bf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1bf"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1bf"]["TextSize"] = 14;
-G2L["1bf"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1bf"]["Size"] = UDim2.new(0, 483, 0, 228);
+G2L["1bf"]["BackgroundTransparency"] = 0.9599999785423279;
+G2L["1bf"]["Size"] = UDim2.new(0, 367, 0, 228);
 G2L["1bf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1bf"]["Text"] = [[By G0bbyD0llan]];
-G2L["1bf"]["Name"] = [[StarterLabel]];
+G2L["1bf"]["Position"] = UDim2.new(-0.00136239780113101, 0, -0.0019242136040702462, 0);
 G2L["1bf"]["Visible"] = false;
-G2L["1bf"]["BackgroundTransparency"] = 0.20000000298023224;
-G2L["1bf"]["Position"] = UDim2.new(0, 0, 0.11583017557859421, 0);
+G2L["1bf"]["Name"] = [[ALT_page_FrameBox]];
 
--- StarterGui.MurderD0llan.MainWindow.ACTIVATE_CLOSE
-G2L["1c0"] = Instance.new("Frame", G2L["2"]);
-G2L["1c0"]["BorderSizePixel"] = 0;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox.Box
+G2L["1c0"] = Instance.new("Frame", G2L["1bf"]);
 G2L["1c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c0"]["BackgroundTransparency"] = 1;
-G2L["1c0"]["Size"] = UDim2.new(0, 482, 0, 259);
+G2L["1c0"]["Size"] = UDim2.new(0, 344, 0, 168);
 G2L["1c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c0"]["Visible"] = false;
-G2L["1c0"]["Name"] = [[ACTIVATE_CLOSE]];
--- Attributes
-G2L["1c0"]:SetAttribute([[CHANGE_TO_TRIGGER]], false);
+G2L["1c0"]["Position"] = UDim2.new(0.03269754722714424, 0, 0.061403509229421616, 0);
+G2L["1c0"]["Name"] = [[Box]];
 
--- StarterGui.MurderD0llan.MainWindow.NOTIFICATION_TEXT
-G2L["1c1"] = Instance.new("TextLabel", G2L["2"]);
-G2L["1c1"]["TextWrapped"] = true;
-G2L["1c1"]["TextStrokeTransparency"] = 0;
-G2L["1c1"]["BorderSizePixel"] = 0;
-G2L["1c1"]["TextScaled"] = true;
-G2L["1c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c1"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c1"]["TextSize"] = 14;
-G2L["1c1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c1"]["Size"] = UDim2.new(0, 327, 0, 30);
-G2L["1c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c1"]["Name"] = [[NOTIFICATION_TEXT]];
-G2L["1c1"]["Visible"] = false;
-G2L["1c1"]["BackgroundTransparency"] = 0.9900000095367432;
-G2L["1c1"]["Position"] = UDim2.new(0.16149067878723145, 0, 0.8146718144416809, 0);
--- Attributes
-G2L["1c1"]:SetAttribute([[TEXT_TO_DISPLAY]], [[Label]]);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox.Box.MiniMap2DSimulation
+G2L["1c1"] = Instance.new("LocalScript", G2L["1c0"]);
+G2L["1c1"]["Name"] = [[MiniMap2DSimulation]];
 
--- StarterGui.MurderD0llan.MainWindow.searchHere
-G2L["1c2"] = Instance.new("TextBox", G2L["2"]);
-G2L["1c2"]["ZIndex"] = 20;
-G2L["1c2"]["TextSize"] = 14;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox.F
+G2L["1c2"] = Instance.new("TextButton", G2L["1bf"]);
 G2L["1c2"]["TextWrapped"] = true;
-G2L["1c2"]["TextScaled"] = true;
-G2L["1c2"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
-G2L["1c2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1c2"]["PlaceholderText"] = [[enter to search here...]];
-G2L["1c2"]["Size"] = UDim2.new(0, 113, 0, 17);
-G2L["1c2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c2"]["Text"] = [[]];
-G2L["1c2"]["Position"] = UDim2.new(0.761904776096344, 0, 0.9273278713226318, 0);
-G2L["1c2"]["Visible"] = false;
-G2L["1c2"]["Name"] = [[searchHere]];
+G2L["1c2"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["1c2"]["TextSize"] = 20;
+G2L["1c2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c2"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c2"]["Size"] = UDim2.new(0, 70, 0, 26);
+G2L["1c2"]["Name"] = [[F]];
+G2L["1c2"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c2"]["Text"] = [[FLING]];
+G2L["1c2"]["Position"] = UDim2.new(0.03269754722714424, 0, 0.8421052694320679, 0);
 
--- StarterGui.MurderD0llan.Themes
-G2L["1c3"] = Instance.new("TextLabel", G2L["1"]);
-G2L["1c3"]["BorderSizePixel"] = 0;
-G2L["1c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c3"]["TextSize"] = 14;
-G2L["1c3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c3"]["Name"] = [[Themes]];
-G2L["1c3"]["Visible"] = false;
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox.K
+G2L["1c3"] = Instance.new("TextButton", G2L["1bf"]);
+G2L["1c3"]["TextWrapped"] = true;
+G2L["1c3"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["1c3"]["TextSize"] = 20;
+G2L["1c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c3"]["Size"] = UDim2.new(0, 70, 0, 26);
+G2L["1c3"]["Name"] = [[K]];
+G2L["1c3"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c3"]["Text"] = [[KILL]];
+G2L["1c3"]["Position"] = UDim2.new(0.25885558128356934, 0, 0.8421052694320679, 0);
 
--- StarterGui.MurderD0llan.Themes.Original
-G2L["1c4"] = Instance.new("TextLabel", G2L["1c3"]);
-G2L["1c4"]["BorderSizePixel"] = 0;
-G2L["1c4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c4"]["TextSize"] = 14;
-G2L["1c4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c4"]["Name"] = [[Original]];
-G2L["1c4"]["Visible"] = false;
--- Attributes
-G2L["1c4"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
-G2L["1c4"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(61, 61, 61));
-G2L["1c4"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
-G2L["1c4"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(31, 31, 31));
-G2L["1c4"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(46, 46, 46));
-G2L["1c4"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(241, 241, 241));
-G2L["1c4"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
-G2L["1c4"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox.TOC
+G2L["1c4"] = Instance.new("TextButton", G2L["1bf"]);
+G2L["1c4"]["TextWrapped"] = true;
+G2L["1c4"]["TextScaled"] = true;
+G2L["1c4"]["BackgroundColor3"] = Color3.fromRGB(80, 80, 80);
+G2L["1c4"]["TextSize"] = 20;
+G2L["1c4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c4"]["TextColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["1c4"]["Size"] = UDim2.new(0, 180, 0, 26);
+G2L["1c4"]["Name"] = [[TOC]];
+G2L["1c4"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c4"]["Text"] = [[TELEPORT ON CLICK]];
+G2L["1c4"]["Position"] = UDim2.new(0.47956404089927673, 0, 0.8421052694320679, 0);
 
--- StarterGui.MurderD0llan.Themes.Inferno
-G2L["1c5"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.MainWindow.StarterLabel
+G2L["1c5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c5"]["TextWrapped"] = true;
 G2L["1c5"]["BorderSizePixel"] = 0;
+G2L["1c5"]["TextScaled"] = true;
 G2L["1c5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["1c5"]["TextSize"] = 14;
 G2L["1c5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c5"]["Size"] = UDim2.new(0, 483, 0, 228);
 G2L["1c5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c5"]["Name"] = [[Inferno]];
+G2L["1c5"]["Text"] = [[By G0bbyD0llan]];
+G2L["1c5"]["Name"] = [[StarterLabel]];
 G2L["1c5"]["Visible"] = false;
--- Attributes
-G2L["1c5"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(255, 81, 0));
-G2L["1c5"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(121, 41, 31));
-G2L["1c5"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
-G2L["1c5"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(51, 0, 0));
-G2L["1c5"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(81, 21, 21));
-G2L["1c5"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 201, 181));
-G2L["1c5"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(185, 158, 24)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 101, 0))});
-G2L["1c5"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["1c5"]["BackgroundTransparency"] = 0.20000000298023224;
+G2L["1c5"]["Position"] = UDim2.new(0, 0, 0.11583017557859421, 0);
 
--- StarterGui.MurderD0llan.Themes.LightSoft
-G2L["1c6"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.MainWindow.ACTIVATE_CLOSE
+G2L["1c6"] = Instance.new("Frame", G2L["2"]);
 G2L["1c6"]["BorderSizePixel"] = 0;
 G2L["1c6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c6"]["TextSize"] = 14;
-G2L["1c6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c6"]["BackgroundTransparency"] = 1;
+G2L["1c6"]["Size"] = UDim2.new(0, 482, 0, 259);
 G2L["1c6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c6"]["Name"] = [[LightSoft]];
 G2L["1c6"]["Visible"] = false;
+G2L["1c6"]["Name"] = [[ACTIVATE_CLOSE]];
 -- Attributes
-G2L["1c6"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
-G2L["1c6"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(201, 201, 201));
-G2L["1c6"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
-G2L["1c6"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(221, 221, 221));
-G2L["1c6"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(241, 241, 241));
-G2L["1c6"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(31, 31, 31));
-G2L["1c6"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(241, 241, 241)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 121, 216))});
-G2L["1c6"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["1c6"]:SetAttribute([[CHANGE_TO_TRIGGER]], false);
 
--- StarterGui.MurderD0llan.Themes.Midnight
-G2L["1c7"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.MainWindow.NOTIFICATION_TEXT
+G2L["1c7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c7"]["TextWrapped"] = true;
+G2L["1c7"]["TextStrokeTransparency"] = 0;
 G2L["1c7"]["BorderSizePixel"] = 0;
+G2L["1c7"]["TextScaled"] = true;
 G2L["1c7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c7"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1c7"]["TextSize"] = 14;
 G2L["1c7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c7"]["Size"] = UDim2.new(0, 327, 0, 30);
 G2L["1c7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c7"]["Name"] = [[Midnight]];
+G2L["1c7"]["Name"] = [[NOTIFICATION_TEXT]];
 G2L["1c7"]["Visible"] = false;
+G2L["1c7"]["BackgroundTransparency"] = 0.9900000095367432;
+G2L["1c7"]["Position"] = UDim2.new(0.16149067878723145, 0, 0.8146718144416809, 0);
 -- Attributes
-G2L["1c7"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 151, 255));
-G2L["1c7"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 31, 51));
-G2L["1c7"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 31, 61));
-G2L["1c7"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(11, 11, 21));
-G2L["1c7"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(21, 21, 41));
-G2L["1c7"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(201, 201, 255));
-G2L["1c7"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(44, 44, 130)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 151, 255))});
-G2L["1c7"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["1c7"]:SetAttribute([[TEXT_TO_DISPLAY]], [[Label]]);
 
--- StarterGui.MurderD0llan.Themes.ForestGreen
-G2L["1c8"] = Instance.new("TextLabel", G2L["1c3"]);
-G2L["1c8"]["BorderSizePixel"] = 0;
-G2L["1c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+-- StarterGui.MurderD0llan.MainWindow.searchHere
+G2L["1c8"] = Instance.new("TextBox", G2L["2"]);
+G2L["1c8"]["ZIndex"] = 20;
 G2L["1c8"]["TextSize"] = 14;
+G2L["1c8"]["TextWrapped"] = true;
+G2L["1c8"]["TextScaled"] = true;
+G2L["1c8"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
 G2L["1c8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c8"]["PlaceholderText"] = [[enter to search here...]];
+G2L["1c8"]["Size"] = UDim2.new(0, 113, 0, 17);
 G2L["1c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c8"]["Name"] = [[ForestGreen]];
+G2L["1c8"]["Text"] = [[]];
+G2L["1c8"]["Position"] = UDim2.new(0.761904776096344, 0, 0.9273278713226318, 0);
 G2L["1c8"]["Visible"] = false;
--- Attributes
-G2L["1c8"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(81, 201, 121));
-G2L["1c8"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(51, 101, 61));
-G2L["1c8"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(201, 51, 51));
-G2L["1c8"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(16, 31, 16));
-G2L["1c8"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(31, 61, 31));
-G2L["1c8"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(211, 255, 221));
-G2L["1c8"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(40, 146, 134)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(81, 201, 121))});
-G2L["1c8"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+G2L["1c8"]["Name"] = [[searchHere]];
 
--- StarterGui.MurderD0llan.Themes.Terminal
-G2L["1c9"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.Themes
+G2L["1c9"] = Instance.new("TextLabel", G2L["1"]);
 G2L["1c9"]["BorderSizePixel"] = 0;
 G2L["1c9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1c9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1c9"]["TextSize"] = 14;
 G2L["1c9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c9"]["Name"] = [[Terminal]];
+G2L["1c9"]["Name"] = [[Themes]];
 G2L["1c9"]["Visible"] = false;
--- Attributes
-G2L["1c9"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 255, 0));
-G2L["1c9"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 255, 31));
-G2L["1c9"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
-G2L["1c9"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(0, 0, 0));
-G2L["1c9"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(16, 16, 16));
-G2L["1c9"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(0, 255, 0));
-G2L["1c9"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 0))});
-G2L["1c9"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
 
--- StarterGui.MurderD0llan.Themes.MonoChrome
-G2L["1ca"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.Themes.Original
+G2L["1ca"] = Instance.new("TextLabel", G2L["1c9"]);
 G2L["1ca"]["BorderSizePixel"] = 0;
 G2L["1ca"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1ca"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1ca"]["TextSize"] = 14;
 G2L["1ca"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1ca"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ca"]["Name"] = [[MonoChrome]];
+G2L["1ca"]["Name"] = [[Original]];
 G2L["1ca"]["Visible"] = false;
 -- Attributes
-G2L["1ca"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(201, 201, 201));
-G2L["1ca"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(101, 101, 101));
-G2L["1ca"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 51, 51));
-G2L["1ca"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(41, 41, 41));
-G2L["1ca"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(61, 61, 61));
-G2L["1ca"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 255, 255));
-G2L["1ca"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
+G2L["1ca"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
+G2L["1ca"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(61, 61, 61));
+G2L["1ca"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
+G2L["1ca"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(31, 31, 31));
+G2L["1ca"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(46, 46, 46));
+G2L["1ca"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(241, 241, 241));
+G2L["1ca"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(112, 112, 112)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
 G2L["1ca"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
 
--- StarterGui.MurderD0llan.Themes.SolarizedLight
-G2L["1cb"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.Themes.Inferno
+G2L["1cb"] = Instance.new("TextLabel", G2L["1c9"]);
 G2L["1cb"]["BorderSizePixel"] = 0;
 G2L["1cb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1cb"]["TextSize"] = 14;
 G2L["1cb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1cb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1cb"]["Name"] = [[SolarizedLight]];
+G2L["1cb"]["Name"] = [[Inferno]];
 G2L["1cb"]["Visible"] = false;
 -- Attributes
-G2L["1cb"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(39, 140, 211));
-G2L["1cb"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(148, 162, 162));
-G2L["1cb"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(221, 51, 48));
-G2L["1cb"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(254, 247, 228));
-G2L["1cb"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(239, 233, 214));
-G2L["1cb"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(102, 124, 132));
-G2L["1cb"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 140, 211)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(211, 211, 211))});
+G2L["1cb"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(255, 81, 0));
+G2L["1cb"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(121, 41, 31));
+G2L["1cb"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
+G2L["1cb"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(51, 0, 0));
+G2L["1cb"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(81, 21, 21));
+G2L["1cb"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 201, 181));
+G2L["1cb"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(185, 158, 24)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 101, 0))});
 G2L["1cb"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
 
--- StarterGui.MurderD0llan.Themes.IcyBlue
-G2L["1cc"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.Themes.LightSoft
+G2L["1cc"] = Instance.new("TextLabel", G2L["1c9"]);
 G2L["1cc"]["BorderSizePixel"] = 0;
 G2L["1cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1cc"]["TextSize"] = 14;
 G2L["1cc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1cc"]["Name"] = [[IcyBlue]];
+G2L["1cc"]["Name"] = [[LightSoft]];
 G2L["1cc"]["Visible"] = false;
 -- Attributes
-G2L["1cc"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 181, 255));
-G2L["1cc"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(81, 121, 151));
-G2L["1cc"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 81));
-G2L["1cc"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(21, 41, 61));
-G2L["1cc"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(41, 61, 81));
-G2L["1cc"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(221, 241, 255));
-G2L["1cc"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(21, 51, 150)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 255))});
+G2L["1cc"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 121, 216));
+G2L["1cc"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(201, 201, 201));
+G2L["1cc"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(233, 18, 36));
+G2L["1cc"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(221, 221, 221));
+G2L["1cc"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(241, 241, 241));
+G2L["1cc"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(31, 31, 31));
+G2L["1cc"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(241, 241, 241)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 121, 216))});
 G2L["1cc"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
 
--- StarterGui.MurderD0llan.Themes.NeonViolet
-G2L["1cd"] = Instance.new("TextLabel", G2L["1c3"]);
+-- StarterGui.MurderD0llan.Themes.Midnight
+G2L["1cd"] = Instance.new("TextLabel", G2L["1c9"]);
 G2L["1cd"]["BorderSizePixel"] = 0;
 G2L["1cd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1cd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1cd"]["TextSize"] = 14;
 G2L["1cd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1cd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1cd"]["Name"] = [[NeonViolet]];
+G2L["1cd"]["Name"] = [[Midnight]];
 G2L["1cd"]["Visible"] = false;
 -- Attributes
-G2L["1cd"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(181, 0, 255));
-G2L["1cd"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(91, 31, 111));
-G2L["1cd"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 101));
-G2L["1cd"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(26, 0, 36));
-G2L["1cd"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(51, 11, 71));
-G2L["1cd"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 221, 255));
-G2L["1cd"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(70, 0, 100)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(181, 0, 255))});
+G2L["1cd"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 151, 255));
+G2L["1cd"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 31, 51));
+G2L["1cd"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 31, 61));
+G2L["1cd"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(11, 11, 21));
+G2L["1cd"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(21, 21, 41));
+G2L["1cd"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(201, 201, 255));
+G2L["1cd"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(44, 44, 130)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 151, 255))});
 G2L["1cd"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
 
--- StarterGui.MurderD0llan.WindowsUIScript
-G2L["1ce"] = Instance.new("LocalScript", G2L["1"]);
-G2L["1ce"]["Name"] = [[WindowsUIScript]];
+-- StarterGui.MurderD0llan.Themes.ForestGreen
+G2L["1ce"] = Instance.new("TextLabel", G2L["1c9"]);
+G2L["1ce"]["BorderSizePixel"] = 0;
+G2L["1ce"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1ce"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1ce"]["TextSize"] = 14;
+G2L["1ce"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ce"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ce"]["Name"] = [[ForestGreen]];
+G2L["1ce"]["Visible"] = false;
 -- Attributes
-G2L["1ce"]:SetAttribute([[TestingPage]], true);
+G2L["1ce"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(81, 201, 121));
+G2L["1ce"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(51, 101, 61));
+G2L["1ce"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(201, 51, 51));
+G2L["1ce"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(16, 31, 16));
+G2L["1ce"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(31, 61, 31));
+G2L["1ce"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(211, 255, 221));
+G2L["1ce"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(40, 146, 134)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(81, 201, 121))});
+G2L["1ce"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.Terminal
+G2L["1cf"] = Instance.new("TextLabel", G2L["1c9"]);
+G2L["1cf"]["BorderSizePixel"] = 0;
+G2L["1cf"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1cf"]["TextSize"] = 14;
+G2L["1cf"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1cf"]["Name"] = [[Terminal]];
+G2L["1cf"]["Visible"] = false;
+-- Attributes
+G2L["1cf"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 255, 0));
+G2L["1cf"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(31, 255, 31));
+G2L["1cf"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 0, 0));
+G2L["1cf"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(0, 0, 0));
+G2L["1cf"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(16, 16, 16));
+G2L["1cf"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(0, 255, 0));
+G2L["1cf"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 0))});
+G2L["1cf"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.MonoChrome
+G2L["1d0"] = Instance.new("TextLabel", G2L["1c9"]);
+G2L["1d0"]["BorderSizePixel"] = 0;
+G2L["1d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d0"]["TextSize"] = 14;
+G2L["1d0"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d0"]["Name"] = [[MonoChrome]];
+G2L["1d0"]["Visible"] = false;
+-- Attributes
+G2L["1d0"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(201, 201, 201));
+G2L["1d0"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(101, 101, 101));
+G2L["1d0"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 51, 51));
+G2L["1d0"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(41, 41, 41));
+G2L["1d0"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(61, 61, 61));
+G2L["1d0"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 255, 255));
+G2L["1d0"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(41, 41, 41)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))});
+G2L["1d0"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.SolarizedLight
+G2L["1d1"] = Instance.new("TextLabel", G2L["1c9"]);
+G2L["1d1"]["BorderSizePixel"] = 0;
+G2L["1d1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d1"]["TextSize"] = 14;
+G2L["1d1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d1"]["Name"] = [[SolarizedLight]];
+G2L["1d1"]["Visible"] = false;
+-- Attributes
+G2L["1d1"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(39, 140, 211));
+G2L["1d1"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(148, 162, 162));
+G2L["1d1"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(221, 51, 48));
+G2L["1d1"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(254, 247, 228));
+G2L["1d1"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(239, 233, 214));
+G2L["1d1"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(102, 124, 132));
+G2L["1d1"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(39, 140, 211)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(211, 211, 211))});
+G2L["1d1"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.IcyBlue
+G2L["1d2"] = Instance.new("TextLabel", G2L["1c9"]);
+G2L["1d2"]["BorderSizePixel"] = 0;
+G2L["1d2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d2"]["TextSize"] = 14;
+G2L["1d2"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d2"]["Name"] = [[IcyBlue]];
+G2L["1d2"]["Visible"] = false;
+-- Attributes
+G2L["1d2"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(0, 181, 255));
+G2L["1d2"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(81, 121, 151));
+G2L["1d2"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 81));
+G2L["1d2"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(21, 41, 61));
+G2L["1d2"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(41, 61, 81));
+G2L["1d2"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(221, 241, 255));
+G2L["1d2"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(21, 51, 150)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 181, 255))});
+G2L["1d2"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.Themes.NeonViolet
+G2L["1d3"] = Instance.new("TextLabel", G2L["1c9"]);
+G2L["1d3"]["BorderSizePixel"] = 0;
+G2L["1d3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1d3"]["TextSize"] = 14;
+G2L["1d3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d3"]["Name"] = [[NeonViolet]];
+G2L["1d3"]["Visible"] = false;
+-- Attributes
+G2L["1d3"]:SetAttribute([[COLOR_ACCENT_BLUE]], Color3.fromRGB(181, 0, 255));
+G2L["1d3"]:SetAttribute([[COLOR_BORDER]], Color3.fromRGB(91, 31, 111));
+G2L["1d3"]:SetAttribute([[COLOR_CLOSE_HOVER]], Color3.fromRGB(255, 61, 101));
+G2L["1d3"]:SetAttribute([[COLOR_BACKGROUND_DARK]], Color3.fromRGB(26, 0, 36));
+G2L["1d3"]:SetAttribute([[COLOR_BACKGROUND_MEDIUM]], Color3.fromRGB(51, 11, 71));
+G2L["1d3"]:SetAttribute([[COLOR_TEXT_LIGHT]], Color3.fromRGB(255, 221, 255));
+G2L["1d3"]:SetAttribute([[EVERY_BUTTON_COLOR_GRADIENT]], ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(70, 0, 100)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(181, 0, 255))});
+G2L["1d3"]:SetAttribute([[COLOR_CLOSE_DEFAULT]], Color3.fromRGB(0, 121, 216));
+
+-- StarterGui.MurderD0llan.WindowsUIScript
+G2L["1d4"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1d4"]["Name"] = [[WindowsUIScript]];
+-- Attributes
+G2L["1d4"]:SetAttribute([[TestingPage]], true);
 
 -- StarterGui.MurderD0llan.NotificationService
-G2L["1cf"] = Instance.new("ModuleScript", G2L["1"]);
-G2L["1cf"]["Name"] = [[NotificationService]];
+G2L["1d5"] = Instance.new("ModuleScript", G2L["1"]);
+G2L["1d5"]["Name"] = [[NotificationService]];
 -- Attributes
-G2L["1cf"]:SetAttribute([[MAX_VISIBLE_NOTIFICATIONS]], 5);
-G2L["1cf"]:SetAttribute([[DEFAULT_FADE_TIME]], 0.3);
-G2L["1cf"]:SetAttribute([[DEFAULT_NOTIFICATION_DURATION]], 5);
+G2L["1d5"]:SetAttribute([[MAX_VISIBLE_NOTIFICATIONS]], 5);
+G2L["1d5"]:SetAttribute([[DEFAULT_FADE_TIME]], 0.3);
+G2L["1d5"]:SetAttribute([[DEFAULT_NOTIFICATION_DURATION]], 5);
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate
-G2L["1d0"] = Instance.new("ScreenGui", G2L["1cf"]);
-G2L["1d0"]["Enabled"] = false;
-G2L["1d0"]["Name"] = [[NotificationGuiTemplate]];
-G2L["1d0"]["ResetOnSpawn"] = false;
+G2L["1d6"] = Instance.new("ScreenGui", G2L["1d5"]);
+G2L["1d6"]["Enabled"] = false;
+G2L["1d6"]["Name"] = [[NotificationGuiTemplate]];
+G2L["1d6"]["ResetOnSpawn"] = false;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate
-G2L["1d1"] = Instance.new("Frame", G2L["1d0"]);
-G2L["1d1"]["BorderSizePixel"] = 0;
-G2L["1d1"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
-G2L["1d1"]["AnchorPoint"] = Vector2.new(0.5, 0);
-G2L["1d1"]["Size"] = UDim2.new(1, 0, 0, 0);
-G2L["1d1"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["1d1"]["Name"] = [[NotificationFrameTemplate]];
+G2L["1d7"] = Instance.new("Frame", G2L["1d6"]);
+G2L["1d7"]["BorderSizePixel"] = 0;
+G2L["1d7"]["BackgroundColor3"] = Color3.fromRGB(51, 51, 51);
+G2L["1d7"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["1d7"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["1d7"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["1d7"]["Name"] = [[NotificationFrameTemplate]];
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.UICorner
-G2L["1d2"] = Instance.new("UICorner", G2L["1d1"]);
+G2L["1d8"] = Instance.new("UICorner", G2L["1d7"]);
 
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.UIPadding
-G2L["1d3"] = Instance.new("UIPadding", G2L["1d1"]);
-G2L["1d3"]["PaddingTop"] = UDim.new(0, 10);
-G2L["1d3"]["PaddingRight"] = UDim.new(0, 10);
-G2L["1d3"]["PaddingBottom"] = UDim.new(0, 10);
-G2L["1d3"]["PaddingLeft"] = UDim.new(0, 10);
+G2L["1d9"] = Instance.new("UIPadding", G2L["1d7"]);
+G2L["1d9"]["PaddingTop"] = UDim.new(0, 10);
+G2L["1d9"]["PaddingRight"] = UDim.new(0, 10);
+G2L["1d9"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["1d9"]["PaddingLeft"] = UDim.new(0, 10);
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.ContentLayout
-G2L["1d4"] = Instance.new("UIListLayout", G2L["1d1"]);
-G2L["1d4"]["Name"] = [[ContentLayout]];
-G2L["1d4"]["Padding"] = UDim.new(0, 5);
-G2L["1d4"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1da"] = Instance.new("UIListLayout", G2L["1d7"]);
+G2L["1da"]["Name"] = [[ContentLayout]];
+G2L["1da"]["Padding"] = UDim.new(0, 5);
+G2L["1da"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.TitleLabel
-G2L["1d5"] = Instance.new("TextLabel", G2L["1d1"]);
-G2L["1d5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1d5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1d5"]["TextSize"] = 16;
-G2L["1d5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d5"]["LayoutOrder"] = 1;
-G2L["1d5"]["Size"] = UDim2.new(1, -25, 0, 20);
-G2L["1d5"]["Text"] = [[Notification Title]];
-G2L["1d5"]["Name"] = [[TitleLabel]];
-G2L["1d5"]["BackgroundTransparency"] = 1;
+G2L["1db"] = Instance.new("TextLabel", G2L["1d7"]);
+G2L["1db"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1db"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1db"]["TextSize"] = 16;
+G2L["1db"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1db"]["LayoutOrder"] = 1;
+G2L["1db"]["Size"] = UDim2.new(1, -25, 0, 20);
+G2L["1db"]["Text"] = [[Notification Title]];
+G2L["1db"]["Name"] = [[TitleLabel]];
+G2L["1db"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.TextLabel
-G2L["1d6"] = Instance.new("TextLabel", G2L["1d1"]);
-G2L["1d6"]["TextWrapped"] = true;
-G2L["1d6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["1d6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["1d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1d6"]["TextSize"] = 14;
-G2L["1d6"]["TextColor3"] = Color3.fromRGB(221, 221, 221);
-G2L["1d6"]["LayoutOrder"] = 2;
-G2L["1d6"]["AutomaticSize"] = Enum.AutomaticSize.Y;
-G2L["1d6"]["Size"] = UDim2.new(1, 0, 0, 0);
-G2L["1d6"]["Text"] = [[This is the notification message content. It can be a bit longer to demonstrate wrapping.]];
-G2L["1d6"]["BackgroundTransparency"] = 1;
+G2L["1dc"] = Instance.new("TextLabel", G2L["1d7"]);
+G2L["1dc"]["TextWrapped"] = true;
+G2L["1dc"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1dc"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1dc"]["TextSize"] = 14;
+G2L["1dc"]["TextColor3"] = Color3.fromRGB(221, 221, 221);
+G2L["1dc"]["LayoutOrder"] = 2;
+G2L["1dc"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["1dc"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["1dc"]["Text"] = [[This is the notification message content. It can be a bit longer to demonstrate wrapping.]];
+G2L["1dc"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.MurderD0llan.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.CloseButton
-G2L["1d7"] = Instance.new("TextButton", G2L["1d1"]);
-G2L["1d7"]["ZIndex"] = 2;
-G2L["1d7"]["TextSize"] = 16;
-G2L["1d7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1d7"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["1d7"]["AnchorPoint"] = Vector2.new(1, 0);
-G2L["1d7"]["Size"] = UDim2.new(0, 20, 0, 20);
-G2L["1d7"]["Name"] = [[CloseButton]];
-G2L["1d7"]["Text"] = [[X]];
-G2L["1d7"]["Position"] = UDim2.new(1, -5, 0, 5);
-G2L["1d7"]["BackgroundTransparency"] = 1;
+G2L["1dd"] = Instance.new("TextButton", G2L["1d7"]);
+G2L["1dd"]["ZIndex"] = 2;
+G2L["1dd"]["TextSize"] = 16;
+G2L["1dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1dd"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["1dd"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["1dd"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["1dd"]["Name"] = [[CloseButton]];
+G2L["1dd"]["Text"] = [[X]];
+G2L["1dd"]["Position"] = UDim2.new(1, -5, 0, 5);
+G2L["1dd"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.MurderD0llan.HelpModules
-G2L["1d8"] = Instance.new("Frame", G2L["1"]);
-G2L["1d8"]["BorderSizePixel"] = 0;
-G2L["1d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d8"]["Visible"] = false;
-G2L["1d8"]["Name"] = [[HelpModules]];
+G2L["1de"] = Instance.new("Frame", G2L["1"]);
+G2L["1de"]["BorderSizePixel"] = 0;
+G2L["1de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1de"]["Visible"] = false;
+G2L["1de"]["Name"] = [[HelpModules]];
 
 -- StarterGui.MurderD0llan.HelpModules.DodgeModule
-G2L["1d9"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1d9"]["Name"] = [[DodgeModule]];
+G2L["1df"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1df"]["Name"] = [[DodgeModule]];
 
 -- StarterGui.MurderD0llan.HelpModules.SafeZone
-G2L["1da"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1da"]["Name"] = [[SafeZone]];
+G2L["1e0"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1e0"]["Name"] = [[SafeZone]];
 
 -- StarterGui.MurderD0llan.HelpModules.MurderD0llanAdminModule
-G2L["1db"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1db"]["Name"] = [[MurderD0llanAdminModule]];
+G2L["1e1"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1e1"]["Name"] = [[MurderD0llanAdminModule]];
 
 -- StarterGui.MurderD0llan.HelpModules.KeyBindBTNModule
-G2L["1dc"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1dc"]["Name"] = [[KeyBindBTNModule]];
+G2L["1e2"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1e2"]["Name"] = [[KeyBindBTNModule]];
 
 -- StarterGui.MurderD0llan.HelpModules.TranslatorModule
-G2L["1dd"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1dd"]["Name"] = [[TranslatorModule]];
+G2L["1e3"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1e3"]["Name"] = [[TranslatorModule]];
 
 -- StarterGui.MurderD0llan.HelpModules.ButtonSelectorModule
-G2L["1de"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1de"]["Name"] = [[ButtonSelectorModule]];
+G2L["1e4"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1e4"]["Name"] = [[ButtonSelectorModule]];
 
 -- StarterGui.MurderD0llan.HelpModules.KeySelectorModule
-G2L["1df"] = Instance.new("ModuleScript", G2L["1d8"]);
-G2L["1df"]["Name"] = [[KeySelectorModule]];
+G2L["1e5"] = Instance.new("ModuleScript", G2L["1de"]);
+G2L["1e5"]["Name"] = [[KeySelectorModule]];
 
 -- Require G2L wrapper
 local G2L_REQUIRE = require;
@@ -5334,9 +5400,9 @@ G2L_MODULES[G2L["16e"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1cf"]] = {
+G2L_MODULES[G2L["1d5"]] = {
 	Closure = function()
-		local script = G2L["1cf"];
+		local script = G2L["1d5"];
 		--this service was made by Roblox AI Assistant - PROMPT: G0bbyD0llan
 
 		local NotificationService = {}
@@ -5899,9 +5965,9 @@ G2L_MODULES[G2L["1cf"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1d9"]] = {
+G2L_MODULES[G2L["1df"]] = {
 	Closure = function()
-		local script = G2L["1d9"];
+		local script = G2L["1df"];
 		-- DodgeModule.lua
 		-- A module that allows the local player's character to dynamically evade a specific real player using intelligent vector math and realistic movement
 
@@ -6056,9 +6122,9 @@ G2L_MODULES[G2L["1d9"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1da"]] = {
+G2L_MODULES[G2L["1e0"]] = {
 	Closure = function()
-		local script = G2L["1da"];
+		local script = G2L["1e0"];
 		local SafeZone = {}
 
 		local TheSafeZone = nil
@@ -7177,9 +7243,9 @@ G2L_MODULES[G2L["1da"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1db"]] = {
+G2L_MODULES[G2L["1e1"]] = {
 	Closure = function()
-		local script = G2L["1db"];
+		local script = G2L["1e1"];
 		-- MurderD0llanAdminModule
 		-- Admin command system for local player, controlled by whilelisted players via .Chatted
 
@@ -7706,9 +7772,9 @@ G2L_MODULES[G2L["1db"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1dc"]] = {
+G2L_MODULES[G2L["1e2"]] = {
 	Closure = function()
-		local script = G2L["1dc"];
+		local script = G2L["1e2"];
 --[[
     KeyBindBTNModule
     Allows developers to bind keyboard keys to UI buttons so that pressing a key triggers the button's MouseButton1Click event.
@@ -7829,9 +7895,9 @@ G2L_MODULES[G2L["1dc"]] = {
 		return KeyBindBTNModule
 	end;
 };
-G2L_MODULES[G2L["1dd"]] = {
+G2L_MODULES[G2L["1e3"]] = {
 	Closure = function()
-		local script = G2L["1dd"];
+		local script = G2L["1e3"];
 		-- TranslatorModule
 		local HttpService = game:GetService("HttpService")
 		local Players = game:GetService("Players")
@@ -8000,9 +8066,9 @@ G2L_MODULES[G2L["1dd"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1de"]] = {
+G2L_MODULES[G2L["1e4"]] = {
 	Closure = function()
-		local script = G2L["1de"];
+		local script = G2L["1e4"];
 		local UserInputService = game:GetService("UserInputService")
 		local Players = game:GetService("Players")
 		local GuiService = game:GetService("GuiService")
@@ -8160,9 +8226,9 @@ G2L_MODULES[G2L["1de"]] = {
 
 	end;
 };
-G2L_MODULES[G2L["1df"]] = {
+G2L_MODULES[G2L["1e5"]] = {
 	Closure = function()
-		local script = G2L["1df"];
+		local script = G2L["1e5"];
 		local Players = game:GetService("Players")
 		local UserInputService = game:GetService("UserInputService")
 
@@ -15624,9 +15690,685 @@ local function C_190()
 	end)
 end;
 task.spawn(C_190);
+-- StarterGui.MurderD0llan.MainWindow.ContentArea.ALT_page_FrameBox.Box.MiniMap2DSimulation
+local function C_1c1()
+	local script = G2L["1c1"];
+	local Players = game:GetService("Players")
+	local Workspace = game:GetService("Workspace")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local GuiService = game:GetService("GuiService")
+
+	local localPlayer = Players.LocalPlayer
+
+	local frame = script.Parent
+	local parentFrame = frame.Parent
+
+	local testing = false
+
+	-- Configuración del minimapa
+	local PLAYER_SIZE = 8
+	local ENEMY_SIZE = 8
+
+	local COLOR_PLAYER = Color3.fromRGB(0, 255, 0)
+	local COLOR_ENEMY = Color3.fromRGB(255, 50, 50)
+
+	-- Variables de control
+	local enableTeleportation = true
+
+	script.Parent.Parent.TOC.MouseButton1Click:Connect(function()
+		enableTeleportation = not enableTeleportation
+		if enableTeleportation  then
+			script.Parent.Parent.TOC.TextColor3 = Color3.fromRGB(0, 255, 0)
+		else
+			script.Parent.Parent.TOC.TextColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+	local SelectedEnemy = nil
+
+	-- Crear minimapa si no existe y ajustarlo al tamaño y posición del frame "frame"
+	local miniMap = frame:FindFirstChild("MiniMap2D") or Instance.new("Frame")
+	if frame and not miniMap:IsDescendantOf(frame) then
+		miniMap.Name = "MiniMap2D"
+		miniMap.Size = frame.Size
+		miniMap.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		miniMap.BorderSizePixel = 1
+		miniMap.ClipsDescendants = true
+		miniMap.Parent = frame
+	end
+
+	-- Limpia los puntos en el minimapa
+	local function clearMiniMap()
+		for _, child in miniMap:GetChildren() do
+			if child:IsA("Frame") or child:IsA("TextLabel") then
+				child:Destroy()
+			end
+		end
+	end
+
+	-- Convierte posición 3D a 2D en el minimapa
+	local function worldToMiniMap(pos, origin, scale)
+		local sizeX, sizeY = miniMap.AbsoluteSize.X, miniMap.AbsoluteSize.Y
+		local offset = pos - origin
+		return offset.X * scale + sizeX / 2, -offset.Z * scale + sizeY / 2
+	end
+
+	-- Convierte posición 2D a posición 3D en el mundo
+	local function miniMapToWorld(clickX, clickY, origin, scale)
+		local sizeX, sizeY = miniMap.AbsoluteSize.X, miniMap.AbsoluteSize.Y
+		local dx = (clickX - sizeX / 2) / scale
+		local dz = -(clickY - sizeY / 2) / scale
+		return Vector3.new(origin.X + dx, origin.Y, origin.Z + dz)
+	end
+
+	-- Dibuja un punto en el minimapa
+	local function drawPoint(x, y, size, color)
+		local point = Instance.new("Frame")
+		point.Size = UDim2.new(0, size, 0, size)
+		point.Position = UDim2.new(0, x - size / 2, 0, y - size / 2)
+		point.BackgroundColor3 = color
+		point.BorderSizePixel = 0
+		point.BackgroundTransparency = 0
+		point.ZIndex = 1
+		point.Parent = miniMap
+		return point
+	end
+
+	-- Agrega nombre arriba del enemigo
+	local function addNameLabel(name, x, y)
+		local label = Instance.new("TextLabel")
+		label.Size = UDim2.new(0, 60, 0, 12)
+		label.Position = UDim2.new(0, x - 30, 0, y - ENEMY_SIZE / 2 - 12)
+		label.BackgroundTransparency = 1
+		label.Text = name
+		label.TextColor3 = Color3.fromRGB(255, 255, 255)
+		label.TextTransparency = 0.4
+		label.TextScaled = true
+		label.Font = Enum.Font.ArialBold
+		label.ZIndex = 2
+		label.Parent = miniMap
+	end
+
+	-- Obtener enemigos cercanos por distancia
+	local function getNearbyEnemies(origin, maxDist)
+		local enemyData = {}
+		for _, player in Players:GetPlayers() do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local pos = player.Character.HumanoidRootPart.Position
+				if (pos - origin).Magnitude <= maxDist then
+					table.insert(enemyData, {Player = player, Position = pos})
+				end
+			end
+		end
+		return enemyData
+	end
+
+	-- Manejo de clics sobre el minimapa
+	miniMap.InputBegan:Connect(function(input)
+		if input.UserInputType ~= Enum.UserInputType.MouseButton1 and input.UserInputType ~= Enum.UserInputType.MouseButton2 then return end
+
+		local character = localPlayer.Character
+		local hrp = character and character:FindFirstChild("HumanoidRootPart")
+		if not hrp then return end
+
+		local scale = 0.5
+		local mousePos = UserInputService:GetMouseLocation() - GuiService:GetGuiInset()
+		local relPos = mousePos - miniMap.AbsolutePosition
+		local sizeX, sizeY = miniMap.AbsoluteSize.X, miniMap.AbsoluteSize.Y
+
+		if relPos.X < 0 or relPos.X > sizeX or relPos.Y < 0 or relPos.Y > sizeY then return end
+
+		local origin = hrp.Position
+		local clickedWorldPos = miniMapToWorld(relPos.X, relPos.Y, origin, scale)
+
+		-- Buscar si se clickeó un enemigo
+		for _, enemyInfo in pairs(getNearbyEnemies(origin, 200)) do
+			local x, y = worldToMiniMap(enemyInfo.Position, origin, scale)
+			local dist = (Vector2.new(x, y) - relPos).Magnitude
+			if dist <= ENEMY_SIZE then
+				if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					SelectedEnemy = enemyInfo.Player
+					warn("Enemigo seleccionado: " .. SelectedEnemy.Name)
+				elseif input.UserInputType == Enum.UserInputType.MouseButton2 then
+					hrp.CFrame = CFrame.new(enemyInfo.Position + Vector3.new(0, 3, 0))
+					warn("Teletransportado a: " .. enemyInfo.Player.Name)
+				end
+				return
+			end
+		end
+
+		-- Teletransporte libre si está habilitado
+		if input.UserInputType == Enum.UserInputType.MouseButton1 and enableTeleportation then
+			hrp.CFrame = CFrame.new(clickedWorldPos)
+		end
+	end)
+
+	local HeartBeat = nil
+	-- Actualización del minimapa en tiempo real
+	script.Parent.Parent:GetPropertyChangedSignal("Visible"):Connect(function()
+		if script.Parent.Parent.Visible then
+			HeartBeat =	RunService.Heartbeat:Connect(function()
+				if not parentFrame.Visible then return end
+
+				local character = localPlayer.Character
+				local hrp = character and character:FindFirstChild("HumanoidRootPart")
+				if not hrp then return end
+
+				local scale = 0.5
+				local origin = hrp.Position
+				local sizeX, sizeY = miniMap.AbsoluteSize.X, miniMap.AbsoluteSize.Y
+
+				clearMiniMap()
+				drawPoint(sizeX / 2, sizeY / 2, PLAYER_SIZE, COLOR_PLAYER)
+
+				for _, enemyInfo in pairs(getNearbyEnemies(origin, 200)) do
+					local x, y = worldToMiniMap(enemyInfo.Position, origin, scale)
+					drawPoint(x, y, ENEMY_SIZE, COLOR_ENEMY)
+					addNameLabel(enemyInfo.Player.Name, x, y)
+				end
+			end)
+		else
+			if HeartBeat then
+				HeartBeat:Disconnect()
+				HeartBeat = nil
+			end
+		end
+	end)
+
+	local AllBool = false
+	local SkidFling = function(TargetPlayer)
+		local Character = game.Players.LocalPlayer.Character
+		local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
+		local RootPart = Humanoid and Humanoid.RootPart
+
+		local TCharacter = TargetPlayer.Character
+		local THumanoid
+		local TRootPart
+		local THead
+		local Accessory
+		local Handle
+
+		if TCharacter:FindFirstChildOfClass("Humanoid") then
+			THumanoid = TCharacter:FindFirstChildOfClass("Humanoid")
+		end
+		if THumanoid and THumanoid.RootPart then
+			TRootPart = THumanoid.RootPart
+		end
+		if TCharacter:FindFirstChild("Head") then
+			THead = TCharacter.Head
+		end
+		if TCharacter:FindFirstChildOfClass("Accessory") then
+			Accessory = TCharacter:FindFirstChildOfClass("Accessory")
+		end
+		if Accessoy and Accessory:FindFirstChild("Handle") then
+			Handle = Accessory.Handle
+		end
+
+		if Character and Humanoid and RootPart then
+			if RootPart.Velocity.Magnitude < 50 then
+				getgenv().OldPos = RootPart.CFrame
+			end
+			if THumanoid and THumanoid.Sit and not AllBool then
+			end
+			if THead then
+				workspace.CurrentCamera.CameraSubject = THead
+			elseif not THead and Handle then
+				workspace.CurrentCamera.CameraSubject = Handle
+			elseif THumanoid and TRootPart then
+				workspace.CurrentCamera.CameraSubject = THumanoid
+			end
+			if not TCharacter:FindFirstChildWhichIsA("BasePart") then
+				return
+			end
+
+			local FPos = function(BasePart, Pos, Ang)
+				RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
+				Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
+				RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
+				RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
+			end
+
+			local SFBasePart = function(BasePart)
+				local TimeToWait = 2
+				local Time = tick()
+				local Angle = 0
+
+				repeat
+					if RootPart and THumanoid then
+						if BasePart.Velocity.Magnitude < 50 then
+							Angle = Angle + 100
+
+							FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle),0 ,0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
+							task.wait()
+						else
+							FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, -THumanoid.WalkSpeed), CFrame.Angles(0, 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, -TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(0, 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(90), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5 ,0), CFrame.Angles(math.rad(-90), 0, 0))
+							task.wait()
+
+							FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+							task.wait()
+						end
+					else
+						break
+					end
+				until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
+			end
+
+			workspace.FallenPartsDestroyHeight = 0/0
+
+			local BV = Instance.new("BodyVelocity")
+			BV.Name = "EpixVel"
+			BV.Parent = RootPart
+			BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
+			BV.MaxForce = Vector3.new(1/0, 1/0, 1/0)
+
+			Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+
+			if TRootPart and THead then
+				if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
+					SFBasePart(THead)
+				else
+					SFBasePart(TRootPart)
+				end
+			elseif TRootPart and not THead then
+				SFBasePart(TRootPart)
+			elseif not TRootPart and THead then
+				SFBasePart(THead)
+			elseif not TRootPart and not THead and Accessory and Handle then
+				SFBasePart(Handle)
+			else
+			end
+
+			BV:Destroy()
+			Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+			workspace.CurrentCamera.CameraSubject = Humanoid
+
+			repeat
+				RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
+				Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
+				Humanoid:ChangeState("GettingUp")
+				table.foreach(Character:GetChildren(), function(_, x)
+					if x:IsA("BasePart") then
+						x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+					end
+				end)
+				task.wait()
+			until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
+			workspace.FallenPartsDestroyHeight = getgenv().FPDH
+		else
+		end
+	end
+
+	local FlingTargetButton = script.Parent.Parent.F
+	local KillTargetButton = script.Parent.Parent.K
+	FlingTargetButton.MouseButton1Click:Connect(function()
+		if SelectedEnemy then
+			local character = SelectedEnemy.Character
+			if character then
+				local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+				if humanoidRootPart then
+					SkidFling(SelectedEnemy)
+				end
+			end
+		end
+	end)
+
+	local Players = game:GetService("Players")
+
+	local Notificaciones = {
+		Error = "rbxassetid://4041673253",
+		Aviso = "rbxassetid://4026367629",
+		Correcto = "rbxassetid://4094488012",
+	}
+
+
+	local Notification_Service = require(script.Parent.Parent.Parent.Parent.Parent:FindFirstChild("NotificationService"))
+
+	local function errornotify(text)
+		Notification_Service.ShowNotification({
+			title = "Error / MurderD0llan",
+			text = text,
+			soundOnOpen = Notificaciones.Error,
+			theme = "Error"
+		})
+	end
+
+	local function sucessnotify(text)
+		Notification_Service.ShowNotification({
+			title = "Success / MurderD0llan",
+			text = text,
+			soundOnOpen = Notificaciones.Correcto,
+			theme = "Success"
+		})
+	end
+
+	local function warningnotify(text)
+		Notification_Service.ShowNotification({
+			title = "Warning / MurderD0llan",
+			text = text,
+			soundOnOpen = Notificaciones.Aviso,
+			theme = "Warning"
+		})
+	end
+	local Players = game:GetService("Players")
+	local function MurderKill(targetPlayer: Player)
+		local localPlayer = Players.LocalPlayer
+		if not (targetPlayer and localPlayer) then return end
+
+		local targetChar = targetPlayer.Character
+		local localChar = localPlayer.Character
+		if not (targetChar and localChar) then return end
+
+		local targetHRP = targetChar:FindFirstChild("HumanoidRootPart")
+		local localHRP = localChar:FindFirstChild("HumanoidRootPart")
+		if not (targetHRP and localHRP) then return end
+
+		local targetHumanoid = targetChar:FindFirstChildOfClass("Humanoid")
+		if not targetHumanoid then return end
+
+		-- Buscar el cuchillo en el character o en la mochila
+		local knife = localChar:FindFirstChild("Knife") or localPlayer.Backpack:FindFirstChild("Knife")
+
+		if not knife then
+			warn("[Kill] No se encontró el cuchillo.")
+			return
+		end
+
+		-- Si el cuchillo está en la mochila, equiparlo
+		if knife.Parent == localPlayer.Backpack then
+			local localHum = localChar:FindFirstChildOfClass("Humanoid")
+			if localHum then
+				localHum:EquipTool(knife)
+			end
+			task.wait(0.1) -- Esperar a que se equipe correctamente
+		end
+
+		local stabEvent = knife:FindFirstChild("Stab")
+		if not (stabEvent and stabEvent:IsA("RemoteEvent")) then
+			warn("[Kill] El cuchillo no tiene un RemoteEvent llamado 'Stab'.")
+			return
+		end
+
+		-- Teletransportar y ocultar al objetivo
+		targetHRP.Anchored = true
+		targetHRP.CFrame = localHRP.CFrame + localHRP.CFrame.LookVector
+
+		for _, part in ipairs(targetChar:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.Transparency = 1
+			end
+		end
+
+		-- Atacar repetidamente hasta que la salud del objetivo llegue a 0
+		repeat
+			stabEvent:FireServer("Slash")
+			task.wait(0.1)
+		until targetHumanoid.Health <= 0 or not targetHumanoid.Parent
+
+		-- Desequipar el cuchillo
+		if knife and knife.Parent == localChar then
+			local localHum = localChar:FindFirstChildOfClass("Humanoid")
+			if localHum then
+				localHum:UnequipTools()
+			end
+		end
+
+		print("[Kill] Objetivo eliminado:", targetPlayer.Name)
+	end
+
+
+	local shootOffset = 2.8
+	local offsetToPingMult = 1
+
+
+	local function PredictShootPosition(player: Player, shootOffset: number)
+		pcall(function()
+			player = player.Character
+			if not player.Character then errornotify("Invalid Args (player is NIL)") return end
+		end)
+		local localplayer = game:GetService("Players").LocalPlayer
+		local playerHRP = player:FindFirstChild("UpperTorso")
+		local playerHum = player:FindFirstChild("Humanoid")
+		if not playerHRP or not playerHum then
+			errornotify("Invalid Args (player's HumanoidRootPart = NIL)")
+			return nil
+		end
+
+		local playerPosition = playerHRP.Position
+		local velocity = Vector3.new()
+		velocity = playerHRP.AssemblyLinearVelocity
+		local playerMoveDirection = playerHum.MoveDirection
+		local playerLookVec = playerHRP.CFrame.LookVector
+		local yVelFactor = velocity.Y > 0 and -1 or 0.5
+		local predictedPosition
+		predictedPosition = playerHRP.Position + ((velocity * Vector3.new(0, 0.5, 0))) * (shootOffset / 15) +playerMoveDirection * shootOffset
+		predictedPosition = predictedPosition * (((localplayer:GetNetworkPing() * 1000) * ((offsetToPingMult - 1) * 0.01)) + 1)
+		-- failed so hard i had to revert back to v1.11 :sob:
+
+		--predictedPosition = Vector3.new(predictedPositiomurdererHRP.Position + ((murdererVelocity * Vector3.new(0, 0.5, 0))) * (shootOffset / 15) + murderer.Character.Humanoid.MoveDirection * shootOffsetn.X, math.clamp(predictedPosition.Y, playerPosition.Y - 2, playerPosition.Y + 2), predictedPosition.Z)
+
+
+		return predictedPosition
+	end
+
+
+	local localPlayer = game:GetService("Players").LocalPlayer
+	local function Shoot(targetPlayer: Player)
+		local targetChar = targetPlayer.Character
+		if not targetChar then return end
+
+		local targetHRP = targetChar:FindFirstChild("HumanoidRootPart")
+		if not targetHRP then return end
+
+		local predictedPosition = targetHRP.Position + shootOffset
+
+		local gun = localPlayer.Character and localPlayer.Character:FindFirstChild("Gun")
+		if not gun then return end
+
+		local createBeamRF = gun:FindFirstChild("KnifeLocal") and gun.KnifeLocal:FindFirstChild("CreateBeam")
+		if not (createBeamRF and createBeamRF:IsA("RemoteFunction")) then
+			errornotify("Missing 'CreateBeam' RemoteFunction.")
+			return
+		end
+
+		local args = {
+			[1] = 1,
+			[2] = predictedPosition,
+			[3] = "AH2"
+		}
+
+		createBeamRF:InvokeServer(unpack(args))
+	end
+
+	local function SherrifKill(targetPlayer: Player)
+		if not (targetPlayer and targetPlayer.Character) then 
+			errornotify("Invalid target player or missing character.")
+			return 
+		end
+
+		local localChar = localPlayer.Character
+		local humanoid = localChar and localChar:FindFirstChildWhichIsA("Humanoid")
+		if not humanoid then 
+			errornotify("Local player's humanoid not found.")
+			return 
+		end
+
+		local gun = localPlayer.Backpack:FindFirstChild("Gun") or localChar:FindFirstChild("Gun")
+		if not gun then
+			errornotify("No gun named 'Gun' found in inventory or character.")
+			return
+		end
+
+		-- Equip the gun
+		if gun.Parent == localPlayer.Backpack then
+			humanoid:EquipTool(gun)
+			task.wait(0.1)
+		end
+
+		local originalCFrame = localChar:GetPivot()
+
+		-- Teleport behind the target
+		local targetChar = targetPlayer.Character
+		local targetHRP = targetChar:FindFirstChild("HumanoidRootPart")
+		if not targetHRP then
+			errornotify("Target's HumanoidRootPart not found.")
+			return
+		end
+
+		local backPosition = targetHRP.CFrame * CFrame.new(0, 0, 3)
+		localChar:PivotTo(backPosition)
+
+		-- Repeatedly shoot for up to 15 seconds or until target is dead
+		local startTime = tick()
+		local targetHumanoid = targetChar:FindFirstChildOfClass("Humanoid")
+
+		if not targetHumanoid then
+			errornotify("Target's Humanoid not found.")
+			return
+		end
+
+
+		task.spawn(function()
+			while targetHumanoid.Health > 0 and tick() - startTime <= 15 do
+				Shoot(targetPlayer)
+				task.wait(0.2)
+			end
+
+		end)
+		if targetHumanoid.Health <= 0 then
+			sucessnotify("Target eliminated successfully.")
+		else
+			warningnotify("Timeout: Target wasn't killed within 15 seconds.")
+		end
+
+		-- Unequip the gun
+		humanoid:UnequipTools()
+		task.wait(0.1)
+
+		-- Return to original position
+		localChar:PivotTo(originalCFrame)
+	end
+
+
+	local function findMurderer()
+
+
+		-- Fallback
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if i.Backpack:FindFirstChild("Knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if not i.Character then continue end
+			if i.Character:FindFirstChild("Knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if i.Backpack:FindFirstChild("knife") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if not i.Character then continue end
+			if i.Character:FindFirstChild("knife") then
+				return i
+			end
+		end
+
+		return nil
+	end
+
+	local function findSheriff()
+
+
+		-- Fallback
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if i.Backpack:FindFirstChild("Gun") then
+				return i
+			end
+		end
+
+		for _, i in ipairs(game.Players:GetPlayers()) do
+			if not i.Character then continue end
+			if i.Character:FindFirstChild("Gun") then
+				return i
+			end
+		end
+
+
+
+		return nil
+	end
+
+	KillTargetButton.MouseButton1Click:Connect(function()
+		if SelectedEnemy then
+			local character = SelectedEnemy.Character
+			if character then
+				local humanoid = character:FindFirstChild("Humanoid")
+				if humanoid then
+					if findSheriff() == localPlayer then
+						SherrifKill(SelectedEnemy)
+					elseif findMurderer() == localPlayer then
+						MurderKill(SelectedEnemy)
+					end
+				end
+			end
+		end
+	end)
+
+	if testing then
+		script.Parent.Parent.Visible = false
+		wait()
+		script.Parent.Parent.Visible = true
+	end
+end;
+task.spawn(C_1c1);
 -- StarterGui.MurderD0llan.WindowsUIScript
-local function C_1ce()
-	local script = G2L["1ce"];
+local function C_1d4()
+	local script = G2L["1d4"];
 	local ScreenGui = script.Parent
 
 	local Notificaciones = {
@@ -17075,7 +17817,6 @@ local function C_1ce()
 			end
 		end)
 	end
-
 	script.Parent.MainWindow.ContentArea.ALT_page_options.faq.MouseButton1Click:Connect(function()
 		script.Parent.MainWindow.ContentArea.ALT_page_options.Visible = false
 		script.Parent.MainWindow.ContentArea.ALT_page_FAQ.Visible = true
@@ -17295,6 +18036,6 @@ local function C_1ce()
 	SelectThemeAndApply("original")
 
 end;
-task.spawn(C_1ce);
+task.spawn(C_1d4);
 
 return G2L["1"], require;
