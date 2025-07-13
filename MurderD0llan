@@ -1,4 +1,7 @@
 --[[
+
+--FIXED INTRO SCRIPT NOT LOADING!!!!
+
 MurderD0llan / Murder Mystery 2 Script Hub
 
 creator: G0bbyD0llan
@@ -70,7 +73,7 @@ MurderD0llan.information = {
 function MurderD0llan:LoadIntro(OnFinished)
 	-- Verificar soporte del sistema de archivos
 	local fs_supported = typeof(isfile) == "function" and typeof(writefile) == "function"
-	local FLAG_PATH = "workspace/already_openedMurderD0llan.txt"
+	local FLAG_PATH = "already_openedMurderD0llan.txt"
 
 	if not fs_supported then
 		if OnFinished then OnFinished() end
@@ -568,6 +571,9 @@ function MurderD0llan:LoadIntro(OnFinished)
 
 			task.wait(math.max(CONFIG.ANIM_DURATION_FADE_OUT, CONFIG.ANIM_DURATION_ZOOM_OUT, CONFIG.ANIM_DURATION_BLUR))
 			cleanupResources() -- Call unified cleanup
+			if OnFinished then
+				OnFinished()
+			end
 		end
 	end
 
