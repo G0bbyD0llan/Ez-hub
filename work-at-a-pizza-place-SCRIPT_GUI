@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
@@ -1917,7 +1917,7 @@ G2L["c3"]["TextScaled"] = true;
 G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
 G2L["c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c3"]["PlaceholderText"] = [[Actual Car - none [you can type "car" or "truck" here for  spawning...]];
+G2L["c3"]["PlaceholderText"] = [[Actual Car - none [you can type "car" or "truck" here for  spawning...]]
 G2L["c3"]["Size"] = UDim2.new(0.9150000214576721, 0, 0.10000000149011612, 0);
 G2L["c3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 G2L["c3"]["Text"] = [[]];
@@ -1987,7 +1987,7 @@ G2L["ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ca"]["Size"] = UDim2.new(1.001429796218872, 0, 0.11428571492433548, 0);
 G2L["ca"]["Name"] = [[ActionButtonFLING]];
 G2L["ca"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["ca"]["Text"] = [[Annoy In Pizzeria Using Vehicle [IN WORK]];
+G2L["ca"]["Text"] = [[Annoy In Pizzeria Using Vehicle [IN WORK]]
 G2L["ca"]["Position"] = UDim2.new(-0.0014298235764726996, 0, 0.28285717964172363, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.ActionButtonFLING.LocalScript
@@ -2439,17 +2439,24 @@ local function C_4()
 	--Variables
 	local TitleBar = script.Parent["TitleBar"]
 	local IsCursonOnTitleBar = false
-	--MouseEnter and MouseLeave Connection
-	TitleBar.MouseEnter:Connect(function()
-		if IsCursonOnTitleBar == false then
-			IsCursonOnTitleBar = true
-		end
-	end)
-	TitleBar.MouseLeave:Connect(function()
-		if IsCursonOnTitleBar == true then
-			IsCursonOnTitleBar = false
-		end
-	end)
+
+	-- check if user is on mobille
+	local UserInputService = game:GetService("UserInputService")
+	local isMobile = UserInputService.TouchEnabled
+	if isMobile then
+		IsCursonOnTitleBar = true
+	else
+		TitleBar.MouseEnter:Connect(function()
+			if IsCursonOnTitleBar == false then
+				IsCursonOnTitleBar = true
+			end
+		end)
+		TitleBar.MouseLeave:Connect(function()
+			if IsCursonOnTitleBar == true then
+				IsCursonOnTitleBar = false
+			end
+		end)
+	end
 	--Making the draggable gui
 	local UserInputService = game:GetService("UserInputService")
 
@@ -5290,7 +5297,7 @@ local function C_54()
 
 		for _, CharacterModel in pairs(workspace.Customers:GetChildren()) do
 			local Humanoid = CharacterModel:FindFirstChildWhichIsA("Humanoid")
-			if Humanoid then
+			if Humanoid and Humanoid.Sit == false then
 				FlingObject(CharacterModel)
 			end
 		end
@@ -6538,20 +6545,20 @@ local function C_86()
 				if oven.IsOpen.Value == false and not oven.IsCooking.Value then
 					local door = oven.Door
 					if door:FindFirstChild("ClickDetector") then
-						door.ClickDetector:Fire()
+						door.ClickDetector.Detector:FireServer()
 					end
 				end
 			end
 		end
 	end
-	-- ✅ Cerrar todos los hornos
+	-- ✅ Cerrar todos los hornos v.Door.ClickDetector.Detector:FireServer()
 	local function CloseAllOvens()
 		for _, oven in pairs(Ovens:GetChildren()) do
 			if oven:IsA("Model") and oven:FindFirstChild("Door") then
 				if oven.IsOpen.Value == true then
 					local door = oven.Door
 					if door:FindFirstChild("ClickDetector") then
-						door.ClickDetector:Fire()
+						door.ClickDetector.Detector:FireServer()
 					end
 				end
 			end
@@ -7457,11 +7464,11 @@ task.spawn(C_c0);
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.ActualCarBox.LocalScript
 local function C_c4()
 	local script = G2L["c4"];
-	-- 📦 Car/Truck Handler mejorado
+	-- 📦 Car/Truck Handler mejorado con soporte para respawn
 	local textBox = script.Parent
 
 	-- Función para actualizar el texto
-	local function setLabel(name)
+	local function setLabel(name: string)
 		if typeof(name) == "string" then
 			textBox.Text = name
 		end
@@ -7472,14 +7479,18 @@ local function C_c4()
 	CarObjectValue.Name = "CarObjectValue"
 	CarObjectValue.Parent = textBox
 
-	-- Jugador local y humanoide
+	-- Jugador local
 	local LocalPlayer = game:GetService("Players").LocalPlayer
-	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-	local Humanoid: Humanoid = Character:WaitForChild("Humanoid")
 
 	-- 🔄 Función para actualizar el auto actual
-	local function updateCurrentCar()
-		local seat = Humanoid.SeatPart
+	local function updateCurrentCar(humanoid: Humanoid?)
+		if not humanoid or humanoid.Health <= 0 then
+			CarObjectValue.Value = nil
+			setLabel("")
+			return
+		end
+
+		local seat = humanoid.SeatPart
 		if seat and (seat:IsA("VehicleSeat") or seat:IsA("Seat")) then
 			local car = seat.Parent
 			CarObjectValue.Value = car
@@ -7491,10 +7502,10 @@ local function C_c4()
 	end
 
 	-- 🏎️ Función para encontrar y sentarse en vehículo
-	local function trySitInVehicle(folder: Folder)
-		local humanoid = Humanoid
-		if not humanoid then return end
-		local oldPos = Character.PrimaryPart and Character.PrimaryPart.CFrame
+	local function trySitInVehicle(humanoid: Humanoid?, folder: Folder, character: Model)
+		if not humanoid or humanoid.Health <= 0 then return end
+		local root = character:FindFirstChild("HumanoidRootPart")
+		local oldPos = root and root.CFrame
 
 		-- Si ya está en un vehículo de esa carpeta, no hace nada
 		if humanoid.SeatPart and folder:IsAncestorOf(humanoid.SeatPart) then
@@ -7524,31 +7535,50 @@ local function C_c4()
 			if car.PrimaryPart then
 				car:SetPrimaryPartCFrame(oldPos)
 			else
-				-- fallback: usar el Driver como PrimaryPart temporal
-				car.PrimaryPart = car:FindFirstChild("Driver")
-				if car.PrimaryPart then
+				-- fallback: usar Driver como PrimaryPart temporal
+				local driver = car:FindFirstChild("Driver")
+				if driver then
+					car.PrimaryPart = driver
 					car:SetPrimaryPartCFrame(oldPos)
 				end
 			end
 		end
 	end
 
-	-- 🔔 Detectar cuando cambia SeatPart
-	Humanoid:GetPropertyChangedSignal("SeatPart"):Connect(updateCurrentCar)
-	updateCurrentCar() -- inicial
+	-- 📌 Conectar todo al humanoide válido
+	local function connectHumanoid(humanoid: Humanoid, character: Model)
+		-- actualizar al inicio
+		updateCurrentCar(humanoid)
 
-	-- 📌 Manejo de texto escrito en TextBox
-	textBox.FocusLost:Connect(function()
-		local command = textBox.Text:lower()
+		-- escuchar cambios de SeatPart
+		humanoid:GetPropertyChangedSignal("SeatPart"):Connect(function()
+			updateCurrentCar(humanoid)
+		end)
 
-		if command == "car" or command == "vehicle" then
-			trySitInVehicle(workspace.Cars)
-		elseif command == "truck" or command == "bigcar" then
-			trySitInVehicle(workspace.Trucks)
-		end
+		-- manejar comandos en TextBox
+		textBox.FocusLost:Connect(function()
+			local command = textBox.Text:lower()
 
-		updateCurrentCar()
-	end)
+			if command == "car" or command == "vehicle" then
+				trySitInVehicle(humanoid, workspace.Cars, character)
+			elseif command == "truck" or command == "bigcar" then
+				trySitInVehicle(humanoid, workspace.Trucks, character)
+			end
+
+			updateCurrentCar(humanoid)
+		end)
+	end
+
+	-- 🔄 Reconectar en cada respawn
+	local function onCharacterAdded(character: Model)
+		local humanoid: Humanoid = character:WaitForChild("Humanoid")
+		connectHumanoid(humanoid, character)
+	end
+
+	LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+	if LocalPlayer.Character then
+		onCharacterAdded(LocalPlayer.Character)
+	end
 
 end;
 task.spawn(C_c4);
