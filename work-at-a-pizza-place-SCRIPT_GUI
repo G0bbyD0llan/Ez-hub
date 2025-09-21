@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 229 | Scripts: 86 | Modules: 0
+-- Instances: 231 | Scripts: 87 | Modules: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -1917,7 +1917,7 @@ G2L["c3"]["TextScaled"] = true;
 G2L["c3"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
 G2L["c3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["c3"]["PlaceholderText"] = [[Actual Car - none [you can type "car" or "truck" here for  spawning...]]
+G2L["c3"]["PlaceholderText"] = [[Actual Car - none [you can type "car" or "truck" here for  spawning...]];
 G2L["c3"]["Size"] = UDim2.new(0.9150000214576721, 0, 0.10000000149011612, 0);
 G2L["c3"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 G2L["c3"]["Text"] = [[]];
@@ -1987,7 +1987,7 @@ G2L["ca"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ca"]["Size"] = UDim2.new(1.001429796218872, 0, 0.11428571492433548, 0);
 G2L["ca"]["Name"] = [[ActionButtonFLING]];
 G2L["ca"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["ca"]["Text"] = [[Annoy In Pizzeria Using Vehicle [IN WORK]]
+G2L["ca"]["Text"] = [[Annoy In Pizzeria Using Vehicle]];
 G2L["ca"]["Position"] = UDim2.new(-0.0014298235764726996, 0, 0.28285717964172363, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.ActionButtonFLING.LocalScript
@@ -2148,113 +2148,133 @@ G2L["da"]["Position"] = UDim2.new(0.34144076704978943, 0, 0.5900000333786011, 0)
 G2L["db"] = Instance.new("LocalScript", G2L["da"]);
 
 
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.ActionButtonHOUSE
+G2L["dc"] = Instance.new("TextButton", G2L["c5"]);
+G2L["dc"]["TextWrapped"] = true;
+G2L["dc"]["ZIndex"] = 2;
+G2L["dc"]["BorderSizePixel"] = 0;
+G2L["dc"]["TextScaled"] = true;
+G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(0, 121, 216);
+G2L["dc"]["TextSize"] = 20;
+G2L["dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["dc"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["dc"]["Size"] = UDim2.new(0.28193995356559753, 0, 0.11428571492433548, 0);
+G2L["dc"]["Name"] = [[ActionButtonHOUSE]];
+G2L["dc"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["dc"]["Text"] = [[Make High Engine Sound]];
+G2L["dc"]["Position"] = UDim2.new(0.7180601358413696, 0, 0.7435714602470398, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.ActionButtonHOUSE.LocalScript
+G2L["dd"] = Instance.new("LocalScript", G2L["dc"]);
+
+
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning
-G2L["dc"] = Instance.new("Frame", G2L["3"]);
-G2L["dc"]["BorderSizePixel"] = 5;
-G2L["dc"]["BackgroundColor3"] = Color3.fromRGB(132, 132, 132);
-G2L["dc"]["Size"] = UDim2.new(0, 227, 0, 145);
-G2L["dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dc"]["Position"] = UDim2.new(0.3100000023841858, 0, 0.37892860174179077, 0);
-G2L["dc"]["Visible"] = false;
-G2L["dc"]["Name"] = [[CloseWarning]];
+G2L["de"] = Instance.new("Frame", G2L["3"]);
+G2L["de"]["BorderSizePixel"] = 5;
+G2L["de"]["BackgroundColor3"] = Color3.fromRGB(132, 132, 132);
+G2L["de"]["Size"] = UDim2.new(0, 227, 0, 145);
+G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["de"]["Position"] = UDim2.new(0.3100000023841858, 0, 0.37892860174179077, 0);
+G2L["de"]["Visible"] = false;
+G2L["de"]["Name"] = [[CloseWarning]];
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.title
-G2L["dd"] = Instance.new("TextLabel", G2L["dc"]);
-G2L["dd"]["TextWrapped"] = true;
-G2L["dd"]["BorderSizePixel"] = 2;
-G2L["dd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["dd"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["dd"]["TextSize"] = 20;
-G2L["dd"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dd"]["Size"] = UDim2.new(0, 227, 0, 26);
-G2L["dd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["dd"]["Text"] = [[¡ Hey ! ]];
-G2L["dd"]["Name"] = [[title]];
+G2L["df"] = Instance.new("TextLabel", G2L["de"]);
+G2L["df"]["TextWrapped"] = true;
+G2L["df"]["BorderSizePixel"] = 2;
+G2L["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["df"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["df"]["TextSize"] = 20;
+G2L["df"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["df"]["Size"] = UDim2.new(0, 227, 0, 26);
+G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["df"]["Text"] = [[¡ Hey ! ]];
+G2L["df"]["Name"] = [[title]];
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.warning
-G2L["de"] = Instance.new("TextLabel", G2L["dc"]);
-G2L["de"]["TextWrapped"] = true;
-G2L["de"]["BorderSizePixel"] = 3;
-G2L["de"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["de"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["de"]["TextSize"] = 19;
-G2L["de"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["Size"] = UDim2.new(0, 211, 0, 53);
-G2L["de"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["de"]["Text"] = [[Are you sure you want to close this window?]];
-G2L["de"]["Name"] = [[warning]];
-G2L["de"]["Position"] = UDim2.new(0.030837005004286766, 0, 0.22068965435028076, 0);
+G2L["e0"] = Instance.new("TextLabel", G2L["de"]);
+G2L["e0"]["TextWrapped"] = true;
+G2L["e0"]["BorderSizePixel"] = 3;
+G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e0"]["TextSize"] = 19;
+G2L["e0"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e0"]["Size"] = UDim2.new(0, 211, 0, 53);
+G2L["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e0"]["Text"] = [[Are you sure you want to close this window?]];
+G2L["e0"]["Name"] = [[warning]];
+G2L["e0"]["Position"] = UDim2.new(0.030837005004286766, 0, 0.22068965435028076, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame
-G2L["df"] = Instance.new("Frame", G2L["dc"]);
-G2L["df"]["BorderSizePixel"] = 0;
-G2L["df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["df"]["BackgroundTransparency"] = 1;
-G2L["df"]["Size"] = UDim2.new(0, 227, 0, 52);
-G2L["df"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["df"]["Position"] = UDim2.new(0, 0, 0.6413792967796326, 0);
+G2L["e1"] = Instance.new("Frame", G2L["de"]);
+G2L["e1"]["BorderSizePixel"] = 0;
+G2L["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e1"]["BackgroundTransparency"] = 1;
+G2L["e1"]["Size"] = UDim2.new(0, 227, 0, 52);
+G2L["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e1"]["Position"] = UDim2.new(0, 0, 0.6413792967796326, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no
-G2L["e0"] = Instance.new("TextButton", G2L["df"]);
-G2L["e0"]["TextWrapped"] = true;
-G2L["e0"]["BorderSizePixel"] = 2;
-G2L["e0"]["TextScaled"] = true;
-G2L["e0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e0"]["TextSize"] = 14;
-G2L["e0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e0"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["e0"]["Size"] = UDim2.new(0, 75, 0, 38);
-G2L["e0"]["Name"] = [[no]];
-G2L["e0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e0"]["Text"] = [[No]];
-G2L["e0"]["Position"] = UDim2.new(0.06167401000857353, 0, 0.13461539149284363, 0);
-
--- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no.LocalScript
-G2L["e1"] = Instance.new("LocalScript", G2L["e0"]);
-
-
--- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes
-G2L["e2"] = Instance.new("TextButton", G2L["df"]);
+G2L["e2"] = Instance.new("TextButton", G2L["e1"]);
 G2L["e2"]["TextWrapped"] = true;
 G2L["e2"]["BorderSizePixel"] = 2;
 G2L["e2"]["TextScaled"] = true;
 G2L["e2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e2"]["TextSize"] = 14;
 G2L["e2"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["e2"]["TextColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["e2"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["e2"]["Size"] = UDim2.new(0, 75, 0, 38);
-G2L["e2"]["Name"] = [[yes]];
+G2L["e2"]["Name"] = [[no]];
 G2L["e2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e2"]["Text"] = [[Yes]];
-G2L["e2"]["Position"] = UDim2.new(0.5903083682060242, 0, 0.13461539149284363, 0);
+G2L["e2"]["Text"] = [[No]];
+G2L["e2"]["Position"] = UDim2.new(0.06167401000857353, 0, 0.13461539149284363, 0);
 
--- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes.LocalScript
+-- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no.LocalScript
 G2L["e3"] = Instance.new("LocalScript", G2L["e2"]);
 
 
--- StarterGui.ScreenGui.WindowFrame.Arrow
-G2L["e4"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["e4"]["ZIndex"] = 5;
-G2L["e4"]["BorderSizePixel"] = 0;
+-- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes
+G2L["e4"] = Instance.new("TextButton", G2L["e1"]);
+G2L["e4"]["TextWrapped"] = true;
+G2L["e4"]["BorderSizePixel"] = 2;
+G2L["e4"]["TextScaled"] = true;
 G2L["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e4"]["Visible"] = false;
-G2L["e4"]["Image"] = [[http://www.roblox.com/asset/?id=278543076]];
-G2L["e4"]["Size"] = UDim2.new(0, 57, 0, 49);
+G2L["e4"]["TextSize"] = 14;
+G2L["e4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e4"]["TextColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["e4"]["Size"] = UDim2.new(0, 75, 0, 38);
+G2L["e4"]["Name"] = [[yes]];
 G2L["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e4"]["Name"] = [[Arrow]];
-G2L["e4"]["BackgroundTransparency"] = 0.9990000128746033;
-G2L["e4"]["Position"] = UDim2.new(0.4416666626930237, 0, 0.4375, 0);
+G2L["e4"]["Text"] = [[Yes]];
+G2L["e4"]["Position"] = UDim2.new(0.5903083682060242, 0, 0.13461539149284363, 0);
+
+-- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes.LocalScript
+G2L["e5"] = Instance.new("LocalScript", G2L["e4"]);
+
+
+-- StarterGui.ScreenGui.WindowFrame.Arrow
+G2L["e6"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["e6"]["ZIndex"] = 5;
+G2L["e6"]["BorderSizePixel"] = 0;
+G2L["e6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e6"]["Visible"] = false;
+G2L["e6"]["Image"] = [[http://www.roblox.com/asset/?id=278543076]];
+G2L["e6"]["Size"] = UDim2.new(0, 57, 0, 49);
+G2L["e6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e6"]["Name"] = [[Arrow]];
+G2L["e6"]["BackgroundTransparency"] = 0.9990000128746033;
+G2L["e6"]["Position"] = UDim2.new(0.4416666626930237, 0, 0.4375, 0);
 
 -- StarterGui.ScreenGui.WindowFrame.HowToUseFRM
-G2L["e5"] = Instance.new("Frame", G2L["3"]);
-G2L["e5"]["ZIndex"] = 4;
-G2L["e5"]["BorderSizePixel"] = 0;
-G2L["e5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e5"]["BackgroundTransparency"] = 1;
-G2L["e5"]["Size"] = UDim2.new(0, 600, 0, 400);
-G2L["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e5"]["Visible"] = false;
-G2L["e5"]["Name"] = [[HowToUseFRM]];
+G2L["e7"] = Instance.new("Frame", G2L["3"]);
+G2L["e7"]["ZIndex"] = 4;
+G2L["e7"]["BorderSizePixel"] = 0;
+G2L["e7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e7"]["BackgroundTransparency"] = 1;
+G2L["e7"]["Size"] = UDim2.new(0, 600, 0, 400);
+G2L["e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e7"]["Visible"] = false;
+G2L["e7"]["Name"] = [[HowToUseFRM]];
 
 -- StarterGui.ScreenGui.Script_starter
 local function C_2()
@@ -7607,6 +7627,8 @@ local function C_c7()
 	local iyflyspeed = 1
 	local vehicleflyspeed = 1
 
+	local flyKeyUp  = nil
+	local flyKeyDown = nil
 	local function getRoot(character: Model)
 		return character:FindFirstChild("HumanoidRootPart") or character:FindFirstChild("Torso")
 	end
@@ -7815,7 +7837,7 @@ local function C_c7()
 
 	local IsOnMobile = table.find({Enum.Platform.Android, Enum.Platform.IOS}, UserInputService:GetPlatform())
 
-	local function ToggleVehicleFly()
+	local function ToggleVehicleFly(ForcePCMode: boolean)
 		VehicleFlyActive = not VehicleFlyActive
 		if VehicleFlyActive then
 			if not GetCurrentCar() then
@@ -7827,27 +7849,37 @@ local function C_c7()
 				wait()
 				sFLY(true)
 			else
-				mobilefly(player, true)
+				if ForcePCMode then
+					NOFLY()
+					wait()
+					sFLY(true)
+				else
+					mobilefly(player, true)
+				end
 			end
 			local ActualCarBox = script.Parent.Parent.Parent.ActualCarBox
 			local CarObjectValue: ObjectValue = ActualCarBox:FindFirstChild("CarObjectValue")
 
 			CarObjectValue.Changed:Once(function()
 				if CarObjectValue.Value == nil then
-					if not IsOnMobile then NOFLY() else unmobilefly(player) end
+					if not IsOnMobile then NOFLY() else if ForcePCMode then NOFLY() else unmobilefly(player) end end
 					script.Parent.Text = "Vehicle Fly: OFF"
 				end
 			end)
 			script.Parent.Text = "Vehicle Fly: ON"
 		else
-			if not IsOnMobile then NOFLY() else unmobilefly(player) end
+			if not IsOnMobile then NOFLY() else if ForcePCMode then NOFLY() else unmobilefly(player) end end
 			script.Parent.Text = "Vehicle Fly: OFF"
 		end
 	end
 
 
 	script.Parent.MouseButton1Click:Connect(function()
-		ToggleVehicleFly()
+		ToggleVehicleFly(false)
+	end)
+
+	script.Parent.MouseButton2Click:Connect(function()
+		ToggleVehicleFly(true)
 	end)
 end;
 task.spawn(C_c7);
@@ -7901,7 +7933,6 @@ local function C_c9()
 		if not car then
 			return
 		end
-
 		vnoclipParts = {}
 		local seat = speaker.Character:FindFirstChildOfClass('Humanoid').SeatPart
 		local vehicleModel = seat.Parent
@@ -7918,6 +7949,7 @@ local function C_c9()
 				v.CanCollide = false
 			end
 		end
+
 		local ActualCarBox = script.Parent.Parent.Parent.ActualCarBox
 		local CarObjectValue: ObjectValue = ActualCarBox:FindFirstChild("CarObjectValue")
 		CarObjectValue.Changed:Once(function()
@@ -7933,181 +7965,100 @@ task.spawn(C_c9);
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.ActionButtonFLING.LocalScript
 local function C_cb()
 	local script = G2L["cb"];
-	local Players = game:GetService("Players")
-	local Player = Players.LocalPlayer
-	local SkidFling = function(TargetPlayer)
-		local Character = Player.Character
-		local Humanoid = Character and Character:FindFirstChildOfClass("Humanoid")
-		local RootPart = Humanoid and Humanoid.RootPart
+	local teleportPlaces = {
+		["Starting Zone"] = CFrame.new(49, 3, 198),
+		["Cashier Area"] = CFrame.new(48, 4, 80),
+		["Cook Area"] = CFrame.new(42, 4, 61),
+		["Boxer Area"] = CFrame.new(55, 4, 31),
+		["Supplier Area"] = CFrame.new(8, 13, -1020),
+		["Manager Room"] = CFrame.new(23, 5, 6.5)
+	}
 
-		local TCharacter = TargetPlayer.Character
-		local THumanoid
-		local TRootPart
-		local THead
-		local Accessory
-		local Handle
+	local isActive = false -- Toggle para encender/apagar el loop
+	local player = game.Players.LocalPlayer
+	local button = script.Parent 
 
-		if TCharacter:FindFirstChildOfClass("Humanoid") then
-			THumanoid = TCharacter:FindFirstChildOfClass("Humanoid")
-		end
-		if THumanoid and THumanoid.RootPart then
-			TRootPart = THumanoid.RootPart
-		end
-		if TCharacter:FindFirstChild("Head") then
-			THead = TCharacter.Head
-		end
-		if TCharacter:FindFirstChildOfClass("Accessory") then
-			Accessory = TCharacter:FindFirstChildOfClass("Accessory")
-		end
-		if Accessoy and Accessory:FindFirstChild("Handle") then
-			Handle = Accessory.Handle
+	-- 📌 Función para obtener el coche actual
+	local function GetCurrentCar()
+		if not player.Character or not player.Character:FindFirstChild("Humanoid") then
+			return nil
 		end
 
-		if Character and Humanoid and RootPart then
-			if RootPart.Velocity.Magnitude < 50 then
-				getgenv().OldPos = RootPart.CFrame
+		local ActualCarBox = button.Parent.Parent:FindFirstChild("ActualCarBox")
+		if not ActualCarBox then return nil end
+
+		local CarObjectValue: ObjectValue = ActualCarBox:FindFirstChild("CarObjectValue")
+		if not CarObjectValue or not CarObjectValue.Value then
+			return nil
+		end
+
+		return CarObjectValue.Value
+	end
+
+	-- 📌 Smooth Teleport con spin y disable collisions
+	local function SmoothTPToCFrame(Car: Model, targetCFrame: CFrame, duration: number)
+		duration = duration or 1
+		local startTime = tick()
+
+		local startCFrame = Car:GetPivot()
+		local parts = Car:GetDescendants()
+		local collides = {}
+
+		for _, p in ipairs(parts) do
+			if p:IsA("BasePart") then
+				collides[p] = p.CanCollide
+				p.CanCollide = false
 			end
-			if THumanoid and THumanoid.Sit and not AllBool then
-			end
-			if THead then
-				workspace.CurrentCamera.CameraSubject = THead
-			elseif not THead and Handle then
-				workspace.CurrentCamera.CameraSubject = Handle
-			elseif THumanoid and TRootPart then
-				workspace.CurrentCamera.CameraSubject = THumanoid
-			end
-			if not TCharacter:FindFirstChildWhichIsA("BasePart") then
-				return
-			end
+		end
 
-			local FPos = function(BasePart, Pos, Ang)
-				RootPart.CFrame = CFrame.new(BasePart.Position) * Pos * Ang
-				Character:SetPrimaryPartCFrame(CFrame.new(BasePart.Position) * Pos * Ang)
-				RootPart.Velocity = Vector3.new(9e7, 9e7 * 10, 9e7)
-				RootPart.RotVelocity = Vector3.new(9e8, 9e8, 9e8)
-			end
+		local connection
+		connection = game:GetService("RunService").Heartbeat:Connect(function()
+			local elapsed = tick() - startTime
+			local alpha = math.clamp(elapsed / duration, 0, 1)
 
-			local SFBasePart = function(BasePart)
-				local TimeToWait = 2
-				local Time = tick()
-				local Angle = 0
+			local newCFrame = startCFrame:Lerp(targetCFrame, alpha)
+			local spin = CFrame.Angles(0, math.rad(720 * alpha), 0)
+			Car:PivotTo(newCFrame * spin)
 
-				repeat
-					if RootPart and THumanoid then
-						if BasePart.Velocity.Magnitude < 50 then
-							Angle = Angle + 100
-
-							FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle),0 ,0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(2.25, 1.5, -2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(-2.25, -1.5, 2.25) + THumanoid.MoveDirection * BasePart.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(Angle), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, 1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, 0) + THumanoid.MoveDirection,CFrame.Angles(math.rad(Angle), 0, 0))
-							task.wait()
-						else
-							FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, -THumanoid.WalkSpeed), CFrame.Angles(0, 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, 1.5, THumanoid.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, -TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(0, 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, 1.5, TRootPart.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(90), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5 ,0), CFrame.Angles(math.rad(-90), 0, 0))
-							task.wait()
-
-							FPos(BasePart, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
-							task.wait()
-						end
-					else
-						break
+			if alpha >= 1 then
+				connection:Disconnect()
+				for part, oldCollide in pairs(collides) do
+					if part and part.Parent then
+						part.CanCollide = oldCollide
 					end
-				until BasePart.Velocity.Magnitude > 500 or BasePart.Parent ~= TargetPlayer.Character or TargetPlayer.Parent ~= Players or not TargetPlayer.Character == TCharacter or THumanoid.Sit or Humanoid.Health <= 0 or tick() > Time + TimeToWait
-			end
-
-			workspace.FallenPartsDestroyHeight = 0/0
-
-			local BV = Instance.new("BodyVelocity")
-			BV.Name = "EpixVel"
-			BV.Parent = RootPart
-			BV.Velocity = Vector3.new(9e8, 9e8, 9e8)
-			BV.MaxForce = Vector3.new(1/0, 1/0, 1/0)
-
-			Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
-
-			if TRootPart and THead then
-				if (TRootPart.CFrame.p - THead.CFrame.p).Magnitude > 5 then
-					SFBasePart(THead)
-				else
-					SFBasePart(TRootPart)
 				end
-			elseif TRootPart and not THead then
-				SFBasePart(TRootPart)
-			elseif not TRootPart and THead then
-				SFBasePart(THead)
-			elseif not TRootPart and not THead and Accessory and Handle then
-				SFBasePart(Handle)
-			else
 			end
+		end)
+	end
 
-			BV:Destroy()
-			Humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
-			workspace.CurrentCamera.CameraSubject = Humanoid
-
-			repeat
-				RootPart.CFrame = getgenv().OldPos * CFrame.new(0, .5, 0)
-				Character:SetPrimaryPartCFrame(getgenv().OldPos * CFrame.new(0, .5, 0))
-				Humanoid:ChangeState("GettingUp")
-				table.foreach(Character:GetChildren(), function(_, x)
-					if x:IsA("BasePart") then
-						x.Velocity, x.RotVelocity = Vector3.new(), Vector3.new()
+	-- 📌 Loop de teleports
+	local function StartCarLoop()
+		spawn(function()
+			while isActive do
+				local car = GetCurrentCar()
+				if car and car:IsA("Model") then
+					for name, cf in pairs(teleportPlaces) do
+						if not isActive then break end
+						SmoothTPToCFrame(car, cf, 2) -- 2 segundos de transición
+						task.wait(2.5) -- un poco más para que termine la animación
 					end
-				end)
-				task.wait()
-			until (RootPart.Position - getgenv().OldPos.p).Magnitude < 25
-			workspace.FallenPartsDestroyHeight = getgenv().FPDH
+				end
+				task.wait(1) -- espera antes de repetir ciclo
+			end
+		end)
+	end
+
+	-- 📌 Toggle con botón
+	button.MouseButton1Click:Connect(function()
+		isActive = not isActive
+		if isActive then
+			button.Text = "Annoy In Pizzeria Using Vehicle: ON"
+			StartCarLoop()
 		else
-		end
-	end
-	local function getplayer()
-		local textbox = script.Parent.Parent.Parent.PlayerNameTextBox
-		local player = game.Players:FindFirstChild(textbox.Text)
-		if player then
-			return player
-		end
-	end
-	script.Parent.MouseButton1Click:Connect(function()
-		local PLRTOFLING = getplayer()
-		if PLRTOFLING then
-			SkidFling(PLRTOFLING)
+			button.Text = "Annoy In Pizzeria Using Vehicle: OFF"
 		end
 	end)
+
 end;
 task.spawn(C_cb);
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.IncreaseSpeedValue.LocalScript
@@ -8178,9 +8129,7 @@ local function C_cf()
 		BrickColor.Yellow(),
 		BrickColor.Gray(),
 		BrickColor.White(),
-		BrickColor.DarkGray(),
-		BrickColor.Orange(),
-		BrickColor.Cyan()
+		BrickColor.DarkGray()
 	}
 
 	local currentIndex = 1
@@ -8527,6 +8476,9 @@ local function C_d7()
 	local QEfly = true
 	local iyflyspeed = 1
 	local vehicleflyspeed = 1
+
+	local flyKeyUp  = nil
+	local flyKeyDown = nil
 
 	local function getRoot(character: Model)
 		return character:FindFirstChild("HumanoidRootPart") or character:FindFirstChild("Torso")
@@ -8984,9 +8936,112 @@ local function C_db()
 	end)
 end;
 task.spawn(C_db);
+-- StarterGui.ScreenGui.WindowFrame.ContentArea.Car.Frame.ActionButtonHOUSE.LocalScript
+local function C_dd()
+	local script = G2L["dd"];
+	local player = game.Players.LocalPlayer
+	-- Variable global para no spawnear mil veces el BodyAngularVelocity
+	local currentSpinForce = nil  
+
+	-- Función para hacer spin al auto
+	local function SpinCar(carModel: Model, spinSpeed: number)
+		if not carModel or not carModel.PrimaryPart then
+			warn("❌ El auto no tiene PrimaryPart asignado")
+			return
+		end
+
+		local seat = carModel:FindFirstChildWhichIsA("VehicleSeat", true)
+		if not seat then
+			warn("❌ El auto no tiene VehicleSeat")
+			return
+		end
+
+		-- Verificar que el jugador esté sentado en el auto
+		if seat.Occupant ~= player.Character:FindFirstChild("Humanoid") then
+			warn("⚠️ No estás sentado en este auto")
+			return
+		end
+
+		-- Si ya existe un spin activo, lo quitamos primero
+		if currentSpinForce then
+			currentSpinForce:Destroy()
+			currentSpinForce = nil
+		end
+
+		-- Crear BodyAngularVelocity para girar el auto
+		local bav = Instance.new("BodyAngularVelocity")
+		bav.AngularVelocity = Vector3.new(0, spinSpeed, 0) -- spin en Y
+		bav.MaxTorque = Vector3.new(0, math.huge, 0) -- torque infinito en Y
+		bav.P = 10000
+		bav.Parent = carModel.PrimaryPart
+
+		currentSpinForce = bav
+	end
+
+	local function GetCurrentCar()
+		if not player.Character or not player.Character:FindFirstChild("Humanoid") then
+			return nil
+		end
+
+
+		local ActualCarBox = script.Parent.Parent.Parent.ActualCarBox
+		local CarObjectValue: ObjectValue = ActualCarBox:FindFirstChild("CarObjectValue")
+		if not CarObjectValue or not CarObjectValue.Value then
+			return nil
+		end
+
+		return CarObjectValue.Value
+	end
+
+	local IsActive = false
+	local oldtext = script.Parent.Text
+	local SavedCFrame = nil
+	script.Parent.MouseButton1Click:Connect(function()
+
+		IsActive = not IsActive
+
+		if IsActive then
+			local car = GetCurrentCar()
+			if not car then
+				return
+			end
+			SpinCar(car, 100)
+			SavedCFrame = car:GetPivot()
+
+			task.spawn(function()
+				while IsActive  do
+					--check that the cars doenst move 15 studs of his original pivot
+					local currentCFrame = car:GetPivot()
+					if (currentCFrame.Position - SavedCFrame.Position).Magnitude > 15 then
+						car:PivotTo(SavedCFrame)
+					end
+					task.wait()
+				end
+			end)
+			script.Parent.Text = "Stop Making Engine Sound"
+		else
+			if currentSpinForce then
+				currentSpinForce:Destroy()
+				currentSpinForce = nil
+			end
+			-- Resetear el auto a su posición original
+			if SavedCFrame then
+				local car = GetCurrentCar()
+				if car then
+					car:PivotTo(SavedCFrame)
+				end
+			end
+			script.Parent.Text = oldtext
+			SavedCFrame = nil
+
+		end
+	end)
+
+end;
+task.spawn(C_dd);
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.no.LocalScript
-local function C_e1()
-	local script = G2L["e1"];
+local function C_e3()
+	local script = G2L["e3"];
 	local NoButton = script.Parent
 	local CloseWarning = NoButton.Parent.Parent
 	local function closewarning()
@@ -8994,10 +9049,10 @@ local function C_e1()
 	end
 	NoButton.MouseButton1Click:Connect(closewarning)
 end;
-task.spawn(C_e1);
+task.spawn(C_e3);
 -- StarterGui.ScreenGui.WindowFrame.CloseWarning.Frame.yes.LocalScript
-local function C_e3()
-	local script = G2L["e3"];
+local function C_e5()
+	local script = G2L["e5"];
 	local TweenService = game:GetService("TweenService")
 	local yesButton = script.Parent
 	local screenGui = yesButton.Parent.Parent.Parent.Parent
@@ -9056,6 +9111,6 @@ local function C_e3()
 	end)
 
 end;
-task.spawn(C_e3);
+task.spawn(C_e5);
 
 return G2L["1"], require;
