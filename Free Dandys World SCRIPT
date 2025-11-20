@@ -1,0 +1,2403 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 66 | Scripts: 12 | Modules: 2
+local G2L = {};
+
+-- StarterGui.NewMenu
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["Name"] = [[NewMenu]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+-- StarterGui.NewMenu.SCRIPT_HANDLER
+G2L["2"] = Instance.new("LocalScript", G2L["1"]);
+G2L["2"]["Name"] = [[SCRIPT_HANDLER]];
+
+-- StarterGui.NewMenu.NotificationService
+G2L["3"] = Instance.new("ModuleScript", G2L["1"]);
+G2L["3"]["Name"] = [[NotificationService]];
+-- Attributes
+G2L["3"]:SetAttribute([[MAX_VISIBLE_NOTIFICATIONS]], 5);
+G2L["3"]:SetAttribute([[DEFAULT_FADE_TIME]], 0.3);
+G2L["3"]:SetAttribute([[DEFAULT_NOTIFICATION_DURATION]], 5);
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate
+G2L["4"] = Instance.new("ScreenGui", G2L["3"]);
+G2L["4"]["Enabled"] = false;
+G2L["4"]["Name"] = [[NotificationGuiTemplate]];
+G2L["4"]["ResetOnSpawn"] = false;
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate
+G2L["5"] = Instance.new("Frame", G2L["4"]);
+G2L["5"]["BorderSizePixel"] = 2;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(2, 66, 34);
+G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["5"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["5"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["5"]["Name"] = [[NotificationFrameTemplate]];
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.UIPadding
+G2L["6"] = Instance.new("UIPadding", G2L["5"]);
+G2L["6"]["PaddingTop"] = UDim.new(0, 10);
+G2L["6"]["PaddingRight"] = UDim.new(0, 10);
+G2L["6"]["PaddingBottom"] = UDim.new(0, 10);
+G2L["6"]["PaddingLeft"] = UDim.new(0, 10);
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.ContentLayout
+G2L["7"] = Instance.new("UIListLayout", G2L["5"]);
+G2L["7"]["Name"] = [[ContentLayout]];
+G2L["7"]["Padding"] = UDim.new(0, 5);
+G2L["7"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.TitleLabel
+G2L["8"] = Instance.new("TextLabel", G2L["5"]);
+G2L["8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["TextSize"] = 16;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["LayoutOrder"] = 1;
+G2L["8"]["Size"] = UDim2.new(1, -25, 0, 20);
+G2L["8"]["Text"] = [[Notification Title]];
+G2L["8"]["Name"] = [[TitleLabel]];
+G2L["8"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.TextLabel
+G2L["9"] = Instance.new("TextLabel", G2L["5"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextColor3"] = Color3.fromRGB(221, 221, 221);
+G2L["9"]["LayoutOrder"] = 2;
+G2L["9"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+G2L["9"]["Size"] = UDim2.new(1, 0, 0, 0);
+G2L["9"]["Text"] = [[This is the notification message content. It can be a bit longer to demonstrate wrapping.]];
+G2L["9"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.NewMenu.NotificationService.NotificationGuiTemplate.NotificationFrameTemplate.CloseButton
+G2L["a"] = Instance.new("TextButton", G2L["5"]);
+G2L["a"]["ZIndex"] = 2;
+G2L["a"]["TextSize"] = 16;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
+G2L["a"]["AnchorPoint"] = Vector2.new(1, 0);
+G2L["a"]["Size"] = UDim2.new(0, 20, 0, 20);
+G2L["a"]["Name"] = [[CloseButton]];
+G2L["a"]["Text"] = [[X]];
+G2L["a"]["Position"] = UDim2.new(1, -5, 0, 5);
+G2L["a"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.NewMenu.Title
+G2L["b"] = Instance.new("Frame", G2L["1"]);
+G2L["b"]["BorderSizePixel"] = 2;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(2, 255, 129);
+G2L["b"]["Size"] = UDim2.new(0, 378, 0, 20);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Position"] = UDim2.new(0.32559844851493835, 0, 0.168439120054245, 0);
+G2L["b"]["Name"] = [[Title]];
+
+-- StarterGui.NewMenu.Title.draggable
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+G2L["c"]["Name"] = [[draggable]];
+
+-- StarterGui.NewMenu.Title.script_content
+G2L["d"] = Instance.new("Frame", G2L["b"]);
+G2L["d"]["BorderSizePixel"] = 2;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Size"] = UDim2.new(0, 378, 0, 327);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Position"] = UDim2.new(0, 0, 0.9957954287528992, 0);
+G2L["d"]["Name"] = [[script_content]];
+
+-- StarterGui.NewMenu.Title.script_content.Main
+G2L["e"] = Instance.new("Frame", G2L["d"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(0, 378, 0, 175);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Position"] = UDim2.new(0, 0, 0.051282066851854324, 0);
+G2L["e"]["Name"] = [[Main]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.ToonMorpher
+G2L["f"] = Instance.new("ModuleScript", G2L["e"]);
+G2L["f"]["Name"] = [[ToonMorpher]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.MainHandler
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
+G2L["10"]["Name"] = [[MainHandler]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.MainHandler.MorphChanged
+G2L["11"] = Instance.new("BindableEvent", G2L["10"]);
+G2L["11"]["Name"] = [[MorphChanged]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.MainHandler.UnlockedChanged
+G2L["12"] = Instance.new("BindableEvent", G2L["10"]);
+G2L["12"]["Name"] = [[UnlockedChanged]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockEveryToon
+G2L["13"] = Instance.new("TextButton", G2L["e"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["13"]["Size"] = UDim2.new(0, 97, 0, 27);
+G2L["13"]["Name"] = [[UnlockEveryToon]];
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[Unlock Every Toon]];
+G2L["13"]["Position"] = UDim2.new(0.04497354477643967, 0, 0.2524973750114441, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockEveryToon.UIStroke
+G2L["14"] = Instance.new("UIStroke", G2L["13"]);
+G2L["14"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Thickness"] = 3;
+G2L["14"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.NewMenu.Title.script_content.Main.Toons
+G2L["15"] = Instance.new("TextLabel", G2L["e"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["TextStrokeTransparency"] = 0;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["TextSize"] = 30;
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Size"] = UDim2.new(0, 359, 0, -34);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Unlock Toons (more credible)]];
+G2L["15"]["Name"] = [[Toons]];
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Position"] = UDim2.new(0.02380952425301075, 0, 0.2525956630706787, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.ResetUnlocking
+G2L["16"] = Instance.new("TextButton", G2L["e"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 197, 198);
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["16"]["Size"] = UDim2.new(0, 97, 0, 27);
+G2L["16"]["Name"] = [[ResetUnlocking]];
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Reset Unlocking]];
+G2L["16"]["Position"] = UDim2.new(0.37037035822868347, 0, 0.2524973750114441, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.ResetUnlocking.UIStroke
+G2L["17"] = Instance.new("UIStroke", G2L["16"]);
+G2L["17"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["Thickness"] = 3;
+G2L["17"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockDAD
+G2L["18"] = Instance.new("TextButton", G2L["e"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["18"]["Size"] = UDim2.new(0, 97, 0, 27);
+G2L["18"]["Name"] = [[UnlockDAD]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[Unlock Dandy & Dyle]];
+G2L["18"]["Position"] = UDim2.new(0.6984127163887024, 0, 0.2524973750114441, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockDAD.UIStroke
+G2L["19"] = Instance.new("UIStroke", G2L["18"]);
+G2L["19"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["Thickness"] = 3;
+G2L["19"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon
+G2L["1a"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["1a"]["Active"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["CanvasSize"] = UDim2.new(15, 0, 0, 0);
+G2L["1a"]["TopImage"] = [[]];
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundTransparency"] = 0.5;
+G2L["1a"]["Size"] = UDim2.new(0, 344, 0, 78);
+G2L["1a"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["ScrollBarThickness"] = 5;
+G2L["1a"]["Position"] = UDim2.new(0.04497354477643967, 0, 0.47428572177886963, 0);
+G2L["1a"]["Name"] = [[UnlockToon]];
+G2L["1a"]["BottomImage"] = [[]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon.UICorner
+G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
+
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon.UIStroke
+G2L["1c"] = Instance.new("UIStroke", G2L["1a"]);
+G2L["1c"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Thickness"] = 2;
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon.UIListLayout
+G2L["1d"] = Instance.new("UIListLayout", G2L["1a"]);
+G2L["1d"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["1d"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["1d"]["Padding"] = UDim.new(0, 12);
+G2L["1d"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon.Frame
+G2L["1e"] = Instance.new("Frame", G2L["1a"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["BackgroundTransparency"] = 1;
+G2L["1e"]["Size"] = UDim2.new(0, 0, 0, 100);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Position"] = UDim2.new(1.7742777913554164e-07, 0, -0.14102564752101898, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon.Template
+G2L["1f"] = Instance.new("TextButton", G2L["1a"]);
+G2L["1f"]["TextWrapped"] = true;
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextScaled"] = true;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["1f"]["Size"] = UDim2.new(0, 97, 0, 27);
+G2L["1f"]["Name"] = [[Template]];
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[Unlock %s]];
+G2L["1f"]["Position"] = UDim2.new(0.1773257553577423, 0, 0.3205128312110901, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.UnlockToon.Template.UIStroke
+G2L["20"] = Instance.new("UIStroke", G2L["1f"]);
+G2L["20"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Thickness"] = 3;
+G2L["20"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.NewMenu.Title.script_content.Main.Toons
+G2L["21"] = Instance.new("TextLabel", G2L["e"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["TextStrokeTransparency"] = 0;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextSize"] = 30;
+G2L["21"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Size"] = UDim2.new(0, 359, 0, -34);
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Morph Toons Models]];
+G2L["21"]["Name"] = [[Toons]];
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["Position"] = UDim2.new(0.018518518656492233, 0, 1.1383099555969238, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon
+G2L["22"] = Instance.new("ScrollingFrame", G2L["e"]);
+G2L["22"]["Active"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["CanvasSize"] = UDim2.new(15, 0, 0, 0);
+G2L["22"]["TopImage"] = [[]];
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundTransparency"] = 0.5;
+G2L["22"]["Size"] = UDim2.new(0, 344, 0, 78);
+G2L["22"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["ScrollBarThickness"] = 5;
+G2L["22"]["Position"] = UDim2.new(0.03703703731298447, 0, 1.1885713338851929, 0);
+G2L["22"]["Name"] = [[MorphToon]];
+G2L["22"]["BottomImage"] = [[]];
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["22"]);
+
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["22"]);
+G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Thickness"] = 2;
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon.UIListLayout
+G2L["25"] = Instance.new("UIListLayout", G2L["22"]);
+G2L["25"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["25"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["25"]["Padding"] = UDim.new(0, 12);
+G2L["25"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon.Frame
+G2L["26"] = Instance.new("Frame", G2L["22"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["BackgroundTransparency"] = 1;
+G2L["26"]["Size"] = UDim2.new(0, 0, 0, 100);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Position"] = UDim2.new(1.7742777913554164e-07, 0, -0.14102564752101898, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon.Template
+G2L["27"] = Instance.new("TextButton", G2L["22"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 255);
+G2L["27"]["Size"] = UDim2.new(0, 97, 0, 27);
+G2L["27"]["Name"] = [[Template]];
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[%s]];
+G2L["27"]["Position"] = UDim2.new(0.1773257553577423, 0, 0.3205128312110901, 0);
+
+-- StarterGui.NewMenu.Title.script_content.Main.MorphToon.Template.UIStroke
+G2L["28"] = Instance.new("UIStroke", G2L["27"]);
+G2L["28"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["Thickness"] = 3;
+G2L["28"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.NewMenu.Title.script_content.next
+G2L["29"] = Instance.new("TextButton", G2L["d"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["TextScaled"] = true;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Visible"] = false;
+G2L["29"]["Size"] = UDim2.new(0, 88, 0, 38);
+G2L["29"]["Name"] = [[next]];
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[>]];
+G2L["29"]["Position"] = UDim2.new(0.7671957612037659, 0, 1.0179487466812134, 0);
+
+-- StarterGui.NewMenu.Title.script_content.next.LocalScript
+G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
+G2L["2a"]["Enabled"] = false;
+G2L["2a"]["Disabled"] = true;
+
+-- StarterGui.NewMenu.Title.script_content.back
+G2L["2b"] = Instance.new("TextButton", G2L["d"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["TextScaled"] = true;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Visible"] = false;
+G2L["2b"]["Size"] = UDim2.new(0, 88, 0, 38);
+G2L["2b"]["Name"] = [[back]];
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[<]];
+G2L["2b"]["Position"] = UDim2.new(0, 0, 1.0179487466812134, 0);
+
+-- StarterGui.NewMenu.Title.script_content.back.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2c"]["Enabled"] = false;
+G2L["2c"]["Disabled"] = true;
+
+-- StarterGui.NewMenu.Title.script_content.pages
+G2L["2d"] = Instance.new("Frame", G2L["d"]);
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(36, 58, 40);
+G2L["2d"]["Size"] = UDim2.new(0, 378, 0, 20);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Name"] = [[pages]];
+
+-- StarterGui.NewMenu.Title.script_content.pages.welcome
+G2L["2e"] = Instance.new("TextButton", G2L["2d"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["TextStrokeColor3"] = Color3.fromRGB(0, 255, 235);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(18, 255, 0);
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Size"] = UDim2.new(0, 79, 0, 20);
+G2L["2e"]["Name"] = [[welcome]];
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Toons]];
+
+-- StarterGui.NewMenu.Title.script_content.pages.welcome.LocalScript
+G2L["2f"] = Instance.new("LocalScript", G2L["2e"]);
+
+
+-- StarterGui.NewMenu.Title.script_content.pages.target
+G2L["30"] = Instance.new("TextButton", G2L["2d"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(18, 255, 0);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Size"] = UDim2.new(0, 79, 0, 20);
+G2L["30"]["Name"] = [[target]];
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Text"] = [[Trinkets]];
+G2L["30"]["Position"] = UDim2.new(0.20899471640586853, 0, 0, 0);
+
+-- StarterGui.NewMenu.Title.script_content.pages.target.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+
+
+-- StarterGui.NewMenu.Title.script_content.pages.options
+G2L["32"] = Instance.new("TextButton", G2L["2d"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(18, 255, 0);
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Size"] = UDim2.new(0, 79, 0, 20);
+G2L["32"]["Name"] = [[options]];
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[Skins]];
+G2L["32"]["Position"] = UDim2.new(0.41798943281173706, 0, 0, 0);
+
+-- StarterGui.NewMenu.Title.script_content.pages.options.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+-- StarterGui.NewMenu.Title.script_content.pages.options
+G2L["34"] = Instance.new("TextButton", G2L["2d"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(18, 255, 0);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Size"] = UDim2.new(0, 79, 0, 20);
+G2L["34"]["Name"] = [[options]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Others]];
+G2L["34"]["Position"] = UDim2.new(0.6269841194152832, 0, 0, 0);
+
+-- StarterGui.NewMenu.Title.script_content.pages.options.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+
+
+-- StarterGui.NewMenu.Title.script_content.UIGradient
+G2L["36"] = Instance.new("UIGradient", G2L["d"]);
+G2L["36"]["Rotation"] = 80;
+G2L["36"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(2, 66, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(3, 123, 63))};
+
+-- StarterGui.NewMenu.Title.TextLabel
+G2L["37"] = Instance.new("TextLabel", G2L["b"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["37"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["TextSize"] = 14;
+G2L["37"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Size"] = UDim2.new(0, 311, 0, 20);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[Free Dandys World / By G0bbyD0llan57 on YT]];
+G2L["37"]["BackgroundTransparency"] = 1;
+G2L["37"]["Position"] = UDim2.new(0.06878306716680527, 0, -0.053845979273319244, 0);
+
+-- StarterGui.NewMenu.Title.MM
+G2L["38"] = Instance.new("TextButton", G2L["b"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["TextScaled"] = true;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(0, 48, 255);
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Size"] = UDim2.new(0, 24, 0, 19);
+G2L["38"]["Name"] = [[MM]];
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[-]];
+G2L["38"]["Position"] = UDim2.new(0.8730158805847168, 0, 0, 0);
+
+-- StarterGui.NewMenu.Title.MM.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
+
+
+-- StarterGui.NewMenu.Title.close
+G2L["3a"] = Instance.new("TextButton", G2L["b"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Size"] = UDim2.new(0, 24, 0, 19);
+G2L["3a"]["Name"] = [[close]];
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[x]];
+G2L["3a"]["Position"] = UDim2.new(0.9365079402923584, 0, 0, 0);
+
+-- StarterGui.NewMenu.Title.close.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+-- StarterGui.NewMenu.Title.GObbyImage
+G2L["3c"] = Instance.new("ImageLabel", G2L["b"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["Image"] = [[http://www.roblox.com/asset/?id=13786322913]];
+G2L["3c"]["Size"] = UDim2.new(0, 22, 0, 20);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[GObbyImage]];
+G2L["3c"]["BackgroundTransparency"] = 1;
+G2L["3c"]["Position"] = UDim2.new(0, 0, -0.05384615436196327, 0);
+
+-- StarterGui.NewMenu.Title.GObbyImage.TextButton
+G2L["3d"] = Instance.new("TextButton", G2L["3c"]);
+G2L["3d"]["BorderSizePixel"] = 0;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["TextSize"] = 14;
+G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Size"] = UDim2.new(0, 22, 0, 21);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Text"] = [[]];
+G2L["3d"]["Position"] = UDim2.new(0, 0, 0.00000228881845032447, 0);
+G2L["3d"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.NewMenu.Title.GObbyImage.TextButton.LocalScript
+G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
+
+
+-- StarterGui.NewMenu.sounds
+G2L["3f"] = Instance.new("Folder", G2L["1"]);
+G2L["3f"]["Name"] = [[sounds]];
+
+-- StarterGui.NewMenu.sounds.CorrectSound
+G2L["40"] = Instance.new("Sound", G2L["3f"]);
+G2L["40"]["Volume"] = 1;
+G2L["40"]["Name"] = [[CorrectSound]];
+G2L["40"]["SoundId"] = [[rbxassetid://4094488012]];
+
+-- StarterGui.NewMenu.sounds.ErrorSound
+G2L["41"] = Instance.new("Sound", G2L["3f"]);
+G2L["41"]["Volume"] = 1;
+G2L["41"]["Name"] = [[ErrorSound]];
+G2L["41"]["SoundId"] = [[rbxassetid://125476803752909]];
+
+-- StarterGui.NewMenu.sounds.WarnSound
+G2L["42"] = Instance.new("Sound", G2L["3f"]);
+G2L["42"]["Volume"] = 1;
+G2L["42"]["Name"] = [[WarnSound]];
+G2L["42"]["SoundId"] = [[rbxassetid://4026367629]];
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+G2L_MODULES[G2L["3"]] = {
+Closure = function()
+    local script = G2L["3"];
+--this service was made by Roblox AI Assistant - PROMPT: G0bbyD0llan
+
+local NotificationService = {}
+
+-- Services
+local TweenService = game:GetService("TweenService")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService") -- For potential future use (e.g., mouse hover effects)
+
+-- Configuration Constants
+
+local GUI_TEMPLATE_NAME = "NotificationGuiTemplate"
+local NOTIFICATION_FRAME_TEMPLATE_NAME = "NotificationFrameTemplate"
+local NOTIFICATION_CONTAINER_NAME = "NotificationContainer"
+local NOTIFICATION_SCREEN_GUI_NAME = "NotificationDisplayScreenGui"
+
+local DEFAULT_FADE_TIME = script:GetAttribute("DEFAULT_FADE_TIME")
+local DEFAULT_NOTIFICATION_DURATION = script:GetAttribute("DEFAULT_NOTIFICATION_DURATION") -- seconds, 0 or nil for no auto-close
+local MAX_VISIBLE_NOTIFICATIONS = script:GetAttribute("MAX_VISIBLE_NOTIFICATIONS")
+local NOTIFICATION_SPACING_PIXELS = 10
+local NOTIFICATION_WIDTH_SCALE = 0.25
+local NOTIFICATION_MAX_HEIGHT_SCALE = 0.8
+local NOTIFICATIONS_ENABLED = true
+local function UpdateNumbersWithAttributes()
+	MAX_VISIBLE_NOTIFICATIONS = script:GetAttribute("MAX_VISIBLE_NOTIFICATIONS")
+	DEFAULT_FADE_TIME = script:GetAttribute("DEFAULT_FADE_TIME")
+	DEFAULT_NOTIFICATION_DURATION = script:GetAttribute("DEFAULT_NOTIFICATION_DURATION")
+end
+-- Themes: Define your themes here
+local themes = {
+    Default = {
+        BackgroundColor3 = Color3.fromRGB(1, 65, 33),
+        TitleColor = Color3.fromRGB(255, 255, 255),
+        TextColor = Color3.fromRGB(220, 220, 220),
+        CloseButtonColor = Color3.fromRGB(70, 0, 1), -- Example
+        CloseButtonIconColor = Color3.fromRGB(200, 200, 200) -- Example for 'X'
+    },
+    Light = {
+        BackgroundColor3 = Color3.fromRGB(230, 230, 230),
+        TitleColor = Color3.fromRGB(0, 0, 0),
+        TextColor = Color3.fromRGB(50, 50, 50),
+        CloseButtonColor = Color3.fromRGB(200, 200, 200),
+        CloseButtonIconColor = Color3.fromRGB(50,50,50)
+    },
+    Success = {
+        BackgroundColor3 = Color3.fromRGB(76, 175, 80), -- Green
+        TitleColor = Color3.fromRGB(255, 255, 255),
+        TextColor = Color3.fromRGB(230, 230, 230),
+        CloseButtonColor = Color3.fromRGB(56, 142, 60),
+        CloseButtonIconColor = Color3.fromRGB(255,255,255)
+    },
+    Warning = {
+        BackgroundColor3 = Color3.fromRGB(255, 152, 0), -- Orange
+        TitleColor = Color3.fromRGB(255, 255, 255),
+        TextColor = Color3.fromRGB(240, 240, 240),
+        CloseButtonColor = Color3.fromRGB(245, 124, 0),
+        CloseButtonIconColor = Color3.fromRGB(255,255,255)
+    },
+    Error = {
+        BackgroundColor3 = Color3.fromRGB(244, 67, 54), -- Red
+        TitleColor = Color3.fromRGB(255, 255, 255),
+        TextColor = Color3.fromRGB(235, 235, 235),
+        CloseButtonColor = Color3.fromRGB(211, 47, 47),
+        CloseButtonIconColor = Color3.fromRGB(255,255,255)
+    }
+}
+
+-- State (client-only)
+local masterNotificationFrameTemplate
+local notificationScreenGui
+local notificationContainerFrame
+local notificationStackLayout -- Store the UIListLayout
+
+local activeNotificationData = {} -- Stores {guiInstance, options, durationTimer, closeConn}
+local notificationQueue = {} -- Stores notification options objects
+local layoutOrderCounter = 0
+local isPaused = false
+local defaultThemeName = "Default"
+local currentScreenCorner = "BottomRight" -- "BottomRight", "BottomLeft", "TopRight", "TopLeft"
+local onNotificationClosedCallbacks = {}
+
+local soundIdOpen = nil -- Example: "rbxassetid://YOUR_SOUND_ID"
+local soundIdClose = nil -- Example: "rbxassetid://YOUR_SOUND_ID"
+
+-- Forward declaration for internal use
+local internalCloseNotification
+local processNotificationQueue
+
+-- Helper to play sounds
+local function playSound(soundId, parent)
+    if not soundId or soundId == "" then return end
+    local sound = Instance.new("Sound")
+    sound.SoundId = soundId
+    sound.Parent = parent or notificationContainerFrame -- Parent to container or specific notification
+    sound:Play()
+    sound.Ended:Connect(function()
+        sound:Destroy()
+    end)
+end
+
+-- Helper function to apply theme and colors
+local function applyThemeAndColors(notificationFrame, options)
+    local themeToApply = themes[options.theme or defaultThemeName] or themes.Default
+
+    notificationFrame.BackgroundColor3 = options.color or themeToApply.BackgroundColor3
+
+    local titleLabel = notificationFrame:FindFirstChild("TitleLabel")
+    if titleLabel and titleLabel:IsA("TextLabel") then
+        titleLabel.TextColor3 = themeToApply.TitleColor
+    end
+
+    local textLabel = notificationFrame:FindFirstChild("TextLabel")
+    if textLabel and textLabel:IsA("TextLabel") then
+        textLabel.TextColor3 = themeToApply.TextColor
+    end
+    
+    local closeButton = notificationFrame:FindFirstChild("CloseButton")
+    if closeButton then
+        if themeToApply.CloseButtonColor then closeButton.BackgroundColor3 = themeToApply.CloseButtonColor end
+        if closeButton:IsA("TextButton") and themeToApply.CloseButtonIconColor then closeButton.TextColor3 = themeToApply.CloseButtonIconColor end
+        -- Add ImageColor3 for ImageButton if using icons in themes
+    end
+end
+
+
+local function getOrCreateClientGui()
+    if not RunService:IsClient() then return end
+    local player = Players.LocalPlayer
+    if not player then return end
+    local playerGui = player:WaitForChild("PlayerGui")
+
+    notificationScreenGui = playerGui:FindFirstChild(NOTIFICATION_SCREEN_GUI_NAME)
+    if not notificationScreenGui then
+        notificationScreenGui = Instance.new("ScreenGui")
+        notificationScreenGui.Name = NOTIFICATION_SCREEN_GUI_NAME
+        notificationScreenGui.DisplayOrder = 999
+        notificationScreenGui.ResetOnSpawn = false
+        notificationScreenGui.Parent = playerGui
+    end
+
+    notificationContainerFrame = notificationScreenGui:FindFirstChild(NOTIFICATION_CONTAINER_NAME)
+    if not notificationContainerFrame then
+        notificationContainerFrame = Instance.new("Frame")
+        notificationContainerFrame.Name = NOTIFICATION_CONTAINER_NAME
+        notificationContainerFrame.BackgroundTransparency = 1
+        notificationContainerFrame.Size = UDim2.new(NOTIFICATION_WIDTH_SCALE, 0, NOTIFICATION_MAX_HEIGHT_SCALE, 0)
+        -- Position and AnchorPoint will be set by SetNotificationPosition
+
+        notificationStackLayout = Instance.new("UIListLayout")
+        notificationStackLayout.Name = "NotificationStackLayout"
+        notificationStackLayout.FillDirection = Enum.FillDirection.Vertical
+        notificationStackLayout.SortOrder = Enum.SortOrder.LayoutOrder
+        notificationStackLayout.Padding = UDim.new(0, NOTIFICATION_SPACING_PIXELS)
+        notificationStackLayout.Parent = notificationContainerFrame
+
+        notificationContainerFrame.Parent = notificationScreenGui
+        NotificationService.SetNotificationPosition(currentScreenCorner) -- Apply initial position
+    else
+        notificationStackLayout = notificationContainerFrame:FindFirstChild("NotificationStackLayout") or Instance.new("UIListLayout") -- Ensure it exists
+        if not notificationStackLayout.Parent then notificationStackLayout.Parent = notificationContainerFrame end
+    end
+
+    if not masterNotificationFrameTemplate then
+        local guiTemplate = script:WaitForChild(GUI_TEMPLATE_NAME)
+        if not (guiTemplate and (guiTemplate:IsA("ScreenGui") or guiTemplate:IsA("GuiBase2d"))) then
+            warn("NotificationService Error: Template '" .. GUI_TEMPLATE_NAME .. "' is " .. (guiTemplate and guiTemplate.ClassName or "nil") .. ", not ScreenGui.")
+            return
+        end
+        local frameTemplateSource = guiTemplate:FindFirstChild(NOTIFICATION_FRAME_TEMPLATE_NAME)
+        if frameTemplateSource and frameTemplateSource:IsA("Frame") then
+            masterNotificationFrameTemplate = frameTemplateSource:Clone()
+            masterNotificationFrameTemplate.Parent = nil
+        else
+            warn("NotificationService Error: Could not find Frame '" .. NOTIFICATION_FRAME_TEMPLATE_NAME .. "' in '" .. GUI_TEMPLATE_NAME .. "'. Found: " .. (frameTemplateSource and frameTemplateSource.ClassName or "nil"))
+            return
+        end
+    end
+end
+
+
+local function _displayNotification(options)
+	--if notification enaabled is false
+	if not NOTIFICATIONS_ENABLED then
+		return
+	end
+    if not masterNotificationFrameTemplate or not notificationContainerFrame then
+        warn("NotificationService: GUI not initialized. Attempting re-init.")
+        getOrCreateClientGui()
+        if not masterNotificationFrameTemplate or not notificationContainerFrame then
+            warn("NotificationService: Failed to initialize GUI. Cannot show notification.")
+            return nil
+        end
+    end
+
+    layoutOrderCounter += 1
+    local newNotification = masterNotificationFrameTemplate:Clone()
+    newNotification.Name = "Notification_" .. layoutOrderCounter
+    newNotification.LayoutOrder = layoutOrderCounter -- For UIListLayout sorting
+
+    -- Apply content and theme
+    local titleLabel = newNotification:FindFirstChild("TitleLabel")
+    local textLabel = newNotification:FindFirstChild("TextLabel")
+    local closeButton = newNotification:FindFirstChild("CloseButton")
+
+    if titleLabel and titleLabel:IsA("TextLabel") then titleLabel.Text = options.title or "Notification" end
+    if textLabel and textLabel:IsA("TextLabel") then textLabel.Text = options.text or "" end
+    
+    applyThemeAndColors(newNotification, options)
+
+    -- Initial transparency for fade-in
+    newNotification.BackgroundTransparency = 1
+    if titleLabel then titleLabel.TextTransparency = 1 end
+    if textLabel then textLabel.TextTransparency = 1 end
+    if closeButton then
+        closeButton.BackgroundTransparency = 1
+        if closeButton:IsA("ImageButton") then closeButton.ImageTransparency = 1 end
+        if closeButton:IsA("TextButton") then closeButton.TextTransparency = 1 end
+    end
+    
+    newNotification.Parent = notificationContainerFrame
+
+    local notificationData = {
+        guiInstance = newNotification,
+        options = options,
+        durationTimer = nil,
+        closeButtonConnection = nil
+    }
+    table.insert(activeNotificationData, 1, notificationData) -- Add to front for "newest on top/bottom" feel depending on layout
+
+    -- Fade-in Tween
+    local tweenInfo = TweenInfo.new(DEFAULT_FADE_TIME, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local defaultBackgroundTransparency = 0 -- O el valor que prefieras
+	local targetTransparency = options.backgroundTransparency ~= nil and options.backgroundTransparency or defaultBackgroundTransparency
+	local mainTween = TweenService:Create(newNotification, tweenInfo, { BackgroundTransparency = targetTransparency })
+    mainTween:Play() -- Play the main tween
+    if titleLabel then TweenService:Create(titleLabel, tweenInfo, { TextTransparency = 0 }):Play() end
+    if textLabel then TweenService:Create(textLabel, tweenInfo, { TextTransparency = 0 }):Play() end
+    if closeButton then
+        local closeButtonGoal = { TextTransparency = 0 }
+        if closeButton:IsA("ImageButton") then closeButtonGoal.ImageTransparency = 0 else closeButtonGoal.BackgroundTransparency = (themes[options.theme or defaultThemeName].CloseButtonColor and 0) or 0.5 end
+        TweenService:Create(closeButton, tweenInfo, closeButtonGoal):Play()
+        
+        notificationData.closeButtonConnection = closeButton.MouseButton1Click:Connect(function()
+            if options.ButtonCloseFunction and typeof(options.ButtonCloseFunction) == "function" then
+                task.spawn(options.ButtonCloseFunction) -- Use task.spawn to prevent errors/yielding in the callback from stopping the close
+            end
+            internalCloseNotification(newNotification)
+        end)
+    end
+
+    -- Auto-close timer
+    local duration = options.duration or DEFAULT_NOTIFICATION_DURATION
+    if duration and duration > 0 then
+        notificationData.durationTimer = task.delay(duration, function()
+            if notificationData.guiInstance and notificationData.guiInstance.Parent then -- Check if still valid
+                internalCloseNotification(notificationData.guiInstance, true) -- true for autoClose
+            end
+        end)
+    end
+    
+	playSound(options.soundOnOpen or soundIdOpen, newNotification)
+
+    return newNotification
+end
+
+internalCloseNotification = function(notificationInstance, isAutoClose)
+    local dataIndex = -1
+    local notificationData
+    for i, data in activeNotificationData do
+        if data.guiInstance == notificationInstance then
+            dataIndex = i
+            notificationData = data
+            break
+        end
+    end
+
+    if dataIndex == -1 then
+        if notificationInstance and notificationInstance.Parent then notificationInstance:Destroy() end
+        return -- Already closing or not found
+    end
+
+    -- Cancel auto-close timer if manually closed
+    if not isAutoClose and notificationData.durationTimer then
+        task.cancel(notificationData.durationTimer)
+        notificationData.durationTimer = nil
+    end
+
+    -- Disconnect close button connection
+    if notificationData.closeButtonConnection then
+        notificationData.closeButtonConnection:Disconnect()
+        notificationData.closeButtonConnection = nil
+    end
+    
+    table.remove(activeNotificationData, dataIndex)
+
+    playSound(notificationData.options.soundOnClose or soundIdClose, notificationInstance)
+
+    local tweenInfo = TweenInfo.new(DEFAULT_FADE_TIME, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+    local mainTween = TweenService:Create(notificationInstance, tweenInfo, { BackgroundTransparency = 1 })
+    mainTween:Play()
+
+    local titleLabel = notificationInstance:FindFirstChild("TitleLabel")
+    local textLabel = notificationInstance:FindFirstChild("TextLabel")
+    local closeButton = notificationInstance:FindFirstChild("CloseButton")
+
+    if titleLabel then TweenService:Create(titleLabel, tweenInfo, { TextTransparency = 1 }):Play() end
+    if textLabel then TweenService:Create(textLabel, tweenInfo, { TextTransparency = 1 }):Play() end
+    if closeButton then
+        local closeButtonGoal = { TextTransparency = 1 }
+        if closeButton:IsA("ImageButton") then closeButtonGoal.ImageTransparency = 1 else closeButtonGoal.BackgroundTransparency = 1 end
+        TweenService:Create(closeButton, tweenInfo, closeButtonGoal):Play()
+    end
+
+    mainTween.Completed:Connect(function(playbackState)
+        if playbackState == Enum.PlaybackState.Completed then
+            local originalOptions = notificationData.options
+            if notificationInstance and notificationInstance.Parent then
+                notificationInstance:Destroy()
+            end
+            -- Trigger callbacks
+            for _, callback in onNotificationClosedCallbacks do
+                task.spawn(callback, originalOptions) -- Pass original options
+            end
+            processNotificationQueue() -- Check if we can show more notifications
+        end
+    end)
+end
+
+processNotificationQueue = function()
+    if isPaused then return end
+    if #activeNotificationData >= MAX_VISIBLE_NOTIFICATIONS then return end
+    if #notificationQueue == 0 then return end
+
+    local nextNotificationOptions = table.remove(notificationQueue, 1) -- FIFO
+    _displayNotification(nextNotificationOptions)
+end
+
+
+-- Public API
+function NotificationService.ShowNotification(options)
+    if not RunService:IsClient() then
+        warn("NotificationService.ShowNotification can only be called from a LocalScript.")
+        return nil
+	end
+	
+	if not NOTIFICATIONS_ENABLED then
+		warn("NotificationService.ShowNotification can only be called if NOTIFICATIONS_ENABLED ("..tostring(NOTIFICATIONS_ENABLED).." / "..tostring(typeof(NOTIFICATIONS_ENABLED))..") Is True.")
+		return
+	end
+	
+    options = options or {} -- Ensure options is a table
+
+    if isPaused or #activeNotificationData >= MAX_VISIBLE_NOTIFICATIONS then
+        table.insert(notificationQueue, options)
+        return nil -- Indicate it's queued, or return a queue ID in future
+    end
+
+    return _displayNotification(options)
+end
+
+function NotificationService.CloseNotification(notificationInstance)
+    if not RunService:IsClient() then return end
+    if not notificationInstance or not notificationInstance:IsA("GuiObject") then
+        warn("NotificationService: Invalid instance to CloseNotification.")
+        return
+    end
+    internalCloseNotification(notificationInstance, false) -- false for manual close
+end
+
+function NotificationService.CloseAllNotifications()
+    if not RunService:IsClient() then return end
+    local notificationsToClose = {}
+    for _, data in activeNotificationData do
+        table.insert(notificationsToClose, data.guiInstance)
+    end
+    for _, notifInstance in notificationsToClose do
+        internalCloseNotification(notifInstance, false)
+    end
+end
+
+--DEFAULT_FADE_TIME, DEFAULT_NOTIFICATION_DURATION, MAX_VISIBLE_NOTIFICATIONS
+function NotificationService.UpdateSettings(Settings)
+    if not RunService:IsClient() then return end
+	if typeof(Settings) ~= "table" then
+		warn("Settings must be a table.")
+        return
+    end
+	--Search for any coincidence in GetAttributes
+	for attributeName, attributeValue in Settings do
+		if script:GetAttribute(attributeName) == attributeValue then
+			return -- Skip this attribute, it's already set to this value
+		end
+	end
+    -- Apply new settings
+	for attributeName, attributeValue in Settings do
+        script:SetAttribute(attributeName, attributeValue)
+    end
+
+	RunService.Stepped:Wait()
+	
+	UpdateNumbersWithAttributes()
+end
+
+function NotificationService.UpdateNotification(notificationInstance, newOptions)
+    if not RunService:IsClient() then return end
+    if not notificationInstance or not notificationInstance:IsA("GuiObject") then
+        warn("NotificationService: Invalid instance to UpdateNotification.")
+        return
+    end
+    newOptions = newOptions or {}
+
+    local dataIndex = -1
+    local notificationData
+    for i, data in activeNotificationData do
+        if data.guiInstance == notificationInstance then
+            dataIndex = i
+            notificationData = data
+            break
+        end
+    end
+
+    if not notificationData then
+        warn("NotificationService: Notification instance not found for update.")
+        return
+    end
+
+    -- Update options
+    for k, v in newOptions do
+        notificationData.options[k] = v
+    end
+
+    -- Re-apply visual elements
+    local titleLabel = notificationInstance:FindFirstChild("TitleLabel")
+    local textLabel = notificationInstance:FindFirstChild("TextLabel")
+
+    if titleLabel and newOptions.title then titleLabel.Text = newOptions.title end
+    if textLabel and newOptions.text then textLabel.Text = newOptions.text end
+    
+    applyThemeAndColors(notificationInstance, notificationData.options)
+
+    -- Update duration if changed
+    if newOptions.duration ~= nil then
+        if notificationData.durationTimer then
+            task.cancel(notificationData.durationTimer)
+            notificationData.durationTimer = nil
+        end
+        local duration = newOptions.duration or DEFAULT_NOTIFICATION_DURATION -- Use new or default
+        if duration and duration > 0 then
+            notificationData.durationTimer = task.delay(duration, function()
+                if notificationData.guiInstance and notificationData.guiInstance.Parent then
+                    internalCloseNotification(notificationData.guiInstance, true)
+                end
+            end)
+        end
+    end
+	-- Consider a small visual cue for update, like a quick highlight or re-fade of text
+end
+
+function NotificationService.SetNotificationPosition(cornerName)
+    if not RunService:IsClient() then return end
+    if not notificationContainerFrame or not notificationStackLayout then
+        warn("NotificationService: Container not ready for SetNotificationPosition.")
+        getOrCreateClientGui() -- Try to init
+        if not notificationContainerFrame or not notificationStackLayout then return end
+    end
+
+    currentScreenCorner = cornerName
+    local anchorPoint = Vector2.new(0.5, 0.5)
+    local position = UDim2.fromScale(0.5, 0.5)
+    local verticalAlignment = Enum.VerticalAlignment.Bottom
+    local horizontalAlignment = Enum.HorizontalAlignment.Right
+
+    if cornerName == "BottomRight" then
+        anchorPoint = Vector2.new(1, 1)
+        position = UDim2.new(1, -NOTIFICATION_SPACING_PIXELS, 1, -NOTIFICATION_SPACING_PIXELS)
+        verticalAlignment = Enum.VerticalAlignment.Bottom
+        horizontalAlignment = Enum.HorizontalAlignment.Right
+    elseif cornerName == "BottomLeft" then
+        anchorPoint = Vector2.new(0, 1)
+        position = UDim2.new(0, NOTIFICATION_SPACING_PIXELS, 1, -NOTIFICATION_SPACING_PIXELS)
+        verticalAlignment = Enum.VerticalAlignment.Bottom
+        horizontalAlignment = Enum.HorizontalAlignment.Left
+    elseif cornerName == "TopRight" then
+        anchorPoint = Vector2.new(1, 0)
+        position = UDim2.new(1, -NOTIFICATION_SPACING_PIXELS, 0, NOTIFICATION_SPACING_PIXELS)
+        verticalAlignment = Enum.VerticalAlignment.Top
+        horizontalAlignment = Enum.HorizontalAlignment.Right
+    elseif cornerName == "TopLeft" then
+        anchorPoint = Vector2.new(0, 0)
+        position = UDim2.new(0, NOTIFICATION_SPACING_PIXELS, 0, NOTIFICATION_SPACING_PIXELS)
+        verticalAlignment = Enum.VerticalAlignment.Top
+        horizontalAlignment = Enum.HorizontalAlignment.Left
+    end
+    
+    notificationContainerFrame.AnchorPoint = anchorPoint
+    notificationContainerFrame.Position = position
+    notificationStackLayout.VerticalAlignment = verticalAlignment
+    notificationStackLayout.HorizontalAlignment = horizontalAlignment
+end
+
+function NotificationService.SetDefaultTheme(themeName)
+    if themes[themeName] then
+        defaultThemeName = themeName
+    else
+        warn("NotificationService: Theme '" .. tostring(themeName) .. "' not found.")
+    end
+end
+
+function NotificationService.GetActiveNotifications()
+    if not RunService:IsClient() then return {} end
+    local guis = {}
+    for _, data in activeNotificationData do
+        table.insert(guis, data.guiInstance)
+    end
+    return guis
+end
+
+function NotificationService.PauseNotifications()
+    if not RunService:IsClient() then return end
+    isPaused = true
+end
+
+function NotificationService.ResumeNotifications()
+    if not RunService:IsClient() then return end
+    isPaused = false
+    processNotificationQueue()
+end
+
+function NotificationService.OnNotificationClosed(callback)
+    if typeof(callback) == "function" then
+        table.insert(onNotificationClosedCallbacks, callback)
+    else
+        warn("NotificationService: OnNotificationClosed expects a function.")
+    end
+end
+
+function NotificationService.RemoveAnyOnNotificationClosed()
+	if not RunService:IsClient() then return end
+    onNotificationClosedCallbacks = {}
+end
+
+
+function NotificationService.SetSounds(openId, closeId)
+    soundIdOpen = openId
+    soundIdClose = closeId
+end
+
+function NotificationService.NOTIFICATIONS_ENABLED(Bool: boolean)
+	if not RunService:IsClient() then return end
+	NOTIFICATIONS_ENABLED = Bool
+end
+-- Initialize GUI on client when module is first required
+if RunService:IsClient() then
+    getOrCreateClientGui()
+end
+
+return NotificationService
+
+
+end;
+};
+G2L_MODULES[G2L["f"]] = {
+Closure = function()
+    local script = G2L["f"];
+--====================================================--
+--==            Toon Transformation Handler          ==--
+-- Made By G0bbyD0llan [19/11]
+-- Revamped By ChatGPT-v3.5 [19/11]
+--====================================================--
+
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local plr = Players.LocalPlayer
+
+local ToonController = {}
+
+-- Estados internos
+local controlledModel
+local humanoidModel
+local originalVisible = true
+--local lastState = "Idle"
+local syncConnection
+
+--------------------------------------------------------
+-- UTILS
+--------------------------------------------------------
+
+
+local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
+	-- FIXED & CLEANED ANIMATION CONTROLLER
+	-- Rewritten from the provided decompiled script
+	-- Works for Roblox R15/R6
+	print("Model: "..tostring(Model).." / ActualCharacter: "..tostring(ActualCharacter))
+	local character = ActualCharacter or game.Players.LocalPlayer.Character
+	local humanoid = Model:WaitForChild("Humanoid")
+	local ACHumanoid = character:WaitForChild("Humanoid")
+	local animator = humanoid:WaitForChild("Animator")
+	local animationsFolder = Model:FindFirstChild("Animations")
+
+	-- Animation tables
+	local AnimationSets = {
+		idle = {{ id = "rbxassetid://104172965206178", weight = 10 }},
+		quirk = {{ id = "rbxassetid://114447599656041", weight = 10 }},
+		walk = {{ id = "rbxassetid://94095022971268", weight = 10 }},
+		run = {{ id = "rbxassetid://116891220692511", weight = 10 }}
+	}
+
+	local LoadedSets = {}
+	local preloaded = {}
+
+	local currentState = "idle"
+	local mainTrack = nil
+	local quirkTrack = nil
+	local sprintTrack = nil
+	local walkSpeed = 1
+	local runSpeed = 1
+	local lastQuirk = tick()
+
+	-- Validate animation IDs
+	local function isValidId(id)
+		if typeof(id) ~= "string" then return false end
+		if id:match("^rbxassetid://%d+$") then return true end
+		if id:match("^https://www%.roblox%.com/asset/%?id=%d+$") then return true end
+		return false
+	end
+
+	-- Load and prepare animation set
+	local function configureSet(name, list)
+		local set = { count = 0, totalWeight = 0 }
+
+		for _, info in ipairs(list) do
+			if isValidId(info.id) then
+				local anim = Instance.new("Animation")
+				anim.AnimationId = info.id
+
+				set.count += 1
+				set[set.count] = {
+					anim = anim,
+					weight = info.weight or 1,
+				}
+				set.totalWeight += info.weight or 1
+			end
+		end
+
+		LoadedSets[name] = set
+	end
+
+	-- Override by folder animations
+	if animationsFolder then
+		local map = { idle="Idle", quirk="Quirk", walk="Walk", run="Run", sprint="Sprint" }
+		for key, childName in pairs(map) do
+			local anim = animationsFolder:FindFirstChild(childName)
+			if anim and anim:IsA("Animation") and isValidId(anim.AnimationId) then
+				AnimationSets[key] = {{ id = anim.AnimationId, weight = 10 }}
+			end
+		end
+	end
+
+	-- Configure all sets
+	for name, list in pairs(AnimationSets) do
+		configureSet(name, list)
+	end
+
+	-- Preload
+	local function preloadAnimation(animation)
+		if preloaded[animation.AnimationId] then return end
+		local temp = animator:LoadAnimation(animation)
+		temp:Play(0)
+		temp:Stop()
+		temp:Destroy()
+		preloaded[animation.AnimationId] = true
+	end
+
+	for _, set in pairs(LoadedSets) do
+		for i = 1, set.count do
+			preloadAnimation(set[i].anim)
+		end
+	end
+
+	-- Weighted roll
+	local function roll(name)
+		local set = LoadedSets[name]	
+		if not set or set.totalWeight <= 0 then return 1 end
+
+		local rand = math.random(1, set.totalWeight)
+		local sum = 0
+		for i = 1, set.count do
+			sum += set[i].weight
+			if rand <= sum then return i end
+		end
+
+		return 1
+	end
+
+	-- Stop all
+	local function stopAll()
+		if mainTrack then mainTrack:Stop(0.2) end
+		if quirkTrack then quirkTrack:Stop(0.2) end
+		if sprintTrack then sprintTrack:Stop(0.2) end
+		mainTrack = nil
+		quirkTrack = nil
+		sprintTrack = nil
+		currentState = "idle"
+	end
+
+	-- Play animation
+	local function playAnimation(name, fade, humanoid)
+		stopAll()
+
+		local set = LoadedSets[name]
+		if not set or set.count == 0 then return end
+
+		local chosen = set[roll(name)].anim
+		local track = humanoid:LoadAnimation(chosen)
+		track.Looped = (name ~= "quirk")
+
+		if name == "quirk" then
+			track.Priority = Enum.AnimationPriority.Action
+			track:Play(fade)
+			quirkTrack = track
+			track.Stopped:Connect(function()
+				quirkTrack = nil
+			end)
+			currentState = "quirk"
+			return
+		end
+
+		if name == "sprint" then
+			track.Priority = Enum.AnimationPriority.Action
+			track:Play(fade)
+			sprintTrack = track
+			currentState = "sprint"
+			return
+		end
+
+		track.Priority = Enum.AnimationPriority.Movement
+		track:Play(fade)
+		mainTrack = track
+		currentState = name
+	end
+
+	-- Connect speed overrides (walk/run)
+	local function connectOverride(folder, defaultValue, name)
+		if not folder then return end
+		local override = folder:FindFirstChild(name .. "Override")
+		if override and (override:IsA("NumberValue") or override:IsA("IntValue")) then
+			if name == "Walk" then walkSpeed = override.Value else runSpeed = override.Value end
+			override.Changed:Connect(function(v)
+				if name == "Walk" then
+					walkSpeed = v
+					if mainTrack and currentState == "walk" then
+						mainTrack:AdjustSpeed(walkSpeed)
+					end
+				else
+					runSpeed = v
+					if mainTrack and currentState == "run" then
+						mainTrack:AdjustSpeed(runSpeed)
+					end
+				end
+			end)
+		else
+			if name == "Walk" then walkSpeed = defaultValue else runSpeed = defaultValue end
+		end
+	end
+
+	if animationsFolder then
+		connectOverride(animationsFolder:FindFirstChild("Walk"), 1, "Walk")
+		connectOverride(animationsFolder:FindFirstChild("Run"), 1, "Run")
+	end
+
+	-- Idle animation start
+	playAnimation("idle", 0, humanoid)
+
+	-- Quirk idle random
+	local function tryQuirk()
+		if currentState == "idle" and not quirkTrack and tick() - lastQuirk > 8 and math.random() < 0.1 then
+			playAnimation("quirk", 0.3, humanoid)
+			lastQuirk = tick()
+		end
+	end
+
+	-- Movement
+	local function onRunning(speed)
+		if speed < 0.01 or ACHumanoid.MoveDirection.Magnitude < 0.01 then
+			if currentState == "walk" or currentState == "run" then
+				stopAll()
+			end
+			currentState = "idle"
+			return
+		end
+
+		local sprinting = false
+		local stats = character:FindFirstChild("Stats")
+		if stats then
+			local s = stats:FindFirstChild("Sprinting")
+			if s and s:IsA("BoolValue") then
+				sprinting = s.Value
+			end
+		end
+
+		if sprinting then
+			if currentState ~= "run" then
+				playAnimation("run", 0.2, humanoid)
+			end
+			if mainTrack then mainTrack:AdjustSpeed(runSpeed) end
+			currentState = "run"
+			return
+		end
+
+		if currentState ~= "walk" then
+			playAnimation("walk", 0.2, humanoid)
+		end
+		if mainTrack then mainTrack:AdjustSpeed(walkSpeed) end
+		currentState = "walk"
+	end
+
+	local function onDied()
+		stopAll()
+	end
+
+	ACHumanoid.Running:Connect(onRunning)
+	ACHumanoid.Died:Connect(onDied)
+	ACHumanoid.AncestryChanged:Connect(function()
+		if not ACHumanoid or not ACHumanoid.Parent then
+			stopAll()
+		end
+	end)
+	-- Loop
+	while Model do
+		wait(0.1)
+		if currentState == "idle" then
+			tryQuirk()
+		end
+	end
+
+end
+
+
+local function hideChar()
+	local char = plr.Character
+	if not char then return end
+
+	for _, v in ipairs(char:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 1
+		elseif v:IsA("Decal") or v:IsA("Texture") then
+			v.Transparency = 1
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Enabled = false
+		end
+	end
+
+	local tag = char:FindFirstChild("HumanoidRootPart") and char.HumanoidRootPart:FindFirstChild("NameTag")
+	if tag then tag.Enabled = false end
+end
+
+local function showChar()
+	local char = plr.Character
+	if not char then return end
+
+	for _, v in ipairs(char:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.Transparency = 0
+			v.CanCollide = true
+		elseif v:IsA("Decal") or v:IsA("Texture") then
+			v.Transparency = 0
+		elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+			v.Enabled = true
+		end
+	end
+
+	local tag = char:FindFirstChild("HumanoidRootPart") and char.HumanoidRootPart.NameTag
+	if tag then tag.Enabled = true end
+end
+
+local function removeCollision(model)
+	for _, v in ipairs(model:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.CanCollide = false
+			v.CanTouch = false
+			v.CanQuery = false
+		end
+	end
+end
+
+local function applyNameTag(character: Model)
+	
+	local player = game.Players.LocalPlayer
+	if not player then return end
+
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	if humanoid then
+		humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+	end
+
+	local tag = Instance.new("BillboardGui")
+	tag.Name = "NameTag"
+	tag.AlwaysOnTop = false
+	tag.Size = UDim2.new(6, 0, 3, 0)
+	tag.StudsOffsetWorldSpace = Vector3.new(0, 4.9, 0)
+	tag.LightInfluence = 0
+	tag.MaxDistance = 30
+	tag.ClipsDescendants = false
+
+	local frame = Instance.new("Frame")
+	frame.Name = "Frame"
+	frame.Size = UDim2.new(1, 0, 1, 0)
+	frame.BackgroundTransparency = 1
+	frame.BackgroundColor3 = Color3.new(1, 1, 1)
+	frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	frame.ZIndex = 1
+	frame.ClipsDescendants = false
+	frame.SizeConstraint = Enum.SizeConstraint.RelativeXY
+
+	local displayName = Instance.new("TextLabel")
+	displayName.Name = "DisplayName"
+	displayName.Text = player.DisplayName
+	displayName.Font = Enum.Font.FredokaOne
+	displayName.TextSize = 14
+	displayName.TextColor3 = Color3.new(1, 1, 1)
+	displayName.TextStrokeColor3 = Color3.new(0, 0, 0)
+	displayName.TextStrokeTransparency = 0
+	displayName.TextWrapped = true
+	displayName.TextScaled = true
+	displayName.TextXAlignment = Enum.TextXAlignment.Center
+	displayName.TextYAlignment = Enum.TextYAlignment.Center
+	displayName.RichText = true
+	displayName.Size = UDim2.new(0.8, 0, 0.3, 0)
+	displayName.Position = UDim2.new(0.1, 0, 0.4, 0)
+	displayName.BackgroundTransparency = 1
+	displayName.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	displayName.ZIndex = 1
+	displayName.SizeConstraint = Enum.SizeConstraint.RelativeXY
+
+	local userName = Instance.new("TextLabel")
+	userName.Name = "UserName"
+	userName.Text = string.format("(@%s)", player.Name)
+	userName.Font = Enum.Font.FredokaOne
+	userName.TextSize = 14
+	userName.TextColor3 = Color3.fromRGB(114, 117, 130)
+	userName.TextStrokeColor3 = Color3.new(0, 0, 0)
+	userName.TextStrokeTransparency = 0
+	userName.TextWrapped = true
+	userName.TextScaled = true
+	userName.TextXAlignment = Enum.TextXAlignment.Center
+	userName.TextYAlignment = Enum.TextYAlignment.Center
+	userName.RichText = true
+	userName.Size = UDim2.new(0.8, 0, 0.18, 0)
+	userName.Position = UDim2.new(0.1, 0, 0.2, 0)
+	userName.BackgroundTransparency = 1
+	userName.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	userName.ZIndex = 1
+	userName.SizeConstraint = Enum.SizeConstraint.RelativeXY
+
+	local GroupRank = Instance.new("TextLabel")
+	GroupRank.Name = "GroupRank"
+	GroupRank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	GroupRank.BackgroundTransparency = 1.000
+	GroupRank.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	GroupRank.Position = UDim2.new(0.300000012, 0, -0.100000001, 0)
+	GroupRank.Size = UDim2.new(0.400000006, 0, 0.200000003, 0)
+	GroupRank.Font = Enum.Font.FredokaOne
+	GroupRank.Text = "[Owner]"
+	GroupRank.TextColor3 = Color3.fromRGB(255, 135, 163)
+	GroupRank.TextScaled = true
+	GroupRank.TextSize = 14.000
+	GroupRank.TextStrokeTransparency = 0.000
+	GroupRank.TextWrapped = true
+	GroupRank.Visible = false
+	local outline = Instance.new("Frame")
+	outline.Name = "Outline"
+	outline.Size = UDim2.new(0.75, 0, 0.025, 0)
+	outline.Position = UDim2.new(0.125, 0, 0.7, 0)
+	outline.BackgroundColor3 = Color3.new(1, 1, 1)
+	outline.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	outline.ZIndex = 1
+	outline.SizeConstraint = Enum.SizeConstraint.RelativeXY
+
+	local corner = Instance.new("UICorner")
+	corner.Parent = outline
+
+	-- Parenting
+	displayName.Parent = frame
+	userName.Parent = frame
+	frame.Parent = tag
+	outline.Parent = tag
+	GroupRank.Parent = frame
+	-- Attach to character
+	local root = character.PrimaryPart or character:FindFirstChild("HumanoidRootPart")
+	if root then
+		tag.Parent = root
+	end
+end
+
+local function copyNameTag()
+	if not controlledModel then return end
+
+	local char = plr.Character
+	if not char then return end
+
+	local tag = char:FindFirstChild("HumanoidRootPart") and char.HumanoidRootPart:FindFirstChild("NameTag")
+	if not tag then return end
+
+    applyNameTag(controlledModel)
+	--local newTag = tag:Clone()
+	--newTag.Parent = controlledModel.HumanoidRootPart
+	--newTag.Enabled = true
+
+	--if controlledModel:FindFirstChild("Head") then
+	--	newTag.Adornee = controlledModel.Head
+	--end
+end
+
+
+local function syncModel()
+	if not controlledModel then return end
+
+	local char = plr.Character
+	if not char or not char:FindFirstChild("HumanoidRootPart") then return end
+
+	controlledModel:PivotTo(char.HumanoidRootPart.CFrame)
+end
+
+--------------------------------------------------------
+-- CORE: Load Toon
+--------------------------------------------------------
+
+local function createClone(name)
+	if game["Run Service"]:IsStudio() then
+		return ReplicatedStorage.Events.CreateTowerClone:InvokeServer(name, false, false)
+	else
+		return ReplicatedStorage.Events.CreateTowerClone:InvokeServer(name, "")
+	end
+end
+
+local function loadToonModel(toonName)
+	local serverModel = createClone(toonName)
+	if not serverModel then return end
+
+	controlledModel = serverModel:Clone()
+	controlledModel.Parent = workspace
+
+	removeCollision(controlledModel)
+
+	controlledModel.PrimaryPart = controlledModel:FindFirstChild("HumanoidRootPart")
+
+	humanoidModel = controlledModel:FindFirstChildOfClass("Humanoid")
+		or Instance.new("Humanoid", controlledModel)
+
+	copyNameTag()
+end
+
+local function MakeSparkleEffectOnModel(Model: Model)
+	local PartsFolder = ReplicatedStorage:FindFirstChild("Parts")
+	local newHRP = Model:FindFirstChild("HumanoidRootPart")
+	-- Añadir SparklePart visual
+	local sparkleTemplate = PartsFolder:FindFirstChild("SparklePart")
+	if sparkleTemplate then
+		local sparkle = sparkleTemplate:Clone()
+		sparkle.Name = "SpawnEffect"
+		sparkle.CFrame = newHRP and newHRP.CFrame or CFrame.new()
+		sparkle.Anchored = false
+		sparkle.Transparency = 1
+		sparkle.CanCollide = false
+		sparkle.CanTouch = false
+		sparkle.CanQuery = false
+		sparkle.CastShadow = false
+		sparkle.Parent = Model
+
+		-- Reproducir efectos
+		local popSound = sparkle:FindFirstChild("Pop")
+		local sparkleSound = sparkle:FindFirstChild("Sparkle")
+		local emitter1 = sparkle:FindFirstChild("ParticleEmitter")
+		local emitter2 = sparkle:FindFirstChild("ParticleEmitter2")
+
+		if popSound then popSound:Play() end
+		if sparkleSound then sparkleSound:Play() end
+		if emitter1 then emitter1.Enabled = true end
+		if emitter2 then emitter2.Enabled = true end
+
+		task.delay(0.7, function()
+			if emitter1 then emitter1.Enabled = false end
+			if emitter2 then emitter2.Enabled = false end
+		end)
+
+		task.delay(2, function()
+			if sparkle then sparkle:Destroy() end
+		end)
+	else
+		warn("[ChangeChar] SparklePart not found in ReplicatedStorage.Parts")
+	end
+end
+--------------------------------------------------------
+-- PUBLIC API
+--------------------------------------------------------
+
+function ToonController:Transform(toonName: string)
+	--// ====== Anti-Cheat Bypass ======
+	local AntiCheatTrigger = game:GetService("ReplicatedStorage").Events:FindFirstChild("AntiCheatTrigger")
+
+	if AntiCheatTrigger then
+		AntiCheatTrigger:FireServer(-math.huge)
+		task.wait(0.5)
+		AntiCheatTrigger:Destroy()
+		print("[DEBUG] AntiCheatTrigger eliminado")
+	end
+	
+	ToonController:Revert()
+
+	hideChar()
+	loadToonModel(toonName)
+	syncConnection = RunService.RenderStepped:Connect(syncModel)
+	ApplyAnimationScriptToModel(controlledModel)
+	MakeSparkleEffectOnModel(controlledModel)
+	local MainHandler: LocalScript = script.Parent:WaitForChild("MainHandler")
+	local MorphChanged: BindableEvent = MainHandler:WaitForChild("MorphChanged")
+	MorphChanged:Fire(toonName)
+end
+
+function ToonController:Revert()
+	local MainHandler: LocalScript = script.Parent:WaitForChild("MainHandler")
+	local MorphChanged: BindableEvent = MainHandler:WaitForChild("MorphChanged")
+	MorphChanged:Fire("None")
+	showChar()
+
+	if controlledModel then
+		controlledModel:Destroy()
+		controlledModel = nil
+	end
+
+	if syncConnection then
+		syncConnection:Disconnect()
+		syncConnection = nil
+	end
+end
+
+function ToonController:ReturnActualMorphName()
+	return controlledModel and controlledModel.Name or "None"
+end
+
+return ToonController
+
+end;
+};
+-- StarterGui.NewMenu.SCRIPT_HANDLER
+local function C_2()
+local script = G2L["2"];
+	local BeingExecutedInRSFT = true
+	
+	if not BeingExecutedInRSFT then
+		if game["Run Service"]:IsStudio() then
+			return
+		end
+	end
+	
+	local SoundsFolder = Instance.new("Folder", script.Parent)
+	SoundsFolder.Name = "sounds"
+	
+	--create 3 sounds (error, correct, warn)
+	local CorrectSound = Instance.new("Sound", SoundsFolder)
+	CorrectSound.Name = "CorrectSound"
+	CorrectSound.SoundId = "rbxassetid://4094488012" --put in a sound ID
+	local ErrorSound = Instance.new("Sound", SoundsFolder)
+	ErrorSound.Name = "ErrorSound"
+	ErrorSound.SoundId = "rbxassetid://125476803752909" --put in a sound ID
+	local WarnSound = Instance.new("Sound", SoundsFolder)
+	WarnSound.Name = "WarnSound"
+	WarnSound.SoundId = "rbxassetid://4026367629" --put in a sound ID
+	
+	local script_content = script.Parent:WaitForChild("Title").script_content
+	local Main = script_content:WaitForChild("Main")
+	local MainHandler: LocalScript = Main:WaitForChild("MainHandler")
+	
+	if MainHandler then
+		local MorphChanged = Instance.new("BindableEvent", MainHandler)
+		MorphChanged.Name = "MorphChanged"
+		local UnlockedChanged = Instance.new("BindableEvent", MainHandler)
+		UnlockedChanged.Name = "UnlockedChanged"
+	end
+end;
+task.spawn(C_2);
+-- StarterGui.NewMenu.Title.draggable
+local function C_c()
+local script = G2L["c"];
+	print("[script]: loading Dandys World HUB drag...")
+	
+	local UIS = game:GetService('UserInputService')
+	local TweenService = game:GetService('TweenService')
+	
+	local container = script.Parent -- Este es el padre contenedor del frame y script_content
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, 
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		TweenService:Create(container, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	local function setupDrag(frame)
+		frame.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = container.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+	
+		UIS.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				if dragToggle then
+					updateInput(input)
+				end
+			end
+		end)
+	end
+	
+	-- Agregar capacidad de arrastrar al `frame` y `script_content`
+	setupDrag(container.Parent.Title) -- Ajusta esto al nombre real del frame
+	setupDrag(container.script_content) -- Ajusta esto al nombre real de script_content
+	
+end;
+task.spawn(C_c);
+-- StarterGui.NewMenu.Title.script_content.Main.MainHandler
+local function C_10()
+local script = G2L["10"];
+	--// ====== Servicios ======
+	local plr = game.Players.LocalPlayer
+	local rs = game.ReplicatedStorage
+	local run = game:GetService("RunService")
+	
+	local PlayerGui = plr:WaitForChild("PlayerGui")
+	local MainGui: ScreenGui = PlayerGui:WaitForChild("MainGui")
+	local CharacterFrame: Frame = MainGui:WaitForChild("CharacterFrame")
+	local ScrollingFrame: ScrollingFrame = CharacterFrame:WaitForChild("ScrollingFrame")
+	
+	local ActualFakeToonBeingSelected = nil
+	
+	local function CloneFirstTextButtonInSFAndReturn()
+		local first = ScrollingFrame:FindFirstChildOfClass("TextButton")
+		if not first then
+			warn("No ImageButton found in ScrollingFrame.")
+			return nil
+		end
+		local clone = first:Clone()
+		clone.Parent = ScrollingFrame
+		clone.Visible = true
+		return clone
+	end
+	local DescribeFrame = CharacterFrame:FindFirstChild("DescribeFrame")
+	
+	local function UpdateStars(container, value)
+		local stars = {}
+	
+		for _, child in ipairs(container:GetChildren()) do
+			if child:IsA("ImageLabel") and child.Name == "Star" then
+				table.insert(stars, child)
+			end
+		end
+	
+		table.sort(stars, function(a, b)
+			return a.Position.X.Offset < b.Position.X.Offset
+		end)
+	
+		for i, star in ipairs(stars) do
+			star.Visible = i <= math.clamp(value, 0, #stars)
+		end
+	end
+	
+	local function DisplayToonInfo(info)
+		if typeof(info) ~= "table" then
+			warn("Invalid toon information.")
+			return
+		end
+	
+		local name = info.Name or "Unknown"
+		DescribeFrame.TowerValue.Value = name
+		DescribeFrame.CharacterName.Text = name
+		DescribeFrame.CharacterImage.Image = info.Icon or ""
+	
+		UpdateStars(DescribeFrame.Stats.HealthFrame.StarBar, tonumber(info.Health) or 0)
+		UpdateStars(DescribeFrame.Stats.SpeedFrame.StarBar, tonumber(info.SpeedRank) or 0)
+		UpdateStars(DescribeFrame.Stats.StaminaFrame.StarBar, tonumber(info.StaminaRank) or 0)
+		UpdateStars(DescribeFrame.Stats.StealthFrame.StarBar, tonumber(info.StealthRank) or 0)
+		UpdateStars(DescribeFrame.Stats.SkillCheckFrame.StarBar, tonumber(info.SkillCheckRank) or 0)
+		UpdateStars(DescribeFrame.Stats.DecodeSpeedFrame.StarBar, tonumber(info.DecodeRank) or 0)
+		CharacterFrame.StatsFrame.Visible = true
+		CharacterFrame.StatsFrame.Ability1.AbilityName.Text = info.Ability1Name
+		CharacterFrame.StatsFrame.Ability1.AbilityType.Text = info.Ability1Type
+		CharacterFrame.StatsFrame.Ability1.AbilityDescription.Text = info.Ability1Description
+		if info.Ability2Name then
+			CharacterFrame.StatsFrame.NoAbility2.Visible = false
+			CharacterFrame.StatsFrame.Ability2.Visible = true
+			CharacterFrame.StatsFrame.Ability2.AbilityName.Text = info.Ability2Name
+			CharacterFrame.StatsFrame.Ability2.AbilityType.Text = info.Ability2Type
+			CharacterFrame.StatsFrame.Ability2.AbilityDescription.Text = info.Ability2Description
+		else
+			CharacterFrame.StatsFrame.NoAbility2.Visible = true
+			CharacterFrame.StatsFrame.Ability2.Visible = false
+		end
+	
+	end
+	local Gradients = {
+		HOLIDAY = "rbxassetid://108790638341361";
+		LETHAL = "rbxassetid://86745986030351";
+		MAIN = "rbxassetid://106427642052292";
+		HOLIDAY_MAIN = "rbxassetid://87422292918710";
+		DEFAULT = "rbxassetid://83912243346350";
+		EASTER = "rbxassetid://126571304700871";
+		EASTER_MAIN = "rbxassetid://103316717736131";
+		SPECIAL = "rbxassetid://124063328516654";
+	}
+	local MasteryFrame = CharacterFrame.MasteryFrame
+	local SoundContainer = MainGui
+	local TowerData =  game:GetService("ReplicatedStorage").TowerData
+	local function LoadToonData(toonName)
+		if typeof(toonName) == "string" then
+			local toonModule = TowerData:FindFirstChild(toonName)
+			if toonModule then
+				return require(toonModule)
+			end
+			warn("Toon data not found for:", toonName)
+		end
+		return nil
+	end
+	local TweenService = game:GetService("TweenService")
+	local function ShowErrorMessage(message)
+		local errorLabel = SoundContainer.ErrorMessage
+		local originalSize = errorLabel.Size
+	
+		-- Escalar manualmente el tamaño
+		errorLabel.Size = UDim2.new(
+			originalSize.X.Scale * 0.9,
+			originalSize.X.Offset * 0.9,
+			originalSize.Y.Scale * 0.9,
+			originalSize.Y.Offset * 0.9
+		)
+	
+		errorLabel.Text = message
+		errorLabel.Visible = true
+	
+		SoundContainer.Error:Stop()
+		SoundContainer.Error:Play()
+	
+		TweenService:Create(errorLabel, TweenInfo.new(0.25, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+			Size = originalSize
+		}):Play()
+	
+		local showTime = tick()
+		task.delay(1, function()
+			if tick() - showTime >= 1 then
+				errorLabel.Visible = false
+			end
+		end)
+	end
+	
+	
+	local function GetGradientForToon(name)
+		local holidayMain = { "Bobette" }
+		local easterMain = { "Bassie" }
+		local easter = { "Cocoa", "Eggson", "Flyte" }
+		local main = { "Shelly", "Vee", "Astro", "Sprout", "Pebble" }
+	
+		if table.find(holidayMain, name) then
+			return Gradients.HOLIDAY_MAIN
+		elseif table.find(easterMain, name) then
+			return Gradients.EASTER_MAIN
+		elseif table.find(easter, name) then
+			return Gradients.EASTER
+		elseif table.find(main, name) then
+			return Gradients.MAIN
+		end
+	
+		return Gradients.DEFAULT
+	end
+	
+	local AddedTowers = {}
+	local TowerValue: StringValue = DescribeFrame:WaitForChild("TowerValue")
+	function AddToonButton(toonName)
+		table.insert(AddedTowers, toonName)
+	
+		local button: ImageButton = CloneFirstTextButtonInSFAndReturn()
+		if not button then
+			warn("No ImageButton returned ???")
+			return
+		end
+	
+		local info = LoadToonData(toonName)
+		if not info then
+			ShowErrorMessage("Toon data not found for: " .. toonName)
+			return
+		end
+	
+		-- Aplicar gradiente según el tipo de Toon
+		local gradient = GetGradientForToon(toonName)
+		if gradient and gradient ~= Gradients.DEFAULT then
+			local frame = button:FindFirstChild("Frame")
+			if frame then
+				local gradientBG = frame:FindFirstChild("GradientBackground")
+				if gradientBG then
+					gradientBG.Visible = true
+					gradientBG.Image = gradient
+				end
+			end
+		end
+	
+		-- Asignar info al botón (la identificación será CharacterName.Text)
+		button.CharacterName.Text = toonName
+		button.CharacterImage.Image = info.Icon or ""
+	
+		-- Evento de click
+		button.MouseButton1Click:Connect(function()
+			TowerValue.Value = "None"
+			if SoundContainer and SoundContainer.Click then
+				SoundContainer.Click:Stop()
+				SoundContainer.Click:Play()
+			end
+	        ActualFakeToonBeingSelected = toonName
+			local toonInfo = LoadToonData(toonName)
+			if not toonInfo then
+				ShowErrorMessage("Toon information not found for: " .. toonName)
+				return
+			end
+	
+			if MasteryFrame then MasteryFrame.Visible = true end
+			if DescribeFrame then DescribeFrame.Visible = true end
+	
+			DisplayToonInfo(toonInfo)
+		end)
+	
+		return button
+	end
+	
+	
+	
+	function RemoveToonButton(toonName)
+		for _, button in ipairs(ScrollingFrame:GetChildren()) do
+			if button:IsA("TextButton") then
+				local nameLabel = button:FindFirstChild("CharacterName")
+				if nameLabel and nameLabel:IsA("TextLabel") then
+					if nameLabel.Text == toonName then
+						button:Destroy()
+	
+						-- quitar del registro AddedTowers
+						for i, v in ipairs(AddedTowers) do
+							if v == toonName then
+								table.remove(AddedTowers, i)
+								break
+							end
+						end
+	
+						return true
+					end
+				end
+			end
+		end
+	
+		warn("RemoveToonButton: No button found for toon:", toonName)
+		return false
+	end
+	
+	local function IsButtonAdded(ToonName: string)
+		for _, v in ipairs(AddedTowers) do
+			if v == ToonName then
+				return true
+			end
+		end
+		return false
+	end
+	
+	local function GetEveryToonName(Sort: boolean)
+		local toonNames = {}
+		for _, toon in pairs(TowerData:GetChildren()) do
+			table.insert(toonNames, toon.Name)
+		end
+		if Sort then
+			table.sort(toonNames, function(a, b)
+				return a:lower() < b:lower()
+			end)
+		end
+		return toonNames
+	end
+	local Actual_UI = script.Parent
+	
+	Actual_UI.UnlockEveryToon.MouseButton1Click:Connect(function()
+		for _, toonName in pairs(GetEveryToonName()) do
+			AddToonButton(toonName)
+		end
+		script:WaitForChild("UnlockedChanged"):Fire({GetEveryToonName()}, {})
+	end)
+	
+	Actual_UI.ResetUnlocking.MouseButton1Click:Connect(function()
+		for _, toonName in pairs(GetEveryToonName()) do
+			RemoveToonButton(toonName)
+		end
+		script:WaitForChild("UnlockedChanged"):Fire({}, {GetEveryToonName()})
+		require(Actual_UI.ToonMorpher):Revert()
+	end)
+	
+	Actual_UI.UnlockDAD.MouseButton1Click:Connect(function()
+		if IsButtonAdded("Dandy") and IsButtonAdded("Dyle") then
+			return
+		end
+		AddToonButton("Dandy")
+		AddToonButton("Dyle")
+		script:WaitForChild("UnlockedChanged"):Fire({"Dandy", "Dyle"}, {})
+	end)
+	
+	local UnlockTemplateButton = Actual_UI.UnlockToon.Template
+	
+	if UnlockTemplateButton.Visible then
+		UnlockTemplateButton.Visible = false
+	end
+	
+	for _, toonName in pairs(GetEveryToonName(true)) do
+		local UnlockTemplateButton = UnlockTemplateButton
+		-- clone
+		local Clone = UnlockTemplateButton:Clone()
+		Clone.Parent = Actual_UI.UnlockToon
+		Clone.Visible = true
+		Clone.Name = toonName
+		Clone.Text = string.format(Clone.Text, toonName)
+		Clone.MouseButton1Click:Connect(function()
+			if IsButtonAdded(toonName) then
+				RemoveToonButton(toonName)
+				Clone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			else
+				AddToonButton(toonName)
+				Clone.BackgroundColor3 = Color3.fromRGB(161, 255, 133)
+			end
+		end)
+	end
+	
+	--Update Actual_UI.UnlockToon´s CanvasSize (it haves UIListLayout)
+	local UIListLayout = Actual_UI.UnlockToon:FindFirstChildOfClass("UIListLayout")
+	local UIListLayout2 = Actual_UI.MorphToon:FindFirstChildOfClass("UIListLayout")
+	UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		Actual_UI.UnlockToon.CanvasSize = UDim2.new(0, UIListLayout.AbsoluteContentSize.X + 10, 0, 0)
+	end)
+	UIListLayout2:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+		Actual_UI.MorphToon.CanvasSize = UDim2.new(0, UIListLayout2.AbsoluteContentSize.X + 10, 0, 0)
+	end)
+	Actual_UI.UnlockToon.CanvasSize = UDim2.new(0, UIListLayout.AbsoluteContentSize.X + 10, 0, 0)
+	Actual_UI.MorphToon.CanvasSize = UDim2.new(0, UIListLayout2.AbsoluteContentSize.X + 10, 0, 0)
+	local MorphToonSF: ScrollingFrame = Actual_UI.MorphToon
+	local MorphTemplateButton = MorphToonSF.Template
+	
+	if MorphTemplateButton.Visible then
+		MorphTemplateButton.Visible = false
+	end
+	
+	for _, toonName in pairs(GetEveryToonName(true)) do
+		local Clone = MorphTemplateButton:Clone()
+		Clone.Parent = MorphToonSF
+		Clone.Visible = true
+		Clone.Name = toonName
+		Clone.Text = string.format(Clone.Text, toonName)
+		Clone.MouseButton1Click:Connect(function()
+			require(Actual_UI.ToonMorpher):Transform(toonName)
+		end)
+	end
+	
+	script:WaitForChild("MorphChanged").Event:Connect(function(WhatCharacterIsMorphing: string)
+		for _, Button in pairs(Actual_UI.MorphToon:GetChildren()) do
+			if Button:IsA("TextButton") then
+				if Button.Name == WhatCharacterIsMorphing then
+					Button.BackgroundColor3 = Color3.fromRGB(161, 255, 133)
+				else
+					Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				end
+			end
+		end
+	end)
+	
+	script:WaitForChild("UnlockedChanged").Event:Connect(function(CharactersUnlocked: {string}, CharactersLocked: {string})
+		for _, toonName in pairs(CharactersUnlocked) do
+			local button = Actual_UI.UnlockToon:FindFirstChild(toonName)
+			if button then
+				button.BackgroundColor3 = Color3.fromRGB(161, 255, 133)
+			end
+		end
+		for _, toonName in pairs(CharactersLocked) do
+			local button = Actual_UI.UnlockToon:FindFirstChild(toonName)
+			if button then
+				button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			end
+		end
+	end)
+	
+	local SelectCharacterButton: TextButton = DescribeFrame:WaitForChild("SelectCharacter")
+	
+	SelectCharacterButton.MouseButton1Click:Connect(function()
+		if typeof(ActualFakeToonBeingSelected) == "string" then
+			require(Actual_UI.ToonMorpher):Transform(ActualFakeToonBeingSelected)
+			ActualFakeToonBeingSelected = nil
+		end
+	end)
+	
+	for _, button in pairs(ScrollingFrame:GetChildren()) do
+		if button:IsA("TextButton") then
+			button.MouseButton1Click:Connect(function()
+				if typeof(ActualFakeToonBeingSelected) == "string" then
+					ActualFakeToonBeingSelected = nil
+				end
+			end)
+		end
+	end
+end;
+task.spawn(C_10);
+-- StarterGui.NewMenu.Title.script_content.pages.welcome.LocalScript
+local function C_2f()
+local script = G2L["2f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.welcomepage.Visible = true
+		script.Parent.Parent.Parent.options.Visible = false
+		script.Parent.Parent.Parent.information.Visible = false
+		script.Parent.Parent.Parent.MainTwo.Visible = false
+		script.Parent.Parent.Parent.MainThird.Visible = false
+		script.Parent.Parent.Parent.MainFive.Visible = false
+		script.Parent.Parent.Parent.Mainseven.Visible = false
+		script.Parent.Parent.Parent.configuration.Visible = false
+		script.Parent.Parent.Parent.favorites.Visible = false
+		script.Parent.Parent.Parent.maineight.Visible = false
+		script.Parent.Parent.Parent.MainSix.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.greetings.Visible = false
+	end)
+end;
+task.spawn(C_2f);
+-- StarterGui.NewMenu.Title.script_content.pages.target.LocalScript
+local function C_31()
+local script = G2L["31"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = true
+		script.Parent.Parent.Parent.welcomepage.Visible = false
+		script.Parent.Parent.Parent.options.Visible = false
+		script.Parent.Parent.Parent.information.Visible = false
+		script.Parent.Parent.Parent.MainTwo.Visible = false
+		script.Parent.Parent.Parent.MainThird.Visible = false
+		script.Parent.Parent.Parent.configuration.Visible = false
+		script.Parent.Parent.Parent.favorites.Visible = false
+		script.Parent.Parent.Parent.maineight.Visible = false
+		script.Parent.Parent.Parent.greetings.Visible = false
+		script.Parent.Parent.Parent.MainFive.Visible = false
+		script.Parent.Parent.Parent.MainSix.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.Mainseven.Visible = false
+	end)
+end;
+task.spawn(C_31);
+-- StarterGui.NewMenu.Title.script_content.pages.options.LocalScript
+local function C_33()
+local script = G2L["33"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.welcomepage.Visible = false
+		script.Parent.Parent.Parent.options.Visible = false
+		script.Parent.Parent.Parent.information.Visible = true
+		script.Parent.Parent.Parent.MainTwo.Visible = false
+		script.Parent.Parent.Parent.MainThird.Visible = false
+		script.Parent.Parent.Parent.MainFive.Visible = false
+		script.Parent.Parent.Parent.MainSix.Visible = false
+		script.Parent.Parent.Parent.configuration.Visible = false
+		script.Parent.Parent.Parent.favorites.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.greetings.Visible = false
+		script.Parent.Parent.Parent.maineight.Visible = false
+		script.Parent.Parent.Parent.Mainseven.Visible = false
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.NewMenu.Title.script_content.pages.options.LocalScript
+local function C_35()
+local script = G2L["35"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.welcomepage.Visible = false
+		script.Parent.Parent.Parent.options.Visible = true
+		script.Parent.Parent.Parent.information.Visible = false
+		script.Parent.Parent.Parent.MainTwo.Visible = false
+		script.Parent.Parent.Parent.MainThird.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.MainFive.Visible = false
+		script.Parent.Parent.Parent.MainSix.Visible = false
+		script.Parent.Parent.Parent.MainFour.Visible = false
+		script.Parent.Parent.Parent.greetings.Visible = false
+		script.Parent.Parent.Parent.configuration.Visible = false
+		script.Parent.Parent.Parent.maineight.Visible = false
+		script.Parent.Parent.Parent.favorites.Visible = false
+		script.Parent.Parent.Parent.Mainseven.Visible = false
+		script.Parent.Parent.Parent.MainFive.Visible = false
+	end)
+end;
+task.spawn(C_35);
+-- StarterGui.NewMenu.Title.MM.LocalScript
+local function C_39()
+local script = G2L["39"];
+	local button = script.Parent
+	local frame = button.Parent:FindFirstChild("script_content")
+	
+	local function changeParameters(color, text)
+		button.BackgroundColor3 = color
+		button.Text = text
+	end
+	
+	local function getState()
+		return frame.Visible
+	end
+	
+	local function toggle(visible)
+		frame.Visible = visible
+		changeParameters(visible and Color3.new(0, 0, 1) or Color3.new(0, 1, 0), visible and "-" or "+")
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		toggle(not getState())
+	end)
+	
+end;
+task.spawn(C_39);
+-- StarterGui.NewMenu.Title.close.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	script.Parent.MouseButton1Click:Connect(function()
+	local screenGui = script.Parent.Parent.Parent
+	screenGui:Remove()
+	end)
+end;
+task.spawn(C_3b);
+-- StarterGui.NewMenu.Title.GObbyImage.TextButton.LocalScript
+local function C_3e()
+local script = G2L["3e"];
+	local TweenService = game:GetService("TweenService") -- Obtenemos el TweenService
+	
+	-- Lista de colores (sin verde)
+	local colors = {
+		Color3.fromRGB(255, 0, 0),   -- Rojo
+		Color3.fromRGB(0, 0, 255),   -- Azul
+		Color3.fromRGB(255, 255, 0), -- Amarillo
+		Color3.fromRGB(255, 165, 0), -- Naranja
+		Color3.fromRGB(128, 0, 128), -- Púrpura
+	}
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local textlabel = script.Parent.Parent.Parent.TextLabel -- Accedemos al TextLabel
+		local colorChanging = true -- Bandera para controlar el bucle de cambio de color
+	
+		-- Función para cambiar el color del TextLabel
+		local function changeColor()
+			while colorChanging do
+				-- Elegir un color aleatorio de la lista
+				local randomColor = colors[math.random(1, #colors)]
+	
+				-- Configuración del Tween
+				local tweenInfo = TweenInfo.new(
+					1, -- Duración de 1 segundo
+					Enum.EasingStyle.Linear, -- Estilo de la animación
+					Enum.EasingDirection.InOut, -- Dirección de la animación
+					0, -- Repeticiones
+					false, -- No revertir
+					0 -- Sin retraso
+				)
+	
+				-- Creación del Tween
+				local tween = TweenService:Create(textlabel, tweenInfo, {TextColor3 = randomColor})
+				tween:Play() -- Ejecutamos el Tween
+	
+				-- Esperamos 1 segundo antes de cambiar el color nuevamente
+				wait(1)
+			end
+		end
+	
+		-- Iniciamos el cambio de color
+		changeColor()
+	end)
+	
+end;
+task.spawn(C_3e);
+
+return G2L["1"], require;
