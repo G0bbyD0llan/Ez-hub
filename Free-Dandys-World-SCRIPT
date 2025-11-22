@@ -1199,15 +1199,26 @@ local syncConnection
 
 
 local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
-	-- FIXED & CLEANED ANIMATION CONTROLLER
-	-- Rewritten from the provided decompiled script
-	-- Works for Roblox R15/R6
-	print("Model: "..tostring(Model).." / ActualCharacter: "..tostring(ActualCharacter))
+	print("\n=== [ANIMATION-INIT] Starting ApplyAnimationScriptToModel ===")
+	print("[INIT] Model =", Model, "| ActualCharacter =", ActualCharacter)
+
+	-- Safety validation
+	if not Model then warn("[ERROR] Model is NIL !!") return end
+	if not ActualCharacter then print("[WARN] ActualCharacter NIL → Using LocalPlayer.Character") end
+
 	local character = ActualCharacter or game.Players.LocalPlayer.Character
+	if not character then warn("[ERROR] No character available!") return end
+
+	-- Humanoids
+	print("[DEBUG] Waiting for humanoids...")
 	local humanoid = Model:WaitForChild("Humanoid")
 	local ACHumanoid = character:WaitForChild("Humanoid")
 	local animator = humanoid:WaitForChild("Animator")
+
+	print("[OK] Humanoids loaded. ModelHumanoid =", humanoid, " | ACHumanoid =", ACHumanoid)
+
 	local animationsFolder = Model:FindFirstChild("Animations")
+	print("[DEBUG] AnimationsFolder =", animationsFolder)
 
 	-- Animation tables
 	local AnimationSets = {
@@ -1230,60 +1241,86 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 
 	-- Validate animation IDs
 	local function isValidId(id)
-		if typeof(id) ~= "string" then return false end
-		if id:match("^rbxassetid://%d+$") then return true end
-		if id:match("^https://www%.roblox%.com/asset/%?id=%d+$") then return true end
-		return false
+		local valid = typeof(id) == "string" and (id:match("^rbxassetid://%d+$") or id:match("^https://www%.roblox%.com/asset/%?id=%d+$"))
+		if not valid then
+			print("[WARN] Invalid Animation ID:", id)
+		end
+		return valid
 	end
 
 	-- Load and prepare animation set
 	local function configureSet(name, list)
+		print("[CONFIG] Loading animation set:", name)
 		local set = { count = 0, totalWeight = 0 }
 
 		for _, info in ipairs(list) do
+			print(" ⮞ Checking anim:", info.id)
 			if isValidId(info.id) then
 				local anim = Instance.new("Animation")
 				anim.AnimationId = info.id
 
 				set.count += 1
-				set[set.count] = {
-					anim = anim,
-					weight = info.weight or 1,
-				}
+				set[set.count] = { anim = anim, weight = info.weight or 1 }
 				set.totalWeight += info.weight or 1
+
+				print("   ✔ Loaded valid anim:", info.id)
+			else
+				print("   ✘ Skipped invalid anim")
 			end
 		end
 
+		print(" → Set", name, "Count:", set.count, "| TotalWeight:", set.totalWeight)
 		LoadedSets[name] = set
 	end
 
 	-- Override by folder animations
 	if animationsFolder then
+		print("[OVERRIDE] Checking animation override folder...")
 		local map = { idle="Idle", quirk="Quirk", walk="Walk", run="Run", sprint="Sprint" }
+
 		for key, childName in pairs(map) do
 			local anim = animationsFolder:FindFirstChild(childName)
-			if anim and anim:IsA("Animation") and isValidId(anim.AnimationId) then
-				AnimationSets[key] = {{ id = anim.AnimationId, weight = 10 }}
+			if anim and anim:IsA("Animation") then
+				if isValidId(anim.AnimationId) then
+					AnimationSets[key] = {{ id = anim.AnimationId, weight = 10 }}
+					print(" ✔ Override found for:", key, "→", anim.AnimationId)
+				else
+					print(" ✘ Override invalid for:", key)
+				end
 			end
 		end
 	end
 
-	-- Configure all sets
+	-- Configure sets
 	for name, list in pairs(AnimationSets) do
 		configureSet(name, list)
 	end
 
-	-- Preload
+	-- Preloading
 	local function preloadAnimation(animation)
-		if preloaded[animation.AnimationId] then return end
-		local temp = animator:LoadAnimation(animation)
-		temp:Play(0)
-		temp:Stop()
-		temp:Destroy()
-		preloaded[animation.AnimationId] = true
+		print("[PRELOAD] Preloading:", animation.AnimationId)
+		if preloaded[animation.AnimationId] then
+			print("   ↳ Already preloaded")
+			return
+		end
+
+		local ok, err = pcall(function()
+			local temp = animator:LoadAnimation(animation)
+			temp:Play(0)
+			temp:Stop()
+			temp:Destroy()
+		end)
+
+		if not ok then
+			warn("[ERROR] Failed to preload:", animation.AnimationId, "|", err)
+		else
+			print("   ✔ Preloaded OK")
+			preloaded[animation.AnimationId] = true
+		end
 	end
 
-	for _, set in pairs(LoadedSets) do
+	for name, set in pairs(LoadedSets) do
+		print("[PRELOAD] Preloading set:", name)
 		for i = 1, set.count do
 			preloadAnimation(set[i].anim)
 		end
@@ -1291,38 +1328,54 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 
 	-- Weighted roll
 	local function roll(name)
-		local set = LoadedSets[name]	
-		if not set or set.totalWeight <= 0 then return 1 end
+		print("[ROLL] Set:", name)
+		local set = LoadedSets[name]
+		if not set or set.count == 0 then
+			print("  ✘ Roll failed → set empty")
+			return 1
+		end
 
 		local rand = math.random(1, set.totalWeight)
+		print("  → Random pick:", rand, "/", set.totalWeight)
+
 		local sum = 0
 		for i = 1, set.count do
 			sum += set[i].weight
-			if rand <= sum then return i end
+			if rand <= sum then
+				print("  ✔ Picked index:", i)
+				return i
+			end
 		end
 
 		return 1
 	end
 
-	-- Stop all
+	-- Stop all animations
 	local function stopAll()
+		print("[STOP] Stopping all tracks...")
 		if mainTrack then mainTrack:Stop(0.2) end
 		if quirkTrack then quirkTrack:Stop(0.2) end
 		if sprintTrack then sprintTrack:Stop(0.2) end
-		mainTrack = nil
-		quirkTrack = nil
-		sprintTrack = nil
+		mainTrack, quirkTrack, sprintTrack = nil, nil, nil
 		currentState = "idle"
 	end
 
 	-- Play animation
 	local function playAnimation(name, fade, humanoid)
+		print("[PLAY] Request animation:", name, "fade:", fade)
 		stopAll()
 
 		local set = LoadedSets[name]
-		if not set or set.count == 0 then return end
+		if not set or set.count == 0 then
+			print("[ERROR] No animations for:", name)
+			return
+		end
 
-		local chosen = set[roll(name)].anim
+		local chosenIndex = roll(name)
+		local chosen = set[chosenIndex].anim
+
+		print("  ✔ Playing anim:", chosen.AnimationId, " | Track type:", name)
+
 		local track = humanoid:LoadAnimation(chosen)
 		track.Looped = (name ~= "quirk")
 
@@ -1330,10 +1383,8 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 			track.Priority = Enum.AnimationPriority.Action
 			track:Play(fade)
 			quirkTrack = track
-			track.Stopped:Connect(function()
-				quirkTrack = nil
-			end)
 			currentState = "quirk"
+			print("[QUIRK] Playing quirk animation.")
 			return
 		end
 
@@ -1342,36 +1393,49 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 			track:Play(fade)
 			sprintTrack = track
 			currentState = "sprint"
+			print("[SPRINT] Sprint animation active.")
 			return
 		end
 
 		track.Priority = Enum.AnimationPriority.Movement
 		track:Play(fade)
+
 		mainTrack = track
 		currentState = name
+		print("[OK] Animation state now:", currentState)
 	end
 
-	-- Connect speed overrides (walk/run)
+	-- Speed override
 	local function connectOverride(folder, defaultValue, name)
-		if not folder then return end
+		print("[OVERRIDE-CONNECT] Folder:", folder, "| Override:", name)
+		if not folder then
+			print("  ↳ No folder, using default:", defaultValue)
+			return
+		end
+
 		local override = folder:FindFirstChild(name .. "Override")
 		if override and (override:IsA("NumberValue") or override:IsA("IntValue")) then
+			print("  ✔ Override detected for", name, "=", override.Value)
 			if name == "Walk" then walkSpeed = override.Value else runSpeed = override.Value end
+
 			override.Changed:Connect(function(v)
+				print("[OVERRIDE-UPDATE]", name, "=", v)
 				if name == "Walk" then
 					walkSpeed = v
 					if mainTrack and currentState == "walk" then
+						print("[UPDATE] Adjust walk speed:", v)
 						mainTrack:AdjustSpeed(walkSpeed)
 					end
 				else
 					runSpeed = v
 					if mainTrack and currentState == "run" then
+						print("[UPDATE] Adjust run speed:", v)
 						mainTrack:AdjustSpeed(runSpeed)
 					end
 				end
 			end)
 		else
-			if name == "Walk" then walkSpeed = defaultValue else runSpeed = defaultValue end
+			print("  ↳ No override found. Using default:", defaultValue)
 		end
 	end
 
@@ -1380,20 +1444,27 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 		connectOverride(animationsFolder:FindFirstChild("Run"), 1, "Run")
 	end
 
-	-- Idle animation start
+	-- Start idle
+	print("[INIT] Starting with idle animation")
 	playAnimation("idle", 0, humanoid)
 
-	-- Quirk idle random
+	-- Quirk random trigger
 	local function tryQuirk()
-		if currentState == "idle" and not quirkTrack and tick() - lastQuirk > 8 and math.random() < 0.1 then
-			playAnimation("quirk", 0.3, humanoid)
-			lastQuirk = tick()
+		if currentState == "idle" and not quirkTrack and (tick() - lastQuirk > 8) then
+			if math.random() < 0.1 then
+				print("[QUIRK-TRY] Triggering quirk!")
+				lastQuirk = tick()
+				playAnimation("quirk", 0.3, humanoid)
+			end
 		end
 	end
 
-	-- Movement
+	-- Movement detection
 	local function onRunning(speed)
+		print("[RUNNING] Speed:", speed)
+
 		if speed < 0.01 or ACHumanoid.MoveDirection.Magnitude < 0.01 then
+			print("[RUNNING] → Idle (no movement)")
 			if currentState == "walk" or currentState == "run" then
 				stopAll()
 			end
@@ -1401,16 +1472,16 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 			return
 		end
 
+		-- Sprint check
 		local sprinting = false
 		local stats = character:FindFirstChild("Stats")
 		if stats then
 			local s = stats:FindFirstChild("Sprinting")
-			if s and s:IsA("BoolValue") then
-				sprinting = s.Value
-			end
+			sprinting = s and s:IsA("BoolValue") and s.Value
 		end
 
 		if sprinting then
+			print("[MOVEMENT] Sprinting TRUE")
 			if currentState ~= "run" then
 				playAnimation("run", 0.2, humanoid)
 			end
@@ -1419,6 +1490,7 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 			return
 		end
 
+		print("[MOVEMENT] Walking")
 		if currentState ~= "walk" then
 			playAnimation("walk", 0.2, humanoid)
 		end
@@ -1427,24 +1499,31 @@ local function ApplyAnimationScriptToModel(Model: Model, ActualCharacter: Model)
 	end
 
 	local function onDied()
+		print("[EVENT] Humanoid died → stopping all animations")
 		stopAll()
 	end
 
+	-- Events
+	print("[EVENT] Binding humanoid events...")
 	ACHumanoid.Running:Connect(onRunning)
 	ACHumanoid.Died:Connect(onDied)
+
 	ACHumanoid.AncestryChanged:Connect(function()
+		print("[EVENT] Humanoid removed from workspace → stopping.")
 		if not ACHumanoid or not ACHumanoid.Parent then
 			stopAll()
 		end
 	end)
-	-- Loop
+
+	print("[ANIMATION-READY] Animation system active.")
+
+	-- Loop for quirk
 	while Model do
-		wait(0.1)
+		task.wait(0.1)
 		if currentState == "idle" then
 			tryQuirk()
 		end
 	end
-
 end
 
 
@@ -1604,6 +1683,16 @@ local function applyNameTag(character: Model)
 	end
 end
 
+local function SearchHeadInModel(Model: Model)
+	-- tries to find any mesh part that haves Head in his name
+	for _, part in pairs(Model:GetDescendants()) do
+		if part:IsA("MeshPart") and string.find(part.Name, "Head", 1, true) then
+			return part
+		end
+	end
+	return nil
+end
+
 local function copyNameTag()
 	if not controlledModel then return end
 
@@ -1613,6 +1702,11 @@ local function copyNameTag()
 	local tag = char:FindFirstChild("HumanoidRootPart") and char.HumanoidRootPart:FindFirstChild("NameTag")
 	if not tag then return end
 
+	local ControlledModelHead: Part = SearchHeadInModel(controlledModel)
+	if ControlledModelHead then
+		ControlledModelHead.Anchored = true
+	end
+	
     applyNameTag(controlledModel)
 	--local newTag = tag:Clone()
 	--newTag.Parent = controlledModel.HumanoidRootPart
