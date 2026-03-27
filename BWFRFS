@@ -1,39 +1,26 @@
-{
-	-- --- TUS ORIGINALES ---
+[
 	"niووer", "niووa", "SKIП", "FЦCKIПG", "ΉΣLL", "F |_| C |<",
-
-	-- --- VARIACIONES DE INSULTOS (Símbolos y Números) ---
 	"f_u_c_k", "f.u.c.k", "f-u-c-k", "f*u*c*k", "f u c k",
 	"sh!t", "sh1t", "5h1t", "sh_it",
 	"b!tch", "b1tch", "b_tch", "bi7ch",
 	"a$$", "@ss", "a.s.s", "4ss",
 	"p0rn", "pr0n", "p_rn",
 	"d!ck", "d1ck", "d_ck", "di_ck",
-
-	-- --- HOMÓGLIFOS (Letras de otros alfabetos que parecen latinas) ---
 	"fцck", "fvck", "fμck", "phuck",
 	"вitch", "Ьitch", "bitcн",
 	"иigga", "иigg3r", "nıgga", "nıgger",
 	"pеnıs", "p3n1s",
 	"vаgιnа", "v4g1n4",
 	"m0th3rfuck3r", "m0f0",
-
-	-- --- BYPASS DE ESPACIOS Y REPETICIONES ---
-	-- (Útil si tu script no limpia espacios antes de validar)
 	"f  u  c  k",
 	"fffffuuuuuccccckkkkk",
 	"s.h.i.t",
-
-	-- --- L33T SPEAK AVANZADO ---
-	"[-]el|_",   -- Hell
-	"|V|0th3r",  -- Mother
-	"|_|nited",  -- (A veces usado en frases ofensivas)
-	"K_Y_S",     -- "Kill Yourself"
+	"[-]el|_", 
+	"|V|0th3r",  
+	"|_|nited",  
+	"K_Y_S",     
 	"K¥S",
-	"L_M_A_O",    -- (Depende de qué tan estricto quieras ser)
-
-	-- 260 +
-
+	"L_M_A_O",    
 	"Ɓįƚƈƕ",
 	"ȂƧƧ",
 	"ȂƧƧɧȪŁĒ",
@@ -357,4 +344,4 @@
 	"gǻ..nja",
 	"l}IC",
 	"nga"
-}
+]
