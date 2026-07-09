@@ -1,5 +1,6 @@
 
 
+
 -- Exploit Draw Tool - Inappropriate Shapes (Click to Place)
 -- Paste as LocalScript in StarterPlayerScripts or Tool
 
@@ -866,6 +867,7 @@ Frame.BorderColor3 = Color3.fromRGB(255, 0, 4)
 Frame.BorderSizePixel = 2
 Frame.Position = UDim2.new(0.137674421, 0, 0.354838699, 0)
 Frame.Size = UDim2.new(0, 334, 0, 287)
+Frame.Visible = false
 
 Frame.Draggable = true
 
@@ -931,7 +933,7 @@ end)
 
 TextButton_9.Activated:Connect(function()
 	shooting = false
-	frame.Visible = false
+	Frame.Visible = false
 end)
 
 for name, _ in pairs(patterns) do
@@ -944,13 +946,13 @@ for name, _ in pairs(patterns) do
 	btn.Parent = Frame_2
 	btn.MouseButton1Click:Connect(function()
 		currentPattern = name
-		frame.Visible = false
+		Frame.Visible = false
 		print("Selected: " .. name .. " - Click to place")
 	end)
 end
 
 tool.Equipped:Connect(function()
-	frame.Visible = true
+	Frame.Visible = true
 	print("Inappropriate Drawer equipped - Select shape then click to draw")
 end)
 
