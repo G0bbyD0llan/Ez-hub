@@ -2797,7 +2797,7 @@ G2L["11b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["11b"]["Size"] = UDim2.new(0, 140, 0, 31);
 G2L["11b"]["Name"] = [[MyButton]];
 G2L["11b"]["BorderColor3"] = Color3.fromRGB(22, 54, 0);
-G2L["11b"]["Text"] = [[Try To Crash Server]];
+G2L["11b"]["Text"] = [[Lag Near Players]];
 G2L["11b"]["Position"] = UDim2.new(0.1850000023841858, -100, 0.8171428442001343, -25);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.misc2.MyButton.LocalScript
@@ -13811,12 +13811,14 @@ local function C_11c()
 		local Character = player.Character or player.CharacterAdded:Wait()
 		local CFrame_ = Character:GetPivot()
 
-		while Crashing do
-			wait()
-			for i = 1, 100 do
-				spawnExtinguisherPart(CFrame_.Position)
+		task.spawn(function()
+			while Crashing do
+				wait()
+				for i = 1, 200 do
+					spawnExtinguisherPart(CFrame_.Position)
+				end
 			end
-		end
+		end)
 	end
 
 	local function StopCrashing()
@@ -13830,7 +13832,7 @@ local function C_11c()
 		else
 			StopCrashing()
 		end
-		script.Parent.Text = Crashing and "STOP" or "Try To Crash Server"
+		script.Parent.Text = Crashing and "STOP" or "Lag Near Players"
 	end)
 end;
 task.spawn(C_11c);
