@@ -1,6 +1,3 @@
-
-
-
 -- Exploit Draw Tool - Inappropriate Shapes (Click to Place)
 -- Paste as LocalScript in StarterPlayerScripts or Tool
 
@@ -958,7 +955,7 @@ end)
 
 tool.Unequipped:Connect(function()
 	shooting = false
-	frame.Visible = false
+	Frame.Visible = false
 end)
 
 mouse.Button1Down:Connect(function()
