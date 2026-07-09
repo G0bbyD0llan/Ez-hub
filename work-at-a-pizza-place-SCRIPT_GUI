@@ -2712,6 +2712,7 @@ G2L["112"] = Instance.new("LocalScript", G2L["111"]);
 
 -- StarterGui.ScreenGui.WindowFrame.ContentArea.misc2.TextBox
 G2L["113"] = Instance.new("TextBox", G2L["ee"]);
+G2L["113"]["CursorPosition"] = -1;
 G2L["113"]["BorderSizePixel"] = 2;
 G2L["113"]["TextSize"] = 14;
 G2L["113"]["TextWrapped"] = true;
@@ -12489,51 +12490,49 @@ local function C_114()
 	local script = G2L["114"];
 	script.Parent.FocusLost:Connect(function()
 		local Characters = {
-			["A"] = "rbxassetid://1460466186",
-			["B"] = "rbxassetid://1460466463",
-			["C"] = "rbxassetid://1460467117",
-			["D"] = "rbxassetid://1460467565",
-			["E"] = "rbxassetid://1460467948",
-			["F"] = "rbxassetid://110554935822460",
-			["G"] = "rbxassetid://1460468793",
-			["H"] = "rbxassetid://1460469885",
-			["I"] = "rbxassetid://1460470203",
-			["J"] = "rbxassetid://1460470864",
-			["K"] = "rbxassetid://1460471190",
-			["L"] = "rbxassetid://1460471552",
-			["M"] = "rbxassetid://1460472436",
-			["N"] = "rbxassetid://1460473132",
-			["O"] = "rbxassetid://6404504624",
-			["P"] = "rbxassetid://1460474960",
-			["Q"] = "rbxassetid://1460475387",
-			["R"] = "rbxassetid://1460476613",
-			["S"] = "rbxassetid://1460476986",
-			["T"] = "rbxassetid://2960851584",
-			["U"] = "rbxassetid://1463126252",
-			["V"] = "rbxassetid://1460478937",
-			["W"] = "rbxassetid://1460479970",
-			["X"] = "rbxassetid://1460480710",
-			["Y"] = "rbxassetid://1460481542",
-			["Z"] = "rbxassetid://1460482043",
+			["A"] = "rbxassetid://242125304",
+			["B"] = "rbxassetid://6345698994",
+			["C"] = "rbxassetid://3638974987",
+			["D"] = "rbxassetid://6704479141",
+			["E"] = "rbxassetid://79733506586967",
+			["F"] = "rbxassetid://7886453781",
+			["G"] = "rbxassetid://6704556362",
+			["H"] = "rbxassetid://5517713887",
+			["I"] = "rbxassetid://5178912616",
+			["J"] = "rbxassetid://5517719135",
+			["K"] = "rbxassetid://267447917",
+			["L"] = "rbxassetid://1541055028",
+			["M"] = "rbxassetid://5517725202",
+			["N"] = "rbxassetid://5517726006",
+			["O"] = "rbxassetid://5178925173",
+			["P"] = "rbxassetid://5882221699",
+			["Q"] = "rbxassetid://5178930505",
+			["R"] = "rbxassetid://188034825",
+			["S"] = "rbxassetid://188034862",
+			["T"] = "rbxassetid://5178937690",
+			["U"] = "rbxassetid://14346917099",
+			["V"] = "rbxassetid://6704635340",
+			["W"] = "rbxassetid://1542552704",
+			["X"] = "rbxassetid://3169377143",
+			["Y"] = "rbxassetid://7572591979",
+			["Z"] = "rbxassetid://5178949956",
 
-			["0"] = "rbxassetid://242240859",
-			["1"] = "rbxassetid://21369543",
-			["2"] = "rbxassetid://242239336",
-			["3"] = "rbxassetid://242239980",
-			["4"] = "rbxassetid://242239527",
-			["5"] = "rbxassetid://242239636",
-			["6"] = "rbxassetid://242240155",
-			["7"] = "rbxassetid://242239706",
-			["8"] = "rbxassetid://242240263",
-			["9"] = "rbxassetid://242240457",
+			["0"] = "rbxassetid://12361439570",
+			["1"] = "rbxassetid://6243731930",
+			["2"] = "rbxassetid://5852536888",
+			["3"] = "rbxassetid://6402016572",
+			["4"] = "rbxassetid://11490688567",
+			["5"] = "rbxassetid://5956393176",
+			["6"] = "rbxassetid://14243264173",
+			["7"] = "rbxassetid://14599652533",
+			["8"] = "rbxassetid://12133359989",
+			["9"] = "rbxassetid://5400707679",
 
-			["!"] = "rbxassetid://6431340089",
-			["?"] = "rbxassetid://5188748376",
+			["!"] = "rbxassetid://100335170323403",
+			["?"] = "rbxassetid://4370190040",
 		}
 
-		local Event = workspace.Main.ChangeFace
-		local Face = game:GetService("Players").LocalPlayer.Character.Head.face
-		local oldface = (Face::Decal).Texture
+
 
 		local function TypeText(text, delayTime)
 			text = text:upper()
@@ -12547,7 +12546,13 @@ local function C_114()
 					local asset = Characters[char]
 
 					if asset then
-						Event:FireServer(Face, asset)
+						local Event = game:GetService("ReplicatedStorage").PlayerChannel
+						local onlyidofasset = tonumber(asset:match("rbxassetid://(%d+)"))
+						Event:FireServer(
+							"LoadAvatarAsset",
+							onlyidofasset,
+							"Shirt"
+						)
 					end
 
 					task.wait(delayTime)
@@ -12555,9 +12560,14 @@ local function C_114()
 			end
 		end
 
-		TypeText(script.Parent.Text)
+		local textBoxtext = script.Parent.Text
+		TypeText(textBoxtext)
 		wait(1)
-		Event:FireServer(Face, oldface)
+		local Event = game:GetService("ReplicatedStorage").PlayerChannel
+		Event:FireServer(
+			"ResetAvatarAppearance",
+			true
+		)
 	end)
 end;
 task.spawn(C_114);
@@ -13792,8 +13802,6 @@ local function C_11c()
 		end
 		-- Fire the remote exactly like the original script
 		workspace.GameService.SpawnExtinguisherPart:FireServer(nil, nil, nil, position)
-
-		part.Parent = workspace
 	end
 
 	local Crashing = false
