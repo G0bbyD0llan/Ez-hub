@@ -1934,7 +1934,7 @@ G2L["c6"]["TextSize"] = 18;
 G2L["c6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["c6"]["Size"] = UDim2.new(1, 0, 1, -50);
 G2L["c6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["c6"]["Text"] = [[This GUI lets you hack and troll in Work at a Pizza Place with powerful tools like flinging players, bombing houses with cars, raining vehicles, ruining the server, earraping everyone, auto-farming (cook/delivery/cashier), vehicle fly & noclip, manager access, house flooding, multicolor effects, admin commands, and much more. By G0bbyD0llan57]];
+G2L["c6"]["Text"] = [[This GUI lets you hack and troll in Work at a Pizza Place with powerful tools like flinging players, bombing houses with cars, raining vehicles, ruining the server, earraping everyone, auto-farming (cook/delivery/cashier), vehicle fly & noclip, manager access, house flooding, multicolor effects, "almost admin commands", and much more. By G0bbyD0llan57]];
 G2L["c6"]["Name"] = [[Description]];
 G2L["c6"]["Position"] = UDim2.new(0, 0, 0, 52);
 
@@ -3275,7 +3275,7 @@ G2L["146"]["Position"] = UDim2.new(0, 0, -0.0017140415729954839, 0);
 G2L["147"] = Instance.new("Frame", G2L["142"]);
 G2L["147"]["BorderSizePixel"] = 0;
 G2L["147"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["147"]["Size"] = UDim2.new(0, 574, 0, 100);
+G2L["147"]["Size"] = UDim2.new(0, 574, 0, 75);
 G2L["147"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["147"]["Position"] = UDim2.new(0.021666666492819786, 0, 0.07999999821186066, 0);
 G2L["147"]["Name"] = [[buttons]];
@@ -3377,6 +3377,7 @@ G2L["14f"]["Active"] = true;
 G2L["14f"]["ZIndex"] = 3;
 G2L["14f"]["BorderSizePixel"] = 2;
 G2L["14f"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
+G2L["14f"]["CanvasPosition"] = Vector2.new(0, 600);
 G2L["14f"]["TopImage"] = [[]];
 G2L["14f"]["BackgroundColor3"] = Color3.fromRGB(112, 112, 112);
 G2L["14f"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY;
@@ -4205,6 +4206,7 @@ G2L["1a0"]["Name"] = [[sillymessage]];
 
 -- StarterGui.WAAPP_Gui.WindowFrame.ContentArea.misc4.entireconfiguration.sillymessage.TextBox
 G2L["1a1"] = Instance.new("TextBox", G2L["1a0"]);
+G2L["1a1"]["CursorPosition"] = -1;
 G2L["1a1"]["BorderSizePixel"] = 0;
 G2L["1a1"]["TextEditable"] = false;
 G2L["1a1"]["TextSize"] = 14;
@@ -10166,6 +10168,7 @@ local function C_cf()
 
 		if everyClipboard then
 			everyClipboard("http://www.roblox.com/User.aspx?ID=4595531433")
+			script.Parent.Text = "COPIED! THANKS :D"
 		else
 			script.Parent.Text = [[SADLY FAILED TO COPY... You Can Search Me On Roblox As "G0bbyD0llan1"]]
 		end
@@ -16496,6 +16499,7 @@ local function C_1a6()
 			end
 		end
 	end
+
 	assert(network,"failed to find network")
 
 
@@ -16751,9 +16755,11 @@ local function C_1a6()
 	end)
 
 	local ovenCooldowns = {}
-
+	local _i = 0
 	while gui ~= nil do
 		task.wait(CONFIGURATION_FOR_AUTOFARM_ESFI["mtw"]) -- prevent while true do end loop
+		print("executing at #" .. _i .. " loop cycle.")
+		_i+=1
 		local hum = character:FindFirstChild("Humanoid")
 		if hum and hum.Sit then hum.Jump = true end
 		if doCashier then
