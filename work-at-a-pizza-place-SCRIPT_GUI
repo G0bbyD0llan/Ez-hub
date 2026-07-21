@@ -1961,7 +1961,6 @@ G2L["b9"]["Position"] = UDim2.new(0.71826, 0, 0.42806, 0);
 
 -- StarterGui.WAAPP_Gui.WindowFrame.ContentArea.Frame
 G2L["ba"] = Instance.new("Frame", G2L["19"]);
-G2L["ba"]["Visible"] = false;
 G2L["ba"]["BorderSizePixel"] = 0;
 G2L["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["ba"]["Size"] = UDim2.new(0, 600, 0, 350);
@@ -3537,6 +3536,7 @@ G2L["141"]["Name"] = [[Template_Button]];
 
 -- StarterGui.WAAPP_Gui.WindowFrame.ContentArea.misc4
 G2L["142"] = Instance.new("Frame", G2L["19"]);
+G2L["142"]["Visible"] = false;
 G2L["142"]["BorderSizePixel"] = 0;
 G2L["142"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["142"]["Size"] = UDim2.new(0, 600, 0, 350);
@@ -3722,6 +3722,7 @@ G2L["14f"]["Active"] = true;
 G2L["14f"]["ZIndex"] = 3;
 G2L["14f"]["BorderSizePixel"] = 2;
 G2L["14f"]["CanvasSize"] = UDim2.new(0, 0, 3, 0);
+G2L["14f"]["CanvasPosition"] = Vector2.new(0, 300);
 -- G2L["14f"]["TopImageContent"] = ;
 G2L["14f"]["TopImage"] = [[]];
 G2L["14f"]["Name"] = [[entireconfiguration]];
@@ -16586,6 +16587,7 @@ local script = G2L["1a6"];
 	}
 	
 	local tempconnections = {}
+	local antiafkconnection = nil
 	
 	local special_ones_B3c = {
 		ecu = {
@@ -16694,10 +16696,10 @@ local script = G2L["1a6"];
 		},
 		d3r = {
 			on = function()
-				game:GetService("RunService"):Set3dRenderingEnabled(true)
+				game:GetService("RunService"):Set3dRenderingEnabled(false)
 			end,
 			off = function()
-				game:GetService("RunService"):Set3dRenderingEnabled(false)
+				game:GetService("RunService"):Set3dRenderingEnabled(true)
 			end,
 		},
 		ili = {
@@ -16733,6 +16735,20 @@ local script = G2L["1a6"];
 				end
 				for _, v in ipairs(tempconnections) do
 					v:Disconnect()
+				end
+			end,
+		},
+		aat = {
+			on = function()
+				antiafkconnection = game:GetService("Players").LocalPlayer.Idled:Connect(function()
+					game:GetService("VirtualUser"):CaptureController()
+					game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+				end)
+			end,
+			off = function()
+				if antiafkconnection then
+					antiafkconnection:Disconnect()
+					antiafkconnection = nil
 				end
 			end,
 		}
