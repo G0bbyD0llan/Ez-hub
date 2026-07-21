@@ -3840,7 +3840,7 @@ G2L["17d"]["TextScaled"] = true;
 G2L["17d"]["BackgroundColor3"] = Color3.fromRGB(96, 96, 96);
 G2L["17d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["17d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17d"]["PlaceholderText"] = "(E.G. 5, 10, 15?), DEFAULT: 75, MAX = 100, MIN = <[SET2]";
+G2L["17d"]["PlaceholderText"] = [[(E.G. 5, 10, 15?), DEFAULT: 75, MAX = 100, MIN = 0]];
 G2L["17d"]["Size"] = UDim2.new(0, 184, 0, 33);
 G2L["17d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["17d"]["Text"] = [[]];
@@ -15982,7 +15982,7 @@ local function C_1a6()
 		button.Activated:Connect(function()
 			variable = not variable
 			if variable then
-				if workspace:FindFirstChild("Main") and workspace.Main:FindFirstChild("RealignCamera") and game.Main.RealignCamera:FindFirstChild("RealignCamera") and alreadydone == false then 
+				if workspace:FindFirstChild("Main") and workspace.Main:FindFirstChild("RealignCamera") and game.Workspace.Main.RealignCamera:FindFirstChild("RealignCamera") and alreadydone == false then 
 					workspace.Main.RealignCamera.RealignCamera:Destroy() 
 					Instance.new("BindableEvent", workspace.Main.RealignCamera).Name = "RealignCamera"; -- CREATE EVENT.
 					alreadydone=true
