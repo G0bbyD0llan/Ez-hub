@@ -17358,6 +17358,13 @@ local function C_1a6()
 			end
 			task.wait(0.1) -- Respiro para el bucle general de comandos
 		end
+
+		print("loop ended. printing variables...")
+		print(tostring(doCook))
+		print(tostring(doBoxer))
+		print(tostring(doDelivery))
+		print(tostring(doSupplier))
+		print(tostring(doCashier))
 	end
 
 
