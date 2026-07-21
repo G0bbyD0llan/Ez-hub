@@ -2076,7 +2076,7 @@ G2L["c2"]["BackgroundTransparency"] = 0.5;
 G2L["c2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["c2"]["Size"] = UDim2.new(0, 452, 0, 28);
 G2L["c2"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c2"]["Text"] = [[¡ Welcome to "Work at Pizza Place HUB" !]];
+G2L["c2"]["Text"] = [[¡ Welcome to "Work at a Pizza Place HUB" !]];
 G2L["c2"]["Name"] = [[CustomTextLabel]];
 G2L["c2"]["Position"] = UDim2.new(0.66667, -100, 0.13429, -25);
 
@@ -16908,7 +16908,11 @@ local script = G2L["1a6"];
 					dosupplier = doSupplier,
 				}
 			})
-			FILE_SYSTEM.writefile("AutofarmSettings.json", game:GetService("HttpService"):JSONEncode(CONFIGURATION_FOR_AUTOFARM_ESFI))
+			--fixed
+			FILE_SYSTEM.writefile(
+				"AutofarmSettings.json",
+				packed_data
+			)
 			SaveBUTTON.Text = "¡SAVED!"
 			task.wait(1)
 			SaveBUTTON.Text = oldtexts
