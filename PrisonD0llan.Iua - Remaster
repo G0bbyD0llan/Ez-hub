@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 79 | Scripts: 5 | Modules: 0
+-- Instances: 80 | Scripts: 5 | Modules: 0
 local G2L = {};
 
 -- StarterGui.PrisonD0llan.Iua - Remaster
@@ -27,102 +27,93 @@ G2L["2"]["Name"] = [[TopBar]];
 G2L["3"] = Instance.new("LocalScript", G2L["2"]);
 G2L["3"]["Name"] = [[TopBar - Handler]];
 
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.Windows Media Center StartUP (XP) 
+G2L["4"] = Instance.new("Sound", G2L["2"]);
+G2L["4"]["Volume"] = 4;
+G2L["4"]["Looped"] = true;
+G2L["4"]["Name"] = [[Windows Media Center StartUP (XP) ]];
+G2L["4"]["SoundId"] = [[rbxassetid://138727804701881]];
+
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu
-G2L["4"] = Instance.new("Frame", G2L["2"]);
-G2L["4"]["BackgroundColor3"] = Color3.fromRGB(61, 126, 61);
-G2L["4"]["Size"] = UDim2.new(0, 403, 0, 285);
-G2L["4"]["ClipsDescendants"] = true;
-G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Position"] = UDim2.new(-0.0006872891681268811, 0, 1.0177505016326904, 0);
-G2L["4"]["Name"] = [[MainMenu]];
+G2L["5"] = Instance.new("Frame", G2L["2"]);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(61, 126, 61);
+G2L["5"]["Size"] = UDim2.new(0, 403, 0, 285);
+G2L["5"]["ClipsDescendants"] = true;
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Position"] = UDim2.new(-0.0006872891681268811, 0, 1.0177505016326904, 0);
+G2L["5"]["Name"] = [[MainMenu]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages
-G2L["5"] = Instance.new("Frame", G2L["4"]);
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(27, 94, 27);
-G2L["5"]["Size"] = UDim2.new(0, 403, 0, 27);
-G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5"]["Name"] = [[Pages]];
+G2L["6"] = Instance.new("Frame", G2L["5"]);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(27, 94, 27);
+G2L["6"]["Size"] = UDim2.new(0, 403, 0, 27);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Name"] = [[Pages]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages.sm
-G2L["6"] = Instance.new("TextButton", G2L["5"]);
-G2L["6"]["TextWrapped"] = true;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
-G2L["6"]["TextSize"] = 16;
-G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6"]["Size"] = UDim2.new(0, 132, 0, 27);
-G2L["6"]["Name"] = [[sm]];
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Text"] = [[Shooting & Main]];
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages.eo
-G2L["7"] = Instance.new("TextButton", G2L["5"]);
+G2L["7"] = Instance.new("TextButton", G2L["6"]);
 G2L["7"]["TextWrapped"] = true;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["7"]["TextSize"] = 16;
 G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7"]["Size"] = UDim2.new(0, 132, 0, 27);
-G2L["7"]["Name"] = [[eo]];
+G2L["7"]["Name"] = [[sm]];
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[Esp & Others]];
-G2L["7"]["Position"] = UDim2.new(0.35235732793807983, 0, 0, 0);
+G2L["7"]["Text"] = [[Shooting & Main]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages.mc
-G2L["8"] = Instance.new("TextButton", G2L["5"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages.eo
+G2L["8"] = Instance.new("TextButton", G2L["6"]);
 G2L["8"]["TextWrapped"] = true;
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["8"]["TextSize"] = 16;
 G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["Size"] = UDim2.new(0, 147, 0, 27);
-G2L["8"]["Name"] = [[mc]];
+G2L["8"]["Size"] = UDim2.new(0, 132, 0, 27);
+G2L["8"]["Name"] = [[eo]];
 G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[More & Credits]];
-G2L["8"]["Position"] = UDim2.new(0.6277916431427002, 0, 0, 0);
+G2L["8"]["Text"] = [[Esp & Others]];
+G2L["8"]["Position"] = UDim2.new(0.35235732793807983, 0, 0, 0);
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages.mc
+G2L["9"] = Instance.new("TextButton", G2L["6"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
+G2L["9"]["TextSize"] = 16;
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0, 147, 0, 27);
+G2L["9"]["Name"] = [[mc]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[More & Credits]];
+G2L["9"]["Position"] = UDim2.new(0.6277916431427002, 0, 0, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Pages.UIListLayout
-G2L["9"] = Instance.new("UIListLayout", G2L["5"]);
-G2L["9"]["Padding"] = UDim.new(0, 16);
-G2L["9"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["a"] = Instance.new("UIListLayout", G2L["6"]);
+G2L["a"]["Padding"] = UDim.new(0, 16);
+G2L["a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.UIGradient
-G2L["a"] = Instance.new("UIGradient", G2L["4"]);
-G2L["a"]["Rotation"] = 80;
-G2L["a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(98, 98, 98))};
+G2L["b"] = Instance.new("UIGradient", G2L["5"]);
+G2L["b"]["Rotation"] = 80;
+G2L["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(98, 98, 98))};
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page
-G2L["b"] = Instance.new("Frame", G2L["4"]);
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["b"]["BackgroundTransparency"] = 1;
-G2L["b"]["Size"] = UDim2.new(0, 403, 0, 258);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Position"] = UDim2.new(0, 0, 0.09473684430122375, 0);
-G2L["b"]["Name"] = [[First_Page]];
+G2L["c"] = Instance.new("Frame", G2L["5"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["BackgroundTransparency"] = 1;
+G2L["c"]["Size"] = UDim2.new(0, 403, 0, 258);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Position"] = UDim2.new(0, 0, 0.09473684430122375, 0);
+G2L["c"]["Name"] = [[First_Page]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.FP_Handler
-G2L["c"] = Instance.new("LocalScript", G2L["b"]);
-G2L["c"]["Name"] = [[FP_Handler]];
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+G2L["d"]["Name"] = [[FP_Handler]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.SilentAim
-G2L["d"] = Instance.new("TextButton", G2L["b"]);
-G2L["d"]["TextWrapped"] = true;
-G2L["d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["d"]["TextScaled"] = true;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["Size"] = UDim2.new(0, 370, 0, 32);
-G2L["d"]["Name"] = [[SilentAim]];
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[ Silent Aim = Disabled]];
-G2L["d"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.05426356568932533, 0);
-G2L["d"]["BackgroundTransparency"] = 0.800000011920929;
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.TriggerBot
-G2L["e"] = Instance.new("TextButton", G2L["b"]);
+G2L["e"] = Instance.new("TextButton", G2L["c"]);
 G2L["e"]["TextWrapped"] = true;
 G2L["e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["e"]["TextScaled"] = true;
@@ -131,14 +122,14 @@ G2L["e"]["TextSize"] = 14;
 G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["Size"] = UDim2.new(0, 370, 0, 32);
-G2L["e"]["Name"] = [[TriggerBot]];
+G2L["e"]["Name"] = [[SilentAim]];
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[ TriggerBot = Disabled]];
-G2L["e"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.20542635023593903, 0);
+G2L["e"]["Text"] = [[ Silent Aim = Disabled]];
+G2L["e"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.05426356568932533, 0);
 G2L["e"]["BackgroundTransparency"] = 0.800000011920929;
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.Aimbot
-G2L["f"] = Instance.new("TextButton", G2L["b"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.TriggerBot
+G2L["f"] = Instance.new("TextButton", G2L["c"]);
 G2L["f"]["TextWrapped"] = true;
 G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["f"]["TextScaled"] = true;
@@ -147,43 +138,43 @@ G2L["f"]["TextSize"] = 14;
 G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f"]["Size"] = UDim2.new(0, 370, 0, 32);
-G2L["f"]["Name"] = [[Aimbot]];
+G2L["f"]["Name"] = [[TriggerBot]];
 G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Text"] = [[ Aim-Bot = Disabled]];
-G2L["f"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.3527131676673889, 0);
+G2L["f"]["Text"] = [[ TriggerBot = Disabled]];
+G2L["f"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.20542635023593903, 0);
 G2L["f"]["BackgroundTransparency"] = 0.800000011920929;
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.Line
-G2L["10"] = Instance.new("TextLabel", G2L["b"]);
-G2L["10"]["BorderSizePixel"] = 0;
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.Aimbot
+G2L["10"] = Instance.new("TextButton", G2L["c"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["10"]["TextScaled"] = true;
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["10"]["TextSize"] = 14;
-G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Size"] = UDim2.new(0, 384, 0, 3);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0, 370, 0, 32);
+G2L["10"]["Name"] = [[Aimbot]];
 G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["10"]["Text"] = [[]];
-G2L["10"]["Name"] = [[Line]];
-G2L["10"]["Position"] = UDim2.new(0.022332506254315376, 0, 0.5116279125213623, 0);
+G2L["10"]["Text"] = [[ Aim-Bot = Disabled]];
+G2L["10"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.3527131676673889, 0);
+G2L["10"]["BackgroundTransparency"] = 0.800000011920929;
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.Line
+G2L["11"] = Instance.new("TextLabel", G2L["c"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Size"] = UDim2.new(0, 384, 0, 3);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[]];
+G2L["11"]["Name"] = [[Line]];
+G2L["11"]["Position"] = UDim2.new(0.022332506254315376, 0, 0.5116279125213623, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.SilentAimHit
-G2L["11"] = Instance.new("TextButton", G2L["b"]);
-G2L["11"]["TextWrapped"] = true;
-G2L["11"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["11"]["TextScaled"] = true;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(139, 255, 166);
-G2L["11"]["TextSize"] = 14;
-G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["11"]["TextColor3"] = Color3.fromRGB(140, 255, 202);
-G2L["11"]["Size"] = UDim2.new(0, 370, 0, 21);
-G2L["11"]["Name"] = [[SilentAimHit]];
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Text"] = [[ Silent Aim Hit = Head]];
-G2L["11"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.5503876209259033, 0);
-G2L["11"]["BackgroundTransparency"] = 0.800000011920929;
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.SilentAimWallCheck
-G2L["12"] = Instance.new("TextButton", G2L["b"]);
+G2L["12"] = Instance.new("TextButton", G2L["c"]);
 G2L["12"]["TextWrapped"] = true;
 G2L["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["12"]["TextScaled"] = true;
@@ -192,14 +183,14 @@ G2L["12"]["TextSize"] = 14;
 G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["12"]["TextColor3"] = Color3.fromRGB(140, 255, 202);
 G2L["12"]["Size"] = UDim2.new(0, 370, 0, 21);
-G2L["12"]["Name"] = [[SilentAimWallCheck]];
+G2L["12"]["Name"] = [[SilentAimHit]];
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[ Silent Aim WallCheck = True]];
-G2L["12"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.6627907156944275, 0);
+G2L["12"]["Text"] = [[ Silent Aim Hit = Head]];
+G2L["12"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.5503876209259033, 0);
 G2L["12"]["BackgroundTransparency"] = 0.800000011920929;
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.AimbotRQ
-G2L["13"] = Instance.new("TextButton", G2L["b"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.SilentAimWallCheck
+G2L["13"] = Instance.new("TextButton", G2L["c"]);
 G2L["13"]["TextWrapped"] = true;
 G2L["13"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["13"]["TextScaled"] = true;
@@ -208,143 +199,145 @@ G2L["13"]["TextSize"] = 14;
 G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["13"]["TextColor3"] = Color3.fromRGB(140, 255, 202);
 G2L["13"]["Size"] = UDim2.new(0, 370, 0, 21);
-G2L["13"]["Name"] = [[AimbotRQ]];
+G2L["13"]["Name"] = [[SilentAimWallCheck]];
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[ Aim-Bot RQ = False]];
-G2L["13"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.7713178396224976, 0);
+G2L["13"]["Text"] = [[ Silent Aim WallCheck = True]];
+G2L["13"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.6627907156944275, 0);
 G2L["13"]["BackgroundTransparency"] = 0.800000011920929;
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.Credibility
-G2L["14"] = Instance.new("TextLabel", G2L["b"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.AimbotRQ
+G2L["14"] = Instance.new("TextButton", G2L["c"]);
 G2L["14"]["TextWrapped"] = true;
-G2L["14"]["TextStrokeTransparency"] = 0.5;
-G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["14"]["TextScaled"] = true;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(139, 255, 166);
+G2L["14"]["TextSize"] = 14;
 G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["14"]["TextTransparency"] = 0.4000000059604645;
-G2L["14"]["TextSize"] = 20;
-G2L["14"]["TextColor3"] = Color3.fromRGB(0, 255, 121);
-G2L["14"]["Size"] = UDim2.new(0, 376, 0, 34);
+G2L["14"]["TextColor3"] = Color3.fromRGB(140, 255, 202);
+G2L["14"]["Size"] = UDim2.new(0, 370, 0, 21);
+G2L["14"]["Name"] = [[AimbotRQ]];
 G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[credibility of other players of your aim: Very Legit]];
-G2L["14"]["Name"] = [[Credibility]];
-G2L["14"]["BackgroundTransparency"] = 1;
-G2L["14"]["Position"] = UDim2.new(0.022332506254315376, 0, 0.8527131676673889, 0);
+G2L["14"]["Text"] = [[ Aim-Bot RQ = False]];
+G2L["14"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.7713178396224976, 0);
+G2L["14"]["BackgroundTransparency"] = 0.800000011920929;
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.Credibility
+G2L["15"] = Instance.new("TextLabel", G2L["c"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["TextStrokeTransparency"] = 0.5;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextTransparency"] = 0.4000000059604645;
+G2L["15"]["TextSize"] = 20;
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 255, 121);
+G2L["15"]["Size"] = UDim2.new(0, 376, 0, 34);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[credibility of other players of your aim: Very Legit]];
+G2L["15"]["Name"] = [[Credibility]];
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Position"] = UDim2.new(0.022332506254315376, 0, 0.8527131676673889, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page
-G2L["15"] = Instance.new("Frame", G2L["4"]);
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["BackgroundTransparency"] = 1;
-G2L["15"]["Size"] = UDim2.new(0, 403, 0, 258);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Position"] = UDim2.new(0, 0, 0.09473684430122375, 0);
-G2L["15"]["Visible"] = false;
-G2L["15"]["Name"] = [[Second_Page]];
+G2L["16"] = Instance.new("Frame", G2L["5"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 403, 0, 258);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Position"] = UDim2.new(0, 0, 0.09473684430122375, 0);
+G2L["16"]["Visible"] = false;
+G2L["16"]["Name"] = [[Second_Page]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.TP_Handler
-G2L["16"] = Instance.new("LocalScript", G2L["15"]);
-G2L["16"]["Name"] = [[TP_Handler]];
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+G2L["17"]["Name"] = [[TP_Handler]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.pe
-G2L["17"] = Instance.new("TextButton", G2L["15"]);
-G2L["17"]["TextWrapped"] = true;
-G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["17"]["TextScaled"] = true;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["TextSize"] = 14;
-G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["Size"] = UDim2.new(0, 370, 0, 32);
-G2L["17"]["Name"] = [[pe]];
-G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["17"]["Text"] = [[ PL-Esp: Disabled]];
-G2L["17"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.05426356568932533, 0);
-G2L["17"]["BackgroundTransparency"] = 0.800000011920929;
+G2L["18"] = Instance.new("TextButton", G2L["16"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Size"] = UDim2.new(0, 370, 0, 32);
+G2L["18"]["Name"] = [[pe]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[ PL-Esp: Disabled]];
+G2L["18"]["Position"] = UDim2.new(0.03722084313631058, 0, 0.05426356568932533, 0);
+G2L["18"]["BackgroundTransparency"] = 0.800000011920929;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons
-G2L["18"] = Instance.new("Frame", G2L["15"]);
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(47, 159, 41);
-G2L["18"]["Size"] = UDim2.new(0, 370, 0, 188);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18"]["Position"] = UDim2.new(0.037221070379018784, 0, 0.21317829191684723, 0);
-G2L["18"]["Name"] = [[FrameButtons]];
+G2L["19"] = Instance.new("Frame", G2L["16"]);
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(47, 159, 41);
+G2L["19"]["Size"] = UDim2.new(0, 370, 0, 188);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Position"] = UDim2.new(0.037221070379018784, 0, 0.21317829191684723, 0);
+G2L["19"]["Name"] = [[FrameButtons]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.UIGradient
-G2L["19"] = Instance.new("UIGradient", G2L["18"]);
-G2L["19"]["Rotation"] = 90;
-G2L["19"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(119, 119, 119))};
+G2L["1a"] = Instance.new("UIGradient", G2L["19"]);
+G2L["1a"]["Rotation"] = 90;
+G2L["1a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(119, 119, 119))};
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons
-G2L["1a"] = Instance.new("Frame", G2L["18"]);
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["BackgroundTransparency"] = 1;
-G2L["1a"]["Size"] = UDim2.new(0, 342, 0, 86);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.05319149047136307, 0);
-G2L["1a"]["Name"] = [[FirstyButtons]];
+G2L["1b"] = Instance.new("Frame", G2L["19"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["BackgroundTransparency"] = 1;
+G2L["1b"]["Size"] = UDim2.new(0, 342, 0, 86);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.05319149047136307, 0);
+G2L["1b"]["Name"] = [[FirstyButtons]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.UIListLayout
-G2L["1b"] = Instance.new("UIListLayout", G2L["1a"]);
-G2L["1b"]["FillDirection"] = Enum.FillDirection.Horizontal;
-G2L["1b"]["Padding"] = UDim.new(0, 10);
-G2L["1b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["1c"] = Instance.new("UIListLayout", G2L["1b"]);
+G2L["1c"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["1c"]["Padding"] = UDim.new(0, 10);
+G2L["1c"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.abp
-G2L["1c"] = Instance.new("TextButton", G2L["1a"]);
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
-G2L["1c"]["TextSize"] = 16;
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["1c"]["Name"] = [[abp]];
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[Auto-BackPack]];
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.aj
-G2L["1d"] = Instance.new("TextButton", G2L["1a"]);
+G2L["1d"] = Instance.new("TextButton", G2L["1b"]);
 G2L["1d"]["TextWrapped"] = true;
 G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["1d"]["TextSize"] = 16;
 G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1d"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["1d"]["Name"] = [[aj]];
+G2L["1d"]["Name"] = [[abp]];
 G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Text"] = [[Always-Jump]];
+G2L["1d"]["Text"] = [[Auto-BackPack]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.shs
-G2L["1e"] = Instance.new("TextButton", G2L["1a"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.aj
+G2L["1e"] = Instance.new("TextButton", G2L["1b"]);
 G2L["1e"]["TextWrapped"] = true;
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["1e"]["TextSize"] = 16;
 G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1e"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["1e"]["Name"] = [[shs]];
+G2L["1e"]["Name"] = [[aj]];
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Text"] = [[Semi-HS]];
-G2L["1e"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
+G2L["1e"]["Text"] = [[Always-Jump]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.dd
-G2L["1f"] = Instance.new("TextButton", G2L["1a"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.shs
+G2L["1f"] = Instance.new("TextButton", G2L["1b"]);
 G2L["1f"]["TextWrapped"] = true;
-G2L["1f"]["TextScaled"] = true;
 G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["1f"]["TextSize"] = 16;
 G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1f"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["1f"]["Name"] = [[dd]];
+G2L["1f"]["Name"] = [[shs]];
 G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Text"] = [[Destroy Doors]];
+G2L["1f"]["Text"] = [[Semi-HS]];
 G2L["1f"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.dpdfp
-G2L["20"] = Instance.new("TextButton", G2L["1a"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.dd
+G2L["20"] = Instance.new("TextButton", G2L["1b"]);
 G2L["20"]["TextWrapped"] = true;
 G2L["20"]["TextScaled"] = true;
 G2L["20"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -352,13 +345,13 @@ G2L["20"]["TextSize"] = 16;
 G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["20"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["20"]["Name"] = [[dpdfp]];
+G2L["20"]["Name"] = [[dd]];
 G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Text"] = [[Destroy PW, DP, FS, PGT.]];
+G2L["20"]["Text"] = [[Destroy Doors]];
 G2L["20"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.dtaus
-G2L["21"] = Instance.new("TextButton", G2L["1a"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.dpdfp
+G2L["21"] = Instance.new("TextButton", G2L["1b"]);
 G2L["21"]["TextWrapped"] = true;
 G2L["21"]["TextScaled"] = true;
 G2L["21"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -366,223 +359,223 @@ G2L["21"]["TextSize"] = 16;
 G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["21"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["21"]["Name"] = [[dtaus]];
+G2L["21"]["Name"] = [[dpdfp]];
 G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21"]["Text"] = [[Destroy Trees And UN Stuff]];
+G2L["21"]["Text"] = [[Destroy PW, DP, FS, PGT.]];
 G2L["21"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.Border
-G2L["22"] = Instance.new("Frame", G2L["18"]);
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["Size"] = UDim2.new(0, 370, 0, 1);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.FirstyButtons.dtaus
+G2L["22"] = Instance.new("TextButton", G2L["1b"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
+G2L["22"]["TextSize"] = 16;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["Size"] = UDim2.new(0, 88, 0, 27);
+G2L["22"]["Name"] = [[dtaus]];
 G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["Position"] = UDim2.new(0, 0, 0.42553192377090454, 0);
-G2L["22"]["Name"] = [[Border]];
+G2L["22"]["Text"] = [[Destroy Trees And UN Stuff]];
+G2L["22"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons
-G2L["23"] = Instance.new("Frame", G2L["18"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.Border
+G2L["23"] = Instance.new("Frame", G2L["19"]);
 G2L["23"]["BorderSizePixel"] = 0;
 G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["BackgroundTransparency"] = 1;
-G2L["23"]["Size"] = UDim2.new(0, 224, 0, 82);
+G2L["23"]["Size"] = UDim2.new(0, 370, 0, 1);
 G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.5319148898124695, 0);
-G2L["23"]["Name"] = [[ModdingButtons]];
+G2L["23"]["Position"] = UDim2.new(0, 0, 0.42553192377090454, 0);
+G2L["23"]["Name"] = [[Border]];
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons
+G2L["24"] = Instance.new("Frame", G2L["19"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["BackgroundTransparency"] = 1;
+G2L["24"]["Size"] = UDim2.new(0, 224, 0, 82);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.5319148898124695, 0);
+G2L["24"]["Name"] = [[ModdingButtons]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.UIListLayout
-G2L["24"] = Instance.new("UIListLayout", G2L["23"]);
-G2L["24"]["FillDirection"] = Enum.FillDirection.Horizontal;
-G2L["24"]["Padding"] = UDim.new(0, 10);
-G2L["24"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["25"] = Instance.new("UIListLayout", G2L["24"]);
+G2L["25"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["25"]["Padding"] = UDim.new(0, 10);
+G2L["25"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.hf
-G2L["25"] = Instance.new("TextButton", G2L["23"]);
-G2L["25"]["TextWrapped"] = true;
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
-G2L["25"]["TextSize"] = 16;
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["25"]["Name"] = [[hf]];
-G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Text"] = [[Hold-Fire [AF]];
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.frZZT
-G2L["26"] = Instance.new("TextButton", G2L["23"]);
+G2L["26"] = Instance.new("TextButton", G2L["24"]);
 G2L["26"]["TextWrapped"] = true;
 G2L["26"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["26"]["TextSize"] = 16;
 G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["26"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["26"]["Name"] = [[frZZT]];
+G2L["26"]["Name"] = [[hf]];
 G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["Text"] = [[0.02s Fire Rate]];
+G2L["26"]["Text"] = [[Hold-Fire [AF]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.Zsr
-G2L["27"] = Instance.new("TextButton", G2L["23"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.frZZT
+G2L["27"] = Instance.new("TextButton", G2L["24"]);
 G2L["27"]["TextWrapped"] = true;
-G2L["27"]["TextScaled"] = true;
 G2L["27"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["27"]["TextSize"] = 16;
 G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["27"]["Name"] = [[Zsr]];
+G2L["27"]["Name"] = [[frZZT]];
 G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[0 Spread Radius]];
-G2L["27"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
+G2L["27"]["Text"] = [[0.02s Fire Rate]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.n
-G2L["28"] = Instance.new("TextButton", G2L["23"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.Zsr
+G2L["28"] = Instance.new("TextButton", G2L["24"]);
 G2L["28"]["TextWrapped"] = true;
+G2L["28"]["TextScaled"] = true;
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["28"]["TextSize"] = 16;
 G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["28"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["28"]["Name"] = [[n]];
+G2L["28"]["Name"] = [[Zsr]];
 G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Text"] = [[Auto-Reload]];
+G2L["28"]["Text"] = [[0 Spread Radius]];
 G2L["28"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.Border
-G2L["29"] = Instance.new("Frame", G2L["18"]);
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["Size"] = UDim2.new(0, 5, 0, 108);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ModdingButtons.n
+G2L["29"] = Instance.new("TextButton", G2L["24"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
+G2L["29"]["TextSize"] = 16;
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["Size"] = UDim2.new(0, 88, 0, 27);
+G2L["29"]["Name"] = [[n]];
 G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Position"] = UDim2.new(0.6594589352607727, 0, 0.42553192377090454, 0);
-G2L["29"]["Rotation"] = 5;
-G2L["29"]["Name"] = [[Border]];
+G2L["29"]["Text"] = [[Auto-Reload]];
+G2L["29"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.Border
+G2L["2a"] = Instance.new("Frame", G2L["19"]);
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["Size"] = UDim2.new(0, 5, 0, 108);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Position"] = UDim2.new(0.6594589352607727, 0, 0.42553192377090454, 0);
+G2L["2a"]["Rotation"] = 5;
+G2L["2a"]["Name"] = [[Border]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.im
-G2L["2a"] = Instance.new("TextButton", G2L["18"]);
-G2L["2a"]["TextWrapped"] = true;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
-G2L["2a"]["TextSize"] = 16;
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["2a"]["Name"] = [[im]];
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Text"] = [[INSTA-MOD]];
-G2L["2a"]["Position"] = UDim2.new(0.7135134935379028, 0, 0.7978723645210266, 0);
+G2L["2b"] = Instance.new("TextButton", G2L["19"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
+G2L["2b"]["TextSize"] = 16;
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["Size"] = UDim2.new(0, 88, 0, 27);
+G2L["2b"]["Name"] = [[im]];
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[INSTA-MOD]];
+G2L["2b"]["Position"] = UDim2.new(0.7135134935379028, 0, 0.7978723645210266, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.FrameButtons.ags
-G2L["2b"] = Instance.new("TextLabel", G2L["18"]);
-G2L["2b"]["TextWrapped"] = true;
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["TextScaled"] = true;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2b"]["TextSize"] = 14;
-G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["Size"] = UDim2.new(0, 88, 0, 50);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Text"] = [[/NG/]];
-G2L["2b"]["Name"] = [[ags]];
-G2L["2b"]["BackgroundTransparency"] = 1;
-G2L["2b"]["Position"] = UDim2.new(0.7135134935379028, 0, 0.4680851101875305, 0);
+G2L["2c"] = Instance.new("TextLabel", G2L["19"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Size"] = UDim2.new(0, 88, 0, 50);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[/NG/]];
+G2L["2c"]["Name"] = [[ags]];
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Position"] = UDim2.new(0.7135134935379028, 0, 0.4680851101875305, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page
-G2L["2c"] = Instance.new("Frame", G2L["4"]);
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["BackgroundTransparency"] = 1;
-G2L["2c"]["Size"] = UDim2.new(0, 403, 0, 258);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Position"] = UDim2.new(0, 0, 0.09473684430122375, 0);
-G2L["2c"]["Visible"] = false;
-G2L["2c"]["Name"] = [[Third_Page]];
+G2L["2d"] = Instance.new("Frame", G2L["5"]);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["Size"] = UDim2.new(0, 403, 0, 258);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Position"] = UDim2.new(0, 0, 0.09473684430122375, 0);
+G2L["2d"]["Visible"] = false;
+G2L["2d"]["Name"] = [[Third_Page]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.SP_Handler
-G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
-G2L["2d"]["Name"] = [[SP_Handler]];
+G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
+G2L["2e"]["Name"] = [[SP_Handler]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons
-G2L["2e"] = Instance.new("Frame", G2L["2c"]);
-G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(47, 159, 41);
-G2L["2e"]["Size"] = UDim2.new(0, 370, 0, 232);
-G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["Position"] = UDim2.new(0.037221070379018784, 0, 0.042635660618543625, 0);
-G2L["2e"]["Name"] = [[FrameButtons]];
+G2L["2f"] = Instance.new("Frame", G2L["2d"]);
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(47, 159, 41);
+G2L["2f"]["Size"] = UDim2.new(0, 370, 0, 232);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Position"] = UDim2.new(0.037221070379018784, 0, 0.042635660618543625, 0);
+G2L["2f"]["Name"] = [[FrameButtons]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.UIGradient
-G2L["2f"] = Instance.new("UIGradient", G2L["2e"]);
-G2L["2f"]["Rotation"] = 90;
-G2L["2f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(119, 119, 119))};
+G2L["30"] = Instance.new("UIGradient", G2L["2f"]);
+G2L["30"]["Rotation"] = 90;
+G2L["30"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(119, 119, 119))};
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons
-G2L["30"] = Instance.new("Frame", G2L["2e"]);
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["BackgroundTransparency"] = 1;
-G2L["30"]["Size"] = UDim2.new(0, 342, 0, 86);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.05319149047136307, 0);
-G2L["30"]["Name"] = [[FirstyButtons]];
+G2L["31"] = Instance.new("Frame", G2L["2f"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BackgroundTransparency"] = 1;
+G2L["31"]["Size"] = UDim2.new(0, 342, 0, 86);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.05319149047136307, 0);
+G2L["31"]["Name"] = [[FirstyButtons]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.UIListLayout
-G2L["31"] = Instance.new("UIListLayout", G2L["30"]);
-G2L["31"]["FillDirection"] = Enum.FillDirection.Horizontal;
-G2L["31"]["Padding"] = UDim.new(0, 10);
-G2L["31"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["32"] = Instance.new("UIListLayout", G2L["31"]);
+G2L["32"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["32"]["Padding"] = UDim.new(0, 10);
+G2L["32"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.ct
-G2L["32"] = Instance.new("TextButton", G2L["30"]);
-G2L["32"]["TextWrapped"] = true;
-G2L["32"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
-G2L["32"]["TextSize"] = 16;
-G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["32"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["32"]["Name"] = [[ct]];
-G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["Text"] = [[Criminal Team]];
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.it
-G2L["33"] = Instance.new("TextButton", G2L["30"]);
+G2L["33"] = Instance.new("TextButton", G2L["31"]);
 G2L["33"]["TextWrapped"] = true;
 G2L["33"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["33"]["TextSize"] = 16;
 G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["33"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["33"]["Name"] = [[it]];
+G2L["33"]["Name"] = [[ct]];
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[Inmate Team]];
+G2L["33"]["Text"] = [[Criminal Team]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.pt
-G2L["34"] = Instance.new("TextButton", G2L["30"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.it
+G2L["34"] = Instance.new("TextButton", G2L["31"]);
 G2L["34"]["TextWrapped"] = true;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["34"]["TextSize"] = 16;
 G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["34"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["34"]["Name"] = [[pt]];
+G2L["34"]["Name"] = [[it]];
 G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Text"] = [[Police Team]];
-G2L["34"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
+G2L["34"]["Text"] = [[Inmate Team]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.tptip
-G2L["35"] = Instance.new("TextButton", G2L["30"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.pt
+G2L["35"] = Instance.new("TextButton", G2L["31"]);
 G2L["35"]["TextWrapped"] = true;
-G2L["35"]["TextScaled"] = true;
 G2L["35"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["35"]["TextSize"] = 16;
 G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["35"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["35"]["Name"] = [[tptip]];
+G2L["35"]["Name"] = [[pt]];
 G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["Text"] = [[TP / Inmate´s Prison]];
+G2L["35"]["Text"] = [[Police Team]];
 G2L["35"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.tptpr
-G2L["36"] = Instance.new("TextButton", G2L["30"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.tptip
+G2L["36"] = Instance.new("TextButton", G2L["31"]);
 G2L["36"]["TextWrapped"] = true;
 G2L["36"]["TextScaled"] = true;
 G2L["36"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -590,13 +583,13 @@ G2L["36"]["TextSize"] = 16;
 G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["36"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["36"]["Name"] = [[tptpr]];
+G2L["36"]["Name"] = [[tptip]];
 G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Text"] = [[TP / Police´s Room]];
+G2L["36"]["Text"] = [[TP / Inmate´s Prison]];
 G2L["36"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.tptcr
-G2L["37"] = Instance.new("TextButton", G2L["30"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.tptpr
+G2L["37"] = Instance.new("TextButton", G2L["31"]);
 G2L["37"]["TextWrapped"] = true;
 G2L["37"]["TextScaled"] = true;
 G2L["37"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -604,64 +597,65 @@ G2L["37"]["TextSize"] = 16;
 G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["37"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["37"]["Name"] = [[tptcr]];
+G2L["37"]["Name"] = [[tptpr]];
 G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Text"] = [[TP / Criminal´s Room]];
+G2L["37"]["Text"] = [[TP / Police´s Room]];
 G2L["37"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.Border
-G2L["38"] = Instance.new("Frame", G2L["2e"]);
-G2L["38"]["BorderSizePixel"] = 0;
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["Size"] = UDim2.new(0, 370, 0, 4);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.FirstyButtons.tptcr
+G2L["38"] = Instance.new("TextButton", G2L["31"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["TextScaled"] = true;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
+G2L["38"]["TextSize"] = 16;
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["Size"] = UDim2.new(0, 88, 0, 27);
+G2L["38"]["Name"] = [[tptcr]];
 G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Position"] = UDim2.new(0, 0, 0.41260093450546265, 0);
-G2L["38"]["Rotation"] = 1;
-G2L["38"]["Name"] = [[Border]];
+G2L["38"]["Text"] = [[TP / Criminal´s Room]];
+G2L["38"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons
-G2L["39"] = Instance.new("Frame", G2L["2e"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.Border
+G2L["39"] = Instance.new("Frame", G2L["2f"]);
 G2L["39"]["BorderSizePixel"] = 0;
 G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["BackgroundTransparency"] = 1;
-G2L["39"]["Size"] = UDim2.new(0, 342, 0, 106);
+G2L["39"]["Size"] = UDim2.new(0, 370, 0, 4);
 G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.4888113737106323, 0);
-G2L["39"]["Name"] = [[ModdingButtons]];
+G2L["39"]["Position"] = UDim2.new(0, 0, 0.41260093450546265, 0);
+G2L["39"]["Rotation"] = 1;
+G2L["39"]["Name"] = [[Border]];
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons
+G2L["3a"] = Instance.new("Frame", G2L["2f"]);
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Size"] = UDim2.new(0, 342, 0, 106);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Position"] = UDim2.new(0.027027027681469917, 0, 0.4888113737106323, 0);
+G2L["3a"]["Name"] = [[ModdingButtons]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.UIListLayout
-G2L["3a"] = Instance.new("UIListLayout", G2L["39"]);
-G2L["3a"]["FillDirection"] = Enum.FillDirection.Horizontal;
-G2L["3a"]["Padding"] = UDim.new(0, 10);
-G2L["3a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["3b"] = Instance.new("UIListLayout", G2L["3a"]);
+G2L["3b"]["FillDirection"] = Enum.FillDirection.Horizontal;
+G2L["3b"]["Padding"] = UDim.new(0, 10);
+G2L["3b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.ah
-G2L["3b"] = Instance.new("TextButton", G2L["39"]);
-G2L["3b"]["TextWrapped"] = true;
-G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
-G2L["3b"]["TextSize"] = 16;
-G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["3b"]["Name"] = [[ah]];
-G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["Text"] = [[Auto-Hit]];
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.sh
-G2L["3c"] = Instance.new("TextButton", G2L["39"]);
+G2L["3c"] = Instance.new("TextButton", G2L["3a"]);
 G2L["3c"]["TextWrapped"] = true;
-G2L["3c"]["TextScaled"] = true;
 G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
 G2L["3c"]["TextSize"] = 16;
 G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3c"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["3c"]["Name"] = [[sh]];
+G2L["3c"]["Name"] = [[ah]];
 G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Text"] = [[Server-Hop]];
+G2L["3c"]["Text"] = [[Auto-Hit]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.apd
-G2L["3d"] = Instance.new("TextButton", G2L["39"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.sh
+G2L["3d"] = Instance.new("TextButton", G2L["3a"]);
 G2L["3d"]["TextWrapped"] = true;
 G2L["3d"]["TextScaled"] = true;
 G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -669,13 +663,12 @@ G2L["3d"]["TextSize"] = 16;
 G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3d"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["3d"]["Name"] = [[apd]];
+G2L["3d"]["Name"] = [[sh]];
 G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Text"] = [[Auto-Pick Drops]];
-G2L["3d"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
+G2L["3d"]["Text"] = [[Server-Hop]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.nc
-G2L["3e"] = Instance.new("TextButton", G2L["39"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.apd
+G2L["3e"] = Instance.new("TextButton", G2L["3a"]);
 G2L["3e"]["TextWrapped"] = true;
 G2L["3e"]["TextScaled"] = true;
 G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -683,13 +676,13 @@ G2L["3e"]["TextSize"] = 16;
 G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3e"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["3e"]["Name"] = [[nc]];
+G2L["3e"]["Name"] = [[apd]];
 G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3e"]["Text"] = [[No-Clip]];
+G2L["3e"]["Text"] = [[Auto-Pick Drops]];
 G2L["3e"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.f
-G2L["3f"] = Instance.new("TextButton", G2L["39"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.nc
+G2L["3f"] = Instance.new("TextButton", G2L["3a"]);
 G2L["3f"]["TextWrapped"] = true;
 G2L["3f"]["TextScaled"] = true;
 G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -697,13 +690,13 @@ G2L["3f"]["TextSize"] = 16;
 G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["3f"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["3f"]["Name"] = [[f]];
+G2L["3f"]["Name"] = [[nc]];
 G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Text"] = [[Fly]];
+G2L["3f"]["Text"] = [[No-Clip]];
 G2L["3f"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.amg
-G2L["40"] = Instance.new("TextButton", G2L["39"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.f
+G2L["40"] = Instance.new("TextButton", G2L["3a"]);
 G2L["40"]["TextWrapped"] = true;
 G2L["40"]["TextScaled"] = true;
 G2L["40"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
@@ -711,89 +704,91 @@ G2L["40"]["TextSize"] = 16;
 G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["40"]["Size"] = UDim2.new(0, 88, 0, 27);
-G2L["40"]["Name"] = [[amg]];
+G2L["40"]["Name"] = [[f]];
 G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["40"]["Text"] = [[A.M Guns]];
+G2L["40"]["Text"] = [[Fly]];
 G2L["40"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.Border
-G2L["41"] = Instance.new("Frame", G2L["2e"]);
-G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["Size"] = UDim2.new(0, 370, 0, 1);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.ModdingButtons.amg
+G2L["41"] = Instance.new("TextButton", G2L["3a"]);
+G2L["41"]["TextWrapped"] = true;
+G2L["41"]["TextScaled"] = true;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(54, 109, 77);
+G2L["41"]["TextSize"] = 16;
+G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["Size"] = UDim2.new(0, 88, 0, 27);
+G2L["41"]["Name"] = [[amg]];
 G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Position"] = UDim2.new(-0.00195444468408823, 0, 0.8005318641662598, 0);
-G2L["41"]["Name"] = [[Border]];
+G2L["41"]["Text"] = [[A.M Guns]];
+G2L["41"]["Position"] = UDim2.new(0, 0, 0.43023255467414856, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.TextLabel
-G2L["42"] = Instance.new("TextLabel", G2L["2e"]);
-G2L["42"]["TextWrapped"] = true;
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.Border
+G2L["42"] = Instance.new("Frame", G2L["2f"]);
 G2L["42"]["BorderSizePixel"] = 0;
 G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
-G2L["42"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["TextSize"] = 35;
-G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["Size"] = UDim2.new(0, 369, 0, 45);
+G2L["42"]["Size"] = UDim2.new(0, 370, 0, 1);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Text"] = [[Made By G0bbyD0llan]];
-G2L["42"]["BackgroundTransparency"] = 1;
-G2L["42"]["Position"] = UDim2.new(0, 0, 0.8048421740531921, 0);
+G2L["42"]["Position"] = UDim2.new(-0.00195444468408823, 0, 0.8005318641662598, 0);
+G2L["42"]["Name"] = [[Border]];
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.TextLabel
+G2L["43"] = Instance.new("TextLabel", G2L["2f"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["43"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["TextSize"] = 35;
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["Size"] = UDim2.new(0, 369, 0, 45);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[Made By G0bbyD0llan]];
+G2L["43"]["BackgroundTransparency"] = 1;
+G2L["43"]["Position"] = UDim2.new(0, 0, 0.8048421740531921, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.TextLabel.VFXEffects
-G2L["43"] = Instance.new("LocalScript", G2L["42"]);
-G2L["43"]["Name"] = [[VFXEffects]];
+G2L["44"] = Instance.new("LocalScript", G2L["43"]);
+G2L["44"]["Name"] = [[VFXEffects]];
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.TextLabel.ImageLabel
-G2L["44"] = Instance.new("ImageLabel", G2L["42"]);
-G2L["44"]["BorderSizePixel"] = 0;
-G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["44"]["ImageTransparency"] = 0.800000011920929;
-G2L["44"]["Image"] = [[rbxassetid://5538771868]];
-G2L["44"]["Size"] = UDim2.new(0, 510, 0, 80);
-G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["BackgroundTransparency"] = 1;
-G2L["44"]["Position"] = UDim2.new(-0.1815718114376068, 0, -0.4444444477558136, 0);
+G2L["45"] = Instance.new("ImageLabel", G2L["43"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["ImageTransparency"] = 0.800000011920929;
+G2L["45"]["Image"] = [[rbxassetid://5538771868]];
+G2L["45"]["Size"] = UDim2.new(0, 510, 0, 80);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Position"] = UDim2.new(-0.1815718114376068, 0, -0.4444444477558136, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.TextLabel.ImageLabel.UIGradient
-G2L["45"] = Instance.new("UIGradient", G2L["44"]);
+G2L["46"] = Instance.new("UIGradient", G2L["45"]);
 
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition
-G2L["46"] = Instance.new("Frame", G2L["4"]);
-G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["BackgroundTransparency"] = 1;
-G2L["46"]["Size"] = UDim2.new(0, 403, 0, 258);
-G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Position"] = UDim2.new(2.2717800618465844e-07, 0, 0.09473684430122375, 0);
-G2L["46"]["Name"] = [[Transition]];
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition.Full
-G2L["47"] = Instance.new("ImageLabel", G2L["46"]);
+G2L["47"] = Instance.new("Frame", G2L["5"]);
 G2L["47"]["BorderSizePixel"] = 0;
 G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["Visible"] = false;
-G2L["47"]["Image"] = [[rbxassetid://17119192568]];
-G2L["47"]["Size"] = UDim2.new(0, 451, 0, 300);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["Size"] = UDim2.new(0, 403, 0, 258);
 G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Name"] = [[Full]];
-G2L["47"]["Position"] = UDim2.new(-0.0595533512532711, 0, 0, 0);
+G2L["47"]["Position"] = UDim2.new(2.2717800618465844e-07, 0, 0.09473684430122375, 0);
+G2L["47"]["Name"] = [[Transition]];
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition.Left-Border
-G2L["48"] = Instance.new("ImageLabel", G2L["46"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition.Full
+G2L["48"] = Instance.new("ImageLabel", G2L["47"]);
 G2L["48"]["BorderSizePixel"] = 0;
-G2L["48"]["ScaleType"] = Enum.ScaleType.Crop;
 G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["48"]["Visible"] = false;
 G2L["48"]["Image"] = [[rbxassetid://17119192568]];
-G2L["48"]["Size"] = UDim2.new(0, 122, 0, 300);
+G2L["48"]["Size"] = UDim2.new(0, 451, 0, 300);
 G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["48"]["Name"] = [[Left-Border]];
+G2L["48"]["Name"] = [[Full]];
 G2L["48"]["Position"] = UDim2.new(-0.0595533512532711, 0, 0, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition.Right-Border
-G2L["49"] = Instance.new("ImageLabel", G2L["46"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition.Left-Border
+G2L["49"] = Instance.new("ImageLabel", G2L["47"]);
 G2L["49"]["BorderSizePixel"] = 0;
 G2L["49"]["ScaleType"] = Enum.ScaleType.Crop;
 G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -801,85 +796,97 @@ G2L["49"]["Visible"] = false;
 G2L["49"]["Image"] = [[rbxassetid://17119192568]];
 G2L["49"]["Size"] = UDim2.new(0, 122, 0, 300);
 G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Name"] = [[Right-Border]];
-G2L["49"]["Position"] = UDim2.new(0.7816377282142639, 0, 0, 0);
+G2L["49"]["Name"] = [[Left-Border]];
+G2L["49"]["Position"] = UDim2.new(-0.0595533512532711, 0, 0, 0);
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Transition.Right-Border
+G2L["4a"] = Instance.new("ImageLabel", G2L["47"]);
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["ScaleType"] = Enum.ScaleType.Crop;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["Visible"] = false;
+G2L["4a"]["Image"] = [[rbxassetid://17119192568]];
+G2L["4a"]["Size"] = UDim2.new(0, 122, 0, 300);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Name"] = [[Right-Border]];
+G2L["4a"]["Position"] = UDim2.new(0.7816377282142639, 0, 0, 0);
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.UIGradient
-G2L["4a"] = Instance.new("UIGradient", G2L["2"]);
-G2L["4a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(119, 119, 119))};
+G2L["4b"] = Instance.new("UIGradient", G2L["2"]);
+G2L["4b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(119, 119, 119))};
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.NameLabel
-G2L["4b"] = Instance.new("TextLabel", G2L["2"]);
-G2L["4b"]["TextWrapped"] = true;
-G2L["4b"]["TextStrokeTransparency"] = 0.5;
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4b"]["TextSize"] = 20;
-G2L["4b"]["TextColor3"] = Color3.fromRGB(112, 255, 165);
-G2L["4b"]["Size"] = UDim2.new(0, 293, 0, 34);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Text"] = [[PrisonD0llan.lua - Remaster]];
-G2L["4b"]["Name"] = [[NameLabel]];
-G2L["4b"]["BackgroundTransparency"] = 1;
-G2L["4b"]["Position"] = UDim2.new(0.034739453345537186, 0, 0, 0);
-
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.CloseButton
-G2L["4c"] = Instance.new("TextButton", G2L["2"]);
+G2L["4c"] = Instance.new("TextLabel", G2L["2"]);
 G2L["4c"]["TextWrapped"] = true;
 G2L["4c"]["TextStrokeTransparency"] = 0.5;
-G2L["4c"]["TextScaled"] = true;
-G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 5);
-G2L["4c"]["TextSize"] = 14;
-G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
-G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["4c"]["Size"] = UDim2.new(0, 36, 0, 34);
-G2L["4c"]["Name"] = [[CloseButton]];
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["TextSize"] = 20;
+G2L["4c"]["TextColor3"] = Color3.fromRGB(112, 255, 165);
+G2L["4c"]["Size"] = UDim2.new(0, 293, 0, 34);
 G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4c"]["Text"] = [[X]];
-G2L["4c"]["Position"] = UDim2.new(0.9106699824333191, 0, 0, 0);
-G2L["4c"]["BackgroundTransparency"] = 0.6000000238418579;
+G2L["4c"]["Text"] = [[PrisonD0llan.lua - Remaster]];
+G2L["4c"]["Name"] = [[NameLabel]];
+G2L["4c"]["BackgroundTransparency"] = 1;
+G2L["4c"]["Position"] = UDim2.new(0.034739453345537186, 0, 0, 0);
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MinimizeButton
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.CloseButton
 G2L["4d"] = Instance.new("TextButton", G2L["2"]);
 G2L["4d"]["TextWrapped"] = true;
 G2L["4d"]["TextStrokeTransparency"] = 0.5;
 G2L["4d"]["TextScaled"] = true;
-G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(0, 22, 213);
+G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(213, 0, 5);
 G2L["4d"]["TextSize"] = 14;
 G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
-G2L["4d"]["TextColor3"] = Color3.fromRGB(31, 0, 255);
+G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["4d"]["Size"] = UDim2.new(0, 36, 0, 34);
-G2L["4d"]["Name"] = [[MinimizeButton]];
+G2L["4d"]["Name"] = [[CloseButton]];
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4d"]["Text"] = [[-]];
-G2L["4d"]["Position"] = UDim2.new(0.8213399648666382, 0, 0, 0);
+G2L["4d"]["Text"] = [[X]];
+G2L["4d"]["Position"] = UDim2.new(0.9106699824333191, 0, 0, 0);
 G2L["4d"]["BackgroundTransparency"] = 0.6000000238418579;
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.Icon
-G2L["4e"] = Instance.new("TextLabel", G2L["2"]);
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MinimizeButton
+G2L["4e"] = Instance.new("TextButton", G2L["2"]);
 G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["TextStrokeTransparency"] = 0.5;
 G2L["4e"]["TextScaled"] = true;
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(0, 22, 213);
 G2L["4e"]["TextSize"] = 14;
-G2L["4e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Size"] = UDim2.new(0, 39, 0, 34);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(31, 0, 255);
+G2L["4e"]["Size"] = UDim2.new(0, 36, 0, 34);
+G2L["4e"]["Name"] = [[MinimizeButton]];
 G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Text"] = [[GD]];
-G2L["4e"]["Name"] = [[Icon]];
+G2L["4e"]["Text"] = [[-]];
+G2L["4e"]["Position"] = UDim2.new(0.8213399648666382, 0, 0, 0);
 G2L["4e"]["BackgroundTransparency"] = 0.6000000238418579;
 
--- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.ClosingSignal
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.Icon
 G2L["4f"] = Instance.new("TextLabel", G2L["2"]);
-G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["TextWrapped"] = true;
+G2L["4f"]["TextScaled"] = true;
 G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["4f"]["TextSize"] = 14;
 G2L["4f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["Size"] = UDim2.new(0, 39, 0, 34);
 G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4f"]["Name"] = [[ClosingSignal]];
-G2L["4f"]["Visible"] = false;
+G2L["4f"]["Text"] = [[GD]];
+G2L["4f"]["Name"] = [[Icon]];
+G2L["4f"]["BackgroundTransparency"] = 0.6000000238418579;
+
+-- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.ClosingSignal
+G2L["50"] = Instance.new("TextLabel", G2L["2"]);
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["50"]["TextSize"] = 14;
+G2L["50"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Name"] = [[ClosingSignal]];
+G2L["50"]["Visible"] = false;
 
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.TopBar - Handler
 local function C_3()
@@ -1092,8 +1099,8 @@ local script = G2L["3"];
 end;
 task.spawn(C_3);
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.First_Page.FP_Handler
-local function C_c()
-local script = G2L["c"];
+local function C_d()
+local script = G2L["d"];
 	-- TOGGLES
 	local SilentAimEnabled = false
 	local TriggerBotEnabled = false
@@ -1354,15 +1361,22 @@ local script = G2L["c"];
 		end
 	
 		local getgc = getgc or get_gc_objects or nil
+		-- Fallbacks for checking closure types depending on your exploit
+		local iscclosure = iscclosure or function(f) return debug.getinfo(f).what == "C" end 
 	
 		local castRay
 	
 		for _, fn in ipairs(getgc(true)) do
-			if typeof(fn) == "function" then
+			-- Make sure it's a function AND it is NOT a CClosure (must be an LClosure)
+			if typeof(fn) == "function" and not iscclosure(fn) then
+				-- Safe to use debug functions now
 				for _, uv in ipairs(debug.getupvalues(fn)) do
-					if typeof(uv) == "function" and debug.getinfo(uv).name == "castRay" then
-						castRay = uv
-						break
+					if typeof(uv) == "function" and not iscclosure(uv) then
+						local info = debug.getinfo(uv)
+						if info and info.name == "castRay" then
+							castRay = uv
+							break
+						end
 					end
 				end
 			end
@@ -1481,10 +1495,10 @@ local script = G2L["c"];
 	
 	
 end;
-task.spawn(C_c);
+task.spawn(C_d);
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Second_Page.TP_Handler
-local function C_16()
-local script = G2L["16"];
+local function C_17()
+local script = G2L["17"];
 	--// Services
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
@@ -1524,7 +1538,13 @@ local script = G2L["16"];
 	--// ABP (Backpack Enabled)
 	FirstyButtons.abp.MouseButton1Click:Connect(function()
 		states.abp = not states.abp
-	
+		
+		if states.abp then
+			FirstyButtons.abp.Text = "un-Auto-BackPack"
+		else
+			FirstyButtons.abp.Text = "Auto-BackPack"
+		end
+		
 		task.spawn(function()
 			while states.abp do
 				task.wait(0.2)
@@ -1540,6 +1560,12 @@ local script = G2L["16"];
 	FirstyButtons.aj.MouseButton1Click:Connect(function()
 		states.aj = not states.aj
 	
+		if states.aj then
+			FirstyButtons.aj.Text = "Un-Always-Jump"
+		else
+			FirstyButtons.aj.Text = "Always-Jump"
+		end
+		
 		task.spawn(function()
 			while states.aj do
 				task.wait(0.2)
@@ -1558,6 +1584,11 @@ local script = G2L["16"];
 	FirstyButtons.shs.MouseButton1Click:Connect(function()
 		states.shs = not states.shs
 	
+		if states.shs then
+			FirstyButtons.shs.Text = "Un-Semi-HS"
+		else
+			FirstyButtons.shs.Text = "Semi-HS"
+		end
 		task.spawn(function()
 			while states.shs do
 				task.wait(0.2)
@@ -1838,26 +1869,64 @@ local script = G2L["16"];
 		end)
 	end
 	
+	local PL_ESP_CONNECTION = nil
+	
 	ConvertToToggle(script.Parent.pe, function()
 		PL_ESP_ENABLED = true
+		PL_ESP_CONNECTION = game:GetService("RunService").RenderStepped:Connect(function()
+			for _, player in pairs(game.Players:GetPlayers()) do
+				if player ~= game.Players.LocalPlayer then
+					local character = player.Character
+					if character then
+						local AlreadyHighlighted = character:FindFirstChild("PL_ESP_HIGHLIGHT") :: Highlight
+						if not AlreadyHighlighted then
+							local highlight = Instance.new("Highlight")
+							highlight.Name = "PL_ESP_HIGHLIGHT"
+							highlight.Parent = character
+						else
+							AlreadyHighlighted.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+							AlreadyHighlighted.FillTransparency = 0.5
+							highlight.OutlineTransparency = 0.5
+							highlight.FillColor = player.TeamColor or Color3.fromRGB(255, 255, 255)
+							highlight.OutlineColor = player.TeamColor or Color3.fromRGB(255, 255, 255)
+						end
+					end
+				end
+				end
+			end)
 	end, function()
 		PL_ESP_ENABLED = false
+		if PL_ESP_CONNECTION then
+			PL_ESP_CONNECTION:Disconnect()
+			PL_ESP_CONNECTION = nil
+		end
+		for _, player in pairs(game.Players:GetPlayers()) do
+			if player ~= game.Players.LocalPlayer then
+				local character = player.Character
+				if character then
+					local AlreadyHighlighted = character:FindFirstChild("PL_ESP_HIGHLIGHT") :: Highlight
+					if AlreadyHighlighted then
+						AlreadyHighlighted:Destroy()
+					end
+				end
+			end
+		end
 	end, "Enabled", "Disabled", " PL-Esp: ")
 end;
-task.spawn(C_16);
+task.spawn(C_17);
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.SP_Handler
-local function C_2d()
-local script = G2L["2d"];
+local function C_2e()
+local script = G2L["2e"];
 	local DeletedThings = {}
 	
 	local Esp_Enabled = false
 	
 	local Buttons
 end;
-task.spawn(C_2d);
+task.spawn(C_2e);
 -- StarterGui.PrisonD0llan.Iua - Remaster.TopBar.MainMenu.Third_Page.FrameButtons.TextLabel.VFXEffects
-local function C_43()
-local script = G2L["43"];
+local function C_44()
+local script = G2L["44"];
 	local textLabel = script.Parent
 	local imageLabel = textLabel:WaitForChild("ImageLabel")
 	local gradient = imageLabel:WaitForChild("UIGradient")
@@ -1911,6 +1980,6 @@ local script = G2L["43"];
 	end
 	
 end;
-task.spawn(C_43);
+task.spawn(C_44);
 
 return G2L["1"], require;
