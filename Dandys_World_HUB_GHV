@@ -12,6 +12,36 @@ This Code Was made By G0bbyD0llan
 
 [==]
 
+24-11-2026:
+
+I returned to GitHub after months of being inactive, lol. last time i updated this was already one year ago? o_o :shocked:
+
+I’ve stepped away from Roblox exploiting. The anti-cheat in Dandy's World kept getting better, making it increasingly difficult to bypass to the point where I just couldn’t keep up anymore (especially when they added the Knightmare-AntiCheat). I was also spending an unhealthy amount of time in Roblox Studio working on it, so to keep things from getting out of hand, I decided to quit. Honestly, it felt good to let it go, I’ve been able to focus more on my own life now! :D
+I know many of you want or have wanted me to return and update it, but believe me, many other scripts have already earned the title of being the best; I can no longer reclaim my number 1 spot like I had in 2024. :'/
+That said, and I won’t deny it, thank you so much for all the support you’ve given me over these past two years :D, from October 12, 2024 when I first started and published that script, up until now, where I’m actually creating my own games on Roblox instead of just scripting! :D
+Maybe we’ll see each other again in the future if I happen to get bored enough to create a new script :D
+
+That’s all I have to say, I suppose, will anyone actually read this?
+Just for fun I’ll leave here some things I remember from previous years here just to have them on display for no reason XD
+
+----------------------------
+
+i miss 2020-2022 roblox exploiting man. now all executors are ratted and you are always the product, time passes... (The first time I used exploits was in december 2020 with KRNL, good old days)
+This script is horribly outdated; don't even bother skidding / stealing code from it.
+remember when Roblox chat was free lol, I saw the Schlep controversy and how Roblox was slowly becoming greedier XD
+Google Drive apparently deleted all my documents for no apparent reason in 2024-first months of 2025, and I lost the account I used to create a video that got 500k views on my YouTube channel, along with 10 other accounts that had bypassed usernames :'/
+use any other script PLEASE, Don't use this; it's outdated, and you're more likely to end up getting banned than gaining any features that improve your gameplay.
+
+I don’t create or update scripts anymore at least for now. I occasionally make a few personal scripts (maybe every 2–5 months, and only if I really feel like it), which I then just leave as-is without any further updates.
+Looking back, I think my 2024 self should have added a simple key system to the script. Despite the script having 1.2 million executions or likely even more—and thousands of likes, it never earned me a single cent. (The old Pastebin link I used to maintain it was deleted after someone, out of spite, reported it to the Pastebin team.), but Honestly, I’m proud of not adding a key system. I’ve always hated key systems and paid scripts. What do you mean I have to go to a site full of adware or pay real money just to be able to run a bit of code in a game?
+I remember that the 2023 PC version of Fluxus Executor with which I made my first videos had installed a Chinese Bitcoin miner on my computer (yes this really happend and i have a private video on my channel documenting it). My God, those were the worst days of my life; thank goodness my YouTube channel hadn’t fallen victim to what that Fluxus could have stolen from me. (˘ŏ_ŏ)
+Another thing I remember and want to record here, just in case I ever forget is that around late 2024 or early 2025, someone well-known in the scripting community offered to build an executor for me, using the same interface as this script. I accepted without hesitation. The user sent me screenshots showing that they had literally recreated it exactly as I had designed it but built in Tkinter with a proper UI. I couldn't believe it. A few days later, it turned out that this user had been "cancelled" for being a horrible person; I let them have it insulting them thoroughly before blocking them permanently. I could try to retrieve the chat, but it’s kinda "lost media" now, since the user’s account has been deleted and I can no longer find them in my conversation history. that was one of the wild things what happened to me during that year
+
+That’s all I have to tell.
+
+[==]
+
+
 You are free to View this Code but STEALING / SHARING THE CODE TO THE OWNER is not permitted.
 	Also, if you do share the code, please don't claim it as your own, and please give me some credit for making this script :D
 	Thanks for using my GUI, please like it and favorite it if you do.
@@ -19974,6 +20004,14 @@ local function C_24f()
 	wait(3)
 	workspace:FindFirstChildWhichIsA("Hint").Text = "if the gui not loads, theres maybe a problem..."
 	wait(2)
+    workspace:FindFirstChildWhichIsA("Hint").Text = "heya!, so eh, i don't update this script since one year. :P"
+    wait(5)
+    workspace:FindFirstChildWhichIsA("Hint").Text = "I recommend that you use other scripts. This script is obsolete. "
+    wait(5)
+    workspace:FindFirstChildWhichIsA("Hint").Text = "I’ve retired from scripting long ago already, and I’m no longer updating this. "
+    wait(5)
+    workspace:FindFirstChildWhichIsA("Hint").Text = "Really TY All of you for all the support <3 from 10-12-2024 to 24-11-2026 "
+    wait(5)
 	workspace:FindFirstChildOfClass("Hint"):Remove()
 	wait(1)
 
